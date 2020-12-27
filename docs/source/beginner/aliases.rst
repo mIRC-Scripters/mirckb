@@ -85,32 +85,27 @@ Command Prefixes
 You can prefix your command call by a dot ‘.’ to prevent mIRC from displaying its typical message, such as: ``.timer``
 
 ! prefix (built-in call)
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, a command call will call any custom alias you may have defined, you can force a call to a mIRC built-in command by using the ‘!’ prefix, /!join makes sure it calls the mIRC built-in join command instead of the custom join alias you may have defined.
+By default, a command call will call any custom alias you may have defined, you can force a call to a mIRC built-in command by using the **!** prefix, /!join makes sure it calls the mIRC built-in join command instead of the custom join alias you may have defined.
 
 Identifier Prefixes
 ~~~~~~~~~~~~~~~~~~~
 
-.. math::
+$$ special construct (required value)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    special construct (required value)
-   You can use 
-
-\ identifier to halt a routine if the value returned by the identifier is $null, typically, this allows to quickly stops if a parameter is missing.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+You can use $$identifier to halt a routine if the value returned by the identifier is $null, typically, this stops further processing if a parameter is missing.
 
 / and . prefix (custom call)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default, an identifier call will call the built-in mIRC identifier, you can force a call to your own custom identifier by using the ‘/’ or ‘.’ prefix, $/me makes sure it calls your custom identifier. If you do not have the alias defined, mIRC consider it a call to an alias named with the ‘/’ or the ‘.’
 
-.. _prefix-built-in-call-1:
-
 ~ prefix (built-in call)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-In essence, such a call to an identifier will only look at built-in identifiers, custom aliases won’t be searched for. This will bypass the Identifier Warning message but it’s a bit unclear why this is useful, it can allow you to check if an identifier exist in mIRC’s own language and has a value but you cannot use it to check built-in which would return :math:`null then, and you have to execute the function, checking for "`\ findfile" or “$zip” would be problematic.
+In essence, such a call to an identifier will only look at built-in identifiers, custom aliases won’t be searched for. This will bypass the Identifier Warning message but it’s a bit unclear why this is useful, it can allow you to check if an identifier exist in mIRC’s own language and has a value but you cannot use it to check built-in which would return $null then, and you have to execute the function, checking for "$findfile" or "$zip" would be problematic.
 
 ! prefix (delay evaluation)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
