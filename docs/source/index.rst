@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to mIRC Knowledge Base's!
+Welcome to mIRC Knowledge Base!
 ===============================================
 
 Home
@@ -66,9 +66,12 @@ mIRC 5.3 saw the introduction of sockets and picture windows, which were introdu
 
 mIRC 7.0 brought about unicode support into the language.
 
+References
+----------
+
 .. [1]
    `Personal FAQ <https://www.mirc.com/pfaq.html>`__
-   
+
 .. [2]
    `Versions.txt <https://www.mirc.com/versions.txt>`__
 
