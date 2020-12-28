@@ -15,7 +15,8 @@ Local Variables are given local scope. They are created for the duration of the 
 
 .. note:: Local variables can be seen from the execution of /scon or /scid: //var %a ok \| scon -r echo -a $ + %a ($1- can’t be seen the same way)
 
-Syntax:
+Syntax
+^^^^^^
 
 .. code:: text
 
@@ -59,18 +60,24 @@ Global Variables
 
 A global variable is a variable that is accessible from every alias or event. They can be created and edited from every script. They are not deleted unless they are purposely destroyed using the unset command (we will talk about that later on).
 
-Syntax:
+Syntax
+^^^^^^
 
 .. code:: text
 
-   ;create variable
-   set %var value
+  ;create variable
+  set %var value
 
 .. note:: The /set command does not use the = operator.
 
 Because the /set command can only set a single variable at a time, you can use the /var command in conjunction with -g switch to set multiple global variables.
 
-;multiple variables var -g %var = foo, %var2 = bar, %var3 = foobar Practical use: a global variable is good for storing variables that you will need to use in the future from another script or at different time. (Login System, Away System, Sockets, Etc…)
+.. code:: text
+
+  ;multiple variables 
+  var -g %var = foo, %var2 = bar, %var3 = foobar 
+
+Practical use: a global variable is good for storing variables that you will need to use in the future from another script or at different time. (Login System, Away System, Sockets, Etc…)
 
 Semi Global
 -----------
@@ -125,7 +132,7 @@ The /unset command supports wildcard characters for each of the variable, to be 
 
 You can also unset all of the variables using the /unsetall command.
 
-!!! caution This will permanently delete all of your variables! You cannot recover them once you have performed this command, so be careful.
+.. caution:: This will permanently delete all of your variables! You cannot recover them once you have performed this command, so be careful.
 
 $null values
 ------------

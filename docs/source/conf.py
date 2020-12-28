@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'mIRC Knowledge Base'
-author = 'Wiz, Ouims, jaytea, maroon, Raccoon, acvxqs'
+author = 'Wiz, Ouims, jaytea, maroon, Raccoon'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'

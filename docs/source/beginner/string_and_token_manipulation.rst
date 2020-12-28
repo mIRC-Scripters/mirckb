@@ -110,7 +110,7 @@ Will output “won’t work”.
 Case Transformation
 ~~~~~~~~~~~~~~~~~~~
 
-The $islower and :math:`isupper identifiers can be used to determine if a string is entirely made up of uppercase or lowercase letters (`\ true), or else they return $false. The same functionality is also built into an if statement using the isupper and islower operators. The $upper and $lower identifiers perform case conversion on an entire string or a string character.
+The $islower and $isupper identifiers can be used to determine if a string is entirely made up of uppercase or lowercase letters ($true), or else they return $false. The same functionality is also built into an if statement using the isupper and islower operators. The $upper and $lower identifiers perform case conversion on an entire string or a string character.
 
 .. code:: text
 
@@ -234,7 +234,7 @@ which will output (in this case to the status window [-s]):
 
 $replacex will provide the same in this case.
 
-.. note:: :math:`replacecs/`\ replacexcs are case-sensitive versions of :math:`replace/`\ replacex; it has the same syntax.
+.. note:: $replacecs/$replacexcs are case-sensitive versions of $replace/$replacex; it has the same syntax.
 
 Substring Removal
 ^^^^^^^^^^^^^^^^^
