@@ -13,7 +13,7 @@ Local Variables
 
 Local Variables are given local scope. They are created for the duration of the routine that created them and they can only be accessed from within that routine Once the routine is finished, the variable is deleted. A routine represents an alias, an event, a menu, or when you execute code with two /slash from the editbox.
 
-.. note:: Local variables can be seen from the execution of /scon or /scid: //var %a ok \| scon -r echo -a $ + %a ($1- can’t be seen the same way)
+.. note:: Local variables can be seen from the execution of /scon or /scid: //var %a ok \| scon -r echo -a $ + %a ($1- can't be seen the same way)
 
 Syntax
 ^^^^^^
@@ -39,7 +39,7 @@ Local variables are good for temporary things like string manipulations and math
      echo -a %number1 + %number2 = $calc(%number1 + %number2)
    }
 
-An example usage of the script above is: /add 1 3 which will output: 1 + 3 = 4. Once the add alias has finished executing, both “%number1” and “%number2” are destroyed. Remember, these local variables cannot be called upon outside of their code blocks.
+An example usage of the script above is: /add 1 3 which will output: 1 + 3 = 4. Once the add alias has finished executing, both "%number1" and "%number2" are destroyed. Remember, these local variables cannot be called upon outside of their code blocks.
 
 Incorrect use of local variables:
 
@@ -84,16 +84,16 @@ Semi Global
 
 You can use set -u0 to create a variable that can be seen by any routine (global) but is destroyed when the scripting engine exits (when all routines are done), like binary variables.
 
-The Equal Sign ‘=’
+The Equal Sign '='
 ------------------
 
-Although it’s not required in /var since 6.21, the equal sign can be used to assign a value to a variable without actually using a command:
+Although it's not required in /var since 6.21, the equal sign can be used to assign a value to a variable without actually using a command:
 
 .. code:: text
 
    %var = value
 
-If %var is local, this will change the local variable. If %var is global, it will naturally change the global variable. If %var doesn’t exist, it will create a global variable.
+If %var is local, this will change the local variable. If %var is global, it will naturally change the global variable. If %var doesn't exist, it will create a global variable.
 
 Unsetting Variables
 -------------------
@@ -166,11 +166,11 @@ Math Operations
 
 You can do one math operation with variable when setting a value.
 
-The operators supported are: ‘+’ ‘-’ ‘/’ ‘\*’ ‘%’ ‘^’ where % id the modulus and ^ is power.
+The operators supported are: '+' '-' '/' '\*' '%' '^' where % id the modulus and ^ is power.
 
 You must use a space around all parameters and you must provide correct values, numbers can be float.
 
-If you don’t respect the format, it will set the value as plain text, use -n to override this behavior when dynamic content.
+If you don't respect the format, it will set the value as plain text, use -n to override this behavior when dynamic content.
 
 For Example:
 
@@ -228,7 +228,7 @@ For Example:
 Dynamic Variable Names
 ----------------------
 
-In many occasions you may need to save individualized data (data for a particular user or channel for example). Dynamic variables allow you to do just that. A dynamic variable’s name usually consists of a static part (a part that doesn’t change) and a dynamic part (the part that changes).
+In many occasions you may need to save individualized data (data for a particular user or channel for example). Dynamic variables allow you to do just that. A dynamic variable's name usually consists of a static part (a part that doesn't change) and a dynamic part (the part that changes).
 
 Setting Values
 ~~~~~~~~~~~~~~
@@ -245,7 +245,7 @@ Although you can omit the static part out, its strongly discouraged because vari
 
 .. note:: You may have seen script using evaluation brackets to set a value to a dynamic variable, they are not required.
 
-Let’s take a look at an example:
+Let's take a look at an example:
 
 .. code:: text
 
@@ -255,21 +255,21 @@ Let’s take a look at an example:
      notice $nick Your favorite color $qt($2) was saved!
    }
 
-Let’s take a closer look at the variable assignment statement:
+Let's take a closer look at the variable assignment statement:
 
 .. code:: text
 
    set %color. $+ $nick $2
 
-The static part is color., which is never going to change, and the dynamic part is $nick. Let’s assume someone by the name John types !setColor blue; this is what happens:
+The static part is color., which is never going to change, and the dynamic part is $nick. Let's assume someone by the name John types !setColor blue; this is what happens:
 
--  mIRC evaluates the identifier $nick to “John” and $2 to blue
+-  mIRC evaluates the identifier $nick to "John" and $2 to blue
 
 .. code:: text
 
    set %color. $+ John blue
 
--  mIRC will then append “John” to “%color.” Before executing the /set command, thus the final variable looks like this:
+-  mIRC will then append "John" to "%color." Before executing the /set command, thus the final variable looks like this:
 
 .. code:: text
 
@@ -281,7 +281,7 @@ Retrieving Values
 Static Variables
 ^^^^^^^^^^^^^^^^
 
-Retrieving values from static variables is pretty straightforward. Let’s assume you have a variable called %myvar and it’s value is abc, you can get this value simply by referring to the variable outright:
+Retrieving values from static variables is pretty straightforward. Let's assume you have a variable called %myvar and it's value is abc, you can get this value simply by referring to the variable outright:
 
 .. code:: text
 
@@ -319,13 +319,13 @@ This is the evaluation brackets method. They allow us to force mIRC to evaluate 
      }
    }
 
-In the example above, we retrieved the color from the dynamic variable and set it to a local variable called %color for use in the rest of the script. Let’s take a closer look at the retrieval statement:
+In the example above, we retrieved the color from the dynamic variable and set it to a local variable called %color for use in the rest of the script. Let's take a closer look at the retrieval statement:
 
 .. code:: text
 
    var %color = %color. [ $+ [ $2 ] ]
 
-When you first glance at this statement, it might look a bit confusing, but in fact it is pretty straightforward. Let us continue with John’s example and assume someone else typed !favColor John:
+When you first glance at this statement, it might look a bit confusing, but in fact it is pretty straightforward. Let us continue with John's example and assume someone else typed !favColor John:
 
 1. The first thing mIRC will evaluate is the innermost evaluation brackets [ ], in this case its $2, which will evaluate to John.
 
@@ -333,7 +333,7 @@ When you first glance at this statement, it might look a bit confusing, but in f
 
    %color. [ $+ John ]
 
-2. mIRC will then evaluate the outer evaluation bracket “$+ John”.
+2. mIRC will then evaluate the outer evaluation bracket "$+ John".
 
 .. code:: text
 
@@ -366,7 +366,7 @@ The above code will echo the following:
    4 = Item D
    5 = Item E
 
-What this does is create a bunch of static variables, each with ascending-ordered numerical digits. You will notice we used the evaluation brackets around the variable counter, %x. This allows mIRC to evaluate the variable, and attach it to the static portion of %array.. Basically, during run-time, whatever the %x variable’s value is will be automatically appended to %array..
+What this does is create a bunch of static variables, each with ascending-ordered numerical digits. You will notice we used the evaluation brackets around the variable counter, %x. This allows mIRC to evaluate the variable, and attach it to the static portion of %array.. Basically, during run-time, whatever the %x variable's value is will be automatically appended to %array..
 
 .. note:: If you have multiple dynamic variable to add together, you need to add another pair of $+ [ … ] for each element:
 
@@ -399,24 +399,24 @@ is the same as
 
    var %color = $eval($+(%,color.,$2),2)
 
-$+(%,color.,$2) will produce the plain text “%color.John”, and that is then evaluated a second time (the 2 in $eval(,2)) to produce the value of the variable just like usual. Note that with the brackets method, you also get a double evaluation, but they happen at a different levels.
+$+(%,color.,$2) will produce the plain text "%color.John", and that is then evaluated a second time (the 2 in $eval(,2)) to produce the value of the variable just like usual. Note that with the brackets method, you also get a double evaluation, but they happen at a different levels.
 
-This method is easier to read/handle than the bracket, you can simply get the plain text variable you want with $+(), and then you evaluate that twice to get the content of the variable, this method is recommended, but note that it’s a bit slower than the bracket.
+This method is easier to read/handle than the bracket, you can simply get the plain text variable you want with $+(), and then you evaluate that twice to get the content of the variable, this method is recommended, but note that it's a bit slower than the bracket.
 
 .. note:: $eval is often used in the simple form $()
 
 Special Behaviors & Quirks
 --------------------------
 
-Variables routines are a bit special because usually, the first argument given to a variables related command is a variable name, yet mIRC doesn’t evaluate it.
+Variables routines are a bit special because usually, the first argument given to a variables related command is a variable name, yet mIRC doesn't evaluate it.
 
-Indeed if //echo %var would display its content, it’s because %var is evaluated and then passed as the parameter to the /echo command. //var %var is obviously not doing that otherwise the content of the variable or $null would be passed to it. So mIRC, on purpose doesn’t evaluate the variable name, but it will fail to do so in some case, when the arguments are dynamically passed for example:
+Indeed if //echo %var would display its content, it's because %var is evaluated and then passed as the parameter to the /echo command. //var %var is obviously not doing that otherwise the content of the variable or $null would be passed to it. So mIRC, on purpose doesn't evaluate the variable name, but it will fail to do so in some case, when the arguments are dynamically passed for example:
 
 .. code:: text
 
    //set -u $+ %var %setting
 
-which should set %setting but won’t, because it gets evaluated, you need to use % $+ setting here, /inc & /dec are most likely affected the same way.
+which should set %setting but won't, because it gets evaluated, you need to use % $+ setting here, /inc & /dec are most likely affected the same way.
 
 /unset also suffers from an evaluation problem, due to its ability to unset more than one variable on the same line, there is an issue when trying to unset a variable dynamically from a variable:
 
@@ -424,7 +424,7 @@ which should set %setting but won’t, because it gets evaluated, you need to us
 
    //var -s %a a,%b b,%ab,%a%b | unset -s %a $+ %b
 
-You might expect this to evaluate %b and stick its content to plain text “%a”, just like in //var -s %a $+ %b, but it won’t, mIRC won’t evaluate %b at all, thinking it’s a seperate variable name you want to unset as well, unsetting the wrong %a%b instead of %ab.
+You might expect this to evaluate %b and stick its content to plain text "%a", just like in //var -s %a $+ %b, but it won't, mIRC won't evaluate %b at all, thinking it's a seperate variable name you want to unset as well, unsetting the wrong %a%b instead of %ab.
 
 To workaround this problem, you must use evaluation brackets to force the evaluation:
 
@@ -438,6 +438,6 @@ If most commands cannot preserve spaces, /var can preserve spaces in all situati
 
    //var -s %a $+($chr(32),a,$chr(32),$chr(32),b,$chr(32),$chr(32)),%b $+($chr(32),a,$chr(32),$chr(32),b,$chr(32)) | echo -a $len(%a) $len(%b)
 
-which is displaying 7 5 instead of 7 6 (there is one less space at the end, which is lost because it’s a single trailing space)
+which is displaying 7 5 instead of 7 6 (there is one less space at the end, which is lost because it's a single trailing space)
 
-Variables are a great resource to have at your fingertips within mIRC! As you’ve seen, they are very powerful, and yet don’t require too much of a headache to understand :)
+Variables are a great resource to have at your fingertips within mIRC! As you've seen, they are very powerful, and yet don't require too much of a headache to understand :)

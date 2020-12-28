@@ -4,7 +4,7 @@ String And Token Manipulation
 String Manipulation
 -------------------
 
-String manipulation is the building block of many of today’s utilities and algorithms. Everything from formatting and validation to analysis and manipulation requires heavy use of string manipulation. Fortunately for you, the language provides powerful string manipulation facilities.
+String manipulation is the building block of many of today's utilities and algorithms. Everything from formatting and validation to analysis and manipulation requires heavy use of string manipulation. Fortunately for you, the language provides powerful string manipulation facilities.
 
 Basic String Operations
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +29,7 @@ It is often desired to join two strings together. Such operation is called a str
    //echo -a A $+ B
    AB
 
-It’s important to note that both identifiers and variables can be substituted instead of A and B. For example:
+It's important to note that both identifiers and variables can be substituted instead of A and B. For example:
 
 .. code:: text
 
@@ -39,7 +39,7 @@ It’s important to note that both identifiers and variables can be substituted 
      echo -a %x
    }
 
-The output after executing the above code (/hello) is “Hello World!”
+The output after executing the above code (/hello) is "Hello World!"
 
 Substrings
 ~~~~~~~~~~
@@ -80,7 +80,7 @@ Here is one last example before we move on:
 
    echo -a $left(Hello There!, 5) $right(Hi World!, 6)
 
-This gets the five left-most characters (“Hello”) and the five right-most characters (“World!”). The final output is:
+This gets the five left-most characters ("Hello") and the five right-most characters ("World!"). The final output is:
 
 .. code:: text
 
@@ -105,7 +105,7 @@ Start is the start of the substring from the left. A negative value indicates a 
      echo -a $mid(%str, 53, 10)
    }
 
-Will output “won’t work”.
+Will output "won't work".
 
 Case Transformation
 ~~~~~~~~~~~~~~~~~~~
@@ -162,7 +162,7 @@ The first variation returns the position of the first instance of the substring.
 
 .. note:: $poscs is a case-sensitive version of $pos; it has the same syntax.
 
-If you simply want to count the number of occurrences a list of substring is found in the string, you can use the $count identifier instead. It’s syntax is as follows:
+If you simply want to count the number of occurrences a list of substring is found in the string, you can use the $count identifier instead. It's syntax is as follows:
 
 .. code:: text
 
@@ -174,7 +174,7 @@ Multiple substrings can be counted at once. Here is a simple example:
 
    $count(Apples and Oranges, apple, orange)
 
-Which will print “2”.
+Which will print "2".
 
 .. note:: $countcs is a case-sensitive version of $count; it has the same syntax.
 
@@ -195,13 +195,13 @@ The syntax for both of them is:
    $replace(<string>, <substring>, <replacement>[, <substring2>, <replacement2>, ...])
    $replacex(<string>, <substring>, <replacement>[, <substring2>, <replacement2>, ...])
 
-Let’s start off with a small example:
+Let's start off with a small example:
 
 .. code:: text
 
    echo -a $replace(Hello World!, world, there)
 
-Which will print “Hello there!”. Below is a simple example. Note the difference between $replace and $replacex.
+Which will print "Hello there!". Below is a simple example. Note the difference between $replace and $replacex.
 
 .. code:: text
 
@@ -322,7 +322,7 @@ If you are like many people who are coming from another programming language it 
 Lists
 ~~~~~
 
-To better understand this concept; let’s consider a simple alias that returns the day of the week from a given Nth day. In this case, our list of tokens will look something like this:
+To better understand this concept; let's consider a simple alias that returns the day of the week from a given Nth day. In this case, our list of tokens will look something like this:
 
 .. code:: text
 
@@ -404,7 +404,7 @@ A nice application is an auto-joiner script. Using the /ajoin_add command we can
 Replacing Tokens
 ^^^^^^^^^^^^^^^^
 
-To replace a token you can use $puttok and the $reptok. $puttok replaces by the Nth token while $reptok replaces by the token’s value.
+To replace a token you can use $puttok and the $reptok. $puttok replaces by the Nth token while $reptok replaces by the token's value.
 
 .. code:: text
 
@@ -432,7 +432,7 @@ There are two identifiers that lets you remove tokens from the list: $deltok all
    var %str = $deltok(<list>, <Nth_pos-N2th_pos>, <code_point>)
    var %str = $remtok(<list>, <token>, <Nth_pos>, <code_point>)
 
-$deltok can delete a single token or multiple depending on the specified range. $remtok’s parameter is used to specify the Nth matching token to be removed. If is 0, all matching tokens are removed.
+$deltok can delete a single token or multiple depending on the specified range. $remtok's parameter is used to specify the Nth matching token to be removed. If is 0, all matching tokens are removed.
 
 .. code:: text
 
@@ -468,7 +468,7 @@ By now, you should be seeing why arrays in other languages can be visualized as 
      while ($queue_pop) echo -a $v1
    }
 
-The script above uses character with the code point of 7 as its delimiter. The script works pretty well for small values (can store as much as 200 items with an average value length of 20 characters or 20 lines with an average of 200 characters per line). Clearly one of the preconditions is that the value cannot contain any characters with a code point value of 7. This example is clearly not suitable for large queues or queues that must execute really fast. (The reason we’ve used code point 7 is because it’s a control character that means bell signal. This makes it one of the least likely characters to be used as a value).
+The script above uses character with the code point of 7 as its delimiter. The script works pretty well for small values (can store as much as 200 items with an average value length of 20 characters or 20 lines with an average of 200 characters per line). Clearly one of the preconditions is that the value cannot contain any characters with a code point value of 7. This example is clearly not suitable for large queues or queues that must execute really fast. (The reason we've used code point 7 is because it's a control character that means bell signal. This makes it one of the least likely characters to be used as a value).
 
 Token Searching/Retrieval
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -502,7 +502,7 @@ $findtok looks for an exact match while $matchtok looks for a partial match. $wi
 Miscellaneous Identifiers
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In addition to the identifiers we’ve introduced above, there are a few identifiers that have a more general purpose.
+In addition to the identifiers we've introduced above, there are a few identifiers that have a more general purpose.
 
 Size Of List
 ^^^^^^^^^^^^
@@ -551,7 +551,7 @@ The sorting options are n for numeric, c for channel prefix, and a for alphabeti
 Tokenizing A String
 ^^^^^^^^^^^^^^^^^^^
 
-Recall from an earlier tutorial that when you call an alias as a command, all the parameters you pass to it are stored in $N. It’s possible to programmatically create this same result using the /tokenize command. That command lets you break down a string into tokens that will be stored in $N.
+Recall from an earlier tutorial that when you call an alias as a command, all the parameters you pass to it are stored in $N. It's possible to programmatically create this same result using the /tokenize command. That command lets you break down a string into tokens that will be stored in $N.
 
 .. code:: text
 
@@ -567,7 +567,7 @@ For example
 Case Sensitivity
 ~~~~~~~~~~~~~~~~
 
-None of the identifiers explained above are case sensitive. If you wish to work with a case sensitive list or tokens, it’s still possible. All the identifiers have their counterpart case sensitive version. They follow the same syntax and they names are identifier with the addition of the “cs” at the end.
+None of the identifiers explained above are case sensitive. If you wish to work with a case sensitive list or tokens, it's still possible. All the identifiers have their counterpart case sensitive version. They follow the same syntax and they names are identifier with the addition of the "cs" at the end.
 
 For example:
 

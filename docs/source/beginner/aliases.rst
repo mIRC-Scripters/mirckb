@@ -26,7 +26,7 @@ A simple hello world alias would look like this:
      echo -a Hello World!
    }
 
-The keyword “alias” is required to tell mIRC the following code is an alias. “hello” is the name of the alias. Everything inside the pairs of brackets ({ and }) will get executed when this alias is called. To call that alias, we would simple call the name of it:
+The keyword "alias" is required to tell mIRC the following code is an alias. "hello" is the name of the alias. Everything inside the pairs of brackets ({ and }) will get executed when this alias is called. To call that alias, we would simple call the name of it:
 
 .. code:: text
 
@@ -43,7 +43,7 @@ Alias Arguments
 
 Data can be passed to aliases via the argument list. The argument list is always evaluated from left to right. The arguments are passed to the alias via the $N identifiers, where N is a numeric value from starting at one.
 
-If we called an alias called “example” like this:
+If we called an alias called "example" like this:
 
 .. code:: text
 
@@ -51,14 +51,14 @@ If we called an alias called “example” like this:
    ; or
    ... $example(A, B, C, D)
 
-Alias example will have $1 returning ‘A’, $2 returning ‘B’, $3 returning ‘C’, and $4 returning ‘D’. The total number of tokens available can be retrieved via the $0 identifiers. In this case $0 will return 4.
+Alias example will have $1 returning 'A', $2 returning 'B', $3 returning 'C', and $4 returning 'D'. The total number of tokens available can be retrieved via the $0 identifiers. In this case $0 will return 4.
 
 The exact rules on how $N work is identical to the how they work with the /tokenize command.
 
 Aliases Tab
 -----------
 
-The aliases tab is designed specifically for aliases only. Note that because it can only be used for aliases, the “alias” prefix must be left out:
+The aliases tab is designed specifically for aliases only. Note that because it can only be used for aliases, the "alias" prefix must be left out:
 
 .. code:: text
 
@@ -82,7 +82,7 @@ Command Prefixes
 . prefix (silencing)
 ^^^^^^^^^^^^^^^^^^^^
 
-You can prefix your command call by a dot ‘.’ to prevent mIRC from displaying its typical message, such as: ``.timer``
+You can prefix your command call by a dot '.' to prevent mIRC from displaying its typical message, such as: ``.timer``
 
 ! prefix (built-in call)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,12 +100,12 @@ You can use $$identifier to halt a routine if the value returned by the identifi
 / and . prefix (custom call)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, an identifier call will call the built-in mIRC identifier, you can force a call to your own custom identifier by using the ‘/’ or ‘.’ prefix, $/me makes sure it calls your custom identifier. If you do not have the alias defined, mIRC consider it a call to an alias named with the ‘/’ or the ‘.’
+By default, an identifier call will call the built-in mIRC identifier, you can force a call to your own custom identifier by using the '/' or '.' prefix, $/me makes sure it calls your custom identifier. If you do not have the alias defined, mIRC consider it a call to an alias named with the '/' or the '.'
 
 ~ prefix (built-in call)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-In essence, such a call to an identifier will only look at built-in identifiers, custom aliases won’t be searched for. This will bypass the Identifier Warning message but it’s a bit unclear why this is useful, it can allow you to check if an identifier exist in mIRC’s own language and has a value but you cannot use it to check built-in which would return $null then, and you have to execute the function, checking for "$findfile" or "$zip" would be problematic.
+In essence, such a call to an identifier will only look at built-in identifiers, custom aliases won't be searched for. This will bypass the Identifier Warning message but it's a bit unclear why this is useful, it can allow you to check if an identifier exist in mIRC's own language and has a value but you cannot use it to check built-in which would return $null then, and you have to execute the function, checking for "$findfile" or "$zip" would be problematic.
 
 ! prefix (delay evaluation)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -120,7 +120,7 @@ Given the alias prefixes above, you cannot start the name of an alias with a com
 Commands
 --------
 
-A command usually does not return any value, but instead, it processes the arguments it’s given. In a command, every argument is separated by a space. $0 will contain the total number of arguments passed to that alias. $N (where N is a number 1 to $0) will contain the arguments. For example:
+A command usually does not return any value, but instead, it processes the arguments it's given. In a command, every argument is separated by a space. $0 will contain the total number of arguments passed to that alias. $N (where N is a number 1 to $0) will contain the arguments. For example:
 
 .. code:: text
 
@@ -180,14 +180,14 @@ This will print:
 
    hello there!
 
-By default, ‘return’ strips leading/trailing/consecutive spaces from the result before returning it. Consider the following aliases:
+By default, 'return' strips leading/trailing/consecutive spaces from the result before returning it. Consider the following aliases:
 
 .. code:: text
 
    alias example_result   return   $str($chr(32),2) $+ a $+ $str($chr(32),2) $+ a $+ $str($chr(32),2)
    alias example_resultex returnex $str($chr(32),2) $+ a $+ $str($chr(32),2) $+ a $+ $str($chr(32),2)
 
-‘return’ removes the extra spaces, while returnex preserves them, as shown by:
+'return' removes the extra spaces, while returnex preserves them, as shown by:
 
 .. code:: text
 
@@ -247,7 +247,7 @@ Aliases as Both an Ident and Cmd
 
 Although most aliases do only serve as identifiers or commands, it is possible to act as both.
 
-Consider the following alias, logfind. Logfind finds the first matching line from the log for the active window. If it’s called as an identifier, we wil return the matching line. If it’s called as a command, we will print it instead:
+Consider the following alias, logfind. Logfind finds the first matching line from the log for the active window. If it's called as an identifier, we wil return the matching line. If it's called as a command, we will print it instead:
 
 .. code:: text
 
@@ -281,7 +281,7 @@ We can also call it as a command:
 Replacing Built-in Commands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can intercept any script’s use of a built-in command, as long as they have not used the ! prefix to force execution of the built-in command without searching all the aliases for a match. For example, here’s something to trap echo commands and remove colors, bold, etc from the displayed string:
+You can intercept any script's use of a built-in command, as long as they have not used the ! prefix to force execution of the built-in command without searching all the aliases for a match. For example, here's something to trap echo commands and remove colors, bold, etc from the displayed string:
 
 .. code:: text
 
@@ -291,13 +291,13 @@ You can intercept any script’s use of a built-in command, as long as they have
      echo %text
    }
 
-Because an alias is not re-entrant, using ‘echo’ inside an alias of the same name cannot be intercepted by that same alias, though it can be trapped by another alias named echo, unless this alias calls it like !echo. This does not completely trap all colors, because it does not remove the color from “/echo -c ctcp message”.
+Because an alias is not re-entrant, using 'echo' inside an alias of the same name cannot be intercepted by that same alias, though it can be trapped by another alias named echo, unless this alias calls it like !echo. This does not completely trap all colors, because it does not remove the color from "/echo -c ctcp message".
 
 Especially if your alias is non-local, beware about trapping built-in commands without supporting ALL variations of syntax for them. For example, the /server command has different behaviors for different purposes. There are some sets of switches which join a server, and other syntax for modifying the servers.txt file.
 
-Incorrect trapping of built-in commands is one source of bugs that can be easy to overlook, so you may need to use $isalias(built_in_command) to see if any of your scripts has trapped it, and even that doesn’t see local aliases unless $isalias is used from within that same script.
+Incorrect trapping of built-in commands is one source of bugs that can be easy to overlook, so you may need to use $isalias(built_in_command) to see if any of your scripts has trapped it, and even that doesn't see local aliases unless $isalias is used from within that same script.
 
-Something else which might need to be preserved is the state of $v1 and $v2. Consider the following while the above ‘alias echo’ is trapping the :
+Something else which might need to be preserved is the state of $v1 and $v2. Consider the following while the above 'alias echo' is trapping the :
 
 .. code:: text
 
@@ -324,11 +324,11 @@ This saves the $v1 and $v2 as they exist when entering the alias. Then before ex
 Aliases For Other Users
 -----------------------
 
-A consideration in creating aliases which might be executed by other users is to take into account that other users will not use the same colors that you do. There are large user bases who use each of black or white backgrounds, and there are lots of colors which contrast well against one yet have poor contrast against the other. In the default ’mIRC Classic" color set, 8 “Yellow” and 11 “LightCyan” do poorly against a White background, but do well against Black. On the other hand, 2 “NavyBlue” does well against White but poorly against Black. And of course, the White and Black text colors obviously don’t contrast well against the same color background.
+A consideration in creating aliases which might be executed by other users is to take into account that other users will not use the same colors that you do. There are large user bases who use each of black or white backgrounds, and there are lots of colors which contrast well against one yet have poor contrast against the other. In the default 'mIRC Classic" color set, 8 "Yellow" and 11 "LightCyan" do poorly against a White background, but do well against Black. On the other hand, 2 "NavyBlue" does well against White but poorly against Black. And of course, the White and Black text colors obviously don't contrast well against the same color background.
 
-One choice for your script is to override the background while setting text color, but even that doesn’t guarantee the user has set that pair of index colors to be a good contrast against each other. To guarantee the actual color hues display as you intend, you can use color index 16-98 as long as the script will be used on v7.52 or higher, because on older versions interpret those color indexes as black. Only a few color hues of the default 0-15 “mIRC Classic” colors are duplicated exactly within the 16-98 range, so others might need to choose the closest approximation.
+One choice for your script is to override the background while setting text color, but even that doesn't guarantee the user has set that pair of index colors to be a good contrast against each other. To guarantee the actual color hues display as you intend, you can use color index 16-98 as long as the script will be used on v7.52 or higher, because on older versions interpret those color indexes as black. Only a few color hues of the default 0-15 "mIRC Classic" colors are duplicated exactly within the 16-98 range, so others might need to choose the closest approximation.
 
-Another choice is to use echo’s -c switch to set the color which that user has assigned in their Alt+K dialog. For example, if your alias wishes to mimic a blue error message similar to those from built-in mIRC commands:
+Another choice is to use echo's -c switch to set the color which that user has assigned in their Alt+K dialog. For example, if your alias wishes to mimic a blue error message similar to those from built-in mIRC commands:
 
 .. code:: text
 
@@ -395,7 +395,7 @@ For example:
 Local Aliases
 -------------
 
-By default, every alias is public. This means any script from any file is able to call that alias (even from the editbox). An alias can be made local by using the -l switch. A local alias is only visible to local scripts - scripts that are in the same file as the alias itself. This is especially useful when your aliases have common names and you don’t want to cause conflicts when distributing your script to other people.
+By default, every alias is public. This means any script from any file is able to call that alias (even from the editbox). An alias can be made local by using the -l switch. A local alias is only visible to local scripts - scripts that are in the same file as the alias itself. This is especially useful when your aliases have common names and you don't want to cause conflicts when distributing your script to other people.
 
 .. code:: text
 
@@ -406,7 +406,7 @@ By default, every alias is public. This means any script from any file is able t
 Exposing Private And Public Functionality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It’s possible to allow more functionality for local aliases and hide that from outside scripts.
+It's possible to allow more functionality for local aliases and hide that from outside scripts.
 
 .. code:: text
 
@@ -426,8 +426,8 @@ The order used by mIRC to locate your alias is as follows:
 
 -  files are read from top to bottom and only the first found alias in file will be used
 -  if the call is made from a script and there is an alias for that name in the script file, that alias is used (regardless if the alias is local or not)
--  if none of the above is true, then the order in which you loaded the script is used. mIRC looks for the first non local alias in the order 1-or-more aliases files in the Alt+D tab of the script editor, followed by the scripts of the Alt+R tab in the order they’re loaded. If you have the same alias name defined twice in the same file, the 2nd one cannot be executed.
+-  if none of the above is true, then the order in which you loaded the script is used. mIRC looks for the first non local alias in the order 1-or-more aliases files in the Alt+D tab of the script editor, followed by the scripts of the Alt+R tab in the order they're loaded. If you have the same alias name defined twice in the same file, the 2nd one cannot be executed.
 -  if none is found, then mIRC check if this is a built-in command name
--  if still no match and if it was a command call, then it sends the command to the server, which sends back RAW numeric 421 if it’s an invalid server command
+-  if still no match and if it was a command call, then it sends the command to the server, which sends back RAW numeric 421 if it's an invalid server command
 
-.. note:: The command line of a timer behaves as if it’s inside the script from where it was launched, it will execute aliases found in the file first.
+.. note:: The command line of a timer behaves as if it's inside the script from where it was launched, it will execute aliases found in the file first.

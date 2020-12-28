@@ -15,15 +15,15 @@ There are three meaningful wildcard characters:
 Examples
 ~~~~~~~~
 
-The expression “t*s a \*?t” matches the string “this is a text”.
+The expression "t*s a \*?t" matches the string "this is a text".
 
-.. note:: If **&** is not used alone it matches the plain text ‘&’ character. It also doesn’t match $chr(32) if used to match a whole word, see below.
+.. note:: If **&** is not used alone it matches the plain text '&' character. It also doesn't match $chr(32) if used to match a whole word, see below.
 
--  “test &” matches “test this” or “test that”
--  “test &his” matches only “test &his”
--  “test thi&” matches only “test thi&”
--  “test th&s” matches only “test th&s”
--  “test &” doesn’t match “test $chr(32)” (consider $chr(32) to be evaluated here)
+-  "test &" matches "test this" or "test that"
+-  "test &his" matches only "test &his"
+-  "test thi&" matches only "test thi&"
+-  "test th&s" matches only "test th&s"
+-  "test &" doesn't match "test $chr(32)" (consider $chr(32) to be evaluated here)
 
 Bitwise operator?
 ^^^^^^^^^^^^^^^^^
@@ -133,13 +133,13 @@ Looking for a match on a nickname such as nick[name], you could use ``/\b $+ \Q 
 
 This is good but still has one flaw, if $nick contains \E, it will terminate the escaping sequence and subsequent character would be interpreted by PCRE.
 
-To solve the issue, you have to “escape” all the \E inside the value you’re using:
+To solve the issue, you have to "escape" all the \E inside the value you're using:
 
 .. code:: text
 
    /b\Q $+ $replacecs($nick,\E,\E\\E\Q) $+ \E\b/
 
-There’s no way to escape a character inside the escaping sequence \Q\E, you have to first terminate the sequence yourself with \E, then you have to match the actual \Emfrom the input with \\E, and then start a new escape sequence with \Q.
+There's no way to escape a character inside the escaping sequence \Q\E, you have to first terminate the sequence yourself with \E, then you have to match the actual \Emfrom the input with \\E, and then start a new escape sequence with \Q.
 
 Regex Identifiers
 ~~~~~~~~~~~~~~~~~
@@ -184,7 +184,7 @@ Below is an example of a regular expression, using name as the optional [Name] p
 
    //noop $regex(name, test, /([es])/g) | echo -a $regml(name, 0) : $regml(name, 1) -- $regml(name, 2)
 
-would display “2 : e – s”
+would display "2 : e – s"
 
 .. note:: $regml is a list of all captures accross all the matches made (/g modifier), which is often enough, but can be a problem in some cases.
 
@@ -192,7 +192,7 @@ would display “2 : e – s”
 
    //noop $regex(name, teasat, /([es])(a)/g) | echo -a $regml(name, 0) : $regml(name, 1) -- $regml(name, 2) -- $regml(name,3) -- $regml(name,4)
 
-would display “4 : e – a – s – a”
+would display "4 : e – a – s – a"
 
 You can now access the Nth captured group for a given match number with $regmlex.
 
@@ -203,7 +203,7 @@ $regmlex
 
    $regmlex([name],M,N)
 
-As stated above for $regml, when /g is used, $regml can be inconvenient: you cannot get all the captured group for a given match number for sure when you don’t know about the pattern or input string in advance, this identifier allows you to retrieve these captured groups (backreferences). M is the Mth match and N is the Nth capturing group, N default to 1 if not specified. It supports the same properties as $regml.
+As stated above for $regml, when /g is used, $regml can be inconvenient: you cannot get all the captured group for a given match number for sure when you don't know about the pattern or input string in advance, this identifier allows you to retrieve these captured groups (backreferences). M is the Mth match and N is the Nth capturing group, N default to 1 if not specified. It supports the same properties as $regml.
 
 $regsub
 ^^^^^^^
@@ -229,7 +229,7 @@ $regsubex is a more modern version of $regsub, in that it performs the match, th
 
 This time, ``<subtext>`` is evaluated during substitution so you can use %variables and $identifiers there, they will be evaluated.
 
-.. note:: You can now use $regsubex the same way as $regsub to get it to return the number of match and filling a %variable with the result, the name is required, both also supports output to a binvar: ``$regsubex([name],<input>,<regex>,<subtext>,%var|&binvar)\``
+.. note:: You can now use $regsubex the same way as $regsub to get it to return the number of match and filling a %variable with the result, the name is required, both also supports output to a binvar: ``$regsubex([name],<input>,<regex>,<subtext>,%var|&binvar)``
 
 Markers, $1- and Nested $regsubex calls
 '''''''''''''''''''''''''''''''''''''''
@@ -251,7 +251,7 @@ Special markers can be used inside the parameter of $regsubex:
 
 Here you have two matches with two backreferences made per match:
 
-First match is on ‘bc’:
+First match is on 'bc':
 
 .. code:: text
 
@@ -261,7 +261,7 @@ First match is on ‘bc’:
    \t is the current matchtext (same as $regml(\n)), which is 'b'
    \a is "b c" while \A is "bc"
 
-Second match is on ‘ef’:
+Second match is on 'ef':
 
 .. code:: text
 
@@ -274,16 +274,16 @@ Second match is on ‘ef’:
 The way mIRC evaluates those markers is special, it is important at this point to talk about the main steps happening when evaluating $identifiers:
 
 -  Process [ ], which evaluates any variables/identifiers inside of the brackets once, and [[ ]], which turns into [ ].
--  Separates the identifier’s parameters and evaluates each parameter once. These evaluations take place in order from left to right.
+-  Separates the identifier's parameters and evaluates each parameter once. These evaluations take place in order from left to right.
 -  Passes the parameters to the identifier
 
 $regsubex is a bit different, it has its own parsing routine. By design, $regsubex must not evaluate the subtext parameter before doing the regex match. The steps for $regsubex are shown below:
 
 -  Process [ ] and [[ ]].
--  Seperate parameters, evaluate the ‘input’ and the ‘regex’ parameters.
+-  Seperate parameters, evaluate the 'input' and the 'regex' parameters.
 -  Perform the regex match.
--  Tokenize $1- according to the number of markers used in the ‘subtext’ parameters.
--  Replaces any markers used in the subtext with their corresponding $N identifiers’s values.
+-  Tokenize $1- according to the number of markers used in the 'subtext' parameters.
+-  Replaces any markers used in the subtext with their corresponding $N identifiers's values.
 -  Evaluate the subtext parameter (one or more times, if /g is used).
 -  Performs the substitutions and returns the result.
 
@@ -291,7 +291,7 @@ mIRC internally uses $1- to store the values of the markers, it means the previo
 
 The way mIRC does this is quite special, it checks how many markers you have and creates a list of tokens (so, with $1-). Each token is assigned a value and mIRC then replaces the markers with the corresponding $N value before evaluating that result.
 
-Let’s have a look at an example, consider the following subtext:
+Let's have a look at an example, consider the following subtext:
 
 .. code:: text
 
@@ -317,7 +317,7 @@ An example of this is shown below:
 
 Here we have a break-down of the results of this regex:
 
--  The \\6 doesn’t mean anything, as there are not 6 back-references made in the pattern (only one backreference, the pattern will, however, be applied 6 times and more because of the /g modifier)
+-  The \\6 doesn't mean anything, as there are not 6 back-references made in the pattern (only one backreference, the pattern will, however, be applied 6 times and more because of the /g modifier)
 -  When a is matched, \n is 1, and only one marker is used. Therefore, $1 (used to represent \\6) is filled with $regml(1 + 6 -1) = $regml(6), which is f
 -  When b is matched, \n is 2, $1 is then filled with $regml(2 + 6 - 1) = $regml(7), which is g
 -  And so on until \n + N - 1 is greater than the total number of back-references, which at this point, $null is used.
@@ -327,7 +327,7 @@ Nested calls
 
 Nested $regsubex calls are possible, but caution must be taken with markers.
 
-First of all, if you use the /g modifier in either the outer or the inner $regsubex call and you need to use the different backreferences made in either of them, you must give a name to either one or both of them, otherwise, the call of the inner $regsubex will overwrite the backreferences of the outer $regsubex (if you don’t use a name, mIRC use a default name, which would be the same here).
+First of all, if you use the /g modifier in either the outer or the inner $regsubex call and you need to use the different backreferences made in either of them, you must give a name to either one or both of them, otherwise, the call of the inner $regsubex will overwrite the backreferences of the outer $regsubex (if you don't use a name, mIRC use a default name, which would be the same here).
 
 When mIRC replaces the markers, it will do so on the whole subtext parameter, consider:
 
@@ -341,7 +341,7 @@ In the above example, the outer $regsubex will make the regex match, then it wil
 
    $regsubex(\t,/(.)/g,$upper(\t))
 
-All occurences of \t (can appear anywhere and it can be touching others characters) are changed with their corresponding $N value, even the one inside $upper; this means that the code won’t work as expected. Typically we want this \t inside $upper() to be the corresponding value from the inner $regsubex, not the outer one.
+All occurences of \t (can appear anywhere and it can be touching others characters) are changed with their corresponding $N value, even the one inside $upper; this means that the code won't work as expected. Typically we want this \t inside $upper() to be the corresponding value from the inner $regsubex, not the outer one.
 
 The idea is to get mIRC to see something other than \t (inside that $upper()) when looking for markers from the outer $regsubex context.
 
@@ -382,13 +382,13 @@ Obviously, you can make this cleaner by calling a custom alias as the subtext wi
 No Marker
 '''''''''
 
-You cannot use a marker inside the subtext of the inner $regsubex to get the value of the marker of the outer $regsubex context, that’s why our previous example fails:
+You cannot use a marker inside the subtext of the inner $regsubex to get the value of the marker of the outer $regsubex context, that's why our previous example fails:
 
 .. code:: text
 
    $regsubex(name,abcdefcdab,/(cd)/g,$regsubex(\t,/(.)/g,$upper(\t)))
 
-You are tempted to think that \t inside $upper should always be “cd”, because that’s the only value that \t can have from the outer $regsubex and we just saw how the marker are replaced for the whole subtext, no matter where it appears. However, we also saw that mIRC does not blindly replace the markers with their real value, it uses the intermediate tokens identifiers ($1 etc), this is required otherwise element such as ) would be taken as closing parenthesis for identifier for example, or comma as argument seperator inside an identifier:
+You are tempted to think that \t inside $upper should always be "cd", because that's the only value that \t can have from the outer $regsubex and we just saw how the marker are replaced for the whole subtext, no matter where it appears. However, we also saw that mIRC does not blindly replace the markers with their real value, it uses the intermediate tokens identifiers ($1 etc), this is required otherwise element such as ) would be taken as closing parenthesis for identifier for example, or comma as argument seperator inside an identifier:
 
 Two markers are used in the subtext of the outer $regsubex, so mIRC make the match, cd is found twice so a two iterations loop is made, each time replacing the match with the evaluation of the subtext parameter. Right before that loop, because two markers are used, mIRC fills $1 with \t as well as $2 with \t and then evaluate the subtext, which gives before evaluation:
 
@@ -402,7 +402,7 @@ However remember that the subtext is not evaluated before the regex match is don
 
    $regsubex(cd,/(.)/g,$upper( $+ $2 $+ )))
 
-As you can see, mIRC adds the $+ if the markers have text surrounding them, that’s why you don’t need to space them out like identifiers. You might understand why it’s failing at this point: $2 has no value in this example because no marker are used in this inner $regsubex’s subtext parameter, so $2 is $null.
+As you can see, mIRC adds the $+ if the markers have text surrounding them, that's why you don't need to space them out like identifiers. You might understand why it's failing at this point: $2 has no value in this example because no marker are used in this inner $regsubex's subtext parameter, so $2 is $null.
 
 So how do you use the value of the marker of the outer $regsubex inside the subtext of the inner $regsubex?
 
@@ -450,7 +450,7 @@ This part is meant to document all the different features of PCRE that work with
 
 A regular expression is a pattern that is matched against a subject string from left to right. Most characters stand for themselves in a pattern, and match the corresponding characters in the subject.
 
-As a trivial example, the pattern “The quick brown fox” matches a portion of a subject string that is identical to itself.
+As a trivial example, the pattern "The quick brown fox" matches a portion of a subject string that is identical to itself.
 
 The power of regular expressions comes from the ability to include alternatives and repetitions in the pattern.
 
@@ -481,7 +481,7 @@ The metacharacters are as follows:
 Inside a character class
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Part of a pattern that is in square brackets is called a “character class”.
+Part of a pattern that is in square brackets is called a "character class".
 
 In a character class the only metacharacters are:
 
@@ -523,7 +523,7 @@ The handling of a backslash followed by a digit other than 0 is complicated, and
 
 Outside a character class, PCRE reads the digit and any following digits as a decimal number. If the number is less than 8, or if there have been at least that many previous capturing left parentheses in the expression, the entire sequence is taken as a back reference.
 
-Inside a character class, or if the decimal number following  is greater than 7 and there have not been that many capturing subpatterns, PCRE handles \\8 and \\9 as the literal characters “8” and “9”, and otherwise re-reads up to three octal digits following the backslash, using them to generate a data character. Any subsequent digits stand for themselves.
+Inside a character class, or if the decimal number following  is greater than 7 and there have not been that many capturing subpatterns, PCRE handles \\8 and \\9 as the literal characters "8" and "9", and otherwise re-reads up to three octal digits following the backslash, using them to generate a data character. Any subsequent digits stand for themselves.
 
 For example:
 
@@ -545,11 +545,11 @@ By default, after \x that is not followed by {, from zero to two hexadecimal dig
 
 Characters that are specified using octal or hexadecimal numbers are limited to certain values, less than 0x10ffff and a valid codepoint.
 
-Invalid Unicode codepoints are the range 0xd800 to 0xdfff (the so called “surrogate” codepoints), and 0xffef.
+Invalid Unicode codepoints are the range 0xd800 to 0xdfff (the so called "surrogate" codepoints), and 0xffef.
 
 All the sequences that define a single character value can be used both inside and outside character classes. In addition, inside a character class, \b is interpreted as the backspace character (ascii 08).
 
-\N matches a non newline character, (same as the dot ‘.’ without single line mode (/s modifier), it is not allowed inside a character class.
+\N matches a non newline character, (same as the dot '.' without single line mode (/s modifier), it is not allowed inside a character class.
 
 \g+N or \g-N is a relative back reference, it matches the value of the capturing group that can be found by counting as many opening parentheses of named or numbered capturing groups as specified by the number from right to left starting at the backreference. (a)(b)(c)(d)\g<-3> matches abcdb.
 

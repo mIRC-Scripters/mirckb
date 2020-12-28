@@ -6,13 +6,13 @@ This article focuses on the very basics of mIRC Scripting. The target audience i
 Where Does The Code Go?
 -----------------------
 
-All of your code, regardless of its type, should go in the Script Editor. To open the script editor press-and-hold the key on your keyboard, and then tap the R key (+R). Alternatively, you can go to the Tools Menu -> Script editor.
+All of your code, regardless of its type, should go in the Script Editor. To open the script editor press-and-hold the Alt key on your keyboard, and then tap the R key (:kbd:`Alt-r`). Alternatively, you can go to the Tools Menu -> Script editor.
 
 Below is a screen shot of the mIRC Script Editor:
 
 .. image:: Remote_menu.png
 
-You will notice that there are five selectable tabs: Aliases, Popups, Remotes, Users, and Variables. Let’s try and get you familiar with each one. Before we dive into what these little (or rather big) guys do, let’s get to know some basics first.
+You will notice that there are five selectable tabs: Aliases, Popups, Remotes, Users, and Variables. Let’s try and get you familiar with each one. Before we dive into what these do, let’s get to know some basics first.
 
 The Very Basics
 ---------------
@@ -53,21 +53,21 @@ If you asked any script related question in a help channel, you were probably to
 /echo command
 ~~~~~~~~~~~~~
 
-The most common type of statements are commands. Commands are a way to tell mIRC to perform a basic operation. By far the most common command you will be using is the /echo command. The /echo command simply prints text to the screen. Every echo command prints on a line of its own. Even if the /echo command is typed into the editbox of a #channel, nobody in channel sees the message unless you do not begin the text with the “/” symbol. Let’s dive right into an example! Type the following code into your editbox:
+The most common type of statements are commands. Commands are a way to tell mIRC to perform a basic operation. By far the most common command you will be using is the /echo command. The /echo command simply prints text to the screen. Every echo command prints on a line of its own. Even if the /echo command is typed into the editbox of a #channel, nobody in channel sees the message unless you do not begin the text with the "/" symbol. Let’s dive right into an example! Type the following code into your editbox:
 
 .. code:: text
 
    //echo Hello World!
 
-When you are finished typing this echo command, hit your Return or Enter key on your keyboard. You should see the following result:
+When you are finished typing this echo command, hit your :kbd:`Return` or :kbd:`Enter` key on your keyboard. You should see the following result:
 
 .. image:: Hello_edit.png
 
 .. note:: Your editbox will not have anything in it, it will be cleared once you press the Enter or Return key.
 
-The command will be in your editbox history, and you can use the UP ARROW key 1 or more times to bring previous commands into the editbox. You can press the <enter> key immediately to repeat the message or /command, or you can edit the text before pressing <enter>. Recall we said earlier that multiple statements can be combined by using the pipe \| ? Let’s print 3 lines to the screen using the echo command and some pipes. Type the following code into your editbox:
+The command will be in your editbox history, and you can use the UP ARROW key 1 or more times to bring previous commands into the editbox. You can press the :kbd:`Enter` key immediately to repeat the message or /command, or you can edit the text before pressing :kbd:`Enter`. Recall we said earlier that multiple statements can be combined by using the pipe \| ? Let’s print 3 lines to the screen using the echo command and some pipes. Type the following code into your editbox:
 
-.. note:: Remember to hit the Return or Enter keys from now on!
+.. note:: Remember to hit the :kbd:`Return` or :kbd:`Enter` keys from now on!
 
 .. code:: text
 
@@ -85,7 +85,7 @@ You should hopefully see the following results:
 
 .. note:: As you may have noticed, from the editbox, you can only pipe statements, you can’t use newlines.
 
-You will notice that after the first //echo command, once we’ve piped, we do not need to type any more slashes; this is because mIRC interprets the rest of the statements via the first initial two slashes. If you use one slash here, “Scripting \| echo Is \| echo Fun!” will be echoed, because the pipes have not been interpreted as statements seperator, we usually refer to something that can be interpreted that is not interpreted as ‘plain text’. We also refer to the processing of anything special (we’ve only seen the pipe character for now, but they are others) as ‘evaluation’, we will discuss it later. When you begin an editbox command with a double //, it does not execute the 1st command if the // is immediately followed by a space character, so be sure to not have an unnecessary space at the beginning.
+You will notice that after the first //echo command, once we’ve piped, we do not need to type any more slashes; this is because mIRC interprets the rest of the statements via the first initial two slashes. If you use one slash here, "Scripting \| echo Is \| echo Fun!" will be echoed, because the pipes have not been interpreted as statements seperator, we usually refer to something that can be interpreted that is not interpreted as ‘plain text’. We also refer to the processing of anything special (we’ve only seen the pipe character for now, but there are others) as ‘evaluation’, we will discuss it later. When you begin an editbox command with a double //, it does not execute the 1st command if the // is immediately followed by a space character, so be sure to not have an unnecessary space at the beginning.
 
 Let’s Make It Into An Alias, Shall We?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,7 +107,7 @@ We can tweak the statement of this alias just a little in order to perform multi
 
    alias name statement 1 | statement 2 | statement 3
 
-Notice that with the piping, this alias now performs multiple actions. Let’s make the code we used above to print “Scripting Is Fun!”, all on separate lines, and call this new alias “fun”:
+Notice that with the piping, this alias now performs multiple actions. Let’s make the code we used above to print "Scripting Is Fun!", all on separate lines, and call this new alias "fun":
 
 .. code:: text
 
@@ -199,7 +199,10 @@ This should help you understand how brackets are used. They are other situations
 
 This time the statement’s echoing of *More*, *Or* and *Less* all belong to the same *if (3 == 3)* statement. If you were to change that condition to something such as *if (3 == 4)*, none of the echo commands will show up because this if statement is false.
 
-!!! attention \* The opening bracket **{** must be on the same line as the alias keyword; \* The opening bracket must not touch anything; \* The closing bracket must not touch anything else; \* The closing bracket must be the last part of the block of code.
+.. attention:: - The opening bracket **{** must be on the same line as the alias keyword; 
+  - The opening bracket must not touch anything; 
+  - The closing bracket must not touch anything else; 
+  - The closing bracket must be the last part of the block of code.
 
 .. note:: Those limitations are only true for aliases, others context of the language can have some differences.
 
@@ -227,13 +230,13 @@ Wrong Examples
 
    alias example{echo hello! }
 
-The opening bracket is touching the “example” and “echo”.
+The opening bracket is touching the "example" and "echo".
 
 .. code:: text
 
    alias example { echo hello!}
 
-The closing bracket is touching the “hello!”.
+The closing bracket is touching the "hello!".
 
 .. code:: text
 
@@ -242,7 +245,7 @@ The closing bracket is touching the “hello!”.
      echo hello!
    }
 
-The opening bracket must be on the same line as the “alias” keyword.
+The opening bracket must be on the same line as the "alias" keyword.
 
 Using A Block Of Code
 ~~~~~~~~~~~~~~~~~~~~~
@@ -306,9 +309,9 @@ The second type of comment is the multi-line comment. A multi-line comment can, 
 
 Your text must go between the /\* and the \*/ in order for it to be treated as a comment.
 
-!!! attention \* Text may touch the opening /\* on the right; however, /\* must start the line; \* The closing \*/ must be on a line of its own; \* Text is NOT indented unless placed inside curly brackets. The opening brace can be on the same line with the /\* and the final comment line isn’t indented if there’s a closing brace on that line.
-
-.. _right-examples-1:
+.. attention:: - Text may touch the opening /\* on the right; however, /\* must start the line; 
+  - The closing \*/ must be on a line of its own; 
+  - Text is NOT indented unless placed inside curly brackets. The opening brace can be on the same line with the /\* and the final comment line isn’t indented if there’s a closing brace on that line.
 
 Right Examples
 ~~~~~~~~~~~~~~
@@ -356,8 +359,6 @@ In both of the above examples, the opening comment parameters are properly execu
    indented
    */
 
-.. _wrong-examples-1:
-
 Wrong Examples
 ~~~~~~~~~~~~~~
 
@@ -366,13 +367,13 @@ Wrong Examples
    /* testing
       test */
 
-!!! attention The \*/ is not on a line of its own.
+.. attention:: The \*/ is not on a line of its own.
 
 .. code:: text
 
    /* comment */
 
-!!! attention The \*/ is not on a line of its own.
+.. attention:: The \*/ is not on a line of its own.
 
 Multiple Aliases
 ----------------
@@ -473,19 +474,19 @@ The **/** indicates that the line should not be evaluated. **$me** is returned l
 
    //var %temp echo | echo -a message 1 | %temp echo -a test $me | echo -a message 2
 
-If this line were in a remote script (where it doesn’t matter whether or not the line begins with //), the %temp variable would be evaluated into its contents before executing that command, so it behaves as if the command begins with “echo echo” instead of “%temp echo”, and it would display into the active window “echo -a test” followed by your current nick. However if you pasted the 4 commands into the editbox, it displays only “message 1”, because it halts as soon as it encounters a command beginning with a $ or % symbol. You can force the editbox to evaluate a %variable or $identifier at the beginning of the command by wrapping it inside [ square braces ]. The square braces must not touch any other character except a SPACE, or else they will not be treated as the special symbol forcing evaluation in a situation where it would not normally evaluate.
+If this line were in a remote script (where it doesn’t matter whether or not the line begins with //), the %temp variable would be evaluated into its contents before executing that command, so it behaves as if the command begins with "echo echo" instead of "%temp echo", and it would display into the active window "echo -a test" followed by your current nick. However if you pasted the 4 commands into the editbox, it displays only "message 1", because it halts as soon as it encounters a command beginning with a $ or % symbol. You can force the editbox to evaluate a %variable or $identifier at the beginning of the command by wrapping it inside [ square braces ]. The square braces must not touch any other character except a SPACE, or else they will not be treated as the special symbol forcing evaluation in a situation where it would not normally evaluate.
 
 .. code:: text
 
    //var %temp echo | echo -a message 1 | [ %temp ] echo -a test $me | echo -a message 2
 
-Adding the [ square braces ] forces the editbox to evaluate %temp, and it will then behave the same way it behaves in the remote script. If the %temp contents were $null (empty), the command in the remote script is executed as if “%temp echo -a test $me” changes to “echo -a test $me”, and the displayed message changes from “echo -a test YourNick” to “test YourNick”. The same thing happens when the editbox command begins with a dollar sign:
+Adding the [ square braces ] forces the editbox to evaluate %temp, and it will then behave the same way it behaves in the remote script. If the %temp contents were $null (empty), the command in the remote script is executed as if "%temp echo -a test $me" changes to "echo -a test $me", and the displayed message changes from "echo -a test YourNick" to "test YourNick". The same thing happens when the editbox command begins with a dollar sign:
 
 .. code:: text
 
    //echo -a message 1 | $lower(echo) -a test | message 2
 
-This line inside a remote script displays both “test” and “message 2”, but in the editbox it halts after displaying “message 1”. By using the [ square braces ] you can force it to evaluate the identifier, and uses the returned value of the identifier as part of the command:
+This line inside a remote script displays both "test" and "message 2", but in the editbox it halts after displaying "message 1". By using the [ square braces ] you can force it to evaluate the identifier, and uses the returned value of the identifier as part of the command:
 
 .. code:: text
 
@@ -515,7 +516,7 @@ You may have noticed that we added a strange new thing, **-a**. The -a is called
 
    //echo -a The number �42� is even.
 
-.. note:: This website does not correctly handle the color-code, so the above symbols containing the “?” should be edited in your editbox before pressing enter. Replace those symbols by the character returned from pressing Ctrl+K, holding down the CONTROL button while pressing the “K” button once. You can close the popup color box because the script already contains the color number.
+.. note:: This website does not correctly handle the color-code, so the above symbols containing the "?" should be edited in your editbox before pressing enter. Replace those symbols by the character returned from pressing Ctrl+K, holding down the CONTROL button while pressing the "K" button once. You can close the popup color box because the script already contains the color number.
 
 Will produce the following result:
 
@@ -533,7 +534,7 @@ Will produce the following result:
 
 The number 2 is even.
 
-.. note:: Most fonts display strange symbols when you press the keys for formatting codes, such as Ctrl+B bold and Ctrl+K color and Ctrl+O. If you want to see these symbols differently in your script editor, search for the font “Fixedsys Excelsior”, because it shows these symbols with a small b/c/o inside a black square, though it won’t show special symbols for other format codes like Ctrl+R Ctrl+I Ctrl+U. You can change the Font of your scripts editor to be different than the fonts of your channels, and it’s usually easier to read code if you choose a non-proportional (fixed) font for the script editor. The “No Liga” version can be downloaded here: http://www.xise.nl/mirc/fsex2p00se3.ttf
+.. note:: Most fonts display strange symbols when you press the keys for formatting codes, such as Ctrl+B bold and Ctrl+K color and Ctrl+O. If you want to see these symbols differently in your script editor, search for the font "Fixedsys Excelsior", because it shows these symbols with a small b/c/o inside a black square, though it won’t show special symbols for other format codes like Ctrl+R Ctrl+I Ctrl+U. You can change the Font of your scripts editor to be different than the fonts of your channels, and it’s usually easier to read code if you choose a non-proportional (fixed) font for the script editor. The "No Liga" version can be downloaded here: http://www.xise.nl/mirc/fsex2p00se3.ttf
 
 Actions
 ~~~~~~~
@@ -556,7 +557,7 @@ For example:
      me Leaves
    }
 
-The code should produce something like this (‘’Your name will obviously be different’’):
+The code should produce something like this (Your name will obviously be different):
 
 .. image:: Action_example.png
 

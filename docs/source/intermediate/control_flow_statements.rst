@@ -4,7 +4,7 @@ Control Flow Statements
 If-Then-Else
 ------------
 
-A conditional statement is a control flow construct in mIRC that can execute a set of commands only after comparing or testing a condition. A condition in mIRC has a false truth value if it’s $null, $false, or 0.
+A conditional statement is a control flow construct in mIRC that can execute a set of commands only after comparing or testing a condition. A condition in mIRC has a false truth value if it's $null, $false, or 0.
 
 Intro
 ~~~~~
@@ -37,7 +37,7 @@ A typical conditional statement consists of two operands and an operator. An ope
 
    2 > 3
 
-In the example above, “>” is the symbol for the greater than operator. The example above has 2 operands: 2 and 3. In the case of the example above, the answer is false, 2 is not greater than 3.
+In the example above, ">" is the symbol for the greater than operator. The example above has 2 operands: 2 and 3. In the case of the example above, the answer is false, 2 is not greater than 3.
 
 Operators
 ~~~~~~~~~
@@ -93,7 +93,7 @@ The basic syntax is:
      ;code to execute only if the condition was false
    }
 
-In the example below, we assign the appropriate time of day to the “%time” variable. We then displayed the result to the screen. We used an if statement to check if the time (just the hours) is less than 10. If true, set %time to day, else, set %time to morning. Depending on the time of day for you, the result will be “Good morning!” or “Good day!”.
+In the example below, we assign the appropriate time of day to the "%time" variable. We then displayed the result to the screen. We used an if statement to check if the time (just the hours) is less than 10. If true, set %time to day, else, set %time to morning. Depending on the time of day for you, the result will be "Good morning!" or "Good day!".
 
 .. code:: text
 
@@ -226,12 +226,12 @@ A common usage for an inline if is to decide where to send a reply of a command.
 Operators
 ---------
 
-By now, you should have a pretty good idea of what variables are and how to use them. Now, all you need to be able to do is operate on them. That’s exactly what mIRC Operators lets you do. Operators are special symbols or keywords that perform specific operations on two or three operands in mIRC.
+By now, you should have a pretty good idea of what variables are and how to use them. Now, all you need to be able to do is operate on them. That's exactly what mIRC Operators lets you do. Operators are special symbols or keywords that perform specific operations on two or three operands in mIRC.
 
 .. _operators-2:
 
-Operators
-~~~~~~~~~
+Types Of Operators
+~~~~~~~~~~~~~~~~~~
 
 mIRC provides the following types of operators:
 
@@ -329,7 +329,7 @@ Example
 String Comparison Operators
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-mIRC provides a set of operators that can be used to compare two strings. The two iswm and iswmcs operators support two wildcard characters as well, the question mark (?) substitutes for any one character and the asterisk character (“\*”) substitutes for any zero or more characters.
+mIRC provides a set of operators that can be used to compare two strings. The two iswm and iswmcs operators support two wildcard characters as well, the question mark (?) substitutes for any one character and the asterisk character ("\*") substitutes for any zero or more characters.
 
 +-----------------------+------------------------------------+------------------------------------------------------------------------------------------------+
 | Syntax                | Name                               | Result                                                                                         |
@@ -442,7 +442,7 @@ The if statement above will only be true if %a contains only upper case letters 
 Short-circuit evaluation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-mIRC will only evaluate as much of the condition has it needs. Consider the AND example from above, if %input doesn’t contain only upper case letters, the second condition will never even evaluate. This is important to keep in mind when using custom identifiers inside an if statement.
+mIRC will only evaluate as much of the condition has it needs. Consider the AND example from above, if %input doesn't contain only upper case letters, the second condition will never even evaluate. This is important to keep in mind when using custom identifiers inside an if statement.
 
 Channel-related Operators
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -464,7 +464,7 @@ mIRC also provides a set of commands to involve IRC channels:
 +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | %x isreg %y           | Is a Regular          | True, if nick %x is a regular user on channel %y.                                                                                    |
 +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-| %x ischan             | Is a Channel          | True, if channel %x is a channel you are on and if the %x channel window is still open (doesn’t matter if you are connected or not). |
+| %x ischan             | Is a Channel          | True, if channel %x is a channel you are on and if the %x channel window is still open (doesn't matter if you are connected or not). |
 +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 | %x isban %y           | Is a ban              | True, if ban address %x is a ban on channel %y. (taken from IBL)                                                                     |
 +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
@@ -556,7 +556,7 @@ Here is how the while loop works:
 True Conditions
 ^^^^^^^^^^^^^^^
 
-So we said the while loop will continue to iterate as long as the condition is true. But what exactly does that mean? In mSL, a condition is true if the outcome of the condition is NOT 0, $null, or :math:`false. For example let %x be 5, if the condition is while (`\ calc(%x - 5)) {, since 5-5 is 0, the while loop’s condition is false, thus it will not execute any code inside it.
+So we said the while loop will continue to iterate as long as the condition is true. But what exactly does that mean? In mSL, a condition is true if the outcome of the condition is NOT 0, $null, or $false. For example let %x be 5, if the condition is ``while ($calc(%x - 5)) {``, since 5-5 is 0, the while loop's condition is false, thus it will not execute any code inside it.
 
 .. note:: If you are using an operator, for example while (0 == 0) {, the operator is going to define if the condition is true or not, 0 being equal to 0, this condition is true.
 
@@ -582,7 +582,7 @@ Take a look at the following alias:
      echo -a Line number: 10
    }
 
-This simple alias prints “line number:” follows by the line number, 1 to 10. This simple alias has lots of repeated code; The ideal place for a while loop.
+This simple alias prints "line number:" follows by the line number, 1 to 10. This simple alias has lots of repeated code; The ideal place for a while loop.
 
 We can rewrite that alias:
 
@@ -596,12 +596,12 @@ We can rewrite that alias:
      }
    }
 
-Using the while loop, we can repeat the echo statement as many times as we want. Let’s take a look at what’s going on:
+Using the while loop, we can repeat the echo statement as many times as we want. Let's take a look at what's going on:
 
-1. We create a local variable called “%line” and assign it the number 1
-2. The while loop checks our conditional statement. As long as “%line” is less than or equal to 10, we can enter the while loop.
-3. The first statement inside the while loop will cause mIRC to print to the active window “Line number:” follows by the value of “%line”.
-4. The second statement inside the while loop will cause the “%line” variable to increase by 1 (if no number is specified the default is one).
+1. We create a local variable called "%line" and assign it the number 1
+2. The while loop checks our conditional statement. As long as "%line" is less than or equal to 10, we can enter the while loop.
+3. The first statement inside the while loop will cause mIRC to print to the active window "Line number:" follows by the value of "%line".
+4. The second statement inside the while loop will cause the "%line" variable to increase by 1 (if no number is specified the default is one).
 5. Go back to step 2.
 
 Nested Loops
@@ -660,7 +660,7 @@ Break Statement
 
 The break statement lets you break out of the currently executing while loop at any point. The break statement will only break out of the while loop in which it is nested in.
 
-break In the example below, we set variable “%x” to 10 and decrease it by one each time. When “%x” reaches 5, break out of the loop.
+break In the example below, we set variable "%x" to 10 and decrease it by one each time. When "%x" reaches 5, break out of the loop.
 
 .. code:: text
 
@@ -736,7 +736,7 @@ Take a look at this example:
      }
    }
 
-In the example above we created a loop to go from 0 to 20. The if statement checks if the number is odd. If true, we make it jump to the next iteration (Via the /continue command). The last statement of the loop’s body is used to print the number.
+In the example above we created a loop to go from 0 to 20. The if statement checks if the number is odd. If true, we make it jump to the next iteration (Via the /continue command). The last statement of the loop's body is used to print the number.
 
 The output is:
 
@@ -760,13 +760,13 @@ The output is:
 Reference Of Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-mIRC provides two identifiers to retrieve the first or second parameter of the while’s conditional statement. Please note, the identifiers will return the first and second parameter of the $TRUE condition following short-circuit evaluation guidelines.
+mIRC provides two identifiers to retrieve the first or second parameter of the while's conditional statement. Please note, the identifiers will return the first and second parameter of the $TRUE condition following short-circuit evaluation guidelines.
 
 .. code:: text
 
    $v1 and $v2
 
-In the example below we will count from 1 to 10 using a while loop. Variable “%a” will be set to 1, the loop will keep executing as long as %a is less than or equal to 10.
+In the example below we will count from 1 to 10 using a while loop. Variable "%a" will be set to 1, the loop will keep executing as long as %a is less than or equal to 10.
 
 .. code:: text
 
@@ -781,7 +781,7 @@ In the example below we will count from 1 to 10 using a while loop. Variable “
 Infinite Loops
 ~~~~~~~~~~~~~~
 
-An infinite loop happens when a condition always evaluates to true. Most times, its due to an error. If that’s the case, you can force mIRC to break out of it using the **Ctrl+Break** key combinations. Such a condition may be used on purpose, where you need to use the break statement to break out of the loop, but you can always rewrite the code otherwise to avoid this type of condition.
+An infinite loop happens when a condition always evaluates to true. Most times, its due to an error. If that's the case, you can force mIRC to break out of it using the :kbd:`Control-Break` key combination. Such a condition may be used on purpose, where you need to use the break statement to break out of the loop, but you can always rewrite the code otherwise to avoid this type of condition.
 
 .. code:: text
 
@@ -811,7 +811,7 @@ For these situations there are several techniques you can use to mitigate this:
 Goto Statements
 ---------------
 
-Goto is a command that allows you to jump unconditionally to a specific location within a procedure. Gotos can ‘jump’ forward or backward within a script but they may not leave the alias or event itself (they cannot jump to any calling routine as well). The goto command tells mIRC to jump to another line which matches a label.
+Goto is a command that allows you to jump unconditionally to a specific location within a procedure. Gotos can 'jump' forward or backward within a script but they may not leave the alias or event itself (they cannot jump to any calling routine as well). The goto command tells mIRC to jump to another line which matches a label.
 
 Although in many cases the use of gotos can often lead to spaghetti-code. and can usually be replaced with easier to read and follow while statements and if statements, it is still important to understand this command and have it in your toolbox.
 
@@ -871,7 +871,7 @@ Change the code to:
 
 Now the goto is seen by mIRC and you should see %test being increased to 1 and then to 2.
 
-To get mIRC to jump to a goto label that is after the current position, this is less strict: mIRC parse the code without executing it, which means it is basically parsing the code according to major rules defining the language, the ‘{’, ‘}’, ‘\|’ and newlines tokens. so considering the following:
+To get mIRC to jump to a goto label that is after the current position, this is less strict: mIRC parse the code without executing it, which means it is basically parsing the code according to major rules defining the language, the '{', '}', '\|' and newlines tokens. so considering the following:
 
 .. code:: text
 
@@ -929,15 +929,15 @@ Sometimes a goto can result in smaller code if we need a do-while style loop lik
 Error Handling
 ~~~~~~~~~~~~~~
 
-Although it is rare to use this feature, the “error” label is a designated goto section for error checking. If there is an error in the script, mIRC try to find an :error label in the current routine. If no :error label is found in the current routine, mIRC will propagate the error backward to any calling routine and look for an :error label in those routines.
+Although it is rare to use this feature, the "error" label is a designated goto section for error checking. If there is an error in the script, mIRC try to find an :error label in the current routine. If no :error label is found in the current routine, mIRC will propagate the error backward to any calling routine and look for an :error label in those routines.
 
 This gives you the ability to continue with the script at any point regardless of the error, if you want.
 
 After catching an error with :error, you must check for an error by checking $error with a typical /if statement to make sure you reached the :error part because of an error and not because the script is just reaching that point.
 
-If you want to keep going with the code, use /reseterror as soon as possible, this reset the error (and therefore $error’s value), mIRC leaves the error state and you can safely execute anything you want.
+If you want to keep going with the code, use /reseterror as soon as possible, this reset the error (and therefore $error's value), mIRC leaves the error state and you can safely execute anything you want.
 
-If you don’t use /reseterror, you can also use /return to tell mIRC to look for a different :error label in previous routines. If you don’t use /reseterror or /return you must be careful: mIRC is in an error state, yet it must still process your code somehow to allow you to *at least* check for error and reset it, so the if statement feature probably always works, /echo itself also probably does always work but it’s unclear what you can do and what you can’t do. You would think that since mIRC is somehow forced to allow you to use the scripting engine to check for error and reset it, you could be able to do anything even without calling /reseterror first, this is not true (see examples), the exact list of features that are working in this situation are unknown, it’s recommended not to do anything before using /reseterror in this situation.
+If you don't use /reseterror, you can also use /return to tell mIRC to look for a different :error label in previous routines. If you don't use /reseterror or /return you must be careful: mIRC is in an error state, yet it must still process your code somehow to allow you to *at least* check for error and reset it, so the if statement feature probably always works, /echo itself also probably does always work but it's unclear what you can do and what you can't do. You would think that since mIRC is somehow forced to allow you to use the scripting engine to check for error and reset it, you could be able to do anything even without calling /reseterror first, this is not true (see examples), the exact list of features that are working in this situation are unknown, it's recommended not to do anything before using /reseterror in this situation.
 
 .. code:: text
 
@@ -998,7 +998,7 @@ Inside the script editor, you can use group to disable/enable a whole piece of c
    }
    #group_name end
 
-Effectively disables the **myalias** alias. The keyword that can appear after the #group_name on top are “on” to enable it or “off”, to disable it. At the bottom the keyword is always “end”.
+Effectively disables the **myalias** alias. The keyword that can appear after the #group_name on top are "on" to enable it or "off", to disable it. At the bottom the keyword is always "end".
 
 You can use /enable #group and /disable #group to enable/disable a group, you can use $group to get the state of a group, its name, and the file in which the group can be found. You can use /groups to list the groups.
 

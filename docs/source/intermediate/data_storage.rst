@@ -9,17 +9,17 @@ Binary variables are a special storage offered by mIRC that can hold an array of
 Overview
 ~~~~~~~~
 
-mIRC’s binary &variables are distinguished from its text %variables by beginning with the & ampersand symbol, while text variables begin with the % percent symbol. They differ from text variables in content, scope, duration, and length.
+mIRC's binary &variables are distinguished from its text %variables by beginning with the & ampersand symbol, while text variables begin with the % percent symbol. They differ from text variables in content, scope, duration, and length.
 
 -  They are composed of byte values, which can be any of the values 0-255. Among other differences, they can contain the $chr(0) value, which text variables cannot.
 -  Their scope is similar to that of local identifiers such as $nick and $rawmsg. They exist as long as scripting engine is running, then are deleted.
 -  Binary variables are not saved to the variables file (default name is vars.ini) the way global %variables are saved. To preserve them, you must either write them to a disk file, save to a hashtable item, or use $encode to save them to a %variable or hashtable.
 -  While text variables are limited in length by the 4150 line length, binary variable length is limited by available memory.
--  mIRC does not interpret the content of your binary variable, while it does for simple %variable. By default a %variable cannot be set to the value "" (just two double quotes characters), this is because in core variable routines, it is interpreted as empty string, as though it supported quoted string. Note that since mIRC 7.52, /var and /set support a -p switch which preserves the data: "" are now allowed (except put directly in the variables section of the script editor for backward compat reason) but spaces are also completely preserved, without -p /var and /set will omit a single trailing space (but two or more are ok!). Of course $bvar(&binvar,,).text is decoding the content of your binary variable from utf8, which is reinterpreting the bytes, but that’s good.
+-  mIRC does not interpret the content of your binary variable, while it does for simple %variable. By default a %variable cannot be set to the value "" (just two double quotes characters), this is because in core variable routines, it is interpreted as empty string, as though it supported quoted string. Note that since mIRC 7.52, /var and /set support a -p switch which preserves the data: "" are now allowed (except put directly in the variables section of the script editor for backward compat reason) but spaces are also completely preserved, without -p /var and /set will omit a single trailing space (but two or more are ok!). Of course $bvar(&binvar,,).text is decoding the content of your binary variable from utf8, which is reinterpreting the bytes, but that's good.
 
 Some uses for Binary Variables include:
 
--  Holding content which can’t be placed into text %variables
+-  Holding content which can't be placed into text %variables
 -  Holding content too long to be placed in text variables
 -  Displaying duplicate spaces or non-printable characters like TAB which cannot be seen in echoed strings.
 
@@ -45,44 +45,89 @@ There are a few commands and identifiers created specifically to manipulate bina
 +-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 | /bwrite                                                                             | Write binary variable to a disk file                                              |
 +-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-| :math:`bfind|Search binary variable for pattern of 1-or-more byte values.| |`\ bvar | Display contents of binary variables as text or a series of decimal numbers       |
+| $bfind                                                                              | Search binary variable for pattern of 1-or-more byte values.                      |
++-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| $bvar                                                                               | Display contents of binary variables as text or a series of decimal numbers       |
 +-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| Name                                                                                                                             | Description                                        |
-+==================================================================================================================================+====================================================+
-| /parseline                                                                                                                       | Can use a binary variable as input or output       |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`cb|can output a line or entire clipboard to a binary variable.| |`\ encode                                                | Can use a binary variable as input+output          |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`decode|Can use a binary variable as input+output| |`\ regsub                                                              | Can use a binary variable as output                |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`regsubex|Can use a binary variable as output| |`\ compress                                                                | Can use a binary variable as input+output.         |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`decompress|Can use a binary variable as input+output.| |/hadd|Can save a binary variable into a hash table item| |`\ hget | Can use a binary variable as output                |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| /hsave                                                                                                                           | Can save a hash table to a binary file             |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| /hload                                                                                                                           | Can load a binary file to a hash table             |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`crc|Can use a binary variable as input| |`\ md5                                                                           | Can use a binary variable as input                 |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`sha1|Can use a binary variable as input| |`\ sha256                                                                       | Can use a binary variable as input                 |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`sha384|Can use a binary variable as input| |`\ sha512                                                                     | Can use a binary variable as input                 |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| :math:`hmac|Can use a binary variable as input| |`\ com                                                                          | Can use a binary variable as input or output.      |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| /sockudp                                                                                                                         | Can write a binary variable to a socket            |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| /sockwrite                                                                                                                       | Can write a binary variable to a socket            |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| /sockread                                                                                                                        | Can read from a socket into a binary variable      |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| /fwrite                                                                                                                          | Can write a binary variable to a disk file         |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
-| $fread                                                                                                                           | Can read disk file contents into a binary variable |
-+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
++----------------------------------+----------------------------------+
+| Name                             | Description                      |
++==================================+==================================+
+|  /parseline                      | Can use a binary variable as     |
+|                                  | input or output                  |
++----------------------------------+----------------------------------+
+| $cb                              | can output a line or entire      |
+|                                  | clipboard to a binary variable.  |
++----------------------------------+----------------------------------+
+| $encode                          | Can use a binary variable as     |
+|                                  | input+output                     |
++----------------------------------+----------------------------------+
+| $decode                          | Can use a binary variable as     |
+|                                  | input+output                     |
++----------------------------------+----------------------------------+
+| $regsub                          | Can use a binary variable as     |
+|                                  | output                           |
++----------------------------------+----------------------------------+
+| $regsubex                        | Can use a binary variable as     |
+|                                  | output                           |
++----------------------------------+----------------------------------+
+| $compress                        | Can use a binary variable as     |
+|                                  | input+output.                    |
++----------------------------------+----------------------------------+
+| $decompress                      | Can use a binary variable as     |
+|                                  | input+output.                    |
++----------------------------------+----------------------------------+
+| /hadd                            | Can save a binary variable into  |
+|                                  | a hash table item                |
++----------------------------------+----------------------------------+
+| $hget                            | Can use a binary variable as     |
+|                                  | output                           |
++----------------------------------+----------------------------------+
+| /hsave                           | Can save a hash table to a       |
+|                                  | binary file                      |
++----------------------------------+----------------------------------+
+| /hload                           | Can load a binary file to a hash |
+|                                  | table                            |
++----------------------------------+----------------------------------+
+| $crc                             | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $md5                             | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $sha1                            | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $sha256                          | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $sha384                          | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $sha512                          | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $hmac                            | Can use a binary variable as     |
+|                                  | input                            |
++----------------------------------+----------------------------------+
+| $com                             | Can use a binary variable as     |
+|                                  | input or output.                 |
++----------------------------------+----------------------------------+
+| /sockudp                         | Can write a binary variable to a |
+|                                  | socket                           |
++----------------------------------+----------------------------------+
+| /sockwrite                       | Can write a binary variable to a |
+|                                  | socket                           |
++----------------------------------+----------------------------------+
+| /sockread                        | Can read from a socket into a    |
+|                                  | binary variable                  |
++----------------------------------+----------------------------------+
+| /fwri                            | Can write a binary variable to a |
+|                                  | disk file                        |
++----------------------------------+----------------------------------+
+| $fread                           | Can read disk file contents into |
+|                                  | a binary variable                |
++----------------------------------+----------------------------------+
 
 Position and Length
 ~~~~~~~~~~~~~~~~~~~
@@ -167,12 +212,12 @@ Binary Variables as Input Examples
    write &versions to disk
    //bwrite -c test.dat 0 -1 &versions
 
-‘local’ Binary Variables
+'local' Binary Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using %variables within an alias, you can take advantage of their ‘local’ scope to safely re-use variable names without worrying about destroying variables used by other scripts or aliases. You can use “/var %a value” in an alias to set that local variable without worrying that you will destroy that same variable name being used by the alias which called your alias, and don’t need to worry if your script calls another alias which also uses that same name as a local variable.
+When using %variables within an alias, you can take advantage of their 'local' scope to safely re-use variable names without worrying about destroying variables used by other scripts or aliases. You can use "/var %a value" in an alias to set that local variable without worrying that you will destroy that same variable name being used by the alias which called your alias, and don't need to worry if your script calls another alias which also uses that same name as a local variable.
 
-However the scope of binary variables means they exist in all aliases called by each other or in the event which triggered their usage. To avoid aliases damaging the contents of each other’s binary variables, if an alias needs to create binary variables, and is designed to be called by other aliases which might also be using binary variables, you must defend against destroying the binary variables used by the caller. Two ways to do this are:
+However the scope of binary variables means they exist in all aliases called by each other or in the event which triggered their usage. To avoid aliases damaging the contents of each other's binary variables, if an alias needs to create binary variables, and is designed to be called by other aliases which might also be using binary variables, you must defend against destroying the binary variables used by the caller. Two ways to do this are:
 
 -  Require the caller send the name of the variable as a parameter when calling your alias
 -  Create a unique variable name to make it unlikely that another alias would use the same name for a binary variable. Pass binary variable name to alias, display $bvar output in hex instead of decimal:
@@ -209,7 +254,7 @@ store in hash table:
 
    /hadd -smb binvar_save binvar &binvar
 
-.. note:: Hash tables aren’t saved to disk, so you need to save that table to disk: ``/hsave -sb binvar_save savebins.dat`` … and then reload the binary variable the next time you re-start mIRC: ``/hload -sb binvar_save savebins.dat``
+.. note:: Hash tables aren't saved to disk, so you need to save that table to disk: ``/hsave -sb binvar_save savebins.dat`` … and then reload the binary variable the next time you re-start mIRC: ``/hload -sb binvar_save savebins.dat``
 
 Use $encode to translate binary data to text, which can be saved to variables or written to disk.
 
@@ -217,7 +262,7 @@ Use $encode to translate binary data to text, which can be saved to variables or
 
    //noop $encode(&binvar,bm) | set %binvar_save $bvar(&binvar,1-).text
 
-.. note:: $encode translates 3 input bytes (binary or text) into 4 text characters, so you shouldn’t try to use this method on binary variables longer than approximately 3000 bytes. Retrieve binary content from text %variable: ``//bset -t &binvar 1 %binvar_save | noop $decode(&binvar,bm)``
+.. note:: $encode translates 3 input bytes (binary or text) into 4 text characters, so you shouldn't try to use this method on binary variables longer than approximately 3000 bytes. Retrieve binary content from text %variable: ``//bset -t &binvar 1 %binvar_save | noop $decode(&binvar,bm)``
 
 INI Files
 ---------
@@ -263,7 +308,7 @@ The writeini command can be used to write an item (and its value) in a specific 
 
    /writeini [-n] <inifile> <section> <item> <value>
 
-The -n switch no longer exists on mIRC 7.x and newer. On older mIRCs: The -n switch is used when the file exceeds 65,536 bytes (64 KB). It’s a good idea to place it there if you think the file will get pretty big in the future.
+The -n switch no longer exists on mIRC 7.x and newer. On older mIRCs: The -n switch is used when the file exceeds 65,536 bytes (64 KB). It's a good idea to place it there if you think the file will get pretty big in the future.
 
 For example:
 
@@ -316,7 +361,7 @@ Will output:
 Security Consideration
 ^^^^^^^^^^^^^^^^^^^^^^
 
-ALWAYS use the ‘n’ switch unless you have a very good reason to not use it!
+ALWAYS use the 'n' switch unless you have a very good reason to not use it!
 
 Deleting Items And Sections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -336,7 +381,7 @@ For example:
 
    /remini reminder.ini birthday mike
 
-will remove mike’s entry from the ini file.
+will remove mike's entry from the ini file.
 
 Text Files
 ----------
@@ -352,7 +397,7 @@ To determine if a file exists we can use the $isfile() identifier.
 
    $isfile(file.txt)
 
-In many cases you’d want to check the number of lines in the file. $lines() will help you there.
+In many cases you'd want to check the number of lines in the file. $lines() will help you there.
 
 .. code:: text
 
@@ -366,7 +411,7 @@ The $read() identifier is a very powerful command that can be used to read from 
 n Switch
 ^^^^^^^^
 
-By default, $read will evaluate the text it reads as if it was mSL code. To prevent this behavior you must use the n switch. Throughout this article we will ALWAYS use that switch. Improper use of the $read() identifier without the ‘n’ switch could leave your script highly vulnerable.
+By default, $read will evaluate the text it reads as if it was mSL code. To prevent this behavior you must use the n switch. Throughout this article we will ALWAYS use that switch. Improper use of the $read() identifier without the 'n' switch could leave your script highly vulnerable.
 
 Reading A Random Line
 ^^^^^^^^^^^^^^^^^^^^^
@@ -462,7 +507,7 @@ Iterating Over Matches
 
 $readn is an identifier that returns the line that $read() matched. We can use that to start searching for our pattern on the next line.
 
-For example, to search all the line containing the word ‘test’ in a file, we can construct a loop like this:
+For example, to search all the line containing the word 'test' in a file, we can construct a loop like this:
 
 .. code:: text
 
@@ -478,7 +523,7 @@ The /write command can be used to manipulate a text file in a variety of ways.
 Appending A Line
 ^^^^^^^^^^^^^^^^
 
-/write’s simplest operation is the append operation. By default, /write will write a text line to the end of the file.
+/write's simplest operation is the append operation. By default, /write will write a text line to the end of the file.
 
 .. code:: text
 
@@ -493,7 +538,7 @@ To insert text at specific line we have the following syntax:
 
    /write -il<line> file.txt <text>
 
-For example, the following line will write “Hello There!” at line 2.
+For example, the following line will write "Hello There!" at line 2.
 
 .. code:: text
 
@@ -625,9 +670,9 @@ When To Use File Handling
 
 It important to know when to use explicit file handling, and when you can use /write and $read.
 
-Let’s take a look at /write, /write is a powerful tool which allows you to write to a file according to severals predefined options.
+Let's take a look at /write, /write is a powerful tool which allows you to write to a file according to severals predefined options.
 
-A simple “/write filename.txt line” involves the following file handling operations:
+A simple "/write filename.txt line" involves the following file handling operations:
 
 -  /fopen - opens the file
 -  /fseek - goes to the end of the file
@@ -650,7 +695,7 @@ A simple “/write filename.txt line” involves the following file handling ope
 
 The same thing applies to reading, $read opens the file, try to match and close the file, so any consecutive call to $read means the file is opened/closed each time. If you are looking for a particular line, you can avoid multiple $read calls by searching with /fseek.
 
-Whenever you are going to use /write or $read in a loop to write/read a lot of things, if the loop isn’t small and if the file isn’t small, it might get slow very quickly, and you should consider using file handling.
+Whenever you are going to use /write or $read in a loop to write/read a lot of things, if the loop isn't small and if the file isn't small, it might get slow very quickly, and you should consider using file handling.
 
 Hash Tables
 -----------
@@ -685,7 +730,7 @@ A hash table must be created before you can work with it. This also applies to l
    hmake <table_name> <buckets>
    ;hmake also have an -s switch which prints debug info
 
-If you don’t specify the number of buckets (or “slots”), the default is used, which is 101. If you do specify the number of buckets from 1-10000, for any number greater than 1 which is not prime, mIRC increases the number of buckets to be the next greater prime from 3-10007. Which is why the default 100 uses 101 bucket. Assuming that you are going to look up a specific item by name using $hget, then generally speaking the number of buckets should be decided based on the following equation:
+If you don't specify the number of buckets (or "slots"), the default is used, which is 101. If you do specify the number of buckets from 1-10000, for any number greater than 1 which is not prime, mIRC increases the number of buckets to be the next greater prime from 3-10007. Which is why the default 100 uses 101 bucket. Assuming that you are going to look up a specific item by name using $hget, then generally speaking the number of buckets should be decided based on the following equation:
 
 .. code:: text
 
@@ -714,7 +759,7 @@ The /hadd command is used to add an item/data pair to the table. The syntax is:
    If it's possible the table is not yet created, use the -m switch, which creates the table if it doesn't exist
    hadd -m <table_name> <item>
 
-Let’s consider a table of favorite colors:
+Let's consider a table of favorite colors:
 
 .. code:: text
 
@@ -723,7 +768,7 @@ Let’s consider a table of favorite colors:
    /hadd -s colors Lisa Red
    /hadd -s colors Gary Orange
 
-The -s switch is needed to “show” the action, otherwise these commands are silent. The code above will produce the following result:
+The -s switch is needed to "show" the action, otherwise these commands are silent. The code above will produce the following result:
 
 .. code:: text
 
@@ -733,7 +778,7 @@ The -s switch is needed to “show” the action, otherwise these commands are s
    * Added item 'Lisa' to hash table 'colors'
    * Added item 'Gary' to hash table 'colors'
 
-**“Colors” Hash Table**
+**"Colors" Hash Table**
 
 ==== ======
 Item Data
@@ -744,13 +789,13 @@ Lisa Red
 Gary Orange
 ==== ======
 
-If you add an item name which already exists in the table, the new data replaces the existing item’s data.
+If you add an item name which already exists in the table, the new data replaces the existing item's data.
 
 .. code:: text
 
    /hadd Colors Gary Yellow
 
-This updates the Colors table, changing the item ‘Gary’ to contain the data ‘Yellow’ instead of ‘Orange’.
+This updates the Colors table, changing the item 'Gary' to contain the data 'Yellow' instead of 'Orange'.
 
 Value Retrieval
 ~~~~~~~~~~~~~~~
@@ -761,7 +806,7 @@ To get a data value associated with a given item we will use the $hget identifie
 
    $hget(<table_name>, <item>)
 
-For example, if we were to check what is Mary’s favorite color from our table; we will use the following piece of code:
+For example, if we were to check what is Mary's favorite color from our table; we will use the following piece of code:
 
 .. code:: text
 
@@ -775,7 +820,7 @@ The $hget identifier can also be used to check if a table exists using the follo
    $hget(<table_name>)
    ; returns $null if the table does not exist
 
-!!! attention If the table does exist, returns N for the Nth existing table
+.. attention:: If the table does exist, returns N for the Nth existing table
 
 .. note:: If $hget(colors) returns 2 indicating colors is the 2nd table, deleting the 1st table causes this command to return 1.
 
@@ -793,7 +838,7 @@ The $hget identifier can be used to iterate over the hash table. The syntax is:
    ; Get the value associated with the Nth Item
    $hget(<table_name>, <Nth>).data
 
-.. note:: Iterating over a hash table like this is an inefficient way to retrieve values and items. See the explanation below for why mIRC will iterate over the hash table for every $hget - so the time required per lookup will increase linearly with the table size and the time for the script to iterate over the entire hash table will be proportional to the square of the table size. If it is possible to do so, then it’s best to get a value using its item name.
+.. note:: Iterating over a hash table like this is an inefficient way to retrieve values and items. See the explanation below for why mIRC will iterate over the hash table for every $hget - so the time required per lookup will increase linearly with the table size and the time for the script to iterate over the entire hash table will be proportional to the square of the table size. If it is possible to do so, then it's best to get a value using its item name.
 
 An example of looping over every value in our Colors table will look like this:
 
@@ -821,7 +866,7 @@ The execution of the alias (/print_fav_colors) will produce the following result
    4) John => Blue
    (Gary shows Yellow instead of Orange because it was changed above)
 
-This listing is almost always not in the same order they’re added, because items are first listed according to the bucket they are placed into, before items within the bucket are listed. This is the listing order for v7.53, while the order in v7.52 is 1)Gary 2)Mary 3) Lisa 4) John. The listing order can also change if you change the number of ‘buckets’ within the same mIRC version, and the order of any items assigned to the same bucket can also be affected by the order in which those items are added or whether items in that bucket were deleted or added. Therefore, you should not depend on Mary being listed before Gary. More details in a later Technical section.
+This listing is almost always not in the same order they're added, because items are first listed according to the bucket they are placed into, before items within the bucket are listed. This is the listing order for v7.53, while the order in v7.52 is 1)Gary 2)Mary 3) Lisa 4) John. The listing order can also change if you change the number of 'buckets' within the same mIRC version, and the order of any items assigned to the same bucket can also be affected by the order in which those items are added or whether items in that bucket were deleted or added. Therefore, you should not depend on Mary being listed before Gary. More details in a later Technical section.
 
 Deleting Items
 ~~~~~~~~~~~~~~
@@ -842,7 +887,7 @@ If the -w switch is used, a wildcard pattern for the item can be specified to de
 
 Will leave our table looking like this:
 
-**“Colors” Hash Table**
+**"Colors" Hash Table**
 
 ==== ======
 Item Data
@@ -907,7 +952,7 @@ To load a hash table we use the following syntax:
    ; The -b switch will treat the file as a binary file in the format created by the /hsave -b switch.
    ; The -B switch will treat the file as a binary file in the format created by the /hsave -B switch.
 
-To load the table we’ve just saved we would use the following code:
+To load the table we've just saved we would use the following code:
 
 .. code:: text
 
@@ -926,7 +971,7 @@ To complete destroy a table and all its values, you can use the hfree command:
    /hfree -w <*wild*table*>
    ;hfree has a -s switch which shows the action taken, as the other hashtable commands have
 
-With the -w switch you can specify a wildcard pattern. All matching tables will be freed. If you already deleted a table and try to delete it again, “hfree tablename” halts your script. You must either use $hget(tablename) to verify the table’s existence, or use -w without a wildcard. “hfree -w tablename_without_wildcards”
+With the -w switch you can specify a wildcard pattern. All matching tables will be freed. If you already deleted a table and try to delete it again, "hfree tablename" halts your script. You must either use $hget(tablename) to verify the table's existence, or use -w without a wildcard. "hfree -w tablename_without_wildcards"
 
 Searching For A Item And Value Pair
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -951,18 +996,18 @@ If you specify 0 for Nth Item, the total number of matches will be returned inst
 
    //echo -a $hfind(Colors, *ary*, 1, w)
 
-Which will return “Mary”. because Mary appeared before Gary in the iteration list of items. Prior to v7.53 it returned “Gary” because that name appeared first in the iteration list.
+Which will return "Mary". because Mary appeared before Gary in the iteration list of items. Prior to v7.53 it returned "Gary" because that name appeared first in the iteration list.
 
-.. note:: Using a non-hashed method for finding an item or data using $hfind is an inefficient way to retrieve values and items. See the explanation below for why mIRC will iterate over the hash table for every $hfind - so time required per lookup will increase linearly with the table size. If it is possible to do so, then it’s best to get a value using $hget using its item name.
+.. note:: Using a non-hashed method for finding an item or data using $hfind is an inefficient way to retrieve values and items. See the explanation below for why mIRC will iterate over the hash table for every $hfind - so time required per lookup will increase linearly with the table size. If it is possible to do so, then it's best to get a value using $hget using its item name.
 
 .. note:: Use of $hfind to find the specific records that you want is, however, still likely to result in much better performance than iterating over the hash table using $hget(table,n) because mIRC can execute the single $hfind using compiled code rather than executing the large number of mSL statements needed to loop over the hash table using $hget.
 
 Technical Explanation
 ~~~~~~~~~~~~~~~~~~~~~
 
-mIRC’s hash tables are implemented as follows.
+mIRC's hash tables are implemented as follows.
 
-1. When you create a hash table, it is created with a defined number of “slots” (or “buckets”).
+1. When you create a hash table, it is created with a defined number of "slots" (or "buckets").
 2. When you add an item to the table using /hadd, a hash algorithm calculates a bucket number based on the item name. Each bucket holds a linked-list of items whose names map to that bucket number, with each new item being added to the list of items in that bucket.
 3. When you look up an item by name using $hget, then the same hash algorithm is used to locate the bucket it will be stored under and then the linked-list in that bucket is searched sequentially for the item. The purpose of hashing is to perform this kind of lookup on potentially large tables with faster performance. If a table has 101 buckets each containing 10 items, it is much faster to search within the 10 items than to search within all 1010 items.
 4. When you get an item by position using $hget(table,position), or use $hfind to search data or search using wildcards or regular expressions, then the hash algorithm cannot be used to identify the correct bucket, and instead mIRC has to iterate across part or all of the hash table to count or to find the record you want.
@@ -970,11 +1015,11 @@ mIRC’s hash tables are implemented as follows.
 If your hash table has a small number of buckets compared to the number of item records, then each bucket will have a large number of item records:
 
 -  For a lookup of an existing item, on average mIRC will have to iterate over 50% of the bucket entries before locating the one you want
--  If you try to find a non-existent item, mIRC will need to iterate over the whole bucket list before determining that the item doesn’t exist.
+-  If you try to find a non-existent item, mIRC will need to iterate over the whole bucket list before determining that the item doesn't exist.
 
 As you might imagine, mIRC iterating over a large number of hash table entries to find the item needed is CPU intensive and mIRC might start to feel unresponsive.
 
-So for look-ups by item name, the best performance will be achieved when mIRC’s hashing algorithm points to a bucket with a single table entry (or failing that - a small number of entries). Worst case scenario is if your hash table has only a single bucket, then all entries are stored in a single linked-list and every look-up needs to be iterated. On the other hand, if you have a large number of bucket (much greater than the number of items in the hash table), then the likelihood is that every item will be stored in its own bucket, so the hash function will take you to a bucket with a single entry, and no iteration will be needed to find the item. 101 buckets was recommended for 79 items because it’s unlikely that picking 79 random numbers in the range 1-79 would have each number chosen only 1 time, but choosing 79 random numbers in the range 1-101 is much less likely that any number would be chosen more than 1 time.
+So for look-ups by item name, the best performance will be achieved when mIRC's hashing algorithm points to a bucket with a single table entry (or failing that - a small number of entries). Worst case scenario is if your hash table has only a single bucket, then all entries are stored in a single linked-list and every look-up needs to be iterated. On the other hand, if you have a large number of bucket (much greater than the number of items in the hash table), then the likelihood is that every item will be stored in its own bucket, so the hash function will take you to a bucket with a single entry, and no iteration will be needed to find the item. 101 buckets was recommended for 79 items because it's unlikely that picking 79 random numbers in the range 1-79 would have each number chosen only 1 time, but choosing 79 random numbers in the range 1-101 is much less likely that any number would be chosen more than 1 time.
 
 All that said, even with a large number of buckets, you cannot guarantee that every item in the table will have a unique hash / bucket number. As an analogy, consider a class of 30 students. What is the probability that all students have birthdays on different days of the year? This is equivalent to asking whether a hash table with 365 buckets and 30 entries will have every entry using a different bucket. It turns out that in a class of 30 students there is significantly more than 50% probability that at least two students will share a birthday - indeed it only takes 23 students for the probability to be more than 50%. This seems weird - but for the mathematically inclined, the probability can be calculated by determining what the probability is that M students have all different birthdays:
 
@@ -988,7 +1033,7 @@ Returning to hash tables and buckets, the equivalent formula for a table with M 
 
 :math:`\frac{(N-1)(N-2)...(N-M+1)}{N^{(M-1)}}=\frac{N!}{(N-M)! * N^M}`
 
-Using the student birthday example for simplicity and relating it to hash tables and buckets, if we turn it on its head then we can say that if we have a hash table holding 23 entries, and we want to have a probability that each entry has its own bucket > 50%, then we need to have more than 365 buckets. **I bet you weren’t expecting that!!** Fortunately the performance overhead of iterating over a relatively short linked-list is also small, and equally fortunately a bucket only uses 4-bytes (which is very small indeed compared to the size of a table entry, which consists of the item name and the data and the overhead of storing these and linking them into a list). Indeed mIRC’s maximum bucket size is 10,007, requiring c. 40KB of memory - which in today’s PCs with several GB of memory is relatively small.
+Using the student birthday example for simplicity and relating it to hash tables and buckets, if we turn it on its head then we can say that if we have a hash table holding 23 entries, and we want to have a probability that each entry has its own bucket > 50%, then we need to have more than 365 buckets. **I bet you weren't expecting that!!** Fortunately the performance overhead of iterating over a relatively short linked-list is also small, and equally fortunately a bucket only uses 4-bytes (which is very small indeed compared to the size of a table entry, which consists of the item name and the data and the overhead of storing these and linking them into a list). Indeed mIRC's maximum bucket size is 10,007, requiring c. 40KB of memory - which in today's PCs with several GB of memory is relatively small.
 
 **Summary:** If you are doing any lookups by item name on a frequent basis on a large table, then you should use the largest sensible bucket size to avoid mIRC iterating over long linked-lists when doing these lookups.
 
@@ -1022,11 +1067,11 @@ This section describes the iteration sort order for hash tables. The algorithm u
      run notepad test1.txt | run notepad test2.txt
    }
 
-If you run this bucket_sort alias in all 3 versions mentioned above, the items are listed in the same way in each version. The item names are listed in descending order in table1, ascending order in table2, then back to the same descending order in table3. The reason for this preservation of order is that $hget(table,N).item is listing these items in order by bucket, then within buckets it’s listing them in reverse order of creation, with the older items listed last, and the newest additions listed first. Since this example used buckets=1, everything is in the same bucket, listed in reverse order of creation.
+If you run this bucket_sort alias in all 3 versions mentioned above, the items are listed in the same way in each version. The item names are listed in descending order in table1, ascending order in table2, then back to the same descending order in table3. The reason for this preservation of order is that $hget(table,N).item is listing these items in order by bucket, then within buckets it's listing them in reverse order of creation, with the older items listed last, and the newest additions listed first. Since this example used buckets=1, everything is in the same bucket, listed in reverse order of creation.
 
-When items are /hsave’d to disk, buckets=1 saves in the same $hget(table,N).item order that’s the inverse of creation order. $hget(table,1).item is the first item written to disk even though in this example it was the last item created. Note that the pair of notepad windows opened are showing the items in the 2 saved files in opposite order compared to each other, even though there were no items created or deleted between the hsave’s.
+When items are /hsave'd to disk, buckets=1 saves in the same $hget(table,N).item order that's the inverse of creation order. $hget(table,1).item is the first item written to disk even though in this example it was the last item created. Note that the pair of notepad windows opened are showing the items in the 2 saved files in opposite order compared to each other, even though there were no items created or deleted between the hsave's.
 
-But when the items are /hload’ed from disk into an empty table, they are loaded from the disk as if you /hadd’ed the first lines of the disk file first, then /hadd’ed the last lines of the disk file last. However since $hget(table,N).item lists items in the reverse order from when they’re added, this causes table2 to have an order within the bucket which is the opposite of table1’s, and is now listing the items in the ascending order they were created. This reversal also occurs again when table2 is saved to disk then loaded into table3, giving table3 the same $hget(table,N).item order as table1.
+But when the items are /hload'ed from disk into an empty table, they are loaded from the disk as if you /hadd'ed the first lines of the disk file first, then /hadd'ed the last lines of the disk file last. However since $hget(table,N).item lists items in the reverse order from when they're added, this causes table2 to have an order within the bucket which is the opposite of table1's, and is now listing the items in the ascending order they were created. This reversal also occurs again when table2 is saved to disk then loaded into table3, giving table3 the same $hget(table,N).item order as table1.
 
 If you need to create a table which has $hget(table,N).item listing items in the creation order, you must:
 
@@ -1035,9 +1080,9 @@ If you need to create a table which has $hget(table,N).item listing items in the
 3. hfree -w table_name
 4. hload -m1 table_name diskfilename
 
-Step 3 is important, because if you /hload items into an existing table containing an item of the same name being hload’ed, it takes the existing position within the bucket instead of being added to the front as a fresh item. Without Step 3, the iteration order after Steps 1 and 4 would always be identical.
+Step 3 is important, because if you /hload items into an existing table containing an item of the same name being hload'ed, it takes the existing position within the bucket instead of being added to the front as a fresh item. Without Step 3, the iteration order after Steps 1 and 4 would always be identical.
 
-If table contains items #1-#20 in order of creation, but then items #21-#25 are added to the table, there are multiple steps required to put the table entirely into reverse creation order so they can be hsave’ed to disk in a way that lets them be hload’ed from disk into creation order:
+If table contains items #1-#20 in order of creation, but then items #21-#25 are added to the table, there are multiple steps required to put the table entirely into reverse creation order so they can be hsave'ed to disk in a way that lets them be hload'ed from disk into creation order:
 
 1. hmake -m1 temptable
 2. search from 1 through the last item $hget(temptable,0).item, until finding item#1.
@@ -1050,7 +1095,7 @@ From this lengthy process, you can see how hashtables are ill-suited for preserv
 
 –
 
-If you edit the above bucket_sort alias to change %buckets to be 101 instead of 1, you’ll see the display is no longer in either ascending or descending order. That’s because the order is displayed in order of their bucket placement first, before listing these items within buckets in reverse order in which they were created. Note that table2 keeps the same order as table 1, except for Kate and Suzy. These names were chosen because the v7.53 method of hashing item names assigns them to the same bucket when buckets=101, while items named Item1 through Item20 do not have more than 1 item assigned to the same bucket. Because Kate and Suzy were in the same bucket in the group of 101 buckets, they appear in reverse order of creation within table1, but their order is reversed again after loading from disk into table2, then reversed again when loaded from the 2nd disk file into table3.
+If you edit the above bucket_sort alias to change %buckets to be 101 instead of 1, you'll see the display is no longer in either ascending or descending order. That's because the order is displayed in order of their bucket placement first, before listing these items within buckets in reverse order in which they were created. Note that table2 keeps the same order as table 1, except for Kate and Suzy. These names were chosen because the v7.53 method of hashing item names assigns them to the same bucket when buckets=101, while items named Item1 through Item20 do not have more than 1 item assigned to the same bucket. Because Kate and Suzy were in the same bucket in the group of 101 buckets, they appear in reverse order of creation within table1, but their order is reversed again after loading from disk into table2, then reversed again when loaded from the 2nd disk file into table3.
 
 The purpose of the hash algorithm is to distribute the items into the different buckets so searches for item names can be faster. If you have 1010 items in a hash table using buckets=1, it can take anywhere from 1 to 1010 tests before finding the position where an existing item is located. If the table uses 101 buckets, and if the algorithm evenly distributed the items to all buckets, the search would instead calculate the bucket which would be the destination for that item name, then check for a match only against the 10 items assigned to that bucket.
 
@@ -1106,12 +1151,12 @@ This algorithm attemps to create a hash whose output is well distributed across 
      }
    }
 
-This /bucket_sort2 alias uses the above FNV1a-32-mod-alt alias to calculate the bucket each item was assigned. It wasn’t until the 23rd item name until an item was assigned to a bucket that wasn’t already empty.
+This /bucket_sort2 alias uses the above FNV1a-32-mod-alt alias to calculate the bucket each item was assigned. It wasn't until the 23rd item name until an item was assigned to a bucket that wasn't already empty.
 
-For v7.53, this displays the items with a bucket number that sequentially increases. For earlier versions, the bucket number displayed is in a jumbled order because this is not the algorithm used in those versions. It’s possible that future mIRC versions will use a different algorithm or use FNV1a in a different manner, so you should not count on items being assigned to the same buckets in past or future mIRC versions.
+For v7.53, this displays the items with a bucket number that sequentially increases. For earlier versions, the bucket number displayed is in a jumbled order because this is not the algorithm used in those versions. It's possible that future mIRC versions will use a different algorithm or use FNV1a in a different manner, so you should not count on items being assigned to the same buckets in past or future mIRC versions.
 
-And even if item names are assigned to the same bucket, the iteration order can list them differently. Note that Item9 and Item23 are both assigned to bucket 13 of 101, and they’re listed in table1 in reverse order than their creation order. However it appears that once an item has been deleted from a bucket, future items added to that bucket may not always be be listed in reverse creation order. For example, the 2 comment lines delete Item9 and Item23, but differ in the order those item names are created again. If you remove the semi-colon from 1 of the 2 comment lines, the order lists Item9 before Item23, regardless which semi-colon you remove. Notice above how the “Gary” and “Mary” example using $hfind to find the 1st match could return a different item name, depending which one appeared first in the iteration list, which can vary depending on several factors.
+And even if item names are assigned to the same bucket, the iteration order can list them differently. Note that Item9 and Item23 are both assigned to bucket 13 of 101, and they're listed in table1 in reverse order than their creation order. However it appears that once an item has been deleted from a bucket, future items added to that bucket may not always be be listed in reverse creation order. For example, the 2 comment lines delete Item9 and Item23, but differ in the order those item names are created again. If you remove the semi-colon from 1 of the 2 comment lines, the order lists Item9 before Item23, regardless which semi-colon you remove. Notice above how the "Gary" and "Mary" example using $hfind to find the 1st match could return a different item name, depending which one appeared first in the iteration list, which can vary depending on several factors.
 
-The FNV1a hash is performed against the upper-case string of the hash name, allowing $hget and $hfind /hdel to locate items in a case-insensitive manner, and allows /hadd to avoid creating a duplicate of an existing item name. However /hadd and the hashing algorithm have different definitions of what ‘upper’ means. /hadd recognizes only A-Z and a-z as being case-insensitive equivalents of each other. When /hadd is asked to create an item name as each of the codepoints 1-65535, it creates 65535-26=65509 items because only the a-z vs A-Z items are considered duplicates.
+The FNV1a hash is performed against the upper-case string of the hash name, allowing $hget and $hfind /hdel to locate items in a case-insensitive manner, and allows /hadd to avoid creating a duplicate of an existing item name. However /hadd and the hashing algorithm have different definitions of what 'upper' means. /hadd recognizes only A-Z and a-z as being case-insensitive equivalents of each other. When /hadd is asked to create an item name as each of the codepoints 1-65535, it creates 65535-26=65509 items because only the a-z vs A-Z items are considered duplicates.
 
-That means that it’s possible to create 2 different item names from the outputs of $upper(SãoPaulo) and $lower(SãoPaulo) because the ã codepoint 227 is seen by /hadd as different than the codepoint 195 from $upper(ã). However the hashing algorithm hashes the $upper(item name) string which is identical for both item names, so it assigns both items to the same bucket.
+That means that it's possible to create 2 different item names from the outputs of $upper(SãoPaulo) and $lower(SãoPaulo) because the ã codepoint 227 is seen by /hadd as different than the codepoint 195 from $upper(ã). However the hashing algorithm hashes the $upper(item name) string which is identical for both item names, so it assigns both items to the same bucket.
