@@ -88,8 +88,9 @@ References
 
    intermediate/control_flow_statements
    intermediate/data_storage
-   intermediate/matching_tools
    intermediate/events
+   intermediate/matching_tools
+   intermediate/gui_scripting
 
 .. toctree::
    :maxdepth: 2
