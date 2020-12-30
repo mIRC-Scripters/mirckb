@@ -6,9 +6,6 @@
 Welcome to mIRC Knowledge Base!
 ===============================================
 
-Home
-====
-
 The mIRC Scripting Language, abbreviated as mSL, is an event-driven, procedural scripting language embedded inside the mIRC client. mSL’s main feature is its seamless ability to interact with other IRC clients on IRC in order to perform a variety of tasks.
 
 Although widely used to make bots to automatically manage a channel, mIRC can also be modified, via the scripting language mSL, to include a host of new features, such as: basic games, small functions and macros, the ability to play music, and even operate small applications. Scripts are stored in plain text files (.mrc) or as INI files. With the aid of COM scripts and DLLs, mSL can be further extended to automate just about everything in the Windows environment.
@@ -100,7 +97,7 @@ References
 
 .. toctree::
    :maxdepth: 2
-   :caption: Miscellanous
+   :caption: Miscellaneous
 
    misc/mirc_help_channels
 
