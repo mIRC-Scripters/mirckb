@@ -648,7 +648,7 @@ Other Tools
 /didtok, $didtok, $didwm And $didreg
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-/didtok will add a tokenized list of item to a list/combo/edit control, for example "/didtok name 1 44 red,green,blue" would add the item "red", "gree", and "blue" to that control
+/didtok will add a tokenized list of items to a list/combo/edit control, for example "/didtok name 1 44 red,green,blue" would add the item "red", "green", and "blue" to that control.
 
 $didtok\ (name,id,C) returns a tokenized list of item from a combo/edit/list control.
 
