@@ -433,13 +433,13 @@ $rand()
 
 One of the most common operations we use is to generate random numbers. This is where the $rand identifier comes into play; it can generate a random number between a given range. The identifier has the following syntax:
 
-.. code:: text
+.. code:: mirc
 
    $rand(<low>, <high>)
 
 Given both low bound and high bound number values, $rand will return a random number in between, and including, the two numbers. For example:
 
-.. code:: text
+.. code:: mirc
 
    alias random {
      echo The dice rolled on the floor .... $rand(1, 6)
