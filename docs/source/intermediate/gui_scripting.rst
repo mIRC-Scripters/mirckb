@@ -828,3 +828,142 @@ Example
 	}
 
 .. figure:: MIRCdlgButton_Example.png
+
+Check
+~~~~~
+The checkbox control is a user interface element that permits the user to select or deselect an option. The checkbox control is a combination of a check box and a label. The mIRC check control has three states: Checked, Unchecked, and Indeterminate.
+
+Synopsis
+^^^^^^^^
+.. code:: text
+
+	check "<text>", <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - push
+	  - Toggle Button
+	* - left
+	  - Places the text on the left side of the control.
+	* - 3state
+	  - Enables Indeterminate State.
+	* - multi
+	  - Allows the text in the check box to wrap around to multiple lines.
+	* - disable	
+	  - Disables the check box.
+	* - hide
+	  - Makes the check box invisible.
+	* - result
+	  - In modal mode, returns the text of the check box.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f 
+	  - sets focus on the checkbox
+	* - -t 
+	  - sets the checkbox as the default control
+	* - -e 
+	  - enables the checkbox
+	* - -b
+	  - disables the checkbox
+	* - -v
+	  - makes the checkbox visible
+	* - -h 
+	  - hides the checkbox
+	* - -c 
+	  - mark the checkbox as checked
+	* - -u 
+	  - mark the checkbox as unchecked, if you use -cu, it marks a 3dstate checkbox as indeterminate.
+	* - -r 
+	  - clear the text of the checkbox (caption)
+	* - -a 
+	  - adds text to the text of the checkbox (caption)
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, returns the text (caption) of the checkbox, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the text (caption) of the checkbox line or Nth line
+	* - .len
+	  - returns the length of the text of the checkbox (caption)
+	* - .state
+	  - returns the state of the checkboxes, 0 = unchecked, 1 = checked, 2 = indeterminate (for 3stage checkboxes)
+	* - .next
+	  - returns the id of the next control in order of tab keypress
+	* - .prev
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the checkbox is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the checkbox is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - sclick
+	  - Triggers upon single click
+
+Example
+^^^^^^^
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 50
+	  option dbu
+	  check "Example 1", 1, 4 10 40 12, 3state
+	  check "Example 2", 2, 50 10 40 12
+	  check "Example 3", 3, 4 30 40 12
+	  button "Done", 4, 50 30 40 12, ok
+	}
+	; events
+	on *:dialog:example:init:0:{ 
+	  did -cu $dname 1
+	  did -c $dname 2
+	}
+	on *:dialog:example:sclick:1-3:{
+	  echo -a $did($dname, $did).text is clicked. $&
+	    State: $dstate $+ .
+	}
+	alias -l dstate {
+	  var %s UnChecked Checked Indeterminate
+	  return $gettok(%s, $calc($did($dname, $did).state + 1), 32)
+	}
+
+.. figure:: MIRCdlgCheck_Example.png
