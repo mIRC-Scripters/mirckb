@@ -608,7 +608,7 @@ Mnemonic
 
 The "text" parameter of controls showing text can include the '&' character to create a mnemonic. If you want to get the '&' rendered literaly, use &&.
 
-.. note:: even if a control renders the mnemonic correctly, the shortcut may not work, it's not working to switch tab for example.
+.. note:: Even if a control renders the mnemonic correctly, the shortcut may not work, it's not working to switch tab for example.
 
 For example, the following menu definition reproduces the File menu of the mIRC Editor dialog:
 
@@ -648,11 +648,11 @@ Other Tools
 /didtok, $didtok, $didwm And $didreg
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-/didtok will add a tokenized list of items to a list/combo/edit control, for example "/didtok name 1 44 red,green,blue" would add the item "red", "green", and "blue" to that control.
+``/didtok <name> <id> <C> <text>`` will add a tokenized list of items to a list/combo/edit control, for example ``/didtok name 1 44 red,green,blue`` would add the item "red", "green", and "blue" to that control.
 
-$didtok\ (name,id,C) returns a tokenized list of item from a combo/edit/list control.
+``$didtok(name,id,C)`` returns a tokenized list of item from a combo/edit/list control.
 
-$didwm\ (name,id,wildcard,N) and $didreg\ (name,id,regex,N) returns the number of the line that match the wildcard expression, starting at the optional line N, in the the control.
+``$didwm(name,id,wildcard,N)`` and ``$didreg(name,id,regex,N)`` returns the number of the line that match the wildcard expression, starting at the optional line N, in the the control.
 
 /loadbuf, /savebuf And /filter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -661,3 +661,170 @@ You can /filter from and to a combo/edit/list control.
 
 You can /loadbuf and /savebuf from and to a combo/edit/list control.
 
+Dialog Components
+-----------------
+
+.. list-table::
+   :widths: 25 25 25 25
+   :header-rows: 0
+
+   * - Button
+     - Check
+     - Toggle
+     - Text
+   * - .. figure:: MIRCdlgButton_n.png
+     - .. figure:: MIRCdlgCheck_n.png
+     - .. figure:: MIRCdlgToggle_n.png
+     - .. figure:: MIRCdlgLabel_n.png
+   * - Group Box
+     - Icon
+     - Edit
+     - Scroll
+   * - .. figure:: MIRCdlgGroup_n.png
+     - .. figure:: MIRCdlgImage_n.png
+     - .. figure:: MIRCdlgText_n.png
+     - .. figure:: MIRCdlgScroll_n.png
+   * - Link
+     - Menu
+     - Radio
+     - Tab
+   * - .. figure:: MIRCdlgLink_n1.png
+     - .. figure:: MIRCdlgMenu_n.png
+     - .. figure:: MIRCdlgRadio_n.png
+     - .. figure:: MIRCdlgTab_n.png
+   * - List
+     - Combo
+     -
+     -
+   * - .. figure:: MIRCdlgList_n.png
+     - .. figure:: MIRCdlgCombo_n.png
+     -
+     -
+
+Button
+~~~~~~
+The button control is a user interface control that responds to click events.
+
+Synopsis
+^^^^^^^^
+.. code:: text
+
+	button "<text>", <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+
+.. list-table:: 
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style	
+	  - Description
+	* - default
+	  - Sets the button to be the default button. This causes the button to be selected upon dialog creation.
+	* - ok
+	  - Sets the button to be the OK button. The OK button closes the dialog and in modal mode returns the return value set.
+	* - cancel	
+	  - Closes the dialog as if it was canceled – similar to clicking the X button.
+	* - flat
+	  - Creates a flat button (that depends on the OS and the theme used).
+	* - multi
+	  - Allows the text in the button to wrap around to multiple lines.
+	* - disable
+	  - Disables the button.
+	* - hide
+	  - Makes the button invisible.
+	* - result
+	  - In modal mode, returns the text of the button.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f
+	  - sets focus on the button
+	* - -t
+	  - sets the button as the default button
+	* - -e
+	  - enables the button
+	* - -b
+	  - disables the button
+	* - -v
+	  - makes the button visible
+	* - -h
+	  - hides the button
+	* - -r
+	  - clears the button's text (caption)
+	* - -a
+	  - adds to the button's text (caption)
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, returns the text (caption) of the button, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the text of the button (caption)
+	* - .len
+	  - returns the length of the button's text (caption)
+	* - .next
+	  - returns the id of the next control in order of tab keypress
+	* - .prev
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the button is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the button is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - sclick
+	  - Triggers upon single click
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 50
+	  option dbu
+	  button "Example 1", 1, 4 10 40 12
+	  button "Example 2", 2, 50 10 40 12
+	  button "Example A", 3, 4 30 40 12
+	  button "Example B", 4, 50 30 40 12, ok
+	}
+	; event
+	on *:dialog:example:sclick:1-4:{
+	  echo -a $did($dname, $did).text is clicked.
+	}
+
+.. figure:: MIRCdlgButton_Example.png
