@@ -581,7 +581,7 @@ Custom dialogs are created by defining a dialog table, the content of that table
 
    }
 
-The -l switch makes the table local, only that script file can open it. is the name of table which will be used to create an instance of that dialog
+The -l switch makes the table local, only that script file can open it. \<name\> is the name of table which will be used to create an instance of that dialog
 
 -  title - Optional, can be used to set the text displayed in the titlebar of the dialog
 -  icon - Optional, can be used to set the icon of the dialog, the filename parameter is the filename to use for the icon, the index parameter can be used to specify the Nth icon from a file
