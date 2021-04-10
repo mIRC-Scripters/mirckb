@@ -1496,3 +1496,122 @@ Example
 	}
 
 .. figure:: MIRCdlgText_Example.png
+
+Scroll
+~~~~~~
+A scrollbar is a simple dialog component that can be used to scroll something. A scrollbar operates within a given range.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	scroll "<text>", <id>, <x> <y> <width> <height>, <style>
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - left
+	  - Positions the scrollbar at the left side of the rectangular area specified.
+	* - right
+	  - Positions the scrollbar at the right side of the rectangular area specified.
+	* - top
+	  - Positions the scrollbar at the top side of the rectangular area specified.
+	* - bottom
+	  - Positions the scrollbar at the bottom side of the rectangular area specified.
+	* - horizontal
+	  - Creates a horizontal scrollbar instead of a vertical one.
+	* - range
+	  - Sets the range of the scrollbar, Syntax: range <low> <high>.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f
+	  - sets focus on the scrollbar
+	* - -e 
+	  - enables the scrollbar
+	* - -b 
+	  - disables the scrollbar
+	* - -v 
+	  - makes the scrollbar visible
+	* - -h 
+	  - hides the scrollbar
+	* - -z 
+	  - Sets the range of the scrollbar, /did -z <name> <id> [n [n2]]
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)<.property>
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .sel
+	  - returns the value of the current position of the scrollbar
+	* - .lines
+	  - returns the current maximum value used for the range
+	* - .next 
+	  - returns the id of the next control in order of tab keypress
+	* - .prev
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the button is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the button is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - scroll
+	  - Triggers upon a scrollbar value change only.
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 90 65
+	  option dbu
+	 
+	  text "0%", 1, 30 20 20 20
+	  scroll , 2, 60 5 5 40, range 0 100
+	 
+	  button "Done", 13, 25 50 40 12, ok
+	}
+	on *:dialog:example:scroll:2:{
+	  did -ra example 1 $did(example, 2).sel $+ %
+	}
+
+.. figure:: MIRCdlgScroll_Example.png
