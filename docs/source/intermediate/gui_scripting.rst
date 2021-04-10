@@ -1199,3 +1199,134 @@ Example
 	}
 
 .. figure:: MIRCdlgGroup_Example.png
+
+Icon
+~~~~
+An icon control is a simple container that holds images and icons.
+
+.. note:: You cannot make an empty icon control, you must give a filename.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	icon <id>, <x> <y> <width> <height>[, <filename>[, <index>]], <style>
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disabled
+	  - Prevents the image from being shown. Frame might still show on some themes.
+	* - hide
+	  - Hides the image.
+	* - noborder
+	  - Hide the border around the image.
+	* - top	
+	  - Aligns the image with the top of the container. Only applies if the image size is smaller than the container.
+	* - left
+	  - Aligns the image with the left of the container. Only applies if the image size is smaller than the container.
+	* - bottom
+	  - Aligns the image with the bottom of the container. Only applies if the image size is smaller than the container.
+	* - right
+	  - Aligns the image with the right of the container. Only applies if the image size is smaller than the container.
+	* - small
+	  - Use small factor image size.
+	* - large
+	  - Use large factor image size.
+	* - actual
+	  - Use actual factor image size.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f 
+	  - sets focus on the icon
+	* - -e
+	  - enables the button
+	* - -b 
+	  - disables the button
+	* - -v
+	  - makes the button visible
+	* - -h
+	  - hides the button
+	* - -g
+	  - sets a new icon/bmp to an icon control, /did -g <name> <id> [n] <filename> where [n] is the optional index for the icon in the file
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)<.property>
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .next 
+	  - returns the id of the next control in order of tab keypress
+	* - .prev 
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible 
+	  - returns $true if the icon is visible, otherwise $false
+	* - .enabled 
+	  - returns $true if the icon is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - mouse
+	  - Triggers when a mouse moves over the image.
+	* - sclick
+	  - Triggers upon a left mouse click on the image.
+	* - uclick
+	  - Triggers upon a release of the left mouse click.
+	* - dclick
+	  - Triggers upon a double left mouse click.
+	* - rclick
+	  - Triggers upon a right mouse click on the image.
+	* - drop
+	  - Triggers upon a drop click on the image.
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 110
+	  option dbu
+	 
+	  icon 1, 10 10 80 80, "C:\Users\Public\Pictures\Sample Pictures\Penguins.jpg", actual
+	 
+	  button "Done", 7, 10 95 40 12, ok
+	}
+
+.. figure:: MIRCdlgImage_Example.png
