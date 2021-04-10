@@ -1615,3 +1615,118 @@ Example
 	}
 
 .. figure:: MIRCdlgScroll_Example.png
+
+Link
+~~~~
+A link control, just like a label, is a static control with the additional behavior that, when you put your mouse over the control, the cursor because a little hand, indicating you can interact with that link, usually to open an URL.
+
+To make the link actually open the web page, you need to code an ON DIALOG SCLICK event.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	link "text", <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disable
+	  - Disables the link. (grays it out)
+	* - hide
+	  - Makes the link invisible.
+	* - result
+	  - In modal mode, returns the URL.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f
+	  - sets focus on the link control
+	* - -e
+	  - enables the link
+	* - -b
+	  - disables the link
+	* - -v
+	  - makes the link visible
+	* - -h
+	  - hides the link
+	* - -a
+	  - Adds text to the link's text (caption)
+	* - -r
+	  - Deletes the text (caption) of the link
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, return the text (caption) of the link, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the text (caption) of the link control
+	* - .next
+	  - returns the id of the next control in order of tab keypress
+	* - .prev
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the button is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the button is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - sclick
+	  - Triggers upon single click
+	* - dclick
+	  - Triggers upon double click
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 50
+	  option dbu
+	  link "http://www.wikichip.org/", 1, 4 10 80 12
+	  button "Done", 4, 50 30 40 12, ok
+	}
+	; click event
+	on *:dialog:example:sclick:1: url -a $did(example,$did)
+
+.. figure:: MIRCdlgLink_Example.png
