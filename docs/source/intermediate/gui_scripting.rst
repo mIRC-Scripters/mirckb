@@ -1182,7 +1182,7 @@ This control has no events.
 Example
 ^^^^^^^
 
-.. code::text
+.. code:: text
 
 	; init alias
 	alias example {
