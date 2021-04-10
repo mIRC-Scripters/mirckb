@@ -1087,3 +1087,115 @@ Example
 	}
 
 .. figure:: MIRCdlgLabel_Example.png
+
+Group Box
+~~~~~~~~~
+This is a static control with a group box frame and an optional title that shows up at the top of the frame.
+
+.. note:: This only displays the group box but does not actually group the controls that you position within it. If you want to e.g. enable / disable them together, you need to do that programmatically.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	box "<title>", <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disable
+	  - Disables the group box.
+	* - hide
+	  - Makes the group box invisible.
+	* - result
+	  - In modal mode, returns the text of the button.
+	* - left
+	  - Put the title on the left
+	* - center
+	  - Put the title in the center
+	* - right
+	  - Put the title on the right
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f
+	  - set focus on the box
+	* - -e 
+	  - enable the box
+	* - -b 
+	  - disable the box
+	* - -v 
+	  - make the box visible
+	* - -h 
+	  - hide the box
+	* - -r 
+	  - clear the box's text (caption)
+	* - -a 
+	  - Adds to the box's text (caption)
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, return the text (caption) of the box, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text 
+	  - returns the text of the box (caption)
+	* - .len
+	  - returns the length of the box's text (caption)
+	* - .next 
+	  - returns the id of the next control in order of tab keypress
+	* - .prev 
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the box is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the box is enabled, otherwise $false
+
+Events
+^^^^^^
+This control has no events.
+
+Example
+^^^^^^^
+
+.. code::text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 90 120
+	  option dbu
+	  box "A Settings", 1, 4 4 80 40
+	  box "B Settings", 2, 4 50 80 40
+	  button "Done", 4, 40 100 40 12, ok
+	}
+
+.. figure:: MIRCdlgGroup_Example.png
