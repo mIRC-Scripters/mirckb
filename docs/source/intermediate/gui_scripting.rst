@@ -1730,3 +1730,100 @@ Example
 	on *:dialog:example:sclick:1: url -a $did(example,$did)
 
 .. figure:: MIRCdlgLink_Example.png
+
+Menu
+~~~~
+A menu control that allows a hierarchical organization of elements called menu items.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	menu "<text>", <menuid> [, <menuid>]
+	item "<text>", <id [, <menuid>]
+	item break, <id [, <menuid>]
+
+.. note:: Menu items can nest under other menus by simply specifying their parent menu ID.
+
+Styles
+^^^^^^
+This element has no available styles.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -e
+	  - enables the menu/item
+	* - -b
+	  - disables the menu/item
+	* - -v
+	  - makes the menu/item visible
+	* - -h
+	  - hides the menu/item
+	* - -a
+	  - Adds an item to a menu, /did -a <name> <menuid> <newid> <text>
+	* - -i
+	  - Inserts an item to a menu before the item identified by the specified <id>, /did -i <name> <id> <newid> <text>
+	* - -d
+	  - Deletes the item from the menu, /did -d <name> <id>
+
+$did
+^^^^
+No $did support for a menu or an item.
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - menu
+	  - Triggers upon menu click
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 110
+	  option dbu
+	 
+	  menu "&File", 1
+	  item "&New", 11, 1
+	  item "&Open...", 12, 1
+	  item "&Save", 13, 1
+	  item "Save &As...", 14, 1
+	  menu "&Edit", 2
+	  item "Some Item1", 21, 2
+	  item break, 22, 2
+	  item "Some Item2", 23, 2
+	  menu "&View", 3
+	  item "Some Item3", 31, 3
+	  item break, 32, 3
+	  item "Some Item4", 33, 3
+	  menu "&Help", 4
+	  item "Some Item5", 41, 4
+	  item break, 42, 4
+	  item "Some Item6", 43, 4
+	 
+	  button "Done", 7, 10 95 40 12, ok
+	}
+
+.. figure:: MIRCdlgMenu_Example.png
