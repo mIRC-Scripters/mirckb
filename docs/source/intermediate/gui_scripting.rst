@@ -936,6 +936,7 @@ Events
 
 Example
 ^^^^^^^
+
 .. code:: text
 
 	; init alias
@@ -967,3 +968,122 @@ Example
 	}
 
 .. figure:: MIRCdlgCheck_Example.png
+
+Text
+~~~~
+A text is simply a GUI label component with text designed for displaying information with no user input. By default, the text will wrap to the next line if needed.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	text "<text>", <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - nowrap
+	  - Prevents the text from wrapping. Any text that does not fit will simply be cut off.
+	* - center
+	  - Centers the text in the label.
+	* - right
+	  - Right-aligned the text in the label.
+	* - disable
+	  - Disables the label. (grays it out)
+	* - hide
+	  - Makes the label invisible.
+	* - result
+	  - In modal mode, returns the text of the label.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f 
+	  - sets focus on the text control
+	* - -e 
+	  - enable the text control
+	* - -b
+	  - disable the text control
+	* - -v 
+	  - make the text control visible
+	* - -h 
+	  - hide the text control
+	* - -r 
+	  - clears the text of the text control
+	* - -a 
+	  - adds text to the text control
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, return the text (caption) of the text control, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text 
+	  - returns the text of the text control (caption)
+	* - .len 
+	  - returns the length of the text of the text control (caption)
+	* - .next 
+	  - returns the id of the next control in order of tab keypress
+	* - .prev 
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible 
+	  - returns $true if the text control is visible, otherwise $false
+	* - .enabled 
+	  - returns $true if the text control is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - sclick
+	  - Triggers upon single click
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 70
+	  option dbu
+	  text "This label does not wrap.", 1, 4 10 40 15, nowrap
+	  text "This is a simple label.", 2, 4 30 40 15
+	  text "I am right-aligned.", 3, 4 50 40 15, right
+	  button "Done", 4, 50 30 40 12, ok
+	}
+
+.. figure:: MIRCdlgLabel_Example.png
