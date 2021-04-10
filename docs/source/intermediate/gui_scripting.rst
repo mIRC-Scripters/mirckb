@@ -1330,3 +1330,169 @@ Example
 	}
 
 .. figure:: MIRCdlgImage_Example.png
+
+Edit
+~~~~
+The edit control can behave as a normal text box as well as a rich text control.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	edit "<text>", <id>, <x> <y> <width> <height>[, <style>]
+
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disabled
+	  - Disables the text control.
+	* - read
+	  - Sets the control to read-only.
+	* - pass
+	  - Treats the textbox as a password field. Stars-out the text.
+	* - hide
+	  - Hides the text control.
+	* - right
+	  - Right aligns the text.
+	* - center
+	  - Center aligns the text.
+	* - multi
+	  - Allows the text to span multiple lines.
+	* - hsbar
+	  - Always show the horizontal scrollbar.
+	* - autohs
+	  - Show the horizontal scrollbar automatically when needed.
+	* - vsbar
+	  - Allows show the vertical scrollbar.
+	* - autovs
+	  - Show the vertical scrollbar automatically when needed.
+	* - rich
+	  - Creates a rich-edit control instead of the normal text control.
+	* - return
+	  - Accepts the return key. Allowing the user to create a new line.
+	* - limit N
+	  - Limits the text to N characters.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f 
+	  - set focus on the editbox
+	* - -e
+	  - enable the editbox
+	* - -b 
+	  - disable the editbox
+	* - -v 
+	  - make the editbox visible
+	* - -h 
+	  - hide the editbox
+	* - -r 
+	  - clear the edit's text
+	* - -a 
+	  - Adds to the editbox's text. You can use $crlf if the editbox has 'multi' style to add a newline.
+	* - -n 
+	  - enables the editbox
+	* - -m 
+	  - disables editbox
+	* - -c 
+	  - sets the selected text in the editbox, /did -c <name> <id> <line> [[n [n2]], set the selection on line <line>, where n and n2 represent the start/end position of the selection in the line
+	* - -d 
+	  - if you used the 'multi' style, deletes the Nth line in the editbox
+	* - -i
+	  - inserts the text on the Nth line of the editbox (if you are not using the 'multi' style, it overwrites everything)
+	* - -o
+	  - overwrite the Nth line (if you are not using the 'multi' style, it overwrite everything) in the editbox
+	* - -j 
+	  - resets the edited setting of the editbox
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>,[N])[.property]
+
+Without any property, return the text (caption) of the editbox, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the text of the editbox or the Nth line if the 'multi' style has been used (caption)
+	* - .len 
+	  - returns the length of the editbox's text (caption)
+	* - .lines 
+	  - returns the number of lines in the editbox
+	* - .sel 
+	  - If N is non-zero, returns the line number of the starting position of selection
+	* - .seltext 
+	  - returns the selected text in the editbox
+	* - .selstart 
+	  - returns the position of the start of the selection in the editbox
+	* - .selend 
+	  - returns the position of the end of the selection in the editbox
+	* - .edited 
+	  - returns $true if the content of the editbox was changed
+	* - .next 
+	  - returns the id of the next control in order of tab keypress
+	* - .prev 
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible 
+	  - returns $true if the button is visible, otherwise $false
+	* - .enabled 
+	  - returns $true if the button is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - mouse
+	  - Triggers when a mouse moves over the text.
+	* - edit
+	  - Triggers when the text has changed/edited.
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 110
+	  option dbu
+	 
+	  edit "Left", 1, 10 10 80 20,
+	  edit "Center", 2, 10 40 80 20, center
+	  edit "Right", 3, 10 70 80 20, right
+	 
+	  button "Done", 7, 10 95 40 12, ok
+	}
+
+.. figure:: MIRCdlgText_Example.png
