@@ -244,7 +244,7 @@ mIRC provides the following types of operators:
 -  List-related Operators
 
 Arithmetic Operators
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 mIRC supports the following arithmetic operators:
 
