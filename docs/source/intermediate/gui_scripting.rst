@@ -2265,3 +2265,150 @@ Example
 	}
 
 .. figure:: MIRCdlgList_Example.png
+
+Combo
+~~~~~
+The combo control provides a way to choose an item from a selection of items in either a list, or from a drop-down fashion selection box.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	combo <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disable	
+	  - Disables the combo control.
+	* - hide
+	  - Hides the combo control.
+	* - sort
+	  - Sorts the items in the combo control.
+	* - drop
+	  - Creates a drop-down combo control.
+	* - edit
+	  - Used with 'drop' style, creates a drop-down editable combo control.
+	* - vsbar
+	  - Always show the vertical scrollbar.
+	* - hsbar
+	  - Always show the horizontal scrollbar.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f
+	  - sets focus on the combo
+	* - -e
+	  - enables the combo
+	* - -b
+	  - disables the combo
+	* - -v
+	  - makes the combo visible
+	* - -h
+	  - hides the combo
+	* - -c
+	  - selects the Nth line in the combo: /did -c <name> <id> <line>
+	* - -r
+	  - clears the combo, use N = 0 to clear the text of the editable editbox of the combo
+	* - -a
+	  - adds a line to the end of the combo, use N = 0 to add to the editable editbox of the combo
+	* - -d
+	  - deletes the Nth line in the combo
+	* - -i
+	  - inserts a line at Nth line position in the combo
+	* - -o
+	  - overwrites the Nth line with the next text in the combo
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>,[N])[.property]
+
+Without any properties, returns the text of the Nth line in the list, same as the .text property.
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the Nth line in the combo, use N = 0 to access the text of the editable editbox of the combo
+	* - .len
+	  - returns the length of the Nth line in the combo
+	* - .lines
+	  - returns the number of lines in the combo
+	* - .sel
+	  - returns the line number selected line in the combo
+	* - .seltext
+	  - returns the first selected line in the combo
+	* - .next
+	  - returns the id of the next control in tab key order
+	* - .prev
+	  - returns the id of the previous control in tab key order
+	* - .visible
+	  - returns $true if the list is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the list is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - mouse
+	  - Triggers when a mouse moves the combo control.
+	* - sclick
+	  - Triggers when an item is clicked.
+
+Example
+^^^^^^^
+
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 110
+	  option dbu
+	 
+	  combo 1, 10 10 80 50, drop
+	  combo 2, 10 50 80 50
+	 
+	  button "Done", 7, 10 95 40 12, ok
+	}
+	on 1:dialog:example:init:*: {
+	  did -a example 1 Item A
+	  did -a example 1 Item B
+	  did -a example 1 Item C
+	  did -a example 2 Item A
+	  did -a example 2 Item B
+	  did -a example 2 Item C
+	}
+
+.. figure:: MIRCdlgCombo_Example.png
