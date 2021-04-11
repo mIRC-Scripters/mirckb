@@ -46,7 +46,7 @@ Variables, INI Files and Text Files all write data to flat files, and are suitab
 
 For large volume persistent data, needing both high performance and file storage, you may need to store the data in both hash tables for read access then save and load hash tables to and from INI Files.
 
-If you need advice before coding, why not ask for advice in one of the mIRC scripting `channels on IRC <misc/mirc_help_channels>`__.
+If you need advice before coding, why not ask for advice in one of the :doc:`misc/mirc_help_channels`.
 
 History
 -------
