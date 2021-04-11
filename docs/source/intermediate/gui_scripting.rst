@@ -1969,3 +1969,129 @@ Example
 	}
 
 .. figure:: MIRCdlgRadio_Example.png
+
+Tab
+~~~
+A tab control is a container component capable of holding all of the other components. A tab control can have multiple tabs, and each tab can store another set of controls.
+
+.. note:: You cannot have more than one tab control per dialog with mIRC.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	tab "<text>", <id>, <x> <y> <width> <height>, <style>
+	tab "<text>", <id>, <style>
+
+The first tab definition in the synopsis specifies the main tab control and its size, the other definition adds an item to the tab.
+
+To add a control to a tab item, specify the "tab <id>" style for the control, where <id> is the id of that tab item.
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disable
+	  - Disables all the controls inside the specified tab.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -fu
+	  - sets focus on the tab
+	* - -e
+	  - enables the tab
+	* - -b
+	  - disables the tab
+	* - -v
+	  - makes the tab visible
+	* - -h
+	  - hides the tab
+	* - -r
+	  - clears the text of the tab item (caption)
+	* - -a
+	  - adds to the text of the tab item (caption)
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, returns the text (caption) of the radio, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the text (caption) of the tab item
+	* - .len
+	  - returns the length of the text of the tab item (caption)
+	* - .next
+	  - returns the id of the next control in order of tab keypress
+	* - .prev
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the tab is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the tab is enabled, otherwise $false
+
+$dialog
+^^^^^^^
+You can use $dialog(<name>).tab to know which tab is currently selected, returns the Nth tab number.
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - sclick
+	  - Triggers upon single click
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 110
+	  option dbu
+	 
+	  tab "Tab 1", 1, 10 10 80 80
+	  tab "Tab 2", 2
+	  tab "Tab 3", 3
+	 
+	  button "111", 4, 20 30 40 40, tab 1
+	  button "222", 5, 20 30 40 40, tab 2
+	  button "333", 6, 20 30 40 40, tab 3
+	 
+	  button "Done", 7, 10 95 40 12, ok
+	}
+
+.. figure:: MIRCdlgTab_Example.png
