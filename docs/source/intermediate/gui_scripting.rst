@@ -2095,3 +2095,173 @@ Example
 	}
 
 .. figure:: MIRCdlgTab_Example.png
+
+List
+~~~~
+The list control provides a way to display a list of items.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	list <id>, <x> <y> <width> <height>[, <style>]
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - disable	
+	  - Disables the list control.
+	* - hide
+	  - Hides the list control.
+	* - sort
+	  - Sorts the items in the list.
+	* - multsel
+	  - Allows multiple items to be selected without holding the click/shift/control.
+	* - extsel
+	  - Allows extra selection support, you can use the control/shift keys to keep the selection and click on different entry in the list.
+	* - vsbar
+	  - Always show the vertical scrollbar.
+	* - hsbar
+	  - Always show the horizontal scrollbar.
+	* - check
+	  - Turns the list into a list of checkbox items.
+	* - radio
+	  - Turns the list into a list of radio items.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f
+	  - sets focus on the list
+	* - -e
+	  - enables the list
+	* - -b
+	  - disables the list
+	* - -v
+	  - makes the list visible
+	* - -h
+	  - hides the list
+	* - -c
+	  - selects the Nth line in the list: /did -c <name> <id> <line>
+	* - -u
+	  - unselects the Nth line in the list
+	* - -k
+	  - keeps the selection of others lines when selecting/unselecting
+	* - -s
+	  - if you used the 'check' or 'radio' style, mark the check/radio of the Nth line as checked
+	* - -l
+	  - if you used the 'check' or 'radio' style, mark the check/radio of the Nth line as unchecked
+	* - -r
+	  - clears the list
+	* - -a
+	  - adds a line to the end of the list
+	* - -d
+	  - deletes the Nth line in the list
+	* - -i
+	  - inserts a line at Nth line position in the list
+	* - -o
+	  - overwrites the Nth line with the next text in the list
+	* - -z
+	  - resets the width of the horizontal scrollbar in the list
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>,[N])[.property]
+
+Without any properties, returns the text of the Nth line in the list, same as the .text property.
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the Nth line in the list
+	* - .len
+	  - returns the length of the Nth line in the list
+	* - .lines
+	  - returns the number of lines in the list
+	* - .sel
+	  - returns the line number of the Nth line selected line in the list, if N = 0, returns the total number of selected line
+	* - .seltext
+	  - returns the first selected line in the list
+	* - .next
+	  - returns the id of the next control in tab key order
+	* - .prev
+	  - returns the id of the previous control in tab key order
+	* - .visible
+	  - returns $true if the list is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the list is enabled, otherwise $false
+	* - .csel
+	  - if the 'radio' or 'check' style is used, returns the line number of the Nth checked line in the list, if N = 0, returns the total number of checked line
+	* - .cstate
+	  - if the 'radio' or 'check' style is used, returns the state of the check/radio control of the Nth line in the list 1 = checked, 0 = unchecked
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - mouse
+	  - Triggers when a mouse moves the list control.
+	* - sclick
+	  - Triggers when an item is clicked.
+	* - dclick
+	  - Triggers when an item is double clicked.
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 100 110
+	  option dbu
+	 
+	  list 1, 10 10 80 20, multsel
+	  list 2, 10 40 80 20, radio
+	  list 3, 10 70 80 20, check
+	 
+	  button "Done", 7, 10 95 40 12, ok
+	}
+	on 1:dialog:example:init:*: {
+	  did -a example 1 Item A
+	  did -a example 1 Item B
+	  did -a example 1 Item C
+	  did -a example 2 Item A
+	  did -a example 2 Item B
+	  did -a example 2 Item C
+	  did -a example 3 Item A
+	  did -a example 3 Item B
+	  did -a example 3 Item C
+	}
+
+.. figure:: MIRCdlgList_Example.png
