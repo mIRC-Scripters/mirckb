@@ -72,6 +72,8 @@ References
 .. [2]
    `Versions.txt <https://www.mirc.com/versions.txt>`__
 
+Index
+=====
 
 .. toctree::
    :maxdepth: 2
@@ -108,11 +110,3 @@ References
 
    about/license
    about/credits
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
