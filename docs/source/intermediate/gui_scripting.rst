@@ -1827,3 +1827,145 @@ Example
 	}
 
 .. figure:: MIRCdlgMenu_Example.png
+
+Radio
+~~~~~
+Radio buttons are a group of controls that can be configured to only allow the user to choose one of a predefined set of options.
+
+Synopsis
+^^^^^^^^
+
+.. code:: text
+
+	radio "<text>", <id>, <x> <y> <width> <height>[, <style> [group]]
+
+Styles
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Style
+	  - Description
+	* - left
+	  - Places the text on the left side of the control.
+	* - push
+	  - Creates a radio button in the form of normal buttons.
+	* - disable
+	  - Disables the button.
+	* - hide
+	  - Makes the button invisible.
+	* - result
+	  - In modal mode, returns the text of the button.
+	* - group
+	  - Identifies the first radio button in a group of severals radio buttons, only one can be checked at a time.
+
+/did
+^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Switch
+	  - Description
+	* - -f 
+	  - sets focus on the radio
+	* - -t
+	  - sets the radio as the default control
+	* - -e
+	  - enables the radio
+	* - -b
+	  - disables the radio
+	* - -v
+	  - makes the radio visible
+	* - -h
+	  - hides the radio
+	* - -c
+	  - mark the radio as checked
+	* - -u
+	  - mark the checkboradio as unchecked
+	* - -r
+	  - clear the text of the radio (caption)
+	* - -a
+	  - adds text to the text of the radio (caption)
+
+$did
+^^^^
+
+.. code:: text
+
+	$did(<name>,<id>)[.property]
+
+Without any property, returns the text (caption) of the radio, same as the .text property
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Property
+	  - Description
+	* - .text
+	  - returns the text (caption) of the radio line or Nth line
+	* - .len
+	  - returns the length of the text of the radio (caption)
+	* - .state
+	  - returns the state of the radio, 0 = unchecked, 1 = checked
+	* - .next
+	  - returns the id of the next control in order of tab keypress
+	* - .prev
+	  - returns the id of the previous control in order of tab keypress
+	* - .visible
+	  - returns $true if the radio is visible, otherwise $false
+	* - .enabled
+	  - returns $true if the radio is enabled, otherwise $false
+
+Events
+^^^^^^
+
+.. list-table::
+	:widths: 50 50
+	:header-rows: 1
+
+	* - Event
+	  - Description
+	* - sclick
+	  - Triggers upon single click
+
+Example
+^^^^^^^
+
+.. code:: text
+
+	; init alias
+	alias example {
+	  dialog -m example example
+	}
+	; dialog structure
+	dialog Example {
+	  title "Example"
+	  size -1 -1 90 80
+	  option dbu
+	 
+	  ; 1st group
+	  text "Sex:", 1, 4 4 10 10
+	  radio "Male", 2, 4 13 20 10, group
+	  radio "Female", 3, 30 13 30 10
+	  
+	  ; 2nd group
+	  text "Marital Status:", 4, 4 25 50 10
+	  radio "Single", 5, 4 33 22 10, group left
+	  radio "Married", 6, 30 33 25 10, left
+	  radio "Other", 7, 60 33 22 10, left
+	 
+	  ; 3rd group
+	  text "Favorite Color:", 8, 4 45 50 10
+	  radio "Red", 9, 4 55 20 10, group push
+	  radio "Green", 10, 25 55 20 10, push
+	  radio "Blue", 11, 46 55 20 10, push
+	  radio "Other", 12, 67 55 20 10, push
+	  button "Done", 13, 40 68 40 12, ok
+	}
+
+.. figure:: MIRCdlgRadio_Example.png
