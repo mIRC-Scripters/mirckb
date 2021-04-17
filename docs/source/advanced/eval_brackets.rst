@@ -565,12 +565,12 @@ Commands with Special Behavior
 
 Not all commands are equal. Below is a list of some regular commands that have special evaluation routines that allow us to get the job that would otherwise require evaluation brackets:
 
-# /var
-# /set
-# /inc
-# /dec
-# /unset
-# /sockwrite
+1. /var
+2. /set
+3. /inc
+4. /dec
+5. /unset
+6. /sockwrite
 
 .. code:: text
 
