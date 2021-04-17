@@ -98,6 +98,9 @@ Index
    :maxdepth: 2
    :caption: Advanced
 
+   advanced/sockets
+   advanced/eval_brackets
+
 .. toctree::
    :maxdepth: 2
    :caption: Miscellaneous

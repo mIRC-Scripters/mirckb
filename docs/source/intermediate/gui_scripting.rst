@@ -2384,7 +2384,6 @@ Events
 Example
 ^^^^^^^
 
-
 .. code:: text
 
 	; init alias
