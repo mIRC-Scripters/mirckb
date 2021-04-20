@@ -100,6 +100,7 @@ Index
 
    advanced/sockets
    advanced/eval_brackets
+   advanced/com
 
 .. toctree::
    :maxdepth: 2
