@@ -109,6 +109,12 @@ Index
    misc/mirc_help_channels
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Reference
+
+   commands/index_commands
+
+.. toctree::
    :maxdepth: 1
    :caption: About
 
