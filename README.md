@@ -5,7 +5,7 @@ mIRC Knowledge Base
 
 Build with Sphinx and ReStructered Text
 
-Project page:	https://readthedocs.org/projects/mirckb/
+Project page:	https://readthedocs.org/projects/mirckb/  
 Webpage:		https://mirckb.readthedocs.io/
 
 This project is WIP (Work In Progress)
