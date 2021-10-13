@@ -349,7 +349,7 @@ Keyboard Events
 
 You can catch keyboard input using the ON KEYDOWN and ON KEYUP events, which triggers when a key is pressed and released respectively.
 
-Synopsis: on on <level>:<keydown|keyup>:<@window>:<keys>:<command>
+Synopsis: ``on <level>:<keydown|keyup>:<@window>:<keys>:<command>``
 
 Can be a comma sepereated list of key, which are nothing more than number, representing a key, $keyval returns the key code while $keychar returns the actual character of the key. $keyrpt returns $true if the event is triggering because the key is being held down (on keydown only).
 
@@ -380,49 +380,49 @@ Other useful properties:
 The $click Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $click(@window,N)
+Synopsis: ``$click(@window,N)``
 
 mIRC store a history of x,y value when you click on a window, $click() returns the Nth x,y click.
 
 The $inellipse Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $inellipse(x,y,x,y,w,h)
+Synopsis: ``$inellipse(x,y,x,y,w,h)``
 
 Returns $true if the first point x y is inside the ellipse specified by the 'x y w h' parameters, and $false if it is not.
 
 The $inrect Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $inrect(x,y,x,y,w,h)
+Synopsis: ``$inrect(x,y,x,y,w,h)``
 
 Returns $true if the first point x y is inside the rectangle specified by the 'x y w h' parameters, and $false if it is not.
 
 The $inroundrect Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $inroundrect(x,y,x,y,w,h,w,h)
+Synopsis: ``$inroundrect(x,y,x,y,w,h,w,h)``
 
 Returns $true if the first point x y is inside the rounded rectangle specified by the 'x y w h' parameters, where the extra 'w h' parameters represent the value used in /drawrect to get the rounded corner, and $false if it is not.
 
 The $inpoly Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $inpoly(x,y,x1,y1,x2,y2,...)
+Synopsis: ``$inpoly(x,y,x1,y1,x2,y2,...)``
 
 Returns $true if the first point x y is inside the polygon defined by the specified points 'x1 y1 x2 y2 ...' parameters, and $false if it is not.
 
 The $onpoly Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $onpoly(n1,n2,x1,y1,x2,y2,x3,y3,...)
+Synopsis: ``$onpoly(n1,n2,x1,y1,x2,y2,x3,y3,...)``
 
 Returns $true if two polygon overlap, $false otherwise. The first n1 and n2 parameters represent the number of points in the first and in the second polygon respectively. The rest of the parameters are the x,y points used for each polygon.
 
 The $rgb Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $rgb(R,G,B), $rgb(N)
+Synopsis: ``$rgb(R,G,B)``, ``$rgb(N)``
 
 $rgb(R,G,B) returns the RGB value formed with the specified Red, Green and Blue values.
 
@@ -431,28 +431,28 @@ $rgb(N) return the R,G,B format used to form the specified RGB color value.
 The $getdot Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $getdot(@window,x,y)
+Synopsis: ``$getdot(@window,x,y)``
 
 Returns the RGB value of the pixel at the specified coordinate in the specified window.
 
 The $height Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $height(@text,fontname,fontsize)
+Synopsis: ``$height(@text,fontname,fontsize)``
 
 Returns height of text in pixels for the specified font.
 
 The $width Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $width(text,fontname,fontsize,B,C)
+Synopsis: ``$width(text,fontname,fontsize,B,C)``
 
 Returns width of text in pixels for the specified font, B can be non zero for a bold font, C can be non zero if you want control codes to be processed.
 
 The $window Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $window, $window(<@<name|wid>|N>,N)
+Synopsis: ``$window, $window(<@<name|wid>|N>,N)``
 
 **$window** itself returns the name of the window which was just left in the **leave** mouse event in a menu definition.
 
@@ -461,7 +461,7 @@ When used with arguments, if you use a name, it can be a wildcard and can be use
 The $pic Identifier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Synopsis: $pic(filename).[height|width|size]
+Synopsis: ``$pic(filename).[height|width|size]``
 
 Can return the size, width and height of a .bmp, .jpg or .png file
 
