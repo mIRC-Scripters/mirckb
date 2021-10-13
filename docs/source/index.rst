@@ -83,6 +83,7 @@ Index
    beginner/variables
    beginner/string_and_token_manipulation
    beginner/aliases
+   beginner/injection
 
 .. toctree::
    :maxdepth: 2
