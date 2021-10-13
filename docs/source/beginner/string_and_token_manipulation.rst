@@ -373,7 +373,7 @@ There are two built-in ways to add or insert a token into a list: the $addtok an
    var %newList = $addtok(<list>, <token>, <code_point>)
    var %newList = $instok(<list>, <token>, <Nth_pos>, <code_point>)
 
-The major difference between $instok and $addtok is that $addtok will not append a token that is already found in the string while $instok will. is the position of where the token should be placed. For example 5 will be the 5th element. A negative number can be used as well to indicate the Nth token from the end instead of the begging. For example -1 is the 2nd to last element, or the 1 element before the last element.
+The major difference between $instok and $addtok is that $addtok will not append a token that is already found in the string while $instok will. \<Nth_pos\> is the position of where the token should be placed. For example 5 will be the 5th element. A negative number can be used as well to indicate the Nth token from the end instead of the begin. For example -1 is the 2nd to last element, or the 1 element before the last element.
 
 .. code:: text
 
