@@ -419,7 +419,7 @@ You should inspect your mIRC settings for certain things which can be used to ex
 
 First, check the Options menu of your Alt+R scripts editor. It's a good idea set a few options here which can prevent problems.
 
-Identifier warning
+Identifier Warning
 ^^^^^^^^^^^^^^^^^^
 
 This halts a script when an invalid identifier name is used, rather than evaluating the identifier as $null. The error warning can alert you to a script error which can cause it to not do as you expect.
@@ -451,7 +451,7 @@ This creates a file without a filetype, where the filename itself is not visible
     //var %i 1 | while ($script(%i)) { echo -a %i : $qt($nopath($script(%i))) | inc %i }
 
 
-Restricting DCC Get filetypes
+Restricting DCC Get Filetypes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You should view the contents of your downloads folder with suspicion if you don't know from whom you received the file. If you disable filetype blocking, you should do it temporarily, by using the "turn ignore back on in xx minutes" feature, which causes the 'disable' choice to revert back to the prior 'accept only' or 'ignore only' setting.
