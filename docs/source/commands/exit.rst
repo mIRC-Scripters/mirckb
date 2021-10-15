@@ -49,5 +49,8 @@ Added: mIRC v3.3 (21 Jun 1995)
 See also
 --------
 
-* :doc:`/load <load>`
-* :doc:`/unload <unload>`
+.. hlist::
+    :columns: 4
+
+    * :doc:`/load <load>`
+    * :doc:`/unload <unload>`
