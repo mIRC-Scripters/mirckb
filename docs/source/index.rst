@@ -72,12 +72,11 @@ References
 .. [2]
    `Versions.txt <https://www.mirc.com/versions.txt>`__
 
-Index
-=====
 
 .. toctree::
    :maxdepth: 2
    :caption: Beginner
+   :hidden:
 
    beginner/bootcamp
    beginner/variables
@@ -88,6 +87,7 @@ Index
 .. toctree::
    :maxdepth: 2
    :caption: Intermediate
+   :hidden:
 
    intermediate/control_flow_statements
    intermediate/data_storage
@@ -98,6 +98,7 @@ Index
 .. toctree::
    :maxdepth: 2
    :caption: Advanced
+   :hidden:
 
    advanced/sockets
    advanced/eval_brackets
@@ -106,18 +107,21 @@ Index
 .. toctree::
    :maxdepth: 2
    :caption: Miscellaneous
+   :hidden:
 
    misc/mirc_help_channels
 
 .. toctree::
    :maxdepth: 2
    :caption: Reference
+   :hidden:
 
    commands/index_commands
 
 .. toctree::
    :maxdepth: 1
    :caption: About
+   :hidden:
 
    about/license
    about/credits
