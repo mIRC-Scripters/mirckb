@@ -1,0 +1,63 @@
+/fwrite
+=======
+
+The **/fwrite** command writes text or the specified binary variable to the file.
+
+Synopsis
+--------
+
+.. code:: text
+
+    /fwrite [-bn] <name> <text | &binvar>
+
+Switches
+--------
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Switch
+      - Description
+    * - -b
+      - indicates that a &binvar is being specified
+    * - -n
+      - appends a $crlf to the line being written
+
+Parameters
+----------
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - <name>
+      - name of the file handle
+    * - <text | &binvar>
+      - the text or the binvar to be written
+
+Example
+-------
+
+Compatibility
+-------------
+
+Added: mIRC v6.1 (29/08/2003)
+
+.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+
+See also
+--------
+
+.. hlist::
+    :columns: 4
+
+    * :doc:`$fopen </aliases/fopen>`
+    * :doc:`$fread </aliases/fread>`
+    * :doc:`$feof </aliases/feof>`
+    * :doc:`$ferr </aliases/ferr>`
+    * :doc:`/fclose <fclose>`
+    * :doc:`/fopen <fopen>`
+    * :doc:`/fseek <fseek>`

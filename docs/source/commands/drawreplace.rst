@@ -50,7 +50,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3
+Added: mIRC v5.3 (13 Dec 1997)
 
 .. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
 

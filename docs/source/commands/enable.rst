@@ -25,8 +25,10 @@ Parameters
 
     * - Parameter
       - Description
-    * - <group1 group2 ... groupN> - a list with the name of the groups to be enabled seperated by spaces
-    * - <wildcard_expression - a {{mirc|wildcard}} expression, all matching groups are disabled
+    * - <group1 group2 ... groupN>
+      - a list with the name of the groups to be enabled seperated by spaces
+    * - <wildcard_expression>
+      - a wildcard expression, all matching groups are disabled
 
 Example
 -------
