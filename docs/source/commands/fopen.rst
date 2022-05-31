@@ -112,13 +112,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:` $fopen </aliases/fopen>`
-    * :doc:` $fread </aliases/fread>`
-    * :doc:` $fgetc </aliases/fgetc>`
-    * :doc:` $feof </aliases/feof>`
-    * :doc:` $ferr </aliases/ferr>`
-    * :doc:` $file </aliases/file>`
-    * :doc:` /fclose <fclose>`
-    * :doc:` /flist <flist>`
-    * :doc:` /fseek <fseek>`
-    * :doc:` /fwrite <fwrite>`
+    * :doc:`$fopen </aliases/fopen>`
+    * :doc:`$fread </aliases/fread>`
+    * :doc:`$fgetc </aliases/fgetc>`
+    * :doc:`$feof </aliases/feof>`
+    * :doc:`$ferr </aliases/ferr>`
+    * :doc:`$file </aliases/file>`
+    * :doc:`/fclose <fclose>`
+    * :doc:`/flist <flist>`
+    * :doc:`/fseek <fseek>`
+    * :doc:`/fwrite <fwrite>`
