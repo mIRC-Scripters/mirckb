@@ -102,8 +102,8 @@ Below is a recap of the two socket types available:
 	    - Order is guaranteed
 	    - No data loss
 	  - - Unreliable "best effort" delivery 
-		- Order is not guaranteed 
-		- Possible data loss
+	    - Order is not guaranteed
+	    - Possible data loss
 	* - Decent Speed
 	  - Fast
 
