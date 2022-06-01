@@ -234,7 +234,7 @@ Injection via $identifiers
 $readini() and $read()
 ^^^^^^^^^^^^^^^^^^^^^^
 
-If you have visited #mSL on swiftirc, and you had some code that used $read() or $readini|$readini() without the n switch you would most likely had people yelling at you to always use it. But why? The reason is:
+If you have visited #mSL on swiftirc, and you had some code that used $read() or $readini() without the n switch you would most likely had people yelling at you to always use it. But why? The reason is:
 
 .. warning:: By default BOTH $read() and $readini() treat the text in the file as code!
 
