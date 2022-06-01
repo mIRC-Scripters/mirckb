@@ -102,7 +102,7 @@ in mIRC ''7.22'' /fopen left the handle open even after it failed. The compatibi
 
 Compatibility
 -------------
-Added: mIRC v6.1 (29/08/2003)
+Added: mIRC v6.1 (29 Aug 2003)
 
 .. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
 
