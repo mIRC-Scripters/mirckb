@@ -99,12 +99,47 @@ For example:
 
 can be executed by any user with access level 5 or greater.
 
+.. _caret-prefix:
+
 ^ Prefix
 ~~~~~~~~
 
 By default, your event is triggered after mIRC has processed this event itself. For example if someone talks to you in a query, mIRC will display the text in that window, triggers the various beep and flash option if any, and only then trigger on TEXT.
 
-The ^ prefix tells mIRC to process your event before it processes the event itself. This prefix typically only works with IRC event but here is a full list of supported events: on ACTION, on BAN, on CHAT, on DEHELP, on DEOP, on DEVOICE, on HELP, on INVITE, on JOIN, on KICK, on MODE, on NICK, on NOTICE, on OP, on OPEN, on PART, on PING, on TEXT, on UNBAN, on USERMODE, on VOICE, on QUIT, on SERV, on SERVERMODE, on SERVEROP, on SNOTICE, on TABCOMP, on TOPIC, on wallops.
+The ^ prefix tells mIRC to process your event before it processes the event itself. This prefix typically only works with IRC event but here is a full list of supported events:
+
+.. hlist::
+   :columns: 4
+
+   * on ACTION
+   * on BAN
+   * on CHAT
+   * on DEHELP
+   * on DEOP
+   * on DEVOICE
+   * on HELP
+   * on INVITE
+   * on JOIN
+   * on KICK
+   * on MODE
+   * on NICK
+   * on NOTICE
+   * on OP
+   * on OPEN
+   * on PART
+   * on PING
+   * on TEXT
+   * on UNBAN
+   * on USERMODE
+   * on VOICE
+   * on QUIT
+   * on SERV
+   * on SERVERMODE
+   * on SERVEROP
+   * on SNOTICE
+   * on TABCOMP
+   * on TOPIC
+   * on WALLOPS
 
 This prefix, coupled with /halt or /haltdef, allows you to display your own message for a given event, or it allows you to prevent a query window from opening with on OPEN, or to prevent a nick completion in on tabcomp.
 
@@ -156,7 +191,7 @@ will only work if you are an operator in #myChan at the time the user typed ".o"
 & Prefix
 ~~~~~~~~
 
-The **& prefix** can be used to prevent the event from being executed if the previous event called the /haltdef or /halt commands (if $halted is $true).
+The **&** prefix can be used to prevent the event from being executed if the previous event called the /haltdef or /halt commands (if $halted is $true).
 
 For example, given the following two on TEXT events placed in separate files...
 
@@ -207,7 +242,7 @@ With that you can use the named group level in events, for example:
 me Prefix
 ~~~~~~~~~
 
-The 'me' prefix can be used to get an event to trigger when you meet the criteria (only if $nick == $me). The 'me' prefix is a bit special; it requires a new colon before other prefixes.
+The **me** prefix can be used to get an event to trigger when you meet the criteria (only if $nick == $me). The 'me' prefix is a bit special; it requires a new colon before other prefixes.
 
 For example:
 

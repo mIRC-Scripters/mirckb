@@ -1,0 +1,88 @@
+/hfree
+======
+
+The **/hfree** command destroys previously created hash table(s) along with all item/data pairs within them. A hash table can be created via the :doc:`/hmake <hmake>` command.
+
+Synopsis
+--------
+
+.. code:: text
+
+    /hfree [-sw] <table>
+
+Switches
+--------
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Switch
+      - Description
+    * - -s
+      - Displays debug information
+    * - -w
+      - Treats <table> as a wildcard and deletes all matching tables.
+
+Parameters
+----------
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - <table>
+      - the table you wish to delete.
+
+Example
+-------
+
+.. code:: text
+
+    alias del_hash {
+      ;makes the hash table 'hash'
+      hmake hash
+      echo -a $hget(hash) : $hget(hash).size
+      ;makes the hash table 'h' with 10 buckets
+      hmake h 10
+      ;makes the hash table 'has' with 20 buckets
+      hmake has 20
+      ;deletes hash table 'hash'
+      hfree -s hash
+      echo -a $hget(h) : $hget(h).size - $hget(has) : $hget(has).size
+      ;deletes any hash tables matching h*
+      hfree -sw h*
+    }
+
+.. code:: text
+
+    //hfree -s test | hfree -s test | echo -a test message
+    * When not using the -w switch, trying to free a non-existent table is an error which halts execution of a script, so the echo does not display
+
+    //hfree -sw test | hfree -sw test | echo -a test message
+    * Using the -w switch allows deleting zero tables matching the wildcard, enabling the echo to display.
+
+Compatibility
+-------------
+
+Added: mIRC v5.8 (05 Sep 2000)
+
+.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+
+See also
+--------
+
+.. hlist::
+    :columns: 4
+
+    * :doc:`/hmake <hmake>`
+    * :doc:`/hload <hload>`
+    * :doc:`/hsave <hsave>`
+    * :doc:`/hadd <hadd>`
+    * :doc:`/hdel <hdel>`
+    * :doc:`/hinc <hinc>`
+    * :doc:`/hdec <hdec>`
+    * :doc:`$hget </aliases/hget>`
+    * :doc:`$hfind </aliases/hfind>`
