@@ -39,9 +39,13 @@ A typical conditional statement consists of two operands and an operator. An ope
 
 In the example above, ">" is the symbol for the greater than operator. The example above has 2 operands: 2 and 3. In the case of the example above, the answer is false, 2 is not greater than 3.
 
+.. _operators:
+
 Operators
 ~~~~~~~~~
 
+Types
+^^^^^
 mIRC provides the following types of operators:
 
 -  Arithmetic Operators
