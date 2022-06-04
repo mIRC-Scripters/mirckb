@@ -8,8 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /join [-inxmd] [#] [key]</source>
-
+    /join [-inxmd] [#] [key]
 
 .. note:: All switches are optional.
 
