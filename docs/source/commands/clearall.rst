@@ -65,8 +65,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$line </aliases/line>`
-    * :doc:`$fline </aliases/fline>`
+    * :doc:`$line </identifiers/line>`
+    * :doc:`$fline </identifiers/fline>`
     * :doc:`/clear <clear>`
     * :doc:`/loadbuf <loadbuf>`
     * :doc:`/savebuf <savebuf>`

@@ -59,8 +59,8 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$bvar </aliases/bvar>`
-	* :doc:`$bfind </aliases/bfind>`
+	* :doc:`$bvar </identifiers/bvar>`
+	* :doc:`$bfind </identifiers/bfind>`
 	* :doc:`/bread <bread>`
 	* :doc:`/breplace <breplace>`
 	* :doc:`/bwrite <bwrite>`

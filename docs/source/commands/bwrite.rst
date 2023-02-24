@@ -79,13 +79,13 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$bvar </aliases/bvar>`
+	* :doc:`$bvar </identifiers/bvar>`
 	* :doc:`/bset <bset>`
 	* :doc:`/bcopy <bcopy>`
 	* :doc:`/bread <bread>`
 	* :doc:`/breplace <breplace>`
 	* :doc:`/btrunc <btrunc>`
 	* :doc:`/bunset <bunset>`
-	* :doc:`$bfind </aliases/bfind>`
+	* :doc:`$bfind </identifiers/bfind>`
 	* :doc:`/fwrite <fwrite>`
 	* :doc:`/write <write>`

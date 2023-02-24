@@ -48,8 +48,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$chan </aliases/chan>`
-    * :doc:`$nick </aliases/nick>`
-    * :doc:`$chanmodes </aliases/chanmodes>`
-    * :doc:`$chantypes </aliases/chantypes>`
+    * :doc:`$chan </identifiers/chan>`
+    * :doc:`$nick </identifiers/nick>`
+    * :doc:`$chanmodes </identifiers/chanmodes>`
+    * :doc:`$chantypes </identifiers/chantypes>`
     * :doc:`/partall <partall>`

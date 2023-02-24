@@ -55,8 +55,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$remote </aliases/remote>`
-    * :doc:`$rawmsg </aliases/rawmsg>`
+    * :doc:`$remote </identifiers/remote>`
+    * :doc:`$rawmsg </identifiers/rawmsg>`
     * :doc:`/ctcps <ctcps>`
     * :doc:`/raw <raw>`
     * :doc:`/remote <remote>`

@@ -95,5 +95,5 @@ See also
     * :doc:`/hadd <hadd>`
     * :doc:`/hinc <hinc>`
     * :doc:`/hdec <hdec>`
-    * :doc:`$hget </aliases/hget>`
-    * :doc:`$hfind </aliases/hfind>`
+    * :doc:`$hget </identifiers/hget>`
+    * :doc:`$hfind </identifiers/hfind>`

@@ -164,5 +164,5 @@ See also
     * :doc:`/hadd <hadd>`
     * :doc:`/hdel <hdel>`
     * :doc:`/hdec <hdec>`
-    * :doc:`$hget </aliases/hget>`
-    * :doc:`$hfind </aliases/hfind>`
+    * :doc:`$hget </identifiers/hget>`
+    * :doc:`$hfind </identifiers/hfind>`

@@ -70,5 +70,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$cb </aliases/cb>`
-    * :doc:`$inpaste </aliases/inpaste>`
+    * :doc:`$cb </identifiers/cb>`
+    * :doc:`$inpaste </identifiers/inpaste>`

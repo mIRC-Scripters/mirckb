@@ -72,8 +72,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$script </aliases/script>`
-    * :doc:`$scriptdir </aliases/scriptdir>`
+    * :doc:`$script </identifiers/script>`
+    * :doc:`$scriptdir </identifiers/scriptdir>`
     * :doc:`/load <load>`
     * :doc:`/reload <reload>`
     * :doc:`/save <save>`

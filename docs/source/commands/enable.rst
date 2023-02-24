@@ -58,6 +58,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$group </aliases/group>`
+    * :doc:`$group </identifiers/group>`
     * :doc:`/disable <disable>`
     * :doc:`/groups <groups>`

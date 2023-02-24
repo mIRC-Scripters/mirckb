@@ -94,7 +94,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$abook </aliases/abook>`
-    * :doc:`$cnick </aliases/cnick>`
-    * :doc:`$nick </aliases/nick>`
+    * :doc:`$abook </identifiers/abook>`
+    * :doc:`$cnick </identifiers/cnick>`
+    * :doc:`$nick </identifiers/nick>`
     * :doc:`/abook <abook>`

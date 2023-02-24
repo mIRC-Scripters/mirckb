@@ -124,11 +124,11 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$toolbar </aliases/toolbar>`
-	* :doc:`$color </aliases/color>`
-	* :doc:`$treebar </aliases/treebar>`
-	* :doc:`$menubar </aliases/menubar>`
-	* :doc:`$switchbar </aliases/switchbar>`
+	* :doc:`$toolbar </identifiers/toolbar>`
+	* :doc:`$color </identifiers/color>`
+	* :doc:`$treebar </identifiers/treebar>`
+	* :doc:`$menubar </identifiers/menubar>`
+	* :doc:`$switchbar </identifiers/switchbar>`
 	* :doc:`/color <color>`
 	* :doc:`/menubar <menubar>`
 	* :doc:`/switchbar <switchbar>`

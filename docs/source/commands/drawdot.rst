@@ -65,17 +65,17 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </aliases/window>`
-    * :doc:`$click </aliases/click>`
-    * :doc:`$mouse </aliases/mouse>`
-    * :doc:`$inellipse </aliases/inellipse>`
-    * :doc:`$inrect </aliases/inrect>`
-    * :doc:`$inroundrect </aliases/inroundrect>`
-    * :doc:`$inpoly </aliases/inpoly>`
-    * :doc:`$onpoly </aliases/onpoly>`
-    * :doc:`$rgb </aliases/rgb>`
-    * :doc:`$getdot </aliases/getdot>`
-    * :doc:`$height </aliases/height>`
+    * :doc:`$window </identifiers/window>`
+    * :doc:`$click </identifiers/click>`
+    * :doc:`$mouse </identifiers/mouse>`
+    * :doc:`$inellipse </identifiers/inellipse>`
+    * :doc:`$inrect </identifiers/inrect>`
+    * :doc:`$inroundrect </identifiers/inroundrect>`
+    * :doc:`$inpoly </identifiers/inpoly>`
+    * :doc:`$onpoly </identifiers/onpoly>`
+    * :doc:`$rgb </identifiers/rgb>`
+    * :doc:`$getdot </identifiers/getdot>`
+    * :doc:`$height </identifiers/height>`
     * :doc:`/drawcopy <drawcopy>`
     * :doc:`/drawfill <drawfill>`
     * :doc:`/drawline <drawline>`

@@ -184,7 +184,7 @@ This is equivalent to:
 
 .. code:: text
 
-   alias fun { if (1 ## 1) { echo Scripting } | if (2 3) { echo Is } | echo = | echo Fun! }
+   alias fun { if (1 == 1) { echo Scripting } | if (2 3) { echo Is } | echo = | echo Fun! }
 
 This should help you understand how brackets are used. They are other situations with if statements where not using brackets will be a problem for example. Remember that brackets help mIRC to identify the block of code, but also the condition, when using a if/elseif/while statement, Here is a final example:
 

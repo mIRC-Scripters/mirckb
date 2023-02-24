@@ -53,6 +53,6 @@ See also
 
     * :doc:`/ialclear <ialclear>`
     * :doc:`/ialmark <ialmark>`
-    * :doc:`$ial </aliases/ial>`
-    * :doc:`$address </aliases/address>`
-    * :doc:`$ialchan </aliases/ialchan>`
+    * :doc:`$ial </identifiers/ial>`
+    * :doc:`$address </identifiers/address>`
+    * :doc:`$ialchan </identifiers/ialchan>`

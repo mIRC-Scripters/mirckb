@@ -49,6 +49,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </aliases/ulevel>`
-    * :doc:`$dlevel </aliases/dlevel>`
-    * :doc:`$level </aliases/level>`
+    * :doc:`$ulevel </identifiers/ulevel>`
+    * :doc:`$dlevel </identifiers/dlevel>`
+    * :doc:`$level </identifiers/level>`

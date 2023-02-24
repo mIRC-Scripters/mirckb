@@ -47,7 +47,7 @@ The above example will output:
 	You are no longer marked as being away
 	-
 
-The **/away** command is usually combined with the :doc:`$away </aliases/away>`, :doc:`$awaymsg </aliases/awaymsg>` and :doc:`$awaytime </aliases/awaytime>` identifiers:
+The **/away** command is usually combined with the :doc:`$away /identifiers/away>`, :doc:`$awaymsg /identifiers/awaymsg>` and :doc:`$awaytime /identifiers/awaytime>` identifiers:
 
 .. code:: text
 
@@ -83,6 +83,6 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$away </aliases/away>`
-	* :doc:`$awaymsg </aliases/awaymsg>`
-	* :doc:`$awaytime </aliases/awaytime>`
+	* :doc:`$away </identifiers/away>`
+	* :doc:`$awaymsg </identifiers/awaymsg>`
+	* :doc:`$awaytime </identifiers/awaytime>`

@@ -76,10 +76,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$isalias </aliases/isalias>`
-    * :doc:`$alias </aliases/alias>`
-    * :doc:`$exists </aliases/exists>`
-    * :doc:`$file </aliases/file>`
+    * :doc:`$isalias </identifiers/isalias>`
+    * :doc:`$alias </identifiers/alias>`
+    * :doc:`$exists </identifiers/exists>`
+    * :doc:`$file </identifiers/file>`
     * :doc:`/load <load>`
     * :doc:`/save <save>`
     * :doc:`/unload <unload>`

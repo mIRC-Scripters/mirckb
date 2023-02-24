@@ -56,8 +56,8 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$me </aliases/me>`
-	* :doc:`$nick </aliases/nick>`
+	* :doc:`$me </identifiers/me>`
+	* :doc:`$nick </identifiers/nick>`
 	* :doc:`/amsg <amsg>`
 	* :doc:`/describe <describe>`
 	* :doc:`/me <me>`

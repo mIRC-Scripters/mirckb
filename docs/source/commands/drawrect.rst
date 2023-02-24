@@ -79,8 +79,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$rgb </aliases/rgb>`
-    * :doc:`$window </aliases/window>`
+    * :doc:`$rgb </identifiers/rgb>`
+    * :doc:`$window </identifiers/window>`
     * :doc:`/drawcopy <drawcopy>`
     * :doc:`/drawdot <drawdot>`
     * :doc:`/drawfill <drawfill>`

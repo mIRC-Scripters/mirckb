@@ -102,9 +102,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$did </aliases/did>`
-    * :doc:`$didtok </aliases/didtok>`
-    * :doc:`$dialog </aliases/dialog>`
-    * :doc:`$didwm </aliases/didwm>`
-    * :doc:`$didreg </aliases/didreg>`
+    * :doc:`$did </identifiers/did>`
+    * :doc:`$didtok </identifiers/didtok>`
+    * :doc:`$dialog </identifiers/dialog>`
+    * :doc:`$didwm </identifiers/didwm>`
+    * :doc:`$didreg </identifiers/didreg>`
     * :doc:`/dialog <dialog>`

@@ -107,13 +107,13 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$bvar </aliases/bvar>`
-	* :doc:`$bfind </aliases/bfind>`
+	* :doc:`$bvar </identifiers/bvar>`
+	* :doc:`$bfind </identifiers/bfind>`
 	* :doc:`/bread <bread>`
 	* :doc:`/bset <bset>`
 	* :doc:`/bunset <bunset>`
 	* :doc:`/bwrite <bwrite>`
 	* :doc:`/btrunc <btrunc>`
 	* :doc:`/bcopy <bcopy>`
-	* :doc:`$replacex </aliases/replacex>`
-	* :doc:`$replace </aliases/replace>`
+	* :doc:`$replacex </identifiers/replacex>`
+	* :doc:`$replace </identifiers/replace>`

@@ -69,5 +69,5 @@ See also
     :columns: 4
 
     * :doc:`/sreq <sreq>`
-    * :doc:`$creq </aliases/creq>`
-    * :doc:`$sreq </aliases/sreq>`
+    * :doc:`$creq </identifiers/creq>`
+    * :doc:`$sreq </identifiers/sreq>`

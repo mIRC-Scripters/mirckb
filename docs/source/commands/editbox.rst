@@ -78,4 +78,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$editbox </aliases/editbox>`
+    * :doc:`$editbox </identifiers/editbox>`

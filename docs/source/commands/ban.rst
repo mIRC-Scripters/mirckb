@@ -74,9 +74,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$banmask </aliases/banmask>`
-    * :doc:`$bnick </aliases/bnick>`
-    * :doc:`$ibl </aliases/ibl>`
-    * :doc:`$address </aliases/address>`
-    * :doc:`$chan </aliases/chan>`
-    * :doc:`$nick </aliases/nick>`
+    * :doc:`$banmask </identifiers/banmask>`
+    * :doc:`$bnick </identifiers/bnick>`
+    * :doc:`$ibl </identifiers/ibl>`
+    * :doc:`$address </identifiers/address>`
+    * :doc:`$chan </identifiers/chan>`
+    * :doc:`$nick </identifiers/nick>`

@@ -50,6 +50,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$nick </aliases/nick>`
+    * :doc:`$nick </identifiers/nick>`
     * :doc:`/ctcpreply <ctcpreply>`
     * :doc:`/ctcps <ctcps>`

@@ -162,8 +162,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$filtered </aliases/filtered>`
-    * :doc:`$read </aliases/read>`
-    * :doc:`$fline </aliases/fline>`
+    * :doc:`$filtered </identifiers/filtered>`
+    * :doc:`$read </identifiers/read>`
+    * :doc:`$fline </identifiers/fline>`
     * :doc:`/loadbuf <loadbuf>`
     * :doc:`/savebuf <savebuf>`

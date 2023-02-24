@@ -63,8 +63,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$bindip </aliases/bindip>`
-    * :doc:`$ip </aliases/ip>`
+    * :doc:`$bindip </identifiers/bindip>`
+    * :doc:`$ip </identifiers/ip>`
     * :doc:`/dns <dns>`
     * :doc:`/server <server>`
     * :doc:`/sockaccept <sockaccept>`

@@ -73,10 +73,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </aliases/com>`
-    * :doc:`$comcall </aliases/comcall>`
-    * :doc:`$comval </aliases/comval>`
-    * :doc:`$comerr </aliases/comerr>`
+    * :doc:`$com </identifiers/com>`
+    * :doc:`$comcall </identifiers/comcall>`
+    * :doc:`$comval </identifiers/comval>`
+    * :doc:`$comerr </identifiers/comerr>`
     * :doc:`/comclose <comclose>`
     * :doc:`/comreg <comreg>`
     * :doc:`/comlist <comlist>`

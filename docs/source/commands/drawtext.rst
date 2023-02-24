@@ -78,5 +78,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$width </aliases/width>`
-    * :doc:`$height </aliases/height>`
+    * :doc:`$width </identifiers/width>`
+    * :doc:`$height </identifiers/height>`

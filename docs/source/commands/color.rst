@@ -78,8 +78,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$color </aliases/color>`
-    * :doc:`$rgb </aliases/rgb>`
-    * :doc:`$cnick </aliases/cnick>`
-    * :doc:`$abook </aliases/abook>`
+    * :doc:`$color </identifiers/color>`
+    * :doc:`$rgb </identifiers/rgb>`
+    * :doc:`$cnick </identifiers/cnick>`
+    * :doc:`$abook </identifiers/abook>`
     * :doc:`/cnick <cnick>`

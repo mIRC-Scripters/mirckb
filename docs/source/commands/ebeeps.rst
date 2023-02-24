@@ -48,4 +48,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ebeeps </aliases/ebeeps>`
+    * :doc:`$ebeeps </identifiers/ebeeps>`

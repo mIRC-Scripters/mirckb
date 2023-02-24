@@ -69,7 +69,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dde </aliases/dde>`
-    * :doc:`$isdde </aliases/isdde>`
-    * :doc:`$ddename </aliases/ddename>`
+    * :doc:`$dde </identifiers/dde>`
+    * :doc:`$isdde </identifiers/isdde>`
+    * :doc:`$ddename </identifiers/ddename>`
     * :doc:`/dde <dde>`

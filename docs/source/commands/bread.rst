@@ -94,12 +94,12 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$file </aliases/file>`
+	* :doc:`$file </identifiers/file>`
 	* :doc:`/bcopy <bcopy>`
 	* :doc:`/breplace <breplace>`
 	* :doc:`/bset <bset>`
 	* :doc:`/btrunc <btrunc>`
 	* :doc:`/bunset <bunset>`
 	* :doc:`/bwrite <bwrite>`
-	* :doc:`$bvar </aliases/bvar>`
-	* :doc:`$bfind </aliases/bfind>`
+	* :doc:`$bvar </identifiers/bvar>`
+	* :doc:`$bfind </identifiers/bfind>`

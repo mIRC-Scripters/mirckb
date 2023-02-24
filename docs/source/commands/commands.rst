@@ -52,9 +52,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$nick </aliases/nick>`
-    * :doc:`$remote </aliases/remote>`
-    * :doc:`$rawmsg </aliases/rawmsg>`
+    * :doc:`$nick </identifiers/nick>`
+    * :doc:`$remote </identifiers/remote>`
+    * :doc:`$rawmsg </identifiers/rawmsg>`
     * :doc:`/ctcp <ctcp>`
     * :doc:`/ctcpreply <ctcpreply>`
     * :doc:`/events <events>`

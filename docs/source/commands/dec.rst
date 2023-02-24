@@ -84,7 +84,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$var </aliases/var>`
+    * :doc:`$var </identifiers/var>`
     * :doc:`/inc <inc>`
     * :doc:`/set <set>`
     * :doc:`/unset <unset>`

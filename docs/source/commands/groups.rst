@@ -46,6 +46,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$groups </aliases/groups>`
+    * :doc:`$groups </identifiers/groups>`
     * :doc:`/disable <disable>`
     * :doc:`/enable <enable>`

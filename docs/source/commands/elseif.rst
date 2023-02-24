@@ -53,11 +53,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$halted </aliases/halted>`
-    * :doc:`$result </aliases/result>`
-    * :doc:`$alias </aliases/alias>`
-    * :doc:`$isalias </aliases/isalias>`
-    * :doc:`$iif </aliases/iif>`
+    * :doc:`$halted </identifiers/halted>`
+    * :doc:`$result </identifiers/result>`
+    * :doc:`$alias </identifiers/alias>`
+    * :doc:`$isalias </identifiers/isalias>`
+    * :doc:`$iif </identifiers/iif>`
     * :doc:`/alias <alias>`
     * :doc:`/goto <goto>`
     * :doc:`/halt <halt>`

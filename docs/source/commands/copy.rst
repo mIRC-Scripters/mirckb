@@ -98,7 +98,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$file </aliases/file>`
+    * :doc:`$file </identifiers/file>`
     * :doc:`/mkdir <mkdir>`
     * :doc:`/remove <remove>`
     * :doc:`/rename <rename>`

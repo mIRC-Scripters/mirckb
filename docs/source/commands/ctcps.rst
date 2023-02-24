@@ -54,8 +54,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$nick </aliases/nick>`
-    * :doc:`$remote </aliases/remote>`
+    * :doc:`$nick </identifiers/nick>`
+    * :doc:`$remote </identifiers/remote>`
     * :doc:`/ctcp <ctcp>`
     * :doc:`/ctcpreply <ctcpreply>`
     * :doc:`/events <events>`

@@ -90,6 +90,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dccport </aliases/dccport>`
-    * :doc:`$dccignore </aliases/dccignore>`
+    * :doc:`$dccport </identifiers/dccport>`
+    * :doc:`$dccignore </identifiers/dccignore>`
     * :doc:`/dcc <dcc>`

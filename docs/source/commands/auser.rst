@@ -75,8 +75,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </aliases/ulevel>`
-    * :doc:`$ulist </aliases/ulist>`
+    * :doc:`$ulevel </identifiers/ulevel>`
+    * :doc:`$ulist </identifiers/ulist>`
     * :doc:`/flush <flush>`
     * :doc:`/guser <guser>`
     * :doc:`/iuser <iuser>`

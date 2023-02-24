@@ -72,7 +72,7 @@ See also
 .. hlist::
   :columns: 4
 
-  * :doc:`$abook </aliases/abook>`
-  * :doc:`$cnick </aliases/cnick>`
+  * :doc:`$abook </identifiers/abook>`
+  * :doc:`$cnick </identifiers/cnick>`
   * :doc:`/cnick <cnick>`
   * :doc:`/uwho <uwho>`

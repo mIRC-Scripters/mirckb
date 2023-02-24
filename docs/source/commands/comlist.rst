@@ -35,10 +35,10 @@ See also
 .. hlist::
 	:columns: 4
 
-	* :doc:`$com </aliases/com>`
-	* :doc:`$comcall </aliases/comcall>`
-	* :doc:`$comerr </aliases/comerr>`
-	* :doc:`$comval </aliases/comval>`
+	* :doc:`$com </identifiers/com>`
+	* :doc:`$comcall </identifiers/comcall>`
+	* :doc:`$comerr </identifiers/comerr>`
+	* :doc:`$comval </identifiers/comval>`
 	* :doc:`/comclose <comclose>`
 	* :doc:`/comopen <comopen>`
 	* :doc:`/comreg <comreg>`

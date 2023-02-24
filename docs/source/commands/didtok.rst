@@ -64,10 +64,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$didtok </aliases/didtok>`
-    * :doc:`$did </aliases/did>`
-    * :doc:`$dialog </aliases/dialog>`
-    * :doc:`$didwm </aliases/didwm>`
-    * :doc:`$didreg </aliases/didreg>`
+    * :doc:`$didtok </identifiers/didtok>`
+    * :doc:`$did </identifiers/did>`
+    * :doc:`$dialog </identifiers/dialog>`
+    * :doc:`$didwm </identifiers/didwm>`
+    * :doc:`$didreg </identifiers/didreg>`
     * :doc:`/dialog <dialog>`
     * :doc:`/did <did>`

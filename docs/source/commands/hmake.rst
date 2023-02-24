@@ -7,7 +7,7 @@ A hash table is stored entirely in memory and thus it is the programmer's respon
 
 It's generally best to have the number of buckets be a prime number, and starting with v7.53 mIRC started forcing the buckets to be either 1 or a prime number. Prior to that, mIRC only incremented the buckets to avoid an even number. The default parameter for number of buckets is 100, with allowed values from 1 to 10000. The old behavior was to increment those to the odd 101 or 10001. Current behavior increments 2+ if it's needed to make the buckets be a prime number, so the default 100 increases to the prime 101, and 10000 max increases to the prime 10007.
 
-A hash table name was formerly limited to 256 significant characters - any additional characters were simply ignored. Starting with v7.53 the limit is now 612 characters. (:doc:`$maxlens </aliases/maxlens>`'s 512+100) In mIRC, a hash table is a much faster alternative to ini and normal text files.
+A hash table name was formerly limited to 256 significant characters - any additional characters were simply ignored. Starting with v7.53 the limit is now 612 characters. (:doc:`$maxlens /identifiers/maxlens>`'s 512+100) In mIRC, a hash table is a much faster alternative to ini and normal text files.
 
 .. note::
 
@@ -286,5 +286,5 @@ See also
     * :doc:`/hdel <hdel>`
     * :doc:`/hinc <hinc>`
     * :doc:`/hdec <hdec>`
-    * :doc:`$hget </aliases/hget>`
-    * :doc:`$hfind </aliases/hfind>`
+    * :doc:`$hget </identifiers/hget>`
+    * :doc:`$hfind </identifiers/hfind>`

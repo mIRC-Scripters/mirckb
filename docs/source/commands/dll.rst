@@ -96,6 +96,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dll </aliases/dll>`
-    * :doc:`$dllcall </aliases/dllcall>`
+    * :doc:`$dll </identifiers/dll>`
+    * :doc:`$dllcall </identifiers/dllcall>`
     * :doc:`sendmessage <sendmessage>`

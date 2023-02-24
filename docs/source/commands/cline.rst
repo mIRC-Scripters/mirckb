@@ -68,10 +68,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </aliases/window>`
-    * :doc:`$line </aliases/line>`
-    * :doc:`$fline </aliases/fline>`
-    * :doc:`$sline </aliases/sline>`
+    * :doc:`$window </identifiers/window>`
+    * :doc:`$line </identifiers/line>`
+    * :doc:`$fline </identifiers/fline>`
+    * :doc:`$sline </identifiers/sline>`
     * :doc:`/aline <aline>`
     * :doc:`/cline <cline>`
     * :doc:`/dline <dline>`

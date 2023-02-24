@@ -69,4 +69,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dns </aliases/dns>`
+    * :doc:`$dns </identifiers/dns>`

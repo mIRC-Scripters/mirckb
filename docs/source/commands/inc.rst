@@ -98,7 +98,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$var </aliases/var>`
+    * :doc:`$var </identifiers/var>`
     * :doc:`/dec <dec>`
     * :doc:`/inc <inc>`
     * :doc:`/set <set>`
