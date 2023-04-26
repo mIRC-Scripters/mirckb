@@ -1,6 +1,7 @@
 /aline
 ======
-The **aline command** is used to add a single line of text to a custom window. This command is limited to custom @windows, If you need a more general command that is able to print to both custom windows, channel, and query consider using the **/echo** command instead.
+
+The **/aline** command is used to add a single line of text to a custom window. This command is limited to custom @windows, If you need a more general command that is able to print to both custom windows, channel, and query consider using the **/echo** command instead.
 
 .. note:: If the main window is sorted (text or listbox and /window -s has been used), lines added with /echo to that window won't be sorted, only lines added with /aline will.
 

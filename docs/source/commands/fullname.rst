@@ -1,5 +1,6 @@
 /fullname
 =========
+
 The **/fullname** command changes the full name in the connect dialog.
 
 Synopsis

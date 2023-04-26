@@ -3,7 +3,7 @@
 
 Auto-OP is a feature that can be used to manage access for a channel. Whenever a user whose address matches an address in the auto-op list joins the channel, mIRC will automatically OP them.
 
-The **/aopAOP** command can also be used to disable or enable this feature as well as add and remove users from and to the list.
+The **/aop** command can also be used to disable or enable this feature as well as add and remove users from and to the list.
 
 Synopsis
 --------

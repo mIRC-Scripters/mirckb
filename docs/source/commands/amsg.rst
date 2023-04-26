@@ -1,7 +1,7 @@
 /amsg
 =====
 
-The **amsg** command is used to send a message to all the channels you are currently on. To send a message to a specific channel, consider using the /msg command instead.
+The **/amsg** command is used to send a message to all the channels you are currently on. To send a message to a specific channel, consider using the /msg command instead.
 
 .. note:: As of mIRC v7.1 the /amsg command will split long messages into smaller messages so no part of the message will be truncated.
 

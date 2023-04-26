@@ -1,7 +1,7 @@
 /auser
 ======
 
-The **/auser** command Add or edit an entry in mIRC's User List (the User tab of the Script Editor).
+The **/auser** command adds or edits an entry in mIRC's user list (the user tab of the script editor).
 
 Synopsis
 --------

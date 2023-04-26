@@ -1,7 +1,7 @@
 /flist
 ======
 
-**/flist** lists all open files, or those matching the specified name, which can be a wildcard expression.
+The **/flist** command lists all open files, or those matching the specified name, which can be a wildcard expression.
 
 Synopsis
 --------

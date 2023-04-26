@@ -1,5 +1,6 @@
 Commands
 ========
+
 **mIRC Commands** are a set of built-in routines that can be used to manipulate various properties of mIRC, IRC, as well as operate :doc:`network sockets </advanced/sockets>`, perform :doc:`I/O operations </intermediate/data_storage>`, and various other things.
 
 .. tabs::

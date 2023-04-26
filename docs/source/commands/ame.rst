@@ -1,6 +1,7 @@
 /ame
 ====
-The **ame** command is used to send an action message to all the channels you are currently on in a specific network.  This command behaves the same as the /me command with the addition of multiple channels.
+
+The **/ame** command is used to send an action message to all the channels you are currently on in a specific network.  This command behaves the same as the /me command with the addition of multiple channels.
 
 An action message is simply a regular PRIVMSG that follows a client-dependent format - usually different to that of a normal message. The raw format for an action message is:
 
