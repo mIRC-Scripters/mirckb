@@ -19,7 +19,7 @@ The following is an example of an endpoint:
 The first part is the IP address (in this example we used www.google.com). The number that follows the colon (:) is the port number. In this case it's port number 80, which happens to be the default HTTP port.
 
 IP Address
-----------
+~~~~~~~~~~
 
 An IP address is the numerical identification that is assigned to devices that utilize the Internet Protocol like your computer's network card. Think of it as your home address for the Internet. There are two versions of the IP protocol: IPv4 and IPv6. This tutorial will cover both.
 
@@ -40,7 +40,7 @@ An IPv6 address looks something like this:
 The details of how these addresses work are beyond the scope of this article.
 
 Port
-----
+~~~~
 
 A port number is a 16-bit positive integer ranging from 0 to 65535. (2^16-1), giving you a total of 65,536 ports. Ports 1-1023 are called well known ports, ports 1024-49151 are registered ports, and ports in the range of 49152–65535 are dynamic and/or private, they cannot be registered.
 
@@ -64,7 +64,7 @@ Be careful not to be confused between the client and server ports. The server po
 	  - 443
 
 mIRC Sockets
-------------
+~~~~~~~~~~~~
 
 There are two types of Internet sockets (there are actually more, but only these two types are available natively through mIRC):
 
@@ -72,19 +72,19 @@ Stream Sockets
 Datagram Sockets
 
 Stream Sockets
---------------
+~~~~~~~~~~~~~~
 
 Stream sockets achieve a higher level transmission quality. Stream sockets are a connection-oriented protocol. The Transmission Control Protocol, TCP, does this by making sure that your data arrives in the correct order and error-free. Most applications like mIRC itself, a telnet client, and your web browser use that protocol.
 
 Datagram Sockets
-----------------
+~~~~~~~~~~~~~~~~
 
 Datagram sockets on the other hand are called connectionless. You may have heard UDP or the User Datagram Protocol. The reason they are called connectionless is because they do not have to maintain an open connection as you do with stream sockets. As a consequence, data may arrive just fine, it may arrive out of order, or it might even get lost and never arrive.
 
 So why on earth would anyone use that you may ask? Speed, speed, and ... more speed! UDP is much faster. Your data gets the address slapped on it and gets fired away. This protocol is best suited for streaming and games where speed is the top most priority.
 
 Summary
--------
+~~~~~~~
 
 Below is a recap of the two socket types available:
 
@@ -108,12 +108,12 @@ Below is a recap of the two socket types available:
 	  - Fast
 
 Where do we go from here?
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 So where do you go from here? Basic on the kind of socket you are looking to work with you will have to decide whether you want UDP or TCP.
 
 TCP Sockets
-===========
+-----------
 
 mIRC has built-in support for TCP Sockets. This tutorial is the TCP Sockets continuation of the sockets introduction. If you haven't read that, please do so first before moving on to this one.
 
@@ -122,7 +122,7 @@ Now that you have some familiarity with the different types of sockets we can go
 Throughout this tutorial we will create two complete scripts, one which will go to our very own example page and a second one that will go to YouTube and get the title of the page and the view count.
 
 Creating a Connection
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Before we can do anything else we must first create a new connection to a specific address on a given port. This is done using the /sockopen command:
 
@@ -130,7 +130,7 @@ sockopen <handle> <address> <port>
 A handle simply is a unique name by which we can refer to this exact socket.
 
 Creating a secured Connection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 I am sure you are very familiar with the padlock icon next to the URL in your browser. That icon indicated that website uses secure http (also known as HTTPS). The default port for HTTPS is 443. The /sockopen command can also be used to create secured SSL connections as well using the following syntax:
 
@@ -139,12 +139,9 @@ I am sure you are very familiar with the padlock icon next to the URL in your br
 	sockopen -e <handle> <address> <port>
 
 IPv4 vs. IPv6 Sockets
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 The /sockopen command is directly influenced by the Ipv6 mode you have going on. Check this page for more information about IPv6.
-
-Connection Example
-~~~~~~~~~~~~~~~~~~
 
 Example 1
 ^^^^^^^^^
@@ -187,7 +184,7 @@ In this example I thought we would do something different. Providing a YouTube l
 	}
 
 The Socket Mark
----------------
+~~~~~~~~~~~~~~~
 
 In the example above we introduced another command, the /sockmark command. The /sockmark command lets you store some text for that socket which can easily be retrieved using the $sock().mark identifier later on. This is a better alternative to using global variables (or any other kind of global storage method) because you don't need to clean it up later. The socket mark goes away automatically with the socket when it is closed.
 
@@ -205,7 +202,7 @@ The socket mark is restricted to the same line limit as the rest of mIRC (just u
 	$sock(<handle>).mark
 
 Transmitting a Request After a Successful Connection
-----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When a successful connection to the remote end-point has been established, the on sockopen event will trigger. Inside the on sockopen event we must send our initial request which would depend on what our script wants to do. A typical script that utilizes the HTTP protocol must send its headers in this event.
 
@@ -230,7 +227,7 @@ As we said before, from within the sockopen event we must send our request to th
 By default, all space-delimited tokens that begin with the '&' symbol are treated as binary variables. The -t switch can be used to make the /sockwrite command treat it all as plain text instead.
 
 The Sockwrite -n Switch and $crlf
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Because the sockwrite command can be used to send any type of data you must be very explicit about the data you are sending. If you want to send multiple lines, you must append a $crlf to the end of your data. Alternatively you can also use the -n switch which will append a $crlf automatically for you if the line doesn't already ends with a $crlf.
 
@@ -272,14 +269,11 @@ Sent the following data:
 Understanding this concept is important to understanding how to send data correctly via protocols like HTTP.
 
 /sockwrite's limit
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Just like anywhere in the mIRC Scripting language, there is a limit on the number of bytes you can send using /sockwrite. A socket in mIRC has two buffers, one for the receiving and one for the sending. The sending buffer is limited to 16384 bytes. /sockwrite will produce an error if you try to add more in the buffer. However, if the buffer is empty, it won't produce an error and will work.
 
 In a typical script using HTTP and the GET method to grab something from a website, it's unlikely that you will reach this limit but note that when using POST, it's more likely to reach that limit, you can find an example on how to workaround this by using the on sockwrite event here.
-
-Sending Data Example
-~~~~~~~~~~~~~~~~~~~~
 
 Example 1 (Continue)
 ^^^^^^^^^^^^^^^^^^^^
@@ -310,7 +304,7 @@ We will now add the sockopen part of our YouTube script. Recall that we stored t
 	}
 
 URL Encoding
-------------
+~~~~~~~~~~~~
 
 Some characters have special meanings when used in the URL. You might be familiar with URLs that look like this:
 
@@ -358,7 +352,7 @@ Note the escaped characters. You should almost always encode all user input:
 	}
 
 POST vs GET?
-------------
+~~~~~~~~~~~~
 
 By now you are probably asking yourself why did I use GET in our sockopen and how do you know what to use. In HTTP, there are two methods for sending data to the server: POST and GET. They only differ in the format we send that data. When requesting a normal page, you will most likely be using the GET method, when submitting a form; however, it might get a little tricky. When dealing with forms, by simply looking at the source code you can tell if it's a POST or a GET method:
 
@@ -395,7 +389,7 @@ Next is the Host header:
 The Host header is required in HTTP version 1.1. Once again, although it should not cause any issues it best to use "Host:", not "host:" or "HOST:". If you forget to include this line, the server will most likely send you an error 400 (Bad Request) status code.
 
 Reading Incoming Data
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Once the server receives your request, it will send the response back to you. This will trigger the ON SOCKREAD event. The basic syntax of the on sockread event is:
 
@@ -427,7 +421,7 @@ sockread [numbytes] <&binvar>
 Reading into a binary variable will by default reads 4096 bytes unless you specify [numbytes] the number of byte to be read, there is a -n switch which can be used to read $crlf-terminated lines into the binary variable as well.
 
 Debugging
-~~~~~~~~~
+^^^^^^^^^
 
 Because the on sockread triggers when we get our data, it is the most interesting part of our script. Many people find it easier to script and debug when they can see the entire page source code. The script below can be used to see everything the server sent us in a custom window (@ $+ sockname):
 
@@ -442,7 +436,7 @@ Because the on sockread triggers when we get our data, it is the most interestin
 	}
 
 Dealing with HTML code
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 One of the first things you will have to deal with when writing HTTP scripts is HTML code and lots of it. The single most common task is to simply get rid of some unwanted HTML tags that enclose your code. Below is a very small, yet extremely handy alias that will strip most HTML tags away:
 
@@ -465,7 +459,7 @@ Will print the following result:
 Keep this alias safe. Trust me, this tiny alias will become one of your most precious possessions.
 
 Error Handling
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 Errors happen! It's a fact of life. It is your responsibility to check for them and gracefully handle them! The $sockerr identifier must be checked after every socket operations. If the value of $sockerr is greater than zero, an error has occurred and we MUST stop whatever it is we were going to do with the socket, cleanup, perhaps display an error message etc. Remember, inside the on sockopen event, $sockerr allows you to know if the connection was sucessful or not.
 
@@ -484,9 +478,6 @@ A basic example would look like this:
 	}
 
 Checking for an error gives you the opportunity to handle it in a sane way. Most scripts report that an error has occurred instead of simply stopping in their tracks.
-
-Reading Data Example
-~~~~~~~~~~~~~~~~~~~~
 
 Example 1 (Continue)
 ^^^^^^^^^^^^^^^^^^^^
@@ -572,7 +563,7 @@ If you tried to print the youtube page we did (http://www.youtube.com/watch?v=FD
 	}
 
 Connection Terminated
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 It is possible for the remote end-point to terminate a connection, the same way you can /sockclose a connection early. When this happens the on sockclose event will trigger. The syntax for that event is:
 
@@ -585,14 +576,14 @@ It is possible for the remote end-point to terminate a connection, the same way 
 .. note:: Only the remote end-port, not you, can trigger this event.
 
 UDP Sockets
-===========
+-----------
 
 This tutorial is the UDP Sockets continuation of the sockets introduction. If you haven't read that, please do so first before moving on to this one.
 
 Recall that UDP is a connectionless protocol service. Because of this there are no on sockopen/sockread/sockclose events for the different stages like TCP. The basic idea is you send a message and quit, or you send a message and wait for response.
 
 Sending A Packet
-----------------
+~~~~~~~~~~~~~~~~
 
 The /sockudp command allows you to send data to a specific address at a specific port destination. The syntax is:
 
@@ -606,7 +597,7 @@ By default, /sockudp sends the entire data specified. The -b switch can be used 
 If you are expecting some data back, the -k switch can be used to force the UDP socket to remain open. This will allow you to listen to incoming data.
 
 Listening for Incoming Data
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are expecting data back (I.E. if you specified the -k switch) you can listen for incoming data via the on udpread event.
 
@@ -617,7 +608,7 @@ If you are expecting data back (I.E. if you specified the -k switch) you can lis
 	}
 
 Socket Failure and More Data Sending
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The on sockwrite event can be used to write additional data when the previous data is sent. Additionally, If the sockudp command fails, the on sockwrite event will trigger $sockerr set to a non-zero value.
 
@@ -628,10 +619,10 @@ The on sockwrite event can be used to write additional data when the previous da
 	}
 
 Examples
---------
+~~~~~~~~
 
 Example 1 - Time Protocol
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This example will use the Time Protocol to display the current time. The Time Protocol is a very simple network protocol that provides site-independent, machine readable date and time. The protocol is defined in RFC 868.
 
@@ -732,7 +723,7 @@ Since we know that 2,208,988,800 = 00:00 1 Jan 1970 GMT (Unix epoch). We can jus
 	}
 
 Example 2 - QOTD Protocol
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this example we will use an interesting protocol, the Quote Of The Day, RFC 865. This is a very simple protocol; you send a blank datagram, and the server responds with a quote. The hardest part was actually finding a website that still supports this protocol. (The reason most servers don't have this service enabled is because it is vulnerable to a ping-pong attack, where an attacker spoofs a server's IP (that supports QOTD protocol) and sends a request to a second server that support it, causing both server to flood each other)
 
