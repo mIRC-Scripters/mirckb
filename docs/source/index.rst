@@ -113,6 +113,18 @@ References
 
 .. toctree::
    :maxdepth: 2
+   :caption: Other
+   :hidden:
+
+   other/mirc_installation
+   other/virtual_profiles
+   other/playing_music
+   other/unicode
+   other/ipv6
+   other/threads
+
+.. toctree::
+   :maxdepth: 2
    :caption: Reference
    :hidden:
 
