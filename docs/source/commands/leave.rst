@@ -1,7 +1,7 @@
 /leave
 ======
 
-The **/leave** command can be used when you wanted to depart/leave a specific channel, or the current active channel, it's the same as :doc: `/part </commands/part>` .
+The **/leave** command can be used when you wanted to depart/leave a specific channel, or the current active channel, it's the same as :doc:`/part </commands/part>` .
 
 Synopsis
 --------
@@ -45,5 +45,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/partall </commands/partall>`
-    * :doc: `/part </commands/part>`
+    * :doc:`/partall </commands/partall>`
+    * :doc:`/part </commands/part>`

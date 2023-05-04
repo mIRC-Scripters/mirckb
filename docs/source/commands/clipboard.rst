@@ -68,5 +68,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$cb </identifiers/$cb>`
-    * :doc: `$inpaste </identifiers/$inpaste>`
+    * :doc:`$cb </identifiers/$cb>`
+    * :doc:`$inpaste </identifiers/$inpaste>`

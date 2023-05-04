@@ -1,7 +1,7 @@
 /hload
 ======
 
-The **/load** command loads a text file to an hash table. /hload does not create the table, it must already have been created by :doc: `/hmake </commands/hmake>` then saved to disk using :doc: `/hsave </commands/hsave>` .
+The **/load** command loads a text file to an hash table. /hload does not create the table, it must already have been created by :doc:`/hmake </commands/hmake>` then saved to disk using :doc:`/hsave </commands/hsave>` .
 
 Synopsis
 --------
@@ -23,7 +23,7 @@ Switches
     * - -s
       - display a message if successful: "* Loaded hash table '<name>' from '<filename>'
     * - -b
-      - loads binary files, :doc: `$cr </identifiers/$cr>` and :doc: `$lf </identifiers/$lf>` and 0x00's etc are preserved when saving as binary files
+      - loads binary files, :doc:`$cr </identifiers/$cr>` and :doc:`$lf </identifiers/$lf>` and 0x00's etc are preserved when saving as binary files
     * - -B
       - uses a larger index than -b to allow longer binary data to be saved. This is not compatible with files created by the -b switch.
     * - -n
@@ -83,13 +83,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/hmake </commands/hmake>`
-    * :doc: `/hfree </commands/hfree>`
-    * :doc: `/hsave </commands/hsave>`
-    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
-    * :doc: `/hadd </commands/hadd>`
-    * :doc: `/hdel </commands/hdel>`
-    * :doc: `/hinc </commands/hinc>`
-    * :doc: `/hdec </commands/hdec>`
-    * :doc: `$hget </identifiers/$hget>`
-    * :doc: `$hfind </identifiers/$hfind>`
+    * :doc:`/hmake </commands/hmake>`
+    * :doc:`/hfree </commands/hfree>`
+    * :doc:`/hsave </commands/hsave>`
+    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :doc:`/hadd </commands/hadd>`
+    * :doc:`/hdel </commands/hdel>`
+    * :doc:`/hinc </commands/hinc>`
+    * :doc:`/hdec </commands/hdec>`
+    * :doc:`$hget </identifiers/$hget>`
+    * :doc:`$hfind </identifiers/$hfind>`

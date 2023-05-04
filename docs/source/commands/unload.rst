@@ -67,4 +67,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/load </commands/load>`
+    * :doc:`/load </commands/load>`

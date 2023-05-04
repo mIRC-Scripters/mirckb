@@ -1,7 +1,7 @@
 /wavplay
 ========
 
-.. note:: **/wavplay** has essentially been replaced by the ** :doc: `/splay </commands/splay>` ** command.
+.. note:: **/wavplay** has essentially been replaced by the ** :doc:`/splay </commands/splay>` ** command.
 
 The **/wavplay** command is used to play a .wav file of your choosing.
 
@@ -66,7 +66,7 @@ See Also
 .. hlist::
     :columns: 4
 
-:doc: `/splay </commands/splay>`
-:doc: `/vol </commands/vol>`
-:doc: `$sound </identifiers/$sound>`
-:doc: `$vol </identifiers/$vol>`
+:doc:`/splay </commands/splay>`
+:doc:`/vol </commands/vol>`
+:doc:`$sound </identifiers/$sound>`
+:doc:`$vol </identifiers/$vol>`

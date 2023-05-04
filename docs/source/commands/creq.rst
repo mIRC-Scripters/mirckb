@@ -66,6 +66,6 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `/sreq </commands/sreq>`
-    * :doc: `$creq </identifiers/$creq>`
-    * :doc: `$sreq </identifiers/$sreq>`
+    * :doc:`/sreq </commands/sreq>`
+    * :doc:`$creq </identifiers/$creq>`
+    * :doc:`$sreq </identifiers/$sreq>`

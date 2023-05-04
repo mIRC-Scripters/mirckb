@@ -60,6 +60,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/load </commands/load>`
-    * :doc: `on load </events/on_load>`
-    * :doc: `on start </events/on_start>`
+    * :doc:`/load </commands/load>`
+    * :doc:`on load </events/on_load>`
+    * :doc:`on start </events/on_start>`

@@ -1,7 +1,7 @@
 /while
 ======
 
-The **/while** command is a :doc: `construct in the mIRC scripting language </intermediate/control_flow_statements.html#While_Loops>` that can perform repetitive operations. The block of statement inside the while loop will get executed as long as the condition is true. You can manually break out of a loop by using the Cltr+Break key combinations.
+The **/while** command is a :doc:`construct in the miRC scripting language </intermediate/control_flow_statements.html#wHile_lOops>` that can perform repetitive operations. The block of statement inside the while loop will get executed as long as the condition is true. You can manually break out of a loop by using the Cltr+Break key combinations.
 
 Synopsis
 --------
@@ -107,8 +107,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/break </commands/break>`
-    * :doc: `/continue </commands/continue>`
-    * :doc: `/if </commands/if>`
-    * :doc: `/return </commands/return>`
-    * :doc: `/returnex </commands/returnex>`
+    * :doc:`/break </commands/break>`
+    * :doc:`/continue </commands/continue>`
+    * :doc:`/if </commands/if>`
+    * :doc:`/return </commands/return>`
+    * :doc:`/returnex </commands/returnex>`

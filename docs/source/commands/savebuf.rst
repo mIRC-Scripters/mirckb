@@ -66,4 +66,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/loadbuf </commands/loadbuf>`
+    * :doc:`/loadbuf </commands/loadbuf>`

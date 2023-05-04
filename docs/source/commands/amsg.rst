@@ -47,10 +47,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ame </commands/ame>`
-    * :doc: `/describe </commands/describe>`
-    * :doc: `/me </commands/me>`
-    * :doc: `/msg </commands/msg>`
-    * :doc: `/qme </commands/qme>`
-    * :doc: `/qmsg </commands/qmsg>`
-    * :doc: `/say </commands/say>`
+    * :doc:`/ame </commands/ame>`
+    * :doc:`/describe </commands/describe>`
+    * :doc:`/me </commands/me>`
+    * :doc:`/msg </commands/msg>`
+    * :doc:`/qme </commands/qme>`
+    * :doc:`/qmsg </commands/qmsg>`
+    * :doc:`/say </commands/say>`

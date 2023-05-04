@@ -54,8 +54,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$ial </identifiers/$ial>`
-    * :doc: `$address </identifiers/$address>`
-    * :doc: `/ial </commands/ial>`
-    * :doc: `/ialclear </commands/ialclear>`
-    * :doc: `/ialmark </commands/ialmark>`
+    * :doc:`$ial </identifiers/$ial>`
+    * :doc:`$address </identifiers/$address>`
+    * :doc:`/ial </commands/ial>`
+    * :doc:`/ialclear </commands/ialclear>`
+    * :doc:`/ialmark </commands/ialmark>`

@@ -50,5 +50,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/load </commands/load>`
-    * :doc: `/unload </commands/unload>`
+    * :doc:`/load </commands/load>`
+    * :doc:`/unload </commands/unload>`

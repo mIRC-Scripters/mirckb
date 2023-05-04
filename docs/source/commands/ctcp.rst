@@ -48,6 +48,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$nick </identifiers/$nick>`
-    * :doc: `/ctcpreply </commands/tcp-socket>`
-    * :doc: `/ctcps </commands/tcp-socket>`
+    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`/ctcpreply </commands/tcp-socket>`
+    * :doc:`/ctcps </commands/tcp-socket>`

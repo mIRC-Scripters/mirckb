@@ -59,18 +59,18 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ghide </commands/ghide>`
-    * :doc: `/gunload </commands/gunload>`
-    * :doc: `/gshow </commands/gshow>`
-    * :doc: `/gload </commands/gload>`
-    * :doc: `/gsize </commands/gsize>`
-    * :doc: `/gtalk </commands/gtalk>`
-    * :doc: `/gmove </commands/gmove>`
-    * :doc: `/gpoint </commands/gpoint>`
-    * :doc: `/gstop </commands/gstop>`
-    * :doc: `/gopts </commands/gopts>`
-    * :doc: `/gqreq </commands/gqreq>`
-    * :doc: `$agentver </identifiers/$agentver>`
-    * :doc: `$agentstat </identifiers/$agentstat>`
-    * :doc: `$agentname </identifiers/$agentname>`
-    * :doc: `$agent </identifiers/$agent>`
+    * :doc:`/ghide </commands/ghide>`
+    * :doc:`/gunload </commands/gunload>`
+    * :doc:`/gshow </commands/gshow>`
+    * :doc:`/gload </commands/gload>`
+    * :doc:`/gsize </commands/gsize>`
+    * :doc:`/gtalk </commands/gtalk>`
+    * :doc:`/gmove </commands/gmove>`
+    * :doc:`/gpoint </commands/gpoint>`
+    * :doc:`/gstop </commands/gstop>`
+    * :doc:`/gopts </commands/gopts>`
+    * :doc:`/gqreq </commands/gqreq>`
+    * :doc:`$agentver </identifiers/$agentver>`
+    * :doc:`$agentstat </identifiers/$agentstat>`
+    * :doc:`$agentname </identifiers/$agentname>`
+    * :doc:`$agent </identifiers/$agent>`

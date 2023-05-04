@@ -1,7 +1,7 @@
 /guser
 ======
 
-The **/guser** command looks up the address of the specified nick and adds it to the user list. It does this by doing a :doc: `/userhost </commands/userhost>` on the given nickname, and returning an address in the format specified by [type]. If [type] is not specified then a default address format is selected.
+The **/guser** command looks up the address of the specified nick and adds it to the user list. It does this by doing a :doc:`/userhost </commands/userhost>` on the given nickname, and returning an address in the format specified by [type]. If [type] is not specified then a default address format is selected.
 
 Synopsis
 --------
@@ -61,10 +61,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$ulevel </identifiers/$ulevel>`
-    * :doc: `/auser </commands/auser>`
-    * :doc: `/flush </commands/flush>`
-    * :doc: `/iuser </commands/iuser>`
-    * :doc: `/rlevel </commands/rlevel>`
-    * :doc: `/ruser </commands/ruser>`
-    * :doc: `/ulist </commands/ulist>`
+    * :doc:`$ulevel </identifiers/$ulevel>`
+    * :doc:`/auser </commands/auser>`
+    * :doc:`/flush </commands/flush>`
+    * :doc:`/iuser </commands/iuser>`
+    * :doc:`/rlevel </commands/rlevel>`
+    * :doc:`/ruser </commands/ruser>`
+    * :doc:`/ulist </commands/ulist>`

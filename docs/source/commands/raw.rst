@@ -73,10 +73,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$remote </identifiers/$remote>`
-    * :doc: `$rawmsg </identifiers/$rawmsg>`
-    * :doc: `/ctcps </commands/tcp-socket>`
-    * :doc: `/remote </commands/remote>`
-    * :doc: `/commands </commands/commands>`
-    * :doc: `/events </commands/events>`
-    * :doc: `/quote </commands/quote>`
+    * :doc:`$remote </identifiers/$remote>`
+    * :doc:`$rawmsg </identifiers/$rawmsg>`
+    * :doc:`/ctcps </commands/tcp-socket>`
+    * :doc:`/remote </commands/remote>`
+    * :doc:`/commands </commands/commands>`
+    * :doc:`/events </commands/events>`
+    * :doc:`/quote </commands/quote>`

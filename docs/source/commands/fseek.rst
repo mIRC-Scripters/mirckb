@@ -24,7 +24,7 @@ Switches
     * - -n
       - sets the pointer to the beginning of the next line (from the current position of the read/write pointer)
     * - -w
-      - sets the pointer to the beginning of the line matching the :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression
+      - sets the pointer to the beginning of the line matching the :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression
     * - -r
       - sets the pointer to the beginning of the line matching the regular expression
     * - -p
@@ -42,7 +42,7 @@ Parameters
     * - <name>
       - the name of the file handle
     * - <position|N|matchtex>
-      - not required if you use -n, if -l is used: a line number, if -w is used: a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression, if -r is used: a regular expression, if no switch is used, it's the position in the file (Nth byte)
+      - not required if you use -n, if -l is used: a line number, if -w is used: a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression, if -r is used: a regular expression, if no switch is used, it's the position in the file (Nth byte)
 
 .. note:: if /fseek is not successful (can't find a match with -w or -r, can't find the Nth line with -l etc), it will set the read/write pointer to the end of the file. $fopen().err is not set, but $fopen().eof is.
 
@@ -68,11 +68,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$fread </identifiers/$fread>`
-    * :doc: `$fopen </identifiers/$fopen>`
-    * :doc: `$ferr </identifiers/$ferr>`
-    * :doc: `$feof </identifiers/$feof>`
-    * :doc: `$fgetc </identifiers/$fgetc>`
-    * :doc: `/fclose </commands/fclose>`
-    * :doc: `/flist </commands/flist>`
-    * :doc: `/fopen </commands/fopen>`
+    * :doc:`$fread </identifiers/$fread>`
+    * :doc:`$fopen </identifiers/$fopen>`
+    * :doc:`$ferr </identifiers/$ferr>`
+    * :doc:`$feof </identifiers/$feof>`
+    * :doc:`$fgetc </identifiers/$fgetc>`
+    * :doc:`/fclose </commands/fclose>`
+    * :doc:`/flist </commands/flist>`
+    * :doc:`/fopen </commands/fopen>`

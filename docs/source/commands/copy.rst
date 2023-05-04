@@ -1,7 +1,7 @@
 /copy
 =====
 
-The **/copy** command can be used to copy a file or an entire directory to another location. Both the source and the destination parameters support directory names. If the source is a directory the entire directory will be copied. The source parameter also supports :doc: `wildcard </intermediate/matching_tools.html#wildcard>` characters.
+The **/copy** command can be used to copy a file or an entire directory to another location. Both the source and the destination parameters support directory names. If the source is a directory the entire directory will be copied. The source parameter also supports :doc:`wildcard </intermediate/matching_tools.html#wildcard>` characters.
 
 This command is verbose by default.
 
@@ -38,7 +38,7 @@ Parameters
     * - Parameter
       - Description
     * - <nowiki><source></nowiki>
-      - The name of the directory or file to be copied (can be a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` name)
+      - The name of the directory or file to be copied (can be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` name)
     * - <destination>
       - Destination filename (or directory)
 
@@ -96,8 +96,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$file </identifiers/$file>`
-    * :doc: `/mkdir </commands/mkdir>`
-    * :doc: `/remove </commands/remove>`
-    * :doc: `/rename </commands/rename>`
-    * :doc: `/rmdir </commands/rmdir>`
+    * :doc:`$file </identifiers/$file>`
+    * :doc:`/mkdir </commands/mkdir>`
+    * :doc:`/remove </commands/remove>`
+    * :doc:`/rename </commands/rename>`
+    * :doc:`/rmdir </commands/rmdir>`

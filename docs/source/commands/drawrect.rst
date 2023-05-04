@@ -79,15 +79,15 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$rgb </identifiers/$rgb>`
-    * :doc: `$window </identifiers/$window>`
-    * :doc: `/drawcopy </commands/drawcopy>`
-    * :doc: `/drawdot </commands/drawdot>`
-    * :doc: `/drawfill </commands/drawfill>`
-    * :doc: `/drawline </commands/drawline>`
-    * :doc: `/drawpic </commands/drawpic>`
-    * :doc: `/drawreplace </commands/drawreplace>`
-    * :doc: `/drawrot </commands/drawrot>`
-    * :doc: `/drawsave </commands/drawsave>`
-    * :doc: `/drawscroll </commands/drawscroll>`
-    * :doc: `/drawtext </commands/drawtext>`
+    * :doc:`$rgb </identifiers/$rgb>`
+    * :doc:`$window </identifiers/$window>`
+    * :doc:`/drawcopy </commands/drawcopy>`
+    * :doc:`/drawdot </commands/drawdot>`
+    * :doc:`/drawfill </commands/drawfill>`
+    * :doc:`/drawline </commands/drawline>`
+    * :doc:`/drawpic </commands/drawpic>`
+    * :doc:`/drawreplace </commands/drawreplace>`
+    * :doc:`/drawrot </commands/drawrot>`
+    * :doc:`/drawsave </commands/drawsave>`
+    * :doc:`/drawscroll </commands/drawscroll>`
+    * :doc:`/drawtext </commands/drawtext>`

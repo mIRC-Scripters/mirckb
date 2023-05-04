@@ -49,4 +49,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/pvoice </commands/pvoice>`
+    * :doc:`/pvoice </commands/pvoice>`

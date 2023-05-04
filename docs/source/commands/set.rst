@@ -1,7 +1,7 @@
 /set
 ====
 
-The **/set** command can be used to replace the value of an existing variable or create a new variable and assign it the given value. By default /set creates global variable, this can be changed via the -l switch. Unlike the :doc: `/var </commands/var>` command, set cannot assign a value to multiple variables at once. It support :doc: `one math operation </beginner/variables.html#math-operations>` .
+The **/set** command can be used to replace the value of an existing variable or create a new variable and assign it the given value. By default /set creates global variable, this can be changed via the -l switch. Unlike the :doc:`/var </commands/var>` command, set cannot assign a value to multiple variables at once. It support :doc:`one math operation </beginner/variables.html#math-operations>` .
 
 Set evaluation routine
 ----------------------
@@ -14,7 +14,7 @@ The set command has its own evaluation routine which lets you dynamically concat
 
 Will create a variable like %1209425041 with the value of 'ABC'; Similarly this can be used with $nick and $chan in on events.
 
-.. note:: /set will fail to evaluate your variable if you have dynamic parameters before the name, read more :doc: `here </beginner/variables.html#special-behaviors-quirks>`
+.. note:: /set will fail to evaluate your variable if you have dynamic parameters before the name, read more :doc:`here </beginner/variables.html#special-behaviors-quirks>`
 
 Synopsis
 --------
@@ -147,9 +147,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$var </identifiers/$var>`
-    * :doc: `/dec </commands/dec>`
-    * :doc: `/inc </commands/inc>`
-    * :doc: `/unset </commands/unset>`
-    * :doc: `/unsetall </commands/unsetall>`
-    * :doc: `/var </commands/var>`
+    * :doc:`$var </identifiers/$var>`
+    * :doc:`/dec </commands/dec>`
+    * :doc:`/inc </commands/inc>`
+    * :doc:`/unset </commands/unset>`
+    * :doc:`/unsetall </commands/unsetall>`
+    * :doc:`/var </commands/var>`

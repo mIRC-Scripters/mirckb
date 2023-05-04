@@ -65,5 +65,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$chan </identifiers/$chan>`
-    * :doc: `/partall </commands/partall>`
+    * :doc:`$chan </identifiers/$chan>`
+    * :doc:`/partall </commands/partall>`

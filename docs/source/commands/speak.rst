@@ -72,6 +72,6 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `/gtalk </commands/gtalk>`
-    * :doc: `/splay </commands/splay>`
-    * :doc: `$speak </identifiers/$speak>`
+    * :doc:`/gtalk </commands/gtalk>`
+    * :doc:`/splay </commands/splay>`
+    * :doc:`$speak </identifiers/$speak>`

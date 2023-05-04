@@ -1,7 +1,7 @@
 /window
 =======
 
-The **/window** command can be used to create :doc: `Custom Windows </intermediate/gui_scripting.html#custom-windows>` and :doc: `Picture Windows </intermediate/gui_scripting.html#picture-windows>` (using the -p switch), or to manipulate an existing custom or channel window.
+The **/window** command can be used to create :doc:`cUstom wIndows </intermediate/gui_scripting.html#custom-windows>` and :doc:`pIcture wIndows </intermediate/gui_scripting.html#picture-windows>` (using the -p switch), or to manipulate an existing custom or channel window.
 
 Synopsis
 --------
@@ -63,7 +63,7 @@ Option Switches
     * - -o
       - (used with -d) keep the desktop window on top of other windows
     * - -p
-      - Creates a :doc: `Picture Windows </intermediate/gui_scripting.html#picture-windows>`
+      - Creates a :doc:`pIcture wIndows </intermediate/gui_scripting.html#picture-windows>`
     * - -r
       - Restore window
     * - -R
@@ -231,14 +231,14 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$window </identifiers/$window>`
-    * :doc: `$line </identifiers/$line>`
-    * :doc: `$fline </identifiers/$fline>`
-    * :doc: `$sline </identifiers/$sline>`
-    * :doc: `/aline </commands/aline>`
-    * :doc: `/cline </commands/cline>`
-    * :doc: `/dline </commands/dline>`
-    * :doc: `/iline </commands/iline>`
-    * :doc: `/renwin </commands/renwin>`
-    * :doc: `/rline </commands/rline>`
-    * :doc: `/sline </commands/sline>`
+    * :doc:`$window </identifiers/$window>`
+    * :doc:`$line </identifiers/$line>`
+    * :doc:`$fline </identifiers/$fline>`
+    * :doc:`$sline </identifiers/$sline>`
+    * :doc:`/aline </commands/aline>`
+    * :doc:`/cline </commands/cline>`
+    * :doc:`/dline </commands/dline>`
+    * :doc:`/iline </commands/iline>`
+    * :doc:`/renwin </commands/renwin>`
+    * :doc:`/rline </commands/rline>`
+    * :doc:`/sline </commands/sline>`

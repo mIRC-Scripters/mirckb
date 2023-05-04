@@ -60,4 +60,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/join </commands/join>`
+    * :doc:`/join </commands/join>`

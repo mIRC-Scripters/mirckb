@@ -1,7 +1,7 @@
 /halt
 =====
 
-The **/halt** command can be used to immediately stop any further processing in a script. If used from within an event (from within an alias that originated from an event), others events in others scripts files are still processed. You can use the & prefix event to prevent an event from being processed if /halt or /haltdef has been used in a previous event, you can also check the :doc: `$halted </identifiers/$halted>` identifier from the event without using the & event prefix, which will be :doc: `$true </identifiers/$true>`
+The **/halt** command can be used to immediately stop any further processing in a script. If used from within an event (from within an alias that originated from an event), others events in others scripts files are still processed. You can use the & prefix event to prevent an event from being processed if /halt or /haltdef has been used in a previous event, you can also check the :doc:`$halted </identifiers/$halted>` identifier from the event without using the & event prefix, which will be :doc:`$true </identifiers/$true>`
 
 .. note:: /halt inside an event stop the default processing if you are using the ^ event prefix
 
@@ -57,6 +57,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$halted </identifiers/$halted>`
-    * :doc: `/haltdef </commands/haltdef>`
-    * :doc: `/return </commands/return>`
+    * :doc:`$halted </identifiers/$halted>`
+    * :doc:`/haltdef </commands/haltdef>`
+    * :doc:`/return </commands/return>`

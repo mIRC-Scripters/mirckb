@@ -1,7 +1,7 @@
 /comlist
 ========
 
-The **/comlist** command lists all of the currently open :doc: `COM object </advanced/COM>` connections.
+The **/comlist** command lists all of the currently open :doc:`cOM object </advanced/cOM>` connections.
 
 Synopsis
 --------
@@ -38,11 +38,11 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `COM objects </advanced/COM>`
-    * :doc: `$com </identifiers/$com>`
-    * :doc: `$comcall </identifiers/$comcall>`
-    * :doc: `$comerr </identifiers/$comerr>`
-    * :doc: `$comval </identifiers/$comval>`
-    * :doc: `/comclose </commands/comclose>`
-    * :doc: `/comopen </commands/comopen>`
-    * :doc: `/comreg </commands/comreg>`
+    * :doc:`cOM objects </advanced/cOM>`
+    * :doc:`$com </identifiers/$com>`
+    * :doc:`$comcall </identifiers/$comcall>`
+    * :doc:`$comerr </identifiers/$comerr>`
+    * :doc:`$comval </identifiers/$comval>`
+    * :doc:`/comclose </commands/comclose>`
+    * :doc:`/comopen </commands/comopen>`
+    * :doc:`/comreg </commands/comreg>`

@@ -74,8 +74,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$me </identifiers/$me>`
-    * :doc: `$nick </identifiers/$nick>`
-    * :doc: `/close </commands/close>`
-    * :doc: `/closemsg </commands/closemsg>`
-    * :doc: `/window </commands/window>`
+    * :doc:`$me </identifiers/$me>`
+    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`/close </commands/close>`
+    * :doc:`/closemsg </commands/closemsg>`
+    * :doc:`/window </commands/window>`

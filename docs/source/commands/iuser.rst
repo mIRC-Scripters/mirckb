@@ -51,11 +51,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$ulevel </identifiers/$ulevel>`
-    * :doc: `$ulist </identifiers/$ulist>`
-    * :doc: `/flush </commands/flush>`
-    * :doc: `/guser </commands/guser>`
-    * :doc: `/auser </commands/auser>`
-    * :doc: `/rlevel </commands/rlevel>`
-    * :doc: `/ruser </commands/ruser>`
-    * :doc: `/ulist </commands/ulist>`
+    * :doc:`$ulevel </identifiers/$ulevel>`
+    * :doc:`$ulist </identifiers/$ulist>`
+    * :doc:`/flush </commands/flush>`
+    * :doc:`/guser </commands/guser>`
+    * :doc:`/auser </commands/auser>`
+    * :doc:`/rlevel </commands/rlevel>`
+    * :doc:`/ruser </commands/ruser>`
+    * :doc:`/ulist </commands/ulist>`

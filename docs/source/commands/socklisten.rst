@@ -26,7 +26,7 @@ Switches
     * - u
       - Enables dual stack socket to support both ipv4 and ipv6 for the listening socket, if that is available, you must bind to an ipv6 ip address
     * - n
-      - Disable nagle algorithm for the socket, the :doc: `accepted </commands/sockaccept>` socket will have nagle disabled. You can disable nagle per accepted socket by using /sockaccept's -n switch
+      - Disable nagle algorithm for the socket, the :doc:`accepted </commands/sockaccept>` socket will have nagle disabled. You can disable nagle per accepted socket by using /sockaccept's -n switch
 
 Parameters
 ----------
@@ -62,17 +62,17 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `$sock </identifiers/$sock>`
-    * :doc: `$sockname </identifiers/$sockname>`
-    * :doc: `$sockerr </identifiers/$sockerr>`
-    * :doc: `$sockbr </identifiers/$sockbr>`
-    * :doc: `/sockaccept </commands/sockaccept>`
-    * :doc: `/sockclose </commands/sockclose>`
-    * :doc: `/socklist </commands/socklist>`
-    * :doc: `/sockmark </commands/sockmark>`
-    * :doc: `/sockopen </commands/sockopen>`
-    * :doc: `/sockpause </commands/sockpause>`
-    * :doc: `/sockread </commands/sockread>`
-    * :doc: `/sockrename </commands/sockrename>`
-    * :doc: `/sockudp </commands/udp-socket>`
-    * :doc: `/sockwrite </commands/sockwrite>`
+    * :doc:`$sock </identifiers/$sock>`
+    * :doc:`$sockname </identifiers/$sockname>`
+    * :doc:`$sockerr </identifiers/$sockerr>`
+    * :doc:`$sockbr </identifiers/$sockbr>`
+    * :doc:`/sockaccept </commands/sockaccept>`
+    * :doc:`/sockclose </commands/sockclose>`
+    * :doc:`/socklist </commands/socklist>`
+    * :doc:`/sockmark </commands/sockmark>`
+    * :doc:`/sockopen </commands/sockopen>`
+    * :doc:`/sockpause </commands/sockpause>`
+    * :doc:`/sockread </commands/sockread>`
+    * :doc:`/sockrename </commands/sockrename>`
+    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockwrite </commands/sockwrite>`

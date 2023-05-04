@@ -71,5 +71,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$tip </identifiers/$tip>`
-    * :doc: `/tips </commands/tips>`
+    * :doc:`$tip </identifiers/$tip>`
+    * :doc:`/tips </commands/tips>`

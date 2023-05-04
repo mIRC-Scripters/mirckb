@@ -1,7 +1,7 @@
 /tnick
 ======
 
-The **/tnick** command can be used to change own IRC nickname without changing the main or alternative nick ( :doc: `/anick </commands/anick>` ) options.
+The **/tnick** command can be used to change own IRC nickname without changing the main or alternative nick ( :doc:`/anick </commands/anick>` ) options.
 
 Synopsis
 --------
@@ -49,6 +49,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$nick </identifiers/$nick>`
-    * :doc: `$anick </identifiers/$anick>`
-    * :doc: `/anick </commands/anick>`
+    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`$anick </identifiers/$anick>`
+    * :doc:`/anick </commands/anick>`

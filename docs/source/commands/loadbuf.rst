@@ -80,5 +80,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/filter </commands/filter>`
-    * :doc: `/savebuf </commands/savebuf>`
+    * :doc:`/filter </commands/filter>`
+    * :doc:`/savebuf </commands/savebuf>`

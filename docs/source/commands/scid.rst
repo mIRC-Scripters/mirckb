@@ -114,8 +114,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$status </identifiers/$status>`
-    * :doc: `$network </identifiers/$network>`
-    * :doc: `$scon </identifiers/$scon>`
-    * :doc: `$scid </identifiers/$scid>`
-    * :doc: `/scon </commands/scon>`
+    * :doc:`$status </identifiers/$status>`
+    * :doc:`$network </identifiers/$network>`
+    * :doc:`$scon </identifiers/$scon>`
+    * :doc:`$scid </identifiers/$scid>`
+    * :doc:`/scon </commands/scon>`

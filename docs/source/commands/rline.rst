@@ -66,12 +66,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/aline </commands/aline>`
-    * :doc: `/iline </commands/iline>`
-    * :doc: `/dline </commands/dline>`
-    * :doc: `/cline </commands/cline>`
-    * :doc: `/sline </commands/sline>`
-    * :doc: `$line </identifiers/$line>`
-    * :doc: `$fline </identifiers/$fline>`
-    * :doc: `$sline </identifiers/$sline>`
-    * :doc: `$window </identifiers/$window>`
+    * :doc:`/aline </commands/aline>`
+    * :doc:`/iline </commands/iline>`
+    * :doc:`/dline </commands/dline>`
+    * :doc:`/cline </commands/cline>`
+    * :doc:`/sline </commands/sline>`
+    * :doc:`$line </identifiers/$line>`
+    * :doc:`$fline </identifiers/$fline>`
+    * :doc:`$sline </identifiers/$sline>`
+    * :doc:`$window </identifiers/$window>`

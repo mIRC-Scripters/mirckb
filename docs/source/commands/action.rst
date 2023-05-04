@@ -54,12 +54,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$me </identifiers/$me>`
-    * :doc: `$nick </identifiers/$nick>`
-    * :doc: `/amsg </commands/amsg>`
-    * :doc: `/describe </commands/describe>`
-    * :doc: `/me </commands/me>`
-    * :doc: `/msg </commands/msg>`
-    * :doc: `/qme </commands/qme>`
-    * :doc: `/qmsg </commands/qmsg>`
-    * :doc: `/say </commands/say>`
+    * :doc:`$me </identifiers/$me>`
+    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`/amsg </commands/amsg>`
+    * :doc:`/describe </commands/describe>`
+    * :doc:`/me </commands/me>`
+    * :doc:`/msg </commands/msg>`
+    * :doc:`/qme </commands/qme>`
+    * :doc:`/qmsg </commands/qmsg>`
+    * :doc:`/say </commands/say>`

@@ -1,7 +1,7 @@
 /fopen
 ======
 
-The **/fopen** command opens <filename> and assigns it a handle. The file is opened for both writing and reading: see :doc: `file handling </intermediate/data_storage.html#file-handling>` . If an error occurred, processing does not halt. You must check that :doc: `$fopen </identifiers/$fopen>` (<handle>).err or :doc: `$ferr </identifiers/$ferr>` is not true.
+The **/fopen** command opens <filename> and assigns it a handle. The file is opened for both writing and reading: see :doc:`file handling </intermediate/data_storage.html#file-handling>` . If an error occurred, processing does not halt. You must check that :doc:`$fopen </identifiers/$fopen>` (<handle>).err or :doc:`$ferr </identifiers/$ferr>` is not true.
 
 .. note:: mIRC keeps the handle even after a fail, you must always /fclose the handle you /fopen yourself.
 
@@ -113,13 +113,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$fopen </identifiers/$fopen>`
-    * :doc: `$fread </identifiers/$fread>`
-    * :doc: `$fgetc </identifiers/$fgetc>`
-    * :doc: `$feof </identifiers/$feof>`
-    * :doc: `$ferr </identifiers/$ferr>`
-    * :doc: `$file </identifiers/$file>`
-    * :doc: `/fclose </commands/fclose>`
-    * :doc: `/flist </commands/flist>`
-    * :doc: `/fseek </commands/fseek>`
-    * :doc: `/fwrite </commands/fwrite>`
+    * :doc:`$fopen </identifiers/$fopen>`
+    * :doc:`$fread </identifiers/$fread>`
+    * :doc:`$fgetc </identifiers/$fgetc>`
+    * :doc:`$feof </identifiers/$feof>`
+    * :doc:`$ferr </identifiers/$ferr>`
+    * :doc:`$file </identifiers/$file>`
+    * :doc:`/fclose </commands/fclose>`
+    * :doc:`/flist </commands/flist>`
+    * :doc:`/fseek </commands/fseek>`
+    * :doc:`/fwrite </commands/fwrite>`

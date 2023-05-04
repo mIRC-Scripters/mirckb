@@ -3,7 +3,7 @@
 
 The **/dec** command decreases the value of a variable by a given value. If no value is specified, mIRC will decrease the variable by one. The /dec command works with both positive and negative values alike.
 
-.. note:: /dec always keeps the unset time if there is one for the current variable, as though there was a -k switch from :doc: `/set </commands/set>` , there's no switch to prevent this behavior and unset the time while setting the value.
+.. note:: /dec always keeps the unset time if there is one for the current variable, as though there was a -k switch from :doc:`/set </commands/set>` , there's no switch to prevent this behavior and unset the time while setting the value.
 
 Synopsis
 --------
@@ -82,8 +82,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$var </identifiers/$var>`
-    * :doc: `/inc </commands/inc>`
-    * :doc: `/set </commands/set>`
-    * :doc: `/unset </commands/unset>`
-    * :doc: `/var </commands/var>`
+    * :doc:`$var </identifiers/$var>`
+    * :doc:`/inc </commands/inc>`
+    * :doc:`/set </commands/set>`
+    * :doc:`/unset </commands/unset>`
+    * :doc:`/var </commands/var>`

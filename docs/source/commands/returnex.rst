@@ -1,9 +1,9 @@
 /returnex
 =========
 
-The **/returnex** command immediately leaves the current subroutine and returns a given value back to the calling routine (if one exists). This command performs the same operation as :doc: `/return </commands/return>` with the exception of how it handles spaces. All spaces, including leading, trailing, and multiple, are retained. (Normally multiple spaces are collapsed into a single space and leading and trailing spaces are trimmed off).
+The **/returnex** command immediately leaves the current subroutine and returns a given value back to the calling routine (if one exists). This command performs the same operation as :doc:`/return </commands/return>` with the exception of how it handles spaces. All spaces, including leading, trailing, and multiple, are retained. (Normally multiple spaces are collapsed into a single space and leading and trailing spaces are trimmed off).
 
-This command was added undocumented mainly to allow people to call an identifier in the subtext parameter of :doc: `$regsubex </identifiers/$regsubex>` , without seeing their returned value missing spaces but you can use it for that purpose anywhere.
+This command was added undocumented mainly to allow people to call an identifier in the subtext parameter of :doc:`$regsubex </identifiers/$regsubex>` , without seeing their returned value missing spaces but you can use it for that purpose anywhere.
 
 Synopsis
 --------
@@ -62,6 +62,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$result </identifiers/$result>`
-    * :doc: `/alias </commands/alias>`
-    * :doc: `/return </commands/return>`
+    * :doc:`$result </identifiers/$result>`
+    * :doc:`/alias </commands/alias>`
+    * :doc:`/return </commands/return>`

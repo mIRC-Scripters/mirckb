@@ -45,6 +45,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$email </identifiers/$email>`
-    * :doc: `$emailaddr </identifiers/$emailaddr>`
-    * :doc: `/fullname </commands/fullname>`
+    * :doc:`$email </identifiers/$email>`
+    * :doc:`$emailaddr </identifiers/$emailaddr>`
+    * :doc:`/fullname </commands/fullname>`

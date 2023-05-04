@@ -47,8 +47,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/auser </commands/auser>`
-    * :doc: `/guser </commands/guser>`
-    * :doc: `/iuser </commands/iuser>`
-    * :doc: `/rlevel </commands/rlevel>`
-    * :doc: `/ulist </commands/ulist>`
+    * :doc:`/auser </commands/auser>`
+    * :doc:`/guser </commands/guser>`
+    * :doc:`/iuser </commands/iuser>`
+    * :doc:`/rlevel </commands/rlevel>`
+    * :doc:`/ulist </commands/ulist>`

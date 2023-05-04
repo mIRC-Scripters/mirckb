@@ -77,6 +77,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/aline </commands/aline>`
-    * :doc: `/window </commands/window>`
-    * :doc: `Custom Windows </intermediate/gui_scripting.html#custom-windows>`
+    * :doc:`/aline </commands/aline>`
+    * :doc:`/window </commands/window>`
+    * :doc:`cUstom wIndows </intermediate/gui_scripting.html#custom-windows>`

@@ -24,9 +24,9 @@ Switches
     * - -c
       - Clears all of the commands from the voice commands list.
     * - -a
-      - Does the same as :doc: `/vcadd </commands/vcadd>`
+      - Does the same as :doc:`/vcadd </commands/vcadd>`
     * - -r
-      - Does the same as :doc: `/vcrem </commands/vcrem>`
+      - Does the same as :doc:`/vcrem </commands/vcrem>`
 
 Parameters
 ----------
@@ -65,9 +65,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/vcadd </commands/vcadd>`
-    * :doc: `/vcrem </commands/vcrem>`
-    * :doc: `$vcmd </identifiers/$vcmd>`
-    * :doc: `$vcmdver </identifiers/$vcmdver>`
-    * :doc: `$vcmdstat </identifiers/$vcmdstat>`
-    * :doc: `ON VCMD Event </events/On_vcmd>`
+    * :doc:`/vcadd </commands/vcadd>`
+    * :doc:`/vcrem </commands/vcrem>`
+    * :doc:`$vcmd </identifiers/$vcmd>`
+    * :doc:`$vcmdver </identifiers/$vcmdver>`
+    * :doc:`$vcmdstat </identifiers/$vcmdstat>`
+    * :doc:`oN vCMD eVent </events/oN_vcmd>`

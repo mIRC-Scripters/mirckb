@@ -1,7 +1,7 @@
 /hotlink
 ========
 
-The **/hotlink** command can be used to override the default popups menu when right clicking a word and triggering the :doc: `on hotlink </events/on_hotlink>` event.
+The **/hotlink** command can be used to override the default popups menu when right clicking a word and triggering the :doc:`on hotlink </events/on_hotlink>` event.
 
 Synopsis
 --------
@@ -74,7 +74,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$hotline </identifiers/$hotline>`
-    * :doc: `$hotlinepos </identifiers/$hotlinepos>`
-    * :doc: `$hotlink </identifiers/$hotlink>`
-    * :doc: `on hotlink </events/on_hotlink>`
+    * :doc:`$hotline </identifiers/$hotline>`
+    * :doc:`$hotlinepos </identifiers/$hotlinepos>`
+    * :doc:`$hotlink </identifiers/$hotlink>`
+    * :doc:`on hotlink </events/on_hotlink>`

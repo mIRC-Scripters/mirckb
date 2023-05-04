@@ -1,7 +1,7 @@
 /describe
 =========
 
-The **/describe** command sends an action message to a specific channel or person. This command is the same the :doc: `/me command </commands/me>` except you can set a destination channel or nick other then the active window.
+The **/describe** command sends an action message to a specific channel or person. This command is the same the :doc:`/me command </commands/me>` except you can set a destination channel or nick other then the active window.
 
 Synopsis
 --------
@@ -50,10 +50,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ame </commands/ame>`
-    * :doc: `/amsg </commands/amsg>`
-    * :doc: `/me </commands/me>`
-    * :doc: `/msg </commands/msg>`
-    * :doc: `/qme </commands/qme>`
-    * :doc: `/qmsg </commands/qmsg>`
-    * :doc: `/say </commands/say>`
+    * :doc:`/ame </commands/ame>`
+    * :doc:`/amsg </commands/amsg>`
+    * :doc:`/me </commands/me>`
+    * :doc:`/msg </commands/msg>`
+    * :doc:`/qme </commands/qme>`
+    * :doc:`/qmsg </commands/qmsg>`
+    * :doc:`/say </commands/say>`

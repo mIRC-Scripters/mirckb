@@ -47,6 +47,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/writeini </commands/writeini>`
-    * :doc: `$readini </identifiers/$readini>`
-    * :doc: `$ini </identifiers/$ini>`
+    * :doc:`/writeini </commands/writeini>`
+    * :doc:`$readini </identifiers/$readini>`
+    * :doc:`$ini </identifiers/$ini>`

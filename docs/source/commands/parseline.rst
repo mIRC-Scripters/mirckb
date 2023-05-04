@@ -1,7 +1,7 @@
 /parseline
 ==========
 
-**/parseline** can be used to inject lines as though mIRC was receiving or sending them from/to IRC servers. It can also be used to modify the line being received/sent from the :doc: `on parseline </events/on_parseline>` event.
+**/parseline** can be used to inject lines as though mIRC was receiving or sending them from/to IRC servers. It can also be used to modify the line being received/sent from the :doc:`on parseline </events/on_parseline>` event.
 
 **Warning**: This feature should only be used, for example, to support features and/or protocols that mIRC does not already support, not to modify standard lines. mIRC maintains internal states based on incoming and outgoing lines. If lines are modified, mIRC may not work correctly
 
@@ -40,7 +40,7 @@ Optional
     * - -q
       - Can be used to add a new line to the end of the in/out queue, they are processed after the end of the script execution.
 
-.. note:: Without -q, you're changing the current line from the :doc: `on parseline </events/on_parseline>` event, you'll get an error otherwise.
+.. note:: Without -q, you're changing the current line from the :doc:`on parseline </events/on_parseline>` event, you'll get an error otherwise.
 
 .. list-table::
     :widths: 15 85
@@ -53,7 +53,7 @@ Optional
     * - -p
       - Used with -q, indicate the line must trigger on parseline
     * - -n
-      - Add a :doc: `$crlf </identifiers/$crlf>` to the end of the line if the line doesn't already end with a $crlf
+      - Add a :doc:`$crlf </identifiers/$crlf>` to the end of the line if the line doesn't already end with a $crlf
     * - -uN
       - Enable/Disable utf8 encoding/decoding of the line. Use N = 1 to enable, 0 to disable
 
@@ -101,5 +101,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `on parseline </events/on_parseline>`
-    * :doc: `$parseutf </identifiers/$parseutf>`
+    * :doc:`on parseline </events/on_parseline>`
+    * :doc:`$parseutf </identifiers/$parseutf>`

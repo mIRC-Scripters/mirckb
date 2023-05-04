@@ -53,6 +53,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `on kick </events/on_events/on_kick>`
-    * :doc: `on quit </events/on_events/on_quit>`
-    * :doc: `on part </events/on_events/on_part>`
+    * :doc:`on kick </events/on_events/on_kick>`
+    * :doc:`on quit </events/on_events/on_quit>`
+    * :doc:`on part </events/on_events/on_part>`

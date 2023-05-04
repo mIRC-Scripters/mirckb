@@ -3,7 +3,7 @@
 
 The **/inc** command increases the numeric value of a variable by a given value. If [value] is not specified, mIRC will increase the variable by one. The /inc command works with both positive and negative values alike.
 
-.. note:: /inc always keeps the unset time if there is one for the current variable, as though there was a -k switch from :doc: `/set </commands/set>` , there's no switch to prevent this behavior and unset the time while setting the value.
+.. note:: /inc always keeps the unset time if there is one for the current variable, as though there was a -k switch from :doc:`/set </commands/set>` , there's no switch to prevent this behavior and unset the time while setting the value.
 
 Synopsis
 --------
@@ -94,9 +94,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$var </identifiers/$var>`
-    * :doc: `/dec </commands/dec>`
-    * :doc: `/inc </commands/inc>`
-    * :doc: `/set </commands/set>`
-    * :doc: `/unset </commands/unset>`
-    * :doc: `/var </commands/var>`
+    * :doc:`$var </identifiers/$var>`
+    * :doc:`/dec </commands/dec>`
+    * :doc:`/inc </commands/inc>`
+    * :doc:`/set </commands/set>`
+    * :doc:`/unset </commands/unset>`
+    * :doc:`/var </commands/var>`

@@ -49,17 +49,17 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `$sock </identifiers/$sock>`
-    * :doc: `$sockname </identifiers/$sockname>`
-    * :doc: `$sockerr </identifiers/$sockerr>`
-    * :doc: `$sockbr </identifiers/$sockbr>`
-    * :doc: `/sockaccept </commands/sockaccept>`
-    * :doc: `/sockclose </commands/sockclose>`
-    * :doc: `/socklist </commands/socklist>`
-    * :doc: `/socklisten </commands/socklisten>`
-    * :doc: `/sockmark </commands/sockmark>`
-    * :doc: `/sockopen </commands/sockopen>`
-    * :doc: `/sockpause </commands/sockpause>`
-    * :doc: `/sockread </commands/sockread>`
-    * :doc: `/sockudp </commands/udp-socket>`
-    * :doc: `/sockwrite </commands/sockwrite>`
+    * :doc:`$sock </identifiers/$sock>`
+    * :doc:`$sockname </identifiers/$sockname>`
+    * :doc:`$sockerr </identifiers/$sockerr>`
+    * :doc:`$sockbr </identifiers/$sockbr>`
+    * :doc:`/sockaccept </commands/sockaccept>`
+    * :doc:`/sockclose </commands/sockclose>`
+    * :doc:`/socklist </commands/socklist>`
+    * :doc:`/socklisten </commands/socklisten>`
+    * :doc:`/sockmark </commands/sockmark>`
+    * :doc:`/sockopen </commands/sockopen>`
+    * :doc:`/sockpause </commands/sockpause>`
+    * :doc:`/sockread </commands/sockread>`
+    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockwrite </commands/sockwrite>`

@@ -1,7 +1,7 @@
 /return
 =======
 
-The **/return** command immediately leaves the current subroutine and returns a given value back to the calling routine (if one exists). This command behaves like most commands do when it comes to retaining spaces (i.e. multiple spaces are collapsed, leading and trailing are trimmed). If you are looking for a way to preserve spaces consider using the :doc: `/returnex </commands/returnex>` command instead.
+The **/return** command immediately leaves the current subroutine and returns a given value back to the calling routine (if one exists). This command behaves like most commands do when it comes to retaining spaces (i.e. multiple spaces are collapsed, leading and trailing are trimmed). If you are looking for a way to preserve spaces consider using the :doc:`/returnex </commands/returnex>` command instead.
 
 Synopsis
 --------
@@ -55,6 +55,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$result </identifiers/$result>`
-    * :doc: `/alias </commands/alias>`
-    * :doc: `/returnex </commands/returnex>`
+    * :doc:`$result </identifiers/$result>`
+    * :doc:`/alias </commands/alias>`
+    * :doc:`/returnex </commands/returnex>`

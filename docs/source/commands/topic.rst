@@ -63,5 +63,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$chan </identifiers/$chan>`
-    * :doc: `ON TOPIC </events/on_topic>`
+    * :doc:`$chan </identifiers/$chan>`
+    * :doc:`oN tOPIC </events/on_topic>`

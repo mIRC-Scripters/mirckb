@@ -43,7 +43,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/disconnect </commands/disconnect>`
-    * :doc: `on kick </events/on_events/on_kick>`
-    * :doc: `on quit </events/on_events/on_quit>`
-    * :doc: `on part </events/on_events/on_part>`
+    * :doc:`/disconnect </commands/disconnect>`
+    * :doc:`on kick </events/on_events/on_kick>`
+    * :doc:`on quit </events/on_events/on_quit>`
+    * :doc:`on part </events/on_events/on_part>`

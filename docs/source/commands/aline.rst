@@ -83,13 +83,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$line </identifiers/$line>`
-    * :doc: `$fline </identifiers/$fline>`
-    * :doc: `$sline </identifiers/$sline>`
-    * :doc: `/cline </commands/cline>`
-    * :doc: `/dline </commands/dline>`
-    * :doc: `/echo </commands/echo>`
-    * :doc: `/iline </commands/iline>`
-    * :doc: `/rline </commands/rline>`
-    * :doc: `/sline </commands/sline>`
-    * :doc: `/window </commands/window>`
+    * :doc:`$line </identifiers/$line>`
+    * :doc:`$fline </identifiers/$fline>`
+    * :doc:`$sline </identifiers/$sline>`
+    * :doc:`/cline </commands/cline>`
+    * :doc:`/dline </commands/dline>`
+    * :doc:`/echo </commands/echo>`
+    * :doc:`/iline </commands/iline>`
+    * :doc:`/rline </commands/rline>`
+    * :doc:`/sline </commands/sline>`
+    * :doc:`/window </commands/window>`

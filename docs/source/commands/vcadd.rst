@@ -35,9 +35,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/vcmd </commands/vcmd>`
-    * :doc: `/vcrem </commands/vcrem>`
-    * :doc: `$vcmd </identifiers/$vcmd>`
-    * :doc: `$vcmdver </identifiers/$vcmdver>`
-    * :doc: `$vcmdstat </identifiers/$vcmdstat>`
-    * :doc: `ON VCMD Event </events/On_vcmd>`
+    * :doc:`/vcmd </commands/vcmd>`
+    * :doc:`/vcrem </commands/vcrem>`
+    * :doc:`$vcmd </identifiers/$vcmd>`
+    * :doc:`$vcmdver </identifiers/$vcmdver>`
+    * :doc:`$vcmdstat </identifiers/$vcmdstat>`
+    * :doc:`oN vCMD eVent </events/oN_vcmd>`

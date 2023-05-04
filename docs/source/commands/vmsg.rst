@@ -46,4 +46,4 @@ See also
 .. hlist::
     :columns: 4
 
-:doc: `/omsg </commands/omsg>`
+:doc:`/omsg </commands/omsg>`

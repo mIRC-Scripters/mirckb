@@ -48,8 +48,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$eval </identifiers/$eval>`
-    * :doc: `$ </identifiers/$>`
-    * :doc: `$evalnext </identifiers/$evalnext>`
-    * :doc: `/scid </commands/scid>`
-    * :doc: `/scon </commands/scon>`
+    * :doc:`$eval </identifiers/$eval>`
+    * :doc:`$ </identifiers/$>`
+    * :doc:`$evalnext </identifiers/$evalnext>`
+    * :doc:`/scid </commands/scid>`
+    * :doc:`/scon </commands/scon>`

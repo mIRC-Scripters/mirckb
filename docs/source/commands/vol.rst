@@ -63,14 +63,14 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `Playing Music </other/playing_music>`
-    * :doc: `ON MIDIEND </events/On_midiend>`
-    * :doc: `ON MP3END </events/On_mp3end>`
-    * :doc: `ON NOSOUND </events/On_nosound>`
-    * :doc: `ON WAVEEND </events/On_waveend>`
-    * :doc: `$inmidi </identifiers/$inmidi>`
-    * :doc: `$insong </identifiers/$insong>`
-    * :doc: `$inwave </identifiers/$inwave>`
-    * :doc: `$sound </identifiers/$sound>`
-    * :doc: `$vol </identifiers/$vol>`
-    * :doc: `/splay </commands/splay>`
+    * :doc:`pLaying mUsic </other/playing_music>`
+    * :doc:`oN mIDIEND </events/oN_midiend>`
+    * :doc:`oN mP3eND </events/oN_mp3end>`
+    * :doc:`oN nOSOUND </events/oN_nosound>`
+    * :doc:`oN wAVEEND </events/oN_waveend>`
+    * :doc:`$inmidi </identifiers/$inmidi>`
+    * :doc:`$insong </identifiers/$insong>`
+    * :doc:`$inwave </identifiers/$inwave>`
+    * :doc:`$sound </identifiers/$sound>`
+    * :doc:`$vol </identifiers/$vol>`
+    * :doc:`/splay </commands/splay>`

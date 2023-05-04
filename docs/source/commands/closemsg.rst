@@ -3,7 +3,7 @@
 
 The **/closemsg** command can be used to close all query windows. A name can be specified to close only that query window.
 
-**This** commands been superseded by the :doc: `/close </commands/close>` .'''
+**This** commands been superseded by the :doc:`/close </commands/close>` .'''
 
 Synopsis
 --------
@@ -48,8 +48,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/clear </commands/clear>`
-    * :doc: `/clearall </commands/clearall>`
-    * :doc: `/close </commands/close>`
-    * :doc: `/debug </commands/debug>`
-    * :doc: `/window </commands/window>`
+    * :doc:`/clear </commands/clear>`
+    * :doc:`/clearall </commands/clearall>`
+    * :doc:`/close </commands/close>`
+    * :doc:`/debug </commands/debug>`
+    * :doc:`/window </commands/window>`

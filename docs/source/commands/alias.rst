@@ -40,7 +40,7 @@ Parameters
     * - <aliasname>
       - The name of the alias to use.
     * - [command]
-- If specified, the commands that are associated with the alias (you can specify multiple commands on one line by seperating them properly with :doc: `pipes </beginner/bootcamp.html#piping>` ), if not specified the alias is removed.
+- If specified, the commands that are associated with the alias (you can specify multiple commands on one line by seperating them properly with :doc:`pipes </beginner/bootcamp.html#piping>` ), if not specified the alias is removed.
 
 Example
 -------
@@ -76,11 +76,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$isalias </identifiers/$isalias>`
-    * :doc: `$alias </identifiers/$alias>`
-    * :doc: `$exists </identifiers/$exists>`
-    * :doc: `$file </identifiers/$file>`
-    * :doc: `/load </commands/load>`
-    * :doc: `/save </commands/save>`
-    * :doc: `/unload </commands/unload>`
-    * :doc: `/add </commands/add>`
+    * :doc:`$isalias </identifiers/$isalias>`
+    * :doc:`$alias </identifiers/$alias>`
+    * :doc:`$exists </identifiers/$exists>`
+    * :doc:`$file </identifiers/$file>`
+    * :doc:`/load </commands/load>`
+    * :doc:`/save </commands/save>`
+    * :doc:`/unload </commands/unload>`
+    * :doc:`/add </commands/add>`

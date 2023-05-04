@@ -50,12 +50,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$nick </identifiers/$nick>`
-    * :doc: `$remote </identifiers/$remote>`
-    * :doc: `$rawmsg </identifiers/$rawmsg>`
-    * :doc: `/ctcp </commands/tcp-socket>`
-    * :doc: `/ctcpreply </commands/tcp-socket>`
-    * :doc: `/events </commands/events>`
-    * :doc: `/raw </commands/raw>`
-    * :doc: `/remote </commands/remote>`
-    * :doc: `/commands </commands/commands>`
+    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`$remote </identifiers/$remote>`
+    * :doc:`$rawmsg </identifiers/$rawmsg>`
+    * :doc:`/ctcp </commands/tcp-socket>`
+    * :doc:`/ctcpreply </commands/tcp-socket>`
+    * :doc:`/events </commands/events>`
+    * :doc:`/raw </commands/raw>`
+    * :doc:`/remote </commands/remote>`
+    * :doc:`/commands </commands/commands>`

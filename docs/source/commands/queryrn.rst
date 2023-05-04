@@ -45,5 +45,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/query </commands/query>`
-    * :doc: `$query </identifiers/$query>`
+    * :doc:`/query </commands/query>`
+    * :doc:`$query </identifiers/$query>`

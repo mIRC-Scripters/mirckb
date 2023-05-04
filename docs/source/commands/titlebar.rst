@@ -61,5 +61,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$window </identifiers/$window>`
-    * :doc: `$titlebar </identifiers/$titlebar>`
+    * :doc:`$window </identifiers/$window>`
+    * :doc:`$titlebar </identifiers/$titlebar>`

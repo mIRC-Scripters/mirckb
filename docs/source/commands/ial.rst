@@ -48,8 +48,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ialclear </commands/ialclear>`
-    * :doc: `/ialmark </commands/ialmark>`
-    * :doc: `$ial </identifiers/$ial>`
-    * :doc: `$address </identifiers/$address>`
-    * :doc: `$ialchan </identifiers/$ialchan>`
+    * :doc:`/ialclear </commands/ialclear>`
+    * :doc:`/ialmark </commands/ialmark>`
+    * :doc:`$ial </identifiers/$ial>`
+    * :doc:`$address </identifiers/$address>`
+    * :doc:`$ialchan </identifiers/$ialchan>`

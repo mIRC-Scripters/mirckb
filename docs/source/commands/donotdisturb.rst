@@ -38,4 +38,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$donotdisturb </identifiers/$donotdisturb>`
+    * :doc:`$donotdisturb </identifiers/$donotdisturb>`

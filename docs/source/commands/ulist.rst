@@ -67,8 +67,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/auser </commands/auser>`
-    * :doc: `/flush </commands/flush>`
-    * :doc: `/guser </commands/guser>`
-    * :doc: `/isuer </commands/iuser>`
-    * :doc: `/ruser </commands/ruser>`
+    * :doc:`/auser </commands/auser>`
+    * :doc:`/flush </commands/flush>`
+    * :doc:`/guser </commands/guser>`
+    * :doc:`/isuer </commands/iuser>`
+    * :doc:`/ruser </commands/ruser>`

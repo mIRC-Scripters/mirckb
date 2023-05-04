@@ -43,5 +43,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/echo </commands/echo>`
-    * :doc: `/fnord </commands/fnord>`
+    * :doc:`/echo </commands/echo>`
+    * :doc:`/fnord </commands/fnord>`

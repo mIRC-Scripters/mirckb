@@ -24,9 +24,9 @@ Switches
     * - -r
       - removes the mark
     * - -w
-      - used with -rn to treat name as :doc: `wildcard </intermediate/matching_tools.html#wildcard>`
+      - used with -rn to treat name as :doc:`wildcard </intermediate/matching_tools.html#wildcard>`
 
-Marks can be accessed using :doc: `$ialmark(nick,N/name) </identifiers/$ialmark>` and properties 'name' and 'mark'.
+Marks can be accessed using :doc:`$ialmark(nick,n/name) </identifiers/$ialmark>` and properties 'name' and 'mark'.
 
 Marks are removed if the nick is removed from the nicklist, either from no longer being in a channel with them, or by /ialclear or by being disconnected from that server. You cannot have a named-mark without it having a value. The mark does follow the nick to the new nick after a nick change.
 
@@ -76,10 +76,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$ialmark </identifiers/$ialmark>`
-    * :doc: `/ialclear </commands/ialclear>`
-    * :doc: `/ial </commands/ial>`
-    * :doc: `$ial </identifiers/$ial>`
-    * :doc: `$address </identifiers/$address>`
-    * :doc: `$fulladdress </identifiers/$fulladdress>`
-    * :doc: `$ialchan </identifiers/$ialchan>`
+    * :doc:`$ialmark </identifiers/$ialmark>`
+    * :doc:`/ialclear </commands/ialclear>`
+    * :doc:`/ial </commands/ial>`
+    * :doc:`$ial </identifiers/$ial>`
+    * :doc:`$address </identifiers/$address>`
+    * :doc:`$fulladdress </identifiers/$fulladdress>`
+    * :doc:`$ialchan </identifiers/$ialchan>`

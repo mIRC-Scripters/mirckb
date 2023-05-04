@@ -45,4 +45,4 @@ See also
 .. hlist::
     :columns: 4
 
-:doc: `/wallchops </commands/wallchops>`
+:doc:`/wallchops </commands/wallchops>`

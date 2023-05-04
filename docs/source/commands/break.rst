@@ -66,9 +66,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/continue </commands/continue>`
-    * :doc: `/goto </commands/goto>`
-    * :doc: `/halt </commands/halt>`
-    * :doc: `/if </commands/if>`
-    * :doc: `/return </commands/return>`
-    * :doc: `/while </commands/while>`
+    * :doc:`/continue </commands/continue>`
+    * :doc:`/goto </commands/goto>`
+    * :doc:`/halt </commands/halt>`
+    * :doc:`/if </commands/if>`
+    * :doc:`/return </commands/return>`
+    * :doc:`/while </commands/while>`

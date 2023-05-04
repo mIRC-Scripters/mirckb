@@ -48,4 +48,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$logdir </identifiers/$logdir>`
+    * :doc:`$logdir </identifiers/$logdir>`

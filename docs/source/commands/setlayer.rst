@@ -66,4 +66,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/window </commands/window>`
+    * :doc:`/window </commands/window>`

@@ -1,7 +1,7 @@
 /close
 ======
 
-The **/close** command is used to close all the windows of a specified type and matching a specific name. If no name is used, all the windows with the specified type will close. Names support :doc: `wildcard </intermediate/matching_tools.html#wildcard>` characters. You can also close the Nth window for -cfsg, with -cNfNsNgN, if you specify a name, the Nth window matching that name will be closed
+The **/close** command is used to close all the windows of a specified type and matching a specific name. If no name is used, all the windows with the specified type will close. Names support :doc:`wildcard </intermediate/matching_tools.html#wildcard>` characters. You can also close the Nth window for -cfsg, with -cNfNsNgN, if you specify a name, the Nth window matching that name will be closed
 
 Synopsis
 --------
@@ -107,7 +107,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/clear </commands/clear>`
-    * :doc: `/clearall </commands/clearall>`
-    * :doc: `/debug </commands/debug>`
-    * :doc: `/window </commands/window>`
+    * :doc:`/clear </commands/clear>`
+    * :doc:`/clearall </commands/clearall>`
+    * :doc:`/debug </commands/debug>`
+    * :doc:`/window </commands/window>`

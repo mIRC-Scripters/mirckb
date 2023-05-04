@@ -55,6 +55,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/abook </commands/abook>`
-    * :doc: `/ial </commands/ial>`
-    * :doc: `/whois </commands/whois>`
+    * :doc:`/abook </commands/abook>`
+    * :doc:`/ial </commands/ial>`
+    * :doc:`/whois </commands/whois>`

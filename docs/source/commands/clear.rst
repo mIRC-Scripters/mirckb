@@ -70,9 +70,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$line </identifiers/$line>`
-    * :doc: `$fline </identifiers/$fline>`
-    * :doc: `/clearall </commands/clearall>`
-    * :doc: `/loadbuf </commands/loadbuf>`
-    * :doc: `/savebuf </commands/savebuf>`
-    * :doc: `/window </commands/window>`
+    * :doc:`$line </identifiers/$line>`
+    * :doc:`$fline </identifiers/$fline>`
+    * :doc:`/clearall </commands/clearall>`
+    * :doc:`/loadbuf </commands/loadbuf>`
+    * :doc:`/savebuf </commands/savebuf>`
+    * :doc:`/window </commands/window>`

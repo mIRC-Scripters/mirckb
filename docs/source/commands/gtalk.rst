@@ -20,7 +20,7 @@ Switches
     * - Switch
       - Description
     * - -h
-      - Prevents the agent from popping up if mIRC is minimized *and* -h has been used in :doc: `/gload </commands/gload>` to load that agent.
+      - Prevents the agent from popping up if mIRC is minimized *and* -h has been used in :doc:`/gload </commands/gload>` to load that agent.
     * - -k
       - Makes the agent think the text in a balloon without speaking it.
     * - -l
@@ -67,18 +67,18 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ghide </commands/ghide>`
-    * :doc: `/gunload </commands/gunload>`
-    * :doc: `/gshow </commands/gshow>`
-    * :doc: `/gload </commands/gload>`
-    * :doc: `/gsize </commands/gsize>`
-    * :doc: `/gmove </commands/gmove>`
-    * :doc: `/gplay </commands/gplay>`
-    * :doc: `/gpoint </commands/gpoint>`
-    * :doc: `/gstop </commands/gstop>`
-    * :doc: `/gopts </commands/gopts>`
-    * :doc: `/gqreq </commands/gqreq>`
-    * :doc: `$agentver </identifiers/$agentver>`
-    * :doc: `$agentstat </identifiers/$agentstat>`
-    * :doc: `$agentname </identifiers/$agentname>`
-    * :doc: `$agent </identifiers/$agent>`
+    * :doc:`/ghide </commands/ghide>`
+    * :doc:`/gunload </commands/gunload>`
+    * :doc:`/gshow </commands/gshow>`
+    * :doc:`/gload </commands/gload>`
+    * :doc:`/gsize </commands/gsize>`
+    * :doc:`/gmove </commands/gmove>`
+    * :doc:`/gplay </commands/gplay>`
+    * :doc:`/gpoint </commands/gpoint>`
+    * :doc:`/gstop </commands/gstop>`
+    * :doc:`/gopts </commands/gopts>`
+    * :doc:`/gqreq </commands/gqreq>`
+    * :doc:`$agentver </identifiers/$agentver>`
+    * :doc:`$agentstat </identifiers/$agentstat>`
+    * :doc:`$agentname </identifiers/$agentname>`
+    * :doc:`$agent </identifiers/$agent>`

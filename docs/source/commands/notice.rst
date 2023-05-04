@@ -63,4 +63,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `ON NOTICE </events/On_notice>`
+    * :doc:`oN nOTICE </events/oN_notice>`

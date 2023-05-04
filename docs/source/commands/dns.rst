@@ -1,7 +1,7 @@
 /dns
 ====
 
-The **/dns** command resolves an address. If mIRC sees a "." in the name you specify it assumes it is an address and tries to resolve it. Otherwise it assumes it is a nickname and performs a :doc: `/userhost </commands/userhost>` to find the user's address and then resolves it. If you specify an IP address, it looks up the host name. You can queue multiple /dns requests, and you can view the current queue by using /dns with no parameters.
+The **/dns** command resolves an address. If mIRC sees a "." in the name you specify it assumes it is an address and tries to resolve it. Otherwise it assumes it is a nickname and performs a :doc:`/userhost </commands/userhost>` to find the user's address and then resolves it. If you specify an IP address, it looks up the host name. You can queue multiple /dns requests, and you can view the current queue by using /dns with no parameters.
 
 Synopsis
 --------
@@ -68,4 +68,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$dns </identifiers/$dns>`
+    * :doc:`$dns </identifiers/$dns>`

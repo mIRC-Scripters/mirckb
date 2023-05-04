@@ -154,4 +154,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$server </identifiers/$server>`
+    * :doc:`$server </identifiers/$server>`

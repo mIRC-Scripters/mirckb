@@ -1,7 +1,7 @@
 /hfree
 ======
 
-The **/hfree** command destroys previously created hash table(s) along with all item/data pairs within them. A hash table can be created via the :doc: `/hmake </commands/hmake>` command.
+The **/hfree** command destroys previously created hash table(s) along with all item/data pairs within them. A hash table can be created via the :doc:`/hmake </commands/hmake>` command.
 
 Synopsis
 --------
@@ -22,7 +22,7 @@ Switches
     * - -s
       - Displays debug information
     * - -w
-      - Treats <nowiki><table></nowiki> as a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` and deletes all matching tables.
+      - Treats <nowiki><table></nowiki> as a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` and deletes all matching tables.
 
 Parameters
 ----------
@@ -74,13 +74,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/hmake </commands/hmake>`
-    * :doc: `/hload </commands/hload>`
-    * :doc: `/hsave </commands/hsave>`
-    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
-    * :doc: `/hadd </commands/hadd>`
-    * :doc: `/hdel </commands/hdel>`
-    * :doc: `/hinc </commands/hinc>`
-    * :doc: `/hdec </commands/hdec>`
-    * :doc: `$hget </identifiers/$hget>`
-    * :doc: `$hfind </identifiers/$hfind>`
+    * :doc:`/hmake </commands/hmake>`
+    * :doc:`/hload </commands/hload>`
+    * :doc:`/hsave </commands/hsave>`
+    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :doc:`/hadd </commands/hadd>`
+    * :doc:`/hdel </commands/hdel>`
+    * :doc:`/hinc </commands/hinc>`
+    * :doc:`/hdec </commands/hdec>`
+    * :doc:`$hget </identifiers/$hget>`
+    * :doc:`$hfind </identifiers/$hfind>`

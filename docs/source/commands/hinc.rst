@@ -154,13 +154,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/hmake </commands/hmake>`
-    * :doc: `/hfree </commands/hfree>`
-    * :doc: `/hload </commands/hload>`
-    * :doc: `/hsave </commands/hsave>`
-    * :doc: `/hadd </commands/hadd>`
-    * :doc: `/hdel </commands/hdel>`
-    * :doc: `/hdec </commands/hdec>`
-    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
-    * :doc: `$hget </identifiers/$hget>`
-    * :doc: `$hfind </identifiers/$hfind>`
+    * :doc:`/hmake </commands/hmake>`
+    * :doc:`/hfree </commands/hfree>`
+    * :doc:`/hload </commands/hload>`
+    * :doc:`/hsave </commands/hsave>`
+    * :doc:`/hadd </commands/hadd>`
+    * :doc:`/hdel </commands/hdel>`
+    * :doc:`/hdec </commands/hdec>`
+    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :doc:`$hget </identifiers/$hget>`
+    * :doc:`$hfind </identifiers/$hfind>`

@@ -43,7 +43,7 @@ Parameters
     * - <on/off>
       - Turns the auto-op feature on/off.
     * - <nick/address>
-      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :doc: `wildcard </intermediate/matching_tools.html#wildcard>` addresses.
+      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :doc:`wildcard </intermediate/matching_tools.html#wildcard>` addresses.
     * - [#channel1,#channel2,...]
       - Channels to apply the auto-op to.
     * - [type]
@@ -91,10 +91,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$aop </identifiers/$aop>`
-    * :doc: `$avoice </identifiers/$avoice>`
-    * :doc: `$auto </identifiers/$auto>`
-    * :doc: `/avoice </commands/avoice>`
-    * :doc: `/ignore </commands/ignore>`
-    * :doc: `/pop </commands/pop>`
-    * :doc: `/pvoice </commands/pvoice>`
+    * :doc:`$aop </identifiers/$aop>`
+    * :doc:`$avoice </identifiers/$avoice>`
+    * :doc:`$auto </identifiers/$auto>`
+    * :doc:`/avoice </commands/avoice>`
+    * :doc:`/ignore </commands/ignore>`
+    * :doc:`/pop </commands/pop>`
+    * :doc:`/pvoice </commands/pvoice>`

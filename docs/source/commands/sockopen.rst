@@ -100,12 +100,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$sockname </identifiers/$sockname>`
-    * :doc: `$sock </identifiers/$sock>`
-    * :doc: `/socklist </commands/socklist>`
-    * :doc: `/sockmark </commands/sockmark>`
-    * :doc: `/sockpause </commands/sockpause>`
-    * :doc: `/sockread </commands/sockread>`
-    * :doc: `/sockrename </commands/sockrename>`
-    * :doc: `/sockwrite </commands/sockwrite>`
-    * :doc: `on sockopen </events/on_sockopen>`
+    * :doc:`$sockname </identifiers/$sockname>`
+    * :doc:`$sock </identifiers/$sock>`
+    * :doc:`/socklist </commands/socklist>`
+    * :doc:`/sockmark </commands/sockmark>`
+    * :doc:`/sockpause </commands/sockpause>`
+    * :doc:`/sockread </commands/sockread>`
+    * :doc:`/sockrename </commands/sockrename>`
+    * :doc:`/sockwrite </commands/sockwrite>`
+    * :doc:`on sockopen </events/on_sockopen>`

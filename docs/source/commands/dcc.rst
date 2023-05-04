@@ -233,6 +233,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$dccignore </identifiers/$dccignore>`
-    * :doc: `$dccport </identifiers/$dccport>`
-    * :doc: `/dccserver </commands/dccserver>`
+    * :doc:`$dccignore </identifiers/$dccignore>`
+    * :doc:`$dccport </identifiers/$dccport>`
+    * :doc:`/dccserver </commands/dccserver>`

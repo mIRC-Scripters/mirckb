@@ -5,7 +5,7 @@ Auto-OP is a feature that can be used to manage access for a channel. Whenever a
 
 The **auto** command can also be used to disable or enable this feature as well as add and remove users from and to the list.
 
-**This** commands been superseded by the :doc: `/aop </commands/aop>` command.'''
+**This** commands been superseded by the :doc:`/aop </commands/aop>` command.'''
 
 Synopsis
 --------
@@ -41,7 +41,7 @@ Parameters
     * - <on/off>
       - Turns the auto-op feature on/off.
     * - <nick/address>
-      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :doc: `wildcard </intermediate/matching_tools.html#wildcard>` addresses.
+      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :doc:`wildcard </intermediate/matching_tools.html#wildcard>` addresses.
     * - [#channel1,#channel2,...]
       - Channels to apply the auto-op to.
     * - [type]
@@ -89,11 +89,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$aop </identifiers/$aop>`
-    * :doc: `$avoice </identifiers/$avoice>`
-    * :doc: `$auto </identifiers/$auto>`
-    * :doc: `/aop </commands/aop>`
-    * :doc: `/avoice </commands/avoice>`
-    * :doc: `/ignore </commands/ignore>`
-    * :doc: `/pop </commands/pop>`
-    * :doc: `/pvoice </commands/pvoice>`
+    * :doc:`$aop </identifiers/$aop>`
+    * :doc:`$avoice </identifiers/$avoice>`
+    * :doc:`$auto </identifiers/$auto>`
+    * :doc:`/aop </commands/aop>`
+    * :doc:`/avoice </commands/avoice>`
+    * :doc:`/ignore </commands/ignore>`
+    * :doc:`/pop </commands/pop>`
+    * :doc:`/pvoice </commands/pvoice>`

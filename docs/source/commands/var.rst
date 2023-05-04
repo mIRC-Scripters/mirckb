@@ -1,13 +1,13 @@
 /var
 ====
 
-The **/var** command can be used to replace the value of existing variables or create a new variables and assign them values. By default /var creates local variable, this can be changed via the -g switch ( :doc: `/set </commands/set>` command can be used to set global variables by default).
+The **/var** command can be used to replace the value of existing variables or create a new variables and assign them values. By default /var creates local variable, this can be changed via the -g switch ( :doc:`/set </commands/set>` command can be used to set global variables by default).
 
 The Local Variables created by /var exist only within the :event: or ALIAS where they were created. If your event or alias calls another alias, that alias cannot see the local values unless passed to them in another way, such as a parameter used when calling the alias.
 
 The var command can perform one math operation via one of the arithmetic operators: addition (+), subtraction (-), multiplication (*), division (/), modulo (%), bitwise-and (&), and exponent (^). They *must* be space delimited with both operands being a number. If any of the operands are not a number or if a space is missing, it will be treated as plain text.
 
-.. note:: Unlike the :doc: `/set </commands/set>` command, var can assign a value to multiple variables at once.
+.. note:: Unlike the :doc:`/set </commands/set>` command, var can assign a value to multiple variables at once.
 
 **Set Evaluation Routine:**
 Internally, the var command simply breaks down the line (by commas) and passes the arguments to /set. The set command has its own evaluation routine which lets you dynamically concatenate additional values onto the variable name before the assignment takes place.
@@ -55,7 +55,7 @@ Switches
 
 .. note:: The = in "var %a = value" is optional and is not placed into the value.
 
-.. note:: See the :doc: `/set </commands/set>` page for more info about setting dynamic variable names using identifiers like $nick or $network
+.. note:: See the :doc:`/set </commands/set>` page for more info about setting dynamic variable names using identifiers like $nick or $network
 
 .. note:: much of the usage of /var is similar to that of /set except that switches like -uN or -e or -z or -k have no meaning for local variables which cease to exist when the event or alias is finished.
 
@@ -183,8 +183,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$var </identifiers/$var>`
-    * :doc: `/set </commands/set>`
-    * :doc: `/unset </commands/unset>`
-    * :doc: `/unsetall </commands/unsetall>`
-    * :doc: `$calc </identifiers/$calc>`
+    * :doc:`$var </identifiers/$var>`
+    * :doc:`/set </commands/set>`
+    * :doc:`/unset </commands/unset>`
+    * :doc:`/unsetall </commands/unsetall>`
+    * :doc:`$calc </identifiers/$calc>`

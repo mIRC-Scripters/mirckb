@@ -75,13 +75,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$isadmin </identifiers/$isadmin>`
-    * :doc: `$url </identifiers/$url>`
-    * :doc: `$file </identifiers/$file>`
-    * :doc: `$findfilen </identifiers/$findfilen>`
-    * :doc: `$finddir </identifiers/$finddir>`
-    * :doc: `$finddirn </identifiers/$finddirn>`
-    * :doc: `$isfile </identifiers/$isfile>`
-    * :doc: `$isdir </identifiers/$isdir>`
-    * :doc: `$exists </identifiers/$exists>`
-    * :doc: `/url </commands/url>`
+    * :doc:`$isadmin </identifiers/$isadmin>`
+    * :doc:`$url </identifiers/$url>`
+    * :doc:`$file </identifiers/$file>`
+    * :doc:`$findfilen </identifiers/$findfilen>`
+    * :doc:`$finddir </identifiers/$finddir>`
+    * :doc:`$finddirn </identifiers/$finddirn>`
+    * :doc:`$isfile </identifiers/$isfile>`
+    * :doc:`$isdir </identifiers/$isdir>`
+    * :doc:`$exists </identifiers/$exists>`
+    * :doc:`/url </commands/url>`

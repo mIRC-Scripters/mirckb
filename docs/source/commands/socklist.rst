@@ -32,7 +32,7 @@ Parameters
     * - Parameter
       - Description
     * - [name]
-      - The name of the socket to search for. This parameter can also be a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` match.
+      - The name of the socket to search for. This parameter can also be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` match.
 
 Example
 -------
@@ -54,17 +54,17 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc: `$sock </identifiers/$sock>`
-    * :doc: `$sockname </identifiers/$sockname>`
-    * :doc: `$sockerr </identifiers/$sockerr>`
-    * :doc: `$sockbr </identifiers/$sockbr>`
-    * :doc: `/sockaccept </commands/sockaccept>`
-    * :doc: `/sockclose </commands/sockclose>`
-    * :doc: `/socklisten </commands/socklisten>`
-    * :doc: `/sockmark </commands/sockmark>`
-    * :doc: `/sockopen </commands/sockopen>`
-    * :doc: `/sockpause </commands/sockpause>`
-    * :doc: `/sockread </commands/sockread>`
-    * :doc: `/sockrename </commands/sockrename>`
-    * :doc: `/sockudp </commands/udp-socket>`
-    * :doc: `/sockwrite </commands/sockwrite>`
+    * :doc:`$sock </identifiers/$sock>`
+    * :doc:`$sockname </identifiers/$sockname>`
+    * :doc:`$sockerr </identifiers/$sockerr>`
+    * :doc:`$sockbr </identifiers/$sockbr>`
+    * :doc:`/sockaccept </commands/sockaccept>`
+    * :doc:`/sockclose </commands/sockclose>`
+    * :doc:`/socklisten </commands/socklisten>`
+    * :doc:`/sockmark </commands/sockmark>`
+    * :doc:`/sockopen </commands/sockopen>`
+    * :doc:`/sockpause </commands/sockpause>`
+    * :doc:`/sockread </commands/sockread>`
+    * :doc:`/sockrename </commands/sockrename>`
+    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockwrite </commands/sockwrite>`

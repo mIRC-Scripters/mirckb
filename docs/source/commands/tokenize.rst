@@ -89,5 +89,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$1- </identifiers/$1->`
-    * :doc: `$gettok </identifiers/$gettok>`
+    * :doc:`$1- </identifiers/$1->`
+    * :doc:`$gettok </identifiers/$gettok>`

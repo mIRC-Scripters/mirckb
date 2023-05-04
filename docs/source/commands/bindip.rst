@@ -64,9 +64,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$bindip </identifiers/$bindip>`
-    * :doc: `$ip </identifiers/$ip>`
-    * :doc: `/dns </commands/dns>`
-    * :doc: `/server </commands/server>`
-    * :doc: `/sockaccept </commands/sockaccept>`
-    * :doc: `/sockopen </commands/sockopen>`
+    * :doc:`$bindip </identifiers/$bindip>`
+    * :doc:`$ip </identifiers/$ip>`
+    * :doc:`/dns </commands/dns>`
+    * :doc:`/server </commands/server>`
+    * :doc:`/sockaccept </commands/sockaccept>`
+    * :doc:`/sockopen </commands/sockopen>`

@@ -87,7 +87,7 @@ Parameters
 Example
 -------
 
-You can check the :doc: `dialog components </advanced/dialog-components>` page for examples of /did per control
+You can check the :doc:`dialog components </advanced/dialog-components>` page for examples of /did per control
 
 Compatibility
 -------------
@@ -100,9 +100,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$did </identifiers/$did>`
-    * :doc: `$didtok </identifiers/$didtok>`
-    * :doc: `$dialog </identifiers/$dialog>`
-    * :doc: `$didwm </identifiers/$didwm>`
-    * :doc: `$didreg </identifiers/$didreg>`
-    * :doc: `/dialog </commands/dialog>`
+    * :doc:`$did </identifiers/$did>`
+    * :doc:`$didtok </identifiers/$didtok>`
+    * :doc:`$dialog </identifiers/$dialog>`
+    * :doc:`$didwm </identifiers/$didwm>`
+    * :doc:`$didreg </identifiers/$didreg>`
+    * :doc:`/dialog </commands/dialog>`

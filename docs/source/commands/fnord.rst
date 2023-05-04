@@ -50,5 +50,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/echo </commands/echo>`
-    * :doc: `/xyzzy </commands/xyzzy>`
+    * :doc:`/echo </commands/echo>`
+    * :doc:`/xyzzy </commands/xyzzy>`

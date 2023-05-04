@@ -49,7 +49,7 @@ Parameters
 Examples
 --------
 
-Look at the :doc: `dll </advanced/dll>` article to see how to use a dll as well as how to create them.
+Look at the :doc:`dll </advanced/dll>` article to see how to use a dll as well as how to create them.
 
 silently fails if $dll(1) contains a space:
 
@@ -97,6 +97,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$dll </identifiers/$dll>`
-    * :doc: `$dllcall </identifiers/$dllcall>`
-    * :doc: `sendmessage </advanced/sendmessage>`
+    * :doc:`$dll </identifiers/$dll>`
+    * :doc:`$dllcall </identifiers/$dllcall>`
+    * :doc:`sendmessage </advanced/sendmessage>`

@@ -47,5 +47,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/help </commands/help>`
-    * :doc: `/run </commands/run>`
+    * :doc:`/help </commands/help>`
+    * :doc:`/run </commands/run>`

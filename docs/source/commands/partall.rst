@@ -46,6 +46,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$chan </identifiers/$chan>`
-    * :doc: `$nick </identifiers/$nick>`
-    * :doc: `/part </commands/part>`
+    * :doc:`$chan </identifiers/$chan>`
+    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`/part </commands/part>`

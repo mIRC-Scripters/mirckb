@@ -1,9 +1,9 @@
 /sockudp
 ========
 
-The **/sockudp** command allows you to send data to a specific address at a specific port destination (See :doc: `UDP sockets </advanced/sockets.html#udp-socket>` ).
+The **/sockudp** command allows you to send data to a specific address at a specific port destination (See :doc:`uDP sockets </advanced/sockets.html#udp-socket>` ).
 
-.. note:: if /sockudp fails, it sets :doc: `$sock().wserr </identifiers/$sock>` to the error value, and trigger on sockwrite with :doc: `$sockerr </identifiers/$sockerr>` set etc.
+.. note:: if /sockudp fails, it sets :doc:`$sock().wserr </identifiers/$sock>` to the error value, and trigger on sockwrite with :doc:`$sockerr </identifiers/$sockerr>` set etc.
 
 Synopsis
 --------
@@ -24,7 +24,7 @@ Switches
     * - -b
       - Indicates that you are specifying the numbytes value which is the number of bytes you want send, the full line is sent otherwise
     * - -n
-      - Appens a :doc: `$crlf </identifiers/$crlf>` to the line being sent if it's not a &binvar or if does not already end with a $crlf
+      - Appens a :doc:`$crlf </identifiers/$crlf>` to the line being sent if it's not a &binvar or if does not already end with a $crlf
     * - -t
       - Forces mIRC to send anything beginning with a & as plain text
     * - -k
@@ -103,6 +103,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `on udpread </events/udp-socket>`
-    * :doc: `on sockwrite </events/on_sockwrite>`
-    * :doc: `$sockerr </identifiers/$sockerr_Identifiers>`
+    * :doc:`on udpread </events/udp-socket>`
+    * :doc:`on sockwrite </events/on_sockwrite>`
+    * :doc:`$sockerr </identifiers/$sockerr_iDentifiers>`

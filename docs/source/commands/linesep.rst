@@ -91,6 +91,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/aline </commands/aline>`
-    * :doc: `/dline </commands/dline>`
-    * :doc: `/echo </commands/echo>`
+    * :doc:`/aline </commands/aline>`
+    * :doc:`/dline </commands/dline>`
+    * :doc:`/echo </commands/echo>`

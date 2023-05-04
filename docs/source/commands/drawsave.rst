@@ -58,4 +58,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/drawpic </commands/drawpic>`
+    * :doc:`/drawpic </commands/drawpic>`

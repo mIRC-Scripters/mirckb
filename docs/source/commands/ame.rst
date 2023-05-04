@@ -59,10 +59,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/amsg </commands/amsg>`
-    * :doc: `/describe </commands/describe>`
-    * :doc: `/me </commands/me>`
-    * :doc: `/msg </commands/msg>`
-    * :doc: `/qme </commands/qme>`
-    * :doc: `/qmsg </commands/qmsg>`
-    * :doc: `/say </commands/say>`
+    * :doc:`/amsg </commands/amsg>`
+    * :doc:`/describe </commands/describe>`
+    * :doc:`/me </commands/me>`
+    * :doc:`/msg </commands/msg>`
+    * :doc:`/qme </commands/qme>`
+    * :doc:`/qmsg </commands/qmsg>`
+    * :doc:`/say </commands/say>`

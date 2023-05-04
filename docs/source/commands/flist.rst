@@ -1,7 +1,7 @@
 /flist
 ======
 
-**/flist** lists all open files, or those matching the specified name, which can be a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression.
+**/flist** lists all open files, or those matching the specified name, which can be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression.
 
 Synopsis
 --------
@@ -25,7 +25,7 @@ Parameters
     * - Parameter
       - Description
     * - name
-      - a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression
+      - a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression
 
 Example
 -------
@@ -46,11 +46,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$fopen </identifiers/$fopen>`
-    * :doc: `$fread </identifiers/$fread>`
-    * :doc: `$ferr </identifiers/$ferr>`
-    * :doc: `$feof </identifiers/$feof>`
-    * :doc: `/fclose </commands/fclose>`
-    * :doc: `/fopen </commands/fopen>`
-    * :doc: `/fseek </commands/fseek>`
-    * :doc: `/fwrite </commands/fwrite>`
+    * :doc:`$fopen </identifiers/$fopen>`
+    * :doc:`$fread </identifiers/$fread>`
+    * :doc:`$ferr </identifiers/$ferr>`
+    * :doc:`$feof </identifiers/$feof>`
+    * :doc:`/fclose </commands/fclose>`
+    * :doc:`/fopen </commands/fopen>`
+    * :doc:`/fseek </commands/fseek>`
+    * :doc:`/fwrite </commands/fwrite>`

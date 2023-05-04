@@ -1,7 +1,7 @@
 /signal
 =======
 
-The **/signal** command is used to send a signal to all loaded script, if one of them has a matching :doc: `on signal </events/on_signal>` event, it triggers. Signals are a simple way of triggering signal events in multiple scripts at the same time.
+The **/signal** command is used to send a signal to all loaded script, if one of them has a matching :doc:`on signal </events/on_signal>` event, it triggers. Signals are a simple way of triggering signal events in multiple scripts at the same time.
 
 Synopsis
 --------
@@ -119,4 +119,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `ON Events </intermediate/events.html>`
+    * :doc:`oN eVents </intermediate/events.html>`

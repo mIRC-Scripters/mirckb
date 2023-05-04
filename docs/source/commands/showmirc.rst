@@ -87,8 +87,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$fullscreen </identifiers/$fullscreen>`
-    * :doc: `$appstate </identifiers/$appstate>`
-    * :doc: `$appactive </identifiers/$appactive>`
-    * :doc: `/exit </commands/exit>`
-    * :doc: `/window </commands/window>`
+    * :doc:`$fullscreen </identifiers/$fullscreen>`
+    * :doc:`$appstate </identifiers/$appstate>`
+    * :doc:`$appactive </identifiers/$appactive>`
+    * :doc:`/exit </commands/exit>`
+    * :doc:`/window </commands/window>`

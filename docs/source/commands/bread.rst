@@ -90,12 +90,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$file </identifiers/$file>`
-    * :doc: `/bcopy </commands/bcopy>`
-    * :doc: `/breplace </commands/breplace>`
-    * :doc: `/bset </commands/bset>`
-    * :doc: `/btrunc </commands/btrunc>`
-    * :doc: `/bunset </commands/bunset>`
-    * :doc: `/bwrite </commands/bwrite>`
-    * :doc: `$bvar </identifiers/$bvar>`
-    * :doc: `$bfind </identifiers/$bfind>`
+    * :doc:`$file </identifiers/$file>`
+    * :doc:`/bcopy </commands/bcopy>`
+    * :doc:`/breplace </commands/breplace>`
+    * :doc:`/bset </commands/bset>`
+    * :doc:`/btrunc </commands/btrunc>`
+    * :doc:`/bunset </commands/bunset>`
+    * :doc:`/bwrite </commands/bwrite>`
+    * :doc:`$bvar </identifiers/$bvar>`
+    * :doc:`$bfind </identifiers/$bfind>`

@@ -59,9 +59,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/break </commands/break>`
-    * :doc: `/halt </commands/halt>`
-    * :doc: `/if </commands/if>`
-    * :doc: `/return </commands/return>`
-    * :doc: `/while </commands/while>`
-    * :doc: `/returnex </commands/returnex>`
+    * :doc:`/break </commands/break>`
+    * :doc:`/halt </commands/halt>`
+    * :doc:`/if </commands/if>`
+    * :doc:`/return </commands/return>`
+    * :doc:`/while </commands/while>`
+    * :doc:`/returnex </commands/returnex>`

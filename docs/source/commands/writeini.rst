@@ -1,7 +1,7 @@
 /writeini
 =========
 
-The **/writeini** command is used to write and update a standard :doc: `initialization file </intermediate/data_storage.html#ini-files>` .
+The **/writeini** command is used to write and update a standard :doc:`initialization file </intermediate/data_storage.html#ini-files>` .
 
 Overview
 --------
@@ -98,9 +98,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$readini </identifiers/$readini>`
-    * :doc: `$ini </identifiers/$ini>`
-    * :doc: `$read </identifiers/$read>`
-    * :doc: `$mircini </identifiers/$mircini>`
-    * :doc: `$mircdir </identifiers/$mircdir>`
-    * :doc: `/write </commands/write>`
+    * :doc:`$readini </identifiers/$readini>`
+    * :doc:`$ini </identifiers/$ini>`
+    * :doc:`$read </identifiers/$read>`
+    * :doc:`$mircini </identifiers/$mircini>`
+    * :doc:`$mircdir </identifiers/$mircdir>`
+    * :doc:`/write </commands/write>`

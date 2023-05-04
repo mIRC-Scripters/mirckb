@@ -49,4 +49,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/pop </commands/pop>`
+    * :doc:`/pop </commands/pop>`

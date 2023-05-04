@@ -55,7 +55,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/msg </commands/msg>`
-    * :doc: `/notice </commands/notice>`
-    * :doc: `/queryrn </commands/queryrn>`
-    * :doc: `$query </identifiers/$query>`
+    * :doc:`/msg </commands/msg>`
+    * :doc:`/notice </commands/notice>`
+    * :doc:`/queryrn </commands/queryrn>`
+    * :doc:`$query </identifiers/$query>`

@@ -58,5 +58,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ctcp </commands/tcp-socket>`
-    * :doc: `/ctcps </commands/tcp-socket>`
+    * :doc:`/ctcp </commands/tcp-socket>`
+    * :doc:`/ctcps </commands/tcp-socket>`

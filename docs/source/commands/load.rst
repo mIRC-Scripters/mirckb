@@ -1,7 +1,7 @@
 /load
 =====
 
-.. note:: that unlike the :doc: `/reload </commands/reload>` command, /load will trigger the ON LOAD and ON START events.
+.. note:: that unlike the :doc:`/reload </commands/reload>` command, /load will trigger the ON LOAD and ON START events.
 
 Synopsis
 --------
@@ -106,13 +106,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$script </identifiers/$script>`
-    * :doc: `$script </identifiers/$script>`
-    * :doc: `$window </identifiers/$window>`
-    * :doc: `/filter </commands/filter>`
-    * :doc: `/loadbuf </commands/loadbuf>`
-    * :doc: `/reload </commands/reload>`
-    * :doc: `/save </commands/save>`
-    * :doc: `/savebuf </commands/savebuf>`
-    * :doc: `/unload </commands/unload>`
-    * :doc: `/window </commands/window>`
+    * :doc:`$script </identifiers/$script>`
+    * :doc:`$script </identifiers/$script>`
+    * :doc:`$window </identifiers/$window>`
+    * :doc:`/filter </commands/filter>`
+    * :doc:`/loadbuf </commands/loadbuf>`
+    * :doc:`/reload </commands/reload>`
+    * :doc:`/save </commands/save>`
+    * :doc:`/savebuf </commands/savebuf>`
+    * :doc:`/unload </commands/unload>`
+    * :doc:`/window </commands/window>`

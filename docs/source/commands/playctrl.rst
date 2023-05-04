@@ -1,7 +1,7 @@
 /playctrl
 =========
 
-The **/playctrl** command opens the Play Central window, which can be used to manage the queued :doc: `/play </commands/play>` requests.
+The **/playctrl** command opens the Play Central window, which can be used to manage the queued :doc:`/play </commands/play>` requests.
 
 Synopsis
 --------
@@ -39,15 +39,15 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$play </identifiers/$play>`
-    * :doc: `$pnick </identifiers/$pnick>`
-    * :doc: `$vol </identifiers/$vol>`
-    * :doc: `$inwave </identifiers/$inwave>`
-    * :doc: `$inmidi </identifiers/$inmidi>`
-    * :doc: `$insong </identifiers/$insong>`
-    * :doc: `$sound </identifiers/$sound>`
-    * :doc: `$filename </identifiers/$filename>`
-    * :doc: `/channel </commands/channel>`
-    * :doc: `/play </commands/play>`
-    * :doc: `/splay </commands/splay>`
-    * :doc: `/vol </commands/vol>`
+    * :doc:`$play </identifiers/$play>`
+    * :doc:`$pnick </identifiers/$pnick>`
+    * :doc:`$vol </identifiers/$vol>`
+    * :doc:`$inwave </identifiers/$inwave>`
+    * :doc:`$inmidi </identifiers/$inmidi>`
+    * :doc:`$insong </identifiers/$insong>`
+    * :doc:`$sound </identifiers/$sound>`
+    * :doc:`$filename </identifiers/$filename>`
+    * :doc:`/channel </commands/channel>`
+    * :doc:`/play </commands/play>`
+    * :doc:`/splay </commands/splay>`
+    * :doc:`/vol </commands/vol>`

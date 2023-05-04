@@ -57,11 +57,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$bvar </identifiers/$bvar>`
-    * :doc: `$bfind </identifiers/$bfind>`
-    * :doc: `/bread </commands/bread>`
-    * :doc: `/breplace </commands/breplace>`
-    * :doc: `/bwrite </commands/bwrite>`
-    * :doc: `/bset </commands/bset>`
-    * :doc: `/bcopy </commands/bcopy>`
-    * :doc: `/btrunc </commands/btrunc>`
+    * :doc:`$bvar </identifiers/$bvar>`
+    * :doc:`$bfind </identifiers/$bfind>`
+    * :doc:`/bread </commands/bread>`
+    * :doc:`/breplace </commands/breplace>`
+    * :doc:`/bwrite </commands/bwrite>`
+    * :doc:`/bset </commands/bset>`
+    * :doc:`/bcopy </commands/bcopy>`
+    * :doc:`/btrunc </commands/btrunc>`

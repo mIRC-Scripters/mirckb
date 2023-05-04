@@ -43,4 +43,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/qmsg </commands/qmsg>`
+    * :doc:`/qmsg </commands/qmsg>`

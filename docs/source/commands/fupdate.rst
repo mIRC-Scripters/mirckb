@@ -52,4 +52,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$fupdate </identifiers/$fupdate>`
+    * :doc:`$fupdate </identifiers/$fupdate>`

@@ -1,7 +1,7 @@
 /gunload
 ========
 
-The **gunload** command unloads any agent, by its agent name, that has been previously loaded via the :doc: `/gload </commands/gload>` .
+The **gunload** command unloads any agent, by its agent name, that has been previously loaded via the :doc:`/gload </commands/gload>` .
 
 Synopsis
 --------
@@ -25,7 +25,7 @@ Parameters
     * - Parameter
       - Description
     * - <name>
-      - The name that you used to reference the agent in the initial :doc: `/gload </commands/gload>` call
+      - The name that you used to reference the agent in the initial :doc:`/gload </commands/gload>` call
 
 Example
 -------
@@ -46,17 +46,17 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/ghide </commands/ghide>`
-    * :doc: `/gshow </commands/gshow>`
-    * :doc: `/gmove </commands/gmove>`
-    * :doc: `/gsize </commands/gsize>`
-    * :doc: `/gtalk </commands/gtalk>`
-    * :doc: `/gplay </commands/gplay>`
-    * :doc: `/gpoint </commands/gpoint>`
-    * :doc: `/gstop </commands/gstop>`
-    * :doc: `/gopts </commands/gopts>`
-    * :doc: `/gqreq </commands/gqreq>`
-    * :doc: `$agentver </identifiers/$agentver>`
-    * :doc: `$agentstat </identifiers/$agentstat>`
-    * :doc: `$agentname </identifiers/$agentname>`
-    * :doc: `$agent </identifiers/$agent>`
+    * :doc:`/ghide </commands/ghide>`
+    * :doc:`/gshow </commands/gshow>`
+    * :doc:`/gmove </commands/gmove>`
+    * :doc:`/gsize </commands/gsize>`
+    * :doc:`/gtalk </commands/gtalk>`
+    * :doc:`/gplay </commands/gplay>`
+    * :doc:`/gpoint </commands/gpoint>`
+    * :doc:`/gstop </commands/gstop>`
+    * :doc:`/gopts </commands/gopts>`
+    * :doc:`/gqreq </commands/gqreq>`
+    * :doc:`$agentver </identifiers/$agentver>`
+    * :doc:`$agentstat </identifiers/$agentstat>`
+    * :doc:`$agentname </identifiers/$agentname>`
+    * :doc:`$agent </identifiers/$agent>`

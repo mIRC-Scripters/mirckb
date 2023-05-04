@@ -164,7 +164,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$mode </identifiers/$mode>`
-    * :doc: `on mode </events/on_mode>`
-    * :doc: `on rawmode </events/on_rawmode>`
-    * :doc: `$modespl </identifiers/$modespl>`
+    * :doc:`$mode </identifiers/$mode>`
+    * :doc:`on mode </events/on_mode>`
+    * :doc:`on rawmode </events/on_rawmode>`
+    * :doc:`$modespl </identifiers/$modespl>`

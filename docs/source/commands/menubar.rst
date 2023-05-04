@@ -48,7 +48,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/toolbar </commands/toolbar>`
-    * :doc: `/treebar </commands/treebar>`
-    * :doc: `/switchbar </commands/switchbar>`
-    * :doc: `$menubar </identifiers/$menubar>`
+    * :doc:`/toolbar </commands/toolbar>`
+    * :doc:`/treebar </commands/treebar>`
+    * :doc:`/switchbar </commands/switchbar>`
+    * :doc:`$menubar </identifiers/$menubar>`

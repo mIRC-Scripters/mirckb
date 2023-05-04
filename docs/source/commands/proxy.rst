@@ -64,4 +64,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/firewall </commands/firewall>`
+    * :doc:`/firewall </commands/firewall>`

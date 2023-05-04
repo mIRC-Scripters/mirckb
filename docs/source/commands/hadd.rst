@@ -1,7 +1,7 @@
 /hadd
 =====
 
-The **/hadd** command inserts a new item/value pair in the hash table by the <nowiki><table></nowiki> name. If that item name already exists, its old value is replaced. If the table does not exist, the -m switch can be used to create the table however it defaults to have 100 buckets, which may or may not be suitable depending on your table size. See :doc: `/hmake </commands/hmake>` for more details.
+The **/hadd** command inserts a new item/value pair in the hash table by the <nowiki><table></nowiki> name. If that item name already exists, its old value is replaced. If the table does not exist, the -m switch can be used to create the table however it defaults to have 100 buckets, which may or may not be suitable depending on your table size. See :doc:`/hmake </commands/hmake>` for more details.
 
 Synopsis
 --------
@@ -120,13 +120,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/hmake </commands/hmake>`
-    * :doc: `/hfree </commands/hfree>`
-    * :doc: `/hload </commands/hload>`
-    * :doc: `/hsave </commands/hsave>`
-    * :doc: `/hdel </commands/hdel>`
-    * :doc: `/hinc </commands/hinc>`
-    * :doc: `/hdec </commands/hdec>`
-    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
-    * :doc: `$hget </identifiers/$hget>`
-    * :doc: `$hfind </identifiers/$hfind>`
+    * :doc:`/hmake </commands/hmake>`
+    * :doc:`/hfree </commands/hfree>`
+    * :doc:`/hload </commands/hload>`
+    * :doc:`/hsave </commands/hsave>`
+    * :doc:`/hdel </commands/hdel>`
+    * :doc:`/hinc </commands/hinc>`
+    * :doc:`/hdec </commands/hdec>`
+    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :doc:`$hget </identifiers/$hget>`
+    * :doc:`$hfind </identifiers/$hfind>`

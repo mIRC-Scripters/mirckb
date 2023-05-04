@@ -106,5 +106,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/scid </commands/scid>`
-    * :doc: `/scon </commands/scon>`
+    * :doc:`/scid </commands/scid>`
+    * :doc:`/scon </commands/scon>`

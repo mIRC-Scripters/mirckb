@@ -54,7 +54,7 @@ Parameters
 Example
 -------
 
-.. note:: For more examples see the :doc: `/hinc </commands/hinc>` page. /hdec is the same as /hinc except for decrementing by [num] instead of incrementing.
+.. note:: For more examples see the :doc:`/hinc </commands/hinc>` page. /hdec is the same as /hinc except for decrementing by [num] instead of incrementing.
 
 .. code:: text
 
@@ -87,13 +87,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/hmake </commands/hmake>`
-    * :doc: `/hfree </commands/hfree>`
-    * :doc: `/hload </commands/hload>`
-    * :doc: `/hsave </commands/hsave>`
-    * :doc: `/hadd </commands/hadd>`
-    * :doc: `/hdel </commands/hdel>`
-    * :doc: `/hinc </commands/hinc>`
-    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
-    * :doc: `$hget </identifiers/$hget>`
-    * :doc: `$hfind </identifiers/$hfind>`
+    * :doc:`/hmake </commands/hmake>`
+    * :doc:`/hfree </commands/hfree>`
+    * :doc:`/hload </commands/hload>`
+    * :doc:`/hsave </commands/hsave>`
+    * :doc:`/hadd </commands/hadd>`
+    * :doc:`/hdel </commands/hdel>`
+    * :doc:`/hinc </commands/hinc>`
+    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :doc:`$hget </identifiers/$hget>`
+    * :doc:`$hfind </identifiers/$hfind>`

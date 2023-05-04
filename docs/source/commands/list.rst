@@ -34,7 +34,7 @@ Parameters
     * - Parameter
       - Description
     * - #channel
-      - If specified, mIRC will only list information for that channel. If you specify a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` , mIRC will list all channels that contain the wildcard expression.
+      - If specified, mIRC will only list information for that channel. If you specify a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` , mIRC will list all channels that contain the wildcard expression.
     * - -MIN N
       - If specified, can be used to only display channels that has mimnimum N users
     * - -MAX N

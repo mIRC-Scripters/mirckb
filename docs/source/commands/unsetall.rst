@@ -38,9 +38,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$var </identifiers/$var>`
-    * :doc: `/dec </commands/dec>`
-    * :doc: `/inc </commands/inc>`
-    * :doc: `/set </commands/set>`
-    * :doc: `/unset </commands/unset>`
-    * :doc: `/var </commands/var>`
+    * :doc:`$var </identifiers/$var>`
+    * :doc:`/dec </commands/dec>`
+    * :doc:`/inc </commands/inc>`
+    * :doc:`/set </commands/set>`
+    * :doc:`/unset </commands/unset>`
+    * :doc:`/var </commands/var>`

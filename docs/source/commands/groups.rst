@@ -43,6 +43,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$groups </identifiers/$groups>`
-    * :doc: `/disable </commands/disable>`
-    * :doc: `/enable </commands/enable>`
+    * :doc:`$groups </identifiers/$groups>`
+    * :doc:`/disable </commands/disable>`
+    * :doc:`/enable </commands/enable>`

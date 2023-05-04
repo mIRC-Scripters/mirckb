@@ -68,4 +68,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/partall </commands/partall>`
+    * :doc:`/partall </commands/partall>`

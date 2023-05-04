@@ -75,13 +75,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$bvar </identifiers/$bvar>`
-    * :doc: `/bset </commands/bset>`
-    * :doc: `/bcopy </commands/bcopy>`
-    * :doc: `/bread </commands/bread>`
-    * :doc: `/breplace </commands/breplace>`
-    * :doc: `/btrunc </commands/btrunc>`
-    * :doc: `/bunset </commands/bunset>`
-    * :doc: `$bfind </identifiers/$bfind>`
-    * :doc: `/fwrite </commands/fwrite>`
-    * :doc: `/write </commands/write>`
+    * :doc:`$bvar </identifiers/$bvar>`
+    * :doc:`/bset </commands/bset>`
+    * :doc:`/bcopy </commands/bcopy>`
+    * :doc:`/bread </commands/bread>`
+    * :doc:`/breplace </commands/breplace>`
+    * :doc:`/btrunc </commands/btrunc>`
+    * :doc:`/bunset </commands/bunset>`
+    * :doc:`$bfind </identifiers/$bfind>`
+    * :doc:`/fwrite </commands/fwrite>`
+    * :doc:`/write </commands/write>`

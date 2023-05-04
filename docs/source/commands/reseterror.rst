@@ -1,7 +1,7 @@
 /reseterror
 ===========
 
-The **/reseterror** command resets an error catched with the special ':error' label, see :doc: `here </intermediate/control_flow_statements.html#error-handling>` .
+The **/reseterror** command resets an error catched with the special ':error' label, see :doc:`here </intermediate/control_flow_statements.html#error-handling>` .
 
 Synopsis
 --------

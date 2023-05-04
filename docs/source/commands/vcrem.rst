@@ -52,7 +52,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$vcmd </identifiers/$vcmd>`
-    * :doc: `$inwave </identifiers/$inwave>`
-    * :doc: `$sound </identifiers/$sound>`
-    * :doc: `/splay </commands/splay>`
+    * :doc:`$vcmd </identifiers/$vcmd>`
+    * :doc:`$inwave </identifiers/$inwave>`
+    * :doc:`$sound </identifiers/$sound>`
+    * :doc:`/splay </commands/splay>`

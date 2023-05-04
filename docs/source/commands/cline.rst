@@ -67,13 +67,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$window </identifiers/$window>`
-    * :doc: `$line </identifiers/$line>`
-    * :doc: `$fline </identifiers/$fline>`
-    * :doc: `$sline </identifiers/$sline>`
-    * :doc: `/aline </commands/aline>`
-    * :doc: `/cline </commands/cline>`
-    * :doc: `/dline </commands/dline>`
-    * :doc: `/renwin </commands/renwin>`
-    * :doc: `/sline </commands/sline>`
-    * :doc: `/window </commands/window>`
+    * :doc:`$window </identifiers/$window>`
+    * :doc:`$line </identifiers/$line>`
+    * :doc:`$fline </identifiers/$fline>`
+    * :doc:`$sline </identifiers/$sline>`
+    * :doc:`/aline </commands/aline>`
+    * :doc:`/cline </commands/cline>`
+    * :doc:`/dline </commands/dline>`
+    * :doc:`/renwin </commands/renwin>`
+    * :doc:`/sline </commands/sline>`
+    * :doc:`/window </commands/window>`

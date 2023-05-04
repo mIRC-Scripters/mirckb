@@ -75,8 +75,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/break </commands/break>`
-    * :doc: `/continue </commands/continue>`
-    * :doc: `/if </commands/if>`
-    * :doc: `/return </commands/return>`
-    * :doc: `/while </commands/while>`
+    * :doc:`/break </commands/break>`
+    * :doc:`/continue </commands/continue>`
+    * :doc:`/if </commands/if>`
+    * :doc:`/return </commands/return>`
+    * :doc:`/while </commands/while>`

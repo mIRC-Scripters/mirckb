@@ -43,4 +43,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/qme </commands/qme>`
+    * :doc:`/qme </commands/qme>`

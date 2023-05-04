@@ -46,13 +46,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$mircini </identifiers/$mircini>`
-    * :doc: `$readini </identifiers/$readini>`
-    * :doc: `$read </identifiers/$read>`
-    * :doc: `/load </commands/load>`
-    * :doc: `/localinfo </commands/localinfo>`
-    * :doc: `/reload </commands/reload>`
-    * :doc: `/save </commands/save>`
-    * :doc: `/savebuf </commands/savebuf>`
-    * :doc: `/write </commands/write>`
-    * :doc: `/writeini </commands/writeini>`
+    * :doc:`$mircini </identifiers/$mircini>`
+    * :doc:`$readini </identifiers/$readini>`
+    * :doc:`$read </identifiers/$read>`
+    * :doc:`/load </commands/load>`
+    * :doc:`/localinfo </commands/localinfo>`
+    * :doc:`/reload </commands/reload>`
+    * :doc:`/save </commands/save>`
+    * :doc:`/savebuf </commands/savebuf>`
+    * :doc:`/write </commands/write>`
+    * :doc:`/writeini </commands/writeini>`

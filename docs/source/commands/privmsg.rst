@@ -44,6 +44,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/msg </commands/msg>`
-    * :doc: `/notice </commands/notice>`
-    * :doc: `/query </commands/query>`
+    * :doc:`/msg </commands/msg>`
+    * :doc:`/notice </commands/notice>`
+    * :doc:`/query </commands/query>`

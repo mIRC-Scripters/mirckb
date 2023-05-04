@@ -64,4 +64,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/proxy command </commands/proxy>`
+    * :doc:`/proxy command </commands/proxy>`

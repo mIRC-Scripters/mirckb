@@ -213,12 +213,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$colour </identifiers/$colour>`
-    * :doc: `$color </identifiers/$color>`
-    * :doc: `$N </identifiers/$N>`
-    * :doc: `/aline </commands/aline>`
-    * :doc: `/dline </commands/dline>`
-    * :doc: `/drawtext </commands/drawtext>`
-    * :doc: `/editbox </commands/editbox>`
-    * :doc: `/iline </commands/iline>`
-    * :doc: `/rline </commands/rline>`
+    * :doc:`$colour </identifiers/$colour>`
+    * :doc:`$color </identifiers/$color>`
+    * :doc:`$n </identifiers/$n>`
+    * :doc:`/aline </commands/aline>`
+    * :doc:`/dline </commands/dline>`
+    * :doc:`/drawtext </commands/drawtext>`
+    * :doc:`/editbox </commands/editbox>`
+    * :doc:`/iline </commands/iline>`
+    * :doc:`/rline </commands/rline>`

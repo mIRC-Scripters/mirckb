@@ -43,8 +43,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `/clear </commands/clear>`
-    * :doc: `/clearall </commands/clearall>`
-    * :doc: `/close </commands/close>`
-    * :doc: `/debug </commands/debug>`
-    * :doc: `/window </commands/window>`
+    * :doc:`/clear </commands/clear>`
+    * :doc:`/clearall </commands/clearall>`
+    * :doc:`/close </commands/close>`
+    * :doc:`/debug </commands/debug>`
+    * :doc:`/window </commands/window>`

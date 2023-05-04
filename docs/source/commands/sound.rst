@@ -29,7 +29,7 @@ Parameters
     * - <sound_filename>'
       - The sound to be played, must be in any subfolder of the sound directory, the sound directory included.
     * - [message]
-      - The optional message you want to send as well as the send request, this will be sent as an action message ( :doc: `/me </commands/me>` ).
+      - The optional message you want to send as well as the send request, this will be sent as an action message ( :doc:`/me </commands/me>` ).
 
 Example
 -------

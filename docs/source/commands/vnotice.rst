@@ -45,4 +45,4 @@ See also
 .. hlist::
     :columns: 4
 
-:doc: `/onotice </commands/onotice>`
+:doc:`/onotice </commands/onotice>`

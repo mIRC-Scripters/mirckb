@@ -88,6 +88,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc: `$dccport </identifiers/$dccport>`
-    * :doc: `$dccignore </identifiers/$dccignore>`
-    * :doc: `/dcc </commands/dcc>`
+    * :doc:`$dccport </identifiers/$dccport>`
+    * :doc:`$dccignore </identifiers/$dccignore>`
+    * :doc:`/dcc </commands/dcc>`
