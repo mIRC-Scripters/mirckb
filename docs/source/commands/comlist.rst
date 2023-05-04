@@ -1,17 +1,22 @@
 /comlist
 ========
 
-The **/comlist** command lists all of the currently open COM connections.
+The **/comlist** command lists all of the currently open :doc: `COM object </advanced/COM>` connections.
 
 Synopsis
 --------
 
 .. code:: text
 
-	/comlist
+    /comlist
 
 Switches
 --------
+
+None
+
+Parameters
+----------
 
 None
 
@@ -20,25 +25,24 @@ Example
 
 .. code:: text
 
-	/comlist
+    /comlist
 
 Compatibility
 -------------
 
 Added: mIRC v7.34 (18 Jun 2014)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
-See also
+See Also
 --------
 
 .. hlist::
-	:columns: 4
+    :columns: 4
 
-	* :doc:`$com </identifiers/com>`
-	* :doc:`$comcall </identifiers/comcall>`
-	* :doc:`$comerr </identifiers/comerr>`
-	* :doc:`$comval </identifiers/comval>`
-	* :doc:`/comclose <comclose>`
-	* :doc:`/comopen <comopen>`
-	* :doc:`/comreg <comreg>`
+    * :doc: `COM objects </advanced/COM>`
+    * :doc: `$com </identifiers/$com>`
+    * :doc: `$comcall </identifiers/$comcall>`
+    * :doc: `$comerr </identifiers/$comerr>`
+    * :doc: `$comval </identifiers/$comval>`
+    * :doc: `/comclose </commands/comclose>`
+    * :doc: `/comopen </commands/comopen>`
+    * :doc: `/comreg </commands/comreg>`

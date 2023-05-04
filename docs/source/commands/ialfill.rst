@@ -1,7 +1,7 @@
 /ialfill
 ========
 
-The **/ialfill** command fills the IAL by sending a /WHO #channel to the server and processing the WHO reply.
+The **ialfill** command fills the IAL by sending a /WHO #channel to the server and processing the WHO reply.
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ Parameters
       - The channel to fill
 
 Example
---------
+-------
 
 .. code:: text
 
@@ -46,17 +46,15 @@ Compatibility
 
 Added: mIRC v7.48 (15 Apr 2017)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/ialclear <ialclear>`
-    * :doc:`/ial <ial>`
-    * :doc:`/ialmark <ialmark>`
-    * :doc:`$ial </identifiers/ial>`
-    * :doc:`$address </identifiers/address>`
-    * :doc:`$ialchan </identifiers/ialchan>`
+    * :doc: `/ialclear </commands/ialclear>`
+    * :doc: `/ial </commands/ial>`
+    * :doc: `/ialmark </commands/ialmark>`
+    * :doc: `$ial </identifiers/$ial>`
+    * :doc: `$address </identifiers/$address>`
+    * :doc: `$ialchan </identifiers/$ialchan>`

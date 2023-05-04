@@ -11,7 +11,7 @@ Synopsis
     /fullname <name>
 
 Switches
----------
+--------
 
 None
 
@@ -30,13 +30,10 @@ Parameters
 Example
 -------
 
-
 Compatibility
 -------------
 
-Added: mIRC v5.82 (14/12/2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.82 (14 Dec 2000)
 
 See also
 --------

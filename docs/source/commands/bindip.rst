@@ -56,6 +56,7 @@ The above example will output:
 Compatibility
 -------------
 
+Added: mIRC v6.17 (17 Feb 2006)
 
 See also
 --------
@@ -63,9 +64,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$bindip </identifiers/bindip>`
-    * :doc:`$ip </identifiers/ip>`
-    * :doc:`/dns <dns>`
-    * :doc:`/server <server>`
-    * :doc:`/sockaccept <sockaccept>`
-    * :doc:`/sockopen <sockopen>`
+    * :doc: `$bindip </identifiers/$bindip>`
+    * :doc: `$ip </identifiers/$ip>`
+    * :doc: `/dns </commands/dns>`
+    * :doc: `/server </commands/server>`
+    * :doc: `/sockaccept </commands/sockaccept>`
+    * :doc: `/sockopen </commands/sockopen>`

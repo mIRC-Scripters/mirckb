@@ -26,16 +26,16 @@ Example
 .. code:: text
 
     Alias Example {
-      var %a = 1
-      ;count form 1 to 10
-      while (%a <= 10) {
-        ;echo -a %a
-        inc %a
-        ;if its odd, skip it
-        if ($v1 !& 1) continue 
-        ;echo even number
-        echo -a %a
-      }
+    var %a = 1
+    ;count form 1 to 10
+    while (%a <= 10) {
+    ;echo -a %a
+    inc %a
+    ;if its odd, skip it
+    if ($v1 !& 1) continue
+    ;echo even number
+    echo -a %a
+    }
     }
 
 Will generate the following output
@@ -51,9 +51,7 @@ Will generate the following output
 Compatibility
 -------------
 
-Added: mIRC v5.7 (02 Feb 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.7 (07 May 2000)
 
 See also
 --------
@@ -61,9 +59,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/break <break>`
-    * :doc:`/halt <halt>`
-    * :doc:`/if <if>`
-    * :doc:`/return <return>`
-    * :doc:`/while <while>`
-    * :doc:`/returnex <returnex>`
+    * :doc: `/break </commands/break>`
+    * :doc: `/halt </commands/halt>`
+    * :doc: `/if </commands/if>`
+    * :doc: `/return </commands/return>`
+    * :doc: `/while </commands/while>`
+    * :doc: `/returnex </commands/returnex>`

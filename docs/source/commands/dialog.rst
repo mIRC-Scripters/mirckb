@@ -1,7 +1,7 @@
 /dialog
 =======
 
-The **/dialog** command is used to create a dialog using a given table. The name is what the script/you will use to refer to the table. The standard dialog created using the /dialog command can be used to create model or modeless dialogs. Modeless it does not return a value when the dialog closes. As a result it does not halt the mIRC scripting engine, letting other script to keep processing. Dialogs can be kept open for as long as you want.
+The **/dialog** command is used to create a dialog using a given table. The name is what the script/you will use to refer to the table. The standard dialog created using the /dialog command can be used to create model or modeless dialogs. Modeless it does not return a value when the dialog closes. As a result it does not halt the mIRC scripting engine, letting other script to keep processing. Dialogs can be kept open for as you want.
 
 Synopsis
 --------
@@ -19,7 +19,6 @@ Switches
 --------
 
 Mode:
-~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -37,7 +36,6 @@ Mode:
       - Dialog work with active server connection
 
 Modes Used with -m:
-~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -51,7 +49,6 @@ Modes Used with -m:
       - opens the dialog on the desktop
 
 Modes Used with -d:
-~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -65,7 +62,6 @@ Modes Used with -d:
       - Restores dialog
 
 Close:
-~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -81,7 +77,6 @@ Close:
       - closes the dialog without triggering any event
 
 Change:
-~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -130,26 +125,26 @@ Consider:
 .. code:: text
 
     Dialog Example1 {
-      title "This is Example 1"
-      size -1 -1 172 129
-      option dbu
-      tab "Tab A", 14, 2 0 165 123
-      tab "Tab B", 15
-      tab "Tab C", 16
-      edit "", 17, 8 16 154 104, tab 16 multi return autohs vsbar
-      menu "&File", 1
-      item "&New", 6, 1
-      item "&Open", 7, 1
-      item break, 8, 1
-      item "&Save", 9, 1
-      item "Save &as", 10, 1
-      menu "&Edit", 2
-      item "&Copy", 11, 2
-      item "P&aste", 12, 2
-      menu "&view", 3
-      item "&All", 13, 3
-      menu "&Help", 4
-      item "&About", 5, 4
+    title "This is Example 1"
+    size -1 -1 172 129
+    option dbu
+    tab "Tab A", 14, 2 0 165 123
+    tab "Tab B", 15
+    tab "Tab C", 16
+    edit "", 17, 8 16 154 104, tab 16 multi return autohs vsbar
+    menu "&File", 1
+    item "&New", 6, 1
+    item "&Open", 7, 1
+    item break, 8, 1
+    item "&Save", 9, 1
+    item "Save &as", 10, 1
+    menu "&Edit", 2
+    item "&Copy", 11, 2
+    item "P&aste", 12, 2
+    menu "&view", 3
+    item "&All", 13, 3
+    menu "&Help", 4
+    item "&About", 5, 4
     }
 
 Example 1:
@@ -183,9 +178,7 @@ Example 4:
 Compatibility
 -------------
 
-Added: mIRC v5.5 (08 Jan 1999)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.5 (19 Feb 1999)
 
 See also
 --------
@@ -193,12 +186,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dialog </identifiers/dialog>`
-    * :doc:`$dname </identifiers/dname>`
-    * :doc:`$devent </identifiers/devent>`
-    * :doc:`$did </identifiers/did>`
-    * :doc:`$didwm </identifiers/didwm>`
-    * :doc:`$didreg </identifiers/didreg>`
-    * :doc:`$didtok </identifiers/didtok>`
-    * :doc:`/did <did>`
-    * :doc:`/didtok <didtok>`
+    * :doc: `$dialog </identifiers/$dialog>`
+    * :doc: `$dname </identifiers/$dname>`
+    * :doc: `$devent </identifiers/$devent>`
+    * :doc: `$did </identifiers/$did>`
+    * :doc: `$didwm </identifiers/$didwm>`
+    * :doc: `$didreg </identifiers/$didreg>`
+    * :doc: `$didtok </identifiers/$didtok>`
+    * :doc: `/did </commands/did>`
+    * :doc: `/didtok </commands/didtok>`

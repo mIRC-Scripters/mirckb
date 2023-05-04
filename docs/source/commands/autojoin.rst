@@ -1,7 +1,7 @@
 /autojoin
 =========
 
-The **/autojoin** command is used in conjunction with the on Connect event (or the Perform option available in alt + o > options > perfom..) in order to delay or prevent auto-joining of channels. This also applies to rejoining of open channels windows during reconnect.
+The **/autojoin** command is used in conjunction with the on Connect event (or the Perform option available in alt + o > options > perfom..) in order to delay or prevent auto-joining of channels. This also apply to rejoining of open channels windows during reconnect
 
 Synopsis
 --------
@@ -37,22 +37,22 @@ Example
 .. code:: text
 
     on *:connect:{
-      /* 
-        5 seconds delay before we re-join the channels
-        Enough time to perform more important things
-      */
-      autojoin -d5
+    /*
+    5 seconds delay before we re-join the channels
+    Enough time to perform more important things
+    */
+    autojoin -d5
 
-      ns id FooBar
-      mode $me -x
+    ns id FooBar
+    mode $me -x
     }
+
+.. note:: The max delay is 600 seconds, anything more resets to 600.
 
 Compatibility
 -------------
 
 Added: mIRC v6.17 (17 Feb 2006)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
 
 See also
 --------
@@ -60,4 +60,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/join <join>`
+    * :doc: `/join </commands/join>`

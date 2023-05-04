@@ -1,9 +1,9 @@
 /comclose
 =========
 
-The **/comclose** command closes an existing COM connection by a specific handle.
+The **/comclose** command closes an existing :doc: `COM connection </advanced/com>` by a specific handle.
 
-The supplied com handle must have been previously created via the **/comopen** command or the **$com** / **$comcall** identifiers.
+The supplied com handle must have been previously created via the :doc: `/comopen command </advanced/comopen>` or the :doc: `$com </identifiers/$com>` / :doc: `$comcall </identifiers/$comcall>` identifiers.
 
 Synopsis
 --------
@@ -35,20 +35,17 @@ Example
 .. code:: text
 
     Alias Example {
-      ;Create a WshShell object 
-      comopen Example wscript.shell
+    ;Create a WshShell object
+    comopen Example wscript.shell
 
-      ;Destroy object
-      comclose Example
+    ;Destroy object
+    comclose Example
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.9 (26 Apr 2001)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
+Added: mIRC v5.9 (15 Jun 2001)
 
 See also
 --------
@@ -56,8 +53,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </identifiers/com>`
-    * :doc:`$comcall </identifiers/comcall>`
-    * :doc:`$comval </identifiers/comval>`
-    * :doc:`/comopen <comopen>`
-    * :doc:`/comreg <comreg>`
+    * :doc: `$com </identifiers/$com>`
+    * :doc: `$comcall </identifiers/$comcall>`
+    * :doc: `$comval </identifiers/$comval>`
+    * :doc: `/comopen </commands/comopen>`
+    * :doc: `/comreg </commands/comreg>`

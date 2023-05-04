@@ -1,14 +1,14 @@
 /gtalk
 ======
 
-The **/gtalk** command makes an Agent speak the specified text.
+The **gtalk** command makes an Agent speak the specified text.
 
 Synopsis
 --------
 
 .. code:: text
 
-    /gtalk -kwlu <name> <text | wavefile text>
+    /gtalk -kwlu <name> <text | <wavefile> <text>>
 
 Switches
 --------
@@ -20,7 +20,7 @@ Switches
     * - Switch
       - Description
     * - -h
-      - Prevents the agent from popping up if mIRC is minimized **and** -h has been used in **/gload** to load that agent.
+      - Prevents the agent from popping up if mIRC is minimized *and* -h has been used in :doc: `/gload </commands/gload>` to load that agent.
     * - -k
       - Makes the agent think the text in a balloon without speaking it.
     * - -l
@@ -43,7 +43,7 @@ Parameters
       - The name used in /gload to reference that agent
     * - text
       - The text to be spoken
-    * - wavefile text
+    * - <wavefile> <text>
       - The sound filename, must be wave format, and the text to be spoken while playing the file
 
 Example
@@ -56,13 +56,10 @@ Example
     ;make the agent plays 'lol.wav' and speak "text"
     /gtalk -w myagent lol.wav text
 
-
 Compatibility
 -------------
 
-Added: mIRC v5.7 (02 Feb 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.7 (07 May 2000)
 
 See also
 --------
@@ -70,18 +67,18 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/ghide <ghide>`
-    * :doc:`/gunload <gunload>`
-    * :doc:`/gshow <gshow>`
-    * :doc:`/gload <gload>`
-    * :doc:`/gsize <gsize>`
-    * :doc:`/gmove <gmove>`
-    * :doc:`/gplay <gplay>`
-    * :doc:`/gpoint <gpoint>`
-    * :doc:`/gstop <gstop>`
-    * :doc:`/gopts <gopts>`
-    * :doc:`/gqreq <gqreq>`
-    * :doc:`$agentver </identifiers/agentver>`
-    * :doc:`$agentstat </identifiers/agentstat>`
-    * :doc:`$agentname </identifiers/agentname>`
-    * :doc:`$agent </identifiers/agent>`
+    * :doc: `/ghide </commands/ghide>`
+    * :doc: `/gunload </commands/gunload>`
+    * :doc: `/gshow </commands/gshow>`
+    * :doc: `/gload </commands/gload>`
+    * :doc: `/gsize </commands/gsize>`
+    * :doc: `/gmove </commands/gmove>`
+    * :doc: `/gplay </commands/gplay>`
+    * :doc: `/gpoint </commands/gpoint>`
+    * :doc: `/gstop </commands/gstop>`
+    * :doc: `/gopts </commands/gopts>`
+    * :doc: `/gqreq </commands/gqreq>`
+    * :doc: `$agentver </identifiers/$agentver>`
+    * :doc: `$agentstat </identifiers/$agentstat>`
+    * :doc: `$agentname </identifiers/$agentname>`
+    * :doc: `$agent </identifiers/$agent>`

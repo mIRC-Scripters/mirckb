@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /hdel [-sw] <table> <item>
+    /hdel [-sw] <nowiki><table></nowiki> <item>
 
 Switches
 --------
@@ -20,9 +20,9 @@ Switches
     * - Switch
       - Description
     * - -s
-      - Displays the deletion action if the variable exists, displays error if table doesn't exist, no display if the table exists but the item does not.
+      - Displays the Deletion action if the variable exists, displays error if table doesn't exist, no display if the table exists but the item does not.
     * - -w
-      - Treats <table> as a wildcard and deletes all matching tables.
+      - Treats <nowiki><table></nowiki> as a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` and deletes all matching tables.
 
 Parameters
 ----------
@@ -33,10 +33,10 @@ Parameters
 
     * - Parameter
       - Description
-    * - <table>
+    * - <nowiki><table></nowiki>
       - The table which contains the item you are deleting
     * - <item>
-      - the item-name associated with a value to delete. Can be a wildcard when using -w switch.
+      - the item-name associated with a value to delete. Can be a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` when using -w switch.
 
 Example
 -------
@@ -44,32 +44,32 @@ Example
 .. code:: text
 
     alias hdel_example {
-      ;add items
-      hadd -m example academic a
-      hadd example academy a
-      hadd example accelerate a
-      hadd example accelerator a
-      hadd example accept a
-      hadd example access a
-      hadd example accident a
-      hadd example because b
+    ;add items
+    hadd -m example academic a
+    hadd example academy a
+    hadd example accelerate a
+    hadd example accelerator a
+    hadd example accept a
+    hadd example access a
+    hadd example accident a
+    hadd example because b
 
-      ;number of items
-      echo -a $hget(example, 0).item
+    ;number of items
+    echo -a $hget(example, 0).item
 
-      ;remove everything by one
-      hdel -w example a*
+    ;remove everything by one
+    hdel -w example a*
 
-      ;number of items
-      echo -a $hget(example, 0).item
+    ;number of items
+    echo -a $hget(example, 0).item
 
-      ;free table
-      hfree example
+    ;free table
+    hfree example
     }
 
 .. code:: text
 
-    //hfree -sw test | hadd -m1 test item1 | hadd test item* | echo -a 1st item is $hget(test,1).item | hdel -w test item* | echo  -a there are $hget(test,0).item items remaining
+    //hfree -sw test | hadd -m1 test item1 | hadd test item* | echo -a 1st item is $hget(test,1).item | hdel -w test item* | echo -a there are $hget(test,0).item items remaining
     * Demonstrates that an item can be created and deleted containing an asterisk. If the -w switch is deleted, only 1 of the 2 items is deleted because of an exact item-name match with "item*".
 
     //hfree -sw test | hmake -s test | hdel -s test itemname | echo -a message 1 | hfree -s test | hdel -s test itemname | echo -a message 2
@@ -78,22 +78,20 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.8 (05 Sep 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
+Added: mIRC v5.8 (14 Dec 2000)
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/hmake <hmake>`
-    * :doc:`/hfree <hfree>`
-    * :doc:`/hload <hload>`
-    * :doc:`/hsave <hsave>`
-    * :doc:`/hadd <hadd>`
-    * :doc:`/hinc <hinc>`
-    * :doc:`/hdec <hdec>`
-    * :doc:`$hget </identifiers/hget>`
-    * :doc:`$hfind </identifiers/hfind>`
+    * :doc: `/hmake </commands/hmake>`
+    * :doc: `/hfree </commands/hfree>`
+    * :doc: `/hload </commands/hload>`
+    * :doc: `/hsave </commands/hsave>`
+    * :doc: `/hadd </commands/hadd>`
+    * :doc: `/hinc </commands/hinc>`
+    * :doc: `/hdec </commands/hdec>`
+    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
+    * :doc: `$hget </identifiers/$hget>`
+    * :doc: `$hfind </identifiers/$hfind>`

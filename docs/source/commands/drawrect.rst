@@ -27,13 +27,13 @@ Switches
       - Prevents the display from being updated immediately.
     * - -r
       - Indicates that the color is in RGB format.
-    * - -f 
+    * - -f
       - Draws a filled rectangle.
     * - -e
       - Draws an ellipse instead of a rectangle.
-    * - -c 
+    * - -c
       - Draws a focus rectangle.
-    * - -d 
+    * - -d
       - Draws a rounded rectangle, using the format "/drawrect -d x y w h [w h]" where w and h are the width and height of the ellipse used to draw the corners.
 
 Parameters
@@ -45,11 +45,11 @@ Parameters
 
     * - Parameter
       - Description
-    * - <@win> 
+    * - <@win>
       - Name of the Picture Window to draw to.
     * - <color>
       - A mIRC colour value from 0 to 15, or if the -r switch is used, an RGB value.
-    * - <size> 
+    * - <size>
       - Thickness of the border in pixels.
     * - <x y w h>
       - Co-ordinates for a rectangle in pixels, x and y are the top left corner.
@@ -71,7 +71,7 @@ Example
 Compatibility
 -------------
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v (27 Nov 2022)
 
 See also
 --------
@@ -79,15 +79,15 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$rgb </identifiers/rgb>`
-    * :doc:`$window </identifiers/window>`
-    * :doc:`/drawcopy <drawcopy>`
-    * :doc:`/drawdot <drawdot>`
-    * :doc:`/drawfill <drawfill>`
-    * :doc:`/drawline <drawline>`
-    * :doc:`/drawpic <drawpic>`
-    * :doc:`/drawreplace <drawreplace>`
-    * :doc:`/drawrot <drawrot>`
-    * :doc:`/drawsave <drawsave>`
-    * :doc:`/drawscroll <drawscroll>`
-    * :doc:`/drawtext <drawtext>`
+    * :doc: `$rgb </identifiers/$rgb>`
+    * :doc: `$window </identifiers/$window>`
+    * :doc: `/drawcopy </commands/drawcopy>`
+    * :doc: `/drawdot </commands/drawdot>`
+    * :doc: `/drawfill </commands/drawfill>`
+    * :doc: `/drawline </commands/drawline>`
+    * :doc: `/drawpic </commands/drawpic>`
+    * :doc: `/drawreplace </commands/drawreplace>`
+    * :doc: `/drawrot </commands/drawrot>`
+    * :doc: `/drawsave </commands/drawsave>`
+    * :doc: `/drawscroll </commands/drawscroll>`
+    * :doc: `/drawtext </commands/drawtext>`

@@ -20,7 +20,7 @@ Switches
     * - Switch
       - Description
     * - -r
-      - use RGB color instead of the mIRC [[Colors - IRC|standard colors]]
+- use RGB color instead of the mIRC standard colors
     * - -i
       - draws in inverse color mode. You can find the final color based on the two color by using $xor($xor(currentcolor,16777215),drawncolor). Drawing the same color gives white and may be used to create transparency effect.
     * - -h
@@ -38,7 +38,7 @@ Parameters
     * - <color>
       - mIRC Color to draw with (unless -r is used, then RGB color is used)
     * - <size>
-      - radius 
+      - radius
     * - <x y>
       - coordinates
     * - [<x y>...]
@@ -55,9 +55,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------
@@ -65,23 +63,23 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/window>`
-    * :doc:`$click </identifiers/click>`
-    * :doc:`$mouse </identifiers/mouse>`
-    * :doc:`$inellipse </identifiers/inellipse>`
-    * :doc:`$inrect </identifiers/inrect>`
-    * :doc:`$inroundrect </identifiers/inroundrect>`
-    * :doc:`$inpoly </identifiers/inpoly>`
-    * :doc:`$onpoly </identifiers/onpoly>`
-    * :doc:`$rgb </identifiers/rgb>`
-    * :doc:`$getdot </identifiers/getdot>`
-    * :doc:`$height </identifiers/height>`
-    * :doc:`/drawcopy <drawcopy>`
-    * :doc:`/drawfill <drawfill>`
-    * :doc:`/drawline <drawline>`
-    * :doc:`/drawpic <drawpic>`
-    * :doc:`/drawrect <drawrect>`
-    * :doc:`/drawreplace <drawreplace>`
-    * :doc:`/drawsave <drawsave>`
-    * :doc:`/drawscroll <drawscroll>`
-    * :doc:`/drawtext <drawtext>`
+    * :doc: `$window </identifiers/$window>`
+    * :doc: `$click </identifiers/$click>`
+    * :doc: `$mouse </identifiers/$mouse>`
+    * :doc: `$inellipse </identifiers/$inellipse>`
+    * :doc: `$inrect </identifiers/$inrect>`
+    * :doc: `$inroundrect </identifiers/$inroundrect>`
+    * :doc: `$inpoly </identifiers/$inpoly>`
+    * :doc: `$onpoly </identifiers/$onpoly>`
+    * :doc: `$rgb </identifiers/$rgb>`
+    * :doc: `$getdot </identifiers/$getdot>`
+    * :doc: `$height </identifiers/$height>`
+    * :doc: `/drawcopy </commands/drawcopy>`
+    * :doc: `/drawfill </commands/drawfill>`
+    * :doc: `/drawline </commands/drawline>`
+    * :doc: `/drawpic </commands/drawpic>`
+    * :doc: `/drawrect </commands/drawrect>`
+    * :doc: `/drawreplace </commands/drawreplace>`
+    * :doc: `/drawsave </commands/drawsave>`
+    * :doc: `/drawscroll </commands/drawscroll>`
+    * :doc: `/drawtext </commands/drawtext>`

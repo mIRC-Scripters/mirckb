@@ -1,9 +1,9 @@
 /else
 =====
 
-The **/else** command is a construct in the mIRC scripting language that perfomes the command if all the previous /if or /elseif failed, must be used after an /if or /elseif statement.
+The **/else** command is a :doc: `construct in the mIRC scripting language </intermediate/control_flow_statements.html#Conditional_statements>` that perfomes the command if all the previous :doc: `/if </commands/if>` or :doc: `/elseif </commands/elseif>` failed, must be used after an :doc: `/if </commands/if>` or :doc: `/elseif </commands/elseif>` statement.
 
-The else statement is used in conjunction with the /if statement and the /elseif statement to jump to certain blocks of code depending on the result of the conditional statement that was executed.
+The else statement is used in conjunction with the :doc: `/if </commands/if>` statement and the :doc: `/elseif </commands/elseif>` statement to jump to certain blocks of code depending on the result of the conditional statement that was executed.
 
 Synopsis
 --------
@@ -29,17 +29,15 @@ Example
 .. code:: text
 
     alias test {
-      if ($1 == 1) echo -a 1!
-      elseif ($1 isnum 2-7) echo -a 2-7!
-      else echo -a 8-!
+    if ($1 == 1) echo -a 1!
+    elseif ($1 isnum 2-7) echo -a 2-7!
+    else echo -a 8-!
     }
 
 Compatibility
 -------------
 
-Added: mIRC v4.5
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v4.5 (06 Jul 1996)
 
 See also
 --------
@@ -47,16 +45,16 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$halted </identifiers/halted>`
-    * :doc:`$result </identifiers/result>`
-    * :doc:`$alias </identifiers/alias>`
-    * :doc:`$isalias </identifiers/isalias>`
-    * :doc:`$iif </identifiers/iif>`
-    * :doc:`/alias <alias>`
-    * :doc:`/goto <goto>`
-    * :doc:`/halt <halt>`
-    * :doc:`/return <return>`
-    * :doc:`/while <while>`
-    * :doc:`/returnex <returnex>`
-    * :doc:`/elseif <elseif>`
-    * :doc:`/else <else>`
+    * :doc: `$halted </identifiers/$halted>`
+    * :doc: `$result </identifiers/$result>`
+    * :doc: `$alias </identifiers/$alias>`
+    * :doc: `$isalias </identifiers/$isalias>`
+    * :doc: `$iif </identifiers/$iif>`
+    * :doc: `/alias </commands/alias>`
+    * :doc: `/goto </commands/goto>`
+    * :doc: `/halt </commands/halt>`
+    * :doc: `/return </commands/return>`
+    * :doc: `/while </commands/while>`
+    * :doc: `/returnex </commands/returnex>`
+    * :doc: `/elseif </commands/elseif>`
+    * :doc: `/else </commands/else>`

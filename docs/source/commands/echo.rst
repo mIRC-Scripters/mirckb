@@ -14,8 +14,8 @@ Synopsis
 Switches
 --------
 
-Target Window Switches
-^^^^^^^^^^^^^^^^^^^^^^
+Target window switches 
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :widths: 15 85
@@ -23,15 +23,15 @@ Target Window Switches
 
     * - Switch
       - Description
-    * - -s 
+    * - -s
       - prints to the status window
     * - -a
       - prints to the active window
     * - -d
       - prints to the single message window
 
-Settings Related
-^^^^^^^^^^^^^^^^
+Settings Related: 
+^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :widths: 15 85
@@ -48,8 +48,8 @@ Settings Related
     * - -f
       - Applies the flash settings to the window (to flash the mIRC System Tray icon) as defined in mIRC Options / IRC / Options and any individual window override.
 
-Other Switches
-^^^^^^^^^^^^^^
+Other switches 
+^^^^^^^^^^^^^^^^
 
 .. list-table::
     :widths: 15 85
@@ -60,21 +60,27 @@ Other Switches
     * - -c
       - Indicates that the <colour-name> parameter is provided as the 1st parameter following the switch(es).
     * - -e
-      - Encloses the text with a pair of lines containing the line separator. Note: does not add a leading line if it already consists entirely of the line separator.
+
+.. note:: does not add a leading line if it already consists entirely of the line separator.
+
     * - -g
       - Prevents the text from being logged if the window has logging on.
     * - -h
       - Applies a hard-wrap on the text so that the wrap point does not change when the window is resized. Text is not wrapped if it is echoed to a custom listbox window.
     * - -i[N]
-      - Indents wrapped lines by [N] characters. The default mIRC indent is 2 spaces if N not used. Note: When using a proportional font, the indented width is a constant width regardless of the width of the characters echoed.
+
+.. note:: When using a proportional font, the indented width is a constant width regardless of the width of the characters echoed.
+
     * - -t
-      - Adds a timestamp to the text if the timestamp is enabled for that window. Without this, the line will not be timestamped even if the window has timestamping set. Note: -t shows timestamp in Custom Windows even though they do not have a timestamp setting, but only if timestamping has been enabled in mirc-options/irc/messages/"timestamp events".
+
+.. note:: -t shows timestamp in Custom Windows even though they do not have a timestamp setting, but only if timestamping has been enabled in mirc-options/irc/messages/"timestamp events".
+
     * - -q
       - Honors the $show flag. (Displays nothing if the alias was called with the . prefix)
     * - -n
       - Prevents switchbar button/treebar colour change
     * - -m
-      - Treats the line as an user message, colours the window button in the switchbar/treebar with the "Message" colour defined in the option  alt+o>Display.
+      - Treats the line as an user message, colours the window button in the switchbar/treebar with the "Message" colour defined in the option alt+o>Display.
 
 Parameters
 ----------
@@ -86,15 +92,21 @@ Parameters
     * - Parameter
       - Description
     * - [colour-number]
-      - A numeric colour value (0 to 99) Note: 99 is $colour(listbox text) instead of $colour(normal) even in #channel and Status window where background is $colour(background). If $colour(listbox text) is the same index as $colour(background), 99 tries $colour(normal) then $colour(gray) searching for a colour that doesn't match the background colour.
+
+.. note:: 99 is $colour(listbox text) instead of $colour(normal) even in #channel and Status window where background is $colour(background). If $colour(listbox text) is the same index as $colour(background), 99 tries $colour(normal) then $colour(gray) searching for a colour that doesn't match the background colour.
+
     * - <colour-name>
-      - When the -c switch is used, the next parameter must be one of the following: action, ctcp, highlight, info, info2, invite, join, kick, mode, nick, normal, notice, notify, other, own, part, quit, topic, wallops, whois, "listbox text", gray, listbox, "treebar text", treebar Note: Quotes are needed for items which are 2 words. Note: If colour for that name matches $colour(background) it is displayed as $colour(normal) until the colour index for background is changed. Note: If colour name not in the list of recognized names, defaults to 'normal'. Note: If you later change the colour index for a colour name, the echoed lines change to that colour.
+
+.. note:: If you later change the colour index for a colour name, the echoed lines change to that colour.
+
     * - [window]
-      - The target @window/#channel/query - Note: If you use /echo to send text to a custom @window which has been opened by {{mIRC|/window|/window -s}}, the line will be added at the bottom of the window rather than being inserted in the correct sort position. - Note: If target is a listbox @window created using the -l switch, the output echoes to the Status Window instead.
+
+.. note:: If target is a listbox @window created using the -l switch, the output echoes to the Status Window instead.
+
     * - <text>
       - The text to be printed
 
-.. note:: Regardless whether or not -e switch is used, echo will not create a 2nd consecutive line consisting of the line separator, unless the existing last line was created in a @window using /aline.
+.. note:: regardless whether or not -e switch is used, echo will not create a 2nd consecutive line consisting of the line separator, unless the existing last line was created in a @window using /aline.
 
 Examples
 --------
@@ -112,11 +124,11 @@ Example 2: A loop prints a few lines
 .. code:: text
 
     alias example {
-      var %x = 5
-      while (%x) {
-        echo -a This is example line $v1 $+ .
-        dec %x
-      }
+    var %x = 5
+    while (%x) {
+    echo -a This is example line $v1 $+ .
+    dec %x
+    }
     }
 
 The above will print:
@@ -134,18 +146,18 @@ Example 3: Timestamps
 
 .. code:: text
 
-    echo    #test            This line never has a timestamp
-    echo -t #test            This line has a timestamp only if timestamping is enabled within #test
-    echo    #test $timestamp This line always has a timestamp
+    echo #test This line never has a timestamp
+    echo -t #test This line has a timestamp only if timestamping is enabled within #test
+    echo #test $timestamp This line always has a timestamp
 
 Example 4: Colours
 ^^^^^^^^^^^^^^^^^^
 
 .. code:: text
 
-    //echo 4 -at                abc $chr(22) def $chr(15) The timestamp and this text following the Ctrl-O revert to colour 4 (red)
-    //echo -act ctcp            abc $chr(22) def $chr(15) The timestamp and this text following the Ctrl-O revert to "ctcp" colour ( $+ $colour(ctcp) $+ )
-    //echo -at $chr(3) $+ 04 $+ abc $chr(22) def $chr(15) The timestamp and this text appear as "normal" colour ( $+ $colour(normal) $+ ) 
+    //echo 4 -at abc $chr(22) def $chr(15) The timestamp and this text following the Ctrl-O revert to colour 4 (red)
+    //echo -act ctcp abc $chr(22) def $chr(15) The timestamp and this text following the Ctrl-O revert to "ctcp" colour ( $+ $colour(ctcp) $+ )
+    //echo -at $chr(3) $+ 04 $+ abc $chr(22) def $chr(15) The timestamp and this text appear as "normal" colour ( $+ $colour(normal) $+ )
 
 Example 5: Switchbar/treebar colours
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -153,49 +165,47 @@ Example 5: Switchbar/treebar colours
 .. code:: text
 
     ; See mirc-options/display
-    ; The 1st line    causes the switchbar to change to the "event" colour.
+    ; The 1st line causes the switchbar to change to the "event" colour.
     ; The 2nd line -m causes the switchbar to change to the "messages" colour, overriding the default EVENT colour.
     ; The 3rd line -n leaves the switchbar colour unchanged.
-    ; Note that Chanserv giving the joined nick OP level is a separate event, and mIRC will change the -m override, and that event will colour the switchbar as the EVENT colour.
+
+    .. note:: that Chanserv giving the joined nick OP level is a separate event, and mIRC will change the -m override, and that event will colour the switchbar as the EVENT colour.
 
     on ^*:JOIN:#:{
-      echo $colour(join) -t  # * $nick $+($chr(40),$gettok($fulladdress,2-,33),$chr(41)) has joined # $comchan($nick,0)
-      echo $colour(join) -tm # * $nick $+($chr(40),$gettok($fulladdress,2-,33),$chr(41)) has joined # $comchan($nick,0)
-      echo $colour(join) -tn # * $nick $+($chr(40),$gettok($fulladdress,2-,33),$chr(41)) has joined # $comchan($nick,0)
-      haltdef
+    echo $colour(join) -t # * $nick $+($chr(40),$gettok($fulladdress,2-,33),$chr(41)) has joined # $comchan($nick,0)
+    echo $colour(join) -tm # * $nick $+($chr(40),$gettok($fulladdress,2-,33),$chr(41)) has joined # $comchan($nick,0)
+    echo $colour(join) -tn # * $nick $+($chr(40),$gettok($fulladdress,2-,33),$chr(41)) has joined # $comchan($nick,0)
+    haltdef
     }
 
 .. code:: text
 
     /echo -m @window test
     /echo -m #channel test
-      ;has the same effect as:
+    ;has the same effect as:
     /echo @window test
     /echo #channel test
     /window -g1 @window
     /window -g1 #channel
 
-
 .. code:: text
 
-    ;The echo command modifies <text> by hiding duplicate spaces and non-printable characters including $chr(9) tab.
+    The echo command modifies <text> by hiding duplicate spaces and non-printable characters including $chr(9) tab.
     //var %a abc $+ $chr(32) $+ $chr(32) $+ def | echo -a $len(%a) %a
-    ;returns: 8 abc def
-    ;... where the duplicate space is not displayed.
+    returns: 8 abc def
+    ... where the duplicate space is not displayed.
     //var %a abc $chr(9) def | echo -a $len(%a) %a
-    ;returns: 9 abc  def
-    ;... where there are 2 spaces appearing next to each other because they were not consecutive prior to the non-printable tab being hidden.
-    ;All 6 letters are displayed on the same line because $crlf is non-printable:
+    returns: 9 abc def
+    ... where there are 2 spaces appearing next to each other because they were not consecutive prior to the non-printable tab being hidden.
+    All 6 letters are displayed on the same line because $crlf is non-printable:
     //var %a $+(abc,$crlf,def) | echo -a %a
-    ;Echo a blank line because it contains only non-printable characters:
+    Echo a blank line because it contains only non-printable characters:
     //echo -a $crlf
 
 Compatibility
 -------------
 
-Added: mIRC v3.7 (12 Oct 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.7 (24 Oct 1995)
 
 See also
 --------
@@ -203,12 +213,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$colour </identifiers/colour>`
-    * :doc:`$color </identifiers/color>`
-    * :doc:`$N </identifiers/N>`
-    * :doc:`/aline <aline>`
-    * :doc:`/dline <dline>`
-    * :doc:`/drawtext <drawtext>`
-    * :doc:`/editbox <editbox>`
-    * :doc:`/iline <iline>`
-    * :doc:`/rline <rline>`
+    * :doc: `$colour </identifiers/$colour>`
+    * :doc: `$color </identifiers/$color>`
+    * :doc: `$N </identifiers/$N>`
+    * :doc: `/aline </commands/aline>`
+    * :doc: `/dline </commands/dline>`
+    * :doc: `/drawtext </commands/drawtext>`
+    * :doc: `/editbox </commands/editbox>`
+    * :doc: `/iline </commands/iline>`
+    * :doc: `/rline </commands/rline>`

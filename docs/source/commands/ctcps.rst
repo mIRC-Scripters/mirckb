@@ -25,14 +25,14 @@ Parameters
     * - Parameter
       - Description
     * - [on|off]
-      - Turns CTCP events on/off 
+      - Turns CTCP events on/off
 
 Example
 -------
 
 .. code:: text
 
-    ;Turn CTCPs off 
+    ;Turn CTCPs off
     /ctcps off
 
 The above example will output:
@@ -44,9 +44,7 @@ The above example will output:
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.0 (21 Apr 1997)
 
 See also
 --------
@@ -54,10 +52,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$nick </identifiers/nick>`
-    * :doc:`$remote </identifiers/remote>`
-    * :doc:`/ctcp <ctcp>`
-    * :doc:`/ctcpreply <ctcpreply>`
-    * :doc:`/events <events>`
-    * :doc:`/remote <remote>`
-    * :doc:`/commands <commands>`
+    * :doc: `$nick </identifiers/$nick>`
+    * :doc: `$remote </identifiers/$remote>`
+    * :doc: `/ctcp </commands/tcp-socket>`
+    * :doc: `/ctcpreply </commands/tcp-socket>`
+    * :doc: `/events </commands/events>`
+    * :doc: `/remote </commands/remote>`
+    * :doc: `/commands </commands/commands>`

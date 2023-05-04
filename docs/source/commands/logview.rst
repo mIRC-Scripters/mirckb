@@ -9,7 +9,7 @@ Synopsis
 .. code:: text
 
     /logview -nN <filename>
- 
+
 Switches
 --------
 
@@ -40,9 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: 7.11
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v7.11 (08 Sep 2010)
 
 See also
 --------
@@ -50,4 +48,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$logdir </identifiers/logdir>`
+    * :doc: `$logdir </identifiers/$logdir>`

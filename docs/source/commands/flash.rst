@@ -48,18 +48,16 @@ Example
 .. code:: text
 
     alias example {
-      ; create a new desktop window, minimize it
-      window -den @example
-      ; flash the window, beep
-      flash -b @example
+    ; create a new desktop window, minimize it
+    window -den @example
+    ; flash the window, beep
+    flash -b @example
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------
@@ -67,10 +65,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/window>`
-    * :doc:`$ebeeps </identifiers/ebeeps>`
-    * :doc:`$vol </identifiers/vol>`
-    * :doc:`/beep <beep>`
-    * :doc:`/ebeeps <ebeeps>`
-    * :doc:`/vol <vol>`
-    * :doc:`/window <window>`
+    * :doc: `$window </identifiers/$window>`
+    * :doc: `$ebeeps </identifiers/$ebeeps>`
+    * :doc: `$vol </identifiers/$vol>`
+    * :doc: `/beep </commands/beep>`
+    * :doc: `/ebeeps </commands/ebeeps>`
+    * :doc: `/vol </commands/vol>`
+    * :doc: `/window </commands/window>`

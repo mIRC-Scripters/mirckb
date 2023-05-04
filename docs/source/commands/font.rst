@@ -4,7 +4,7 @@
 The **/font** command allows you to change the font for the current window. If no parameters are specified, the font dialog pops up, otherwise the specified parameters are used.
 
 Synopsis
----------
+--------
 
 .. code:: text
 
@@ -56,7 +56,7 @@ Parameters
     * - Parameter
       - Description
     * - [window]
-      - if none of the -azs switches are used, you must provide the name of a window instead
+      - if none of the -azs switch is used, you must provide the name of a window instead
     * - <fontsize>
       - the size of the font, can be negative: it will then match the size of fonts in the font dialog
     * - <fontname>
@@ -74,9 +74,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.92 (06/01/1996)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.92 (06 Jan 1996)
 
 See also
 --------

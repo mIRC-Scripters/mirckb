@@ -1,7 +1,7 @@
 /abook
 ======
 
-/abook is used to open the Address Book dialog window. 
+**/abook** is used to open the Address Book dialog window.
 
 The nickname parameter can be used to open the address book to that specific user with the whois tab.
 
@@ -14,8 +14,8 @@ Synopsis
 
 .. code:: text
 
-  /abook -w [nickname]
-  /abook -chln
+    /abook -w [nickname]
+    /abook -chln
 
 Switches
 --------
@@ -24,7 +24,7 @@ Switches
     :widths: 15 85
     :header-rows: 1
 
-    * - Switches
+    * - Switch
       - Description
     * - -w
       - Open the whois tab
@@ -34,7 +34,7 @@ Switches
       - Open the highlight tab
     * - -l
       - Open the colors tab
-    * - -n 
+    * - -n
       - Open the notify tab
 
 Parameters
@@ -44,9 +44,9 @@ Parameters
     :widths: 15 85
     :header-rows: 1
 
-    * - Parameters
+    * - Parameter
       - Description
-    * - \<nickname\>
+    * - <nickname>
       - If -w is used to open the whois tab, this optional parameter can be used to specify which user from the address book to select. The user must already be in your address book.
 
 Example
@@ -54,25 +54,23 @@ Example
 
 .. code:: text
 
-  ;Open the address book, highlight tab
-  /abook -h
-  ;Open the address book and show Ahnk's whois info
-  /abook -w Ahnk
+    ;Open the address book, highlight tab
+    /abook -h
+    ;Open the address book and show Ahnk's whois info
+    /abook -w Ahnk
 
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
 
 .. hlist::
-  :columns: 4
+    :columns: 4
 
-  * :doc:`$abook </identifiers/abook>`
-  * :doc:`$cnick </identifiers/cnick>`
-  * :doc:`/cnick <cnick>`
-  * :doc:`/uwho <uwho>`
+    * :doc: `$abook </identifiers/$abook>`
+    * :doc: `$cnick </identifiers/$cnick>`
+    * :doc: `/cnick </commands/cnick>`
+    * :doc: `/uwho </commands/uwho>`

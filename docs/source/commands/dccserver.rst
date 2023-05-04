@@ -1,7 +1,7 @@
 /dccserver
 ==========
 
-The **/dccserver** commands lets you turn DCC server on or off. The dccserver can also be used to change the default mIRC DCC Server port. Using + or - you can add/remove listening for send, chat, and/or fserver.
+The **/dccserver commands** lets you turn DCC server on or off. The dccserver can also be used to change the default mIRC DCC Server port. Using + or - you can add/remove listening for send, chat, and/or fserver.
 
 .. note:: By default mIRC DCC Server operates on port 59.
 
@@ -80,9 +80,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -90,6 +88,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dccport </identifiers/dccport>`
-    * :doc:`$dccignore </identifiers/dccignore>`
-    * :doc:`/dcc <dcc>`
+    * :doc: `$dccport </identifiers/$dccport>`
+    * :doc: `$dccignore </identifiers/$dccignore>`
+    * :doc: `/dcc </commands/dcc>`

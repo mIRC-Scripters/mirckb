@@ -50,7 +50,7 @@ Example
 .. code:: text
 
     /* Suppose you are on #Foo;
-       Part #Foo with "moving on" message and join #Bar
+    Part #Foo with "moving on" message and join #Bar
     */
     /hop #Bar moving on
 
@@ -59,13 +59,11 @@ Compatibility
 
 Added: mIRC v5.71 (07 May 2000)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$chan </identifiers/chan>`
-    * :doc:`/partall <partall>`
+    * :doc: `$chan </identifiers/$chan>`
+    * :doc: `/partall </commands/partall>`

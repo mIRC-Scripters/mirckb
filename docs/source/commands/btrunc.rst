@@ -5,10 +5,10 @@ The **/btrunc** command can be used to truncate a file to a specific number of b
 
 Synopsis
 --------
- 
+
 .. code:: text
 
-	/btrunc <filename> <bytes>
+    /btrunc <filename> <bytes>
 
 Switches
 --------
@@ -19,54 +19,51 @@ Parameters
 ----------
 
 .. list-table::
-	:widths: 15 85
-	:header-rows: 1
+    :widths: 15 85
+    :header-rows: 1
 
-	* - Parameter
-	  - Description
-	* - <filename>
-	  - Filename of the file to be modified
-	* - <bytes>
-	  - Number of bytes to extend or trance the file by/to.
+    * - Parameter
+      - Description
+    * - <filename>
+      - Filename of the file to be modified
+    * - <bytes>
+      - Number of bytes to extend or trance the file by/to.
 
 Example
 -------
 
 .. code:: text
 
-	Alias Example {
-	  var %temp = Hello! World
-	  ;Write to a variable %temp's content
-	  bwrite Example 0 $len(%temp) %temp
-	  ;Truncate the file down to 6 bytes
-	  btrunc Example 6
-	  ;Read the file into a variable
-	  bread Example 0 $file(Example).size &Example
-	  ;Print out the variable's content
-	  echo -a $bvar(&Example,1,$bvar(&Example,0)).text
-	  ;Delete the file
-	  remove Example
-	}
+    Alias Example {
+    var %temp = Hello! World
+    ;Write to a variable %temp's content
+    bwrite Example 0 $len(%temp) %temp
+    ;Truncate the file down to 6 bytes
+    btrunc Example 6
+    ;Read the file into a variable
+    bread Example 0 $file(Example).size &Example
+    ;Print out the variable's content
+    echo -a $bvar(&Example,1,$bvar(&Example,0)).text
+    ;Delete the file
+    remove Example
+    }
 
 Compatibility
 -------------
 
-Added: mIRC v5.8 (05 Sep 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
+Added: mIRC v5.8 (14 Dec 2000)
 
 See also
 --------
 
 .. hlist::
-	:columns: 4
+    :columns: 4
 
-	* :doc:`$bvar </identifiers/bvar>`
-	* :doc:`$bfind </identifiers/bfind>`
-	* :doc:`/bcopy <bcopy>`
-	* :doc:`/bread <bread>`
-	* :doc:`/breplace <breplace>`
-	* :doc:`/bset <bset>`
-	* :doc:`/bwrite <bwrite>`
-	* :doc:`/bunset <bunset>`
+    * :doc: `$bvar </identifiers/$bvar>`
+    * :doc: `$bfind </identifiers/$bfind>`
+    * :doc: `/bcopy </commands/bcopy>`
+    * :doc: `/bread </commands/bread>`
+    * :doc: `/breplace </commands/breplace>`
+    * :doc: `/bset </commands/bset>`
+    * :doc: `/bwrite </commands/bwrite>`
+    * :doc: `/bunset </commands/bunset>`

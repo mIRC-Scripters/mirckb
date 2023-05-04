@@ -46,9 +46,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.81 (09 Nov 2000)
 
 See also
 --------
@@ -56,5 +54,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ip </identifiers/ip>`
-    * :doc:`$host </identifiers/host>`
+    * :doc: `$ip </identifiers/$ip>`
+    * :doc: `$host </identifiers/$host>`

@@ -1,7 +1,7 @@
 /load
 =====
 
-The **/load** command can be used to load any type of existing file of the types: aliases, popups, remote, users, and variables. Using /load on an already loaded file will update its contents while maintaining its order among other files. Note that unlike the :doc:`/reload <reload>` command, /load will trigger the ON load and ON START events.
+.. note:: that unlike the :doc: `/reload </commands/reload>` command, /load will trigger the ON LOAD and ON START events.
 
 Synopsis
 --------
@@ -22,25 +22,25 @@ Switches
     * - Switch
       - Description
     * - -a
-      - Load aliases file
+      - load aliases file
     * - -pm
-      - Load menubar popups file
+      - load menubar popups file
     * - -pn
-      - Load nicklist popups file
+      - load nicklist popups file
     * - -pq
-      - Load query popups file
+      - load query popups file
     * - -pc
-      - Load channel popups file
+      - load channel popups file
     * - -ps
-      - Load status window popups file
+      - load status window popups file
     * - -rsN
-      - Load remote script file
+      - load remote script file
     * - -rvN
-      - Load variable file
+      - load variable file
     * - -ruN
-      - Load users file
+      - load users file
     * - -N
-      - If you specify the N value with -rs or -a, it loads the file into the Nth position in the script list or alias list. In the absence of N, the file is loaded into the last position.
+      - if you specify the N value with -rs or -a, it loads the file into the Nth position in the script list or alias list. In the absence of N, the file is loaded into the last position.
 
 Parameters
 ----------
@@ -54,27 +54,26 @@ Parameters
     * - <filename>
       - The script file to load
 
-
-.. note:: In the absence of a path, assumes the file is located in $mircdir. Paths not beginning with drive letter or \ are relative to the location of $mircdir.
+.. note:: In the absence of a path, assumes the file is located in $mircdir. Paths not beginning with drive letter or \ are relative to the location of $mircdir.<br />
 
 .. note:: You can have samefilename.mrc and scripts\samefilename.mrc loaded at the same time. Do NOT load any script located in the downloads folder where someone can resume-send a script file on top of the file you have already loaded.
 
-.. note:: Default aliases file is aliases.ini and default popups file is popups.ini containing all 5 types of popups. Default setup has both filenames in scripts\ subfolder from $mircdir.
+.. note:: default aliases file is aliases.ini and default popups file is popups.ini containing all 5 types of popups. Default setup has both filenames in scripts\ subfolder from $mircdir.
 
 Example
 -------
 
-load three remote script files:
+Load three remote script files.
 
 .. code:: text
 
     alias load_remote {
-      load -rs foo.mrc
-      load -rs bar.mrc
-      load -rs baz.mrc
+    load -rs foo.mrc
+    load -rs bar.mrc
+    load -rs baz.mrc
     }
 
-Loads script file into the 2nd position of the 'view' menu in Alt+R editor. If it's already loaded, moves the file to that position. If contains ON LOAD or ON START event handler, this triggers the Initialization Warning and/or performs the event handler:
+Loads script file into the 2nd position of the 'view' menu in Alt+R editor. If it's already loaded, moves the file to that position. If contains ON LOAD or ON START event handler, this triggers the Initialization Warning and/or performs the event handler.
 
 .. code:: text
 
@@ -91,8 +90,8 @@ Load a variables and a users file:
 .. code:: text
 
     alias load_vars_and_users {
-      load -ru users2.ini
-      load -rv vars2.ini
+    load -ru users2.ini
+    load -rv vars2.ini
     }
 
 .. note:: If your aliases.ini was saved to a different file extension such as .mrc, it still needs to have the same scripting format used with the original filename. The only difference is that the disk file no longer is saved in the .ini format with lines beginning like n123=. Same applies with saving your users.ini and vars.ini files to other filetypes. However without the file extension being .ini, it's not possible to edit the 5 types of popups sharing the same filename, and -ru and -rv can't share the same filename either.
@@ -101,21 +100,19 @@ Compatibility
 -------------
 
 Added: mIRC v3.8 (25 Nov 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$script </identifiers/script>`
-    * :doc:`$window </identifiers/window>`
-    * :doc:`/filter <filter>`
-    * :doc:`/loadbuf <loadbuf>`
-    * :doc:`/reload <reload>`
-    * :doc:`/save <save>`
-    * :doc:`/savebuf <savebuf>`
-    * :doc:`/unload <unload>`
-    * :doc:`/window <window>`
+    * :doc: `$script </identifiers/$script>`
+    * :doc: `$script </identifiers/$script>`
+    * :doc: `$window </identifiers/$window>`
+    * :doc: `/filter </commands/filter>`
+    * :doc: `/loadbuf </commands/loadbuf>`
+    * :doc: `/reload </commands/reload>`
+    * :doc: `/save </commands/save>`
+    * :doc: `/savebuf </commands/savebuf>`
+    * :doc: `/unload </commands/unload>`
+    * :doc: `/window </commands/window>`

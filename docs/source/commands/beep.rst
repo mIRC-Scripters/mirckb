@@ -40,9 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.3 (21 Jun 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.2 (02 May 1995)
 
 See also
 --------
@@ -50,9 +48,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$vol </identifiers/vol>`
-    * :doc:`$ebeeps </identifiers/ebeeps>`
-    * :doc:`/ebeeps <ebeeps>`
-    * :doc:`/sound <sound>`
-    * :doc:`/speak <speak>`
-    * :doc:`/vol <vol>`
+    * :doc: `$vol </identifiers/$vol>`
+    * :doc: `$ebeeps </identifiers/$ebeeps>`
+    * :doc: `/ebeeps </commands/ebeeps>`
+    * :doc: `/sound </commands/sound>`
+    * :doc: `/speak </commands/speak>`
+    * :doc: `/vol </commands/vol>`

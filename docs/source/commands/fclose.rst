@@ -1,7 +1,7 @@
 /fclose
 =======
 
-The **/fclose** command closes a file open that was previously opened via the **/fopen** command. This command supports a wildcard pattern for its handle name.
+The **/fclose** command closes a file open that was previously opened via the :doc: `/fopen </commands/fopen>` command. This command supports a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` pattern for its handle name.
 
 Synopsis
 --------
@@ -23,7 +23,7 @@ Switches
     * - <handle>
       - The name of the handle
     * - <wild_handle>
-      - A wildcard handle pattern
+      - A :doc: `wildcard </intermediate/matching_tools.html#wildcard>` handle pattern
 
 Parameters
 ----------
@@ -36,20 +36,18 @@ Example
 .. code:: text
 
     alias example {
-      ;open the file
-      .fopen -o x example.txt
-      ;write to it
-      .fwrite x Print this line.
-      ;close the file handle
-      .fclose x
+    ;open the file
+    .fopen -o x example.txt
+    ;write to it
+    .fwrite x Print this line.
+    ;close the file handle
+    .fclose x
     }
 
 Compatibility
 -------------
 
-Added: mIRC v6.1 (29 Aug 2003)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v6.1 (17 Feb 2006)
 
 See also
 --------
@@ -57,13 +55,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$fopen </identifiers/fopen>`
-    * :doc:`$fread </identifiers/fread>`
-    * :doc:`$fgetc </identifiers/fgetc>`
-    * :doc:`$feof </identifiers/feof>`
-    * :doc:`$ferr </identifiers/ferr>`
-    * :doc:`$file </identifiers/file>`
-    * :doc:`/flist <flist>`
-    * :doc:`/fopen <fopen>`
-    * :doc:`/fseek <fseek>`
-    * :doc:`/fwrite <fwrite>`
+    * :doc: `$fopen </identifiers/$fopen>`
+    * :doc: `$fread </identifiers/$fread>`
+    * :doc: `$fgetc </identifiers/$fgetc>`
+    * :doc: `$feof </identifiers/$feof>`
+    * :doc: `$ferr </identifiers/$ferr>`
+    * :doc: `$file </identifiers/$file>`
+    * :doc: `/flist </commands/flist>`
+    * :doc: `/fopen </commands/fopen>`
+    * :doc: `/fseek </commands/fseek>`
+    * :doc: `/fwrite </commands/fwrite>`

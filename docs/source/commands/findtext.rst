@@ -25,14 +25,7 @@ Switches
 Parameters
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Parameter
-      - Description
-    * - <text>
-      - the text to look for.
+<text> the text to look for.
 
 Example
 -------
@@ -42,9 +35,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.6 (03/06/1999)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.6 (23 Sep 1999)
 
 See also
 --------

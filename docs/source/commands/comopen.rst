@@ -1,7 +1,7 @@
 /comopen
 ========
 
-The **/comopen** command opens a COM connection to specified programmatic identifier with the assigned name. Your script should check **$comerr** after opening the connection to make sure the connection was established successfully.
+The **/comopen** command opens a COM connection to specified programmatic identifier with the assigned name. Your script should check :doc: `$comerr </identifiers/$comerr>` after opening the connection to make sure the connection was established successfully.
 
 Synopsis
 --------
@@ -25,9 +25,9 @@ Parameters
     * - Parameter
       - Description
     * - <name>
-      - Connection name to be used 
+      - Connection name to be used
     * - <progid>
-      - Programmatic Identifier 
+      - Programmatic Identifier
 
 Example
 -------
@@ -35,11 +35,11 @@ Example
 .. code:: text
 
     Alias Example {
-      ;Create a WshShell object 
-      comopen Example wscript.shell
+    ;Create a WshShell object
+    comopen Example wscript.shell
 
-      ;Destroy object
-      comclose Example
+    ;Destroy object
+    comclose Example
     }
 
 .. code:: text
@@ -48,24 +48,22 @@ Example
     ; and be careful about mIRC interpreting % & and other special characters
     //sendkeys {ESC}%o{END}{UP 2}%bText In mIRC Titlebar+{TAB}{ENTER}
     alias sendkeys {
-      ; trying to create unique WshShell object
-      var %name sendkeys $+ $ticks $+ $rand(111,9999)
-      .comopen %name WScript.Shell
-      if (!$comerr) {
-        var %result $com(%name,SendKeys,3,bstr,$1-)
-        ;Destroy object when finished with it
-        .comclose %name
-        return %result
-      }
-      return 0
+    ; trying to create unique WshShell object
+    var %name sendkeys $+ $ticks $+ $rand(111,9999)
+    .comopen %name WScript.Shell
+    if (!$comerr) {
+    var %result $com(%name,SendKeys,3,bstr,$1-)
+    ;Destroy object when finished with it
+    .comclose %name
+    return %result
+    }
+    return 0
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.9 (26 Apr 2001)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.9 (15 Jun 2001)
 
 See also
 --------
@@ -73,10 +71,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </identifiers/com>`
-    * :doc:`$comcall </identifiers/comcall>`
-    * :doc:`$comval </identifiers/comval>`
-    * :doc:`$comerr </identifiers/comerr>`
-    * :doc:`/comclose <comclose>`
-    * :doc:`/comreg <comreg>`
-    * :doc:`/comlist <comlist>`
+    * :doc: `$com </identifiers/$com>`
+    * :doc: `$comcall </identifiers/$comcall>`
+    * :doc: `$comval </identifiers/$comval>`
+    * :doc: `$comerr </identifiers/$comerr>`
+    * :doc: `/comclose </commands/comclose>`
+    * :doc: `/comreg </commands/comreg>`
+    * :doc: `/comlist </commands/comlist>`

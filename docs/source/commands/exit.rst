@@ -1,7 +1,7 @@
 /exit
 =====
 
-The **/exit** command can be used to safely close and exit mIRC.
+The **exit** command can be used to safely close and exit mIRC.
 
 .. note:: As of version 7.11 /exit -r will also pass the -i, -r, -noreg, and -portable command line parameters to the new mIRC.
 
@@ -44,13 +44,11 @@ Compatibility
 
 Added: mIRC v3.3 (21 Jun 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/load <load>`
-    * :doc:`/unload <unload>`
+    * :doc: `/load </commands/load>`
+    * :doc: `/unload </commands/unload>`

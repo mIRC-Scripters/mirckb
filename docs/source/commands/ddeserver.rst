@@ -59,9 +59,7 @@ will output:
 Compatibility
 -------------
 
-Added: mIRC v3.9 (28 Dec 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.9 (06 Jan 1996)
 
 See also
 --------
@@ -69,7 +67,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dde </identifiers/dde>`
-    * :doc:`$isdde </identifiers/isdde>`
-    * :doc:`$ddename </identifiers/ddename>`
-    * :doc:`/dde <dde>`
+    * :doc: `$dde </identifiers/$dde>`
+    * :doc: `$isdde </identifiers/$isdde>`
+    * :doc: `$ddename </identifiers/$ddename>`
+    * :doc: `/dde </commands/dde>`

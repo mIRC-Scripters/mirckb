@@ -1,7 +1,7 @@
 /auser
 ======
 
-The **/auser** command adds or edits an entry in mIRC's user list (the user tab of the script editor).
+The **/auser** command Add or edit an entry in mIRC's User List (the User tab of the Script Editor).
 
 Synopsis
 --------
@@ -48,7 +48,7 @@ Example
     /auser 5 *!*@Example.com Cool people
 
     ;Add another level for the same address
-    ;10,=5:*!*@Example.com Cool people 
+    ;10,=5:*!*@Example.com Cool people
     /auser -a 10 *!*@Example.com
 
     ;Remove Address
@@ -67,19 +67,17 @@ Compatibility
 
 Added: mIRC v2.1a (28 Feb 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </identifiers/ulevel>`
-    * :doc:`$ulist </identifiers/ulist>`
-    * :doc:`/flush <flush>`
-    * :doc:`/guser <guser>`
-    * :doc:`/iuser <iuser>`
-    * :doc:`/rlevel <rlevel>`
-    * :doc:`/ruser <ruser>`
-    * :doc:`/ulist <ulist>`
+    * :doc: `$ulevel </identifiers/$ulevel>`
+    * :doc: `$ulist </identifiers/$ulist>`
+    * :doc: `/flush </commands/flush>`
+    * :doc: `/guser </commands/guser>`
+    * :doc: `/iuser </commands/iuser>`
+    * :doc: `/rlevel </commands/rlevel>`
+    * :doc: `/ruser </commands/ruser>`
+    * :doc: `/ulist </commands/ulist>`

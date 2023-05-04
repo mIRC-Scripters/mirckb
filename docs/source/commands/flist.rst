@@ -1,7 +1,7 @@
 /flist
 ======
 
-The **/flist** command lists all open files, or those matching the specified name, which can be a wildcard expression.
+**/flist** lists all open files, or those matching the specified name, which can be a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression.
 
 Synopsis
 --------
@@ -25,7 +25,7 @@ Parameters
     * - Parameter
       - Description
     * - name
-      - a wildcard expression
+      - a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression
 
 Example
 -------
@@ -38,9 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.1 (29 Aug 2003)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v6.1 (17 Feb 2006)
 
 See also
 --------
@@ -48,11 +46,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$fopen </identifiers/fopen>`
-    * :doc:`$fread </identifiers/fread>`
-    * :doc:`$ferr </identifiers/ferr>`
-    * :doc:`$feof </identifiers/feof>`
-    * :doc:`/fclose <fclose>`
-    * :doc:`/fopen <fopen>`
-    * :doc:`/fseek <fseek>`
-    * :doc:`/fwrite <fwrite>`
+    * :doc: `$fopen </identifiers/$fopen>`
+    * :doc: `$fread </identifiers/$fread>`
+    * :doc: `$ferr </identifiers/$ferr>`
+    * :doc: `$feof </identifiers/$feof>`
+    * :doc: `/fclose </commands/fclose>`
+    * :doc: `/fopen </commands/fopen>`
+    * :doc: `/fseek </commands/fseek>`
+    * :doc: `/fwrite </commands/fwrite>`

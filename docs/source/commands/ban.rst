@@ -46,11 +46,11 @@ Parameters
       - The optionnal kick message.
 
 Example
---------
+-------
 
 .. code:: text
 
-    ;Ban Foo's address (type 2) in the active channel window 
+    ;Ban Foo's address (type 2) in the active channel window
     /ban Foo 2
 
     ;Ban/Kick Mike202 from the active channel with a kick message of "Owned!"
@@ -66,17 +66,15 @@ Compatibility
 
 Added: mIRC v2.1a (28 Feb 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$banmask </identifiers/banmask>`
-    * :doc:`$bnick </identifiers/bnick>`
-    * :doc:`$ibl </identifiers/ibl>`
-    * :doc:`$address </identifiers/address>`
-    * :doc:`$chan </identifiers/chan>`
-    * :doc:`$nick </identifiers/nick>`
+    * :doc: `$banmask </identifiers/$banmask>`
+    * :doc: `$bnick </identifiers/$bnick>`
+    * :doc: `$ibl </identifiers/$ibl>`
+    * :doc: `$address </identifiers/$address>`
+    * :doc: `$chan </identifiers/$chan>`
+    * :doc: `$nick </identifiers/$nick>`

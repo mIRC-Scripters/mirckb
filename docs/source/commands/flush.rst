@@ -46,7 +46,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.8 (25/11/1995)
+Added: mIRC vmIRC 3.8 ()
 
 See also
 --------

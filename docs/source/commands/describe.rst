@@ -1,7 +1,7 @@
 /describe
 =========
 
-The **/describe** command sends an action message to a specific channel or person. This command is the same the **/me** command except you can set a destination channel or nick other then the active window.
+The **/describe** command sends an action message to a specific channel or person. This command is the same the :doc: `/me command </commands/me>` except you can set a destination channel or nick other then the active window.
 
 Synopsis
 --------
@@ -36,7 +36,7 @@ Example
 
     ;When someone says 'moo', we will reply
     On *:Text:moo:#:{
-       describe $chan moos back!
+    describe $chan moos back!
     }
 
 Compatibility
@@ -44,18 +44,16 @@ Compatibility
 
 Added: mIRC v3.1 (23 Apr 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/ame <ame>`
-    * :doc:`/amsg <amsg>`
-    * :doc:`/me <me>`
-    * :doc:`/msg <msg>`
-    * :doc:`/qme <qme>`
-    * :doc:`/qmsg <qmsg>`
-    * :doc:`/say <say>`
+    * :doc: `/ame </commands/ame>`
+    * :doc: `/amsg </commands/amsg>`
+    * :doc: `/me </commands/me>`
+    * :doc: `/msg </commands/msg>`
+    * :doc: `/qme </commands/qme>`
+    * :doc: `/qmsg </commands/qmsg>`
+    * :doc: `/say </commands/say>`

@@ -28,7 +28,7 @@ Parameters
       - a specific topic to lookup
 
 Example
---------
+-------
 
 .. code:: text
 
@@ -38,8 +38,6 @@ Compatibility
 -------------
 
 Added: mIRC v2.1a (28 Feb 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
 
 See also
 --------

@@ -47,17 +47,15 @@ Compatibility
 
 Added: mIRC v4.0 (20 Mar 1996)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$remote </identifiers/remote>`
-    * :doc:`$rawmsg </identifiers/rawmsg>`
-    * :doc:`/ctcps <ctcps>`
-    * :doc:`/raw <raw>`
-    * :doc:`/remote <remote>`
-    * :doc:`/commands <commands>`
+    * :doc: `$remote </identifiers/$remote>`
+    * :doc: `$rawmsg </identifiers/$rawmsg>`
+    * :doc: `/ctcps </commands/tcp-socket>`
+    * :doc: `/raw </commands/raw>`
+    * :doc: `/remote </commands/remote>`
+    * :doc: `/commands </commands/commands>`

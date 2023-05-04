@@ -95,7 +95,7 @@ Playback Options
 Volume Options
 ^^^^^^^^^^^^^^
 
-You can control the volume of your system (and, therefore, of the music played in mIRC) with the :doc:`/vol <commands/vol>` command.
+You can control the volume of your system (and, therefore, of the music played in mIRC) with the :doc:`/vol </commands/vol>` command.
 
 Synopsis
 ~~~~~~~~
@@ -137,7 +137,7 @@ Synopsis
 
     on <level>:mp3end|midiend|waveend|songend:<commands>
 
-The local identifier, :doc:`$filename <aliases/filename>` will return the complete file name that has finished playing.
+The local identifier, :doc:`$filename </identifiers/filename>` will return the complete file name that has finished playing.
 
 Any useful $identifier I can use?
 ---------------------------------

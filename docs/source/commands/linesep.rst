@@ -1,10 +1,12 @@
 /linesep
 ========
 
-The **/linesep** command prints the line separator at a specified target. With no arguments, the line separator is printed to the active window. A line separator is only added if it would not be the first line and if the last line is not already the line separator.
+The **/linesep** command prints the line separator at a specified target. With no arguments, the line separator is printed to the active window. A line separator is only added if it would not be the first line and if the last line is not already the line separator.<br />
 The line separator can be changed by going into the options dialog (Alt+O) -> Other -> Line separator. If this option dialog shows the line separator is blank, /linesep does not add a blank line. You can also set the line separator to multiple characters like -/- and the entire string is used as the line separator.
 
-If your goal is to simply enclose your text with a pair of line separator, note that:
+If your goal is to simply enclose your text with a pair of line separator:
+
+.. note:: that:
 
 .. code:: text
 
@@ -23,7 +25,7 @@ Synopsis
 
     /linesep [ @window | #channel | query | -s | -a ]
 
-.. note:: Default is -a if no parameter is used.
+.. note:: default is -a if no parameter is used.
 
 Switches
 --------
@@ -54,23 +56,24 @@ Parameters
       - The target @window, #channel, or query
 
 Example
---------
+-------
+
 A simple line separator between two lines:
 
 .. code:: text
 
     alias example {
-      ; create our example window
-      window -de @example -1 -1 400 400
+    ; create our example window
+    window -de @example -1 -1 400 400
 
-      ; print a simple line
-      aline @example Line A.
+    ; print a simple line
+    aline @example Line A.
 
-      ; add a line separator
-      linesep @example
+    ; add a line separator
+    linesep @example
 
-      ; print another simple line
-      aline @example Line B.
+    ; print another simple line
+    aline @example Line B.
 
     The following /linesep command does nothing because the last line is already the line separator character.
     //echo -a $readini($mircini,text,linesep) | /linesep -a
@@ -80,9 +83,7 @@ A simple line separator between two lines:
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------
@@ -90,6 +91,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/aline <aline>`
-    * :doc:`/dline <dline>`
-    * :doc:`/echo <echo>`
+    * :doc: `/aline </commands/aline>`
+    * :doc: `/dline </commands/dline>`
+    * :doc: `/echo </commands/echo>`

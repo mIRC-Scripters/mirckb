@@ -1,11 +1,11 @@
 /disable
 ========
 
-The **/disable** command disables the specified groups in all scripts. You can also specify a wildcard to disable all matching groups.
+The **/disable** command disables the specified groups in all scripts. You can also specify a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` to disable all matching groups.
 
 Synopsis
 --------
- 
+
 .. code:: text
 
     /disable <group1 group2 ... groupN>
@@ -28,7 +28,7 @@ Parameters
     * - <group1 group2 ... groupN>
       - a list with complete name of the groups to be disabled seperated by spaces
     * - <wildcard_expression>
-      - a wildcard expression, all matching groups are disabled
+      - a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` expression, all matching groups are disabled
 
 Example
 -------
@@ -36,7 +36,7 @@ Example
 .. code:: text
 
     /disable #one #two #three
-    ;or
+    or
     /disable #*o*
 
 .. code:: text
@@ -48,9 +48,7 @@ First example disables the three groups specified while the second would only di
 Compatibility
 -------------
 
-Added: mIRC v3.5 (07 Aug 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.5 (13 Aug 1995)
 
 See also
 --------
@@ -58,6 +56,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$group </identifiers/group>`
-    * :doc:`/enable <enable>`
-    * :doc:`/groups <groups>`
+    * :doc: `$group </identifiers/$group>`
+    * :doc: `/enable </commands/enable>`
+    * :doc: `/groups </commands/groups>`

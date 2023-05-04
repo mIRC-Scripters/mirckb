@@ -30,15 +30,12 @@ Parameters
 None
 
 Example
----------
-
-None
+-------
 
 Compatibility
 -------------
-Added: mIRC v4.0
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v4.0 (20 Mar 1996)
 
 See also
 --------
@@ -46,6 +43,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$groups </identifiers/groups>`
-    * :doc:`/disable <disable>`
-    * :doc:`/enable <enable>`
+    * :doc: `$groups </identifiers/$groups>`
+    * :doc: `/disable </commands/disable>`
+    * :doc: `/enable </commands/enable>`

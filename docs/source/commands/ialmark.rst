@@ -1,7 +1,7 @@
 /ialmark
 ========
 
-The **/ialmark** command marks the IAL entry for a nickname with the specified text.
+The **ialmark** command marks the IAL entry for a nickname with the specified text with an optional alternate name for the mark. In effect, it's like a hashtable for each nick where each item must have a string attached to it
 
 Synopsis
 --------
@@ -24,9 +24,11 @@ Switches
     * - -r
       - removes the mark
     * - -w
-      - used with -rn to treat name as wildcard
+      - used with -rn to treat name as :doc: `wildcard </intermediate/matching_tools.html#wildcard>`
 
-Marks can be accessed using ``$ialmark(nick,N/name)`` and properties **name** and **mark**.
+Marks can be accessed using :doc: `$ialmark(nick,N/name) </identifiers/$ialmark>` and properties 'name' and 'mark'.
+
+Marks are removed if the nick is removed from the nicklist, either from no longer being in a channel with them, or by /ialclear or by being disconnected from that server. You cannot have a named-mark without it having a value. The mark does follow the nick to the new nick after a nick change.
 
 Parameters
 ----------
@@ -47,16 +49,26 @@ Example
 
 .. code:: text
 
-    ;Mark the nickname with the text "test"
+    ;If the nick Ouims is in the $ial, marks the nick Ouims with the named-mark 'default' containing the text 'test'
     /ialmark Ouims test
-
+    ;If you are in the $ial, adds a mark to your nick named 'foo' containing the text 'bar'
+    //ialmark -n $me foo bar
+    ;Remove the named-mark 'default' (any parameters after the nick are ignored)
+    //ialmark -r $me foo bar
+    ;Remove the named-mark 'foo'
+    //ialmark -rn $me foo
+    ;removes all named wildcard mark names beginning with 'f'
+    //ialmark -rnw $me f*
+    ;removes all named wildcard marks beginning with 'd' including the default 'default'
+    ;informs whether the named-mark 'default' exists, and if so whether it contains a mark value
+    //ialmark $me
+    ;informs whether the named-mark 'foo' exists, and if so whether it contains a mark value
+    //ialmark $me foo
 
 Compatibility
 -------------
 
-Added: mIRC v5.9 (26 Apr 2001)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.9 (15 Jun 2001)
 
 See also
 --------
@@ -64,8 +76,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/ialclear <ialclear>`
-    * :doc:`/ial <ial>`
-    * :doc:`$ial </identifiers/ial>`
-    * :doc:`$address </identifiers/address>`
-    * :doc:`$ialchan </identifiers/ialchan>`
+    * :doc: `$ialmark </identifiers/$ialmark>`
+    * :doc: `/ialclear </commands/ialclear>`
+    * :doc: `/ial </commands/ial>`
+    * :doc: `$ial </identifiers/$ial>`
+    * :doc: `$address </identifiers/$address>`
+    * :doc: `$fulladdress </identifiers/$fulladdress>`
+    * :doc: `$ialchan </identifiers/$ialchan>`

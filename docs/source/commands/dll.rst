@@ -9,6 +9,7 @@ Synopsis
 .. code:: text
 
     /dll <libName.dll> <funcName> [data]
+    /dll -m <callback> <libName.dll> <funcName> [data]
     /dll -u <libName.dll>
 
 Switches
@@ -22,8 +23,10 @@ Switches
       - Description
     * - -u
       - Unload the given loaded library.
+    * - -m
+      - Call the procname in a new thread and call the alias <callback> when finished
 
-.. note:: If you pass only a filename, (for example "test.dll", instead of /folder/test.dll or c:\fullpath\test.dll), /dll -u will begin with N=1 looking into the whole list of dlls for a match between $nopath($dll(Nth)) instead of looking into $mircdir only or looking in $mircdir first.
+.. note:: if you pass only a filename, (for example "test.dll", instead of /folder/test.dll or c:\fullpath\test.dll), /dll -u will begin with N=1 looking into the whole list of dlls for a match between $nopath($dll(Nth)) instead of looking into $mircdir only or looking in $mircdir first.
 
 Parameters
 ----------
@@ -46,21 +49,21 @@ Parameters
 Examples
 --------
 
-Look at the DLL article to see how to use a dll as well as how to create them.
+Look at the :doc: `dll </advanced/dll>` article to see how to use a dll as well as how to create them.
 
-Silently fails if $dll(1) contains a space:
+silently fails if $dll(1) contains a space:
 
 .. code:: text
 
     //if ($dll(1)) dll -u $dll(1)
 
-Works whether or not $dll(1) contains a space:
+works whether or not $dll(1) contains a space:
 
 .. code:: text
 
     //if ($dll(1)) dll -u $qt($dll(1))
 
-If $dll(1) is $mircdir $+ subdir\foo.dll and $dll(2) is $mircdir $+ foo.dll
+if $dll(1) is $mircdir $+ subdir\foo.dll and $dll(2) is $mircdir $+ foo.dll
 "/dll -u foo.dll" matches the 1st index matching $nopath(foo.dll), so it removes subdir\foo.dll unless that were loaded last. But "/dll -u $qt($dll(2))" removes the foo.dll not located in the subdir.
 
 .. code:: text
@@ -86,9 +89,7 @@ used for loading a dll is roughly equivalent to
 Compatibility
 -------------
 
-Added: mIRC v5.6 (03 Jun 1999)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.6 (23 Sep 1999)
 
 See also
 --------
@@ -96,6 +97,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dll </identifiers/dll>`
-    * :doc:`$dllcall </identifiers/dllcall>`
-    * :doc:`sendmessage <sendmessage>`
+    * :doc: `$dll </identifiers/$dll>`
+    * :doc: `$dllcall </identifiers/$dllcall>`
+    * :doc: `sendmessage </advanced/sendmessage>`

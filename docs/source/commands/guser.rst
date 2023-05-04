@@ -1,7 +1,7 @@
 /guser
 ======
 
-The **/guser** command looks up the address of the specified nick and adds it to the user list. It does this by doing a **/userhost** on the given nickname, and returning an address in the format specified by [type]. If [type] is not specified then a default address format is selected.
+The **/guser** command looks up the address of the specified nick and adds it to the user list. It does this by doing a :doc: `/userhost </commands/userhost>` on the given nickname, and returning an address in the format specified by [type]. If [type] is not specified then a default address format is selected.
 
 Synopsis
 --------
@@ -36,28 +36,24 @@ Parameters
     * - <nick>
       - the nickname you want to add the address from
     * - [type]
-      - if not specified, mIRC uses a default type: 6
+      - if not specified, mIRC use a default type: 6
     * - [info]
       - append text to the entry that is added to the users list
 
 Example
 -------
 
-.. code:: text
-
-    alias F12 {
-      ; Adds $1 to Users - Level 20
-      guser 20 $$1 2 $1
-      ; Toggles nick color to Yellow in the Users List
-      cline -hlm 8 $chan $1
-    }
+alias F12 {
+  ; Adds $1 to Users - Level 20
+  guser 20 $$1 2 $1   
+  ; Toggles nick color to Yellow in the Users List             
+  cline -hlm 8 $chan $1             
+}
 
 Compatibility
 -------------
 
-Added: 3.3 - 3.4
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.3 - 3.4 ()
 
 See also
 --------
@@ -65,10 +61,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </identifiers/ulevel>`
-    * :doc:`/auser <auser>`
-    * :doc:`/flush <flush>`
-    * :doc:`/iuser <iuser>`
-    * :doc:`/rlevel <rlevel>`
-    * :doc:`/ruser <ruser>`
-    * :doc:`/ulist <ulist>`
+    * :doc: `$ulevel </identifiers/$ulevel>`
+    * :doc: `/auser </commands/auser>`
+    * :doc: `/flush </commands/flush>`
+    * :doc: `/iuser </commands/iuser>`
+    * :doc: `/rlevel </commands/rlevel>`
+    * :doc: `/ruser </commands/ruser>`
+    * :doc: `/ulist </commands/ulist>`

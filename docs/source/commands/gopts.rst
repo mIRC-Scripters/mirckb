@@ -1,7 +1,7 @@
 /gopts
 ======
 
-The **/gopts** command is used to sets various option of a loaded agent.
+The **gopts** command is used to sets various option of a loaded agent
 
 Synopsis
 --------
@@ -66,9 +66,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (02 Feb 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.7 (07 May 2000)
 
 See also
 --------
@@ -76,18 +74,18 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/ghide </ghide>`
-    * :doc:`/gunload </gunload>`
-    * :doc:`/gshow </gshow>`
-    * :doc:`/gload </gload>`
-    * :doc:`/gsize </gsize>`
-    * :doc:`/gtalk </gtalk>`
-    * :doc:`/gplay </gplay>`
-    * :doc:`/gpoint </gpoint>`
-    * :doc:`/gstop </gstop>`
-    * :doc:`/gmove </gmove>`
-    * :doc:`/gqreq </gqreq>`
-    * :doc:`$agentver <$agentver>`
-    * :doc:`$agentstat <$agentstat>`
-    * :doc:`$agentname <$agentname>`
-    * :doc:`$agent <$agent>`
+    * :doc: `/ghide </commands/ghide>`
+    * :doc: `/gunload </commands/gunload>`
+    * :doc: `/gshow </commands/gshow>`
+    * :doc: `/gload </commands/gload>`
+    * :doc: `/gsize </commands/gsize>`
+    * :doc: `/gtalk </commands/gtalk>`
+    * :doc: `/gplay </commands/gplay>`
+    * :doc: `/gpoint </commands/gpoint>`
+    * :doc: `/gstop </commands/gstop>`
+    * :doc: `/gmove </commands/gmove>`
+    * :doc: `/gqreq </commands/gqreq>`
+    * :doc: `$agentver </identifiers/$agentver>`
+    * :doc: `$agentstat </identifiers/$agentstat>`
+    * :doc: `$agentname </identifiers/$agentname>`
+    * :doc: `$agent </identifiers/$agent>`

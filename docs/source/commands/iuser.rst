@@ -30,7 +30,7 @@ Parameters
       - If not provided, clear the info
 
 Example
---------
+-------
 
 .. code:: text
 
@@ -45,19 +45,17 @@ Compatibility
 
 Added: mIRC v2.1a (28 Feb 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </identifiers/ulevel>`
-    * :doc:`$ulist </identifiers/ulist>`
-    * :doc:`/flush <flush>`
-    * :doc:`/guser <guser>`
-    * :doc:`/auser <auser>`
-    * :doc:`/rlevel <rlevel>`
-    * :doc:`/ruser <ruser>`
-    * :doc:`/ulist <ulist>`
+    * :doc: `$ulevel </identifiers/$ulevel>`
+    * :doc: `$ulist </identifiers/$ulist>`
+    * :doc: `/flush </commands/flush>`
+    * :doc: `/guser </commands/guser>`
+    * :doc: `/auser </commands/auser>`
+    * :doc: `/rlevel </commands/rlevel>`
+    * :doc: `/ruser </commands/ruser>`
+    * :doc: `/ulist </commands/ulist>`

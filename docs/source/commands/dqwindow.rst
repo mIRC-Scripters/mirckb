@@ -8,8 +8,8 @@ You can determine if the DQ Window is on or off with this alias:
 .. code:: text
 
     alias is_dqwindow {
-      saveini
-      return $iif($gettok($readini($mircini, n, options, n0), 22, 44), $true, $false)
+    saveini
+    return $iif($gettok($readini($mircini, n, options, n0), 22, 44), $true, $false)
     }
 
 Synopsis
@@ -43,6 +43,8 @@ Parameters
       - Hides the DQ window
     * - min
       - Minimizes the DQ window
+    * - close
+      - Closes the DQ window
 
 .. note:: Using this command without parameters displays a message indicating whether the DQ Window is 'on' or 'off'.
 
@@ -64,9 +66,7 @@ Will print:
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -74,8 +74,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$me </identifiers/me>`
-    * :doc:`$nick </identifiers/nick>`
-    * :doc:`/close <close>`
-    * :doc:`/closemsg <closemsg>`
-    * :doc:`/window <window>`
+    * :doc: `$me </identifiers/$me>`
+    * :doc: `$nick </identifiers/$nick>`
+    * :doc: `/close </commands/close>`
+    * :doc: `/closemsg </commands/closemsg>`
+    * :doc: `/window </commands/window>`

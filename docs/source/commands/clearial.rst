@@ -1,7 +1,7 @@
 /clearial
 =========
 
-.. warning:: This feature has essentially been replaced by **/ialclear** command.
+.. attention:: This feature has essentially been replaced by :doc:`/ialclear </commands/ialclear>`.
 
 The **/clearial** command clears the IAL; If a nickname is specified, it will clear that nickname's entry
 
@@ -48,16 +48,14 @@ Compatibility
 
 Added: mIRC v5.71 (07 May 2000)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$ial </identifiers/ial>`
-    * :doc:`$address </identifiers/address>`
-    * :doc:`/ial <ial>`
-    * :doc:`/ialclear <ialclear>`
-    * :doc:`/ialmark <ialmark>`
+    * :doc: `$ial </identifiers/$ial>`
+    * :doc: `$address </identifiers/$address>`
+    * :doc: `/ial </commands/ial>`
+    * :doc: `/ialclear </commands/ialclear>`
+    * :doc: `/ialmark </commands/ialmark>`

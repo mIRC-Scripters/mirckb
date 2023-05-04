@@ -1,9 +1,9 @@
 /ial
 ====
 
-The **/ial** command turns IAL (Internal Address List) on or off. If no on/off parameter is used, it will display the IAL status.
+The **ial** command turns IAL (Internal Address List) on or off. If no on/off parameter is used, it will display the IAL status
 
-.. note:: This setting is not persistent across sessions and resets to on every time mIRC is run.
+.. note:: this setting is not persistent across sessions and resets to on every time mIRC is run.
 
 Synopsis
 --------
@@ -37,13 +37,10 @@ Example
     ;Turns IAL off
     /ial off
 
-
 Compatibility
 -------------
 
-Added: mIRC v4.7 (09 Dec 1996)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v4.7 (09 Jan 1997)
 
 See also
 --------
@@ -51,8 +48,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/ialclear <ialclear>`
-    * :doc:`/ialmark <ialmark>`
-    * :doc:`$ial </identifiers/ial>`
-    * :doc:`$address </identifiers/address>`
-    * :doc:`$ialchan </identifiers/ialchan>`
+    * :doc: `/ialclear </commands/ialclear>`
+    * :doc: `/ialmark </commands/ialmark>`
+    * :doc: `$ial </identifiers/$ial>`
+    * :doc: `$address </identifiers/$address>`
+    * :doc: `$ialchan </identifiers/$ialchan>`

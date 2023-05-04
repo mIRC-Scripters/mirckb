@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-	/bunset &binvar [&binvar [&binvar ...]]
+    /bunset &binvar [&binvar [&binvar ...]]
 
 Switches
 --------
@@ -19,51 +19,49 @@ Parameters
 ----------
 
 .. list-table::
-	:widths: 15 85
-	:header-rows: 1
+    :widths: 15 85
+    :header-rows: 1
 
-	* - Parameter
-	  - Description
-	* - &binvar
-	  - The name of the binary variable to unset
+    * - Parameter
+      - Description
+    * - &binvar
+      - The name of the binary variable to unset
 
 Example
 -------
 
 .. code:: text
 
-	Alias Example {
-	  ;Create a binary variable
-	  bset -t &Example 1 cool text
+    Alias Example {
+    ;Create a binary variable
+    bset -t &Example 1 cool text
 
-	  ;Print out its content
-	  echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
+    ;Print out its content
+    echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
 
-	  ;Unset the variable
-	  bunset &Example
+    ;Unset the variable
+    bunset &Example
 
-	  ;Print out its content ($null)
-	  echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
-	}
+    ;Print out its content ($null)
+    echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
+    }
 
 Compatibility
 -------------
 
-Added: mIRC v5.7 (02 Feb 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.7 (07 May 2000)
 
 See also
 --------
 
 .. hlist::
-	:columns: 4
+    :columns: 4
 
-	* :doc:`$bvar </identifiers/bvar>`
-	* :doc:`$bfind </identifiers/bfind>`
-	* :doc:`/bread <bread>`
-	* :doc:`/breplace <breplace>`
-	* :doc:`/bwrite <bwrite>`
-	* :doc:`/bset <bset>`
-	* :doc:`/bcopy <bcopy>`
-	* :doc:`/btrunc <btrunc>`
+    * :doc: `$bvar </identifiers/$bvar>`
+    * :doc: `$bfind </identifiers/$bfind>`
+    * :doc: `/bread </commands/bread>`
+    * :doc: `/breplace </commands/breplace>`
+    * :doc: `/bwrite </commands/bwrite>`
+    * :doc: `/bset </commands/bset>`
+    * :doc: `/bcopy </commands/bcopy>`
+    * :doc: `/btrunc </commands/btrunc>`

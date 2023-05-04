@@ -39,9 +39,7 @@ Now unlisted users can access events whose access level are in the range [1-5]
 Compatibility
 -------------
 
-Added: mIRC v
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.1 (23 Apr 1995)
 
 See also
 --------
@@ -49,6 +47,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </identifiers/ulevel>`
-    * :doc:`$dlevel </identifiers/dlevel>`
-    * :doc:`$level </identifiers/level>`
+    * :doc: `$ulevel </identifiers/$ulevel>`
+    * :doc: `$dlevel </identifiers/$dlevel>`
+    * :doc: `$level </identifiers/$level>`

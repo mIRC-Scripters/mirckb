@@ -6,7 +6,8 @@ DCC is an IRC sub-protocol used to establish a direct connection with another IR
 Communication does not go through the IRC server like normal PRIVMSGs. DCC lets you chat as well as send and get files. DCC is usually initiated using the IRC server. DCC requires the use of your IP address to initiate a connection with another client.
 
 **DCC Chat:**
-This command lets you initiate a DCC chat connection with another client. The chat service enables users to chat with each other over a DCC connection. This method is more secured and much faster as it does not depend on the IRC server for processing of messages. If a user sends you a DCC chat request, a DCC chat dialog will popup asking you to accept or decline the request. Note that the DCC Chat messages are still sent as plaintext.
+
+.. note:: that the DCC Chat messages are still sent as plaintext.
 
 **DCC Get:**
 This command lets you separate download folders according to their file extinctions. Files not matching any of the extinctions you specified are placed in the default DCC get directory.
@@ -18,7 +19,7 @@ This command lets you separate download folders according to their file extincti
 **DCC Ignore:**
 This command is used to add/remove files from the ignore/accept list. mIRC will automatically accept/decline the file when someone sends you if it's in the list.
 
-**DCC Nick:**
+**DCC nick:**
 This command lets you change the name associated with a dcc chat, send, get, or fserver.
 
 **DCC Passive:**
@@ -41,13 +42,13 @@ Synopsis
 .. code:: text
 
     /dcc chat <nickname>
-    /dcc fserve 
+    /dcc fserve
     /dcc get <folder>
-    /dcc ignore [on | off | accept | ignore] 
+    /dcc ignore -uM [on | off | accept | ignore]
     /dcc maxcps <N>
     /dcc nick -sgcf <oldnick> <newnick>
     /dcc passive [on | off]
-    /dcc reject 
+    /dcc reject
     /dcc send [-clmn] <nick> <file1> [file2] ... [fileN]
     /dcc trust [-r] <on | off | nick | address | level>
 
@@ -55,7 +56,6 @@ Switches
 --------
 
 DCC Nick
-~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -73,7 +73,6 @@ DCC Nick
       - FServer
 
 DCC Send
-~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -91,7 +90,6 @@ DCC Send
       - Allows the transfer rate to exceed the max cps limit (see /dcc maxcps)
 
 DCC Trust
-~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -102,11 +100,21 @@ DCC Trust
     * - -r
       - removes the user/address from the trusted list
 
+DCC Ignore
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Switch
+      - Description
+    * - -uM
+      - sets the 'turn ignore back on' option on for M minutes
+
 Parameters
 ----------
 
 DCC Chat
-~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -118,7 +126,6 @@ DCC Chat
       - The name of the user to initiate a DCC chats with
 
 DCC Get
-~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -130,7 +137,6 @@ DCC Get
       - A specific folder to redirect a file into
 
 DCC Ignore
-~~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -141,10 +147,9 @@ DCC Ignore
     * - [on | off]
       - Turns DCC Ignore on or off
     * - [accept | ignore]
-      - 
+      -
 
 DCC maxcps
-~~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -156,7 +161,6 @@ DCC maxcps
       - new max cps
 
 DCC Nick
-~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -170,7 +174,6 @@ DCC Nick
       - New dcc window name
 
 DCC Passive
-~~~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -182,7 +185,6 @@ DCC Passive
       - Turns DCC Passive mode on or off
 
 DCC Send
-~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -198,7 +200,6 @@ DCC Send
       - Any additional files will have a session of their own
 
 DCC Trust
-~~~~~~~~~
 
 .. list-table::
     :widths: 15 85
@@ -219,15 +220,12 @@ N/A
 Compatibility
 -------------
 
-**Chat/Send/Get:**
+* chat/send/get: 
 
 Added: mIRC v2.1a (28 Feb 1995)
+* server: 
 
-**Server:**
-
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -235,6 +233,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dccignore </identifiers/dccignore>`
-    * :doc:`$dccport </identifiers/dccport>`
-    * :doc:`/dccserver <dccserver>`
+    * :doc: `$dccignore </identifiers/$dccignore>`
+    * :doc: `$dccport </identifiers/$dccport>`
+    * :doc: `/dccserver </commands/dccserver>`

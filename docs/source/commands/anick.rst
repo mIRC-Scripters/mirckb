@@ -1,13 +1,13 @@
 /anick
 ======
 
-The **/anick** command is used to set a new alternative nickname. The alternative nickname is the nickname that will be used if IRC indicates that your primary nickname is already in use. If the alternative nickname is taken as well, mIRC will place a ``'/nick '`` text in the server's editbox and wait for the user's reply.
+The **anick** command is used to set a new alternative nickname. The alternative nickname is the nickname that will be used if IRC indicates that your primary nickname is already in use. If the alternative nickname is taken as well, mIRC will place a '/nick ' text in the server's editbox and wait for the user's reply.
 
 Synopsis
 --------
 
 .. code:: text
-  
+
     /anick <nickname>
 
 Switches
@@ -36,16 +36,12 @@ Example
 
 Output:
 
-.. code:: text
-
-    * Your alternate nickname is now Foo
+  * Your alternate nickname is now Foo
 
 Compatibility
 -------------
 
-Added: mIRC v5.8 (05 Sep 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.8 (14 Dec 2000)
 
 See also
 --------
@@ -53,7 +49,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$mnick </identifiers/mnick>`
-    * :doc:`$anick </identifiers/anick>`
-    * :doc:`$me </identifiers/me>`
-    * :doc:`/identd <identd>`
+    * :doc: `$mnick </identifiers/$mnick>`
+    * :doc: `$anick </identifiers/$anick>`
+    * :doc: `$me </identifiers/$me>`
+    * :doc: `/identd </commands/identd>`

@@ -8,8 +8,8 @@ Synopsis
 
 .. code:: text
 
-    /hdec [-m[N]szuN] <table> <item> [num]
-    /hdec -b[m[N]szuN] <table> <item> <&bvar>
+    /hdec [-m[N]szuN] <nowiki>‹table›</nowiki> <item> [num]
+    /hdec -b[m[N]szuN] <nowiki>‹table></nowiki> <item> <&bvar>
 
 Switches
 --------
@@ -42,61 +42,58 @@ Parameters
 
     * - Parameter
       - Description
-    * - \<table\>
+    * - <nowiki><table></nowiki>
       - The handle name of the table containing the 'item'
-    * - \<item\>
+    * - <item>
       - The item name associated with the data value
     * - [num]
       - The optional value by which to decrease the data value. If not present, decreases by 1.0
-    * - \<&bvar\>
+    * - <&bvar>
       - The binary variable containing the value by which to decrease the 'item'
 
 Example
 -------
 
-.. note:: For more examples see the :doc:`/hinc <hinc>` page. /hdec is the same as /hinc except for decrementing by [num] instead of incrementing.
+.. note:: For more examples see the :doc: `/hinc </commands/hinc>` page. /hdec is the same as /hinc except for decrementing by [num] instead of incrementing.
 
 .. code:: text
 
     alias countdown {
-      ;adds the item down with a value of 10 to the table count
-      hadd -m count down 10
-      echo -a $hget(count,down) $+ !
-      :repeat
-      ;checks if the value of down returns true
-      if ($hget(count,down) > 1) {
-        ;decreases down by 1
-        hdec count down
-        ;echos the current count
-        echo -a $hget(count,down) $+ !
-        ;repeats
-        goto repeat
-      }
-      ;if the previous if statement returns false it carries on with this.
-      else echo -a 0, Hurray!
-      hfree -s count
+    ;adds the item down with a value of 10 to the table count
+    hadd -m count down 10
+    echo -a $hget(count,down) $+ !
+    :repeat
+    ;checks if the value of down returns true
+    if ($hget(count,down) > 1) {
+    ;decreases down by 1
+    hdec count down
+    ;echos the current count
+    echo -a $hget(count,down) $+ !
+    ;repeats
+    goto repeat
+    }
+    ;if the previous if statement returns false it carries on with this.
+    else echo -a 0, Hurray!
+    hfree -s count
     }
 
 Compatibility
 -------------
 
-Added: mIRC v6.0 (03 Feb 2002)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
+Added: mIRC v6.0 (16 Aug 2002)
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/hmake <hmake>`
-    * :doc:`/hfree <hfree>`
-    * :doc:`/hload <hload>`
-    * :doc:`/hsave <hsave>`
-    * :doc:`/hadd <hadd>`
-    * :doc:`/hdel <hdel>`
-    * :doc:`/hinc <hinc>`
-    * :doc:`$hget </identifiers/hget>`
-    * :doc:`$hfind </identifiers/hfind>`
-
+    * :doc: `/hmake </commands/hmake>`
+    * :doc: `/hfree </commands/hfree>`
+    * :doc: `/hload </commands/hload>`
+    * :doc: `/hsave </commands/hsave>`
+    * :doc: `/hadd </commands/hadd>`
+    * :doc: `/hdel </commands/hdel>`
+    * :doc: `/hinc </commands/hinc>`
+    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
+    * :doc: `$hget </identifiers/$hget>`
+    * :doc: `$hfind </identifiers/$hfind>`

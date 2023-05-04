@@ -1,14 +1,14 @@
 /hfree
 ======
 
-The **/hfree** command destroys previously created hash table(s) along with all item/data pairs within them. A hash table can be created via the :doc:`/hmake <hmake>` command.
+The **/hfree** command destroys previously created hash table(s) along with all item/data pairs within them. A hash table can be created via the :doc: `/hmake </commands/hmake>` command.
 
 Synopsis
 --------
 
 .. code:: text
 
-    /hfree [-sw] <table>
+    /hfree [-sw] <nowiki><table></nowiki>
 
 Switches
 --------
@@ -22,7 +22,7 @@ Switches
     * - -s
       - Displays debug information
     * - -w
-      - Treats <table> as a wildcard and deletes all matching tables.
+      - Treats <nowiki><table></nowiki> as a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` and deletes all matching tables.
 
 Parameters
 ----------
@@ -33,7 +33,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <table>
+    * - <nowiki><table></nowiki>
       - the table you wish to delete.
 
 Example
@@ -42,18 +42,18 @@ Example
 .. code:: text
 
     alias del_hash {
-      ;makes the hash table 'hash'
-      hmake hash
-      echo -a $hget(hash) : $hget(hash).size
-      ;makes the hash table 'h' with 10 buckets
-      hmake h 10
-      ;makes the hash table 'has' with 20 buckets
-      hmake has 20
-      ;deletes hash table 'hash'
-      hfree -s hash
-      echo -a $hget(h) : $hget(h).size - $hget(has) : $hget(has).size
-      ;deletes any hash tables matching h*
-      hfree -sw h*
+    ;makes the hash table 'hash'
+    hmake hash
+    echo -a $hget(hash) : $hget(hash).size
+    ;makes the hash table 'h' with 10 buckets
+    hmake h 10
+    ;makes the hash table 'has' with 20 buckets
+    hmake has 20
+    ;deletes hash table 'hash'
+    hfree -s hash
+    echo -a $hget(h) : $hget(h).size - $hget(has) : $hget(has).size
+    ;deletes any hash tables matching h*
+    hfree -sw h*
     }
 
 .. code:: text
@@ -67,22 +67,20 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.8 (05 Sep 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
+Added: mIRC v5.8 (14 Dec 2000)
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/hmake <hmake>`
-    * :doc:`/hload <hload>`
-    * :doc:`/hsave <hsave>`
-    * :doc:`/hadd <hadd>`
-    * :doc:`/hdel <hdel>`
-    * :doc:`/hinc <hinc>`
-    * :doc:`/hdec <hdec>`
-    * :doc:`$hget </identifiers/hget>`
-    * :doc:`$hfind </identifiers/hfind>`
+    * :doc: `/hmake </commands/hmake>`
+    * :doc: `/hload </commands/hload>`
+    * :doc: `/hsave </commands/hsave>`
+    * :doc: `Hash Tables </intermediate/data_storage.html#hash-tables>`
+    * :doc: `/hadd </commands/hadd>`
+    * :doc: `/hdel </commands/hdel>`
+    * :doc: `/hinc </commands/hinc>`
+    * :doc: `/hdec </commands/hdec>`
+    * :doc: `$hget </identifiers/$hget>`
+    * :doc: `$hfind </identifiers/$hfind>`

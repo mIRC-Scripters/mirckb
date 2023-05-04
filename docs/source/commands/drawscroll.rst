@@ -1,7 +1,7 @@
 /drawscroll
 ===========
 
-The **/drawscroll** command scrolls the region inside the specified rectangle.
+The **/drawscroll** command scrolls the region inside the specified rectangle
 
 Synopsis
 --------
@@ -47,14 +47,10 @@ Parameters
 Example
 -------
 
-None
-
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------

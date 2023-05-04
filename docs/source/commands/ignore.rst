@@ -3,13 +3,12 @@
 
 The **/ignore** command ignores various types of messages from users, You can also manage ignore from the Control tab of the address book.
 
-
 Synopsis
 --------
 
 .. code:: text
 
-    /ignore [-lrpcntikdwxuNhys] <on|off|nick/address> [type] [network]
+    /ignore [-lrpcntikdwxuNhysf] <on|off|nick/address> [type] [network]
 
 Switches
 --------
@@ -74,14 +73,12 @@ Parameters
 Example
 -------
 
-None
+none
 
 Compatibility
 -------------
 
-Added: mIRC v6.1 (29/08/2003)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v2.1a (28 Feb 1995)
 
 See also
 --------
@@ -89,4 +86,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ignore <$ignore>`
+    * :doc: `$ignore </identifiers/$ignore>`

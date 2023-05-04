@@ -68,9 +68,7 @@ Add a smileyface to the second edit box:
 Compatibility
 -------------
 
-Added: mIRC v5.1
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -78,4 +76,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$editbox </identifiers/editbox>`
+    * :doc: `$editbox </identifiers/$editbox>`

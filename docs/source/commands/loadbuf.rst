@@ -19,7 +19,7 @@ Switches
 
     * - Switch
       - Description
-    * - -a 
+    * - -a
       - adds the lines into the active window
     * - -p
       - forces lines of text to wrap when added to the window
@@ -67,16 +67,12 @@ Parameters
 Example
 -------
 
-.. code:: text
-
-    //window @test | loadbuf $lines($mircini) @test $qt($mircini)
+<code>//window @test | loadbuf $lines($mircini) @test $qt($mircini)</code>
 
 Compatibility
 -------------
 
-Added: mIRC v5.0 (02 Apr 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.0 (21 Apr 1997)
 
 See also
 --------
@@ -84,5 +80,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/filter <filter>`
-    * :doc:`/savebuf <savebuf>`
+    * :doc: `/filter </commands/filter>`
+    * :doc: `/savebuf </commands/savebuf>`

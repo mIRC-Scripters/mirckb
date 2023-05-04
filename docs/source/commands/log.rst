@@ -42,9 +42,7 @@ Example
 Compatibility
 -------------
 
-Added: 3.3 - 3.4
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.3 - 3.4 ()
 
 See also
 --------

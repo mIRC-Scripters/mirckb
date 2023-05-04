@@ -1,7 +1,7 @@
 /ctcpreply
 ==========
 
-The **/ctcpreply** command can be used to send a reply to a CTCP request.
+The **/ctcpreply** command can be used to send a reply to a CTCP request
 
 Synopsis
 --------
@@ -39,12 +39,12 @@ Example
     ;Listen to a TIME CTCP request
     ctcp *:TIME:*:{
 
-      ;Send two CTCP replays
-      ctcpreply $nick TIME Current time: $time(hh:nn:ss TT (ZZZ))
-      ctcpreply $nick TIME Current Data: $time(dddd $+ $chr(44) mmmm dd $+ $chr(44) 2009)
+    ;Send two CTCP replays
+    ctcpreply $nick TIME Current time: $time(hh:nn:ss TT (ZZZ))
+    ctcpreply $nick TIME Current Data: $time(dddd $+ $chr(44) mmmm dd $+ $chr(44) 2009)
 
-      ;Stop the standard mIRC\'s CTCP replay
-      halt
+    ;Stop the standard mIRC\'s CTCP replay
+    halt
     }
 
 Compatibility
@@ -52,13 +52,11 @@ Compatibility
 
 Added: mIRC v5.02 (21 Apr 1997)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/ctcp <ctcp>`
-    * :doc:`/ctcps <ctcps>`
+    * :doc: `/ctcp </commands/tcp-socket>`
+    * :doc: `/ctcps </commands/tcp-socket>`

@@ -1,7 +1,7 @@
 /ghide
 ======
 
-The **/ghide** command hides a previously loaded agent.
+The **ghide** command hides a previously loaded agent.
 
 Synopsis
 --------
@@ -47,9 +47,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (02 Feb 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.7 (07 May 2000)
 
 See also
 --------
@@ -57,19 +55,18 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/gload <gload>`
-    * :doc:`/gunload <gunload>`
-    * :doc:`/gshow <gshow>`
-    * :doc:`/gmove <gmove>`
-    * :doc:`/gsize <gsize>`
-    * :doc:`/gtalk <gtalk>`
-    * :doc:`/gplay <gplay>`
-    * :doc:`/gpoint <gpoint>`
-    * :doc:`/gstop <gstop>`
-    * :doc:`/gopts <gopts>`
-    * :doc:`/gqreq <gqreq>`
-    * :doc:`$agentver </identifiers/agentver>`
-    * :doc:`$agentstat </identifiers/agentstat>`
-    * :doc:`$agentname </identifiers/agentname>`
-    * :doc:`$agent </identifiers/agent>`
-
+    * :doc: `/gload </commands/gload>`
+    * :doc: `/gunload </commands/gunload>`
+    * :doc: `/gshow </commands/gshow>`
+    * :doc: `/gmove </commands/gmove>`
+    * :doc: `/gsize </commands/gsize>`
+    * :doc: `/gtalk </commands/gtalk>`
+    * :doc: `/gplay </commands/gplay>`
+    * :doc: `/gpoint </commands/gpoint>`
+    * :doc: `/gstop </commands/gstop>`
+    * :doc: `/gopts </commands/gopts>`
+    * :doc: `/gqreq </commands/gqreq>`
+    * :doc: `$agentver </identifiers/$agentver>`
+    * :doc: `$agentstat </identifiers/$agentstat>`
+    * :doc: `$agentname </identifiers/$agentname>`
+    * :doc: `$agent </identifiers/$agent>`

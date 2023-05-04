@@ -3,9 +3,9 @@
 
 Auto-OP is a feature that can be used to manage access for a channel. Whenever a user whose address matches an address in the auto-op list joins the channel, mIRC will automatically OP them.
 
-The **/auto** command can also be used to disable or enable this feature as well as add and remove users from and to the list.
+The **auto** command can also be used to disable or enable this feature as well as add and remove users from and to the list.
 
-.. attention:: This command has been superseded by the :doc:`/aop <aop>` command.
+**This** commands been superseded by the :doc: `/aop </commands/aop>` command.'''
 
 Synopsis
 --------
@@ -13,8 +13,7 @@ Synopsis
 .. code:: text
 
     /auto -rw <nick/address> [#channel1,#channel2,...] [type] [network]
- 
-    /auto <on|off>
+    /auto <on/off>
 
 Switches
 --------
@@ -24,7 +23,7 @@ Switches
     :header-rows: 1
 
     * - Switch
-      - Description 
+      - Description
     * - -r
       - Indicates address/nick to should be removed
     * - -w
@@ -42,7 +41,7 @@ Parameters
     * - <on/off>
       - Turns the auto-op feature on/off.
     * - <nick/address>
-      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be wildcard addresses.
+      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :doc: `wildcard </intermediate/matching_tools.html#wildcard>` addresses.
     * - [#channel1,#channel2,...]
       - Channels to apply the auto-op to.
     * - [type]
@@ -53,17 +52,16 @@ Parameters
 Example
 -------
 
-
 .. code:: text
 
     ;Turn on auto op
-    /auto on 
+    /auto on
 
     ;Add Madgoat to the auto-op list. Address type 2, network Undernet
-    /auto MadGoat 2 Undernet 
+    /auto MadGoat 2 Undernet
 
     ;Remove Madgoat from the auto-op list
-    /auto -r MadGoat 2 Undernet 
+    /auto -r MadGoat 2 Undernet
 
     ;Turn off auto op
     /auto off
@@ -85,19 +83,17 @@ Compatibility
 
 Added: mIRC v2.5a (08 Mar 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$aop </identifiers/aop>`
-    * :doc:`$avoice </identifiers/avoice>`
-    * :doc:`$auto </identifiers/auto>`
-    * :doc:`/aop <aop>`
-    * :doc:`/avoice <avoice>`
-    * :doc:`/ignore <ignore>`
-    * :doc:`/pop <pop>`
-    * :doc:`/pvoice <pvoice>`
+    * :doc: `$aop </identifiers/$aop>`
+    * :doc: `$avoice </identifiers/$avoice>`
+    * :doc: `$auto </identifiers/$auto>`
+    * :doc: `/aop </commands/aop>`
+    * :doc: `/avoice </commands/avoice>`
+    * :doc: `/ignore </commands/ignore>`
+    * :doc: `/pop </commands/pop>`
+    * :doc: `/pvoice </commands/pvoice>`

@@ -57,17 +57,15 @@ Compatibility
 
 Added: mIRC v4.0 (20 Mar 1996)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$line </identifiers/line>`
-    * :doc:`$fline </identifiers/fline>`
-    * :doc:`/clear <clear>`
-    * :doc:`/loadbuf <loadbuf>`
-    * :doc:`/savebuf <savebuf>`
-    * :doc:`/window <window>`
+    * :doc: `$line </identifiers/$line>`
+    * :doc: `$fline </identifiers/$fline>`
+    * :doc: `/clear </commands/clear>`
+    * :doc: `/loadbuf </commands/loadbuf>`
+    * :doc: `/savebuf </commands/savebuf>`
+    * :doc: `/window </commands/window>`

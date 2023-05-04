@@ -22,7 +22,7 @@ Switches
     * - -f
       - set focus on <id>, use -fu to set a tab on focus
     * - -t
-      - set <id> as default button 
+      - set <id> as default button
     * - -e
       - enable <id>
     * - -b
@@ -87,14 +87,12 @@ Parameters
 Example
 -------
 
-You can check the dialog components page for examples of /did per control.
+You can check the :doc: `dialog components </advanced/dialog-components>` page for examples of /did per control
 
 Compatibility
 -------------
 
-Added: mIRC v5.5 (08 Jan 1999)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.5 (19 Feb 1999)
 
 See also
 --------
@@ -102,9 +100,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$did </identifiers/did>`
-    * :doc:`$didtok </identifiers/didtok>`
-    * :doc:`$dialog </identifiers/dialog>`
-    * :doc:`$didwm </identifiers/didwm>`
-    * :doc:`$didreg </identifiers/didreg>`
-    * :doc:`/dialog <dialog>`
+    * :doc: `$did </identifiers/$did>`
+    * :doc: `$didtok </identifiers/$didtok>`
+    * :doc: `$dialog </identifiers/$dialog>`
+    * :doc: `$didwm </identifiers/$didwm>`
+    * :doc: `$didreg </identifiers/$didreg>`
+    * :doc: `/dialog </commands/dialog>`

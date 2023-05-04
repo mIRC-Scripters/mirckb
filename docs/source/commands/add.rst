@@ -1,9 +1,9 @@
 /add
 ====
 
-.. attention:: This feature has essentially been replaced by /load.
+.. attention:: This feature has essentially been replaced by :doc:`/load </commands/load>`.
 
-The **/add** command is now obsoleted in favour of the **/load** command, but it could previously be used to replace the currently loaded aliases, popups, commands, remote users, and events sections from the specified ini file. The ini file must be formatted the same way /save formats them.
+The **/add** command  could previously be used to replace the currently loaded aliases, popups, commands, remote users, and events sections from the specified ini file. The ini file must be formatted the same way /save formats them.
 
 Synopsis
 --------
@@ -62,9 +62,7 @@ Compatibility
 
 Added: mIRC v3.3 (21 Jun 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
-Removed: mIRC v3.8 (25/11/1995)
+Removed: mIRC v3.8 (25 Nov 1995)
 
 See also
 --------
@@ -72,9 +70,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$script </identifiers/script>`
-    * :doc:`$scriptdir </identifiers/scriptdir>`
-    * :doc:`/load <load>`
-    * :doc:`/reload <reload>`
-    * :doc:`/save <save>`
-    * :doc:`/unload <unload>`
+    * :doc: `$script </identifiers/$script>`
+    * :doc: `$scriptdir </identifiers/$scriptdir>`
+    * :doc: `/load </commands/load>`
+    * :doc: `/reload </commands/reload>`
+    * :doc: `/save </commands/save>`
+    * :doc: `/unload </commands/unload>`

@@ -5,21 +5,12 @@
 
 Transactions
 ------------
+
 The dde command support three different types of transactions:
 
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Transaction
-      - Description
-    * - XTYP_POKE
-      - Used by default, sends unsolicited data to the server.
-    * - XTYP_REQUEST
-      - Used to request data from a server.
-    * - XTYP_EXECUTE
-      - Used to send a command string to the server.
+* **XTYP_POKE** - Used by default, sends unsolicited data to the server.
+* **XTYP_REQUEST**  - Used to request data from a server.
+* **XTYP_EXECUTE** - Used to send a command string to the server.
 
 The only time the [data] parameter is required is when the XTYP_POKE transaction type is used.
 
@@ -73,9 +64,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.9 (28 Dec 1995)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.9 (06 Jan 1996)
 
 See also
 --------
@@ -83,7 +72,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dde </identifiers/dde>`
-    * :doc:`$isdde </identifiers/isdde>`
-    * :doc:`$ddename </identifiers/ddename>`
-    * :doc:`/ddeserver <ddeserver>`
+    * :doc: `$dde </identifiers/$dde>`
+    * :doc: `$isdde </identifiers/$isdde>`
+    * :doc: `$ddename </identifiers/$ddename>`
+    * :doc: `/ddeserver </commands/ddeserver>`

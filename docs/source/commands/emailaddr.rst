@@ -39,14 +39,12 @@ Compatibility
 
 Added: mIRC v5.71 (07 May 2000)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$emailaddr </identifiers/emailaddr>`
-    * :doc:`/fullname <fullname>`
-    * :doc:`/username <username>`
+    * :doc: `$emailaddr </identifiers/$emailaddr>`
+    * :doc: `/fullname </commands/fullname>`
+    * :doc: `/username </commands/username>`

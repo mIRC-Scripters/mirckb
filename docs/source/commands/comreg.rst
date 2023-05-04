@@ -1,13 +1,13 @@
 /comreg
 =======
 
-The **/comreg** command can be used to registers and unregisters a COM with windows to make themselves accessible to applications. Regsvr32 command will not register .NET assemblies because of their very nature. However if you must, ` Regasm Might Help <http://msdn.microsoft.com/en-us/library/tzat5yw6(vs.71).aspx>`_.
+The **/comreg** command can be used to registers and unregisters a COM with windows to make themselves accessible to applications. Regsvr32 command will not register .NET assemblies because of their very nature. However if you must, [http://msdn.microsoft.com/en-us/library/tzat5yw6(vs.71).aspx Regasm Might Help].
 
 Synopsis
 --------
 
 .. code:: text
- 
+
     /comreg -u <filename>
 
 Switches
@@ -19,7 +19,7 @@ Switches
 
     * - Switch
       - Description
-    * - -u 
+    * - -u
       - Unregister
 
 Parameters
@@ -45,9 +45,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -55,10 +53,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </identifiers/com>`
-    * :doc:`$comcall </identifiers/comcall>`
-    * :doc:`$comval </identifiers/comval>`
-    * :doc:`$dll </identifiers/dll>`
-    * :doc:`/comclose </comclose>`
-    * :doc:`/comopen </comopen>`
-    * :doc:`/dll </dll>`
+    * :doc: `$com </identifiers/$com>`
+    * :doc: `$comcall </identifiers/$comcall>`
+    * :doc: `$comval </identifiers/$comval>`
+    * :doc: `$dll </identifiers/$dll>`
+    * :doc: `/comclose </commands/comclose>`
+    * :doc: `/comopen </commands/comopen>`
+    * :doc: `/dll </commands/dll>`

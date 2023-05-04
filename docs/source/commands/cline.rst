@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /cline -hrml [c] <@name/#channel> <N>
+    /cline -hrmltc[N] [c] <@name/#channel> <N>
 
 Switches
 --------
@@ -29,10 +29,11 @@ Switches
       - Apply to side listbox
     * - -t
       - forces a re-wrap of all lines in a window that have not yet been wrapped to the current window size.
+    * - -c[N]
+      - as using the [c] parameter to change the color, but via a switch
 
 Parameters
 ----------
-
 
 .. list-table::
     :widths: 15 85
@@ -58,9 +59,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -68,13 +67,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/window>`
-    * :doc:`$line </identifiers/line>`
-    * :doc:`$fline </identifiers/fline>`
-    * :doc:`$sline </identifiers/sline>`
-    * :doc:`/aline <aline>`
-    * :doc:`/cline <cline>`
-    * :doc:`/dline <dline>`
-    * :doc:`/renwin <renwin>`
-    * :doc:`/sline <sline>`
-    * :doc:`/window <window>`
+    * :doc: `$window </identifiers/$window>`
+    * :doc: `$line </identifiers/$line>`
+    * :doc: `$fline </identifiers/$fline>`
+    * :doc: `$sline </identifiers/$sline>`
+    * :doc: `/aline </commands/aline>`
+    * :doc: `/cline </commands/cline>`
+    * :doc: `/dline </commands/dline>`
+    * :doc: `/renwin </commands/renwin>`
+    * :doc: `/sline </commands/sline>`
+    * :doc: `/window </commands/window>`

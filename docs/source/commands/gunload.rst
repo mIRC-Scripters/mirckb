@@ -1,7 +1,7 @@
 /gunload
 ========
 
-The **/gunload** command unloads any agent, by its agent name, that has been previously loaded via the **/gload**.
+The **gunload** command unloads any agent, by its agent name, that has been previously loaded via the :doc: `/gload </commands/gload>` .
 
 Synopsis
 --------
@@ -9,6 +9,11 @@ Synopsis
 .. code:: text
 
     /gunload <name>
+
+Switches
+--------
+
+None
 
 Parameters
 ----------
@@ -20,7 +25,7 @@ Parameters
     * - Parameter
       - Description
     * - <name>
-      - The name that you used to reference the agent in the initial **/gload** call
+      - The name that you used to reference the agent in the initial :doc: `/gload </commands/gload>` call
 
 Example
 -------
@@ -33,9 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (02 Feb 2000)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.7 (07 May 2000)
 
 See also
 --------
@@ -43,17 +46,17 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/ghide <ghide>`
-    * :doc:`/gshow <gshow>`
-    * :doc:`/gmove <gmove>`
-    * :doc:`/gsize <gsize>`
-    * :doc:`/gtalk <gtalk>`
-    * :doc:`/gplay <gplay>`
-    * :doc:`/gpoint <gpoint>`
-    * :doc:`/gstop <gstop>`
-    * :doc:`/gopts <gopts>`
-    * :doc:`/gqreq <gqreq>`
-    * :doc:`$agentver </identifiers/agentver>`
-    * :doc:`$agentstat </identifiers/agentstat>`
-    * :doc:`$agentname </identifiers/agentname>`
-    * :doc:`$agent </identifiers/agent>`
+    * :doc: `/ghide </commands/ghide>`
+    * :doc: `/gshow </commands/gshow>`
+    * :doc: `/gmove </commands/gmove>`
+    * :doc: `/gsize </commands/gsize>`
+    * :doc: `/gtalk </commands/gtalk>`
+    * :doc: `/gplay </commands/gplay>`
+    * :doc: `/gpoint </commands/gpoint>`
+    * :doc: `/gstop </commands/gstop>`
+    * :doc: `/gopts </commands/gopts>`
+    * :doc: `/gqreq </commands/gqreq>`
+    * :doc: `$agentver </identifiers/$agentver>`
+    * :doc: `$agentstat </identifiers/$agentstat>`
+    * :doc: `$agentname </identifiers/$agentname>`
+    * :doc: `$agent </identifiers/$agent>`

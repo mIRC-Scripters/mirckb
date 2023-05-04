@@ -1,7 +1,7 @@
 /copy
 =====
 
-The **/copy** command can be used to copy a file or an entire directory to another location. Both the source and the destination parameters support directory names. If the source is a directory the entire directory will be copied. The source parameter also supports wildcard characters.
+The **/copy** command can be used to copy a file or an entire directory to another location. Both the source and the destination parameters support directory names. If the source is a directory the entire directory will be copied. The source parameter also supports :doc: `wildcard </intermediate/matching_tools.html#wildcard>` characters.
 
 This command is verbose by default.
 
@@ -37,8 +37,8 @@ Parameters
 
     * - Parameter
       - Description
-    * - <source>
-      - The name of the directory or file to be copied (can be a wildcard name)
+    * - <nowiki><source></nowiki>
+      - The name of the directory or file to be copied (can be a :doc: `wildcard </intermediate/matching_tools.html#wildcard>` name)
     * - <destination>
       - Destination filename (or directory)
 
@@ -59,38 +59,36 @@ Below is a simple backup script:
     ;A simple backup script to back up all currently loaded script file.
     ; /backup
     Alias backup {
-      var %dir = backup\bkup. $+ $ctime
+    var %dir = backup\bkup. $+ $ctime
 
-      ;make sure the user wants to backup
-      if ($input(Are you sure you want to backup all loaded the scripts?, y, Backup Scripts?)) {
+    ;make sure the user wants to backup
+    if ($input(Are you sure you want to backup all loaded the scripts?, y, Backup Scripts?)) {
 
-        ;make sure the backup directory exists
-        if (!$isdir(backup)) mkdir backup
+    ;make sure the backup directory exists
+    if (!$isdir(backup)) mkdir backup
 
-        ;create the new backup directory, timestamped
-        mkdir %dir
-        echo -ac info [backup] %dir created!
+    ;create the new backup directory, timestamped
+    mkdir %dir
+    echo -ac info [backup] %dir created!
 
-        var %x = 1
-        ;while there is another script file
-        while ($script(%x)) {
-          ;backup the file
-          .copy $qt($v1) %dir
-          echo -ca info [backup] copying $qt($v1)
-          inc %x 
-        }
+    var %x = 1
+    ;while there is another script file
+    while ($script(%x)) {
+    ;backup the file
+    .copy $qt($v1) %dir
+    echo -ca info [backup] copying $qt($v1)
+    inc %x
+    }
 
-        ;done!
-        echo -ac info [backup] Backup is complete!
-      }
+    ;done!
+    echo -ac info [backup] Backup is complete!
+    }
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------
@@ -98,8 +96,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$file </identifiers/file>`
-    * :doc:`/mkdir <mkdir>`
-    * :doc:`/remove <remove>`
-    * :doc:`/rename <rename>`
-    * :doc:`/rmdir <rmdir>`
+    * :doc: `$file </identifiers/$file>`
+    * :doc: `/mkdir </commands/mkdir>`
+    * :doc: `/remove </commands/remove>`
+    * :doc: `/rename </commands/rename>`
+    * :doc: `/rmdir </commands/rmdir>`

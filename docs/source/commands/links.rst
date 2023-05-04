@@ -19,7 +19,6 @@ Switches
 
     * - Switch
       - Description
-
     * - -n
       - Minimize the window
     * - -x
@@ -30,12 +29,15 @@ Parameters
 
 None
 
+Example
+-------
+
+None
+
 Compatibility
 -------------
 
 Added: mIRC v4.1 (27 Apr 1996)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
 
 See also
 --------
@@ -43,6 +45,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$link </identifiers/link>`
-    * :doc:`$network </identifiers/network>`
-    * :doc:`$server </identifiers/server>`
+    * :doc: `$link </identifiers/$link>`
+    * :doc: `$network </identifiers/$network>`
+    * :doc: `$server </identifiers/$server>`

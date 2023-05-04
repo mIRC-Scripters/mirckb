@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /ajinvite [on|off]
+    /ajinvite [on | off]
 
 Switches
 --------
@@ -24,7 +24,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - **[on | off]** 
+    * - [on | off]
       - Turns the feature on/off.
 
 Example
@@ -47,9 +47,7 @@ The above example will output:
 Compatibility
 -------------
 
-Added: mIRC v5.5 (08 Jan 1999)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.5 (19 Feb 1999)
 
 See also
 --------

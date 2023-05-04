@@ -1,7 +1,7 @@
 /hotlink
 ========
 
-The **/hotlink** command can be used to override the default popups menu when right clicking a word and triggering the :doc:`on hotlink </events/hotlink>` event.
+The **/hotlink** command can be used to override the default popups menu when right clicking a word and triggering the :doc: `on hotlink </events/on_hotlink>` event.
 
 Synopsis
 --------
@@ -39,28 +39,28 @@ Parameters
 Example
 -------
 
-1. Add a right click menu item to look up commands and identifiers in the help file on mouse hover of /command and $identifier.
+1) Add a right click menu item to look up commands and identifiers in the help file on mouse hover of /command and $identifier.
 
 .. code:: text
 
     menu @helppop {
-      Lookup Help $1:!help $remove($1, $chr(40), $chr(41))
+    Lookup Help $1:!help $remove($1, $chr(40), $chr(41))
     }
     on $*:hotlink:/^[/$]\S+/:*:{
-      if ($hotlink(event) == rclick) {
-        hotlink -m @helppop
-      }
+    if ($hotlink(event) == rclick) {
+    hotlink -m @helppop
+    }
     }
 
-2. Override mIRC's default popups for nickname and replace them with... mIRC's default popups! (useless but that's to show /hotlink -d, this isn't handling /return or halt to show the hand)
+2) Override mIRC's default popups for nickname and replace them with... mIRC's default popups! (useless but that's to show /hotlink -d, this isn't handling /return or halt to show the hand)
 
 .. code:: text
 
     on *:hotlink:*:*:{
-      if ($hotlink(event) $hotlink(match).type == rclick nick) {
-        ;no @menu with -d
-        hotlink -d
-      }
+    if ($hotlink(event) $hotlink(match).type == rclick nick) {
+    ;no @menu with -d
+    hotlink -d
+    }
     }
 
 Compatibility
@@ -68,15 +68,13 @@ Compatibility
 
 Added: mIRC v7.23 (19 Mar 2012)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$hotline </identifiers/hotline>`
-    * :doc:`$hotlinepos </identifiers/hotlinepos>`
-    * :doc:`$hotlink </identifiers/hotlink>`
-    * :doc:`on hotlink </events/hotlink>`
+    * :doc: `$hotline </identifiers/$hotline>`
+    * :doc: `$hotlinepos </identifiers/$hotlinepos>`
+    * :doc: `$hotlink </identifiers/$hotlink>`
+    * :doc: `on hotlink </events/on_hotlink>`

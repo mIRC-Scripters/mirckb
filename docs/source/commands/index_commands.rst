@@ -96,6 +96,7 @@ Commands
 			* :doc:`/dline <dline>`
 			* :doc:`/dll <dll>`
 			* :doc:`/dns <dns>`
+			* :doc:`/donotdisturb <donotdisturb>`
 			* :doc:`/dqwindow <dqwindow>`
 			* :doc:`/drawcopy <drawcopy>`
 			* :doc:`/drawdot <drawdot>`
@@ -365,6 +366,7 @@ Commands
 			* :doc:`/tnick <tnick>`
 			* :doc:`/tokenize <tokenize>`
 			* :doc:`/toolbar <toolbar>`
+			* :doc:`/topic <topic>`
 			* :doc:`/tray <tray>`
 			* :doc:`/treebar <treebar>`
 

@@ -40,16 +40,14 @@ Compatibility
 
 Added: mIRC v3.2 (02 May 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$chan </identifiers/chan>`
-    * :doc:`$nick </identifiers/nick>`
-    * :doc:`$chanmodes </identifiers/chanmodes>`
-    * :doc:`$chantypes </identifiers/chantypes>`
-    * :doc:`/partall <partall>`
+    * :doc: `$chan </identifiers/$chan>`
+    * :doc: `$nick </identifiers/$nick>`
+    * :doc: `$chanmodes </identifiers/$chanmodes>`
+    * :doc: `$chantypes </identifiers/$chantypes>`
+    * :doc: `/partall </commands/partall>`

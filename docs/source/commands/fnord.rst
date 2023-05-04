@@ -37,24 +37,18 @@ The above example is the equivalent of the following echo command:
 .. code:: text
 
     //echo -aeq $+($chr(3),$color(background),$chr(44),$color(background),Nothing to see here.)
-
-.. code:: text
-
     Nothing to see here.
-
 
 Compatibility
 -------------
 
-Added: mIRC v6.3 (16/08/2007)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC vmIRC 6.3 ()
 
 See also
----------
+--------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/echo <echo>`
-    * :doc:`/xyzzy <xyzzy>`
+    * :doc: `/echo </commands/echo>`
+    * :doc: `/xyzzy </commands/xyzzy>`

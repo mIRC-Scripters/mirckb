@@ -49,6 +49,7 @@ Parameters
       - maximum number of message allowed per nick <ignoretime> - number of seconds nicks are ignored if they exceed <maxmessages>
 
 Example
+-------
 
 .. code:: text
 
@@ -57,8 +58,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC 3.3, 3.4
-
+Added: mIRC vmIRC 3.3, 3.4 ()
 
 See also
 --------

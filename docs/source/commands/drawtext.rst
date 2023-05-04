@@ -1,14 +1,14 @@
 /drawtext
 =========
 
-The **/drawtext** command draws text at the specified co-ordinates. If you use a negative number for the font size, it will match the size of fonts in the font dialog. The /drawtext command will use some default options for anti-aliasing that you cannot change (yet), meaning that a text drawn in black may not be drawn only using the expected color, this can be a real concern when using /drawfill to fill an area with text inside it.
+The **/drawtext** command draws text at the specified co-ordinates. If you use a negative number for the font size, it will match the size of fonts in the font dialog. The /drawtext command will use some default options for anti-aliasing that you cannot change (yet), meaning that a text drawn in black may not be drawn only using the expected color, this can be a real concern when using :doc: `/drawfill </commands/drawfill>` to fill an area with text inside it.
 
 Synopsis
 --------
 
 .. code:: text
 
-    /drawtext -hnrpboc <@win> <color> [color] [fontname fontsize] <x y [w h]> <text>
+    /drawtext -hnrpbocv <@win> <color> [color] [fontname fontsize] <x y [w h]> <text>
 
 Switches
 --------
@@ -33,8 +33,10 @@ Switches
       - indicates that the colors are in RGB format
     * - -o
       - Attempt to draw the text in bold. A $chr(2) is inserted at the beginning of the string and is interpreted (but the others control codes won't be). If you use -p as well as -o, control code will be interpreted and having a $chr(2) in your text will break the bold.
-    * - -i 
+    * - -i
       - Same as -o but for italic with $chr(29)
+    * - -v
+      - Draw text from a binvar
 
 Parameters
 ----------
@@ -68,9 +70,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------
@@ -78,5 +78,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$width </identifiers/width>`
-    * :doc:`$height </identifiers/height>`
+    * :doc: `$width </identifiers/$width>`
+    * :doc: `$height </identifiers/$height>`

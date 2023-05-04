@@ -6,7 +6,7 @@
 Synopsis
 --------
 
-.. code:: text 
+.. code:: text
 
     /creq [+m|-m] [ask | auto | ignore]
 
@@ -43,13 +43,13 @@ Parameters
 Examples
 --------
 
-Enable automatic minimizing of DCC Chats:
+**Enable automatic minimizing of DCC Chats**
 
 .. code:: text
 
     /creq +m
 
-Set DCC Chats to automatically accept:
+**Set DCC Chats to automatically accept**
 
 .. code:: text
 
@@ -60,14 +60,12 @@ Compatibility
 
 Added: mIRC v3.8 (25 Nov 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
-See also
+See Also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`/sreq <sreq>`
-    * :doc:`$creq </identifiers/creq>`
-    * :doc:`$sreq </identifiers/sreq>`
+    * :doc: `/sreq </commands/sreq>`
+    * :doc: `$creq </identifiers/$creq>`
+    * :doc: `$sreq </identifiers/$sreq>`

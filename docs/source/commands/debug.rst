@@ -19,9 +19,9 @@ Switches
 
     * - Switch
       - Description
-    * - -c 
+    * - -c
       - Turns off debugging (close associated window as well)
-    * - -i 
+    * - -i
       - Call a specific $identifier and use the returned value as the debug lines
     * - -n
       - Minimize the custom @window
@@ -41,9 +41,9 @@ Parameters
     :widths: 15 85
     :header-rows: 1
 
-    * - Switch
-      - Parameters
-    * - [color] 
+    * - Parameter
+      - Description
+    * - [color]
       - Optional text color for the debug window (Partly overridden by -rN and/or -oN) Can be color index 0-99
     * - [on|off]
       - Turns debug on or off
@@ -57,14 +57,14 @@ Example
 
 .. code:: text
 
-    ;Opens @raw debug window (wrap text)
+    ;Opens @raw debug window (wrap text+
     //debug -p @Raw
 
 .. code:: text
 
     ;The line can be 'piped' through an alias on its way to the log file.
-    ;From editbox: /debug -i Log.txt $console
-    ;From script:  /debug -i Log.txt $!console
+    From editbox: /debug -i Log.txt $console
+    From script: /debug -i Log.txt $!console
 
     Alias console {
     ; split by spaces
@@ -82,7 +82,7 @@ Example
 
 .. code:: text
 
-    ;This alias opens a debug window shared by all networks. Outbound lines in red, inbound lines in green. Note the identifier is listed on command line instead of calling an alias. The yellow 8 is overridden by defining in/out colors with -rNoN. Alias uses $time to display seconds without forcing all windows to show seconds in their $timestamp too
+    .. note:: the identifier is listed on command line instead of calling an alias. The yellow 8 is overridden by defining in/out colors with -rNoN. Alias uses $time to display seconds without forcing all windows to show seconds in their $timestamp too
 
     on *:CONNECT:{ debugg }
 
@@ -95,15 +95,12 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.0 (03 Feb 2002)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
+Added: mIRC v6.0 (16 Aug 2002)
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$debug </identifiers/debug>`
-    * :doc:`$rawmsg </identifiers/rawmsg>`
+    * :doc: `$debug </identifiers/$debug>`
+    * :doc: `$rawmsg </identifiers/$rawmsg>`

@@ -44,9 +44,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.1 (29/08/2003)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v6.1 (17 Feb 2006)
 
 See also
 --------
@@ -54,10 +52,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$fopen </identifiers/fopen>`
-    * :doc:`$fread </identifiers/fread>`
-    * :doc:`$feof </identifiers/feof>`
-    * :doc:`$ferr </identifiers/ferr>`
-    * :doc:`/fclose <fclose>`
-    * :doc:`/fopen <fopen>`
-    * :doc:`/fseek <fseek>`
+    * :doc: `$fopen </identifiers/$fopen>`
+    * :doc: `$fread </identifiers/$fread>`
+    * :doc: `$feof </identifiers/$feof>`
+    * :doc: `$ferr </identifiers/$ferr>`
+    * :doc: `/fclose </commands/fclose>`
+    * :doc: `/fopen </commands/fopen>`
+    * :doc: `/fseek </commands/fseek>`

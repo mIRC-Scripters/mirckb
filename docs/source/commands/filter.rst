@@ -1,9 +1,9 @@
 /filter
 =======
 
-The **/filter** command is perhaps the most powerful and least understood script command in mIRC. It scans lines of text in a custom-window or file or dialog control, and any lines that match the matchtext are written out to another custom-window or file or dialog control (or indeed by using an alias to any other desired destination such as a socket).
+The **/filter** command is perhaps the most powerful and least understood script command in mIRC. It scans lines of text in a custom-window or file or dialog control, and any lines that match the matchtext are written out to another custom-window or file or dialog control (or indeed by using an alias to any other desired destination such as a socket). 
 
-You can restrict the source to a range of line numbers, and you can sort the output by columns (tokens) or using an alias. It will also work correctly when the source and destination windows are the same, allowing you easily and efficiently to sort the contents of a window. The order of the switch values is important as they define the source and destination of lines; see the examples for more informations. You can filter out blank lines by using the -x switch and specifying $crlf for the matchtext. /filter also fills the $filtered identifier with the number of matches found.
+You can restrict the source to a range of line numbers, and you can sort the output by columns (tokens) or using an alias. It will also work correctly when the source and destination windows are the same, allowing you easily and efficiently to sort the contents of a window. The order of the switch values is important as they define the source and destination of lines; see the examples for more informations. You can filter out blank lines by using the -x switch and specifying :doc: `$crlf </identifiers/$crlf>` for the matchtext. /filter also fills the :doc: `$filtered </identifiers/$filtered>` identifier with the number of matches found.
 
 .. note:: If your script takes several seconds to execute because e.g. of nested loops, then if you can find a way to use /filter instead of the script loops, you can often achieve big performance improvements.
 
@@ -17,8 +17,8 @@ Synopsis
 Switches
 --------
 
-Source/Destination Switches
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Source/Destination switches 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Source and destination switches are (in theory) only needed if either the source or destination is ambiguous, but it is recommended that you always explicitly define both source and destination. The first use of these indicates the source, the second indicates the destination. As long as you're using a @window as your input or output and the other part of the input/output pair is a filename that does not begin with "@" then the -fw switches are not needed. They are needed with -s and -d to indicate which are input/output. Can use the window-id as an alias for the @custom window name. @test can be replaced by $+(@,$window(@test).wid)
 
@@ -43,8 +43,8 @@ Source and destination switches are (in theory) only needed if either the source
     * - -o
       - destination is a custom dialog control [dialog id]
 
-Other Switches
-^^^^^^^^^^^^^^
+Other switches 
+^^^^^^^^^^^^^^^^
 
 .. list-table::
     :widths: 15 85
@@ -152,9 +152,7 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v5.3 (13 Dec 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.3 (04 Jan 1998)
 
 See also
 --------
@@ -162,8 +160,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$filtered </identifiers/filtered>`
-    * :doc:`$read </identifiers/read>`
-    * :doc:`$fline </identifiers/fline>`
-    * :doc:`/loadbuf <loadbuf>`
-    * :doc:`/savebuf <savebuf>`
+    * :doc: `$filtered </identifiers/$filtered>`
+    * :doc: `$read </identifiers/$read>`
+    * :doc: `$fline </identifiers/$fline>`
+    * :doc: `/loadbuf </commands/loadbuf>`
+    * :doc: `/savebuf </commands/savebuf>`

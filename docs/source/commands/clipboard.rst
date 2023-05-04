@@ -43,26 +43,24 @@ Example
 
 .. code:: text
 
-    ;Clear the clipboard and put \"Hello world!\" in it
+    Clear the clipboard and put \"Hello world!\" in it
     /clipboard Hello World!
 
-    ;Put 'abcd' into clipboard then append efgh and carriage return:
+    Put 'abcd' into clipboard then append efgh and carriage return:
     //clipboard abcd | clipboard -an efgh | echo -a $cb(0).len / $cb(1).len / $cb(1)
-    ;returns: 10 / 8 / abcdefgh
-    ;(The difference between length of $cb(0) and $cb(1) is the $crlf.
+    returns: 10 / 8 / abcdefgh
+    (The difference between length of $cb(0) and $cb(1) is the $crlf.
 
-    ;Clear clipboard contents:
+    Clear clipboard contents:
     /clipboard
 
-    ;Append $crlf to end of current clipboard contents:
+    Append $crlf to end of current clipboard contents:
     /clipboard -an
 
 Compatibility
 -------------
 
-Added: mIRC v5.1 (28 Aug 1997)
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v5.1 (11 Sep 1997)
 
 See also
 --------
@@ -70,5 +68,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$cb </identifiers/cb>`
-    * :doc:`$inpaste </identifiers/inpaste>`
+    * :doc: `$cb </identifiers/$cb>`
+    * :doc: `$inpaste </identifiers/$inpaste>`

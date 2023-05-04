@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /fsend [on|off]
+    /fsend [on|off|N]
 
 Switches
 --------
@@ -24,18 +24,18 @@ Parameters
 
     * - Parameter
       - Description
-    * - [on | off ]
+    * - on/off
       - if specified, enable/disable the fast send option
+    * - N
+      - a number between 0 and 100, experimental fast dcc feature
 
 Example
----------
+-------
 
 Compatibility
 -------------
 
-Added: mIRC v3.3 - v3.4
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC v3.3 - 3.4 ()
 
 See also
 --------

@@ -27,24 +27,15 @@ Example
 
     /xyzzy
 
-The above example outputs:
-
-.. code:: text
-
+    The above example outputs:
     Nothing happens.
-
-Equivalent to using this echo command:
-
-.. code:: text
-
+    ... using this echo command:
     //echo $color(ctcp) -a Nothing happens.
 
 Compatibility
 -------------
 
-Added: mIRC 6.0
-
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
+Added: mIRC vmIRC 6.0 ()
 
 See also
 --------
@@ -52,6 +43,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/echo <echo>`
-    * :doc:`/fnord <fnord>`
-
+    * :doc: `/echo </commands/echo>`
+    * :doc: `/fnord </commands/fnord>`

@@ -25,9 +25,9 @@ Parameters
     * - Parameter
       - Description
     * - <nick>
-      - Target nick/channel 
+      - Target nick/channel
     * - <ctcp>
-      - CTCP 
+      - CTCP
 
 Example
 -------
@@ -42,14 +42,12 @@ Compatibility
 
 Added: mIRC v2.1a (28 Feb 1995)
 
-.. note:: Unless otherwise stated, this was the date of original functionality. Further enhancements may have been made in later versions.
-
 See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`$nick </identifiers/nick>`
-    * :doc:`/ctcpreply <ctcpreply>`
-    * :doc:`/ctcps <ctcps>`
+    * :doc: `$nick </identifiers/$nick>`
+    * :doc: `/ctcpreply </commands/tcp-socket>`
+    * :doc: `/ctcps </commands/tcp-socket>`
