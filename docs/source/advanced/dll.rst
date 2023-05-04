@@ -60,13 +60,13 @@ Because mIRC wasn't unicode before, the exported functions used to be the follow
 
 .. code:: c
 
-	int __stdcall funcName(HWND mWnd, HWND aWnd, char *data, char *parms, BOOL show, BOOL nopause);</source>
+	int __stdcall funcName(HWND mWnd, HWND aWnd, char *data, char *parms, BOOL show, BOOL nopause);
 
 With mIRC being unicode, the new prototype is:
 
 .. code:: c
 
-	int __stdcall funcName(HWND mWnd, HWND aWnd, TCHAR *data, TCHAR *parms, BOOL show, BOOL nopause);</source>
+	int __stdcall funcName(HWND mWnd, HWND aWnd, TCHAR *data, TCHAR *parms, BOOL show, BOOL nopause);
 
 .. list-table::
     :widths: 15 85
@@ -103,7 +103,7 @@ The interesting difference is that C linkage does not use "mangling" when export
 
 .. code:: c
 
-	extern "C" int __stdcall funcName(HWND mWnd, HWND aWnd, char *data, char *parms, BOOL show, BOOL nopause);</source>
+	extern "C" int __stdcall funcName(HWND mWnd, HWND aWnd, char *data, char *parms, BOOL show, BOOL nopause);
 
 However, the __stdcall standard convention implies a mangling operation which extern "C" does not override.
 
