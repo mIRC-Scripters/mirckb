@@ -103,6 +103,7 @@ References
    advanced/sockets
    advanced/eval_brackets
    advanced/com
+   advanced/dll
 
 .. toctree::
    :maxdepth: 2
