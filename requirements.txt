@@ -1,3 +1,4 @@
 sphinx-tabs
 sphinx-copybutton
 sphinx_rtd_theme
+urllib3<2
