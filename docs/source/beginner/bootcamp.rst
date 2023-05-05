@@ -24,6 +24,8 @@ Statements
 
 Every script is composed of one or more statements. A statement describes something that needs to happen. Each statement must go on its own line, or it must be separated by a pipe, which is the \| symbol. If separated by a pipe, the pipe itself must have a space in front and a space after it, otherwise it’s not seen as a delimiter of statements. For example, the following two are the same:
 
+.. _beginner-piping:
+
 Piping
 ^^^^^^
 

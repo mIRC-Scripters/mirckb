@@ -1,6 +1,8 @@
 Matching Tools
 ==============
 
+.. _matching_tools-wildcard:
+
 Wildcard
 --------
 

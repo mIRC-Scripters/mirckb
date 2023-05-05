@@ -40,7 +40,7 @@ Parameters
     * - <aliasname>
       - The name of the alias to use.
     * - [command]
-- If specified, the commands that are associated with the alias (you can specify multiple commands on one line by seperating them properly with :doc:`pipes </beginner/bootcamp.html#piping>` ), if not specified the alias is removed.
+      - If specified, the commands that are associated with the alias (you can specify multiple commands on one line by seperating them properly with :ref:`beginner-piping`), if not specified the alias is removed.
 
 Example
 -------

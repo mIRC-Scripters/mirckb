@@ -1,7 +1,7 @@
 /unset
 ======
 
-The **/unset** command removes any variables by their specified names. If a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` pattern was specified, all variables matching that pattern will be removed. The /unset command can be used to remove both local and global variables, however it can only remove one of them per name. Local variables take precedence over a global variable with the same name.
+The **/unset** command removes any variables by their specified names. If a :ref:`matching_tools-wildcard` pattern was specified, all variables matching that pattern will be removed. The /unset command can be used to remove both local and global variables, however it can only remove one of them per name. Local variables take precedence over a global variable with the same name.
 
 .. note:: /unset has an evaluation issue with dynamic variables, you can read more :doc:`here </beginner/variables.html#special-behaviors-quirks>`
 

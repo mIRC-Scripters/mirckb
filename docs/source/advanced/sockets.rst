@@ -112,6 +112,8 @@ Where do we go from here?
 
 So where do you go from here? Basic on the kind of socket you are looking to work with you will have to decide whether you want UDP or TCP.
 
+.. _sockets-tcp_sockets:
+
 TCP Sockets
 -----------
 

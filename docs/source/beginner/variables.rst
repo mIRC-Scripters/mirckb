@@ -405,6 +405,8 @@ This method is easier to read/handle than the bracket, you can simply get the pl
 
 .. note:: $eval is often used in the simple form $()
 
+.. _beginner-variable_quirks:
+
 Special Behaviors & Quirks
 --------------------------
 

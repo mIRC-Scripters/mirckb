@@ -697,6 +697,8 @@ The same thing applies to reading, $read opens the file, try to match and close 
 
 Whenever you are going to use /write or $read in a loop to write/read a lot of things, if the loop isn't small and if the file isn't small, it might get slow very quickly, and you should consider using file handling.
 
+.. _data_storage-hash_tables:
+
 Hash Tables
 -----------
 
