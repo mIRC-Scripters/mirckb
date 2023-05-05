@@ -1,7 +1,7 @@
 /flist
 ======
 
-**/flist** lists all open files, or those matching the specified name, which can be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression.
+**/flist** lists all open files, or those matching the specified name, which can be a :ref:`matching_tools-wildcard` expression.
 
 Synopsis
 --------
@@ -25,7 +25,7 @@ Parameters
     * - Parameter
       - Description
     * - name
-      - a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression
+      - a :ref:`matching_tools-wildcard` expression
 
 Example
 -------

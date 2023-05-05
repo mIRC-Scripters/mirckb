@@ -1,7 +1,7 @@
 /sockclose
 ==========
 
-The **/sockclose** command allows the closing of any open socket connections, either specifically or by :doc:`wildcard </intermediate/matching_tools.html#wildcard>` .
+The **/sockclose** command allows the closing of any open socket connections, either specifically or by :ref:`matching_tools-wildcard` .
 
 .. note:: if you close a socket inside a socket event, all infos on the socket are lost and $sockname will be set to $null as well.
 
@@ -20,7 +20,7 @@ None
 Parameters
 ----------
 
-**<name>**: The specific socket name to be closed. This parameter can also be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` match.
+**<name>**: The specific socket name to be closed. This parameter can also be a :ref:`matching_tools-wildcard` match.
 
 Example
 -------

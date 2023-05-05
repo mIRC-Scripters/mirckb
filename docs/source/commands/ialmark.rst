@@ -24,7 +24,7 @@ Switches
     * - -r
       - removes the mark
     * - -w
-      - used with -rn to treat name as :doc:`wildcard </intermediate/matching_tools.html#wildcard>`
+      - used with -rn to treat name as :ref:`matching_tools-wildcard`
 
 Marks can be accessed using :doc:`$ialmark(nick,n/name) </identifiers/ialmark>` and properties 'name' and 'mark'.
 

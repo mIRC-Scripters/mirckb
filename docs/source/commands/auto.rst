@@ -41,7 +41,7 @@ Parameters
     * - <on/off>
       - Turns the auto-op feature on/off.
     * - <nick/address>
-      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :doc:`wildcard </intermediate/matching_tools.html#wildcard>` addresses.
+      - The nickname or address of the person to be added to the auto-op list. Both nickname and addresses are acceptable. Addresses can be :ref:`matching_tools-wildcard` addresses.
     * - [#channel1,#channel2,...]
       - Channels to apply the auto-op to.
     * - [type]

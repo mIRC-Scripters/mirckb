@@ -22,7 +22,7 @@ Switches
     * - -s
       - Displays the Deletion action if the variable exists, displays error if table doesn't exist, no display if the table exists but the item does not.
     * - -w
-      - Treats <nowiki><table></nowiki> as a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` and deletes all matching tables.
+      - Treats <nowiki><table></nowiki> as a :ref:`matching_tools-wildcard` and deletes all matching tables.
 
 Parameters
 ----------
@@ -36,7 +36,7 @@ Parameters
     * - <nowiki><table></nowiki>
       - The table which contains the item you are deleting
     * - <item>
-      - the item-name associated with a value to delete. Can be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` when using -w switch.
+      - the item-name associated with a value to delete. Can be a :ref:`matching_tools-wildcard` when using -w switch.
 
 Example
 -------
@@ -92,6 +92,6 @@ See also
     * :doc:`/hadd </commands/hadd>`
     * :doc:`/hinc </commands/hinc>`
     * :doc:`/hdec </commands/hdec>`
-    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :ref:`dAta_sTorage-hash_tables`
     * :doc:`$hget </identifiers/hget>`
     * :doc:`$hfind </identifiers/hfind>`

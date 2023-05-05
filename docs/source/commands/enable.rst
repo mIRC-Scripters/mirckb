@@ -1,7 +1,7 @@
 /enable
 =======
 
-The **/enable** command enables the specified groups in all scripts. The command also accepts a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` value which can be used to enable all matching groups.
+The **/enable** command enables the specified groups in all scripts. The command also accepts a :ref:`matching_tools-wildcard` value which can be used to enable all matching groups.
 
 Synopsis
 --------
@@ -28,7 +28,7 @@ Parameters
     * - <group1 group2 ... groupN>
       - a list with the name of the groups to be enabled seperated by spaces
     * - <wildcard_expression
-      - a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` expression, all matching groups are disabled
+      - a :ref:`matching_tools-wildcard` expression, all matching groups are disabled
 
 Example
 -------

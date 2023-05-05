@@ -127,6 +127,6 @@ See also
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`
     * :doc:`/hdec </commands/hdec>`
-    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :ref:`dAta_sTorage-hash_tables`
     * :doc:`$hget </identifiers/hget>`
     * :doc:`$hfind </identifiers/hfind>`

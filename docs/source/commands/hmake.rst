@@ -280,7 +280,7 @@ See also
     * :doc:`/hfree </commands/hfree>`
     * :doc:`/hload </commands/hload>`
     * :doc:`/hsave </commands/hsave>`
-    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :ref:`dAta_sTorage-hash_tables`
     * :doc:`/hadd </commands/hadd>`
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`

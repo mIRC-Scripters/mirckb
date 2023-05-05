@@ -86,7 +86,7 @@ See also
     * :doc:`/hmake </commands/hmake>`
     * :doc:`/hfree </commands/hfree>`
     * :doc:`/hsave </commands/hsave>`
-    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :ref:`dAta_sTorage-hash_tables`
     * :doc:`/hadd </commands/hadd>`
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`

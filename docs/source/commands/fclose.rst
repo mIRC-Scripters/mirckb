@@ -1,7 +1,7 @@
 /fclose
 =======
 
-The **/fclose** command closes a file open that was previously opened via the :doc:`/fopen </commands/fopen>` command. This command supports a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` pattern for its handle name.
+The **/fclose** command closes a file open that was previously opened via the :doc:`/fopen </commands/fopen>` command. This command supports a :ref:`matching_tools-wildcard` pattern for its handle name.
 
 Synopsis
 --------
@@ -23,7 +23,7 @@ Switches
     * - <handle>
       - The name of the handle
     * - <wild_handle>
-      - A :doc:`wildcard </intermediate/matching_tools.html#wildcard>` handle pattern
+      - A :ref:`matching_tools-wildcard` handle pattern
 
 Parameters
 ----------

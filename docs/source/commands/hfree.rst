@@ -22,7 +22,7 @@ Switches
     * - -s
       - Displays debug information
     * - -w
-      - Treats <nowiki><table></nowiki> as a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` and deletes all matching tables.
+      - Treats <nowiki><table></nowiki> as a :ref:`matching_tools-wildcard` and deletes all matching tables.
 
 Parameters
 ----------
@@ -77,7 +77,7 @@ See also
     * :doc:`/hmake </commands/hmake>`
     * :doc:`/hload </commands/hload>`
     * :doc:`/hsave </commands/hsave>`
-    * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
+    * :ref:`dAta_sTorage-hash_tables`
     * :doc:`/hadd </commands/hadd>`
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`

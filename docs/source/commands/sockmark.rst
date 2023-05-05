@@ -1,7 +1,7 @@
 /sockmark
 =========
 
-The **/sockmark** command assigns temporary data to a socket to be referenced later using :doc:`$sock </identifiers/sock>` (<name>).mark. Leaving the [temp data] parameter :doc:`$null </identifiers/null>` will clear the socket mark. The sockmark command can be used to assign the same data to multiple sockets using a <wild_name> :doc:`wildcard </intermediate/matching_tools.html#wildcard>` pattern.
+The **/sockmark** command assigns temporary data to a socket to be referenced later using :doc:`$sock </identifiers/sock>` (<name>).mark. Leaving the [temp data] parameter :doc:`$null </identifiers/null>` will clear the socket mark. The sockmark command can be used to assign the same data to multiple sockets using a <wild_name> :ref:`matching_tools-wildcard` pattern.
 
 Limitations
 -----------
@@ -33,7 +33,7 @@ Parameters
     * - <name>
       - The handle name of the socket
     * - <wild_name>
-      - A :doc:`wildcard </intermediate/matching_tools.html#wildcard>` pattern to match
+      - A :ref:`matching_tools-wildcard` pattern to match
     * - [temp data]
       - The temporary socket's data
 

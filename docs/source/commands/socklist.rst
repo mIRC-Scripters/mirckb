@@ -32,7 +32,7 @@ Parameters
     * - Parameter
       - Description
     * - [name]
-      - The name of the socket to search for. This parameter can also be a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` match.
+      - The name of the socket to search for. This parameter can also be a :ref:`matching_tools-wildcard` match.
 
 Example
 -------

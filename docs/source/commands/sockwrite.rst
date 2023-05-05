@@ -2,7 +2,7 @@
 ==========
 
 The **/sockwrite** command allows you to send data to a TCP socket connection previously opened with :doc:`/sockopen </commands/sockopen_commands>` (See :doc:`tCP sockets </advanced/sockets.html#tcp-socket>` ).
-You can specify a :doc:`wildcard </intermediate/matching_tools.html#wildcard>` for the name to send the data to all matching sockets.
+You can specify a :ref:`matching_tools-wildcard` for the name to send the data to all matching sockets.
 
 When the data has been sent, the :doc:`on sockwrite </events/on_sockwrite>` event triggers.
 
