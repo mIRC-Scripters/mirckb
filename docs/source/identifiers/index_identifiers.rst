@@ -5,7 +5,9 @@ Identifiers
 
 =$nick, $*, $&, $+ and $++ are exception and are not returning values, they are constructs interpreted in a different way.
 
-Presently undocumented or deprecated identifiers are indicated in *italics*.  An identifier is undocumented if it doesn't reasonably appear in the current help.chm, but may appear in the `versions.txt <https://www.mirc.com/versions.txt>`_
+Scoped to event identifiers are indicated with a :sup:`E`
+
+Presently undocumented or deprecated identifiers are indicated with a :sup:`D`.  An identifier is undocumented if it doesn't reasonably appear in the current help.chm, but may appear in the `versions.txt <https://www.mirc.com/versions.txt>`_
 
 .. tabs::
 
@@ -21,12 +23,12 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$activecid <activecid>`
             * :doc:`$activewid <activewid>`
             * :doc:`$adate <adate>`
-            * :doc:`$address <address>` :sup:`e`
+            * :doc:`$address <address>`\ :sup:`E`
             * :doc:`$address() <address>`
             * :doc:`$addtok() <addtok>`
             * :doc:`$addtokcs() <addtokcs>`
             * :doc:`$agent() <agent>`
-            * :doc:`$agentname <agentname>` :sup:`e`
+            * :doc:`$agentname <agentname>`\ :sup:`E`
             * :doc:`$agentstat <agentstat>`
             * :doc:`$agentver <agentver>`
             * :doc:`$alias() <alias>`
@@ -42,7 +44,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$asin() <asin>`
             * :doc:`$atan() <atan>`
             * :doc:`$atan2() <atan2>`
-            * :doc:`$auto() <auto>`
+            * :doc:`$auto() <auto>`\ :sup:`D`
             * :doc:`$avoice() <avoice>`
             * :doc:`$away <away>`
             * :doc:`$awaymsg <awaymsg>`
@@ -53,16 +55,16 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$banlist() <banlist>`
-            * :doc:`$banmask <banmask>` :sup:`e`
+            * :doc:`$banlist() <banlist>`\ :sup:`D`
+            * :doc:`$banmask <banmask>`\ :sup:`E`
             * :doc:`$base() <base>`
-            * :doc:`$beta <beta>`
+            * :doc:`$beta <beta>`\ :sup:`D`
             * :doc:`$bfind() <bfind>`
             * :doc:`$bindip() <bindip>`
             * :doc:`$bitoff() <bitoff>`
             * :doc:`$biton() <biton>`
             * :doc:`$bits <bits>`
-            * :doc:`$bnick <bnick>` :sup:`e`
+            * :doc:`$bnick <bnick>`\ :sup:`E`
             * :doc:`$bvar() <bvar>`
             * :doc:`$bytes() <bytes>`
 
@@ -77,24 +79,24 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$cb <cb>`
             * :doc:`$cb() <cb>`
             * :doc:`$cbrt() <cbrt>`
-            * :doc:`$cd <cd>` :sup:`e`
+            * :doc:`$cd <cd>`\ :sup:`E`
             * :doc:`$ceil() <ceil>`
             * :doc:`$chan <chan>`
             * :doc:`$chan() <chan>`
             * :doc:`$chanmodes <chanmodes>`
-            * :doc:`$channel() <channel>`
+            * :doc:`$channel() <channel>`\ :sup:`D`
             * :doc:`$chantypes <chantypes>`
             * :doc:`$chat() <chat>`
             * :doc:`$chr() <chr>`
             * :doc:`$cid <cid>`
-            * :doc:`$clevel <clevel>` :sup:`e`
+            * :doc:`$clevel <clevel>`\ :sup:`E`
             * :doc:`$click() <click>`
             * :doc:`$cmdbox <cmdbox>`
             * :doc:`$cmdline <cmdline>`
             * :doc:`$cnick() <cnick>`
             * :doc:`$codepage() <codepage>`
             * :doc:`$color() <color>`
-            * :doc:`$colour() <colour>`
+            * :doc:`$colour() <colour>`\ :sup:`D`
             * :doc:`$com() <com>`
             * :doc:`$comcall() <comcall>`
             * :doc:`$comchan() <comchan>`
@@ -115,7 +117,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$ctime <ctime>`
             * :doc:`$ctime() <ctime>`
             * :doc:`$ctimer <ctimer>`
-            * :doc:`$ctrlenter <ctrlenter>` :sup:`e`
+            * :doc:`$ctrlenter <ctrlenter>`\ :sup:`E`
 
     .. tab:: D
 
@@ -136,19 +138,19 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$decode() <decode>`
             * :doc:`$decompress() <decompress>`
             * :doc:`$deltok() <deltok>`
-            * :doc:`$devent <devent>` :sup:`e`
+            * :doc:`$devent <devent>`\ :sup:`E`
             * :doc:`$dialog() <dialog>`
-            * :doc:`$did <did>` :sup:`e`
+            * :doc:`$did <did>`\ :sup:`E`
             * :doc:`$did() <did>`
             * :doc:`$didreg() <didreg>`
             * :doc:`$didtok() <didtok>`
             * :doc:`$didwm() <didwm>`
-            * :doc:`$dir <dir>`
+            * :doc:`$dir <dir>`\ :sup:`D`
             * :doc:`$disk() <disk>`
             * :doc:`$dlevel <dlevel>`
             * :doc:`$dll() <dll>`
             * :doc:`$dllcall() <dllcall>`
-            * :doc:`$dname <dname>` :sup:`e`
+            * :doc:`$dname <dname>`\ :sup:`E`
             * :doc:`$dns() <dns>`
             * :doc:`$donotdisturb <donotdisturb>`
             * :doc:`$dqwindow <dqwindow>`
@@ -161,16 +163,16 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
 
             * :doc:`$ebeeps <ebeeps>`
             * :doc:`$editbox() <editbox>`
-            * :doc:`$email <email>`
+            * :doc:`$email <email>`\ :sup:`D`
             * :doc:`$emailaddr <emailaddr>`
             * :doc:`$encode() <encode>`
             * :doc:`$envvar() <envvar>`
             * :doc:`$error <error>`
             * :doc:`$eval() <eval>`
-            * :doc:`$evalnext() <evalnext>`
-            * :doc:`$event <event>` :sup:`e`
-            * :doc:`$eventid <eventid>` :sup:`e`
-            * :doc:`$eventparms <eventparms>` :sup:`e`
+            * :doc:`$evalnext() <evalnext>`\ :sup:`D`
+            * :doc:`$event <event>`\ :sup:`E`
+            * :doc:`$eventid <eventid>`\ :sup:`E`
+            * :doc:`$eventparms <eventparms>`\ :sup:`E`
             * :doc:`$exists() <exists>`
             * :doc:`$exiting <exiting>`
 
@@ -185,9 +187,9 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$ferr <ferr>`
             * :doc:`$fgetc() <fgetc>`
             * :doc:`$fibonacci() <fibonacci>`
-            * :doc:`$file <file>`
+            * :doc:`$file <file>`\ :sup:`D`
             * :doc:`$file() <file>`
-            * :doc:`$filename <filename>` :sup:`e`
+            * :doc:`$filename <filename>`\ :sup:`E`
             * :doc:`$filtered <filtered>`
             * :doc:`$finddir() <finddir>`
             * :doc:`$finddirn <finddirn>`
@@ -203,9 +205,9 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$fread() <fread>`
             * :doc:`$freadex() <freadex>`
             * :doc:`$fromeditbox <fromeditbox>`
-            * :doc:`$fserv() <fserv>`
+            * :doc:`$fserv() <fserv>`\ :sup:`D`
             * :doc:`$fserve() <fserve>`
-            * :doc:`$fulladdress <fulladdress>` :sup:`e`
+            * :doc:`$fulladdress <fulladdress>`\ :sup:`E`
             * :doc:`$fulldate <fulldate>`
             * :doc:`$fullname <fullname>`
             * :doc:`$fullscreen <fullscreen>`
@@ -230,25 +232,25 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$halted <halted>` :sup:`e`
+            * :doc:`$halted <halted>`\ :sup:`E`
             * :doc:`$hash() <hash>`
             * :doc:`$height() <height>`
-            * :doc:`$hfile= <hfile>`
-            * :doc:`$hfile() <hfile>`
+            * :doc:`$hfile= <hfile>`\ :sup:`D`
+            * :doc:`$hfile() <hfile>`\ :sup:`D`
             * :doc:`$hfind() <hfind>`
             * :doc:`$hget() <hget>`
             * :doc:`$highlight <highlight>`
             * :doc:`$highlight() <highlight>`
             * :doc:`$hmac() <hmac>`
-            * :doc:`$hmatch() <hmatch>`
-            * :doc:`$hnick <hnick>` :sup:`e`
+            * :doc:`$hmatch() <hmatch>`\ :sup:`D`
+            * :doc:`$hnick <hnick>`\ :sup:`E`
             * :doc:`$hnick() <hnick>`
             * :doc:`$host <host>`
-            * :doc:`$hotline <hotline>` :sup:`e`
-            * :doc:`$hotlinepos <hotlinepos>` :sup:`e`
-            * :doc:`$hotlink() <hotlink>` :sup:`e`
+            * :doc:`$hotline <hotline>`\ :sup:`E`
+            * :doc:`$hotlinepos <hotlinepos>`\ :sup:`E`
+            * :doc:`$hotlink() <hotlink>`\ :sup:`E`
             * :doc:`$hotp() <hotp>`
-            * :doc:`$hregex() <hregex>`
+            * :doc:`$hregex() <hregex>`\ :sup:`D`
             * :doc:`$hypot() <hypot>`
 
     .. tab:: I
@@ -256,26 +258,26 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$iaddress <iaddress>` :sub:`e`
+            * :doc:`$iaddress <iaddress>` :sub:`DE`
             * :doc:`$ial <ial>`
             * :doc:`$ial() <ial>`
             * :doc:`$ialchan() <ialchan>`
             * :doc:`$ibl() <ibl>`
             * :doc:`$idle <idle>`
             * :doc:`$iel() <iel>`
-            * :doc:`$ifmatch <ifmatch>`
-            * :doc:`$ifmatch2 <ifmatch2>`
+            * :doc:`$ifmatch <ifmatch>`\ :sup:`D`
+            * :doc:`$ifmatch2 <ifmatch2>`\ :sup:`D`
             * :doc:`$ignore <ignore>`
             * :doc:`$ignore() <ignore>`
             * :doc:`$iif() <iif>`
             * :doc:`$iil() <iil>`
             * :doc:`$inellipse() <inellipse>`
             * :doc:`$ini() <ini>`
-            * :doc:`$initopic() <initopic>`
+            * :doc:`$initopic() <initopic>`\ :sup:`D`
             * :doc:`$inmidi <inmidi>`
             * :doc:`$inmode <inmode>`
-            * :doc:`$inmp3 <inmp3>`
-            * :doc:`$inpaste <inpaste>` :sup:`e`
+            * :doc:`$inmp3 <inmp3>`\ :sup:`D`
+            * :doc:`$inpaste <inpaste>`\ :sup:`E`
             * :doc:`$inpoly() <inpoly>`
             * :doc:`$input() <input>`
             * :doc:`$inrect() <inrect>`
@@ -309,11 +311,11 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$keychar <keychar>` :sup:`e`
+            * :doc:`$keychar <keychar>`\ :sup:`E`
             * :doc:`$keylparam <keylparam>`
-            * :doc:`$keyrpt <keyrpt>` :sup:`e`
-            * :doc:`$keyval <keyval>` :sup:`e`
-            * :doc:`$knick <knick>` :sup:`e`
+            * :doc:`$keyrpt <keyrpt>`\ :sup:`E`
+            * :doc:`$keyval <keyval>`\ :sup:`E`
+            * :doc:`$knick <knick>`\ :sup:`E`
 
     .. tab:: L
 
@@ -336,7 +338,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$link() <link>`
             * :doc:`$lock() <lock>`
             * :doc:`$locked <locked>`
-            * :doc:`$lof <lof>`
+            * :doc:`$lof <lof>`\ :sup:`D`
             * :doc:`$log() <log>`
             * :doc:`$log2() <log2>`
             * :doc:`$log10() <log10>`
@@ -353,10 +355,10 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$maddress <maddress>` :sup:`e`
-            * :doc:`$maddress() <maddress>`
+            * :doc:`$maddress <maddress>`\ :sup:`E`
+            * :doc:`$maddress() <maddress>`\ :sup:`D`
             * :doc:`$mask() <mask>`
-            * :doc:`$matchkey <matchkey>` :sup:`e`
+            * :doc:`$matchkey <matchkey>`\ :sup:`E`
             * :doc:`$matchtok() <matchtok>`
             * :doc:`$matchtokcs() <matchtokcs>`
             * :doc:`$max <max>`
@@ -365,10 +367,10 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$maxlens <maxlens>`
             * :doc:`$md5() <md5>`
             * :doc:`$me <me>`
-            * :doc:`$menu <menu>` :sup:`e`
+            * :doc:`$menu <menu>`\ :sup:`E`
             * :doc:`$menubar <menubar>`
-            * :doc:`$menucontext <menucontext>` :sup:`e`
-            * :doc:`$menutype <menutype>` :sup:`e`
+            * :doc:`$menucontext <menucontext>`\ :sup:`E`
+            * :doc:`$menutype <menutype>`\ :sup:`E`
             * :doc:`$mid() <mid>`
             * :doc:`$mididir <mididir>`
             * :doc:`$min <min>`
@@ -381,36 +383,36 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$mknickfn() <mknickfn>`
             * :doc:`$mnick <mnick>`
             * :doc:`$mode() <mode>`
-            * :doc:`$modefirst <modefirst>` :sup:`e`
-            * :doc:`$modelast <modelast>` :sup:`e`
+            * :doc:`$modefirst <modefirst>`\ :sup:`E`
+            * :doc:`$modelast <modelast>`\ :sup:`E`
             * :doc:`$modespl <modespl>`
             * :doc:`$modinv() <modinv>`
             * :doc:`$mouse <mouse>`
-            * :doc:`$mp3() <mp3>`
-            * :doc:`$mp3dir <mp3dir>`
+            * :doc:`$mp3() <mp3>`\ :sup:`D`
+            * :doc:`$mp3dir <mp3dir>`\ :sup:`D`
             * :doc:`$msfile() <msfile>`
-            * :doc:`$msgstamp <msgstamp>` :sup:`e`
-            * :doc:`$msgtags <msgtags>` :sup:`e`
-            * :doc:`$msgtags() <msgtags>` :sup:`e`
+            * :doc:`$msgstamp <msgstamp>`\ :sup:`E`
+            * :doc:`$msgtags <msgtags>`\ :sup:`E`
+            * :doc:`$msgtags() <msgtags>`\ :sup:`E`
 
     .. tab:: N
 
         .. hlist::
             :columns: 4
 
-            * :doc:`$naddress <naddress>` :sup:`e`
+            * :doc:`$naddress <naddress>`\ :sup:`DE`
             * :doc:`$network <network>`
-            * :doc:`$newnick <newnick>` :sup:`e`
-            * :doc:`$nhnick() <nhnick>`
+            * :doc:`$newnick <newnick>`\ :sup:`E`
+            * :doc:`$nhnick() <nhnick>`\ :sup:`D`
             * :doc:`=$nick() <nick_identifier>`
-            * :doc:`$nick <nick>` :sup:`e`
+            * :doc:`$nick <nick>`\ :sup:`E`
             * :doc:`$nick() <nick>`
             * :doc:`$nickmode <nickmode>`
             * :doc:`$no <no>`
             * :doc:`$nofile() <nofile>`
             * :doc:`$nonstdmsg <nonstdmsg>`
             * :doc:`$nopath <nopath>`
-            * :doc:`$nopnick() <nopnick>`
+            * :doc:`$nopnick() <nopnick>`\ :sup:`D`
             * :doc:`$noqt() <noqt>`
             * :doc:`$not() <not>`
             * :doc:`$notags() <notags>`
@@ -420,7 +422,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$numbits() <numbits>`
             * :doc:`$numeric <numeric>`
             * :doc:`$numtok() <numtok>`
-            * :doc:`$nvnick() <nvnick>`
+            * :doc:`$nvnick() <nvnick>`\ :sup:`D`
 
     .. tab:: O
 
@@ -432,7 +434,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$onlineserver <onlineserver>`
             * :doc:`$onlinetotal <onlinetotal>`
             * :doc:`$onpoly() <onpoly>`
-            * :doc:`$opnick <opnick>` :sup:`e`
+            * :doc:`$opnick <opnick>`\ :sup:`E`
             * :doc:`$opnick() <opnick>`
             * :doc:`$or() <or>`
             * :doc:`$ord() <ord>`
@@ -446,9 +448,9 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$parmn <parmn>`
             * :doc:`$parms <parms>`
             * :doc:`$parseem <parseem>`
-            * :doc:`$parseline <parseline>` :sup:`e`
-            * :doc:`$parsetype <parsetype>` :sup:`e`
-            * :doc:`$parseutf <parseutf>` :sup:`e`
+            * :doc:`$parseline <parseline>`\ :sup:`E`
+            * :doc:`$parsetype <parsetype>`\ :sup:`E`
+            * :doc:`$parseutf <parseutf>`\ :sup:`E`
             * :doc:`$passivedcc <passivedcc>`
             * :doc:`$pi <pi>`
             * :doc:`$pic() <pic>`
@@ -478,16 +480,16 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$r <r>`
-            * :doc:`$raddress <raddress>` :sup:`e`
+            * :doc:`$r <r>`\ :sup:`D`
+            * :doc:`$raddress <raddress>`\ :sup:`E`
             * :doc:`$rand() <rand>`
             * :doc:`$rands() <rands>`
-            * :doc:`$rawbytes <rawbytes>` :sup:`e`
-            * :doc:`$rawmsg <rawmsg>` :sup:`e`
+            * :doc:`$rawbytes <rawbytes>`\ :sup:`E`
+            * :doc:`$rawmsg <rawmsg>`\ :sup:`E`
             * :doc:`$read() <read>`
             * :doc:`$readini() <readini>`
             * :doc:`$readn <readn>`
-            * :doc:`$regbr <regbr>`
+            * :doc:`$regbr <regbr>`\ :sup:`D`
             * :doc:`$regerrstr <regerrstr>`
             * :doc:`$regex() <regex>`
             * :doc:`$regml() <regml>`
@@ -519,7 +521,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$samepath() <samepath>`
             * :doc:`$scid() <scid>`
             * :doc:`$scon() <scon>`
-            * :doc:`$script <script>` :sup:`e`
+            * :doc:`$script <script>`\ :sup:`E`
             * :doc:`$script() <script>`
             * :doc:`$scriptdir <scriptdir>`
             * :doc:`$scriptline <scriptline>`
@@ -535,18 +537,18 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$sha512() <sha512>`
             * :doc:`$shortfn() <shortfn>`
             * :doc:`$show <show>`
-            * :doc:`$signal <signal>` :sup:`e`
+            * :doc:`$signal <signal>`\ :sup:`E`
             * :doc:`$sin() <sin>`
             * :doc:`$sinh() <sinh>`
-            * :doc:`$site <site>` :sup:`e`
+            * :doc:`$site <site>`\ :sup:`E`
             * :doc:`$sline() <sline>`
             * :doc:`$snick() <snick>`
             * :doc:`$snicks <snicks>`
             * :doc:`$snotify <snotify>`
             * :doc:`$sock() <sock>`
-            * :doc:`$sockbr <sockbr>` :sup:`e`
-            * :doc:`$sockerr <sockerr>` :sup:`e`
-            * :doc:`$sockname <sockname>` :sup:`e`
+            * :doc:`$sockbr <sockbr>`\ :sup:`E`
+            * :doc:`$sockerr <sockerr>`\ :sup:`E`
+            * :doc:`$sockname <sockname>`\ :sup:`E`
             * :doc:`$sorttok() <sorttok>`
             * :doc:`$sorttokcs() <sorttokcs>`
             * :doc:`$sound() <sound>`
@@ -579,7 +581,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
 
             * :doc:`$tan() <tan>`
             * :doc:`$tanh() <tanh>`
-            * :doc:`$target <target>` :sup:`e`
+            * :doc:`$target <target>`\ :sup:`E`
             * :doc:`$tempfn <tempfn>`
             * :doc:`$tempfn() <tempfn>`
             * :doc:`$ticks <ticks>`
@@ -593,9 +595,9 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$tip() <tip>`
             * :doc:`$tips <tips>`
             * :doc:`$titlebar <titlebar>`
-            * :doc:`$token <token>`
+            * :doc:`$token <token>`\ :sup:`D`
             * :doc:`$toolbar() <toolbar>`
-            * :doc:`$topic <topic>`
+            * :doc:`$topic <topic>`\ :sup:`D`
             * :doc:`$totp() <totp>`
             * :doc:`$treebar <treebar>`
             * :doc:`$true <true>`
@@ -606,7 +608,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$ulevel <ulevel>` :sup:`e`
+            * :doc:`$ulevel <ulevel>`\ :sup:`E`
             * :doc:`$ulist() <ulist>`
             * :doc:`$unsafe() <unsafe>`
             * :doc:`$upper() <upper>`
@@ -630,7 +632,7 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
             * :doc:`$vcmdstat <vcmdstat>`
             * :doc:`$vcmdver <vcmdver>`
             * :doc:`$version <version>`
-            * :doc:`$vnick <vnick>` :sup:`e`
+            * :doc:`$vnick <vnick>`\ :sup:`E`
             * :doc:`$vol() <vol>`
 
     .. tab:: W
@@ -638,14 +640,14 @@ Presently undocumented or deprecated identifiers are indicated in *italics*.  An
         .. hlist::
             :columns: 4
 
-            * :doc:`$wavedir <wavedir>`
+            * :doc:`$wavedir <wavedir>`\ :sup:`D`
             * :doc:`$wid <wid>`
             * :doc:`$width() <width>`
-            * :doc:`$wildsite <wildsite>` :sup:`e`
+            * :doc:`$wildsite <wildsite>`\ :sup:`E`
             * :doc:`$wildtok() <wildtok>`
             * :doc:`$wildtokcs() <wildtokcs>`
             * :doc:`$window() <window>`
-            * :doc:`$window <window>` :sup:`e`
+            * :doc:`$window <window>`\ :sup:`E`
             * :doc:`$wrap() <wrap>`
 
     .. tab:: X
