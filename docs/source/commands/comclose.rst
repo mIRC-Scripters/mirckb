@@ -3,7 +3,7 @@
 
 The **/comclose** command closes an existing :doc:`cOM connection </advanced/com>` by a specific handle.
 
-The supplied com handle must have been previously created via the :doc:`/comopen command </advanced/comopen>` or the :doc:`$com </identifiers/$com>` / :doc:`$comcall </identifiers/$comcall>` identifiers.
+The supplied com handle must have been previously created via the :doc:`/comopen command </advanced/comopen>` or the :doc:`$com </identifiers/com>` / :doc:`$comcall </identifiers/comcall>` identifiers.
 
 Synopsis
 --------
@@ -53,8 +53,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </identifiers/$com>`
-    * :doc:`$comcall </identifiers/$comcall>`
-    * :doc:`$comval </identifiers/$comval>`
+    * :doc:`$com </identifiers/com>`
+    * :doc:`$comcall </identifiers/comcall>`
+    * :doc:`$comval </identifiers/comval>`
     * :doc:`/comopen </commands/comopen>`
     * :doc:`/comreg </commands/comreg>`

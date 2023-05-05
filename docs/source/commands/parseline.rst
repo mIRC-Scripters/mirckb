@@ -53,7 +53,7 @@ Optional
     * - -p
       - Used with -q, indicate the line must trigger on parseline
     * - -n
-      - Add a :doc:`$crlf </identifiers/$crlf>` to the end of the line if the line doesn't already end with a $crlf
+      - Add a :doc:`$crlf </identifiers/crlf>` to the end of the line if the line doesn't already end with a $crlf
     * - -uN
       - Enable/Disable utf8 encoding/decoding of the line. Use N = 1 to enable, 0 to disable
 
@@ -102,4 +102,4 @@ See also
     :columns: 4
 
     * :doc:`on parseline </events/on_parseline>`
-    * :doc:`$parseutf </identifiers/$parseutf>`
+    * :doc:`$parseutf </identifiers/parseutf>`

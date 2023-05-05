@@ -1,7 +1,7 @@
 /rename
 =======
 
-The **/rename** command can be used to rename and/or move a file or a directory. If the path contains spaces, you must enclose the path in a pair of double quotes ( :doc:`$qt </identifiers/$qt>` ).
+The **/rename** command can be used to rename and/or move a file or a directory. If the path contains spaces, you must enclose the path in a pair of double quotes ( :doc:`$qt </identifiers/qt>` ).
 
 Synopsis
 --------
@@ -63,9 +63,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$read </identifiers/$read>`
-    * :doc:`$readini </identifiers/$readini>`
-    * :doc:`$fopen </identifiers/$fopen>`
+    * :doc:`$read </identifiers/read>`
+    * :doc:`$readini </identifiers/readini>`
+    * :doc:`$fopen </identifiers/fopen>`
     * :doc:`/copy </commands/copy>`
     * :doc:`/fclose </commands/fclose>`
     * :doc:`/fopen </commands/fopen>`

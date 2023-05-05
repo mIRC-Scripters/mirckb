@@ -65,9 +65,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/$window>`
-    * :doc:`$ebeeps </identifiers/$ebeeps>`
-    * :doc:`$vol </identifiers/$vol>`
+    * :doc:`$window </identifiers/window>`
+    * :doc:`$ebeeps </identifiers/ebeeps>`
+    * :doc:`$vol </identifiers/vol>`
     * :doc:`/beep </commands/beep>`
     * :doc:`/ebeeps </commands/ebeeps>`
     * :doc:`/vol </commands/vol>`

@@ -68,5 +68,5 @@ See Also
 
 :doc:`/splay </commands/splay>`
 :doc:`/vol </commands/vol>`
-:doc:`$sound </identifiers/$sound>`
-:doc:`$vol </identifiers/$vol>`
+:doc:`$sound </identifiers/sound>`
+:doc:`$vol </identifiers/vol>`

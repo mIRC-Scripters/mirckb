@@ -98,9 +98,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$readini </identifiers/$readini>`
-    * :doc:`$ini </identifiers/$ini>`
-    * :doc:`$read </identifiers/$read>`
-    * :doc:`$mircini </identifiers/$mircini>`
-    * :doc:`$mircdir </identifiers/$mircdir>`
+    * :doc:`$readini </identifiers/readini>`
+    * :doc:`$ini </identifiers/ini>`
+    * :doc:`$read </identifiers/read>`
+    * :doc:`$mircini </identifiers/mircini>`
+    * :doc:`$mircdir </identifiers/mircdir>`
     * :doc:`/write </commands/write>`

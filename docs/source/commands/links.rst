@@ -45,6 +45,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$link </identifiers/$link>`
-    * :doc:`$network </identifiers/$network>`
-    * :doc:`$server </identifiers/$server>`
+    * :doc:`$link </identifiers/link>`
+    * :doc:`$network </identifiers/network>`
+    * :doc:`$server </identifiers/server>`

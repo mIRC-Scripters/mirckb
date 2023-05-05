@@ -67,5 +67,5 @@ See Also
     :columns: 4
 
     * :doc:`/sreq </commands/sreq>`
-    * :doc:`$creq </identifiers/$creq>`
-    * :doc:`$sreq </identifiers/$sreq>`
+    * :doc:`$creq </identifiers/creq>`
+    * :doc:`$sreq </identifiers/sreq>`

@@ -58,4 +58,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$protect </identifiers/$protect>`
+    * :doc:`$protect </identifiers/protect>`

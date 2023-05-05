@@ -183,8 +183,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$var </identifiers/$var>`
+    * :doc:`$var </identifiers/var>`
     * :doc:`/set </commands/set>`
     * :doc:`/unset </commands/unset>`
     * :doc:`/unsetall </commands/unsetall>`
-    * :doc:`$calc </identifiers/$calc>`
+    * :doc:`$calc </identifiers/calc>`

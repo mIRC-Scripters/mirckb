@@ -46,4 +46,4 @@ See also
     :columns: 4
 
     * :doc:`/query </commands/query>`
-    * :doc:`$query </identifiers/$query>`
+    * :doc:`$query </identifiers/query>`

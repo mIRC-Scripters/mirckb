@@ -130,4 +130,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$toolbar </identifiers/$toolbar>`
+    * :doc:`$toolbar </identifiers/toolbar>`

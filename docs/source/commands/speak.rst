@@ -74,4 +74,4 @@ See Also
 
     * :doc:`/gtalk </commands/gtalk>`
     * :doc:`/splay </commands/splay>`
-    * :doc:`$speak </identifiers/$speak>`
+    * :doc:`$speak </identifiers/speak>`

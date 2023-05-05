@@ -73,9 +73,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$line </identifiers/$line>`
-    * :doc:`$fline </identifiers/$fline>`
-    * :doc:`$sline </identifiers/$sline>`
+    * :doc:`$line </identifiers/line>`
+    * :doc:`$fline </identifiers/fline>`
+    * :doc:`$sline </identifiers/sline>`
     * :doc:`/cline </commands/cline>`
     * :doc:`/dline </commands/dline>`
     * :doc:`/echo </commands/echo>`

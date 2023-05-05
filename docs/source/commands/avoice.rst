@@ -91,9 +91,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$aop </identifiers/$aop>`
-    * :doc:`$avoice </identifiers/$avoice>`
-    * :doc:`$auto </identifiers/$auto>`
+    * :doc:`$aop </identifiers/aop>`
+    * :doc:`$avoice </identifiers/avoice>`
+    * :doc:`$auto </identifiers/auto>`
     * :doc:`/aop </commands/aop>`
     * :doc:`/auto </commands/auto>`
     * :doc:`/ignore </commands/ignore>`

@@ -106,9 +106,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$script </identifiers/$script>`
-    * :doc:`$script </identifiers/$script>`
-    * :doc:`$window </identifiers/$window>`
+    * :doc:`$script </identifiers/script>`
+    * :doc:`$script </identifiers/script>`
+    * :doc:`$window </identifiers/window>`
     * :doc:`/filter </commands/filter>`
     * :doc:`/loadbuf </commands/loadbuf>`
     * :doc:`/reload </commands/reload>`

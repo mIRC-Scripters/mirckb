@@ -74,7 +74,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$hotline </identifiers/$hotline>`
-    * :doc:`$hotlinepos </identifiers/$hotlinepos>`
-    * :doc:`$hotlink </identifiers/$hotlink>`
+    * :doc:`$hotline </identifiers/hotline>`
+    * :doc:`$hotlinepos </identifiers/hotlinepos>`
+    * :doc:`$hotlink </identifiers/hotlink>`
     * :doc:`on hotlink </events/on_hotlink>`

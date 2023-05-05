@@ -53,8 +53,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$remote </identifiers/$remote>`
-    * :doc:`$rawmsg </identifiers/$rawmsg>`
+    * :doc:`$remote </identifiers/remote>`
+    * :doc:`$rawmsg </identifiers/rawmsg>`
     * :doc:`/ctcps </commands/tcp-socket>`
     * :doc:`/raw </commands/raw>`
     * :doc:`/remote </commands/remote>`

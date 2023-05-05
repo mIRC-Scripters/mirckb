@@ -86,4 +86,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ignore </identifiers/$ignore>`
+    * :doc:`$ignore </identifiers/ignore>`

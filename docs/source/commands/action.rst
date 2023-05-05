@@ -54,8 +54,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$me </identifiers/$me>`
-    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`$me </identifiers/me>`
+    * :doc:`$nick </identifiers/nick>`
     * :doc:`/amsg </commands/amsg>`
     * :doc:`/describe </commands/describe>`
     * :doc:`/me </commands/me>`

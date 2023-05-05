@@ -51,4 +51,4 @@ See also
     * :doc:`/toolbar </commands/toolbar>`
     * :doc:`/treebar </commands/treebar>`
     * :doc:`/switchbar </commands/switchbar>`
-    * :doc:`$menubar </identifiers/$menubar>`
+    * :doc:`$menubar </identifiers/menubar>`

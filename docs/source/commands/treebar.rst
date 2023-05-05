@@ -67,4 +67,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$treebar </identifiers/$treebar>`
+    * :doc:`$treebar </identifiers/treebar>`

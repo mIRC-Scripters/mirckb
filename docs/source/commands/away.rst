@@ -81,6 +81,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$away </identifiers/$away>`
-    * :doc:`$awaymsg </identifiers/$awaymsg>`
-    * :doc:`$awaytime </identifiers/$awaytime>`
+    * :doc:`$away </identifiers/away>`
+    * :doc:`$awaymsg </identifiers/awaymsg>`
+    * :doc:`$awaytime </identifiers/awaytime>`

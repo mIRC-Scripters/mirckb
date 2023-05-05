@@ -68,9 +68,9 @@ See Also
     * :doc:`oN mP3eND </events/oN_mp3end>`
     * :doc:`oN nOSOUND </events/oN_nosound>`
     * :doc:`oN wAVEEND </events/oN_waveend>`
-    * :doc:`$inmidi </identifiers/$inmidi>`
-    * :doc:`$insong </identifiers/$insong>`
-    * :doc:`$inwave </identifiers/$inwave>`
-    * :doc:`$sound </identifiers/$sound>`
-    * :doc:`$vol </identifiers/$vol>`
+    * :doc:`$inmidi </identifiers/inmidi>`
+    * :doc:`$insong </identifiers/insong>`
+    * :doc:`$inwave </identifiers/inwave>`
+    * :doc:`$sound </identifiers/sound>`
+    * :doc:`$vol </identifiers/vol>`
     * :doc:`/splay </commands/splay>`

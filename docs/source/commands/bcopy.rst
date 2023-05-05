@@ -151,8 +151,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$bvar </identifiers/$bvar>`
-    * :doc:`$bfind </identifiers/$bfind>`
+    * :doc:`$bvar </identifiers/bvar>`
+    * :doc:`$bfind </identifiers/bfind>`
     * :doc:`/bread </commands/bread>`
     * :doc:`/breplace </commands/breplace>`
     * :doc:`/bset </commands/bset>`

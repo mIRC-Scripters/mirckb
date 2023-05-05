@@ -112,7 +112,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$abook </identifiers/$abook>`
-    * :doc:`$cnick </identifiers/$cnick>`
-    * :doc:`$nick </identifiers/$nick>`
+    * :doc:`$abook </identifiers/abook>`
+    * :doc:`$cnick </identifiers/cnick>`
+    * :doc:`$nick </identifiers/nick>`
     * :doc:`/abook </commands/abook>`

@@ -46,9 +46,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$mircini </identifiers/$mircini>`
-    * :doc:`$readini </identifiers/$readini>`
-    * :doc:`$read </identifiers/$read>`
+    * :doc:`$mircini </identifiers/mircini>`
+    * :doc:`$readini </identifiers/readini>`
+    * :doc:`$read </identifiers/read>`
     * :doc:`/load </commands/load>`
     * :doc:`/localinfo </commands/localinfo>`
     * :doc:`/reload </commands/reload>`

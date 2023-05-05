@@ -39,4 +39,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ebeeps </identifiers/$ebeeps>`
+    * :doc:`$ebeeps </identifiers/ebeeps>`

@@ -41,7 +41,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$active </identifiers/$active>`
+    * :doc:`$active </identifiers/active>`
     * :doc:`/ame </commands/ame>`
     * :doc:`/amsg </commands/amsg>`
     * :doc:`/describe </commands/describe>`

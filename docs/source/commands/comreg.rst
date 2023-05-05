@@ -53,10 +53,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </identifiers/$com>`
-    * :doc:`$comcall </identifiers/$comcall>`
-    * :doc:`$comval </identifiers/$comval>`
-    * :doc:`$dll </identifiers/$dll>`
+    * :doc:`$com </identifiers/com>`
+    * :doc:`$comcall </identifiers/comcall>`
+    * :doc:`$comval </identifiers/comval>`
+    * :doc:`$dll </identifiers/dll>`
     * :doc:`/comclose </commands/comclose>`
     * :doc:`/comopen </commands/comopen>`
     * :doc:`/dll </commands/dll>`

@@ -79,7 +79,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$url </identifiers/$url>`
+    * :doc:`$url </identifiers/url>`
     * :doc:`/help </commands/help>`
     * :doc:`/run </commands/run>`
     * :doc:`/winhelp </commands/winhelp>`

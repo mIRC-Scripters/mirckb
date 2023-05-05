@@ -62,4 +62,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$notify </identifiers/$notify>`
+    * :doc:`$notify </identifiers/notify>`

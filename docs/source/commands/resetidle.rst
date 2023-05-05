@@ -1,7 +1,7 @@
 /resetidle
 ==========
 
-The **/resetidle** command resets the :doc:`$idle </identifiers/$idle>` identifier to zero or to the number of seconds you specify.
+The **/resetidle** command resets the :doc:`$idle </identifiers/idle>` identifier to zero or to the number of seconds you specify.
 
 Synopsis
 --------
@@ -45,4 +45,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$idle </identifiers/$idle>`
+    * :doc:`$idle </identifiers/idle>`

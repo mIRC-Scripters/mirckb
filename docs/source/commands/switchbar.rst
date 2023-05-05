@@ -51,10 +51,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$switchbar </identifiers/$switchbar>`
-    * :doc:`$menubar </identifiers/$menubar>`
-    * :doc:`$toolbar </identifiers/$toolbar>`
-    * :doc:`$treebar </identifiers/$treebar>`
+    * :doc:`$switchbar </identifiers/switchbar>`
+    * :doc:`$menubar </identifiers/menubar>`
+    * :doc:`$toolbar </identifiers/toolbar>`
+    * :doc:`$treebar </identifiers/treebar>`
     * :doc:`/menubar </commands/menubar>`
     * :doc:`/titlebar </commands/titlebar>`
     * :doc:`/toolbar </commands/toolbar>`

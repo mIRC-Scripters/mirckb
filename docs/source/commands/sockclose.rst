@@ -40,10 +40,10 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc:`$sock </identifiers/$sock>`
-    * :doc:`$sockname </identifiers/$sockname>`
-    * :doc:`$sockerr </identifiers/$sockerr>`
-    * :doc:`$sockbr </identifiers/$sockbr>`
+    * :doc:`$sock </identifiers/sock>`
+    * :doc:`$sockname </identifiers/sockname>`
+    * :doc:`$sockerr </identifiers/sockerr>`
+    * :doc:`$sockbr </identifiers/sockbr>`
     * :doc:`/sockaccept </commands/sockaccept>`
     * :doc:`/socklist </commands/socklist>`
     * :doc:`/socklisten </commands/socklisten>`

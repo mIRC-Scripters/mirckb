@@ -186,12 +186,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$dialog </identifiers/$dialog>`
-    * :doc:`$dname </identifiers/$dname>`
-    * :doc:`$devent </identifiers/$devent>`
-    * :doc:`$did </identifiers/$did>`
-    * :doc:`$didwm </identifiers/$didwm>`
-    * :doc:`$didreg </identifiers/$didreg>`
-    * :doc:`$didtok </identifiers/$didtok>`
+    * :doc:`$dialog </identifiers/dialog>`
+    * :doc:`$dname </identifiers/dname>`
+    * :doc:`$devent </identifiers/devent>`
+    * :doc:`$did </identifiers/did>`
+    * :doc:`$didwm </identifiers/didwm>`
+    * :doc:`$didreg </identifiers/didreg>`
+    * :doc:`$didtok </identifiers/didtok>`
     * :doc:`/did </commands/did>`
     * :doc:`/didtok </commands/didtok>`

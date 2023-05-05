@@ -1,7 +1,7 @@
 /comopen
 ========
 
-The **/comopen** command opens a COM connection to specified programmatic identifier with the assigned name. Your script should check :doc:`$comerr </identifiers/$comerr>` after opening the connection to make sure the connection was established successfully.
+The **/comopen** command opens a COM connection to specified programmatic identifier with the assigned name. Your script should check :doc:`$comerr </identifiers/comerr>` after opening the connection to make sure the connection was established successfully.
 
 Synopsis
 --------
@@ -71,10 +71,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$com </identifiers/$com>`
-    * :doc:`$comcall </identifiers/$comcall>`
-    * :doc:`$comval </identifiers/$comval>`
-    * :doc:`$comerr </identifiers/$comerr>`
+    * :doc:`$com </identifiers/com>`
+    * :doc:`$comcall </identifiers/comcall>`
+    * :doc:`$comval </identifiers/comval>`
+    * :doc:`$comerr </identifiers/comerr>`
     * :doc:`/comclose </commands/comclose>`
     * :doc:`/comreg </commands/comreg>`
     * :doc:`/comlist </commands/comlist>`

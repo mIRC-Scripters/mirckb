@@ -231,10 +231,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/$window>`
-    * :doc:`$line </identifiers/$line>`
-    * :doc:`$fline </identifiers/$fline>`
-    * :doc:`$sline </identifiers/$sline>`
+    * :doc:`$window </identifiers/window>`
+    * :doc:`$line </identifiers/line>`
+    * :doc:`$fline </identifiers/fline>`
+    * :doc:`$sline </identifiers/sline>`
     * :doc:`/aline </commands/aline>`
     * :doc:`/cline </commands/cline>`
     * :doc:`/dline </commands/dline>`

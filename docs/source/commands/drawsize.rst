@@ -53,17 +53,17 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/$window>`
-    * :doc:`$click </identifiers/$click>`
-    * :doc:`$mouse </identifiers/$mouse>`
-    * :doc:`$inellipse </identifiers/$inellipse>`
-    * :doc:`$inrect </identifiers/$inrect>`
-    * :doc:`$inroundrect </identifiers/$inroundrect>`
-    * :doc:`$inpoly </identifiers/$inpoly>`
-    * :doc:`$onpoly </identifiers/$onpoly>`
-    * :doc:`$rgb </identifiers/$rgb>`
-    * :doc:`$getdot </identifiers/$getdot>`
-    * :doc:`$height </identifiers/$height>`
+    * :doc:`$window </identifiers/window>`
+    * :doc:`$click </identifiers/click>`
+    * :doc:`$mouse </identifiers/mouse>`
+    * :doc:`$inellipse </identifiers/inellipse>`
+    * :doc:`$inrect </identifiers/inrect>`
+    * :doc:`$inroundrect </identifiers/inroundrect>`
+    * :doc:`$inpoly </identifiers/inpoly>`
+    * :doc:`$onpoly </identifiers/onpoly>`
+    * :doc:`$rgb </identifiers/rgb>`
+    * :doc:`$getdot </identifiers/getdot>`
+    * :doc:`$height </identifiers/height>`
     * :doc:`/drawcopy </commands/drawcopy>`
     * :doc:`/drawfill </commands/drawfill>`
     * :doc:`/drawline </commands/drawline>`

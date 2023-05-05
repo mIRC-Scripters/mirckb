@@ -39,14 +39,14 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$play </identifiers/$play>`
-    * :doc:`$pnick </identifiers/$pnick>`
-    * :doc:`$vol </identifiers/$vol>`
-    * :doc:`$inwave </identifiers/$inwave>`
-    * :doc:`$inmidi </identifiers/$inmidi>`
-    * :doc:`$insong </identifiers/$insong>`
-    * :doc:`$sound </identifiers/$sound>`
-    * :doc:`$filename </identifiers/$filename>`
+    * :doc:`$play </identifiers/play>`
+    * :doc:`$pnick </identifiers/pnick>`
+    * :doc:`$vol </identifiers/vol>`
+    * :doc:`$inwave </identifiers/inwave>`
+    * :doc:`$inmidi </identifiers/inmidi>`
+    * :doc:`$insong </identifiers/insong>`
+    * :doc:`$sound </identifiers/sound>`
+    * :doc:`$filename </identifiers/filename>`
     * :doc:`/channel </commands/channel>`
     * :doc:`/play </commands/play>`
     * :doc:`/splay </commands/splay>`

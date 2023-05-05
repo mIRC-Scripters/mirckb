@@ -58,4 +58,4 @@ See also
     * :doc:`/msg </commands/msg>`
     * :doc:`/notice </commands/notice>`
     * :doc:`/queryrn </commands/queryrn>`
-    * :doc:`$query </identifiers/$query>`
+    * :doc:`$query </identifiers/query>`

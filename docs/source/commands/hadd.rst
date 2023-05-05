@@ -128,5 +128,5 @@ See also
     * :doc:`/hinc </commands/hinc>`
     * :doc:`/hdec </commands/hdec>`
     * :doc:`hAsh tAbles </intermediate/data_storage.html#hash-tables>`
-    * :doc:`$hget </identifiers/$hget>`
-    * :doc:`$hfind </identifiers/$hfind>`
+    * :doc:`$hget </identifiers/hget>`
+    * :doc:`$hfind </identifiers/hfind>`

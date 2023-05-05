@@ -100,8 +100,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$sockname </identifiers/$sockname>`
-    * :doc:`$sock </identifiers/$sock>`
+    * :doc:`$sockname </identifiers/sockname>`
+    * :doc:`$sock </identifiers/sock>`
     * :doc:`/socklist </commands/socklist>`
     * :doc:`/sockmark </commands/sockmark>`
     * :doc:`/sockpause </commands/sockpause>`

@@ -76,4 +76,4 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$editbox </identifiers/$editbox>`
+    * :doc:`$editbox </identifiers/editbox>`

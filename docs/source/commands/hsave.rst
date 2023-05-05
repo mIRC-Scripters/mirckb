@@ -198,5 +198,5 @@ See also
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`
     * :doc:`/hdec </commands/hdec>`
-    * :doc:`$hget </identifiers/$hget>`
-    * :doc:`$hfind </identifiers/$hfind>`
+    * :doc:`$hget </identifiers/hget>`
+    * :doc:`$hfind </identifiers/hfind>`

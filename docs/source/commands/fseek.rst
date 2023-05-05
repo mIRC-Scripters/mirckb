@@ -68,11 +68,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$fread </identifiers/$fread>`
-    * :doc:`$fopen </identifiers/$fopen>`
-    * :doc:`$ferr </identifiers/$ferr>`
-    * :doc:`$feof </identifiers/$feof>`
-    * :doc:`$fgetc </identifiers/$fgetc>`
+    * :doc:`$fread </identifiers/fread>`
+    * :doc:`$fopen </identifiers/fopen>`
+    * :doc:`$ferr </identifiers/ferr>`
+    * :doc:`$feof </identifiers/feof>`
+    * :doc:`$fgetc </identifiers/fgetc>`
     * :doc:`/fclose </commands/fclose>`
     * :doc:`/flist </commands/flist>`
     * :doc:`/fopen </commands/fopen>`

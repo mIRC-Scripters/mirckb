@@ -3,16 +3,16 @@
 
 The **/sockread** command reads bytes from the receive buffer of a socket connection into a specified variable. This command must be and is to be used inside socket events.
 
-mIRC in general only understand :doc:`$crlf </identifiers/$crlf>` terminated line. With socket, mIRC only understands :doc:`$lf </identifiers/$lf>` terminated line (any :doc:`$cr </identifiers/$cr>` before a :doc:`$lf </identifiers/$lf>` is removed).
+mIRC in general only understand :doc:`$crlf </identifiers/crlf>` terminated line. With socket, mIRC only understands :doc:`$lf </identifiers/lf>` terminated line (any :doc:`$cr </identifiers/cr>` before a :doc:`$lf </identifiers/lf>` is removed).
 
-The number of bytes waiting to be read can be retrieved using :doc:`$sock(name).rq </identifiers/$sock>`
+The number of bytes waiting to be read can be retrieved using :doc:`$sock(name).rq </identifiers/sock>`
 
 By default:
 
 * /sockread %var reads a terminated line into the variable, if the received buffer does not contain a terminated line, no byte are read into the variable.
 * /sockread &var try to read 4096 bytes into the variable.
 
-The real number of bytes read by /sockread can be retrieved using :doc:`$sockbr </identifiers/$sockbr>` .
+The real number of bytes read by /sockread can be retrieved using :doc:`$sockbr </identifiers/sockbr>` .
 
 Synopsis
 --------
@@ -53,7 +53,7 @@ Parameters
 Reading
 -------
 
-A single /sockread may not be enough to read the entire buffer (if you are reading line by line for example). You might want to keep reading until :doc:`$sockbr </identifiers/$sockbr>` (the number of bytes read) is set to zero. This is far faster than letting mIRC re-trigger the event. If your script does not read the whole buffer, the on sockread event is re-triggered if:
+A single /sockread may not be enough to read the entire buffer (if you are reading line by line for example). You might want to keep reading until :doc:`$sockbr </identifiers/sockbr>` (the number of bytes read) is set to zero. This is far faster than letting mIRC re-trigger the event. If your script does not read the whole buffer, the on sockread event is re-triggered if:
 
     a) you were reading into a &binvar.
 
@@ -115,7 +115,7 @@ So you might think here "let's not use -f then":
 
     }
 
-.. note:: that you can read that last non terminated line inside the :doc:`on sockclose </events/on_sockclose>` event), should be fine. In fact, in this specific example and in general, it will work, because you are making sure %a is a full line or nothing. Well that's why it works in most situation, you are checking that %a is a specific text, which would fail if no byte were read into %a because a terminated line couldn't be found. However, if you are in a situation where you must check that %a is $null (usually because it read an empty $crlf line), you must check :doc:`$sockbr </identifiers/$sockbr>` to know if you read bytes at all, a good example of this usage is shown below, which discard the headers of HTTP (check for an empty value after /Sockread %a reads an empty $crlf line):
+.. note:: that you can read that last non terminated line inside the :doc:`on sockclose </events/on_sockclose>` event), should be fine. In fact, in this specific example and in general, it will work, because you are making sure %a is a full line or nothing. Well that's why it works in most situation, you are checking that %a is a specific text, which would fail if no byte were read into %a because a terminated line couldn't be found. However, if you are in a situation where you must check that %a is $null (usually because it read an empty $crlf line), you must check :doc:`$sockbr </identifiers/sockbr>` to know if you read bytes at all, a good example of this usage is shown below, which discard the headers of HTTP (check for an empty value after /Sockread %a reads an empty $crlf line):
 
 .. code:: text
 
@@ -347,10 +347,10 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc:`$sock </identifiers/$sock>`
-    * :doc:`$sockname </identifiers/$sockname>`
-    * :doc:`$sockerr </identifiers/$sockerr>`
-    * :doc:`$sockbr </identifiers/$sockbr>`
+    * :doc:`$sock </identifiers/sock>`
+    * :doc:`$sockname </identifiers/sockname>`
+    * :doc:`$sockerr </identifiers/sockerr>`
+    * :doc:`$sockbr </identifiers/sockbr>`
     * :doc:`/sockaccept </commands/sockaccept>`
     * :doc:`/sockclose </commands/sockclose>`
     * :doc:`/socklist </commands/socklist>`

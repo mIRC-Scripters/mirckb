@@ -48,5 +48,5 @@ See also
     :columns: 4
 
     * :doc:`/writeini </commands/writeini>`
-    * :doc:`$readini </identifiers/$readini>`
-    * :doc:`$ini </identifiers/$ini>`
+    * :doc:`$readini </identifiers/readini>`
+    * :doc:`$ini </identifiers/ini>`

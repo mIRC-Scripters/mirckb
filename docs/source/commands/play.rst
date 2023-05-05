@@ -96,5 +96,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$play </identifiers/$play>`
+    * :doc:`$play </identifiers/play>`
     * :doc:`on playend </events/on_playend>`

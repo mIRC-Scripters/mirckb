@@ -46,10 +46,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$fopen </identifiers/$fopen>`
-    * :doc:`$fread </identifiers/$fread>`
-    * :doc:`$ferr </identifiers/$ferr>`
-    * :doc:`$feof </identifiers/$feof>`
+    * :doc:`$fopen </identifiers/fopen>`
+    * :doc:`$fread </identifiers/fread>`
+    * :doc:`$ferr </identifiers/ferr>`
+    * :doc:`$feof </identifiers/feof>`
     * :doc:`/fclose </commands/fclose>`
     * :doc:`/fopen </commands/fopen>`
     * :doc:`/fseek </commands/fseek>`

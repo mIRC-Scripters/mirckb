@@ -70,7 +70,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$abook </identifiers/$abook>`
-    * :doc:`$cnick </identifiers/$cnick>`
+    * :doc:`$abook </identifiers/abook>`
+    * :doc:`$cnick </identifiers/cnick>`
     * :doc:`/cnick </commands/cnick>`
     * :doc:`/uwho </commands/uwho>`

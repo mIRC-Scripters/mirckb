@@ -75,6 +75,14 @@ References
 
 .. toctree::
    :maxdepth: 2
+   :caption: Reference
+   :hidden:
+
+   commands/index_commands
+   identifiers/index_identifiers
+
+.. toctree::
+   :maxdepth: 2
    :caption: Beginner
    :hidden:
 
@@ -107,13 +115,6 @@ References
 
 .. toctree::
    :maxdepth: 2
-   :caption: Miscellaneous
-   :hidden:
-
-   misc/mirc_help_channels
-
-.. toctree::
-   :maxdepth: 2
    :caption: Other
    :hidden:
 
@@ -126,10 +127,10 @@ References
 
 .. toctree::
    :maxdepth: 2
-   :caption: Reference
+   :caption: Miscellaneous
    :hidden:
 
-   commands/index_commands
+   misc/mirc_help_channels
 
 .. toctree::
    :maxdepth: 1

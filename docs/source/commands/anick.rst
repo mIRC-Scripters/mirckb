@@ -49,7 +49,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$mnick </identifiers/$mnick>`
-    * :doc:`$anick </identifiers/$anick>`
-    * :doc:`$me </identifiers/$me>`
+    * :doc:`$mnick </identifiers/mnick>`
+    * :doc:`$anick </identifiers/anick>`
+    * :doc:`$me </identifiers/me>`
     * :doc:`/identd </commands/identd>`

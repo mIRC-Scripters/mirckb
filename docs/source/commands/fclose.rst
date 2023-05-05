@@ -55,12 +55,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$fopen </identifiers/$fopen>`
-    * :doc:`$fread </identifiers/$fread>`
-    * :doc:`$fgetc </identifiers/$fgetc>`
-    * :doc:`$feof </identifiers/$feof>`
-    * :doc:`$ferr </identifiers/$ferr>`
-    * :doc:`$file </identifiers/$file>`
+    * :doc:`$fopen </identifiers/fopen>`
+    * :doc:`$fread </identifiers/fread>`
+    * :doc:`$fgetc </identifiers/fgetc>`
+    * :doc:`$feof </identifiers/feof>`
+    * :doc:`$ferr </identifiers/ferr>`
+    * :doc:`$file </identifiers/file>`
     * :doc:`/flist </commands/flist>`
     * :doc:`/fopen </commands/fopen>`
     * :doc:`/fseek </commands/fseek>`

@@ -100,9 +100,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$read </identifiers/$read>`
-    * :doc:`$readn </identifiers/$readn>`
-    * :doc:`$mircini </identifiers/$mircini>`
-    * :doc:`$mircdir </identifiers/$mircdir>`
+    * :doc:`$read </identifiers/read>`
+    * :doc:`$readn </identifiers/readn>`
+    * :doc:`$mircini </identifiers/mircini>`
+    * :doc:`$mircdir </identifiers/mircdir>`
     * :doc:`/fopen </commands/fopen>`
     * :doc:`/fwrite </commands/fwrite>`

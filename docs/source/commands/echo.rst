@@ -213,9 +213,9 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$colour </identifiers/$colour>`
-    * :doc:`$color </identifiers/$color>`
-    * :doc:`$n </identifiers/$n>`
+    * :doc:`$colour </identifiers/colour>`
+    * :doc:`$color </identifiers/color>`
+    * :doc:`$n </identifiers/n>`
     * :doc:`/aline </commands/aline>`
     * :doc:`/dline </commands/dline>`
     * :doc:`/drawtext </commands/drawtext>`

@@ -147,7 +147,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$var </identifiers/$var>`
+    * :doc:`$var </identifiers/var>`
     * :doc:`/dec </commands/dec>`
     * :doc:`/inc </commands/inc>`
     * :doc:`/unset </commands/unset>`

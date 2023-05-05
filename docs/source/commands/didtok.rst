@@ -60,10 +60,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$didtok </identifiers/$didtok>`
-    * :doc:`$did </identifiers/$did>`
-    * :doc:`$dialog </identifiers/$dialog>`
-    * :doc:`$didwm </identifiers/$didwm>`
-    * :doc:`$didreg </identifiers/$didreg>`
+    * :doc:`$didtok </identifiers/didtok>`
+    * :doc:`$did </identifiers/did>`
+    * :doc:`$dialog </identifiers/dialog>`
+    * :doc:`$didwm </identifiers/didwm>`
+    * :doc:`$didreg </identifiers/didreg>`
     * :doc:`/dialog </commands/dialog>`
     * :doc:`/did </commands/did>`

@@ -88,7 +88,7 @@ Critical and non critical events
 
 Ever wondered why you can't call $input from an on text event? This is related to the message loop.
 
-All messages from the message loop which are related to sockets (mIRC's internal socket used for IRC, not socket created from :doc:`/sockopen </commands/sockopen>` or :doc:`/sockudp </commands/sockudp` can be called critical events whereas any other message (clicking on a nick in the nicklist for example) is considered a non critical event.
+All messages from the message loop which are related to sockets (mIRC's internal socket used for IRC, not socket created from :doc:`/sockopen </commands/sockopen>` or :doc:`/sockudp </commands/sockudp>` can be called critical events whereas any other message (clicking on a nick in the nicklist for example) is considered a non critical event.
 
 Socket related messages are called critical because mIRC cannot handle these messages if they are to be handled from a nested call of the message loop.
 

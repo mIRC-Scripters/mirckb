@@ -39,10 +39,10 @@ See Also
     :columns: 4
 
     * :doc:`cOM objects </advanced/cOM>`
-    * :doc:`$com </identifiers/$com>`
-    * :doc:`$comcall </identifiers/$comcall>`
-    * :doc:`$comerr </identifiers/$comerr>`
-    * :doc:`$comval </identifiers/$comval>`
+    * :doc:`$com </identifiers/com>`
+    * :doc:`$comcall </identifiers/comcall>`
+    * :doc:`$comerr </identifiers/comerr>`
+    * :doc:`$comval </identifiers/comval>`
     * :doc:`/comclose </commands/comclose>`
     * :doc:`/comopen </commands/comopen>`
     * :doc:`/comreg </commands/comreg>`

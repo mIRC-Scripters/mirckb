@@ -47,5 +47,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$window </identifiers/$window>`
+    * :doc:`$window </identifiers/window>`
     * :doc:`/window </commands/window>`

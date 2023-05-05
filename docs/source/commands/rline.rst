@@ -71,7 +71,7 @@ See also
     * :doc:`/dline </commands/dline>`
     * :doc:`/cline </commands/cline>`
     * :doc:`/sline </commands/sline>`
-    * :doc:`$line </identifiers/$line>`
-    * :doc:`$fline </identifiers/$fline>`
-    * :doc:`$sline </identifiers/$sline>`
-    * :doc:`$window </identifiers/$window>`
+    * :doc:`$line </identifiers/line>`
+    * :doc:`$fline </identifiers/fline>`
+    * :doc:`$sline </identifiers/sline>`
+    * :doc:`$window </identifiers/window>`

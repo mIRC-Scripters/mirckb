@@ -82,7 +82,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$var </identifiers/$var>`
+    * :doc:`$var </identifiers/var>`
     * :doc:`/inc </commands/inc>`
     * :doc:`/set </commands/set>`
     * :doc:`/unset </commands/unset>`

@@ -102,5 +102,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$debug </identifiers/$debug>`
-    * :doc:`$rawmsg </identifiers/$rawmsg>`
+    * :doc:`$debug </identifiers/debug>`
+    * :doc:`$rawmsg </identifiers/rawmsg>`

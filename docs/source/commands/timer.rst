@@ -89,10 +89,10 @@ Parameters
     * - <nowiki><code></nowiki>
       - Code to be executed.
 
-:doc:`$ctimer </identifiers/$ctimer>` & :doc:`$ltimer </identifiers/$ltimer>`
+:doc:`$ctimer </identifiers/ctimer>` & :doc:`$ltimer </identifiers/ltimer>`
 -------------------------------------------------------------------------------
 
-:doc:`$ctimer </identifiers/$ctimer>` can be used to return the name of the timer which triggered the current script while :doc:`$ltimer </identifiers/$ltimer>` returns the name of the last timer which triggered.
+:doc:`$ctimer </identifiers/ctimer>` can be used to return the name of the timer which triggered the current script while :doc:`$ltimer </identifiers/ltimer>` returns the name of the last timer which triggered.
 
 Quirks
 ------
@@ -190,12 +190,12 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$timer </identifiers/$timer>`
-    * :doc:`$ctimer </identifiers/$ctimer>`
-    * :doc:`$ltimer </identifiers/$ltimer>`
-    * :doc:`$time </identifiers/$time>`
-    * :doc:`$date </identifiers/$date>`
-    * :doc:`$gmt </identifiers/$gmt>`
-    * :doc:`$asctime </identifiers/$asctime>`
+    * :doc:`$timer </identifiers/timer>`
+    * :doc:`$ctimer </identifiers/ctimer>`
+    * :doc:`$ltimer </identifiers/ltimer>`
+    * :doc:`$time </identifiers/time>`
+    * :doc:`$date </identifiers/date>`
+    * :doc:`$gmt </identifiers/gmt>`
+    * :doc:`$asctime </identifiers/asctime>`
     * :doc:`/scid </commands/scid>`
     * :doc:`/scon </commands/scon>`

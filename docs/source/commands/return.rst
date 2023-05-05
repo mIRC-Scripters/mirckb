@@ -55,6 +55,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$result </identifiers/$result>`
+    * :doc:`$result </identifiers/result>`
     * :doc:`/alias </commands/alias>`
     * :doc:`/returnex </commands/returnex>`

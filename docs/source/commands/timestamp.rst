@@ -185,17 +185,17 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$timestampfmt </identifiers/$timestampfmt>`
-    * :doc:`$logstampfmt </identifiers/$logstampfmt>`
-    * :doc:`$logstamp </identifiers/$logstamp>`
-    * :doc:`$timestamp </identifiers/$timestamp>`
-    * :doc:`$asctime </identifiers/$asctime>`
-    * :doc:`$ctime </identifiers/$ctime>`
-    * :doc:`$date </identifiers/$date>`
-    * :doc:`$day </identifiers/$day>`
-    * :doc:`$daylight </identifiers/$daylight>`
-    * :doc:`$fulldate </identifiers/$fulldate>`
-    * :doc:`$gmt </identifiers/$gmt>`
-    * :doc:`$ticks </identifiers/$ticks>`
-    * :doc:`$time </identifiers/$time>`
-    * :doc:`$timezone </identifiers/$timezone>`
+    * :doc:`$timestampfmt </identifiers/timestampfmt>`
+    * :doc:`$logstampfmt </identifiers/logstampfmt>`
+    * :doc:`$logstamp </identifiers/logstamp>`
+    * :doc:`$timestamp </identifiers/timestamp>`
+    * :doc:`$asctime </identifiers/asctime>`
+    * :doc:`$ctime </identifiers/ctime>`
+    * :doc:`$date </identifiers/date>`
+    * :doc:`$day </identifiers/day>`
+    * :doc:`$daylight </identifiers/daylight>`
+    * :doc:`$fulldate </identifiers/fulldate>`
+    * :doc:`$gmt </identifiers/gmt>`
+    * :doc:`$ticks </identifiers/ticks>`
+    * :doc:`$time </identifiers/time>`
+    * :doc:`$timezone </identifiers/timezone>`

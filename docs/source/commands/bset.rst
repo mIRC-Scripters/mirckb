@@ -217,13 +217,13 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$bvar </identifiers/$bvar>`
+    * :doc:`$bvar </identifiers/bvar>`
     * :doc:`/bcopy </commands/bcopy>`
     * :doc:`/bread </commands/bread>`
     * :doc:`/bwrite </commands/bwrite>`
     * :doc:`/breplace </commands/breplace>`
-    * :doc:`$replace </identifiers/$replace>`
-    * :doc:`$bfind </identifiers/$bfind>`
+    * :doc:`$replace </identifiers/replace>`
+    * :doc:`$bfind </identifiers/bfind>`
     * :doc:`/bunset </commands/bunset>`
     * :doc:`/btrunc </commands/btrunc>`
-    * :doc:`$regsubex </identifiers/$regsubex>`
+    * :doc:`$regsubex </identifiers/regsubex>`

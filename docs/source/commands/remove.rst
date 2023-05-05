@@ -61,11 +61,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$mircdir </identifiers/$mircdir>`
-    * :doc:`$scriptdir </identifiers/$scriptdir>`
-    * :doc:`$read </identifiers/$read>`
-    * :doc:`$findfile </identifiers/$findfile>`
-    * :doc:`$finddir </identifiers/$finddir>`
+    * :doc:`$mircdir </identifiers/mircdir>`
+    * :doc:`$scriptdir </identifiers/scriptdir>`
+    * :doc:`$read </identifiers/read>`
+    * :doc:`$findfile </identifiers/findfile>`
+    * :doc:`$finddir </identifiers/finddir>`
     * :doc:`/copy </commands/copy>`
     * :doc:`/mkdir </commands/mkdir>`
     * :doc:`/rename </commands/rename>`

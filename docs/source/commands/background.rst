@@ -118,11 +118,11 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$toolbar </identifiers/$toolbar>`
-    * :doc:`$color </identifiers/$color>`
-    * :doc:`$treebar </identifiers/$treebar>`
-    * :doc:`$menubar </identifiers/$menubar>`
-    * :doc:`$switchbar </identifiers/$switchbar>`
+    * :doc:`$toolbar </identifiers/toolbar>`
+    * :doc:`$color </identifiers/color>`
+    * :doc:`$treebar </identifiers/treebar>`
+    * :doc:`$menubar </identifiers/menubar>`
+    * :doc:`$switchbar </identifiers/switchbar>`
     * :doc:`/color </commands/color>`
     * :doc:`/menubar </commands/menubar>`
     * :doc:`/switchbar </commands/switchbar>`

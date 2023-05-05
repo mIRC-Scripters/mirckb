@@ -48,8 +48,8 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$vol </identifiers/$vol>`
-    * :doc:`$ebeeps </identifiers/$ebeeps>`
+    * :doc:`$vol </identifiers/vol>`
+    * :doc:`$ebeeps </identifiers/ebeeps>`
     * :doc:`/ebeeps </commands/ebeeps>`
     * :doc:`/sound </commands/sound>`
     * :doc:`/speak </commands/speak>`

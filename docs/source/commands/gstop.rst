@@ -72,7 +72,7 @@ See also
     * :doc:`/gmove </commands/gmove>`
     * :doc:`/gopts </commands/gopts>`
     * :doc:`/gqreq </commands/gqreq>`
-    * :doc:`$agentver </identifiers/$agentver>`
-    * :doc:`$agentstat </identifiers/$agentstat>`
-    * :doc:`$agentname </identifiers/$agentname>`
-    * :doc:`$agent </identifiers/$agent>`
+    * :doc:`$agentver </identifiers/agentver>`
+    * :doc:`$agentstat </identifiers/agentstat>`
+    * :doc:`$agentname </identifiers/agentname>`
+    * :doc:`$agent </identifiers/agent>`

@@ -1,7 +1,7 @@
 /sockmark
 =========
 
-The **/sockmark** command assigns temporary data to a socket to be referenced later using :doc:`$sock </identifiers/$sock>` (<name>).mark. Leaving the [temp data] parameter :doc:`$null </identifiers/$null>` will clear the socket mark. The sockmark command can be used to assign the same data to multiple sockets using a <wild_name> :doc:`wildcard </intermediate/matching_tools.html#wildcard>` pattern.
+The **/sockmark** command assigns temporary data to a socket to be referenced later using :doc:`$sock </identifiers/sock>` (<name>).mark. Leaving the [temp data] parameter :doc:`$null </identifiers/null>` will clear the socket mark. The sockmark command can be used to assign the same data to multiple sockets using a <wild_name> :doc:`wildcard </intermediate/matching_tools.html#wildcard>` pattern.
 
 Limitations
 -----------
@@ -71,10 +71,10 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$sock </identifiers/$sock>`
-    * :doc:`$sockname </identifiers/$sockname>`
-    * :doc:`$sockerr </identifiers/$sockerr>`
-    * :doc:`$sockbr </identifiers/$sockbr>`
+    * :doc:`$sock </identifiers/sock>`
+    * :doc:`$sockname </identifiers/sockname>`
+    * :doc:`$sockerr </identifiers/sockerr>`
+    * :doc:`$sockbr </identifiers/sockbr>`
     * :doc:`/sockaccept </commands/sockaccept>`
     * :doc:`/sockclose </commands/sockclose>`
     * :doc:`/socklist </commands/socklist>`

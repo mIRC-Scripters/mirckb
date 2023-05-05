@@ -54,5 +54,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ip </identifiers/$ip>`
-    * :doc:`$host </identifiers/$host>`
+    * :doc:`$ip </identifiers/ip>`
+    * :doc:`$host </identifiers/host>`

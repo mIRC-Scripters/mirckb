@@ -49,6 +49,6 @@ See also
     * :doc:`/ial </commands/ial>`
     * :doc:`/clearial </commands/clearial>`
     * :doc:`/ialmark </commands/ialmark>`
-    * :doc:`$ial </identifiers/$ial>`
-    * :doc:`$address </identifiers/$address>`
-    * :doc:`$ialchan </identifiers/$ialchan>`
+    * :doc:`$ial </identifiers/ial>`
+    * :doc:`$address </identifiers/address>`
+    * :doc:`$ialchan </identifiers/ialchan>`

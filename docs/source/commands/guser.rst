@@ -61,7 +61,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ulevel </identifiers/$ulevel>`
+    * :doc:`$ulevel </identifiers/ulevel>`
     * :doc:`/auser </commands/auser>`
     * :doc:`/flush </commands/flush>`
     * :doc:`/iuser </commands/iuser>`

@@ -23,7 +23,7 @@ Switches
     * - -s
       - display a message if successful: "* Loaded hash table '<name>' from '<filename>'
     * - -b
-      - loads binary files, :doc:`$cr </identifiers/$cr>` and :doc:`$lf </identifiers/$lf>` and 0x00's etc are preserved when saving as binary files
+      - loads binary files, :doc:`$cr </identifiers/cr>` and :doc:`$lf </identifiers/lf>` and 0x00's etc are preserved when saving as binary files
     * - -B
       - uses a larger index than -b to allow longer binary data to be saved. This is not compatible with files created by the -b switch.
     * - -n
@@ -91,5 +91,5 @@ See also
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`
     * :doc:`/hdec </commands/hdec>`
-    * :doc:`$hget </identifiers/$hget>`
-    * :doc:`$hfind </identifiers/$hfind>`
+    * :doc:`$hget </identifiers/hget>`
+    * :doc:`$hfind </identifiers/hfind>`

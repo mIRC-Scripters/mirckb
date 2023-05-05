@@ -68,7 +68,7 @@ See also
     * :doc:`/gstop </commands/gstop>`
     * :doc:`/gopts </commands/gopts>`
     * :doc:`/gqreq </commands/gqreq>`
-    * :doc:`$agentver </identifiers/$agentver>`
-    * :doc:`$agentstat </identifiers/$agentstat>`
-    * :doc:`$agentname </identifiers/$agentname>`
-    * :doc:`$agent </identifiers/$agent>`
+    * :doc:`$agentver </identifiers/agentver>`
+    * :doc:`$agentstat </identifiers/agentstat>`
+    * :doc:`$agentname </identifiers/agentname>`
+    * :doc:`$agent </identifiers/agent>`
