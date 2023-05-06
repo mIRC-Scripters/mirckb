@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /hfree [-sw] <nowiki><table></nowiki>
+    /hfree [-sw] <table>
 
 Switches
 --------
@@ -22,7 +22,7 @@ Switches
     * - -s
       - Displays debug information
     * - -w
-      - Treats <nowiki><table></nowiki> as a :ref:`matching_tools-wildcard` and deletes all matching tables.
+      - Treats <table> as a :ref:`matching_tools-wildcard` and deletes all matching tables.
 
 Parameters
 ----------
@@ -33,7 +33,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <nowiki><table></nowiki>
+    * - <table>
       - the table you wish to delete.
 
 Example

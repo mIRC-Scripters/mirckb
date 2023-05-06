@@ -8,8 +8,8 @@ Synopsis
 
 .. code:: text
 
-    /hdec [-m[N]szuN] <nowiki>‹table›</nowiki> <item> [num]
-    /hdec -b[m[N]szuN] <nowiki>‹table></nowiki> <item> <&bvar>
+    /hdec [-m[N]szuN] <table> <item> [num]
+    /hdec -b[m[N]szuN] <table> <item> <&bvar>
 
 Switches
 --------
@@ -42,7 +42,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <nowiki><table></nowiki>
+    * - <table>
       - The handle name of the table containing the 'item'
     * - <item>
       - The item name associated with the data value

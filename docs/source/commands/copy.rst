@@ -10,7 +10,7 @@ Synopsis
 
 .. code:: text
 
-    /copy -aof <nowiki><source></nowiki> <destination>
+    /copy -aof <source> <destination>
 
 Switches
 --------
@@ -37,7 +37,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <nowiki><source></nowiki>
+    * - <source>
       - The name of the directory or file to be copied (can be a :ref:`matching_tools-wildcard` name)
     * - <destination>
       - Destination filename (or directory)

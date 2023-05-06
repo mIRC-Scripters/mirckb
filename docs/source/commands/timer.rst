@@ -11,7 +11,7 @@ Synopsis
 
     /timers [off]
     /timer[n|name] [off]
-    /timer[n|name] [-cdeomhipPrzN] [time] <repetitions> <interval> <nowiki><code></nowiki>
+    /timer[n|name] [-cdeomhipPrzN] [time] <repetitions> <interval> <code>
 
 Switches
 --------
@@ -86,7 +86,7 @@ Parameters
       - The amount of times the timer should repeat itself. A repetition value of '0' will repeat forever.
     * - <interval>
       - The delay between two consecutive timer executions
-    * - <nowiki><code></nowiki>
+    * - <code>
       - Code to be executed.
 
 :doc:`$ctimer </identifiers/ctimer>` & :doc:`$ltimer </identifiers/ltimer>`

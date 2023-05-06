@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    /hdel [-sw] <nowiki><table></nowiki> <item>
+    /hdel [-sw] <table> <item>
 
 Switches
 --------
@@ -22,7 +22,7 @@ Switches
     * - -s
       - Displays the Deletion action if the variable exists, displays error if table doesn't exist, no display if the table exists but the item does not.
     * - -w
-      - Treats <nowiki><table></nowiki> as a :ref:`matching_tools-wildcard` and deletes all matching tables.
+      - Treats <table> as a :ref:`matching_tools-wildcard` and deletes all matching tables.
 
 Parameters
 ----------
@@ -33,7 +33,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <nowiki><table></nowiki>
+    * - <table>
       - The table which contains the item you are deleting
     * - <item>
       - the item-name associated with a value to delete. Can be a :ref:`matching_tools-wildcard` when using -w switch.

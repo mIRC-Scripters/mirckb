@@ -12,7 +12,7 @@ Synopsis
 
 .. code:: text
 
-    /mode <channel|nickname> <nowiki>[[+|-]modechars [parameters]]</nowiki>
+    /mode <channel|nickname> [[+|-]modechars [parameters]]
 
 Switches
 --------
@@ -30,7 +30,7 @@ Parameters
       - Description
     * - <channel|nickname>
       - the nick/channel you want to change the mode
-    * - <nowiki>[[+|-]modechars [parameters]]</nowiki>
+    * - [[+|-]modechars [parameters]]
       - the syntax of a mode change.
 
 .. note:: modechars are almost always **case sensitive**. Be sure to use the correct upper or lower case.

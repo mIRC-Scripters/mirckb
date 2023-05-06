@@ -31,7 +31,7 @@ Switches
     * - -u
       - forces items in the /hadd -uN unset list to be included. They are excluded by default.
     * - -s
-      - display a message if successful: ** Saved hash table <nowiki><table></nowiki> to <filename>*
+      - display a message if successful: ** Saved hash table <table> to <filename>*
     * - -a
       - appends to an existing file instead of overwriting it
 

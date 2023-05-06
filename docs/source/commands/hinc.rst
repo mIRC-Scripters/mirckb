@@ -8,8 +8,8 @@ Synopsis
 
 .. code:: text
 
-    /hinc [-m[N]szuN] <nowiki><table></nowiki> <item> [num]
-    /hinc -b[m[N]szuN] <nowiki>‹table></nowiki> <item> <&bvar>
+    /hinc [-m[N]szuN] <table> <item> [num]
+    /hinc -b[m[N]szuN] <table> <item> <&bvar>
 
 Switches
 --------
@@ -42,7 +42,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <nowiki><table></nowiki>
+    * - <table>
       - The handle name of the table containing the 'item'
     * - <item>
       - The item name associated with the data value

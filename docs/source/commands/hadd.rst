@@ -1,15 +1,15 @@
 /hadd
 =====
 
-The **/hadd** command inserts a new item/value pair in the hash table by the <nowiki><table></nowiki> name. If that item name already exists, its old value is replaced. If the table does not exist, the -m switch can be used to create the table however it defaults to have 100 buckets, which may or may not be suitable depending on your table size. See :doc:`/hmake </commands/hmake>` for more details.
+The **/hadd** command inserts a new item/value pair in the hash table by the <table> name. If that item name already exists, its old value is replaced. If the table does not exist, the -m switch can be used to create the table however it defaults to have 100 buckets, which may or may not be suitable depending on your table size. See :doc:`/hmake </commands/hmake>` for more details.
 
 Synopsis
 --------
 
 .. code:: text
 
-    /hadd [-m[N]szuNk] <nowiki><table></nowiki> <item> [value]
-    /hadd -b[cm[N]szuNk] <nowiki><table></nowiki> <item> <&bvar>
+    /hadd [-m[N]szuNk] <table> <item> [value]
+    /hadd -b[cm[N]szuNk] <table> <item> <&bvar>
 
 Switches
 --------
@@ -44,7 +44,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <nowiki><table></nowiki>
+    * - <table>
       - The handle name of the table to operate on
     * - <item>
       - The item key associated with the value
