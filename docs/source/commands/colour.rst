@@ -3,6 +3,8 @@
 
 The **/colour** command allows you to change the color setting from the color dialog (can be access using the Alt+K shortcut keys). The /color command can also be used to change the color of the Nth (<N>) color the 16 color palette to a new value (<RGB>)
 
+The :doc:`/cnick </commands/color>` and /colour commands execute the same code, so they can be used interchangeably
+
 Synopsis
 --------
 
