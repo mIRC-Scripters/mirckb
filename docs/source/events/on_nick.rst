@@ -5,14 +5,17 @@ The ON NICK event triggers when a user is on the same channel as you, and they c
 
 This event fills the :doc:`$newnick </identifiers/newnick>` and :doc:`$nick </identifiers/nick>` identifiers.
 
-{| class="wikitable" style="line-height: 25px; margin-left: 75px;"
-|-
-! Identifier !! Description
-|-
-| $newnick || The new nickname of the user. You can use it with $comchan for example.
-|-
-| $nick || The user's previous nickname.
-|}
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Identifier
+      - Description
+    * - $newnick
+      - The new nickname of the user. You can use it with $comchan for example.
+    * - $nick
+      - The user's previous nickname.
 
 Synopsis
 --------

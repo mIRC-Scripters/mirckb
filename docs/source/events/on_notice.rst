@@ -8,7 +8,7 @@ Synopsis
 
 .. code:: text
 
-    on <level>:NOTICE:<matchtext>:<target>:<commands>
+    ON <level>:NOTICE:<matchtext>:<target>:<commands>
 
 Parameters
 ----------
