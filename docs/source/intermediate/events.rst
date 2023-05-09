@@ -211,6 +211,8 @@ script2.mrc
 
 The second event will trigger upon recieving any msg sent via query *except* **!test**, because the first event calls the *haltdef* command upon receiving **!test**.
 
+.. _dollar-prefix:
+
 $ Prefix
 ~~~~~~~~
 
@@ -257,6 +259,8 @@ For example:
 .. note:: Many events are **not** triggered when you meet the criteria and you need to code a separate 'me' event to handle it.
 
 **Raw events** allow you to handle IRC event in their native, unmodified, format. Every message you receive from the server before mIRC processes it is called a **raw message**. And it might look a little different from the one you see after it gets parsed.
+
+.. _raw_events:
 
 RAW Events
 ----------

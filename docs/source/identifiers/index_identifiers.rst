@@ -11,6 +11,15 @@ Presently undocumented or deprecated identifiers are indicated with a :sup:`D`. 
 
 .. tabs::
 
+    .. tab:: $
+        
+        .. hlist::
+            :columns: 4
+
+            * :doc:`$1- <dollar1dash>`
+            * :doc:`$! <exclamation_mark>`
+            * :doc:`$? <question_mark>`
+
     .. tab:: A
 
         .. hlist::

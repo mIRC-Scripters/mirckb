@@ -146,6 +146,7 @@ def version2date(x):
         "2.5": "08 Mar 1995",
         "2.4": "05 Mar 1995",
         "2.3": "02 Mar 1995",
+        "2.1a": "28 Feb 1995",
         "2.1": "28 Feb 1995"
     }.get(x, "Cannot find date for version: " + x + " in function!")
 
