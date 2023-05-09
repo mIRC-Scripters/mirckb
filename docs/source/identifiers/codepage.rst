@@ -49,7 +49,7 @@ Examples
 
 
 .. list-table::
-    :widths: 15 85
+    :widths: 20 40 40
     :header-rows: 1
 
     * - Codepage number

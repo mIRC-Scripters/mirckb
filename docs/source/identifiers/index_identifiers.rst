@@ -11,7 +11,7 @@ Presently undocumented or deprecated identifiers are indicated with a :sup:`D`. 
 
 .. tabs::
 
-    .. tab:: $
+    .. tab:: \$
         
         .. hlist::
             :columns: 4
