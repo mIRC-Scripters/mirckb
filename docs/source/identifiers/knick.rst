@@ -1,7 +1,7 @@
 $knick
 ======
 
-The $knick identifier refers to the nickname of a user who has been kicked from a channel. This can also be the local mIRC client nickname if an :doc:`on me </events/on_me>` kick event is being monitored.
+The $knick identifier refers to the nickname of a user who has been kicked from a channel. This can also be the local mIRC client nickname if an on me kick event is being monitored.
 
 Synopsis
 --------

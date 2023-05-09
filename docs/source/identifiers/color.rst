@@ -39,7 +39,7 @@ Properties
 Names
 -----
 
-Most of the names are shown in the Alt+K dialog, and some of them use spaces due to similar name for the background color in that area. The names accepted by $color are the same names used by echo's -c switch. The names for the background colors are not shown:
+Most of the names are shown in the :kbd:`Alt+K` dialog, and some of them use spaces due to similar name for the background color in that area. The names accepted by $color are the same names used by echo's -c switch. The names for the background colors are not shown:
 
 .. code:: text
 

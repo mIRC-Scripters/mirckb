@@ -1,7 +1,7 @@
 /autojoin
 =========
 
-The /autojoin command is used in conjunction with the on Connect event (or the Perform option available in alt + o > options > perfom..) in order to delay or prevent auto-joining of channels. This also apply to rejoining of open channels windows during reconnect
+The /autojoin command is used in conjunction with the on Connect event (or the Perform option available in :menuselection:`Tools --> Options --> Options --> Perform...`) in order to delay or prevent auto-joining of channels. This also apply to rejoining of open channels windows during reconnect
 
 Synopsis
 --------

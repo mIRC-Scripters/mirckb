@@ -93,7 +93,7 @@ If you find that the autocolor is using too many colors which do not contrast ag
 
 One is to change your black background from index 1 to one of the color indices like 89 or 90 which look like black but have slightly different RGB which causes a different batch of colors to be chosen for the palette. However, be aware that this can have an adverse effect on colored strings which normally change color 1 into color 0 if the background is also index 1 - and those will no longer do the same for background 88 even if that has an identical RGB to index 1
 
-Another is to take advantage of the fact that colors used by other nick color rules are not chosen for the autocolor palette, so you can simply create a dummy rule that won't actually match any nicks, but the presence of this rule will prevent it being chosen for the autocolor palette. To do this, you can use the Alt+P editor to place this line into your nicklist popups menu. (If putting into a dropdown menu you probably need to prefix the label with a .period)
+Another is to take advantage of the fact that colors used by other nick color rules are not chosen for the autocolor palette, so you can simply create a dummy rule that won't actually match any nicks, but the presence of this rule will prevent it being chosen for the autocolor palette. To do this, you can use the :kbd:`Alt+P` editor to place this line into your nicklist popups menu. (If putting into a dropdown menu you probably need to prefix the label with a .period)
 
 Dummy rule for autocolor $nick($chan,$1).color : var %color $nick($chan,$1).color | !.cnick -m2s $+ $calc(1+$cnick(0)) ;dummycolor $+ %color %color @ | !.color background $color(background)
 

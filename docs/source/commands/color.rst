@@ -1,7 +1,7 @@
 /color
 ======
 
-The /color command allows you to change the color setting from the color dialog (can be access using the Alt+K shortcut keys). The /color command can also be used to change the color of the Nth (<N>) color in the Colors - IRC|16 color palette to a new value (<RGB>)
+The /color command allows you to change the color setting from the color dialog (can be access using the :kbd:`Alt+K` shortcut keys). The /color command can also be used to change the color of the Nth (<N>) color in the Colors - IRC|16 color palette to a new value (<RGB>)
 
 Synopsis
 --------

@@ -110,7 +110,7 @@ In a popups menu, $1 $2 etc reference the 1st, 2nd, etc nicks highlighted in a w
     
     TroutSlap2!:me slaps $$1- around a bit with a GMO trout. And don't rest easy $$2- I'm coming for you too!
 
-In Options/mouse/drop, there are default entries for drag/drop of filenames from Windows Explorer or another file manager onto a nick in the nicklist. "*.wav:/sound $1 $2-" means that files matching that wildcard execute the SOUND command, where $1 is the nick receiving the drop and $1- is the filename enclosed in doublequotes. This $parms also includes the nick, so if you need a space-preserved filename, you must do something similar to:
+In :menuselection:`Tools --> Options --> Mouse --> Drop`, there are default entries for drag/drop of filenames from Windows Explorer or another file manager onto a nick in the nicklist. "\*.wav:/sound $1 $2-" means that files matching that wildcard execute the SOUND command, where $1 is the nick receiving the drop and $1- is the filename enclosed in doublequotes. This $parms also includes the nick, so if you need a space-preserved filename, you must do something similar to:
 
 .. code:: text
     

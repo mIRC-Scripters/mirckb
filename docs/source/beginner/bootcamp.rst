@@ -6,7 +6,7 @@ This article focuses on the very basics of mIRC Scripting. The target audience i
 Where Does The Code Go?
 -----------------------
 
-All of your code, regardless of its type, should go in the Script Editor. To open the script editor press-and-hold the Alt key on your keyboard, and then tap the R key (:kbd:`Alt-r`). Alternatively, you can go to the Tools Menu -> Script editor.
+All of your code, regardless of its type, should go in the Script Editor. To open the script editor press-and-hold the Alt key on your keyboard, and then tap the R key (:kbd:`Alt+R`). Alternatively, you can go to the Tools Menu -> Script editor.
 
 Below is a screen shot of the mIRC Script Editor:
 
@@ -518,7 +518,7 @@ You may have noticed that we added a strange new thing, **-a**. The -a is called
 
    //echo -a The number �42� is even.
 
-.. note:: This website does not correctly handle the color-code, so the above symbols containing the "?" should be edited in your editbox before pressing enter. Replace those symbols by the character returned from pressing Ctrl+K, holding down the CONTROL button while pressing the "K" button once. You can close the popup color box because the script already contains the color number.
+.. note:: This website does not correctly handle the color-code, so the above symbols containing the "?" should be edited in your editbox before pressing enter. Replace those symbols by the character returned from pressing :kbd:`Ctrl+K`, holding down the :kbd:`Ctrl` button while pressing the "K" button once. You can close the popup color box because the script already contains the color number.
 
 Will produce the following result:
 
@@ -536,7 +536,7 @@ Will produce the following result:
 
 The number 2 is even.
 
-.. note:: Most fonts display strange symbols when you press the keys for formatting codes, such as Ctrl+B bold and Ctrl+K color and Ctrl+O. If you want to see these symbols differently in your script editor, search for the font "Fixedsys Excelsior", because it shows these symbols with a small b/c/o inside a black square, though it won’t show special symbols for other format codes like Ctrl+R Ctrl+I Ctrl+U. You can change the Font of your scripts editor to be different than the fonts of your channels, and it’s usually easier to read code if you choose a non-proportional (fixed) font for the script editor. The "No Liga" version can be downloaded here: http://www.xise.nl/mirc/fsex2p00se3.ttf
+.. note:: Most fonts display strange symbols when you press the keys for formatting codes, such as :kbd:`Ctrl+B` bold and :kbd:`Ctrl+B` color and :kbd:`Ctrl+B`. If you want to see these symbols differently in your script editor, search for the font "Fixedsys Excelsior", because it shows these symbols with a small b/c/o inside a black square, though it won’t show special symbols for other format codes like :kbd:`Ctrl+B` :kbd:`Ctrl+B` :kbd:`Ctrl+B`. You can change the Font of your scripts editor to be different than the fonts of your channels, and it’s usually easier to read code if you choose a non-proportional (fixed) font for the script editor. The "No Liga" version can be downloaded here: http://www.xise.nl/mirc/fsex2p00se3.ttf
 
 Actions
 ~~~~~~~

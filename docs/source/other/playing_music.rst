@@ -6,7 +6,7 @@ Playing music in mIRC is really a very simple process, easily accomplished throu
 Enabling mIRC Sounds
 --------------------
 
-In order for you to be able to play music or any other type of sound in mIRC, you must first enable sounds. Sounds can be enabled simply by going to the options dialog (Alt+O), then clicking on the *Sounds* option in the left-hand side list, and then placing a check mark into the *Enable Sounds*. Below is a screenshot of the options window with the *Enable Sounds* option ticked.
+In order for you to be able to play music or any other type of sound in mIRC, you must first enable sounds. Sounds can be enabled simply by going to the options dialog (:kbd:`Alt+O`), then clicking on the *Sounds* option in the left-hand side list, and then placing a check mark into the *Enable Sounds*. Below is a screenshot of the options window with the *Enable Sounds* option ticked.
 
 .. note:: Alternatively, you may use the :doc:`/ebeeps </commands/ebeeps>` command to enable sounds in mIRC: ``/ebeeps on``
 

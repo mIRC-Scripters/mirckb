@@ -1,7 +1,7 @@
 /load
 =====
 
-The /load command can be used to load any type of existing file of the types: aliases, popups, remote, users, and variables. Using /load on an already loaded file will update its contents while maintaining its order among other files. Note that unlike the :doc:`/reload </commands/reload>` command, /load will trigger the ON LOAD and ON START events.
+The /load command can be used to load any type of existing file of the types: aliases, popups, remote, users, and variables. Using /load on an already loaded file will update its contents while maintaining its order among other files. Note that unlike the :doc:`/reload </commands/reload>` command, /load will trigger the :doc:`on load </events/on_load>` and :doc:`on start </events/on_start>` events.
 
 Synopsis
 --------
@@ -73,13 +73,13 @@ Load three remote script files.
       load -rs baz.mrc
     }
 
-Loads script file into the 2nd position of the 'view' menu in Alt+R editor. If it's already loaded, moves the file to that position. If contains ON LOAD or ON START event handler, this triggers the Initialization Warning and/or performs the event handler.
+Loads script file into the 2nd position of the 'view' menu in :kbd:`Alt+R` editor. If it's already loaded, moves the file to that position. If contains ON LOAD or ON START event handler, this triggers the Initialization Warning and/or performs the event handler.
 
 .. code:: text
 
     load -rs2 foobar.mrc
 
-Loads aliases file into the 1st position of the 'view' menu in Alt+D editor. If it's already loaded, moves the file to that position.
+Loads aliases file into the 1st position of the 'view' menu in :kbd:`Alt+D` editor. If it's already loaded, moves the file to that position.
 
 .. code:: text
 

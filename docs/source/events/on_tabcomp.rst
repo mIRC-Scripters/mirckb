@@ -1,9 +1,9 @@
 On Tabcomp
 ==========
 
-The ON TABCOMP event triggers when you press the tab key in an editbox
+The ON TABCOMP event triggers when you press the tab key in an editbox.
 
-.. note:: This event is not triggered in an empty editbox if you have the 'Tab key changes editbox focus' option enabled in alt + o > other > keys.
+.. note:: This event is not triggered in an empty editbox if you have the 'Tab key changes editbox focus' option enabled in :menuselection:`Tools --> Options --> Other --> Keys`.
 
 Synopsis
 --------

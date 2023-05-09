@@ -1,7 +1,7 @@
 $*
 ==
 
-$* is a construct, not an identifier, it allows you to iterate over all of the tokens contained within $1-. The way this works is much like a while loop. $\* has been omitted from the help file since while loops were introduced, especially because the behavior of $\* is quirky in some places.
+$\* is a construct, not an identifier, it allows you to iterate over all of the tokens contained within $1-. The way this works is much like a while loop. $\* has been omitted from the help file since while loops were introduced, especially because the behavior of $\* is quirky in some places.
 
 $\* is extremely powerful, because it is much faster than using a while loop on a list of tokens. Understanding how this works is pretty simple, so consider the following:
 
@@ -28,7 +28,7 @@ Why was the $\* identifier removed from the help file in the first place? Well, 
 
 Quirky? Quirky, how?
 
-Well, mIRC takes the command $\* appears in, and replaces all of the occurrences in the line by a special marker: `~$\*: An example of how this is accomplished is shown below:
+Well, mIRC takes the command $\* appears in, and replaces all of the occurrences in the line by a special marker: \`~$\*: An example of how this is accomplished is shown below:
 
 .. code:: text
 

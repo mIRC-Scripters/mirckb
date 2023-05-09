@@ -419,7 +419,7 @@ Injection via mIRC configuration
 
 You should inspect your mIRC settings for certain things which can be used to exploit you. If you check these things, you can help defend against some exploits which depend on a combination of factors, where just severing 1 link in the chain prevents the exploit.<br>
 
-First, check the Options menu of your Alt+R scripts editor. It's a good idea set a few options here which can prevent problems.
+First, check the Options menu of your :kbd:`Alt+R` scripts editor. It's a good idea set a few options here which can prevent problems.
 
 Identifier Warning
 ^^^^^^^^^^^^^^^^^^

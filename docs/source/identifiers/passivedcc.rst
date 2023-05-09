@@ -27,7 +27,7 @@ Example
 
     //echo -a $passivedcc
 
-The DCC PASSIVE option can be enabled or disabled either in Alt-O/Dcc/Options "Passive DCC's" or with "/dcc passive ON" or "/dcc passive OFF".
+The DCC PASSIVE option can be enabled or disabled either in :menuselection:`Tools --> Dcc --> Options --> Passive DCC's` or with ``/dcc passive on`` or ``/dcc passive off``
 
 Compatibility
 -------------

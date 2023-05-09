@@ -1,7 +1,7 @@
 /perform
 ========
 
-The /perform command enables or disables the perform section in the options (ALT + O > Connect)
+The /perform command enables or disables the perform section in the options (:menuselection:`Tools --> Options --> Connect`)
 
 Synopsis
 --------

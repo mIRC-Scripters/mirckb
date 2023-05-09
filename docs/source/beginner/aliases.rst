@@ -328,7 +328,7 @@ A consideration in creating aliases which might be executed by other users is to
 
 One choice for your script is to override the background while setting text color, but even that doesn't guarantee the user has set that pair of index colors to be a good contrast against each other. To guarantee the actual color hues display as you intend, you can use color index 16-98 as long as the script will be used on v7.52 or higher, because on older versions interpret those color indexes as black. Only a few color hues of the default 0-15 "mIRC Classic" colors are duplicated exactly within the 16-98 range, so others might need to choose the closest approximation.
 
-Another choice is to use echo's -c switch to set the color which that user has assigned in their Alt+K dialog. For example, if your alias wishes to mimic a blue error message similar to those from built-in mIRC commands:
+Another choice is to use echo's -c switch to set the color which that user has assigned in their :kbd:`Alt+K` dialog. For example, if your alias wishes to mimic a blue error message similar to those from built-in mIRC commands:
 
 .. code:: text
 
@@ -382,7 +382,7 @@ Output:
 Shortcuts and Function Keys
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Aliases can be used to redefine function keys and shortcuts by simply renaming them the actual key or key combinations. For the F-keys all you need is to name the actual alias F1 through F12. S and C can be used for the Shift and Ctrl Key. For example SF1 is Shift+F1 keys.
+Aliases can be used to redefine function keys and shortcuts by simply renaming them the actual key or key combinations. For the F-keys all you need is to name the actual alias F1 through F12. S and C can be used for the :kbd:`Shift` and :kbd:`Ctrl` Key. For example SF1 is :kbd:`Shift+F1` keys.
 
 For example:
 
@@ -426,7 +426,7 @@ The order used by mIRC to locate your alias is as follows:
 
 -  files are read from top to bottom and only the first found alias in file will be used
 -  if the call is made from a script and there is an alias for that name in the script file, that alias is used (regardless if the alias is local or not)
--  if none of the above is true, then the order in which you loaded the script is used. mIRC looks for the first non local alias in the order 1-or-more aliases files in the Alt+D tab of the script editor, followed by the scripts of the Alt+R tab in the order they're loaded. If you have the same alias name defined twice in the same file, the 2nd one cannot be executed.
+-  if none of the above is true, then the order in which you loaded the script is used. mIRC looks for the first non local alias in the order 1-or-more aliases files in the :kbd:`Alt+D` tab of the script editor, followed by the scripts of the :kbd:`Alt+R` tab in the order they're loaded. If you have the same alias name defined twice in the same file, the 2nd one cannot be executed.
 -  if none is found, then mIRC check if this is a built-in command name
 -  if still no match and if it was a command call, then it sends the command to the server, which sends back RAW numeric 421 if it's an invalid server command
 

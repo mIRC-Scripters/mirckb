@@ -1,7 +1,7 @@
 /ajinvite
 =========
 
-The /ajinvite command can be used to turn on/off the auto-join on invite features, available in the Options (Alt + o > IRC > auto-join channel on invite). Without any parameters, mIRC will echo if the feature is on or off.
+The /ajinvite command can be used to turn on/off the auto-join on invite features, available in the Options (:menuselection:`Tools --> Options --> IRC --> auto-join channel on invite`). Without any parameters, mIRC will echo if the feature is on or off.
 
 Synopsis
 --------

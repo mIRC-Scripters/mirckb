@@ -18,7 +18,7 @@ Retrieves the title for the specified dialog.
 
     $1
 
-Grabs the first word from an event, such as an :doc:`on events </events/on_events>`.
+Grabs the first word from an event, such as an :doc:`on text </events/on_text>`.
 
 $() itself is a valid identifier which works much like :doc:`$eval </identifiers/eval>`
 

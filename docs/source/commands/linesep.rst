@@ -2,7 +2,7 @@
 ========
 
 The /linesep command prints the line separator at a specified target. With no arguments, the line separator is printed to the active window. A line separator is only added if it would not be the first line and if the last line is not already the line separator.
-The line separator can be changed by going into the options dialog (Alt+O) -> Other -> Line separator. If this option dialog shows the line separator is blank, /linesep does not add a blank line. You can also set the line separator to multiple characters like -/- and the entire string is used as the line separator.
+The line separator can be changed by going into the options dialog (:kbd:`Alt+O`) -> Other -> Line separator. If this option dialog shows the line separator is blank, /linesep does not add a blank line. You can also set the line separator to multiple characters like -/- and the entire string is used as the line separator.
 
 If your goal is to simply enclose your text with a pair of line separator:
 
