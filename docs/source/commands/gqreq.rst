@@ -1,7 +1,7 @@
 /gqreq
 ======
 
-By default mIRC queues all requests and plays them one after the other to ensure that even if you use multiple agents at the same time, all messages will be heard, and all agents will act in the order that you requested. The **/gqreq** command can turn queuing on/off on the fly.
+By default mIRC queues all requests and plays them one after the other to ensure that even if you use multiple agents at the same time, all messages will be heard, and all agents will act in the order that you requested. The /gqreq command can turn queuing on/off on the fly.
 
 Synopsis
 --------
@@ -33,7 +33,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------

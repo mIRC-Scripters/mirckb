@@ -1,7 +1,7 @@
 /vcrem
 ======
 
-The **/vcrem** command can be used to remove a command from the voice command command list.
+The /vcrem command can be used to remove a command from the voice command command list.
 
 Synopsis
 --------
@@ -34,7 +34,7 @@ Parameters
     * - Parameter
       - Description
     * - <command1>
-      - command to remove
+      - command to remove 
 
 Example
 -------
@@ -44,7 +44,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -56,3 +56,4 @@ See also
     * :doc:`$inwave </identifiers/inwave>`
     * :doc:`$sound </identifiers/sound>`
     * :doc:`/splay </commands/splay>`
+

@@ -1,7 +1,7 @@
 /gstop
 ======
 
-The **gstop** command stops an agent from doing what he is currently doing and removes all queued requests for the agent.
+The gstop command stops an agent from doing what he is currently doing and removes all queued requests for the agent.
 
 Synopsis
 --------
@@ -53,7 +53,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -76,3 +76,4 @@ See also
     * :doc:`$agentstat </identifiers/agentstat>`
     * :doc:`$agentname </identifiers/agentname>`
     * :doc:`$agent </identifiers/agent>`
+

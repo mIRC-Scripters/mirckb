@@ -1,7 +1,7 @@
 /list
 =====
 
-The **/list** command lists currently available channels.<br />
+The /list command lists currently available channels.
 
 .. note:: This sends a command to the irc network and returns the reply. It does not report info about hidden channels such as those with mode -s or -p set, unless your network privileges allow you to see that info.
 
@@ -34,7 +34,7 @@ Parameters
     * - Parameter
       - Description
     * - #channel
-      - If specified, mIRC will only list information for that channel. If you specify a :ref:`matching_tools-wildcard` , mIRC will list all channels that contain the wildcard expression.
+      - If specified, mIRC will only list information for that channel. If you specify a :ref:`matching_tools-wildcard`, mIRC will list all channels that contain the wildcard expression.
     * - -MIN N
       - If specified, can be used to only display channels that has mimnimum N users
     * - -MAX N
@@ -53,7 +53,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------

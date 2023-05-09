@@ -1,7 +1,7 @@
 /remote
 =======
 
-The **/remote** command toggles the remote, CTCPS, and raw events processing. With no parameters, the /remote command displays the current state (either disabled or enabled).
+The /remote command toggles the remote, CTCPS, and raw events processing. With no parameters, the /remote command displays the current state (either disabled or enabled).
 
 Synopsis
 --------
@@ -45,7 +45,7 @@ Which will print something like:
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
 See also
 --------
@@ -55,6 +55,7 @@ See also
 
     * :doc:`$remote </identifiers/remote>`
     * :doc:`$rawmsg </identifiers/rawmsg>`
-    * :doc:`/ctcps </commands/tcp-socket>`
+    * :doc:`/ctcps </commands/ctcps>`
     * :doc:`/raw </commands/raw>`
     * :doc:`/commands </commands/commands>`
+

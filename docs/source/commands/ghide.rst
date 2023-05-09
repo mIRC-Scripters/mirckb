@@ -1,7 +1,7 @@
 /ghide
 ======
 
-The **ghide** command hides a previously loaded agent.
+The ghide command hides a previously loaded agent.
 
 Synopsis
 --------
@@ -47,7 +47,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -70,3 +70,4 @@ See also
     * :doc:`$agentstat </identifiers/agentstat>`
     * :doc:`$agentname </identifiers/agentname>`
     * :doc:`$agent </identifiers/agent>`
+

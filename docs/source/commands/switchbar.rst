@@ -1,7 +1,7 @@
 /switchbar
 ==========
 
-When used without any arguments, the **/switchbar** command displays the current state of the switchbar. The state is also displayed even if an argument is specified. You can prefix the command with a period to silent that behavior. The "on" and "off" arguments can be used to show and hide the switchbar programmatically. The switchbar is a toolbar with all the networks and channels on it displayed as buttons.
+When used without any arguments, the /switchbar command displays the current state of the switchbar. The state is also displayed even if an argument is specified. You can prefix the command with a period to silent that behavior. The "on" and "off" arguments can be used to show and hide the switchbar programmatically. The switchbar is a toolbar with all the networks and channels on it displayed as buttons.
 
 Synopsis
 --------
@@ -43,7 +43,7 @@ Will turn the switchbar on and display
 Compatibility
 -------------
 
-Added: mIRC v6.32 (21 May 2008)
+.. compatibility:: 6.32
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     * :doc:`/titlebar </commands/titlebar>`
     * :doc:`/toolbar </commands/toolbar>`
     * :doc:`/treebar </commands/treebar>`
+

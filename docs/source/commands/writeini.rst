@@ -1,14 +1,14 @@
 /writeini
 =========
 
-The **/writeini** command is used to write and update a standard :doc:`initialization file </intermediate/data_storage.html#ini-files>` .
+The /writeini command is used to write and update a standard INI Files. (:ref:`ini_files`)
 
 Overview
 --------
 
 The Standard INI file has the following format:
 
-.. code:: text
+.. code:: ini
 
     [Section]
     Item=value
@@ -18,11 +18,8 @@ The Standard INI file has the following format:
     Item=value
     Item2=value
 
-.. note::
-
-For *mIRC <= 6.35:* Writing to a file bigger than 64KB requires the -n switch, otherwise an error will be generated, halting the script. ([http://support.microsoft.com/kb/78346 This is a limitation of the standard Win32 API] GetPrivateProfileString() and WritePrivateProfileString())
-
-For *mIRC >= 7.00:* mIRC now uses its own custom INI routine, the -n switch is obsolete.
+.. note:: For ''mIRC <= 6.35:'' Writing to a file bigger than 64KB requires the -n switch, otherwise an error will be generated, halting the script. ([http://support.microsoft.com/kb/78346 This is a limitation of the standard Win32 API] GetPrivateProfileString() and WritePrivateProfileString())
+    For ''mIRC >= 7.00:'' mIRC now uses its own custom INI routine, the -n switch is obsolete.
 
 Synopsis
 --------
@@ -41,9 +38,7 @@ Switches
     * - Switch
       - Description
     * - -n
-
-.. note:: above)
-
+      - Forces mIRC to write to an INI file, even if it's bigger then 64k (see note above)
     * - -z
       - Write an empty value
 
@@ -73,24 +68,24 @@ Example
     ;Write a few items to a file
     /writeini abb.ini abbreviations lol Laughing Out Loud
     /writeini abb.ini abbreviations rofl Rolling On the Floor, Laughing
-
+    
     /*
     abb.ini format:
-
+    
     [abbreviations]
     lol=Laughing Out Loud
     rofl=Rolling On the Floor, Laughing
     */
-
+    
     ;Retrieve 'lol'
     //echo -a $readini(abb.ini, n, abbreviations, lol)
-
+    
     ;Prints out: Laughing Out Loud
 
 Compatibility
 -------------
 
-Added: mIRC v4.5 (06 Jul 1996)
+.. compatibility:: 4.5
 
 See also
 --------
@@ -104,3 +99,4 @@ See also
     * :doc:`$mircini </identifiers/mircini>`
     * :doc:`$mircdir </identifiers/mircdir>`
     * :doc:`/write </commands/write>`
+

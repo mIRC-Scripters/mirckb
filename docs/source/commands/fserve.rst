@@ -1,7 +1,7 @@
 /fserve
 =======
 
-The **/fserve** command can initiate a DCC fileserver transaction with a specific user.
+The /fserve command can initiate a DCC fileserver transaction with a specific user.
 
 Synopsis
 --------
@@ -41,7 +41,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.3 - 3.4 ()
+.. compatibility:: 3.3
 
 See also
 --------

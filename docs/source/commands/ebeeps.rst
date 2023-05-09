@@ -1,7 +1,7 @@
 /ebeeps
 =======
 
-The **/ebeeps** command lets you enable/disable the 'event beeps' (sounds) in the Sounds dialog option. **Event beeps** are sounds that alert you to certain events in mIRC, such as PMs, Notices, Server events but also sound played via :doc:`/splay </commands/splay>` . Without any arguments, this command prints the status of event beeps. Otherwise, this command can be used to turn event beeps on or off.
+The /ebeeps command lets you enable/disable the 'event beeps' (sounds) in the Sounds dialog option. Event beeps are sounds that alert you to certain events in mIRC, such as PMs, Notices, Server events but also sound played via :doc:`/splay </commands/splay>`. Without any arguments, this command prints the status of event beeps. Otherwise, this command can be used to turn event beeps on or off.
 
 Synopsis
 --------
@@ -18,7 +18,14 @@ None
 Parameters
 ----------
 
-**[on | off]** - Turns the beeps on/off
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - [on | off]
+      - Turns the beeps on/off
 
 Example
 -------
@@ -31,7 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.6 (07 Sep 1996)
+.. compatibility:: 4.6
 
 See also
 --------
@@ -40,3 +47,4 @@ See also
     :columns: 4
 
     * :doc:`$ebeeps </identifiers/ebeeps>`
+

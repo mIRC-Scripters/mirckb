@@ -1,7 +1,7 @@
 /omsg
 =====
 
-The **/omsg** command sends the specified message to all channel ops on a channel. You must be a channel operator to use this commands. 
+The /omsg command sends the specified message to all channel ops on a channel. You must be a channel operator to use this commands. 
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.3 - 3.4 ()
+.. compatibility:: 3.3
 
 See also
 --------
@@ -44,3 +44,4 @@ See also
     :columns: 4
 
     * :doc:`/onotice </commands/onotice>`
+

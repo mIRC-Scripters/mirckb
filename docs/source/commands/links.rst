@@ -1,7 +1,7 @@
 /links
 ======
 
-The **/links** command can be used to retrieve the servers to which your current server is linked which will be displayed in a window.
+The /links command can be used to retrieve the servers to which your current server is linked which will be displayed in a window.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v4.1 (27 Apr 1996)
+.. compatibility:: 4.1
 
 See also
 --------
@@ -48,3 +48,4 @@ See also
     * :doc:`$link </identifiers/link>`
     * :doc:`$network </identifiers/network>`
     * :doc:`$server </identifiers/server>`
+

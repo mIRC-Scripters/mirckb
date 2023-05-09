@@ -1,7 +1,7 @@
 /mdi
 ====
 
-The **/mdi** command can be used to arrange the MDI windows in tile or cascade styles. Additionally, MDI windows that have been minimized into MDI icons can be rearranged as well.
+The /mdi command can be used to arrange the MDI windows in tile or cascade styles. Additionally, MDI windows that have been minimized into MDI icons can be rearranged as well.
 
 Synopsis
 --------
@@ -39,7 +39,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.5 (19 Feb 1999)
+.. compatibility:: 5.5
 
 See also
 --------
@@ -49,3 +49,4 @@ See also
 
     * :doc:`$window </identifiers/window>`
     * :doc:`/window </commands/window>`
+

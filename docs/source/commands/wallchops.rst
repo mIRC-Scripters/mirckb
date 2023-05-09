@@ -1,7 +1,7 @@
 /wallchops
 ==========
 
-The **/wallchops** command allows you to send a notice to all ops on a channel using a NOTICE @#channel format. mIRC will display 'Ops #channel: message' in the active window.
+The /wallchops command allows you to send a notice to all ops on a channel using a NOTICE @#channel format. mIRC will display 'Ops #channel: message' in the active window.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------

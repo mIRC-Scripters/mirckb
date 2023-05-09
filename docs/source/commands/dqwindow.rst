@@ -1,15 +1,15 @@
 /dqwindow
 =========
 
-mIRC's DQ (*dedicated query*) window system is a feature that conveniently redirects all incoming queries to a single window. The **/dqwindow** command can be used to disable or enable as well as show and hide the DQ window.
+mIRC's DQ (''dedicated query'') window system is a feature that conveniently redirects all incoming queries to a single window. The /dqwindow command can be used to disable or enable as well as show and hide the DQ window.
 
 You can determine if the DQ Window is on or off with this alias:
 
 .. code:: text
 
     alias is_dqwindow {
-    saveini
-    return $iif($gettok($readini($mircini, n, options, n0), 22, 44), $true, $false)
+      saveini
+      return $iif($gettok($readini($mircini, n, options, n0), 22, 44), $true, $false)
     }
 
 Synopsis
@@ -66,7 +66,7 @@ Will print:
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -79,3 +79,4 @@ See also
     * :doc:`/close </commands/close>`
     * :doc:`/closemsg </commands/closemsg>`
     * :doc:`/window </commands/window>`
+

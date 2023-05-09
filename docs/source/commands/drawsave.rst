@@ -1,7 +1,7 @@
 /drawsave
 =========
 
-The **/drawsave** command saves the content of the specified picture @window to a file (bmp or jpeg).
+The /drawsave command saves the content of the specified picture @window to a file (bmp or jpeg).
 
 Synopsis
 --------
@@ -50,7 +50,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     :columns: 4
 
     * :doc:`/drawpic </commands/drawpic>`
+

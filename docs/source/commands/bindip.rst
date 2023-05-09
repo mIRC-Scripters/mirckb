@@ -1,7 +1,7 @@
 /bindip
 =======
 
-The **/bindip** command sets IP binding on or off. Additionally, an IP address or an adapter name to be used can be specified. When used without parameters mIRC indicates if it's on or off.
+The /bindip command sets IP binding on or off. Additionally, an IP address or an adapter name to be used can be specified. When used without parameters mIRC indicates if it's on or off.
 
 Synopsis
 --------
@@ -36,10 +36,10 @@ Example
 
     ;Check if IP binding is on or off
     /bindip
-
+    
     ;Turn binding on, set IP
     /bindip on 74.123.54.13
-
+    
     ;Turn IP binding off
     /bindip off
 
@@ -48,15 +48,15 @@ The above example will output:
 .. code:: text
 
     * Binding is off
-
+    
     * Binding is on (74.123.54.13)
-
+    
     * Binding is off
 
 Compatibility
 -------------
 
-Added: mIRC v6.17 (17 Feb 2006)
+.. compatibility:: 6.17
 
 See also
 --------
@@ -70,3 +70,4 @@ See also
     * :doc:`/server </commands/server>`
     * :doc:`/sockaccept </commands/sockaccept>`
     * :doc:`/sockopen </commands/sockopen>`
+

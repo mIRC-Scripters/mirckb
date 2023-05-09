@@ -1,7 +1,7 @@
 /window
 =======
 
-The **/window** command can be used to create :doc:`cUstom wIndows </intermediate/gui_scripting.html#custom-windows>` and :doc:`pIcture wIndows </intermediate/gui_scripting.html#picture-windows>` (using the -p switch), or to manipulate an existing custom or channel window.
+The /window command can be used to create :doc:`custom windows </intermediate/gui_scripting>` and :ref:`picture_windows` (using the -p switch), or to manipulate an existing custom or channel window.
 
 Synopsis
 --------
@@ -13,8 +13,8 @@ Synopsis
 Switches
 --------
 
-Option Switches 
-^^^^^^^^^^^^^^^^^
+Option Switches
+^^^^^^^^^^^^^^^
 
 .. list-table::
     :widths: 15 85
@@ -23,70 +23,70 @@ Option Switches
     * - Switch
       - Description
     * - -a
-      - Set as the active window
+      - Set as the active window 
     * - -b
-      - Update horizontal scrollbar width for the listbox
+      - Update horizontal scrollbar width for the listbox 
     * - -B
-      - Prevent window from using an internal border
+      - Prevent window from using an internal border 
     * - -c
-      - Close window
+      - Close window 
     * - -C
-      - Center window
+      - Center window 
     * - -d
-      - Create a separate desktop window (separate button in Windows taskbar) instead of a mIRC mdi window
+      - Create a separate desktop window (separate button in Windows taskbar) instead of a mIRC mdi window 
     * - -D
       - Enables @window's upper-left system menu choice to toggle @window between mdi/desktop without closing the window
     * - -e[N]
-      - Enable editbox; 0 = single, 1 = multi, 2 = auto, 3 = default
+      - Enable editbox; 0 = single, 1 = multi, 2 = auto, 3 = default 
     * - -f
-      - Makes the w h the required width and height of the text display area (instead of the window size)
+      - Makes the w h the required width and height of the text display area (instead of the window size) 
     * - -g[N]
       - Set/Unset highlight for window button; 0 = none, 1 = message colour, 2 = highlight colour, 3 = event colour
     * - -h
       - hide window (from the switchbar / treebar - it is still visible in mIRC's Window menu)
     * - -H
-      - Enables auto-hide for a side-listbox
+      - Enables auto-hide for a side-listbox 
     * - -i
-      - Associate window with the active connection
+      - Associate window with the active connection 
     * - -j[N]
       - Change max lines. If N=0 or -j not used, max lines changes with current setting for mirc-Options/Other/WindowBuffer that defaults as 5000. Adding lines to full window causes lines at top of window to be deleted.
     * - -k[N]
-      - Hides the @ prefix; 0 = hide, 1 = show
+      - Hides the @ prefix; 0 = hide, 1 = show 
     * - -l[N]
-      - Listbox, n - width (character count)
+      - Listbox, n - width (character count) 
     * - -m
-      - Enable line marker in the window
+      - Enable line marker in the window 
     * - -M
-      - Trims off the text at tab stops
+      - Trims off the text at tab stops 
     * - -n[N]
       - Minimize window; 2 = Hide auto-expanding @Treebar item
     * - -o
-      - (used with -d) keep the desktop window on top of other windows
+      - (used with -d) keep the desktop window on top of other windows  
     * - -p
-      - Creates a :doc:`pIcture wIndows </intermediate/gui_scripting.html#picture-windows>`
+      - Creates a :ref:`picture_windows`
     * - -r
-      - Restore window
+      - Restore window 
     * - -R
-      - Reset window position to previously saved position
+      - Reset window position to previously saved position 
     * - -s
-      - Sorts the main window (can be text or listbox)
+      - Sorts the main window (can be text or listbox) 
     * - -S
-      - Sort the side-listbox
+      - Sort the side-listbox 
     * - -u
-      - Removes on-top setting (-o)
+      - Removes on-top setting (-o) 
     * - -v
-      - Close window when associated status window is closed
+      - Close window when associated status window is closed 
     * - -w[N]
-      - Show/hide window from treebar or switchbar; 0 = hide from both, 1 = show in switchbar, 2 = show in treebar, 3 = show in both
+      - Show/hide window from treebar or switchbar; 0 = hide from both, 1 = show in switchbar, 2 = show in treebar, 3 = show in both 
     * - -x
-      - Maximize window
+      - Maximize window 
     * - -y
       - Disables logging menu for window.
     * - -z[N]
       - Place window button at end of switchbar; 0 = restore original position, 1 = place window at end. If [N] is not given it defaults to 1
 
-Tab Switches 
-^^^^^^^^^^^^^^
+Tab Switches
+^^^^^^^^^^^^
 
 .. list-table::
     :widths: 15 85
@@ -94,17 +94,17 @@ Tab Switches
 
     * - Switch
       - Description
-    * - -tN,..,N
+    * - -tN,..,N 
       - Lets you set custom tab positions in a listbox. If a text contains tabs, it will be spaced out accordingly, if you don't specify at least one tab stop, the window is not created but no error will be displayed.
 
 .. note:: By default a window contains a tab stop every 8 characters and it is possible to use /window -M without using /window -t.
 
-.. note:: 2**: It is now possible to use N = 0 if you are using -M, to create an invisible column, which can be useful to hide meta-data for that line.
+.. note:: It is now possible to use N = 0 if you are using -M, to create an invisible column, which can be useful to hide meta-data for that line.
 
-.. note:: 3**: You can update the tab stop position once the window has been created with /window -t @win N N N, which is different from the orignal syntax /window -tN,N,N @win
+.. note:: You can update the tab stop position once the window has been created with /window -t @win N N N, which is different from the orignal syntax /window -tN,N,N @win
 
-Appearance Switches 
-^^^^^^^^^^^^^^^^^^^^^
+Appearance Switches
+^^^^^^^^^^^^^^^^^^^
 
 Mostly applicable to Desktop windows:
 
@@ -117,25 +117,23 @@ Mostly applicable to Desktop windows:
     * - +b
       - Border
     * - +d
-      - No border
+      - No border 
     * - +e
-      - 3d Edge
+      - 3d Edge 
     * - +f
-      - Dialog frame
+      - Dialog frame 
     * - +l
       - Tool window <ref group="app." name="tool">Tools windows have no Titlebar or min/max/close buttons.</ref>
     * - +L
       - Tool window (hide from taskbar) <ref group="app." name="tool" />
     * - +n
-      - Minimize window
+      - Minimize window 
     * - +s
       - Sizeable
     * - +t
       - Titlebar
     * - +x
       - Maximize window
-
-<references group="app." />
 
 Parameters
 ----------
@@ -174,12 +172,12 @@ Picture window
 .. code:: text
 
     Alias Example1 {
-    ;Create a desktop + picture window, Coordinates: (250,250), size 300x300
-    window -dep @Example 250 250 300 300
-    ;color it color 3 (default green)
-    drawfill @Example 3 3 1 1 100 100
-    ;draw text \"Hello There!\"
-    drawtext @Example 1 Arial 30 50 100 Hello There!
+      ;Create a desktop + picture window, Coordinates: (250,250), size 300x300
+      window -dep @Example 250 250 300 300
+      ;color it color 3 (default green)
+      drawfill @Example 3 3 1 1 100 100
+      ;draw text \"Hello There!\"
+      drawtext @Example 1 Arial 30 50 100 Hello There!
     }
 
 Example 2
@@ -190,25 +188,25 @@ Custom window with side listbox
 .. code:: text
 
     Alias Example2 {
-    ;Create a desktop, Coordinates: (100,100), size 500x350
-    ;Side listbox (width: 15 characters)
-    window -del15 @Example 100 100 500 350
-
-    ;Populate the side listbox with 5 items.
-    var %a = 1
-    while (%a < 5) {
-    ;Add an item
-    aline -l $v1 @Example Item $v1
-    inc %a
-    }
-
-    ;Add 5 lines to the window buffer
-    var %a = 1
-    while (%a < 5) {
-    ;Add a line of text
-    aline $v1 @Example This is line $v1 $+ .
-    inc %a
-    }
+      ;Create a desktop, Coordinates: (100,100), size 500x350
+      ;Side listbox (width: 15 characters)
+      window -del15 @Example 100 100 500 350
+    
+      ;Populate the side listbox with 5 items.
+      var %a = 1
+      while (%a < 5) {
+        ;Add an item
+        aline -l $v1 @Example Item $v1
+        inc %a
+      }
+    
+      ;Add 5 lines to the window buffer
+      var %a = 1
+      while (%a < 5) {
+        ;Add a line of text
+        aline $v1 @Example This is line $v1 $+ .
+        inc %a
+      }
     }
 
 Example 3
@@ -223,7 +221,7 @@ Making unique window name from $nick while avoiding the 3 protected window names
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -242,3 +240,4 @@ See also
     * :doc:`/renwin </commands/renwin>`
     * :doc:`/rline </commands/rline>`
     * :doc:`/sline </commands/sline>`
+

@@ -1,7 +1,7 @@
 /run
 ====
 
-The **/run** command executes the given file or object using the application associated with its file extension. It can also be used to open directories. The file parameter can be enclosed by a pair of double quotes to separate it from the argument list.
+The /run command executes the given file or object using the application associated with its file extension. It can also be used to open directories. The file parameter can be enclosed by a pair of double quotes to separate it from the argument list.
 
 Synopsis
 --------
@@ -30,11 +30,8 @@ Switches
     * - -u
       - if mIRC is running as admin, runs the program without admin right
 
-.. note::
-
-* If mIRC is already running as admin and if you're not using -a nor -u, the program will still be running as admin as though you used -a, by default.
-
-* In Win7-32 OS, using the -a switch fails if launching a 16-bit DOS executible, regardless of if mIRC is already running in elevated state or not. Workaround is to not use -a if mIRC is already running as admin, but to use -a if it is not.
+.. note:: If mIRC is already running as admin and if you're not using -a nor -u, the program will still be running as admin as though you used -a, by default.
+    In Win7-32 OS, using the -a switch fails if launching a 16-bit DOS executible, regardless of if mIRC is already running in elevated state or not. Workaround is to not use -a if mIRC is already running as admin, but to use -a if it is not.
 
 Parameters
 ----------
@@ -56,19 +53,17 @@ Example
 .. code:: text
 
     alias example {
-    ; open our site
-    run www.zigwap.com/mirc
-
-    .. note:: pad, minimized
-
-    .. note:: pad.exe
-
+      ; open our site
+      run www.zigwap.com/mirc
+      ; open notepad, minimized
+      run -n notepad.exe
     }
 
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
+
 See also
 --------
 

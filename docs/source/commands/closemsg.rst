@@ -1,9 +1,9 @@
 /closemsg
 =========
 
-The **/closemsg** command can be used to close all query windows. A name can be specified to close only that query window.
+The /closemsg command can be used to close all query windows. A name can be specified to close only that query window.
 
-**This** commands been superseded by the :doc:`/close </commands/close>` .'''
+This command has been superseded by the :doc:`/close </commands/close>`.
 
 Synopsis
 --------
@@ -40,7 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.3 (21 Jun 1995)
+.. compatibility:: 3.3
 
 See also
 --------
@@ -53,3 +53,4 @@ See also
     * :doc:`/close </commands/close>`
     * :doc:`/debug </commands/debug>`
     * :doc:`/window </commands/window>`
+

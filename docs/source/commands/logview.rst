@@ -1,7 +1,7 @@
 /logview
 ========
 
-The **/logview** command displays a text file in mIRC using the same method as the Log Files dialog.
+The /logview command displays a text file in mIRC using the same method as the Log Files dialog.
 
 Synopsis
 --------
@@ -40,7 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v7.11 (08 Sep 2010)
+.. compatibility:: 7.11
 
 See also
 --------
@@ -49,3 +49,4 @@ See also
     :columns: 4
 
     * :doc:`$logdir </identifiers/logdir>`
+

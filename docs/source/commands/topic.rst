@@ -1,7 +1,7 @@
 /topic
 ======
 
-The **/topic** command enables changing, displaying, or removing the #channel topic, subject to having permissions allowed by the network.
+The /topic command enables changing, displaying, or removing the #channel topic, subject to having permissions allowed by the network.
 
 Synopsis
 --------
@@ -9,7 +9,7 @@ Synopsis
 .. code:: text
 
     /topic [-r] <#channelname> '[topic_string]
-    /topic -r <#channelname>
+    /topic  -r  <#channelname>
 
 Switches
 --------
@@ -47,8 +47,7 @@ Example
     ; show current topic
     //topic $active
 
-.. note:: s:
-
+Notes:
 * Network permissions can deny this command, such as needing to be @op when channel mode +t is set, or not being in channel
 * $chan(#channelname).topic continues to report the old string until server sends the RAW event indicating the new topic
 * Prior to v7.68 topic could only be deleted like: //topic $active $chr(58)
@@ -56,7 +55,8 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.9 (06 Jan 1996)
+.. compatibility:: 3.9
+
 See also
 --------
 
@@ -64,4 +64,4 @@ See also
     :columns: 4
 
     * :doc:`$chan </identifiers/chan>`
-    * :doc:`oN tOPIC </events/on_topic>`
+    * :doc:`on topic </events/on_topic>`

@@ -1,7 +1,7 @@
 /uwho
 =====
 
-The **/uwho** command is used to grab a specified user's server information, which it then displays into the info section of the address book.
+The /uwho command is used to grab a specified user's server information, which it then displays into the info section of the address book.
 
 Synopsis
 --------
@@ -32,13 +32,13 @@ Parameters
 Examples
 --------
 
-'*Lookup information for user named *jeff***
+Lookup information for user named ''jeff''
 
 .. code:: text
 
     /uwho jeff
 
-**Lookup information for *jeff* and ensure we get idle time and away message*'
+Lookup information for ''jeff'' and ensure we get idle time and away message
 
 .. code:: text
 
@@ -47,7 +47,7 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v3.1 (23 Apr 1995)
+.. compatibility:: 3.1
 
 See also
 --------
@@ -58,3 +58,4 @@ See also
     * :doc:`/abook </commands/abook>`
     * :doc:`/ial </commands/ial>`
     * :doc:`/whois </commands/whois>`
+

@@ -1,7 +1,7 @@
 /xyzzy
 ======
 
-The **/xyzzy** command prints out "Nothing happens". This is an easter egg.
+The /xyzzy command prints out "Nothing happens". This is an easter egg.
 
 Synopsis
 --------
@@ -26,7 +26,7 @@ Example
 .. code:: text
 
     /xyzzy
-
+    
     The above example outputs:
     Nothing happens.
     ... using this echo command:
@@ -35,7 +35,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC vmIRC 6.0 ()
+.. compatibility:: 6.0
 
 See also
 --------
@@ -45,3 +45,4 @@ See also
 
     * :doc:`/echo </commands/echo>`
     * :doc:`/fnord </commands/fnord>`
+

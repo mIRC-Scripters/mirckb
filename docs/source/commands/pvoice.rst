@@ -1,7 +1,7 @@
 /pvoice
 =======
 
-The **/pvoice** command performs a delayed voice on a nickname. The purpose of this command is to prevent a channel window filling up with voice mode changes whenever several users have the same nickname in their auto-voice section.
+The /pvoice command performs a delayed voice on a nickname. The purpose of this command is to prevent a channel window filling up with voice mode changes whenever several users have the same nickname in their auto-voice section.
 
 Before performing the voice it checks if the user is already voiced.
 
@@ -41,7 +41,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v6.0 (16 Aug 2002)
+.. compatibility:: 6.0
 
 See also
 --------
@@ -50,3 +50,4 @@ See also
     :columns: 4
 
     * :doc:`/pop </commands/pop>`
+

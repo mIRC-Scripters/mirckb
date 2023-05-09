@@ -1,7 +1,7 @@
 /sockopen
 =========
 
-The **/sockopen** command initiates a connection to the specified addresses and port; a named address can be substituted for an IP address (which will get resolved to an IP address eventually). On success, the on sockopen event should get executed.
+The /sockopen command initiates a connection to the specified addresses and port; a named address can be substituted for an IP address (which will get resolved to an IP address eventually). On success, the on sockopen event should get executed.
 
 Synopsis
 --------
@@ -23,21 +23,10 @@ Switches
       - the specified IP address is the bind IP address
     * - -e
       - creates an SSL connection, with this switch you can also use:
-
-** **-s** - skip invalid certificates
-
-** **-w** - display warning dialog
-
-** **-a** - accept invalid certificates
-
-** **-p** - prevent certificate caching
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Switch
-      - Description
+        - -s - skip invalid certificates
+        - -w - display warning dialog
+        - -a - accept invalid certificates
+        - -p - prevent certificate caching
     * - -t
       - initiates an SSL negotiation on a non-SSL connection (STARTTLS feature), this is not meant to be used when creating the socket but later after the connection has been established, trigger on sockopen a second time with $sock().starttls set to $true
     * - -4
@@ -71,28 +60,28 @@ Example
 .. code:: text
 
     Alias irc_connect {
-    ;Initiate a connection with "irc.freenode.org" on port 6669, Secured connection
-    sockopen -e IRC irc.freenode.org +6697
+      ;Initiate a connection with "irc.freenode.org" on port 6669, Secured connection
+      sockopen -e IRC irc.freenode.org +6697
     }
-
+    
     On *:sockopen:IRC:{
-    ;Send our USER and NICK irc commands
-    sockwrite -n IRC USER Tester $+ $rand(1,100) Test Test:mSL Testing $+ $crlf
-    sockwrite -n IRC NICK Tester $+ $rand(1,100) $crlf
+      ;Send our USER and NICK irc commands
+      sockwrite -n IRC USER Tester $+ $rand(1,100) Test Test:mSL Testing $+ $crlf
+      sockwrite -n IRC NICK Tester $+ $rand(1,100) $crlf
     }
-
+    
     ;Show all receiving data in a window
     On *:sockread:IRC:{
-    window -de @IRC
-    var %x
-    sockread %x
-    aline -p @IRC $iif(%x,$v1,-)
+      window -de @IRC
+      var %x
+      sockread %x
+      aline -p @IRC $iif(%x,$v1,-)
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -109,3 +98,4 @@ See also
     * :doc:`/sockrename </commands/sockrename>`
     * :doc:`/sockwrite </commands/sockwrite>`
     * :doc:`on sockopen </events/on_sockopen>`
+

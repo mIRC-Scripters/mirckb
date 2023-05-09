@@ -1,7 +1,7 @@
 /ctcps
 ======
 
-The **/ctcps** command is used to turn processing of CTCP events on/off. With no parameters, this command will display whether or not CTCPs are on or off.
+The /ctcps command is used to turn processing of CTCP events on/off. With no parameters, this command will display whether or not CTCPs are on or off.
 
 Synopsis
 --------
@@ -25,14 +25,14 @@ Parameters
     * - Parameter
       - Description
     * - [on|off]
-      - Turns CTCP events on/off
+      - Turns CTCP events on/off 
 
 Example
 -------
 
 .. code:: text
 
-    ;Turn CTCPs off
+    ;Turn CTCPs off 
     /ctcps off
 
 The above example will output:
@@ -44,7 +44,7 @@ The above example will output:
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -54,8 +54,9 @@ See also
 
     * :doc:`$nick </identifiers/nick>`
     * :doc:`$remote </identifiers/remote>`
-    * :doc:`/ctcp </commands/tcp-socket>`
-    * :doc:`/ctcpreply </commands/tcp-socket>`
+    * :doc:`/ctcp </commands/ctcp>`
+    * :doc:`/ctcpreply </commands/ctcpreply>`
     * :doc:`/events </commands/events>`
     * :doc:`/remote </commands/remote>`
     * :doc:`/commands </commands/commands>`
+

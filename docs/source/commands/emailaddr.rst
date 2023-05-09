@@ -1,7 +1,7 @@
 /emailaddr
 ==========
 
-The **/emailaddr** command modifies your email address used in the connect dialog. With no parameters, the currently used email address will be displayed.
+The /emailaddr command modifies your email address used in the connect dialog. With no parameters, the currently used email address will be displayed.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.71 (07 May 2000)
+.. compatibility:: 5.71
 
 See also
 --------
@@ -48,3 +48,4 @@ See also
     * :doc:`$emailaddr </identifiers/emailaddr>`
     * :doc:`/fullname </commands/fullname>`
     * :doc:`/username </commands/username>`
+

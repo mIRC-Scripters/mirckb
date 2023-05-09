@@ -1,7 +1,7 @@
 /protect
 ========
 
-The **/protect** command can be used to manage the protect list, which allows you to protect nicknames (deop the user if the protected nickname is deopped, and kicked back if kicked)
+The /protect command can be used to manage the protect list, which allows you to protect nicknames (deop the user if the protected nickname is deopped, and kicked back if kicked)
 
 Synopsis
 --------
@@ -50,7 +50,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     :columns: 4
 
     * :doc:`$protect </identifiers/protect>`
+

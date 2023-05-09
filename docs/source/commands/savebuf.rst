@@ -1,7 +1,7 @@
 /savebuf
 ========
 
-The **/savebuf** command saves the specified number of lines from the end of the buffer of the specified window into the specified filename.
+The /savebuf command saves the specified number of lines from the end of the buffer of the specified window into the specified filename.
 
 Synopsis
 --------
@@ -58,7 +58,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -67,3 +67,4 @@ See also
     :columns: 4
 
     * :doc:`/loadbuf </commands/loadbuf>`
+

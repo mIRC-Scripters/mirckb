@@ -1,7 +1,7 @@
 /me
 ===
 
-The **/me** command is used to send an action message to the active window. Because this command does not take a target parameter, it cannot be used within events that are triggered by anything other than the user directly from a given channel. For example: it can be used within the on input or hotlink events but not within the on text. To be able to generate an action message from any event to any window, consider using the /describe command instead.
+The /me command is used to send an action message to the active window. Because this command does not take a target parameter, it cannot be used within events that are triggered by anything other than the user directly from a given channel. For example: it can be used within the on input or hotlink events but not within the on text. To be able to generate an action message from any event to any window, consider using the /describe command instead.
 
 An action message is simply a regular PRIVMSG that follows a client-dependent format - usually different to that of a normal message. The raw format for an action message is:
 
@@ -46,7 +46,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -64,3 +64,4 @@ See also
     * :doc:`/qme </commands/qme>`
     * :doc:`/qmsg </commands/qmsg>`
     * :doc:`/say </commands/say>`
+

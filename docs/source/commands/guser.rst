@@ -1,7 +1,7 @@
 /guser
 ======
 
-The **/guser** command looks up the address of the specified nick and adds it to the user list. It does this by doing a :doc:`/userhost </commands/userhost>` on the given nickname, and returning an address in the format specified by [type]. If [type] is not specified then a default address format is selected.
+The /guser command looks up the address of the specified nick and adds it to the user list. It does this by doing a :doc:`/userhost </commands/userhost>` on the given nickname, and returning an address in the format specified by [type]. If [type] is not specified then a default address format is selected.
 
 Synopsis
 --------
@@ -43,17 +43,19 @@ Parameters
 Example
 -------
 
-alias F12 {
-  ; Adds $1 to Users - Level 20
-  guser 20 $$1 2 $1   
-  ; Toggles nick color to Yellow in the Users List             
-  cline -hlm 8 $chan $1             
-}
+.. code:: text
+
+    alias F12 {
+      ; Adds $1 to Users - Level 20
+      guser 20 $$1 2 $1   
+      ; Toggles nick color to Yellow in the Users List             
+      cline -hlm 8 $chan $1             
+    }
 
 Compatibility
 -------------
 
-Added: mIRC v3.3 - 3.4 ()
+.. compatibility:: 3.3
 
 See also
 --------
@@ -68,3 +70,4 @@ See also
     * :doc:`/rlevel </commands/rlevel>`
     * :doc:`/ruser </commands/ruser>`
     * :doc:`/ulist </commands/ulist>`
+

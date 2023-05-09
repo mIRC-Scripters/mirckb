@@ -1,7 +1,7 @@
 /cnick
 ======
 
-The **/cnick** command allows you to modify items from the address book's nick color list.
+The /cnick command allows you to modify items from the address book's nick color list.
 
 Synopsis
 --------
@@ -9,7 +9,7 @@ Synopsis
 .. code:: text
 
     /cnick -rfaniovpylNmNsN [nick[!user@host]] [color] [modes] [levels]
-    /cnick <on/off>
+    /cnick <on/off> 
 
 Switches
 --------
@@ -41,7 +41,7 @@ Switches
     * - -lN
       - Sets the idle time
     * - -mN
-      - Sets the highlight method (0-2)
+      - Sets the highlight method (0-2) 
     * - -sN
       - Sorts the item into the Nth position in the list
 
@@ -97,14 +97,14 @@ Another is to take advantage of the fact that colors used by other nick color ru
 
 Dummy rule for autocolor $nick($chan,$1).color : var %color $nick($chan,$1).color | !.cnick -m2s $+ $calc(1+$cnick(0)) ;dummycolor $+ %color %color @ | !.color background $color(background)
 
-.. note:: that it contains the command to reset the background to the existing background color, because that's necssary to force the autocolors to reset based on the new palette that has 1 fewer colors in it.
+This creates a menu item that shows you the color being used by that nick, and you can add a dummy rule to your nick colors list which uses that color - by simply right-clicking on a nick that you can't read because that color does not contrast against the background, and choosing this command. Note that it contains the command to reset the background to the existing background color, because that's necssary to force the autocolors to reset based on the new palette that has 1 fewer colors in it.
 
 If you want to use that color again, you can simply go to the Nick Colors tab of the address book and delete it.
 
 Compatibility
 -------------
 
-Added: mIRC v6.1 (17 Feb 2006)
+.. compatibility:: 6.1
 
 See also
 --------

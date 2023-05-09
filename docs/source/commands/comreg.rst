@@ -1,7 +1,7 @@
 /comreg
 =======
 
-The **/comreg** command can be used to registers and unregisters a COM with windows to make themselves accessible to applications. Regsvr32 command will not register .NET assemblies because of their very nature. However if you must, [http://msdn.microsoft.com/en-us/library/tzat5yw6(vs.71).aspx Regasm Might Help].
+The /comreg command can be used to registers and unregisters a COM with windows to make themselves accessible to applications. Regsvr32 command will not register .NET assemblies because of their very nature. However if you must, [http://msdn.microsoft.com/en-us/library/tzat5yw6(vs.71).aspx Regasm Might Help].
 
 Synopsis
 --------
@@ -45,7 +45,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -60,3 +60,4 @@ See also
     * :doc:`/comclose </commands/comclose>`
     * :doc:`/comopen </commands/comopen>`
     * :doc:`/dll </commands/dll>`
+

@@ -1,7 +1,7 @@
 /treebar
 ========
 
-**/treebar** is used to enable or disable the mIRC treebar.
+/treebar is used to enable or disable the mIRC treebar.
 
 Synopsis
 --------
@@ -32,19 +32,19 @@ Parameters
 Examples
 --------
 
-**Enable the treebar**
+Enable the treebar
 
 .. code:: text
 
     /treebar on
 
-**Disable the treebar**
+Disable the treebar
 
 .. code:: text
 
     /treebar off
 
-**View the treebar status**
+View the treebar status
 
 .. code:: text
 
@@ -52,14 +52,14 @@ Examples
 
 The above command will result in the following:
 
-[[File:Treebar-Status.png]]
+.. figure:: img/Treebar-Status.png.webp
 
 .. note:: The treebar cannot be disabled while in Compact mode.
 
 Compatibility
 -------------
 
-Added: mIRC v6.2 (23 Nov 2006)
+.. compatibility:: 6.2
 
 See also
 --------
@@ -68,3 +68,4 @@ See also
     :columns: 4
 
     * :doc:`$treebar </identifiers/treebar>`
+

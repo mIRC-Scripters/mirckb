@@ -1,7 +1,7 @@
 /set
 ====
 
-The **/set** command can be used to replace the value of an existing variable or create a new variable and assign it the given value. By default /set creates global variable, this can be changed via the -l switch. Unlike the :doc:`/var </commands/var>` command, set cannot assign a value to multiple variables at once. It support :doc:`one math operation </beginner/variables.html#math-operations>` .
+The /set command can be used to replace the value of an existing variable or create a new variable and assign it the given value. By default /set creates global variable, this can be changed via the -l switch. Unlike the :doc:`/var </commands/var>` command, set cannot assign a value to multiple variables at once. It support one math operation (:ref:`beginner-math_operations`).
 
 Set evaluation routine
 ----------------------
@@ -14,7 +14,7 @@ The set command has its own evaluation routine which lets you dynamically concat
 
 Will create a variable like %1209425041 with the value of 'ABC'; Similarly this can be used with $nick and $chan in on events.
 
-.. note:: /set will fail to evaluate your variable if you have dynamic parameters before the name, read more :doc:`here </beginner/variables.html#special-behaviors-quirks>`
+.. note::  /set will fail to evaluate your variable if you have dynamic parameters before the name, read more here: :ref:`beginner-variable_quirks`
 
 Synopsis
 --------
@@ -79,14 +79,14 @@ Example
 
 .. code:: text
 
-    ; /countDown
+    ; /countDown 
     Alias countDown {
-    ; set some value
-    set %var Countdown:
-    ; print the value
-    echo -a %var
-    ; set the value to 3, decrease once per second
-    set -zs %var 3
+      ; set some value
+      set %var Countdown:
+      ; print the value
+      echo -a %var
+      ; set the value to 3, decrease once per second
+      set -zs %var 3
     }
 
 Will output:
@@ -109,14 +109,14 @@ The -u0 switch can be used to create a variable with global scope that will get 
 .. code:: text
 
     Alias example {
-    set -u0 %x A
-    bb
-    ; will print 'B'
-    echo -a %x
+      set -u0 %x A
+      bb
+      ; will print 'B'
+      echo -a %x
     }
     alias bb {
-    ; replace the value of %x with B, keep the unset setting
-    set -k %x B
+      ; replace the value of %x with B, keep the unset setting
+      set -k %x B
     }
 
 A simple !seen script that uses /set special evaluation routine to create dynamic variables:
@@ -124,22 +124,22 @@ A simple !seen script that uses /set special evaluation routine to create dynami
 .. code:: text
 
     on *:text:!seen &:#mIRC:{
-    ; check if the variable is set
-    if ($var(seen. $+ $2)) {
-    ; notice the user the value of '%seen.<nick>'
-    notice $nick I have seen $2 $var(seen. $+ $2, 1).value
-    }
-    else notice $nick I have not seen $2 anywhere.
+      ; check if the variable is set
+      if ($var(seen. $+ $2)) {
+        ; notice the user the value of '%seen.<nick>'
+        notice $nick I have seen $2 $var(seen. $+ $2, 1).value
+      }
+      else notice $nick I have not seen $2 anywhere.
     }
     on *:text:*:#:{
-    ; set the value to '%seen.<nick>'
-    set %seen. $+ $nick Talking in $chan < $+ $nick $+ > $1-
+      ; set the value to '%seen.<nick>'
+      set %seen. $+ $nick Talking in $chan < $+ $nick $+ > $1-
     }
 
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
 See also
 --------
@@ -153,3 +153,4 @@ See also
     * :doc:`/unset </commands/unset>`
     * :doc:`/unsetall </commands/unsetall>`
     * :doc:`/var </commands/var>`
+

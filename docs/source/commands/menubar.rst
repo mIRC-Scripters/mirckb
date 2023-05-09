@@ -1,7 +1,7 @@
 /menubar
 ========
 
-The **/menubar** command display the current status and optionally turns the menubar on/off.
+The /menubar command display the current status and optionally turns the menubar on/off.
 
 Synopsis
 --------
@@ -13,7 +13,7 @@ Synopsis
 Switches
 --------
 
-none
+None
 
 Parameters
 ----------
@@ -40,7 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.32 (21 May 2008)
+.. compatibility:: 6.32
 
 See also
 --------

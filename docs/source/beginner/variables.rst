@@ -3,7 +3,7 @@ Variables
 
 mIRC variables are items which can hold data temporarily, or permanently, for use at a later time.. You can create, edit, or delete them at any time. All mIRC variables must be prefixed with a % sigil (example %var or %cookies). Variables are untyped – therefore capable of storing letters, numbers, or strings at any given point.
 
-Variable Scope: Global vs. Local
+Variable Scope: Global vs. Local
 --------------------------------
 
 There are two kinds of variables: local and global. Scope refers to the visibility of variables in your code. In other word, where these variables can be seen from.
@@ -160,6 +160,8 @@ Upon executing /nullExample, you will notice that mIRC will echo the following t
 
    %example1 is null!
    %example2 is also null!
+
+.. _beginner-math_operations:
 
 Math Operations
 ---------------

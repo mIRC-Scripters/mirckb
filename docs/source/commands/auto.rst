@@ -3,9 +3,9 @@
 
 Auto-OP is a feature that can be used to manage access for a channel. Whenever a user whose address matches an address in the auto-op list joins the channel, mIRC will automatically OP them.
 
-The **auto** command can also be used to disable or enable this feature as well as add and remove users from and to the list.
+The auto command can also be used to disable or enable this feature as well as add and remove users from and to the list.
 
-**This** commands been superseded by the :doc:`/aop </commands/aop>` command.'''
+This command has been superseded by the :doc:`/aop </commands/aop>` command.
 
 Synopsis
 --------
@@ -13,6 +13,7 @@ Synopsis
 .. code:: text
 
     /auto -rw <nick/address> [#channel1,#channel2,...] [type] [network]
+    
     /auto <on/off>
 
 Switches
@@ -55,14 +56,14 @@ Example
 .. code:: text
 
     ;Turn on auto op
-    /auto on
-
+    /auto on 
+    
     ;Add Madgoat to the auto-op list. Address type 2, network Undernet
-    /auto MadGoat 2 Undernet
-
+    /auto MadGoat 2 Undernet 
+    
     ;Remove Madgoat from the auto-op list
-    /auto -r MadGoat 2 Undernet
-
+    /auto -r MadGoat 2 Undernet 
+    
     ;Turn off auto op
     /auto off
 
@@ -81,7 +82,7 @@ The above example will output:
 Compatibility
 -------------
 
-Added: mIRC v2.5a (08 Mar 1995)
+.. compatibility:: 2.5a
 
 See also
 --------
@@ -97,3 +98,4 @@ See also
     * :doc:`/ignore </commands/ignore>`
     * :doc:`/pop </commands/pop>`
     * :doc:`/pvoice </commands/pvoice>`
+

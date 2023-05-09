@@ -1,7 +1,7 @@
 /dll
 ====
 
-The **/dll** command can be used to call an exported function from a DLL with the specified parameters.
+The /dll command can be used to call an exported function from a DLL with the specified parameters.
 
 Synopsis
 --------
@@ -49,7 +49,7 @@ Parameters
 Examples
 --------
 
-Look at the :doc:`dll </advanced/dll>` article to see how to use a dll as well as how to create them.
+Look at the :doc:`dll article </advanced/dll>` to see how to use a dll as well as how to create them.
 
 silently fails if $dll(1) contains a space:
 
@@ -89,7 +89,7 @@ used for loading a dll is roughly equivalent to
 Compatibility
 -------------
 
-Added: mIRC v5.6 (23 Sep 1999)
+.. compatibility:: 5.6
 
 See also
 --------

@@ -1,7 +1,7 @@
 /mkdir
 ======
 
-The **/mkdir** command creates a new, empty, directory.
+The /mkdir command creates a new, empty, directory.
 
 .. note:: Since mIRC 7.46, /mkdir can create more than one directory at a time, you can now do /mkdir C:\new\new1\
 
@@ -36,14 +36,14 @@ Example
 
     ; Create a directory
     /mkdir example
-
+    
     ; Delete it
     /rmdir example
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -62,3 +62,4 @@ See also
     * :doc:`/rmdir </commands/rmdir>`
     * :doc:`/run </commands/run>`
     * :doc:`/write </commands/write>`
+

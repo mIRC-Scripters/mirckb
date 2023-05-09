@@ -1,7 +1,7 @@
 /sockaccept
 ===========
 
-The **/sockaccept** command allows mIRC the ability to accept incoming connections on a port that has been opened with the :doc:`/socklisten </commands/socklisten>` commmand.
+The /sockaccept command allows mIRC the ability to accept incoming connections on a port that has been opened with the :doc:`/socklisten </commands/socklisten>` commmand.
 
 Synopsis
 --------
@@ -25,7 +25,14 @@ Switches
 Parameters
 ----------
 
-**Name**: The name that should be assigned to the accepted connection in order to reference it later.
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - <name>
+      - The name that should be assigned to the accepted connection in order to reference it later.
 
 Example
 -------
@@ -34,18 +41,18 @@ Example
 
     ; Listen for connections on the socket named mySock
     ON *:SOCKLISTEN:mySock: {
-
-    ; Accept incoming connection on this socket and name them
-    ; with a combination of the socket's name and the current $ctime
-    sockaccept $+($sockname,$ctime)
+    
+      ; Accept incoming connection on this socket and name them
+      ; with a combination of the socket's name and the current $ctime
+      sockaccept $+($sockname,$ctime)
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -63,5 +70,6 @@ See Also
     * :doc:`/sockpause </commands/sockpause>`
     * :doc:`/sockread </commands/sockread>`
     * :doc:`/sockrename </commands/sockrename>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

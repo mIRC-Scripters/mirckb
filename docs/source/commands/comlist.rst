@@ -1,7 +1,7 @@
 /comlist
 ========
 
-The **/comlist** command lists all of the currently open :doc:`cOM object </advanced/cOM>` connections.
+The /comlist command lists all of the currently open :doc:`com </advanced/com>` connections.
 
 Synopsis
 --------
@@ -30,15 +30,15 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v7.34 (18 Jun 2014)
+.. compatibility:: 7.34
 
-See Also
+See also
 --------
 
 .. hlist::
     :columns: 4
 
-    * :doc:`cOM objects </advanced/cOM>`
+    * :doc:`com </advanced/com>`
     * :doc:`$com </identifiers/com>`
     * :doc:`$comcall </identifiers/comcall>`
     * :doc:`$comerr </identifiers/comerr>`
@@ -46,3 +46,4 @@ See Also
     * :doc:`/comclose </commands/comclose>`
     * :doc:`/comopen </commands/comopen>`
     * :doc:`/comreg </commands/comreg>`
+

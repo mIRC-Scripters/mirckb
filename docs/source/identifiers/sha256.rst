@@ -1,2 +1,112 @@
 $sha256
 =======
+
+$sha256 calculates the sha256 hash of a text, :ref:`binary_variables`, or file. Hash is 160-bits, shown as 40 lower-case hexadecimal characters.
+
+Synopsis
+--------
+
+.. code:: text
+
+    $sha256(plaintext|&binaryvar|filename,[N])
+
+Parameters
+----------
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+plaintext - Used with N = 0, just the string you want the sha256 hash of
+
+&binaryvar - A binary variable, used with N = 1, return the sha256 hash of the content of the binvar
+
+filename - A filename, used with N = 2, return the sha256 hash of the content of the file
+
+N: Optional integer 0-2, where 0 indicates data is treated as plaintext, 1 indicates a &binary variable, 2 treats data as contents of a filename
+
+If the N parameter isn't used, the default 0 is used (which is different than $crc which has default of N=2.)
+
+Properties
+----------
+
+None
+
+Example
+-------
+
+Echo the sha256 hash of plain text string ''abc'' to the active window:
+
+.. code:: text
+
+    //echo -a $sha256(abc)
+    or
+    //echo -a $sha256(abc,0)
+
+The DATA is case-sensitive, so hash of "abc" is different than hash of "ABC"
+
+Echo the sha256 hash of the zero-length null string to the active window:
+
+.. code:: text
+
+    //echo -a $sha256($null)
+
+Echo the sha256 hash of the first 1000 bytes of the mIRC program you're running to the active window:
+
+.. code:: text
+
+    //bread $qt($mircexe) 0 1000 &snip | echo -a $sha256(&snip,1)
+
+Echo the sha256 hash of the contents of the mIRC program you're running to the active window:
+
+.. code:: text
+
+    //echo -a $sha256($mircexe,2)
+
+Note that because the default is N=0, $sha256($mircexe) is the sha256 hash for the plaintext text string of the drive:\path\filename for the mIRC you're running, and not the hash of the filename contents. This differs from $crc($mircexe) giving the checksum of the filename contents because $crc has default of N=2.
+mIRC v7.x Unicode-encodes bytes 128-255 to utf8 before providing to $sha256, if the text doesn't have code points above 255, you can avoid the utf8 encoding issue by using a binvar with the -a switch.
+
+.. code:: text
+
+    //bset -ta &string 1 chloé | echo -a $sha1(&string,1)
+
+Error Messages
+--------------
+
+Note that $sha256 differs from $crc in that it generates error for non-existent files instead of returning hash of $null string. Also, hex string returned by $sha256 is lowercase while $crc returns uppercase hex.
+
+.. code:: text
+
+    * Error accessing file: $sha256
+
+Either file does not exist, or file permissions don't allow the file to be read. i.e. $sha256(non-existent-file,2) or $sha256(c:\hiberfil.sys,2)
+
+.. code:: text
+
+    * Invalid parameters: $sha256
+
+Either using a zero-length/non-existent binary variable or specifying an N where $int(%N) isn't 0-2.
+
+.. code:: text
+
+    Both above errors halt execution of the script
+
+Compatibility
+-------------
+
+.. compatibility:: 7.42
+
+See also
+--------
+
+.. hlist::
+    :columns: 4
+
+    * :doc:`$crc </identifiers/crc>`
+    * :doc:`$md5 </identifiers/md5>`
+    * :doc:`$sha512 </identifiers/sha512>`
+    * :doc:`$sha384 </identifiers/sha384>`
+    * :doc:`$sha1 </identifiers/sha1>`
+

@@ -1,7 +1,7 @@
 /rmdir
 ======
 
-The **/rmdir** command deletes an empty directory. If the directly contains either files or other directories, an error will occur.
+The /rmdir command deletes an empty directory. If the directly contains either files or other directories, an error will occur.
 
 Synopsis
 --------
@@ -34,14 +34,14 @@ Example
 
     ; Create a directory
     /mkdir example
-
+    
     ; Delete it
     /rmdir example
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -60,3 +60,4 @@ See also
     * :doc:`/rename </commands/rename>`
     * :doc:`/run </commands/run>`
     * :doc:`/write </commands/write>`
+

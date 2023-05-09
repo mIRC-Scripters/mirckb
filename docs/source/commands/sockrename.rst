@@ -1,7 +1,7 @@
 /sockrename
 ===========
 
-The **/sockrename** command allows mIRC to assign a new name to an existing socket connection.
+The /sockrename command allows mIRC to assign a new name to an existing socket connection.
 
 Synopsis
 --------
@@ -32,7 +32,7 @@ Parameters
 Example
 -------
 
-Rename the socket **mySocket** to **newSockName**:
+Rename the socket mySocket to newSockName:
 
 .. code:: text
 
@@ -41,9 +41,9 @@ Rename the socket **mySocket** to **newSockName**:
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -61,5 +61,6 @@ See Also
     * :doc:`/sockopen </commands/sockopen>`
     * :doc:`/sockpause </commands/sockpause>`
     * :doc:`/sockread </commands/sockread>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

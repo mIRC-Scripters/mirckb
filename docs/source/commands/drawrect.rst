@@ -1,7 +1,7 @@
 /drawrect
 =========
 
-The **/drawrect** command can be used to draw a rectangle in a picture window. Multiple rectangles can be drawn at once.
+The /drawrect command can be used to draw a rectangle in a picture window. Multiple rectangles can be drawn at once.
 
 Synopsis
 --------
@@ -61,17 +61,17 @@ Example
 
     ;Draws a rectangle that is blue (colour 2) with border thickness of 7, at co-ordinates 15,10 with a width of 200 and height of 150.
     /drawrect @window 2 7 15 10 200 150
-
+    
     ;Same as above but the corners are drawn using a 5x5 ellipse.
     /drawrect -d @window 2 7 15 10 200 150 5 5
-
+    
     ;Draws a filled green rectangle using an RGB colour value.
     /drawrect -fr @window 65280 1 5 5 20 20
 
 Compatibility
 -------------
 
-Added: mIRC v (27 Nov 2022)
+Added: 
 
 See also
 --------
@@ -91,3 +91,4 @@ See also
     * :doc:`/drawsave </commands/drawsave>`
     * :doc:`/drawscroll </commands/drawscroll>`
     * :doc:`/drawtext </commands/drawtext>`
+

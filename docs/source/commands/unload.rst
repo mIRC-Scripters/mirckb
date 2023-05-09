@@ -1,9 +1,9 @@
 /unload
 =======
 
-The **/unload** command is used to unload either an alias file or a script file.
+The /unload command is used to unload either an alias file or a script file.
 
-.. note:: The command cannot unload the *popups.ini* file.
+.. note:: The command cannot unload the popups.ini file.
 
 Synopsis
 --------
@@ -26,7 +26,7 @@ Switches
     * - -rs
       - Unloads the specified script/remotes file.
     * - -n
-      - Prohibits the script file you are unloading from triggering any *ON *:UNLOAD:* events.
+      - Prohibits the script file you are unloading from triggering any ``ON *:UNLOAD:`` events.
 
 Parameters
 ----------
@@ -43,19 +43,19 @@ Parameters
 Examples
 --------
 
-**Unload a script file**
+Unload a script file
 
 .. code:: text
 
     /unload -rs myfile.mrc
 
-'''Unload a script file and prevent it from triggering it's *ON *:UNLOAD:* event**
+Unload a script file and prevent it from triggering it's ``ON *:UNLOAD:`` event
 
 .. code:: text
 
     /unload -rsn myfile.mrc
 
-**Unload an alias file'''
+Unload an alias file
 
 .. code:: text
 
@@ -68,3 +68,4 @@ See also
     :columns: 4
 
     * :doc:`/load </commands/load>`
+

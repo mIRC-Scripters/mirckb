@@ -1,7 +1,7 @@
 /drawfill
 =========
 
-The **/drawfill** command fills an area with the specified color starting at the specified co-ordinates.
+The /drawfill command fills an area with the specified color starting at the specified co-ordinates.
 
 Synopsis
 --------
@@ -60,7 +60,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------

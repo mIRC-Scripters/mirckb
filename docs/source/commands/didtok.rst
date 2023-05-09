@@ -1,7 +1,7 @@
 /didtok
 =======
 
-The **/didtok** command adds the tokenized list to the specified control.
+The /didtok command adds the tokenized list to the specified control.
 
 Synopsis
 --------
@@ -40,10 +40,10 @@ Example
 
     ;put in remote:
     dialog colors {
-    size -1 -1 100 200
-    list 1, 10 10 80 180
+      size -1 -1 100 200
+      list 1, 10 10 80 180
     }
-
+    
     ;then execute in mIRC:
     //dialog -m colors colors | didtok colors 1 32 red blue orange yellow
 
@@ -52,7 +52,7 @@ Add the following list of colors to the list in the dialog
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -67,3 +67,4 @@ See also
     * :doc:`$didreg </identifiers/didreg>`
     * :doc:`/dialog </commands/dialog>`
     * :doc:`/did </commands/did>`
+

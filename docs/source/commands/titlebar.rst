@@ -1,7 +1,7 @@
 /titlebar
 =========
 
-The **/titlebar** command can be used to change the titlebar of a window, either the main mIRC window, or a custom @window.
+The /titlebar command can be used to change the titlebar of a window, either the main mIRC window, or a custom @window.
 
 Synopsis
 --------
@@ -42,18 +42,18 @@ Example
 .. code:: text
 
     alias refresh_win {
-    ; create a window if it doesn't exist
-    if (!$window($1)) window $1
-    ; refresh the titlbar of that window
-    titlebar $1 Position: $window($1).x $window($1).y
-    ; refresh mIRC's main window's titlebar
-    titlebar Active : $1
+      ; create a window if it doesn't exist
+      if (!$window($1)) window $1
+      ; refresh the titlbar of that window
+      titlebar $1 Position: $window($1).x $window($1).y
+      ; refresh mIRC's main window's titlebar
+      titlebar Active : $1
     }
 
 Compatibility
 -------------
 
-Added: mIRC vmIRC 4.5 ()
+.. compatibility:: 4.5
 
 See also
 --------
@@ -63,3 +63,4 @@ See also
 
     * :doc:`$window </identifiers/window>`
     * :doc:`$titlebar </identifiers/titlebar>`
+

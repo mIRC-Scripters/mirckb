@@ -1,7 +1,7 @@
 /ulist
 ======
 
-**/ulist** allows you to list the access levels of users based on a certain criteria.
+/ulist allows you to list the access levels of users based on a certain criteria.
 
 Synopsis
 --------
@@ -39,7 +39,7 @@ Parameters
 Examples
 --------
 
-**List all users with an access level lower than or equal to 10**
+List all users with an access level lower than or equal to 10
 
 .. code:: text
 
@@ -47,15 +47,15 @@ Examples
 
 This would result in something similar to the screenshot below:
 
-[[File:User access list.png]]
+.. figure:: img/User_access_list.png.webp
 
-**List users with access level greater than or equal to 5**
+List users with access level greater than or equal to 5
 
 .. code:: text
 
     /ulist >5
 
-**List users with access level equal to 3**
+List users with access level equal to 3
 
 .. code:: text
 
@@ -70,5 +70,6 @@ See also
     * :doc:`/auser </commands/auser>`
     * :doc:`/flush </commands/flush>`
     * :doc:`/guser </commands/guser>`
-    * :doc:`/isuer </commands/iuser>`
+    * :doc:`/iuser </commands/iuser>`
     * :doc:`/ruser </commands/ruser>`
+

@@ -1,7 +1,7 @@
 /privmsg
 ========
 
-The **/privmsg** command allows you to send a privmsg to the server with no restriction
+The /privmsg command allows you to send a privmsg to the server with no restriction
 
 Synopsis
 --------
@@ -13,7 +13,7 @@ Synopsis
 Switches
 --------
 
-none
+None
 
 Parameters
 ----------
@@ -32,12 +32,15 @@ Parameters
 Example
 -------
 
- /privmsg #channel test
+.. code:: text
+
+    /privmsg #channel test
 
 Compatibility
 -------------
 
-Added: mIRC v7.53 (29 Nov 2018)
+.. compatibility:: 7.53
+
 See also
 --------
 

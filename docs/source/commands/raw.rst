@@ -1,7 +1,7 @@
 /raw
 ====
 
-The **/raw** command toggles the raw events processing. With no parameters, the /raw command displays the current state (either disabled or enabled).  Alternatively, the /raw command can be used to send text to the server AS IS.
+The /raw command toggles the raw events processing. With no parameters, the /raw command displays the current state (either disabled or enabled).  Alternatively, the /raw command can be used to send text to the server AS IS.
 
 Synopsis
 --------
@@ -65,7 +65,7 @@ The command above is equivalent to /msg #mIRC Hello World.
 Compatibility
 -------------
 
-Added: mIRC v3.3 (21 Jun 1995)
+.. compatibility:: 3.3
 
 See also
 --------
@@ -75,8 +75,9 @@ See also
 
     * :doc:`$remote </identifiers/remote>`
     * :doc:`$rawmsg </identifiers/rawmsg>`
-    * :doc:`/ctcps </commands/tcp-socket>`
+    * :doc:`/ctcps </commands/ctcps>`
     * :doc:`/remote </commands/remote>`
     * :doc:`/commands </commands/commands>`
     * :doc:`/events </commands/events>`
     * :doc:`/quote </commands/quote>`
+

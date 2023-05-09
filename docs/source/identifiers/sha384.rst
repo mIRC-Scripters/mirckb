@@ -1,2 +1,120 @@
 $sha384
 =======
+
+$sha384 calculates the sha384 hash of a text string, :ref:`binary_variables`, or disk file. The hash digest is 384-bits, shown as 96 lower-case hexadecimal characters.
+
+Synopsis
+--------
+
+.. code:: text
+
+    $sha384(plaintext|&binaryvar|filename,[N])
+
+Parameters
+----------
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+plaintext - Used with N = 0, the string for which you want the sha384 hash
+
+&binaryvar - A binary variable, used with N = 1, returns the sha384 hash of the content of the binvar
+
+filename - A filename, used with N = 2, returns the sha384 hash of the content of the file
+
+N: Default 0. Optional integer 0-2, where 0 indicates data is treated as plaintext, 1 indicates a &binary variable, 2 treats data as contents of a filename
+
+If the N parameter isn't used, the default 0 is used (which is different than $crc which has default of N=2.)
+
+.. note:: sha384 is a 'one way' cryptographic hash that's part of the SHA2 family, which also contains the sha224 sha256 and sha512 hashes, of which mIRC has not added sha224. sha384 is identical to the sha512 hash except for having a different initial 512-bit 'magic' constant, and that the hash digest displays only 6 of the 64-bit hashing variables instead of displaying all 8. This makes it no faster or slower than sha512, and no less or more secure than using the first 96 digits of the sha512 hash. Due to the 64 hex digits which aren't displayed, sha384 has 128 bits of strength against the 'length extension' attack, which is an attack against incorrect authentication using $sha384(<secret> <public string>) instead of using $hmac(public string, secret, sha512).
+
+Properties
+----------
+
+None
+
+Example
+-------
+
+Echo the SHA384 hash of plain text string ''abc'' to the active window:
+
+.. code:: text
+
+    //echo -a $sha384(abc)
+
+or
+
+.. code:: text
+
+    //echo -a $sha384(abc,0)
+
+The DATA is case-sensitive, so hash of "abc" is different than hash of "ABC"
+
+Echo the SHA384 hash of the zero-length null string to the active window:
+
+.. code:: text
+
+    //echo -a $sha384($null)
+
+Echo the SHA384 hash of the first 1000 bytes of the mIRC program you're running to the active window:
+
+.. code:: text
+
+    //bread $qt($mircexe) 0 1000 &snip | echo -a $sha384(&snip,1)
+
+Echo the SHA384 hash of the contents of the entire mIRC program you're running to the active window:
+
+.. code:: text
+
+    //echo -a $sha384($mircexe,2)
+
+Note that because the default is N=0, $sha384($mircexe) is the SHA384 hash for the plaintext text string of the drive:\path\filename for the mIRC you're running, and not the hash of the filename contents. This differs from $crc($mircexe) giving the checksum of the filename contents because $crc has default of N=2.
+mIRC v7.x Unicode-encodes bytes 128-255 to utf8 before providing to $sha384, if the text doesn't have code points above 255, you can avoid the utf8 encoding issue by using /bset to create a binvar with the -a switch.
+
+.. code:: text
+
+    //var %a chloé | bset -t &bin1 1 %a | bset -ta &bin2 1 %a | echo -a $sha1(&bin1,1) vs $sha1(&bin2,1) or $bvar(&bin1,1-) vs $bvar(&bin2,1-)
+
+Error Messages
+--------------
+
+Note that $sha384 differs from $crc in that it generates error for non-existent files instead of returning hash of $null string. Also, hex string returned by $sha384 is lowercase while $crc returns uppercase hex.
+
+.. code:: text
+
+    * Error accessing file: $sha384
+
+Either file does not exist, or file permissions don't allow the file to be read. i.e. $sha384(non-existent-file,2) or $sha384(c:\hiberfil.sys,2)
+
+.. code:: text
+
+    * Invalid parameters: $sha384
+
+Either using a zero-length/non-existent binary variable or specifying an N outside the 0-2 valid range.
+
+.. code:: text
+
+    Both above errors halt execution of the script
+
+Compatibility
+-------------
+
+.. compatibility:: 7.42
+
+See also
+--------
+
+.. hlist::
+    :columns: 4
+
+    * :doc:`$sha1 </identifiers/sha1>`
+    * :doc:`$sha256 </identifiers/sha256>`
+    * :doc:`$sha512 </identifiers/sha512>`
+    * :doc:`$hmac </identifiers/hmac>`
+    * :doc:`$hotp </identifiers/hotp>`
+    * :doc:`$totp </identifiers/totp>`
+    * :doc:`$md5 </identifiers/md5>`
+    * :doc:`$crc </identifiers/crc>`

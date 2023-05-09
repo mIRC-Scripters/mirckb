@@ -1,7 +1,7 @@
 /disable
 ========
 
-The **/disable** command disables the specified groups in all scripts. You can also specify a :ref:`matching_tools-wildcard` to disable all matching groups.
+The /disable command disables the specified groups in all scripts. You can also specify a :ref:`matching_tools-wildcard` to disable all matching groups.
 
 Synopsis
 --------
@@ -48,7 +48,7 @@ First example disables the three groups specified while the second would only di
 Compatibility
 -------------
 
-Added: mIRC v3.5 (13 Aug 1995)
+.. compatibility:: 3.5
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     * :doc:`$group </identifiers/group>`
     * :doc:`/enable </commands/enable>`
     * :doc:`/groups </commands/groups>`
+

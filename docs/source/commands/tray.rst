@@ -1,7 +1,7 @@
 /tray
 =====
 
-The **/tray** command can be used to change the tray settings for mIRC. The tray command can also be used to change the mIRC tray icon to the icon located at index N in the specific file. For all switches, N can be 0 for disabled or 1  for enabled.
+The /tray command can be used to change the tray settings for mIRC. The tray command can also be used to change the mIRC tray icon to the icon located at index N in the specific file. For all switches, N can be 0 for disabled or 1  for enabled.
 
 Synopsis
 --------
@@ -51,16 +51,16 @@ Example
 .. code:: text
 
     alias example {
-    ; always show the mIRC icon
-    tray -m1
-    ; change the icon to a computer chip icon
-    tray -i13 C:\Windows\System32\shell32.dll
+      ; always show the mIRC icon
+      tray -m1
+      ; change the icon to a computer chip icon
+      tray -i13 C:\Windows\System32\shell32.dll
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.5 (19 Feb 1999)
+.. compatibility:: 5.5
 
 See also
 --------

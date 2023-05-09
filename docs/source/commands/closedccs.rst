@@ -1,9 +1,9 @@
 /closedccs
 ==========
 
-.. attention:: This feature has essentially been replaced by :doc:`/close </commands/close>`.
+.. attention:: This feature has essentially been replaced by :doc:`/close </commands/close>`
 
-The **/closedccs** command is used to close all inactive DCC send/get windows; Inactive windows are the ones in which the DCC connection was closed but the window remained open.
+The /closedccs command is used to close all inactive DCC send/get windows; Inactive windows are the ones in which the DCC connection was closed but the window remained open.
 
 Synopsis
 --------
@@ -27,15 +27,17 @@ Example
 
 .. code:: text
 
-    ;Close all inactive DCC send/get windows
+    ;Close all inactive DCC send/get windows 
     /closedccs
 
 Compatibility
 -------------
 
-Added: mIRC v4.52 (06 Jul 1996)
+.. compatibility:: 4.52
 
-Removed: mIRC v4.6 (07 Sep 1996)
+Removed: mIRC v4.6
+
+Removed On:07/09/1996
 
 See also
 --------
@@ -48,3 +50,4 @@ See also
     * :doc:`/close </commands/close>`
     * :doc:`/debug </commands/debug>`
     * :doc:`/window </commands/window>`
+

@@ -1,7 +1,7 @@
 /pop
 ====
 
-The **/pop** command performs a delayed op on a nickname. The purpose of this command is to prevent a channel window filling up with op mode changes whenever several users have the same nickname in their auto-op section.
+The /pop command performs a delayed op on a nickname. The purpose of this command is to prevent a channel window filling up with op mode changes whenever several users have the same nickname in their auto-op section.
 
 Before performing the op it checks if the user is already opped.
 
@@ -41,7 +41,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v3.42 (29 Jun 1995)
+.. compatibility:: 3.42
 
 See also
 --------
@@ -50,3 +50,4 @@ See also
     :columns: 4
 
     * :doc:`/pvoice </commands/pvoice>`
+

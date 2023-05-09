@@ -1,7 +1,7 @@
 /setlayer
 =========
 
-The **/setlayer** command can be used to change the transparency of a given window. If no window is provided, the transparency setting will apply to the main MDI window. The setlayer works on all windows as long as the full name is provided, for example "Status Window" for the status window. 
+The /setlayer command can be used to change the transparency of a given window. If no window is provided, the transparency setting will apply to the main MDI window. The setlayer works on all windows as long as the full name is provided, for example "Status Window" for the status window. 
 
 Transparency
 ------------
@@ -40,12 +40,12 @@ Example
 .. code:: text
 
     Alias Example {
-    ; create a new desktop window (with an editbox)
-    window -de @Example
-    ; set @example to 204/255 (%20) transparency
-    setlayer 204 @Example
-    ; a friendly message
-    echo @Example 20% Transparency!
+      ; create a new desktop window (with an editbox)
+      window -de @Example
+      ; set @example to 204/255 (%20) transparency
+      setlayer 204 @Example
+      ; a friendly message
+      echo @Example 20% Transparency!
     }
 
 You can change the transparency of other windows as well:
@@ -58,7 +58,7 @@ You can change the transparency of other windows as well:
 Compatibility
 -------------
 
-Added: mIRC v5.9 (15 Jun 2001)
+.. compatibility:: 5.9
 
 See also
 --------
@@ -67,3 +67,4 @@ See also
     :columns: 4
 
     * :doc:`/window </commands/window>`
+

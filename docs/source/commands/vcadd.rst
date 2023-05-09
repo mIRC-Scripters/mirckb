@@ -1,7 +1,7 @@
 /vcadd
 ======
 
-**/vcadd** makes it simple for you to add a voice command to the command list for your Speech Recognition Software.
+/vcadd makes it simple for you to add a voice command to the command list for your Speech Recognition Software.
 
 Synopsis
 --------
@@ -23,7 +23,7 @@ None
 Examples
 --------
 
-**Add a voice command for connecting to the SwiftIRC IRC server**
+Add a voice command for connecting to the SwiftIRC IRC server
 
 .. code:: text
 
@@ -40,4 +40,5 @@ See also
     * :doc:`$vcmd </identifiers/vcmd>`
     * :doc:`$vcmdver </identifiers/vcmdver>`
     * :doc:`$vcmdstat </identifiers/vcmdstat>`
-    * :doc:`oN vCMD eVent </events/oN_vcmd>`
+    * :doc:`on vcmd </events/on_vcmd>`
+

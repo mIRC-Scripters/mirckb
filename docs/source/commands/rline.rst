@@ -1,7 +1,7 @@
 /rline
 ======
 
-The **/rline** command replaces a line in a custom @window.
+The /rline command replaces a line in a custom @window.
 
 Synopsis
 --------
@@ -58,7 +58,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -75,3 +75,4 @@ See also
     * :doc:`$fline </identifiers/fline>`
     * :doc:`$sline </identifiers/sline>`
     * :doc:`$window </identifiers/window>`
+

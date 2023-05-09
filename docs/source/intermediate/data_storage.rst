@@ -1,6 +1,8 @@
 Data Storage
 ============
 
+.. _binary_variables:
+
 Binary Variables
 ----------------
 
@@ -263,6 +265,8 @@ Use $encode to translate binary data to text, which can be saved to variables or
    //noop $encode(&binvar,bm) | set %binvar_save $bvar(&binvar,1-).text
 
 .. note:: $encode translates 3 input bytes (binary or text) into 4 text characters, so you shouldn't try to use this method on binary variables longer than approximately 3000 bytes. Retrieve binary content from text %variable: ``//bset -t &binvar 1 %binvar_save | noop $decode(&binvar,bm)``
+
+.. _ini_files:
 
 INI Files
 ---------
@@ -574,6 +578,8 @@ The delete a file, you can use the /remove command:
    /remove file.txt
    ; send to the recycle bin
    /remove -b file.txt
+
+.. _file_handling:
 
 File Handling
 -------------

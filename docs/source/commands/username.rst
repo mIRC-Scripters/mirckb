@@ -1,7 +1,7 @@
 /username
 =========
 
-The **/username** command modifies the current username inside of the mIRC connect dialog. If no parameters are passed to the command, it will simply display your email address to the active window.
+The /username command modifies the current username inside of the mIRC connect dialog. If no parameters are passed to the command, it will simply display your email address to the active window.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.71 (07 May 2000)
+.. compatibility:: 5.71
 
 See also
 --------
@@ -48,3 +48,4 @@ See also
     * :doc:`$email </identifiers/email>`
     * :doc:`$emailaddr </identifiers/emailaddr>`
     * :doc:`/fullname </commands/fullname>`
+

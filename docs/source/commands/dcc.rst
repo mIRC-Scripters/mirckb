@@ -5,35 +5,34 @@ DCC is an IRC sub-protocol used to establish a direct connection with another IR
 
 Communication does not go through the IRC server like normal PRIVMSGs. DCC lets you chat as well as send and get files. DCC is usually initiated using the IRC server. DCC requires the use of your IP address to initiate a connection with another client.
 
-**DCC Chat:**
+DCC Chat:
+This command lets you initiate a DCC chat connection with another client. The chat service enables users to chat with each other over a DCC connection. This method is more secured and much faster as it does not depend on the IRC server for processing of messages. If a user sends you a DCC chat request, a DCC chat dialog will popup asking you to accept or decline the request. Note that the DCC Chat messages are still sent as plaintext.
 
-.. note:: that the DCC Chat messages are still sent as plaintext.
-
-**DCC Get:**
+DCC Get:
 This command lets you separate download folders according to their file extinctions. Files not matching any of the extinctions you specified are placed in the default DCC get directory.
 
-**DCC Reject:** lets you rejects a dcc send.
+DCC Reject: lets you rejects a dcc send.
 
 .. note:: The DCC get/reject command must be called from a CTCP event or the on DCCServer send event.
 
-**DCC Ignore:**
+DCC Ignore:
 This command is used to add/remove files from the ignore/accept list. mIRC will automatically accept/decline the file when someone sends you if it's in the list.
 
-**DCC nick:**
+DCC nick:
 This command lets you change the name associated with a dcc chat, send, get, or fserver.
 
-**DCC Passive:**
+DCC Passive:
 This command lets you turn passive DCC on or off.
 
 .. note:: mIRC uses a passive protocol to establish connection with a client which is behind a firewall.
 
-**DCC Send:**
+DCC Send:
 The DCC send command lets you initiate a DCC send connection with another user. If more than one file is specified, a session for each file will get initiated.
 
-**DCC Trust**
+DCC Trust
 This command allows you to maintain a trust list of users or address whom mIRC can automatically accept a DCC send.
 
-**DCC Maxcps**
+DCC Maxcps
 This command lets you change the Max Cps value on the fly
 
 Synopsis
@@ -42,13 +41,13 @@ Synopsis
 .. code:: text
 
     /dcc chat <nickname>
-    /dcc fserve
+    /dcc fserve 
     /dcc get <folder>
-    /dcc ignore -uM [on | off | accept | ignore]
+    /dcc ignore -uM [on | off | accept | ignore] 
     /dcc maxcps <N>
     /dcc nick -sgcf <oldnick> <newnick>
     /dcc passive [on | off]
-    /dcc reject
+    /dcc reject 
     /dcc send [-clmn] <nick> <file1> [file2] ... [fileN]
     /dcc trust [-r] <on | off | nick | address | level>
 
@@ -147,7 +146,7 @@ DCC Ignore
     * - [on | off]
       - Turns DCC Ignore on or off
     * - [accept | ignore]
-      -
+      - 
 
 DCC maxcps
 
@@ -222,10 +221,11 @@ Compatibility
 
 * chat/send/get: 
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
+
 * server: 
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -236,3 +236,4 @@ See also
     * :doc:`$dccignore </identifiers/dccignore>`
     * :doc:`$dccport </identifiers/dccport>`
     * :doc:`/dccserver </commands/dccserver>`
+

@@ -112,7 +112,7 @@ Where do we go from here?
 
 So where do you go from here? Basic on the kind of socket you are looking to work with you will have to decide whether you want UDP or TCP.
 
-.. _sockets-tcp_sockets:
+.. _tcp_sockets:
 
 TCP Sockets
 -----------
@@ -576,6 +576,8 @@ It is possible for the remote end-point to terminate a connection, the same way 
 	}
 
 .. note:: Only the remote end-port, not you, can trigger this event.
+
+.. _udp_sockets:
 
 UDP Sockets
 -----------

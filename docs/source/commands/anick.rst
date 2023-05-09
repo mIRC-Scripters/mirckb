@@ -1,7 +1,7 @@
 /anick
 ======
 
-The **anick** command is used to set a new alternative nickname. The alternative nickname is the nickname that will be used if IRC indicates that your primary nickname is already in use. If the alternative nickname is taken as well, mIRC will place a '/nick ' text in the server's editbox and wait for the user's reply.
+The anick command is used to set a new alternative nickname. The alternative nickname is the nickname that will be used if IRC indicates that your primary nickname is already in use. If the alternative nickname is taken as well, mIRC will place a '/nick ' text in the server's editbox and wait for the user's reply.
 
 Synopsis
 --------
@@ -41,7 +41,7 @@ Output:
 Compatibility
 -------------
 
-Added: mIRC v5.8 (14 Dec 2000)
+.. compatibility:: 5.8
 
 See also
 --------
@@ -53,3 +53,4 @@ See also
     * :doc:`$anick </identifiers/anick>`
     * :doc:`$me </identifiers/me>`
     * :doc:`/identd </commands/identd>`
+

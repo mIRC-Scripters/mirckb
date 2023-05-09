@@ -1,7 +1,7 @@
 /fwrite
 =======
 
-The **/fwrite** command writes text or the specified binary variable to the file.
+The /fwrite command writes text or the specified binary variable to the file.
 
 Synopsis
 --------
@@ -44,7 +44,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.1 (17 Feb 2006)
+.. compatibility:: 6.1
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     * :doc:`/fclose </commands/fclose>`
     * :doc:`/fopen </commands/fopen>`
     * :doc:`/fseek </commands/fseek>`
+

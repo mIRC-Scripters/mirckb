@@ -1,7 +1,7 @@
 /groups
 =======
 
-The **/groups** command displays a list of either all (no switch), enabled (-e), or disabled (-d) groups in your scripts.
+The /groups command displays a list of either all (no switch), enabled (-e), or disabled (-d) groups in your scripts.
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
 See also
 --------
@@ -43,6 +43,6 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`$groups </identifiers/groups>`
     * :doc:`/disable </commands/disable>`
     * :doc:`/enable </commands/enable>`
+

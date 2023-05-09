@@ -1,7 +1,7 @@
 /gtalk
 ======
 
-The **gtalk** command makes an Agent speak the specified text.
+The gtalk command makes an Agent speak the specified text.
 
 Synopsis
 --------
@@ -20,7 +20,7 @@ Switches
     * - Switch
       - Description
     * - -h
-      - Prevents the agent from popping up if mIRC is minimized *and* -h has been used in :doc:`/gload </commands/gload>` to load that agent.
+      - Prevents the agent from popping up if mIRC is minimized ''and'' -h has been used in :doc:`/gload </commands/gload>` to load that agent.
     * - -k
       - Makes the agent think the text in a balloon without speaking it.
     * - -l
@@ -59,7 +59,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -82,3 +82,4 @@ See also
     * :doc:`$agentstat </identifiers/agentstat>`
     * :doc:`$agentname </identifiers/agentname>`
     * :doc:`$agent </identifiers/agent>`
+

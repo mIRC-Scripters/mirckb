@@ -1,7 +1,7 @@
 /noop
 =====
 
-The **/noop** command simply discards all the values after evaluating its arguments like mIRC would in an ordinary command. This is useful for identifiers that return a value but you do not wish to do anything with these values.
+The /noop command simply discards all the values after evaluating its arguments like mIRC would in an ordinary command. This is useful for identifiers that return a value but you do not wish to do anything with these values.
 
 Synopsis
 --------
@@ -33,14 +33,14 @@ Example
 .. code:: text
 
     alias noop_example {
-    ; discard the value we get from $tip
-    noop $tip(Example, Hello, Hello there)
+      ; discard the value we get from $tip
+      noop $tip(Example, Hello, Hello there)
     }
 
 Compatibility
 -------------
 
-Added: mIRC v6.17 (17 Feb 2006)
+.. compatibility:: 6.17
 
 See also
 --------
@@ -49,7 +49,8 @@ See also
     :columns: 4
 
     * :doc:`$eval </identifiers/eval>`
-    * :doc:`$ </identifiers/>`
+    * :doc:`$ </identifiers/dollar>`
     * :doc:`$evalnext </identifiers/evalnext>`
     * :doc:`/scid </commands/scid>`
     * :doc:`/scon </commands/scon>`
+

@@ -1,2 +1,4 @@
 $replacexcs
 ===========
+
+.. include::`</identifiers/replacex>`

@@ -1,7 +1,7 @@
 /aline
 ======
 
-The **aline** command is used to add a single line of text to a custom window. This command is limited to custom @windows, If you need a more general command that is able to print to both custom windows, channel, and query consider using the /echo command instead.
+The aline command is used to add a single line of text to a custom window. This command is limited to custom @windows, If you need a more general command that is able to print to both custom windows, channel, and query consider using the /echo command instead.
 
 .. note:: If the main window is sorted (text or listbox and /window -s has been used), lines added with /echo to that window won't be sorted, only lines added with /aline will.
 
@@ -22,7 +22,7 @@ Switches
     * - Switch
       - Description
     * - -s
-      - Clears the old selection in a listbox and selects the newly added item
+      - Clears the old selection in a listbox and selects the newly added item 
     * - -a
       - Selects the newly added item while keeping the old selection in a listbox
     * - -h
@@ -62,20 +62,20 @@ Example
 .. code:: text
 
     Alias Example {
-    ;open a desktop custom window (main window is a listbox, no side-listbox and with an editbox)
-    Window -lde @Foo
-
-    ;Add a line, line colored in yellow (8)
-    Aline 8 @Foo Line A
-
-    ;Add a line, color Dark Green (3), selected, clear old selection
-    Aline -s 3 @Foo Line B
+      ;open a desktop custom window (main window is a listbox, no side-listbox and with an editbox)
+      Window -lde @Foo
+    
+      ;Add a line, line colored in yellow (8)
+      Aline 8 @Foo Line A
+    
+      ;Add a line, color Dark Green (3), selected, clear old selection
+      Aline -s 3 @Foo Line B
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -93,3 +93,4 @@ See also
     * :doc:`/rline </commands/rline>`
     * :doc:`/sline </commands/sline>`
     * :doc:`/window </commands/window>`
+

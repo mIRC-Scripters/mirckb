@@ -1,7 +1,7 @@
 /drawreplace
 ============
 
-The **/drawreplace** command replaces <color1> with <color2> in the specified area of the picture window.
+The /drawreplace command replaces <color1> with <color2> in the specified area of the picture window.
 
 Synopsis
 --------
@@ -50,7 +50,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------

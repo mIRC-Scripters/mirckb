@@ -5,7 +5,7 @@ Identifiers
 
 =$nick, $*, $&, $+ and $++ are exception and are not returning values, they are constructs interpreted in a different way.
 
-Scoped to event identifiers are indicated with a :sup:`E`
+Scoped to event identifiers are indicated with a :sup:`E`.
 
 Presently undocumented or deprecated identifiers are indicated with a :sup:`D`.  An identifier is undocumented if it doesn't reasonably appear in the current help.chm, but may appear in the `versions.txt <https://www.mirc.com/versions.txt>`_
 

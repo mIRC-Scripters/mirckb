@@ -534,6 +534,8 @@ Example
      if (*!*@* isignore ctcp) echo yes
    }
 
+.. _while_loops:
+
 While Loops
 -----------
 
@@ -929,6 +931,8 @@ Sometimes a goto can result in smaller code if we need a do-while style loop lik
      if ($nick($chan, $rand(1, $nick($chan, 0))) == $me) goto retry
      return $v1
    }
+
+.. _control_flow_statements-error-handling:
 
 Error Handling
 ~~~~~~~~~~~~~~

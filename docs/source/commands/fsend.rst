@@ -1,7 +1,7 @@
 /fsend
 ======
 
-The **/fsend** command turns on/off the fast dcc send feature. Displays a line with the current status (active window if applicable, status window otherwise).
+The /fsend command turns on/off the fast dcc send feature. Displays a line with the current status (active window if applicable, status window otherwise).
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.3 - 3.4 ()
+.. compatibility:: 3.3
 
 See also
 --------

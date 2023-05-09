@@ -1,7 +1,7 @@
 /socklisten
 ===========
 
-The **/socklisten** command allows mIRC to listen for specific connections on a specified host port.
+The /socklisten command allows mIRC to listen for specific connections on a specified host port.
 
 Synopsis
 --------
@@ -45,7 +45,7 @@ Parameters
 Example
 -------
 
-Open a listening socket named **mySocket** and listen on port **31781**:
+Open a listening socket named mySocket and listen on port 31781:
 
 .. code:: text
 
@@ -54,9 +54,9 @@ Open a listening socket named **mySocket** and listen on port **31781**:
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -74,5 +74,6 @@ See Also
     * :doc:`/sockpause </commands/sockpause>`
     * :doc:`/sockread </commands/sockread>`
     * :doc:`/sockrename </commands/sockrename>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

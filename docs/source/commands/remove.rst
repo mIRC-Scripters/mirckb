@@ -1,7 +1,7 @@
 /remove
 =======
 
-The **/remove** command can be used to delete a file permanently or sends it to the recycle bin. The filename cannot be a wildcard pattern. This command prints "* Removed '<filename>'", to avoid that message, use the dot prefix (i.e. use /.remove).
+The /remove command can be used to delete a file permanently or sends it to the recycle bin. The filename cannot be a wildcard pattern. This command prints "* Removed '<filename>'", to avoid that message, use the dot prefix (i.e. use /.remove).
 
 Synopsis
 --------
@@ -53,7 +53,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
 See also
 --------
@@ -72,3 +72,4 @@ See also
     * :doc:`/rmdir </commands/rmdir>`
     * :doc:`/run </commands/run>`
     * :doc:`/write </commands/write>`
+

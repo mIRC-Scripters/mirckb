@@ -1,7 +1,7 @@
 /ialclear
 =========
 
-The **ialclear** command clears the IAL (Internal Address List).
+The ialclear command clears the IAL (Internal Address List).
 
 Synopsis
 --------
@@ -38,7 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.9 ()
+.. compatibility:: 5.9 
 
 See also
 --------
@@ -52,3 +52,4 @@ See also
     * :doc:`$ial </identifiers/ial>`
     * :doc:`$address </identifiers/address>`
     * :doc:`$ialchan </identifiers/ialchan>`
+

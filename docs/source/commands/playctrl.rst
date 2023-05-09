@@ -1,7 +1,7 @@
 /playctrl
 =========
 
-The **/playctrl** command opens the Play Central window, which can be used to manage the queued :doc:`/play </commands/play>` requests.
+The /playctrl command opens the Play Central window, which can be used to manage the queued :doc:`/play </commands/play>` requests.
 
 Synopsis
 --------
@@ -31,7 +31,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.81 (09 Nov 2000)
+.. compatibility:: 5.81
 
 See also
 --------
@@ -51,3 +51,4 @@ See also
     * :doc:`/play </commands/play>`
     * :doc:`/splay </commands/splay>`
     * :doc:`/vol </commands/vol>`
+

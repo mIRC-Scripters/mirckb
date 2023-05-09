@@ -1,7 +1,7 @@
 /save
 =====
 
-The **/save** command save the specified popups/users/variables to a file.
+The /save command save the specified popups/users/variables to a file.
 
 .. note:: You can only save one section at a time.
 
@@ -57,7 +57,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -66,3 +66,4 @@ See also
     :columns: 4
 
     * :doc:`/load </commands/load>`
+

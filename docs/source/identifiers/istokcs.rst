@@ -1,2 +1,4 @@
 $istokcs
 ========
+
+.. include::`</identifiers/istok>`

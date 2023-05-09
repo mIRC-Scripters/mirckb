@@ -1,7 +1,7 @@
 /bwrite
 =======
 
-The **/bwrite** command can be used to write a specified amount of bytes from the string/buffer to a given file starting at the start_pos position.
+The /bwrite command can be used to write a specified amount of bytes from the string/buffer to a given file starting at the start_pos position.
 
 .. note:: the starting position is 0, not 1.
 
@@ -24,7 +24,7 @@ Switches
     * - Switch
       - Description
     * - -t
-      - Treats everything as plain text (i.e. $identifiers and %variables (but not contents of %variables) are evaluated, but binary variables are not evaluated, are treated as text strings beginning with &) This switch is needed if literal string begins with & or string within %var begins with & or % characters.
+      - Treats everything as plain text (i.e. $identifiers and %variables (but not contents of %variables) are evaluated, but binary variables are not evaluated, are treated as text strings beginning with &) This switch is needed if literal string begins with &  or string within %var begins with & or % characters.
     * - -c
       - Chops the file at the end of the written data (if your current disk file is 10 bytes and you write 3 bytes at position 3 (4th byte), the resulting disk file's filesize is 6 because the 3 bytes were written as the 4th through 6th bytes of the file)
     * - -a
@@ -61,13 +61,13 @@ Example
 .. code:: text
 
     //var %b a $chr(32) b | var %a % $+ b | bwrite -c test 0 -1 %a | loadbuf -a test
-    displays "a b"
-    because the first token in %a is a variable (%b). Adding the -t switch would have instead written the literal string "%b".
+    displays "a  b"
+    because the first token in %a is a variable (%b). Adding the -t switch  would have instead written the literal string "%b".
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -85,3 +85,4 @@ See also
     * :doc:`$bfind </identifiers/bfind>`
     * :doc:`/fwrite </commands/fwrite>`
     * :doc:`/write </commands/write>`
+

@@ -1,7 +1,7 @@
 /hop
 ====
 
-The **/hop** command parts the current channel and joins a new one. If no channel was specified, mIRC will part and join the current channel without closing the window.
+The /hop command parts the current channel and joins a new one. If no channel was specified, mIRC will part and join the current channel without closing the window.
 
 Synopsis
 --------
@@ -50,14 +50,14 @@ Example
 .. code:: text
 
     /* Suppose you are on #Foo;
-    Part #Foo with "moving on" message and join #Bar
+       Part #Foo with "moving on" message and join #Bar
     */
     /hop #Bar moving on
 
 Compatibility
 -------------
 
-Added: mIRC v5.71 (07 May 2000)
+.. compatibility:: 5.71
 
 See also
 --------
@@ -67,3 +67,4 @@ See also
 
     * :doc:`$chan </identifiers/chan>`
     * :doc:`/partall </commands/partall>`
+

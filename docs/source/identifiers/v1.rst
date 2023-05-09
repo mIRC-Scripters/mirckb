@@ -1,2 +1,80 @@
 $v1
 ===
+
+$v1 returns the value of the left-hand operand of the most recently executed conditional statement. This identifier is equivalent to the deprecated :doc:`$ifmatch </identifiers/ifmatch>` identifier.
+
+Synopsis
+--------
+
+.. code:: text
+
+    $v1
+
+Parameters
+----------
+
+None
+
+Properties
+----------
+
+None
+
+Notes
+-----
+
+Just like $ifmatch, $v2 and $ifmatch2, this identifier returns one of the operands from the last conditional statement executed. Conditional statements include:
+* :doc:`/if </commands/if>`
+* :doc:`$iif </identifiers/iif>`
+* :doc:`/while </commands/while>`
+
+.. code:: text
+
+    alias test return $iif($1 == 1,1,2)
+    alias testing if (a != b) echo -a $test(1) $v1
+
+This will echo 1 for $v1 instead of "a" because $test is evaluated before $v1, so the $iif is the last statement made when $v1 evaluates.
+
+Examples
+--------
+
+List the names of any hash tables currently in use upon calling an alias /hlist:
+
+.. code:: text
+
+    alias hlist {
+      if (!$hget(0)) { echo -qgaec i * No hash tables in use }
+      else {
+        var %i 1
+        while ($hget(%i) != $null) {
+          echo -ga $v1
+        }
+      }
+      echo -qgaec i End of /hlist.
+    }
+
+Check if two random numbers between 1 and 5 are equivalent, and echo the matching numbers if so:
+
+.. code:: text
+
+    //echo -ga $iif($rand(1,5) == $rand(1,5),Yes! $v1 == $v2,No! $v1 != $v2) $+ !
+
+Compatibility
+-------------
+
+.. compatibility:: 6.16
+
+See also
+--------
+
+.. hlist::
+    :columns: 4
+
+    * :ref:`while_loops`
+    * :doc:`$v2 </identifiers/v2>`
+    * :doc:`$ifmatch </identifiers/ifmatch>`
+    * :doc:`$ifmatch2 </identifiers/ifmatch2>`
+    * :doc:`/if </commands/if>`
+    * :doc:`$iif </identifiers/iif>`
+    * :doc:`/while </commands/while>`
+

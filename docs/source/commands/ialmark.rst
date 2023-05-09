@@ -1,7 +1,7 @@
 /ialmark
 ========
 
-The **ialmark** command marks the IAL entry for a nickname with the specified text with an optional alternate name for the mark. In effect, it's like a hashtable for each nick where each item must have a string attached to it
+The ialmark command marks the IAL entry for a nickname with the specified text with an optional alternate name for the mark. In effect, it's like a hashtable for each nick where each item must have a string attached to it
 
 Synopsis
 --------
@@ -26,8 +26,7 @@ Switches
     * - -w
       - used with -rn to treat name as :ref:`matching_tools-wildcard`
 
-Marks can be accessed using :doc:`$ialmark(nick,n/name) </identifiers/ialmark>` and properties 'name' and 'mark'.
-
+Marks can be accessed using :doc:`$ialmark </identifiers/ialmark>` and properties 'name' and 'mark'.
 Marks are removed if the nick is removed from the nicklist, either from no longer being in a channel with them, or by /ialclear or by being disconnected from that server. You cannot have a named-mark without it having a value. The mark does follow the nick to the new nick after a nick change.
 
 Parameters
@@ -42,14 +41,14 @@ Parameters
     * - <nickname>
       - The nickname you want to mark
     * - [text]
-      - The text you want to add. If not specified, the mark is cleared
+      - The text you want to add. If not specified, the mark is cleared 
 
 Example
 -------
 
 .. code:: text
 
-    ;If the nick Ouims is in the $ial, marks the nick Ouims with the named-mark 'default' containing the text 'test'
+    ;If the nick Ouims is in the $ial, marks the nick Ouims with the named-mark 'default' containing the  text 'test'
     /ialmark Ouims test
     ;If you are in the $ial, adds a mark to your nick named 'foo' containing the text 'bar'
     //ialmark -n $me foo bar
@@ -68,7 +67,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.9 (15 Jun 2001)
+.. compatibility:: 5.9
 
 See also
 --------

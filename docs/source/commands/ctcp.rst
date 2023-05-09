@@ -1,7 +1,7 @@
 /ctcp
 =====
 
-The **/ctcp** command can be used to send a CTCP request to a user/channel
+The /ctcp command can be used to send a CTCP request to a user/channel
 
 Synopsis
 --------
@@ -25,9 +25,9 @@ Parameters
     * - Parameter
       - Description
     * - <nick>
-      - Target nick/channel
+      - Target nick/channel 
     * - <ctcp>
-      - CTCP
+      - CTCP 
 
 Example
 -------
@@ -40,7 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -49,5 +49,6 @@ See also
     :columns: 4
 
     * :doc:`$nick </identifiers/nick>`
-    * :doc:`/ctcpreply </commands/tcp-socket>`
-    * :doc:`/ctcps </commands/tcp-socket>`
+    * :doc:`/ctcpreply </commands/ctcpreply>`
+    * :doc:`/ctcps </commands/ctcps>`
+

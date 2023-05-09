@@ -1,7 +1,7 @@
 /partall
 ========
 
-The **/partall** command parts all of the channels you are currently on with a specific channel message
+The /partall command parts all of the channels you are currently on with a specific channel message
 
 Synopsis
 --------
@@ -38,7 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.9 (06 Jan 1996)
+.. compatibility:: 3.9
 
 See also
 --------
@@ -49,3 +49,4 @@ See also
     * :doc:`$chan </identifiers/chan>`
     * :doc:`$nick </identifiers/nick>`
     * :doc:`/part </commands/part>`
+

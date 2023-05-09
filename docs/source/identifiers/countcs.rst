@@ -1,2 +1,4 @@
 $countcs
 ========
+
+.. include::`</identifiers/count>`

@@ -1,7 +1,7 @@
 /quit
 =====
 
-The **/quit** command disconnects you from IRC and will give the optional message as the reason for your departure.
+The /quit command disconnects you from IRC and will give the optional message as the reason for your departure.
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -44,6 +44,7 @@ See also
     :columns: 4
 
     * :doc:`/disconnect </commands/disconnect>`
-    * :doc:`on kick </events/on_events/on_kick>`
-    * :doc:`on quit </events/on_events/on_quit>`
-    * :doc:`on part </events/on_events/on_part>`
+    * :doc:`on kick </events/on_kick>`
+    * :doc:`on quit </events/on_quit>`
+    * :doc:`on part </events/on_part>`
+

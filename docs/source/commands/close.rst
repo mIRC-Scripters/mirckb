@@ -1,7 +1,7 @@
 /close
 ======
 
-The **/close** command is used to close all the windows of a specified type and matching a specific name. If no name is used, all the windows with the specified type will close. Names support :ref:`matching_tools-wildcard` characters. You can also close the Nth window for -cfsg, with -cNfNsNgN, if you specify a name, the Nth window matching that name will be closed
+The /close command is used to close all the windows of a specified type and matching a specific name. If no name is used, all the windows with the specified type will close. Names support :ref:`matching_tools-wildcard` characters. You can also close the Nth window for -cfsg, with -cNfNsNgN, if you specify a name, the Nth window matching that name will be closed
 
 Synopsis
 --------
@@ -39,8 +39,8 @@ Switches
     * - -s
       - DCC Send windows
     * - -m
-      - Query windows
-    * - -@
+      - Query windows 
+    * - -@[ID/name]
       - A custom window's name or a window ID
     * - -cN
       - Nth DCC chat window
@@ -50,13 +50,6 @@ Switches
       - Nth DCC Get windows
     * - -sN
       - Nth DCC Send windows
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Switch
-      - Description
     * - a
       - apply to all server connections
     * - x
@@ -78,9 +71,9 @@ Parameters
     * - Parameter
       - Description
     * - [nick1]
-      - a nickname for the window to close
+      - a nickname for the window to close 
     * - [nickN]
-      - Additional nicknames
+      - Additional nicknames 
 
 Example
 -------
@@ -89,17 +82,17 @@ Example
 
     ;Close all query windows
     /close -m
-
+    
     ;Close all custom windows containing \"#\" in their name
     /close -@ @*#*
-
+    
     ;Close the 2nd DCC chat window with Dave
     /close -c2 Dave
 
 Compatibility
 -------------
 
-Added: mIRC v4.6 (07 Sep 1996)
+.. compatibility:: 4.6
 
 See also
 --------
@@ -111,3 +104,4 @@ See also
     * :doc:`/clearall </commands/clearall>`
     * :doc:`/debug </commands/debug>`
     * :doc:`/window </commands/window>`
+

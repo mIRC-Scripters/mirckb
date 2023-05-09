@@ -1,14 +1,14 @@
 /fnord
 ======
 
-The **/fnord** command echoes "Nothing to see here." in text of the same color as the background. This is an Easter Egg.
+The /fnord command echoes "Nothing to see here." in text of the same color as the background. This is an Easter Egg.
 
 Synopsis
 --------
 
 .. code:: text
 
-    /fnord
+    /fnord 
 
 Switches
 --------
@@ -42,7 +42,7 @@ The above example is the equivalent of the following echo command:
 Compatibility
 -------------
 
-Added: mIRC vmIRC 6.3 ()
+.. compatibility:: 6.3
 
 See also
 --------

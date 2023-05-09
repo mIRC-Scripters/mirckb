@@ -1,7 +1,7 @@
 /reload
 =======
 
-The **/reload** command reloads the specified alias/remote/popup file, you can only load one section of a popups file at a time. If reloading a remote script, the ON LOAD or ON START even within are not triggered.
+The /reload command reloads the specified alias/remote/popup file, you can only load one section of a popups file at a time. If reloading a remote script, the ON LOAD or ON START even within are not triggered.
 
 .. note:: since mIRC v7.31, if you use the monitoring file options ( alt + r + r + o ) and a file warning dialog is opened for the file you are reloading, the dialog is automatically closed.
 
@@ -52,7 +52,7 @@ Loads scriptfile.mrc without triggering ON START or ON LOAD events. If it's alre
 Compatibility
 -------------
 
-Added: mIRC v5.4 (24 Jul 1998)
+.. compatibility:: 5.4
 
 See also
 --------
@@ -63,3 +63,4 @@ See also
     * :doc:`/load </commands/load>`
     * :doc:`on load </events/on_load>`
     * :doc:`on start </events/on_start>`
+

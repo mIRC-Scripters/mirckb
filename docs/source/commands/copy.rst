@@ -1,7 +1,7 @@
 /copy
 =====
 
-The **/copy** command can be used to copy a file or an entire directory to another location. Both the source and the destination parameters support directory names. If the source is a directory the entire directory will be copied. The source parameter also supports :ref:`matching_tools-wildcard` characters.
+The /copy command can be used to copy a file or an entire directory to another location. Both the source and the destination parameters support directory names. If the source is a directory the entire directory will be copied. The source parameter also supports :ref:`matching_tools-wildcard` characters.
 
 This command is verbose by default.
 
@@ -59,36 +59,36 @@ Below is a simple backup script:
     ;A simple backup script to back up all currently loaded script file.
     ; /backup
     Alias backup {
-    var %dir = backup\bkup. $+ $ctime
-
-    ;make sure the user wants to backup
-    if ($input(Are you sure you want to backup all loaded the scripts?, y, Backup Scripts?)) {
-
-    ;make sure the backup directory exists
-    if (!$isdir(backup)) mkdir backup
-
-    ;create the new backup directory, timestamped
-    mkdir %dir
-    echo -ac info [backup] %dir created!
-
-    var %x = 1
-    ;while there is another script file
-    while ($script(%x)) {
-    ;backup the file
-    .copy $qt($v1) %dir
-    echo -ca info [backup] copying $qt($v1)
-    inc %x
-    }
-
-    ;done!
-    echo -ac info [backup] Backup is complete!
-    }
+      var %dir = backup\bkup. $+ $ctime
+    
+      ;make sure the user wants to backup
+      if ($input(Are you sure you want to backup all loaded the scripts?, y, Backup Scripts?)) {
+    
+        ;make sure the backup directory exists
+        if (!$isdir(backup)) mkdir backup
+    
+        ;create the new backup directory, timestamped
+        mkdir %dir
+        echo -ac info [backup] %dir created!
+    
+        var %x = 1
+        ;while there is another script file
+        while ($script(%x)) {
+          ;backup the file
+          .copy $qt($v1) %dir
+          echo -ca info [backup] copying $qt($v1)
+          inc %x 
+        }
+    
+        ;done!
+        echo -ac info [backup] Backup is complete!
+      }
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -101,3 +101,4 @@ See also
     * :doc:`/remove </commands/remove>`
     * :doc:`/rename </commands/rename>`
     * :doc:`/rmdir </commands/rmdir>`
+

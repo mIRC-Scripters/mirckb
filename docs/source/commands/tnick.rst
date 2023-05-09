@@ -1,7 +1,7 @@
 /tnick
 ======
 
-The **/tnick** command can be used to change own IRC nickname without changing the main or alternative nick ( :doc:`/anick </commands/anick>` ) options.
+The /tnick command can be used to change own IRC nickname without changing the main or alternative nick (:doc:`/anick </commands/anick>`) options.
 
 Synopsis
 --------
@@ -33,15 +33,15 @@ Example
 .. code:: text
 
     alias away {
-    ; change nick
-    tnick $me $+ |away
-    !away
+      ; change nick
+      tnick $me $+ |away
+      !away
     }
 
 Compatibility
 -------------
 
-Added: mIRC vmIRC 6.0 ()
+.. compatibility:: 6.0
 
 See also
 --------
@@ -52,3 +52,4 @@ See also
     * :doc:`$nick </identifiers/nick>`
     * :doc:`$anick </identifiers/anick>`
     * :doc:`/anick </commands/anick>`
+

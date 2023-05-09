@@ -1,7 +1,7 @@
 /proxy
 ======
 
-The **/proxy** command changes the firewall settings.
+The /proxy command changes the firewall settings.
 
 Synopsis
 --------
@@ -56,7 +56,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v7.0 (21 Jul 2010)
+.. compatibility:: 7.0
 
 See also
 --------
@@ -65,3 +65,4 @@ See also
     :columns: 4
 
     * :doc:`/firewall </commands/firewall>`
+

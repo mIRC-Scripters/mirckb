@@ -1,7 +1,7 @@
 /speak
 ======
 
-The **/speak** command is used to allow mIRC to speak text audibly.
+The /speak command is used to allow mIRC to speak text audibly.
 
 Synopsis
 --------
@@ -40,22 +40,22 @@ Parameters
     * - Parameter
       - Description
     * - speed
-      - If the **-s** switch is invoked, this parameter is where you specify the speed at which the text should be spoken (0 - 100).
+      - If the -s switch is invoked, this parameter is where you specify the speed at which the text should be spoken (0 - 100).
     * - pitch
-      - If the **-p** switch is invoked, this parameter is where you specify the pitch at which the text should be spoken (0 - 100).
+      - If the -p switch is invoked, this parameter is where you specify the pitch at which the text should be spoken (0 - 100).
     * - text
       - This is the text to be spoken by the speaking system.
 
 Examples
 --------
 
-'''Speak the words 'Hello World!'**
+Speak the words 'Hello World!'
 
 .. code:: text
 
     /speak Hello World!
 
-**Speak 'Hi there!' at *30* speed with a pitch of *50*'''
+Speak 'Hi there!' at ''30'' speed with a pitch of ''50''
 
 .. code:: text
 
@@ -64,9 +64,9 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v3.8 (25 Nov 1995)
+.. compatibility:: 3.8
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -75,3 +75,4 @@ See Also
     * :doc:`/gtalk </commands/gtalk>`
     * :doc:`/splay </commands/splay>`
     * :doc:`$speak </identifiers/speak>`
+

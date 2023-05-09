@@ -1,7 +1,7 @@
 /cline
 ======
 
-The **/cline** command changes the color of the Nth line/item in a custom window or channel's nicklist.
+The /cline command changes the color of the Nth line/item in a custom window or channel's nicklist.
 
 Synopsis
 --------
@@ -29,8 +29,8 @@ Switches
       - Apply to side listbox
     * - -t
       - forces a re-wrap of all lines in a window that have not yet been wrapped to the current window size.
-    * - -c[N]
-      - as using the [c] parameter to change the color, but via a switch
+    * - -c[N] 
+      - Same as using the [c] parameter to change the color, but via a switch
 
 Parameters
 ----------
@@ -59,7 +59,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -77,3 +77,4 @@ See also
     * :doc:`/renwin </commands/renwin>`
     * :doc:`/sline </commands/sline>`
     * :doc:`/window </commands/window>`
+

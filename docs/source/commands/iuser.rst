@@ -1,7 +1,7 @@
 /iuser
 ======
 
-The **/iuser** command can be used to set or remove the info appended to an user list entry.
+The /iuser command can be used to set or remove the info appended to an user list entry.
 
 Synopsis
 --------
@@ -36,14 +36,14 @@ Example
 
     ;Add an address; Info can be retrieved using $ulist(*!*@Example.com).info
     /auser 5 *!*@example.com Cool people
-
+    
     ;Update the info
     /iuser *!*@example.com Uncool!
 
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     * :doc:`/rlevel </commands/rlevel>`
     * :doc:`/ruser </commands/ruser>`
     * :doc:`/ulist </commands/ulist>`
+

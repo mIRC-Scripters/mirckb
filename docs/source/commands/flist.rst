@@ -1,7 +1,7 @@
 /flist
 ======
 
-**/flist** lists all open files, or those matching the specified name, which can be a :ref:`matching_tools-wildcard` expression.
+/flist lists all open files, or those matching the specified name, which can be a :ref:`matching_tools-wildcard` expression.
 
 Synopsis
 --------
@@ -38,7 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.1 (17 Feb 2006)
+.. compatibility:: 6.1
 
 See also
 --------
@@ -54,3 +54,4 @@ See also
     * :doc:`/fopen </commands/fopen>`
     * :doc:`/fseek </commands/fseek>`
     * :doc:`/fwrite </commands/fwrite>`
+

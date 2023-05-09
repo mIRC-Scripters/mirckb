@@ -1,7 +1,7 @@
 /vcmd
 =====
 
-The **/vcmd** allows you to enable your voice commands list, for your Speech Recognition Software, within mIRC.
+The /vcmd allows you to enable your voice commands list, for your Speech Recognition Software, within mIRC.
 
 Synopsis
 --------
@@ -47,13 +47,13 @@ Parameters
 Example
 -------
 
-**Disable voice command listening**
+Disable voice command listening
 
 .. code:: text
 
     /vcmd off
 
-**Clear the voice commands list**
+Clear the voice commands list
 
 .. code:: text
 
@@ -70,4 +70,5 @@ See also
     * :doc:`$vcmd </identifiers/vcmd>`
     * :doc:`$vcmdver </identifiers/vcmdver>`
     * :doc:`$vcmdstat </identifiers/vcmdstat>`
-    * :doc:`oN vCMD eVent </events/oN_vcmd>`
+    * :doc:`on vcmd </events/on_vcmd>`
+

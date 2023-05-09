@@ -44,7 +44,7 @@ Properties
     * - **.name** 
       - returns the name of the Nth named mark
     * - **.mark** 
-      - returns the mark for that entry, set with {{mIRC|/ialmark}}
+      - returns the mark for that entry, set with :doc:`/ialmark </commands/ialmark>`
 
 Example
 -------
@@ -79,4 +79,4 @@ See Also
 .. hlist::
     :columns: 4
 
-    * :doc:`$ialmark </commands/ialmark>`
+    * :doc:`/ialmark </commands/ialmark>`

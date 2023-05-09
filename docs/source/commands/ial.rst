@@ -1,7 +1,7 @@
 /ial
 ====
 
-The **ial** command turns IAL (Internal Address List) on or off. If no on/off parameter is used, it will display the IAL status
+The ial command turns IAL (Internal Address List) on or off. If no on/off parameter is used, it will display the IAL status
 
 .. note:: this setting is not persistent across sessions and resets to on every time mIRC is run.
 
@@ -40,7 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.7 (09 Jan 1997)
+.. compatibility:: 4.7
 
 See also
 --------
@@ -53,3 +53,4 @@ See also
     * :doc:`$ial </identifiers/ial>`
     * :doc:`$address </identifiers/address>`
     * :doc:`$ialchan </identifiers/ialchan>`
+

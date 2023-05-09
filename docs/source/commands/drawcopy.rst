@@ -1,7 +1,7 @@
 /drawcopy
 =========
 
-The **/drawcopy** command copies part of a picture to a different position in the same window or to another window.
+The /drawcopy command copies part of a picture to a different position in the same window or to another window.
 
 Synopsis
 --------
@@ -49,14 +49,13 @@ Parameters
       - the window's name to copy to
     * - <x y [w h]>
       - the coordinate where to draw, if [w h] are specified, the picture is squeed/stretched to fit, they can be negative value to get a mirror effect:
-
--@win has a bitmap area of 16*16 pixels containing this picture: [[File:Drawpic&copy_negative.png]]
-
--@win1 has a bitmap area of 48*16 pixels
-
--If you copy the whole @win over @win1 at coordinate **16**,0 you would get (drawcopy @win 0 0 @win1 16 0): [[File:Drawpic&copy_negative1.png]]
-
--Now we use a negative width of -16 to flip horizontally the bitmap (drawcopy @win 0 0 16 16 @win1 16 0 -16 16): [[File:Drawpic&copy_negative2.png]]
+        * @win has a bitmap area of 16*16 pixels containing this picture: 
+        .. figure:: img/Drawpic&copy_negative.png
+        * @win1 has a bitmap area of 48*16 pixels
+        * If you copy the whole @win over @win1 at coordinate 16,0 you would get (drawcopy @win 0 0 @win1 16 0): 
+        .. figure:: img/Drawpic&copy_negative1.png
+        * Now we use a negative width of -16 to flip horizontally the bitmap (drawcopy @win 0 0 16 16 @win1 16 0 -16 16): 
+        .. figure:: img/Drawpic&copy_negative2.png
 
 One issue: the flipped bitmap is drawn at x + 1 instead of x, you have to draw at x - 1 or y - 1 when you flip.
 
@@ -68,7 +67,11 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
+
+.. hlist::
+    :columns: 4
+

@@ -1,7 +1,7 @@
 /drawtext
 =========
 
-The **/drawtext** command draws text at the specified co-ordinates. If you use a negative number for the font size, it will match the size of fonts in the font dialog. The /drawtext command will use some default options for anti-aliasing that you cannot change (yet), meaning that a text drawn in black may not be drawn only using the expected color, this can be a real concern when using :doc:`/drawfill </commands/drawfill>` to fill an area with text inside it.
+The /drawtext command draws text at the specified co-ordinates. If you use a negative number for the font size, it will match the size of fonts in the font dialog. The /drawtext command will use some default options for anti-aliasing that you cannot change (yet), meaning that a text drawn in black may not be drawn only using the expected color, this can be a real concern when using :doc:`/drawfill </commands/drawfill>` to fill an area with text inside it.
 
 Synopsis
 --------
@@ -70,7 +70,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -80,3 +80,4 @@ See also
 
     * :doc:`$width </identifiers/width>`
     * :doc:`$height </identifiers/height>`
+

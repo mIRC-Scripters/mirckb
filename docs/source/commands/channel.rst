@@ -1,7 +1,7 @@
 /channel
 ========
 
-The **/channel** command opens up the channel central dialog window. Specifying a channel will open the channel central for that specific channel. You must be in a channel to be able to open its channel central.
+The /channel command opens up the channel central dialog window. Specifying a channel will open the channel central for that specific channel. You must be in a channel to be able to open its channel central.
 
 Synopsis
 --------
@@ -38,7 +38,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.2 (02 May 1995)
+.. compatibility:: 3.2
 
 See also
 --------
@@ -51,3 +51,4 @@ See also
     * :doc:`$chanmodes </identifiers/chanmodes>`
     * :doc:`$chantypes </identifiers/chantypes>`
     * :doc:`/partall </commands/partall>`
+

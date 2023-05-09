@@ -1,7 +1,7 @@
 /showmirc
 =========
 
-The **/showmirc** command can be used to manipulate the main  mIRC window. Full screen mode (-f) switch can also be activated via the F11 shortcut key.
+The /showmirc command can be used to manipulate the main  mIRC window. Full screen mode (-f) switch can also be activated via the F11 shortcut key.
 
 Synopsis
 --------
@@ -70,16 +70,16 @@ Example
 .. code:: text
 
     alias example {
-    ; restore mIRC after 2 seconds
-    .timer 1 2 showmirc -r
-    ; hide it for now
-    showmirc -t
+      ; restore mIRC after 2 seconds
+      .timer 1 2 showmirc -r
+      ; hide it for now
+      showmirc -t
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.4 (24 Jul 1998)
+.. compatibility:: 5.4
 
 See also
 --------
@@ -92,3 +92,4 @@ See also
     * :doc:`$appactive </identifiers/appactive>`
     * :doc:`/exit </commands/exit>`
     * :doc:`/window </commands/window>`
+

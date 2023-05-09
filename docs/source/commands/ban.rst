@@ -1,7 +1,7 @@
 /ban
 ====
 
-The **/ban** command is used to ban someone from a specific channel using their address. If no channel specified mIRC will use the active channel window. Using the -k switch mIRC will also kick the user with a kick message. mIRC uses the /userhost server command to find the user's address before applying a ban.
+The /ban command is used to ban someone from a specific channel using their address. If no channel specified mIRC will use the active channel window. Using the -k switch mIRC will also kick the user with a kick message. mIRC uses the /userhost server command to find the user's address before applying a ban.
 
 Synopsis
 --------
@@ -50,13 +50,13 @@ Example
 
 .. code:: text
 
-    ;Ban Foo's address (type 2) in the active channel window
+    ;Ban Foo's address (type 2) in the active channel window 
     /ban Foo 2
-
+    
     ;Ban/Kick Mike202 from the active channel with a kick message of "Owned!"
     ;Unset ban after 60 seconds
     /ban -ku60 Mike202 Owned!
-
+    
     ;Ban/kick Dave3 from #FooBar with a kick message of "Cya!"
     ;ban type 2
     /ban -k #FooBar Dave3 2 Cya!
@@ -64,7 +64,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -78,3 +78,4 @@ See also
     * :doc:`$address </identifiers/address>`
     * :doc:`$chan </identifiers/chan>`
     * :doc:`$nick </identifiers/nick>`
+

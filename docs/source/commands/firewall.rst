@@ -1,7 +1,7 @@
 /firewall
 =========
 
-The **/firewall** command changes the firewall settings.
+The /firewall command changes the firewall settings.
 
 Synopsis
 --------
@@ -56,7 +56,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.5 (19 Feb 1999)
+.. compatibility:: 5.5
 
 See also
 --------
@@ -64,4 +64,5 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`/proxy command </commands/proxy>`
+    * :doc:`/proxy </commands/proxy>`
+

@@ -1,7 +1,7 @@
 /scid
 =====
 
-The **/scid** command can change the connection associated with the current script. When a command is not specified, mIRC changes the connection of the current script to the connection associated with the given Connecion ID. The rest of the code will continue to execute on that connection. When a command is specified, mIRC will execute the command on the connection specified by the Connection ID or the connections based on the switches provided. Any active connection changes are restored upon returning to the calling routine. A command can be executed on all or some of the connections depending on their types using the -a or -at<Type> switches.
+The /scid command can change the connection associated with the current script. When a command is not specified, mIRC changes the connection of the current script to the connection associated with the given Connecion ID. The rest of the code will continue to execute on that connection. When a command is specified, mIRC will execute the command on the connection specified by the Connection ID or the connections based on the switches provided. Any active connection changes are restored upon returning to the calling routine. A command can be executed on all or some of the connections depending on their types using the -a or -at<Type> switches.
 
 Connection Type
 ---------------
@@ -68,13 +68,13 @@ A simple example of using /scid to send a command to all connected connections.
     ** /gamsg <message>
     */
     alias gamsg {
-    if (!$1) {
-    echo -gtcse info * /gamsg: insufficient parameters
-    halt
-    }
-    ; all active connections
-    ; if you don't use $unsafe, $1- is evaluated twice, watch out!
-    scid -at1 amsg $unsafe($1-)
+      if (!$1) {
+        echo -gtcse info * /gamsg: insufficient parameters
+        halt
+      }
+      ; all active connections
+      ; if you don't use $unsafe, $1- is evaluated twice, watch out!
+      scid -at1 amsg $unsafe($1-)
     }
 
 Print all the channels you are on from every connection you have:
@@ -82,31 +82,31 @@ Print all the channels you are on from every connection you have:
 .. code:: text
 
     alias listChans {
-    var %x = 1
-    while ($scid(%x)) {
-    ; switch connection
-    scid %x
-
-    ; iterate over the channels
-    var %c = 1, %chans
-    while ($chan(%c)) {
-    var %chans = $addtok(%chans, $chr(32) $v1, 44)
-    inc %c
-    }
-
-    ; print channels
-    ; again, safer to use $unsafe
-    scon -r echo -s $unsafe(Network: $network Channels: %chans)
-
-    ; next connection
-    inc %x
-    }
+      var %x = 1
+      while ($scid(%x)) {
+        ; switch connection
+        scid %x
+    
+        ; iterate over the channels
+        var %c = 1, %chans
+        while ($chan(%c)) {
+          var %chans = $addtok(%chans, $chr(32) $v1, 44)
+          inc %c
+        }
+    
+        ; print channels
+        ; again, safer to use $unsafe
+        scon -r echo -s $unsafe(Network: $network Channels: %chans)
+    
+        ; next connection
+        inc %x
+      }
     }
 
 Compatibility
 -------------
 
-Added: mIRC v6.0 (16 Aug 2002)
+.. compatibility:: 6.0
 
 See also
 --------
@@ -119,3 +119,4 @@ See also
     * :doc:`$scon </identifiers/scon>`
     * :doc:`$scid </identifiers/scid>`
     * :doc:`/scon </commands/scon>`
+

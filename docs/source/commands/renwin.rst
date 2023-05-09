@@ -1,7 +1,7 @@
 /renwin
 =======
 
-The **/renwin** command renames an existing window and assigns an optional topic.
+The /renwin command renames an existing window and assigns an optional topic.
 
 Synopsis
 --------
@@ -42,7 +42,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.4 (24 Jul 1998)
+.. compatibility:: 5.4
 
 See also
 --------
@@ -52,3 +52,4 @@ See also
 
     * :doc:`$window </identifiers/window>`
     * :doc:`/window </commands/window>`
+

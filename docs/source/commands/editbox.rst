@@ -1,7 +1,7 @@
 /editbox
 ========
 
-The **/editbox** command provides the ability to edit the editbox of a window according to the switches. To specify a dcc chat window, prefix the nickname with an equal sign '='.
+The /editbox command provides the ability to edit the editbox of a window according to the switches. To specify a dcc chat window, prefix the nickname with an equal sign '='.
 
 Synopsis
 --------
@@ -68,7 +68,7 @@ Add a smileyface to the second edit box:
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -77,3 +77,4 @@ See also
     :columns: 4
 
     * :doc:`$editbox </identifiers/editbox>`
+

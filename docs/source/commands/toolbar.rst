@@ -1,7 +1,7 @@
 /toolbar
 ========
 
-The **/toolbar** command allows you to modify the toolbar.
+The /toolbar command allows you to modify the toolbar.
 
 .. note:: Modifying some of the default mIRC buttons, such as Connect, Notify, etc. may not always work since they are managed by mIRC. They can however be deleted.
 
@@ -58,7 +58,7 @@ Switches
     * - -c
       - Clears all buttons
     * - -f<sld>
-      - <<nowiki />s>aves/<l>oads/<d>eletes settings in toolbar.ini, that file is automatically load on startup
+      - <s>aves<l>oads<d>eletes settings in toolbar.ini, that file is automatically load on startup
 
 Use empty quotes with the following switches to clear their entry:
 
@@ -104,25 +104,25 @@ Parameters
 Example
 -------
 
-.. code:: text
+<syntaxhighlight lang="mIRC" enclose="div">
+/toolbar -a Cow "Moo moo!" cow.bmp "/echo I am cow, hear my moo" @cow
+;The above command creates a button called "Cow" with the tooltip "Moo moo!" using the button picture cow.bmp.
+;If the button is clicked, it will run the command "/echo I am cow, hear my moo", and if right-clicked, it will popup the menu @cow.
 
-    /toolbar -a Cow "Moo moo!" cow.bmp "/echo I am cow, hear my moo" @cow
-    ;The above command creates a button called "Cow" with the tooltip "Moo moo!" using the button picture cow.bmp.
-    ;If the button is clicked, it will run the command "/echo I am cow, hear my moo", and if right-clicked, it will popup the menu @cow.
+/toolbar -m 1 Cow
+;The above command will move the button named "Cow" to position 1 in the toolbar.
 
-    /toolbar -m 1 Cow
-    ;The above command will move the button named "Cow" to position 1 in the toolbar.
+/toolbar -p Cow goat.bmp
+;The above command will change the picture on the button named "Cow" to "goat.bmp"
 
-    /toolbar -p Cow goat.bmp
-    ;The above command will change the picture on the button named "Cow" to "goat.bmp"
-
-    /toolbar -is 2 cowsep
-    ;The above command will insert a separator named "cowsep" (every button and separator you add to the toolbar must have a name) at position 2.
+/toolbar -is 2 cowsep
+;The above command will insert a separator named "cowsep" (every button and separator you add to the toolbar must have a name) at position 2.
+</syntaxhighlight>
 
 Compatibility
 -------------
 
-Added: mIRC v6.2 (23 Nov 2006)
+.. compatibility:: 6.2
 
 See also
 --------
@@ -131,3 +131,4 @@ See also
     :columns: 4
 
     * :doc:`$toolbar </identifiers/toolbar>`
+

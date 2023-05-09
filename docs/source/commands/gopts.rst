@@ -1,7 +1,7 @@
 /gopts
 ======
 
-The **gopts** command is used to sets various option of a loaded agent
+The gopts command is used to sets various option of a loaded agent
 
 Synopsis
 --------
@@ -9,7 +9,7 @@ Synopsis
 .. code:: text
 
     /gopts -b <name> <on | off | size | pace | hide | nosize | nopace | nohide>
-    /gopts -i <name> <on | off>
+    /gopts -i <name> <on | off> 
     /gopts -e <name> <on | off>
     /gopts -q <name> (undocumented)
     /gopts -n <name> <langid>
@@ -66,7 +66,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -89,3 +89,4 @@ See also
     * :doc:`$agentstat </identifiers/agentstat>`
     * :doc:`$agentname </identifiers/agentname>`
     * :doc:`$agent </identifiers/agent>`
+

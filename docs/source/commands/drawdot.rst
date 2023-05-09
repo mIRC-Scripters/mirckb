@@ -1,7 +1,7 @@
 /drawdot
 ========
 
-The **/drawdot** command draws a dot to the specified coordinates with a specific color in a specific picture window
+The /drawdot command draws a dot to the specified coordinates with a specific color in a specific picture window
 
 Synopsis
 --------
@@ -20,7 +20,7 @@ Switches
     * - Switch
       - Description
     * - -r
-- use RGB color instead of the mIRC standard colors
+      - use RGB color instead of the mIRC Colors - IRC|standard colors
     * - -i
       - draws in inverse color mode. You can find the final color based on the two color by using $xor($xor(currentcolor,16777215),drawncolor). Drawing the same color gives white and may be used to create transparency effect.
     * - -h
@@ -38,7 +38,7 @@ Parameters
     * - <color>
       - mIRC Color to draw with (unless -r is used, then RGB color is used)
     * - <size>
-      - radius
+      - radius 
     * - <x y>
       - coordinates
     * - [<x y>...]
@@ -55,7 +55,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -83,3 +83,4 @@ See also
     * :doc:`/drawsave </commands/drawsave>`
     * :doc:`/drawscroll </commands/drawscroll>`
     * :doc:`/drawtext </commands/drawtext>`
+

@@ -1,7 +1,7 @@
 /ruser
 ======
 
-The **/ruser** command allows you to remove the levels of an user from the users list
+The /ruser command allows you to remove the levels of an user from the users list
 
 Synopsis
 --------
@@ -39,7 +39,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -52,3 +52,4 @@ See also
     * :doc:`/iuser </commands/iuser>`
     * :doc:`/rlevel </commands/rlevel>`
     * :doc:`/ulist </commands/ulist>`
+

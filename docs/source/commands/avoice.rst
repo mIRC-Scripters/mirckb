@@ -3,7 +3,7 @@
 
 Auto-Voice is a feature that can be used to manage access for a channel. Whenever a user who's address matches an address in the auto-voice list joins the channel, mIRC will voice them.
 
-The **/avoice** command can be used to disable or enable this feature as well as add and remove users from and to the list.
+The /avoice command can be used to disable or enable this feature as well as add and remove users from and to the list.
 
 Synopsis
 --------
@@ -11,6 +11,7 @@ Synopsis
 .. code:: text
 
     /avoice -rwal <nick/address> [#channel1,#channel2,...] [type] [network]
+    
     /avoice <on/off>
 
 Switches
@@ -58,13 +59,13 @@ Example
 
     ;Turn on auto voice
     /avoice on
-
+    
     ;Add Madgoat to the auto-voice list. Address type 2, network Undernet
     /avoice MadGoat 2 Undernet
-
+    
     ;Remove Madgoat from the auto-voice list
     /avoice -r MadGoat 2 Undernet
-
+    
     ;Turn off auto voice3
     /avoice off
 
@@ -83,7 +84,7 @@ The above example will output:
 Compatibility
 -------------
 
-Added: mIRC v5.9 (15 Jun 2001)
+.. compatibility:: 5.9
 
 See also
 --------
@@ -99,3 +100,4 @@ See also
     * :doc:`/ignore </commands/ignore>`
     * :doc:`/pop </commands/pop>`
     * :doc:`/pvoice </commands/pvoice>`
+

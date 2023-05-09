@@ -1,7 +1,7 @@
 /log
 ====
 
-The **/log** command turns logging on and off for a window, if you specify a filename the logs file dialog is not popped up.
+The /log command turns logging on and off for a window, if you specify a filename the logs file dialog is not popped up.
 
 Synopsis
 --------
@@ -42,7 +42,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.3 - 3.4 ()
+.. compatibility:: 3.3
 
 See also
 --------

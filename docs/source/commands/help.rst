@@ -1,7 +1,7 @@
 /help
 =====
 
-The **/help** command opens up the mIRC manual to a specific topic. Consider using it as a last resort.
+The /help command opens up the mIRC manual to a specific topic. Consider using it as a last resort.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------

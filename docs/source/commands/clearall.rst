@@ -1,7 +1,7 @@
 /clearall
 =========
 
-The **/clearall** command can be used to clear the buffers of a specific type of window. If used without any switch all windows in the active connection are cleared.
+The /clearall command can be used to clear the buffers of a specific type of window. If used without any switch all windows in the active connection are cleared.
 
 Synopsis
 --------
@@ -48,14 +48,14 @@ Example
 
     ;Clear all the query windows
     /clearall -q
-
+    
     ;Clear all windows
     /clearall
 
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
 See also
 --------
@@ -69,3 +69,4 @@ See also
     * :doc:`/loadbuf </commands/loadbuf>`
     * :doc:`/savebuf </commands/savebuf>`
     * :doc:`/window </commands/window>`
+

@@ -1,9 +1,9 @@
 /commands
 =========
 
-.. attention:: This feature has essentially been replaced by :doc:`/ctcps </commands/ctcps>`.
+.. attention:: This feature has essentially been replaced by :doc:`/ctcps </commands/ctcps>`
 
-The **/commands** command turns CTCP event processing on or off.
+The /commands command turns CTCP event processing on or off.
 
 Synopsis
 --------
@@ -40,9 +40,11 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
-Removed: mIRC v5.0 (21 Apr 1997)
+Removed: mIRC v5.0
+
+Removed On:02/04/97
 
 See also
 --------
@@ -53,9 +55,10 @@ See also
     * :doc:`$nick </identifiers/nick>`
     * :doc:`$remote </identifiers/remote>`
     * :doc:`$rawmsg </identifiers/rawmsg>`
-    * :doc:`/ctcp </commands/tcp-socket>`
-    * :doc:`/ctcpreply </commands/tcp-socket>`
+    * :doc:`/ctcp </commands/ctcp>`
+    * :doc:`/ctcpreply </commands/ctcpreply>`
     * :doc:`/events </commands/events>`
     * :doc:`/raw </commands/raw>`
     * :doc:`/remote </commands/remote>`
     * :doc:`/commands </commands/commands>`
+

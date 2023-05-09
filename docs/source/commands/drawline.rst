@@ -1,7 +1,7 @@
 /drawline
 =========
 
-The **/drawline** command draws a line from the first <x y> coordinate to the second, if more coordinates are specified, the line is continued.
+The /drawline command draws a line from the first <x y> coordinate to the second, if more coordinates are specified, the line is continued.
 
 Synopsis
 --------
@@ -58,7 +58,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------

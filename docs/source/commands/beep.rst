@@ -1,7 +1,7 @@
 /beep
 =====
 
-The **/beep** command can be used to generate simple tones on the speaker. The command can also perform the beeps multiple times and with certain delay.
+The /beep command can be used to generate simple tones on the speaker. The command can also perform the beeps multiple times and with certain delay.
 
 Synopsis
 --------
@@ -40,7 +40,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.2 (02 May 1995)
+.. compatibility:: 3.2
 
 See also
 --------
@@ -54,3 +54,4 @@ See also
     * :doc:`/sound </commands/sound>`
     * :doc:`/speak </commands/speak>`
     * :doc:`/vol </commands/vol>`
+

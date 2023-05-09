@@ -1,9 +1,9 @@
 /parseline
 ==========
 
-**/parseline** can be used to inject lines as though mIRC was receiving or sending them from/to IRC servers. It can also be used to modify the line being received/sent from the :doc:`on parseline </events/on_parseline>` event.
+/parseline can be used to inject lines as though mIRC was receiving or sending them from/to IRC servers. It can also be used to modify the line being received/sent from the :doc:`on parseline </events/on_parseline>` event.
 
-**Warning**: This feature should only be used, for example, to support features and/or protocols that mIRC does not already support, not to modify standard lines. mIRC maintains internal states based on incoming and outgoing lines. If lines are modified, mIRC may not work correctly
+Warning: This feature should only be used, for example, to support features and/or protocols that mIRC does not already support, not to modify standard lines. mIRC maintains internal states based on incoming and outgoing lines. If lines are modified, mIRC may not work correctly
 
 Synopsis
 --------
@@ -24,10 +24,10 @@ Required
 
     * - Switch
       - Description
-    * - -i or -o
-      - -o** - Specify an input or output message
-    * - -t or -b
-      - -b** - Specify a text or binvar parameter
+    * - -i or -o 
+      - Specify an input or output message
+    * - -t or -b 
+      - Specify a text or binvar parameter
 
 Optional
 
@@ -58,10 +58,8 @@ Optional
       - Enable/Disable utf8 encoding/decoding of the line. Use N = 1 to enable, 0 to disable
 
 .. note:: A script must check $parseutf to know whether mIRC will be UTF-8 encoding/decoding a line.
-
-** For outgoing lines, if $parseutf is $true, mIRC will UTF-8 encode the line before sending it to the server after the PARSELINE event. You can prevent this by using -u0.
-
-** For incoming lines, if $parseutf is $true, after the PARSELINE event, mIRC will UTF-8 decode the line before processing it. You can prevent this by using -u0.
+    For outgoing lines, if $parseutf is $true, mIRC will UTF-8 encode the line before sending it to the server after the PARSELINE event. You can prevent this by using -u0.
+    For incoming lines, if $parseutf is $true, after the PARSELINE event, mIRC will UTF-8 decode the line before processing it. You can prevent this by using -u0.
 
 Parameters
 ----------
@@ -93,7 +91,7 @@ Keep a window open after parting the channel is now possible:
 Compatibility
 -------------
 
-Added: mIRC v7.42 (17 Jul 2015)
+.. compatibility:: 7.42
 
 See also
 --------
@@ -103,3 +101,5 @@ See also
 
     * :doc:`on parseline </events/on_parseline>`
     * :doc:`$parseutf </identifiers/parseutf>`
+
+

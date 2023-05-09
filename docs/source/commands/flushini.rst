@@ -1,7 +1,7 @@
 /flushini
 =========
 
-The **/flushini** command' flushes the specified INI file to the hard disk. INI files are cached in memory, so you may want to do this to make sure that your INI is updated properly. It is advised that you do not use this command to modify any INI file currently being used by mIRC.
+The /flushini command' flushes the specified INI file to the hard disk. INI files are cached in memory, so you may want to do this to make sure that your INI is updated properly. It is advised that you do not use this command to modify any INI file currently being used by mIRC.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC vmIRC 4.52 ()
+.. compatibility:: 4.52
 
 See also
 --------

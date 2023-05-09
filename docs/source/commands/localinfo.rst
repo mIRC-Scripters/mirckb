@@ -1,7 +1,7 @@
 /localinfo
 ==========
 
-The **/localinfo** command looks up and sets your Local settings.
+The /localinfo command looks up and sets your Local settings.
 
 Synopsis
 --------
@@ -46,7 +46,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.81 (09 Nov 2000)
+.. compatibility:: 5.81
 
 See also
 --------
@@ -56,3 +56,4 @@ See also
 
     * :doc:`$ip </identifiers/ip>`
     * :doc:`$host </identifiers/host>`
+

@@ -1,7 +1,7 @@
 /sockclose
 ==========
 
-The **/sockclose** command allows the closing of any open socket connections, either specifically or by :ref:`matching_tools-wildcard` .
+The /sockclose command allows the closing of any open socket connections, either specifically or by :ref:`matching_tools-wildcard`.
 
 .. note:: if you close a socket inside a socket event, all infos on the socket are lost and $sockname will be set to $null as well.
 
@@ -20,7 +20,14 @@ None
 Parameters
 ----------
 
-**<name>**: The specific socket name to be closed. This parameter can also be a :ref:`matching_tools-wildcard` match.
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - <name>
+      - The specific socket name to be closed. This parameter can also be a :ref:`matching_tools-wildcard` match.
 
 Example
 -------
@@ -32,9 +39,9 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -52,5 +59,6 @@ See Also
     * :doc:`/sockpause </commands/sockpause>`
     * :doc:`/sockread </commands/sockread>`
     * :doc:`/sockrename </commands/sockrename>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

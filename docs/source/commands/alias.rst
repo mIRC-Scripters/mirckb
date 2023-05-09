@@ -1,7 +1,7 @@
 /alias
 ======
 
-The **/alias** command can be used to add, replace and remove aliases. This command ONLY works for single line aliases. By default mIRC will add the alias to the first aliases script file.
+The /alias command can be used to add, replace and remove aliases. This command ONLY works for single line aliases. By default mIRC will add the alias to the first aliases script file.
 
 .. note:: Trying to remove a multi-line alias will result in a "unable to remove" error message.
 
@@ -15,7 +15,7 @@ Synopsis
 Switches
 --------
 
-<!--- https://forums.mirc.com/ubbthreads.php/topics/246550/alias-runs-silently --->
+https://forums.mirc.com/ubbthreads.php/topics/246550/alias-runs-silently
 
 .. list-table::
     :widths: 15 85
@@ -49,11 +49,11 @@ Example
 
     ;Adds a new alias by the name "cookies"
     ;You can now do /cookies
-    /Alias /Cookies /me hands out the cookie jar
-
+    /Alias /Cookies /me hands out the cookie jar 
+    
     ;We replaced the old cookies alias with this new one
     /Alias /Cookies /me Steals someone's cookies!
-
+    
     ;Remove the alias
     /Alias /Cookies
 
@@ -68,7 +68,7 @@ Output:
 Compatibility
 -------------
 
-Added: mIRC v4.5 (06 Jul 1996)
+.. compatibility:: 4.5
 
 See also
 --------
@@ -84,3 +84,4 @@ See also
     * :doc:`/save </commands/save>`
     * :doc:`/unload </commands/unload>`
     * :doc:`/add </commands/add>`
+

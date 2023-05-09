@@ -1,7 +1,7 @@
 /leave
 ======
 
-The **/leave** command can be used when you wanted to depart/leave a specific channel, or the current active channel, it's the same as :doc:`/part </commands/part>` .
+The /leave command can be used when you wanted to depart/leave a specific channel, or the current active channel, it's the same as :doc:`/part </commands/part>`. 
 
 Synopsis
 --------
@@ -25,7 +25,7 @@ Parameters
     * - Parameter
       - Description
     * - #
-      - The optional name of a channel you wish to part from. If left blank, mIRC will attempt to part from the active channel.''
+      - The optional name of a channel you wish to part from. If left blank, mIRC will attempt to part from the active channel.
 
 Examples
 --------
@@ -37,7 +37,7 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v2.7a (18 Mar 1995)
+.. compatibility:: 2.7a
 
 See also
 --------
@@ -47,3 +47,4 @@ See also
 
     * :doc:`/partall </commands/partall>`
     * :doc:`/part </commands/part>`
+

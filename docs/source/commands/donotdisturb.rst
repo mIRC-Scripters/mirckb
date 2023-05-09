@@ -30,7 +30,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v7.62 (29 Jul 2020)
+.. compatibility:: 7.62
 
 See also
 --------
@@ -39,3 +39,4 @@ See also
     :columns: 4
 
     * :doc:`$donotdisturb </identifiers/donotdisturb>`
+

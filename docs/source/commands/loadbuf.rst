@@ -1,7 +1,7 @@
 /loadbuf
 ========
 
-The **/loadbuf** command loads the specified number of lines from the end of the file of filename into the specified window.
+The /loadbuf command loads the specified number of lines from the end of the file of filename into the specified window.
 
 Synopsis
 --------
@@ -72,7 +72,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.0 (21 Apr 1997)
+.. compatibility:: 5.0
 
 See also
 --------
@@ -82,3 +82,4 @@ See also
 
     * :doc:`/filter </commands/filter>`
     * :doc:`/savebuf </commands/savebuf>`
+

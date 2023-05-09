@@ -1,7 +1,7 @@
 /flush
 ======
 
-The **/flush** command clears the remote user list of nickname definitions that are no longer valid.
+The /flush command clears the remote user list of nickname definitions that are no longer valid.
 
 For each nick in the remote user list that matches the specified levels mIRC checks to see if that nick is on any of the channels that you are currently on. If not, the nick definition is removed from the remote user list. If you do not specify levels then mIRC clears all nicks from the remote user list that do not exist on channels you are on.
 
@@ -46,7 +46,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC vmIRC 3.8 ()
+.. compatibility:: 3.8
 
 See also
 --------

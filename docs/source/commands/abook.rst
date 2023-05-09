@@ -1,7 +1,7 @@
 /abook
 ======
 
-**/abook** is used to open the Address Book dialog window.
+/abook is used to open the Address Book dialog window. 
 
 The nickname parameter can be used to open the address book to that specific user with the whois tab.
 
@@ -62,7 +62,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -74,3 +74,4 @@ See also
     * :doc:`$cnick </identifiers/cnick>`
     * :doc:`/cnick </commands/cnick>`
     * :doc:`/uwho </commands/uwho>`
+

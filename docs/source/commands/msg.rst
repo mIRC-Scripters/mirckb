@@ -1,7 +1,7 @@
 /msg
 ====
 
-The **/msg** command sends a message to a specific channel or person. Many networks support multi-target messages - mIRC will not display the message in all the targets like it would with individual messages.
+The /msg command sends a message to a specific channel or person. Many networks support multi-target messages - mIRC will not display the message in all the targets like it would with individual messages.
 
 Synopsis
 --------
@@ -51,8 +51,8 @@ Example 1
 .. code:: text
 
     on *:text:!moo:#:{
-    ; Message the channel moos back
-    msg $chan moos back
+      ; Message the channel moos back
+      msg $chan moos back
     }
 
 Example 2
@@ -63,16 +63,16 @@ Example 2
     /* Example 2
     */
     on ^*:open:?:{
-    if ($away) {
-    msg $nick I am currently away ( $+ $awaymsg $+ ), please leave me a memo: /ms send $me <memo>
-    }
-    halt
+      if ($away) {
+        msg $nick I am currently away ( $+ $awaymsg $+ ), please leave me a memo: /ms send $me <memo>
+      }
+      halt
     }
 
 Example 3
 ^^^^^^^^^
 
-Using the equals sign to send *SomeUser* a message via DCC/FSERVE Chat
+Using the equals sign to send ''SomeUser'' a message via DCC/FSERVE Chat
 
 .. code:: text
 
@@ -81,7 +81,7 @@ Using the equals sign to send *SomeUser* a message via DCC/FSERVE Chat
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -96,3 +96,4 @@ See also
     * :doc:`/qme </commands/qme>`
     * :doc:`/qmsg </commands/qmsg>`
     * :doc:`/say </commands/say>`
+

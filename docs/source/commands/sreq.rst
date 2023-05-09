@@ -1,7 +1,7 @@
 /sreq
 =====
 
-**/sreq** allows you to modify the mIRC DCC Send options on the fly, without having to open the mIRC options dialog.
+/sreq allows you to modify the mIRC DCC Send options on the fly, without having to open the mIRC options dialog.
 
 Synopsis
 --------
@@ -43,13 +43,13 @@ Parameters
 Examples
 --------
 
-**Enable automatic minimizing of DCC Sends**
+Enable automatic minimizing of DCC Sends
 
 .. code:: text
 
     /sreq +m
 
-**Set DCC Sends to automatically accept**
+Set DCC Sends to automatically accept
 
 .. code:: text
 
@@ -58,9 +58,9 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v3.8 (25 Nov 1995)
+.. compatibility:: 3.8
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -69,3 +69,4 @@ See Also
     * :doc:`/creq </commands/creq>`
     * :doc:`$creq </identifiers/creq>`
     * :doc:`$sreq </identifiers/sreq>`
+

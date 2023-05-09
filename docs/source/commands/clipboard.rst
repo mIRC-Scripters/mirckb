@@ -1,7 +1,7 @@
 /clipboard
 ==========
 
-The **/clipboard** command copies text to the clipboard.
+The /clipboard command copies text to the clipboard.
 
 Synopsis
 --------
@@ -45,22 +45,22 @@ Example
 
     Clear the clipboard and put \"Hello world!\" in it
     /clipboard Hello World!
-
+    
     Put 'abcd' into clipboard then append efgh and carriage return:
     //clipboard abcd | clipboard -an efgh | echo -a $cb(0).len / $cb(1).len / $cb(1)
     returns: 10 / 8 / abcdefgh
     (The difference between length of $cb(0) and $cb(1) is the $crlf.
-
+    
     Clear clipboard contents:
     /clipboard
-
+    
     Append $crlf to end of current clipboard contents:
     /clipboard -an
 
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -70,3 +70,4 @@ See also
 
     * :doc:`$cb </identifiers/cb>`
     * :doc:`$inpaste </identifiers/inpaste>`
+

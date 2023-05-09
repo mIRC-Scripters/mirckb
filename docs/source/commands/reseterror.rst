@@ -1,7 +1,7 @@
 /reseterror
 ===========
 
-The **/reseterror** command resets an error catched with the special ':error' label, see :doc:`here </intermediate/control_flow_statements.html#error-handling>` .
+The /reseterror command resets an error catched with the special ':error' label, see :ref:`control_flow_statements-error-handling`.
 
 Synopsis
 --------
@@ -18,7 +18,7 @@ None
 Parameters
 ----------
 
-none
+None
 
 Example
 -------
@@ -28,7 +28,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v6.14 (03 Mar 2004)
+.. compatibility:: 6.14
 
 See also
 --------

@@ -1,7 +1,7 @@
 /gpoint
 =======
 
-The **gpoint** command makes an agent point towards the specified position
+The gpoint command makes an agent point towards the specified position
 
 Synopsis
 --------
@@ -51,7 +51,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -74,3 +74,4 @@ See also
     * :doc:`$agentstat </identifiers/agentstat>`
     * :doc:`$agentname </identifiers/agentname>`
     * :doc:`$agent </identifiers/agent>`
+

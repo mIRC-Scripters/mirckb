@@ -1,7 +1,7 @@
 /drawsize
 =========
 
-The **/drawsize** command extend the bitmap size of a picture window.
+The /drawsize command extend the bitmap size of a picture window.
 
 Synopsis
 --------
@@ -45,7 +45,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v7.48 (15 Apr 2017)
+.. compatibility:: 7.48
 
 See also
 --------
@@ -73,3 +73,4 @@ See also
     * :doc:`/drawsave </commands/drawsave>`
     * :doc:`/drawscroll </commands/drawscroll>`
     * :doc:`/drawtext </commands/drawtext>`
+

@@ -1,9 +1,7 @@
 /colour
 =======
 
-The **/colour** command allows you to change the color setting from the color dialog (can be access using the Alt+K shortcut keys). The /color command can also be used to change the color of the Nth (<N>) color the 16 color palette to a new value (<RGB>)
-
-The :doc:`/cnick </commands/color>` and /colour commands execute the same code, so they can be used interchangeably
+The /colour command allows you to change the color setting from the color dialog (can be access using the Alt+K shortcut keys). The /color command can also be used to change the color of the Nth (<N>) color the 16 color palette to a new value (<RGB>)
 
 Synopsis
 --------
@@ -47,10 +45,8 @@ Parameters
       - The name of the scheme to be used
     * - <name>
       - Item's name:
-
-Background Items: Background, ListBox, TreeBar, EditBox, InActive
-
-Text Items: Action, CTCP, Highlight, Info, Info2, Invite, Join, Kick, Mode, Normal, Notice, Notify, Other, Own, Part, Quit, Topic, Wallops, Whois
+        * Background Items: Background, ListBox, TreeBar, EditBox, InActive
+        * Text Items: Action, CTCP, Highlight, Info, Info2, Invite, Join, Kick, Mode, Normal, Notice, Notify, Other, Own, Part, Quit, Topic, Wallops, Whois
 
 Example
 -------
@@ -69,7 +65,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.5 (19 Feb 1999)
+.. compatibility:: 5.5
 
 See also
 --------
@@ -82,3 +78,4 @@ See also
     * :doc:`$cnick </identifiers/cnick>`
     * :doc:`$abook </identifiers/abook>`
     * :doc:`/cnick </commands/cnick>`
+

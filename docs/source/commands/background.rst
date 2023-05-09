@@ -1,7 +1,7 @@
 /background
 ===========
 
-The **/background** command is used to change the background picture setting for a specific window including a channel window. This is the same as changing the background via the system window (to access the system menu simply right click the small window icon located on the upper left corner of the window)
+The /background command is used to change the background picture setting for a specific window including a channel window. This is the same as changing the background via the system window (to access the system menu simply right click the small window icon located on the upper left corner of the window)
 
 Synopsis
 --------
@@ -23,6 +23,7 @@ Switches
       - set as default
     * - -x
       - no background picture
+
 Window Switches
 ^^^^^^^^^^^^^^^
 
@@ -30,8 +31,6 @@ Window Switches
     :widths: 15 85
     :header-rows: 1
 
-    * - Switch
-      - Description
     * - -a
       - active window
     * - -m
@@ -42,6 +41,7 @@ Window Switches
       - finger window
     * - -d
       - single message window
+
 Picture Switches
 ^^^^^^^^^^^^^^^^
 
@@ -49,8 +49,6 @@ Picture Switches
     :widths: 15 85
     :header-rows: 1
 
-    * - Switch
-      - Description
     * - -c
       - center
     * - -f
@@ -63,6 +61,7 @@ Picture Switches
       - tile
     * - -p
       - photo
+
 Bars Switches
 ^^^^^^^^^^^^^
 
@@ -70,8 +69,6 @@ Bars Switches
     :widths: 15 85
     :header-rows: 1
 
-    * - Switch
-      - Description
     * - -l
       - toolbar
     * - -u
@@ -103,14 +100,14 @@ Example
     ;Setting one of window vista's sample pictures as the background for the active window
     ;Since the filename's path contain spaces it must be enclosed by a pair of double quotes
     /background -a "C:\Users\Public\Pictures\Sample Pictures\Desert Landscape.jpg\"
-
+    
     ;Remove the background picture from the active window
     /background -xa
 
 Compatibility
 -------------
 
-Added: mIRC v5.4 (24 Jul 1998)
+.. compatibility:: 5.4
 
 See also
 --------
@@ -128,3 +125,4 @@ See also
     * :doc:`/switchbar </commands/switchbar>`
     * :doc:`/toolbar </commands/toolbar>`
     * :doc:`/treebar </commands/treebar>`
+

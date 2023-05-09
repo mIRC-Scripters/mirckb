@@ -1,7 +1,7 @@
 /enable
 =======
 
-The **/enable** command enables the specified groups in all scripts. The command also accepts a :ref:`matching_tools-wildcard` value which can be used to enable all matching groups.
+The /enable command enables the specified groups in all scripts. The command also accepts a :ref:`matching_tools-wildcard` value which can be used to enable all matching groups.
 
 Synopsis
 --------
@@ -48,7 +48,7 @@ First example enables the three groups specified while the second would only ena
 Compatibility
 -------------
 
-Added: mIRC v3.5 (13 Aug 1995)
+.. compatibility:: 3.5
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     * :doc:`$group </identifiers/group>`
     * :doc:`/disable </commands/disable>`
     * :doc:`/groups </commands/groups>`
+

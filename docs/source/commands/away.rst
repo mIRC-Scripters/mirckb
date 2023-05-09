@@ -1,7 +1,7 @@
 /away
 =====
 
-The **/away** command marks you as away with the server. Using the away with no parameters will unset your away status. Even though /away uses IRC to mark you as away;  this command also stores the away message and the time left internally.
+The /away command marks you as away with the server. Using the away with no parameters will unset your away status. Even though /away uses IRC to mark you as away;  this command also stores the away message and the time left internally.
 
 Synopsis
 --------
@@ -53,27 +53,27 @@ The /away command is usually combined with the $away, $awaymsg, and $awaytime id
 
     ; /setAway Work, will be back at 10PM
     alias setAway {
-    if (!$away) {
-    ; mark as away
-    away $$1-
-    amsg I am currently away
-    }
-    else echo -c info * /setAway: You are currently away
+      if (!$away) {
+        ; mark as away
+        away $$1-
+        amsg I am currently away
+      }
+      else echo -c info * /setAway: You are currently away
     }
     ; /remAway
     alias remAway {
-    if ($away) {
-    amsg I am back (from: $awaymsg $+ ) I was gone for $duration($awaytime)
-    ;unset the away status
-    away
-    }
-    else echo -c info * /remAway: You are not away
+      if ($away) {
+        amsg I am back (from: $awaymsg $+ ) I was gone for $duration($awaytime)
+        ;unset the away status
+        away
+      }
+      else echo -c info * /remAway: You are not away
     }
 
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -84,3 +84,4 @@ See also
     * :doc:`$away </identifiers/away>`
     * :doc:`$awaymsg </identifiers/awaymsg>`
     * :doc:`$awaytime </identifiers/awaytime>`
+

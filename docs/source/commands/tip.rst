@@ -1,7 +1,7 @@
 /tip
 ====
 
-The **/tip** command can be used to change the text of an active balloon tip or close it instantly.
+The /tip command can be used to change the text of an active balloon tip or close it instantly.
 
 Synopsis
 --------
@@ -47,23 +47,23 @@ Example
     ; /tip_countdown <seconds>
     ;
     alias tip_countdown {
-    ; create balloon tip
-    noop $tip(counter, Count Down, x, $$1)
-    update_counter
+      ; create balloon tip
+      noop $tip(counter, Count Down, x, $$1) 
+      update_counter
     }
     alias update_counter {
-    if ($tip(counter)) {
-    var %seconds = $tip(counter).delay
-    ; update the text
-    tip -t counter %seconds $+(second, $iif(%seconds > 1, s),!)
-    .timer -m 1 500 update_counter
-    }
+      if ($tip(counter)) {
+        var %seconds = $tip(counter).delay
+        ; update the text
+        tip -t counter %seconds $+(second, $iif(%seconds > 1, s),!)
+        .timer -m 1 500 update_counter
+      }
     }
 
 Compatibility
 -------------
 
-Added: mIRC v6.3 (17 Oct 2008)
+.. compatibility:: 6.3
 
 See also
 --------
@@ -73,3 +73,4 @@ See also
 
     * :doc:`$tip </identifiers/tip>`
     * :doc:`/tips </commands/tips>`
+

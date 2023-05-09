@@ -1,7 +1,7 @@
 /flash
 ======
 
-The **/flash** command flashes the mIRC titlebar and tray icon. The title of the window can be set if the parameter is provided. mIRC or the window specified must not be the active window for this to work. The N parts of the switches are optional, if not specified the flashing and beeping will repeat continuously.
+The /flash command flashes the mIRC titlebar and tray icon. The title of the window can be set if the parameter is provided. mIRC or the window specified must not be the active window for this to work. The N parts of the switches are optional, if not specified the flashing and beeping will repeat continuously.
 
 Synopsis
 --------
@@ -25,7 +25,7 @@ Switches
       - beep, limit to N times
     * - -rN
       - repeat the flashing N times
-    * - -c
+    * - -c'
       - clear the flash for all windows
 
 Parameters
@@ -48,16 +48,16 @@ Example
 .. code:: text
 
     alias example {
-    ; create a new desktop window, minimize it
-    window -den @example
-    ; flash the window, beep
-    flash -b @example
+      ; create a new desktop window, minimize it
+      window -den @example
+      ; flash the window, beep
+      flash -b @example
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -72,3 +72,4 @@ See also
     * :doc:`/ebeeps </commands/ebeeps>`
     * :doc:`/vol </commands/vol>`
     * :doc:`/window </commands/window>`
+

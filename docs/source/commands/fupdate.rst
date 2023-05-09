@@ -1,7 +1,7 @@
 /fupdate
 ========
 
-The **/fupdate** command's setting is the maximum display update delay. So if you specify 100, it will update the display less frequently than 10. That said, with the latest algorithm, even if you specify 100, it may not reach that since it is adjusting automatically to the maximum value that makes a significant difference.
+The /fupdate command's setting is the maximum display update delay. So if you specify 100, it will update the display less frequently than 10. That said, with the latest algorithm, even if you specify 100, it may not reach that since it is adjusting automatically to the maximum value that makes a significant difference.
 
 Higher numbers can reduce delay while a large number of text lines scroll down the window, but may also cause the screen display to update in unexpected ways. Users will need to benchmark different N values until they find one that works for them.
 
@@ -45,7 +45,8 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v7.52 (28 Feb 2018)
+.. compatibility:: 7.52
+
 See also
 --------
 

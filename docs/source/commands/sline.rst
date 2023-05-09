@@ -1,7 +1,7 @@
 /sline
 ======
 
-The **/sline** command is used to select a line, or a specific set of lines, in a specific window. This command works on most custom @windows, as well as channel nickname lists.
+The /sline command is used to select a line, or a specific set of lines, in a specific window. This command works on most custom @windows, as well as channel nickname lists.
 
 Synopsis
 --------
@@ -9,10 +9,7 @@ Synopsis
 .. code:: text
 
     /sline [c] -artc[N] <#channel> <N|nick>
-
-.. code:: text
-
-         /sline [c] -artc[N] <@win> <N>
+    /sline [c] -artc[N] <@win> <N>
 
 Switches
 --------
@@ -79,4 +76,4 @@ See also
 
     * :doc:`/aline </commands/aline>`
     * :doc:`/window </commands/window>`
-    * :doc:`cUstom wIndows </intermediate/gui_scripting.html#custom-windows>`
+

@@ -1,7 +1,7 @@
 /flood
 ======
 
-The **/flood** command can be used to change the current flood settings for mIRC.
+The /flood command can be used to change the current flood settings for mIRC.
 
 Synopsis
 --------
@@ -13,14 +13,14 @@ Synopsis
 Switches
 --------
 
-'+' enable the specific flood option, while '-' disable it, L can be:
-
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Switch
       - Description
+    * - [<+|->]L
+      - + enables the specific flood option, while - disables it, L can be:
     * - c
       - ctcp
     * - m
@@ -58,7 +58,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC vmIRC 3.3, 3.4 ()
+.. compatibility:: 3.3
 
 See also
 --------

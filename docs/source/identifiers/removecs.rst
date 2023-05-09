@@ -1,2 +1,4 @@
 $removecs
 =========
+
+.. include::`</identifiers/remove>`

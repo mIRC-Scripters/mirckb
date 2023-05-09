@@ -1,7 +1,7 @@
 /play
 =====
 
-The **/play** command is a powerful tool that allows you to play text files to users or channels on IRC line by line. /play uses the flood settings in the options.
+The /play command is a powerful tool that allows you to play text files to users or channels on IRC line by line. /play uses the flood settings in the options.
 
 The play central dialog lists all of the currently queued play requests, and allows you to maintain the queue. Files are played in the order in which they are queued.
 The play central dialog can be displayed with the /playctrl command.
@@ -49,7 +49,7 @@ Switches
     * - -lN
       - Forces the specified line number to be played.
 
-This two switches only apply for a /play request initiated via a remote definition, not by you:
+These two switches only apply for a /play request initiated via a remote definition, not by you:
 
 .. list-table::
     :widths: 15 85
@@ -83,12 +83,12 @@ Parameters
 Example
 -------
 
-.. code:: text
+None yet!
 
 Compatibility
 -------------
 
-Added: mIRC v3.1 (23 Apr 1995)
+.. compatibility:: 3.1
 
 See also
 --------
@@ -98,3 +98,4 @@ See also
 
     * :doc:`$play </identifiers/play>`
     * :doc:`on playend </events/on_playend>`
+

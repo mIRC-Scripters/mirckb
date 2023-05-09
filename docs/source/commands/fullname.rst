@@ -1,7 +1,7 @@
 /fullname
 =========
 
-The **/fullname** command changes the full name in the connect dialog.
+The /fullname command changes the full name in the connect dialog.
 
 Synopsis
 --------
@@ -33,7 +33,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v5.82 (14 Dec 2000)
+.. compatibility:: 5.82
 
 See also
 --------

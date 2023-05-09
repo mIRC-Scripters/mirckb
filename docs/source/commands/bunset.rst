@@ -1,7 +1,7 @@
 /bunset
 =======
 
-The **/bunset** command unsets a binary variable. You can unset multiple variables using the space delimiter.
+The /bunset command unsets a binary variable. You can unset multiple variables using the space delimiter.
 
 Synopsis
 --------
@@ -33,23 +33,23 @@ Example
 .. code:: text
 
     Alias Example {
-    ;Create a binary variable
-    bset -t &Example 1 cool text
-
-    ;Print out its content
-    echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
-
-    ;Unset the variable
-    bunset &Example
-
-    ;Print out its content ($null)
-    echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
+      ;Create a binary variable
+      bset -t &Example 1 cool text
+    
+      ;Print out its content
+      echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
+    
+      ;Unset the variable
+      bunset &Example
+    
+      ;Print out its content ($null)
+      echo -a $qt($bvar(&Example,1,$bvar(&Example,0)).text)
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.7 (07 May 2000)
+.. compatibility:: 5.7
 
 See also
 --------
@@ -65,3 +65,4 @@ See also
     * :doc:`/bset </commands/bset>`
     * :doc:`/bcopy </commands/bcopy>`
     * :doc:`/btrunc </commands/btrunc>`
+

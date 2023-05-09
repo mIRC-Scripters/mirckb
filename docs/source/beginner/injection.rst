@@ -295,6 +295,8 @@ Our new code would look like this:
       }
     }
 
+.. _injection-calc:
+
 $calc()
 ^^^^^^^
 

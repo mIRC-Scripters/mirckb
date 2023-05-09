@@ -188,6 +188,8 @@ For example:
 
 will only work if you are an operator in #myChan at the time the user typed ".o".
 
+.. _ampersand-prefix:
+
 & Prefix
 ~~~~~~~~
 

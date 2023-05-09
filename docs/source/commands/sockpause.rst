@@ -1,7 +1,7 @@
 /sockpause
 ==========
 
-The **/sockpause** command allows mIRC to pause/restart the reading from winsock.
+The /sockpause command allows mIRC to pause/restart the reading from winsock.
 
 The packet are not lost, it's just that on sockread will stop triggering until you restart the reading.
 
@@ -39,7 +39,7 @@ Parameters
 Example
 -------
 
-Resume the incoming data reading for **mySocket**:
+Resume the incoming data reading for mySocket:
 
 .. code:: text
 
@@ -48,9 +48,9 @@ Resume the incoming data reading for **mySocket**:
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -68,5 +68,6 @@ See Also
     * :doc:`/sockopen </commands/sockopen>`
     * :doc:`/sockread </commands/sockread>`
     * :doc:`/sockrename </commands/sockrename>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

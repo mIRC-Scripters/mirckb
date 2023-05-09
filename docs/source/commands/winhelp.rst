@@ -1,7 +1,7 @@
 /winhelp
 ========
 
-The **/winhelp** command is used to open Microsoft's online help files. The additional key parameter can be used to navigate to a specific topic from the help file's index.
+The /winhelp command is used to open Microsoft's online help files. The additional key parameter can be used to navigate to a specific topic from the help file's index.
 
 .. note:: winhelp supports both .chm and .hlp files.
 
@@ -39,7 +39,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.1 (11 Sep 1997)
+.. compatibility:: 5.1
 
 See also
 --------
@@ -49,3 +49,4 @@ See also
 
     * :doc:`/help </commands/help>`
     * :doc:`/run </commands/run>`
+

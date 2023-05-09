@@ -1,7 +1,7 @@
 /queryrn
 ========
 
-The **/queryn** command changes the nickname of an open query window.
+The /queryn command changes the nickname of an open query window.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 5.8
 
 See also
 --------
@@ -47,3 +47,4 @@ See also
 
     * :doc:`/query </commands/query>`
     * :doc:`$query </identifiers/query>`
+

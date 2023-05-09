@@ -1,7 +1,7 @@
 /quote
 ======
 
-The **/quote** command has been deprecated by the **/raw** command and can be used to send text to the server AS IS.
+The /quote command has been deprecated by the /raw command and can be used to send text to the server AS IS.
 
 Synopsis
 --------
@@ -47,7 +47,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.5 (06 Jul 1996)
+.. compatibility:: 4.5
 
 See also
 --------
@@ -57,8 +57,9 @@ See also
 
     * :doc:`$remote </identifiers/remote>`
     * :doc:`$rawmsg </identifiers/rawmsg>`
-    * :doc:`/ctcps </commands/tcp-socket>`
+    * :doc:`/ctcps </commands/ctcps>`
     * :doc:`/remote </commands/remote>`
     * :doc:`/commands </commands/commands>`
     * :doc:`/events </commands/events>`
     * :doc:`/raw </commands/raw>`
+

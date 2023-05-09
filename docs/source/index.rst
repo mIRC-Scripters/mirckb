@@ -80,7 +80,8 @@ References
 
    commands/index_commands
    identifiers/index_identifiers
-
+   events/index_events
+   
 .. toctree::
    :maxdepth: 2
    :caption: Beginner
@@ -112,6 +113,7 @@ References
    advanced/eval_brackets
    advanced/com
    advanced/dll
+   advanced/sendmessage
 
 .. toctree::
    :maxdepth: 2

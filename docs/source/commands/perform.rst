@@ -1,7 +1,7 @@
 /perform
 ========
 
-The **/perform** command enables or disables the perform section in the options (ALT + O > Connect)
+The /perform command enables or disables the perform section in the options (ALT + O > Connect)
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.8 (14 Dec 2000)
+.. compatibility:: 5.8
 
 See also
 --------

@@ -1,7 +1,7 @@
 /qmsg
 =====
 
-The **/qmsg** command sends the specified message to all open query windows.
+The /qmsg command sends the specified message to all open query windows.
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v6.1 (17 Feb 2006)
+.. compatibility:: 6.1
 
 See also
 --------
@@ -44,3 +44,4 @@ See also
     :columns: 4
 
     * :doc:`/qme </commands/qme>`
+

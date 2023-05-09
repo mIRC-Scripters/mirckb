@@ -1,7 +1,7 @@
 /if
 ===
 
-The :doc:`conditional statements </intermediate/control_flow_statements.html#conditional_statements>` is a built-in construct capable of comparing a value and executing a set of commands based on the result of that condition. The if statement is used in conjunction with the :doc:`/else </commands/else>` statement and the :doc:`/elseif </commands/elseif>` statement to jump to certain blocks of code depending on the result of the conditional statement that was executed. The if statements supports the :doc:`operators </intermediate/control_flow_statements.html#operators>`
+The conditional statement is a built-in construct capable of comparing a value and executing a set of commands based on the result of that condition. The if statement is used in conjunction with the :doc:`/else </commands/else>` statement and the :doc:`/elseif </commands/elseif>` statement to jump to certain blocks of code depending on the result of the conditional statement that was executed. The if statements supports the :ref:`operators`
 
 Synopsis
 --------
@@ -13,6 +13,8 @@ Synopsis
 
 Switches
 --------
+
+None
 
 Parameters
 ----------
@@ -34,9 +36,9 @@ Below is a simple example of checking for at least five arguments before proceed
 .. code:: text
 
     alias example {
-    if ($0 < 5) { echo -atc info * /example: You must provide at least 5 arguments! | halt }
-    ; do something useful here
-    echo -a works!
+      if ($0 < 5) { echo -atc info * /example: You must provide at least 5 arguments! | halt }
+      ; do something useful here
+      echo -a works!
     }
 
 Executing "/example a b c d" will result in:
@@ -54,7 +56,7 @@ While, executing "/example a b c d f" will result in:
 Compatibility
 -------------
 
-Added: mIRC v4.5 (06 Jul 1996)
+.. compatibility:: 4.5
 
 See also
 --------
@@ -75,3 +77,4 @@ See also
     * :doc:`/returnex </commands/returnex>`
     * :doc:`/elseif </commands/elseif>`
     * :doc:`/else </commands/else>`
+

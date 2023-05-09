@@ -1,7 +1,7 @@
 /ddeserver
 ==========
 
-The **/ddeserver** command turns mIRC's DDE Server on or off. You can also rename mIRC DDE server. The default mIRC DDE Server is enabled when mIRC first starts and assign itself the name 'mIRC' unless another application as already taken that name.
+The /ddeserver command turns mIRC's DDE Server on or off. You can also rename mIRC DDE server. The default mIRC DDE Server is enabled when mIRC first starts and assign itself the name 'mIRC' unless another application as already taken that name.
 
 Synopsis
 --------
@@ -59,7 +59,7 @@ will output:
 Compatibility
 -------------
 
-Added: mIRC v3.9 (06 Jan 1996)
+.. compatibility:: 3.9
 
 See also
 --------
@@ -71,3 +71,4 @@ See also
     * :doc:`$isdde </identifiers/isdde>`
     * :doc:`$ddename </identifiers/ddename>`
     * :doc:`/dde </commands/dde>`
+

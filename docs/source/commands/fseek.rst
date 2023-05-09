@@ -1,7 +1,7 @@
 /fseek
 ======
 
-The **/fseek** command sets the read/write pointer to the specified position in the file, position starts at 0.
+The /fseek command sets the read/write pointer to the specified position in the file, position starts at 0.
 
 Synopsis
 --------
@@ -60,7 +60,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v6.1 (17 Feb 2006)
+.. compatibility:: 6.1
 
 See also
 --------
@@ -76,3 +76,4 @@ See also
     * :doc:`/fclose </commands/fclose>`
     * :doc:`/flist </commands/flist>`
     * :doc:`/fopen </commands/fopen>`
+

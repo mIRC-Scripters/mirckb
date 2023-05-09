@@ -1,7 +1,7 @@
 /drawpic
 ========
 
-The **/drawpic commmand** draws a picture at the specified coordinates. The picture can be a graphics file, or an ico/exe/dll file.
+The /drawpic commmand draws a picture at the specified coordinates. The picture can be a graphics file, or an ico/exe/dll file.
 
 Synopsis
 --------
@@ -63,13 +63,6 @@ Parameters
       - if -o is used, the index number of the icon in the file
     * - [M]
       - if -fo is used, the index number of the frame in the icon.
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Parameter
-      - Description
     * - <filename>
       - the filename for the picture
 
@@ -81,7 +74,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------

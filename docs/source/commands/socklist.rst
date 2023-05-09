@@ -1,7 +1,7 @@
 /socklist
 =========
 
-The **/socklist** command allows mIRC to list all sockets that are currently open open.
+The /socklist command allows mIRC to list all sockets that are currently open open.
 
 Synopsis
 --------
@@ -37,7 +37,7 @@ Parameters
 Example
 -------
 
-List all TCP sockets that have the begin with **mySock**:
+List all TCP sockets that have the begin with mySock:
 
 .. code:: text
 
@@ -46,9 +46,9 @@ List all TCP sockets that have the begin with **mySock**:
 Compatibility
 -------------
 
-Added: mIRC v5.71 (07 May 2000)
+.. compatibility:: 5.71
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -66,5 +66,6 @@ See Also
     * :doc:`/sockpause </commands/sockpause>`
     * :doc:`/sockread </commands/sockread>`
     * :doc:`/sockrename </commands/sockrename>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

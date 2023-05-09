@@ -1,7 +1,7 @@
 /saveini
 ========
 
-mIRC might cache settings before they get saved to disk. This command dumps all mIRC saved settings from memory to their respective INI files. The **/saveini** command should be called before attempting to access any settings from these files.
+mIRC might cache settings before they get saved to disk. This command dumps all mIRC saved settings from memory to their respective INI files. The /saveini command should be called before attempting to access any settings from these files.
 
 Synopsis
 --------
@@ -29,16 +29,16 @@ mIRC settings should be flushed before attempting to access recent data:
 
     ; returns the last text your searched using Ctrl+F
     alias lastFind {
-    ; flush settings
-    saveini
-    ; return the last find text
-    return $readini($mircini, n, find2, n0)
+      ; flush settings
+      saveini
+      ; return the last find text
+      return $readini($mircini, n, find2, n0)
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.4 (24 Jul 1998)
+.. compatibility:: 5.4
 
 See also
 --------
@@ -56,3 +56,4 @@ See also
     * :doc:`/savebuf </commands/savebuf>`
     * :doc:`/write </commands/write>`
     * :doc:`/writeini </commands/writeini>`
+

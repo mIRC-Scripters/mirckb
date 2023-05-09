@@ -1,12 +1,12 @@
 /sockwrite
 ==========
 
-The **/sockwrite** command allows you to send data to a TCP socket connection previously opened with :doc:`/sockopen </commands/sockopen_commands>` (See :doc:`tCP sockets </advanced/sockets.html#tcp-socket>` ).
-You can specify a :ref:`matching_tools-wildcard` for the name to send the data to all matching sockets.
+The /sockwrite command allows you to send data to a TCP socket connection previously opened with :doc:`/sockopen </commands/sockopen>` command. See :ref:`tcp_sockets` 
+You can specify a :ref:`matching_tools-wildcard` for the name to send the data to all matching sockets. 
 
 When the data has been sent, the :doc:`on sockwrite </events/on_sockwrite>` event triggers.
 
-mIRC will queue your request up to 16384 bytes, you must check how many bytes is the send buffer with :doc:`$sock </identifiers/sock>` ().sq before trying to queue on a socket
+mIRC will queue your request up to 16384 bytes, you must check how many bytes is the send buffer with :doc:`$sock().sq </identifiers/sock>` before trying to queue on a socket
 
 .. note:: If the queue is empty, (first /sockwrite ever for example), you can send more than that limit and it will be sent as chunk of the send queue limit or less.
 
@@ -51,17 +51,17 @@ Parameters
     * - <text|%var|&binvar>
       - The message you want to send, can be a binary variable.
 
-.. note:: if /sockwrite fails, :doc:`$sockerr </identifiers/sockerr>` is set as well as :doc:`$sock </identifiers/sock>` ().wserr and :doc:`$sock </identifiers/sock>` ().wsmsg inside the :doc:`on sockwrite </events/on_events/on_sockwrite>` event.
+.. note:: if /sockwrite fails, :doc:`$sockerr </identifiers/sockerr>` is set as well as :doc:`$sock().wserr </identifiers/sock>` and :doc:`$sock().wsmsg </identifiers/sock>` inside the :doc:`on sockwrite </events/on_sockwrite>` event.
 
 Example
 -------
 
-See the page for the :doc:`on sockwrite </events/on_events/on_sockwrite>` event for more informations and examples about /sockwrite
+See the page for the :doc:`on sockwrite </events/on_sockwrite>` event for more informations and examples about /sockwrite
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -75,4 +75,5 @@ See also
     * :doc:`on sockwrite </events/on_sockwrite>`
     * :doc:`on sockread </events/on_sockread>`
     * :doc:`$sockerr </identifiers/sockerr>`
-    * :doc:`$sock() </identifiers/sock>`
+    * :doc:`$sock </identifiers/sock>`
+

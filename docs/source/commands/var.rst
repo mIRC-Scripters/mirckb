@@ -1,15 +1,15 @@
 /var
 ====
 
-The **/var** command can be used to replace the value of existing variables or create a new variables and assign them values. By default /var creates local variable, this can be changed via the -g switch ( :doc:`/set </commands/set>` command can be used to set global variables by default).
+The /var command can be used to replace the value of existing variables or create a new variables and assign them values. By default /var creates local variable, this can be changed via the -g switch (:doc:`/set </commands/set>` command can be used to set global variables by default).
 
 The Local Variables created by /var exist only within the :event: or ALIAS where they were created. If your event or alias calls another alias, that alias cannot see the local values unless passed to them in another way, such as a parameter used when calling the alias.
 
-The var command can perform one math operation via one of the arithmetic operators: addition (+), subtraction (-), multiplication (*), division (/), modulo (%), bitwise-and (&), and exponent (^). They *must* be space delimited with both operands being a number. If any of the operands are not a number or if a space is missing, it will be treated as plain text.
+The var command can perform one math operation via one of the arithmetic operators: addition (+), subtraction (-), multiplication (*), division (/), modulo (%), bitwise-and (&), and exponent (^). They ''must'' be space delimited with both operands being a number. If any of the operands are not a number or if a space is missing, it will be treated as plain text.
 
 .. note:: Unlike the :doc:`/set </commands/set>` command, var can assign a value to multiple variables at once.
 
-**Set Evaluation Routine:**
+Set Evaluation Routine:
 Internally, the var command simply breaks down the line (by commas) and passes the arguments to /set. The set command has its own evaluation routine which lets you dynamically concatenate additional values onto the variable name before the assignment takes place.
 
 .. code:: text
@@ -49,15 +49,13 @@ Switches
     * - -p
       - Permits value to be 2 literal doublequotes and permits value to end with a single $chr(32) space. Also performs -n switch behavior
 
-<br />
-
 .. note:: If you are placing an event's $1- into a variable, you should use -p to prevent 1 + 1 being evaluated to 2, or "" not being set
 
 .. note:: The = in "var %a = value" is optional and is not placed into the value.
 
 .. note:: See the :doc:`/set </commands/set>` page for more info about setting dynamic variable names using identifiers like $nick or $network
 
-.. note:: much of the usage of /var is similar to that of /set except that switches like -uN or -e or -z or -k have no meaning for local variables which cease to exist when the event or alias is finished.
+.. note:: much of the usage of /var is similar to that of /set except that switches like -uN or -e or -z or -k  have no meaning for local variables which cease to exist when the event or alias is finished.
 
 Parameters
 ----------
@@ -74,8 +72,8 @@ Parameters
       - The value to assign to the variable. If not present or is $null the local var is unset
     * - <number>
       - Any arbitrary numerical value, can be a floating point number
-    * - < + | - | * | / | % | ^ | & >
-      - One of the seven possible arithmetic operations
+    * - < + |
+      - | * | / | % | ^ | & > - One of the seven possible arithmetic operations
     * - <number>
       - Any arbitrary numerical value, can be a floating point number
 
@@ -89,12 +87,12 @@ Example
     ; Factorial
     ; 10! = $factorial(10) = 3628800
     alias factorial {
-    var %result = 1, %x = $1
-    while (%x) {
-    var %result = %result * $v1
-    dec %x
-    }
-    return %result
+      var %result = 1, %x = $1
+      while (%x) {
+        var %result = %result * $v1
+        dec %x
+      }
+      return %result
     }
 
 .. code:: text
@@ -148,9 +146,9 @@ Example
 
     By default, /var and /set do not allow value to be a pair of double quotes nor to end with a single space (multiple spaces can be set)
     The -p changes /var and /set to allow these values:
-    //var -p %a "" | var -p %b test $+ $chr(32) | echo -a %a vs $len(%b)
+    //var -p %a "" | var -p %b test $+ $chr(32)  | echo -a %a vs $len(%b)
     returns: "" vs 5
-    //var %a "" | var %b test $+ $chr(32) | echo -a %a vs $len(%b)
+    //var    %a "" | var    %b test $+ $chr(32)  | echo -a %a vs $len(%b)
     returns: vs 4
     -p also includes -n blocking of math operation:
     //var -p %a 1 + 1 | echo -a %a
@@ -176,7 +174,8 @@ Return:
 Compatibility
 -------------
 
-Added: mIRC v5.6 (23 Sep 1999)
+.. compatibility:: 5.6
+
 See also
 --------
 

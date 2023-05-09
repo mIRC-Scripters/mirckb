@@ -1,6 +1,8 @@
 GUI Scripting
 =============
 
+.. _custom_windows:
+
 Custom Windows
 --------------
 
@@ -230,6 +232,8 @@ If a listbox is used, you can use the $sline identifier to retrieve the Nth sele
    $sline(@windowName, N)[.ln]
 
 If N = 0, the total number of selected lines is returned. If the .ln property is used, the line number will be returned instead of the actual text.
+
+.. _picture_windows:
 
 Picture Windows
 ---------------

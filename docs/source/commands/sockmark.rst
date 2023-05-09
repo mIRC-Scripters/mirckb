@@ -1,7 +1,7 @@
 /sockmark
 =========
 
-The **/sockmark** command assigns temporary data to a socket to be referenced later using :doc:`$sock </identifiers/sock>` (<name>).mark. Leaving the [temp data] parameter :doc:`$null </identifiers/null>` will clear the socket mark. The sockmark command can be used to assign the same data to multiple sockets using a <wild_name> :ref:`matching_tools-wildcard` pattern.
+The /sockmark command assigns temporary data to a socket to be referenced later using :doc:`$sock(\<name\>).mark </identifiers/sock>`. Leaving the [temp data] parameter :doc:`$null </identifiers/null>` will clear the socket mark. The sockmark command can be used to assign the same data to multiple sockets using a <wild_name> :ref:`matching_tools-wildcard` pattern.
 
 Limitations
 -----------
@@ -46,24 +46,24 @@ The example below is a demonstration of how you would use it. It does not actual
 
     ; Non-functioning example, shows practical usage only
     on $*:text:/^!foo (\S+)$/Si:#:{
-    ; if ( .. validate input .. ) {
-    sockopen sock1 www.example.com 80
-    sockmark sock1 $regml(1)
+      ; if ( .. validate input .. ) {
+      sockopen sock1 www.example.com 80
+      sockmark sock1 $regml(1)
     }
     on *:sockopen:sock1:{
-    ; submit the information we got from the user
-    sockwrite -nt $sockname GET /foobar.php?q= $+ sock($sockname).mark HTTP/1.0
-    sockwrite -nt $sockname Host: www.example.com
-    sockwrite -nt $sockname $crlf
+      ; submit the information we got from the user 
+      sockwrite -nt $sockname GET /foobar.php?q= $+ sock($sockname).mark HTTP/1.0
+      sockwrite -nt $sockname Host: www.example.com
+      sockwrite -nt $sockname $crlf
     }
     ; on *:sockread:sock1: {
-    ; ....
+    ;    ....
     ; }
 
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------
@@ -83,5 +83,6 @@ See also
     * :doc:`/sockpause </commands/sockpause>`
     * :doc:`/sockread </commands/sockread>`
     * :doc:`/sockrename </commands/sockrename>`
-    * :doc:`/sockudp </commands/udp-socket>`
+    * :doc:`/sockudp </commands/sockudp>`
     * :doc:`/sockwrite </commands/sockwrite>`
+

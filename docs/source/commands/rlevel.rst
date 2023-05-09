@@ -1,7 +1,7 @@
 /rlevel
 =======
 
-The **/rlevel** command removes all users from the remote users list with the specified general access level
+The /rlevel command removes all users from the remote users list with the specified general access level
 
 Synopsis
 --------
@@ -42,7 +42,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v3.5 (13 Aug 1995)
+.. compatibility:: 3.5
 
 See also
 --------

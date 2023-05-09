@@ -1,7 +1,7 @@
 /ignore
 =======
 
-The **/ignore** command ignores various types of messages from users, You can also manage ignore from the Control tab of the address book.
+The /ignore command ignores various types of messages from users, You can also manage ignore from the Control tab of the address book.
 
 Synopsis
 --------
@@ -42,7 +42,7 @@ Switches
     * - -f
       - prevent user from triggering flash
     * - -a
-      - ignores private, channel, notice, ctcp, dcc, invite, controls, speech, highlight, tips, flash
+      - ignores private, channel, notice, ctcp, dcc, invite, controls, speech, highlight, tips, flash 
     * - -l
       - lists all ignored addresses that matches the switches above if any is specified, otherwise lists all ignored addresses.
     * - -r
@@ -73,12 +73,12 @@ Parameters
 Example
 -------
 
-none
+None
 
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -87,3 +87,4 @@ See also
     :columns: 4
 
     * :doc:`$ignore </identifiers/ignore>`
+

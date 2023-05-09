@@ -1,7 +1,7 @@
 /remini
 =======
 
-The **/remini** command deletes a whole section or a single item in an INI file
+The /remini command deletes a whole section or a single item in an INI file
 
 .. note:: you shouldn't be using this on the INI files used by mIRC but that should work.
 
@@ -39,7 +39,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.6 (07 Sep 1996)
+.. compatibility:: 4.6
 
 See also
 --------
@@ -50,3 +50,4 @@ See also
     * :doc:`/writeini </commands/writeini>`
     * :doc:`$readini </identifiers/readini>`
     * :doc:`$ini </identifiers/ini>`
+

@@ -1,7 +1,7 @@
 /hotlink
 ========
 
-The **/hotlink** command can be used to override the default popups menu when right clicking a word and triggering the :doc:`on hotlink </events/on_hotlink>` event.
+The /hotlink command can be used to override the default popups menu when right clicking a word and triggering the :doc:`on hotlink </events/on_hotlink>` event.
 
 Synopsis
 --------
@@ -44,12 +44,12 @@ Example
 .. code:: text
 
     menu @helppop {
-    Lookup Help $1:!help $remove($1, $chr(40), $chr(41))
+      Lookup Help $1:!help $remove($1, $chr(40), $chr(41))
     }
     on $*:hotlink:/^[/$]\S+/:*:{
-    if ($hotlink(event) == rclick) {
-    hotlink -m @helppop
-    }
+      if ($hotlink(event) == rclick) {
+        hotlink -m @helppop 
+      }
     }
 
 2) Override mIRC's default popups for nickname and replace them with... mIRC's default popups! (useless but that's to show /hotlink -d, this isn't handling /return or halt to show the hand)
@@ -57,16 +57,16 @@ Example
 .. code:: text
 
     on *:hotlink:*:*:{
-    if ($hotlink(event) $hotlink(match).type == rclick nick) {
-    ;no @menu with -d
-    hotlink -d
-    }
+      if ($hotlink(event) $hotlink(match).type == rclick nick) {
+        ;no @menu with -d
+        hotlink -d
+      }
     }
 
 Compatibility
 -------------
 
-Added: mIRC v7.23 (19 Mar 2012)
+.. compatibility:: 7.23
 
 See also
 --------
@@ -78,3 +78,4 @@ See also
     * :doc:`$hotlinepos </identifiers/hotlinepos>`
     * :doc:`$hotlink </identifiers/hotlink>`
     * :doc:`on hotlink </events/on_hotlink>`
+

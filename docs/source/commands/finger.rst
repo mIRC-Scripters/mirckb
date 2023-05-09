@@ -1,7 +1,7 @@
 /finger
 =======
 
-The **/finger** command fingers a nickname.
+The /finger command fingers a nickname.
 
 Synopsis
 --------
@@ -35,7 +35,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.5a (08 Mar 1995)
+.. compatibility:: 2.5
 
 See also
 --------

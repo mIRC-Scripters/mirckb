@@ -1,7 +1,7 @@
 /clear
 ======
 
-The **/clear** command is used to clears the buffer of the current window. If a window name is specified that window's buffer will be cleared.
+The /clear command is used to clears the buffer of the current window. If a window name is specified that window's buffer will be cleared.
 
 Additionally, the clear command can also be used to erase the history of the editbox as well as the clicks history of the picture window.
 
@@ -55,14 +55,14 @@ Example
 
     ;Clear the status window
     /clear -s
-
+    
     ;Clears a custom window called "@Highlight_Log"
     /clear @Highlight_Log
 
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
 
 See also
 --------
@@ -76,3 +76,4 @@ See also
     * :doc:`/loadbuf </commands/loadbuf>`
     * :doc:`/savebuf </commands/savebuf>`
     * :doc:`/window </commands/window>`
+

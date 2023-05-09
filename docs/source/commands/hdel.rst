@@ -1,7 +1,7 @@
 /hdel
 =====
 
-The **/hdel** command deletes an item/data-value pair from an existing hash table.
+The /hdel command deletes an item/data-value pair from an existing hash table.
 
 Synopsis
 --------
@@ -44,41 +44,42 @@ Example
 .. code:: text
 
     alias hdel_example {
-    ;add items
-    hadd -m example academic a
-    hadd example academy a
-    hadd example accelerate a
-    hadd example accelerator a
-    hadd example accept a
-    hadd example access a
-    hadd example accident a
-    hadd example because b
-
-    ;number of items
-    echo -a $hget(example, 0).item
-
-    ;remove everything by one
-    hdel -w example a*
-
-    ;number of items
-    echo -a $hget(example, 0).item
-
-    ;free table
-    hfree example
+      ;add items
+      hadd -m example academic a
+      hadd example academy a
+      hadd example accelerate a
+      hadd example accelerator a
+      hadd example accept a
+      hadd example access a
+      hadd example accident a
+      hadd example because b
+    
+      ;number of items
+      echo -a $hget(example, 0).item
+    
+      ;remove everything by one
+      hdel -w example a*
+    
+      ;number of items
+      echo -a $hget(example, 0).item
+    
+      ;free table
+      hfree example
     }
 
 .. code:: text
 
-    //hfree -sw test | hadd -m1 test item1 | hadd test item* | echo -a 1st item is $hget(test,1).item | hdel -w test item* | echo -a there are $hget(test,0).item items remaining
+    //hfree -sw test | hadd -m1 test item1 | hadd test item* | echo -a 1st item is $hget(test,1).item | hdel -w test item* | echo  -a there are $hget(test,0).item items remaining
     * Demonstrates that an item can be created and deleted containing an asterisk. If the -w switch is deleted, only 1 of the 2 items is deleted because of an exact item-name match with "item*".
-
+    
     //hfree -sw test | hmake -s test | hdel -s test itemname | echo -a message 1 | hfree -s test | hdel -s test itemname | echo -a message 2
     * Demonstrates that deleting a non-existent item from an existing table allows the script flow to continue, but deleting an item from a non-existent table is an error halting the script flow preventing the 2nd message from displaying.
 
 Compatibility
 -------------
 
-Added: mIRC v5.8 (14 Dec 2000)
+.. compatibility:: 5.8
+
 See also
 --------
 
@@ -92,6 +93,6 @@ See also
     * :doc:`/hadd </commands/hadd>`
     * :doc:`/hinc </commands/hinc>`
     * :doc:`/hdec </commands/hdec>`
-    * :ref:`dAta_sTorage-hash_tables`
+    * :ref:`data_storage-hash_tables`
     * :doc:`$hget </identifiers/hget>`
     * :doc:`$hfind </identifiers/hfind>`

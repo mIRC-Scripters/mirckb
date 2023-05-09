@@ -1,7 +1,7 @@
 /drawrot
 ========
 
-The **/drawrot** command rotates an area of a bitmap by the specified angle.
+The /drawrot command rotates an area of a bitmap by the specified angle.
 
 Synopsis
 --------
@@ -60,7 +60,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v5.3 (04 Jan 1998)
+.. compatibility:: 5.3
 
 See also
 --------

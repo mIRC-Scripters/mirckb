@@ -1,7 +1,7 @@
 /query
 ======
 
-The **/query** command opens a query window to the specified nickname. If a message is provided, it is sent.
+The /query command opens a query window to the specified nickname. If a message is provided, it is sent.
 
 Synopsis
 --------
@@ -48,7 +48,8 @@ None
 Compatibility
 -------------
 
-Added: mIRC v2.1a (28 Feb 1995)
+.. compatibility:: 2.1a
+
 See also
 --------
 

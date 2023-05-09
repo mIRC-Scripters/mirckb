@@ -1,7 +1,7 @@
 /did
 ====
 
-The **/did** command allows you to modify the values of controls in a dialog.
+The /did command allows you to modify the values of controls in a dialog.
 
 Synopsis
 --------
@@ -22,7 +22,7 @@ Switches
     * - -f
       - set focus on <id>, use -fu to set a tab on focus
     * - -t
-      - set <id> as default button
+      - set <id> as default button 
     * - -e
       - enable <id>
     * - -b
@@ -87,12 +87,12 @@ Parameters
 Example
 -------
 
-You can check the :doc:`dialog components </advanced/dialog-components>` page for examples of /did per control
+You can check the dialog components page for examples of /did per control
 
 Compatibility
 -------------
 
-Added: mIRC v5.5 (19 Feb 1999)
+.. compatibility:: 5.5
 
 See also
 --------
@@ -106,3 +106,4 @@ See also
     * :doc:`$didwm </identifiers/didwm>`
     * :doc:`$didreg </identifiers/didreg>`
     * :doc:`/dialog </commands/dialog>`
+

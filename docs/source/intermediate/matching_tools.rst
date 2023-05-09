@@ -54,6 +54,8 @@ The iswm operator can be used with /if (and the like) to make a wildcard compari
 
 Wildcard-matches can also be used in token manipulation, hash tables, custom windows, on events, variables, etc. etc.
 
+.. _matching_tools-regex:
+
 Regex
 -----
 

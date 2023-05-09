@@ -1,7 +1,7 @@
 /join
 =====
 
-The **/join** command is used when you want to join a channel.
+The /join command is used when you want to join a channel.
 
 Synopsis
 --------
@@ -10,7 +10,7 @@ Synopsis
 
     /join [-inxmd] [#] [key]
 
-.. note:: All switches are optional.*
+ Note: All switches are optional.
 
 Switches
 --------
@@ -35,39 +35,39 @@ Switches
 Parameters
 ----------
 
-* *#channel'' - name of the channel
-
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Parameter
       - Description
+    * - #channel
+      - name of the channel
     * - [key]
       - channel key (password)
 
 Examples
 --------
 
-**Join channel**
+Join channel
 
 .. code:: text
 
     /join #mIRC
 
-**Join multiple channels**
+Join multiple channels
 
 .. code:: text
 
     /join #mIRC,#help
 
-**Join channel minimized**
+Join channel minimized
 
 .. code:: text
 
     /join -n #mIRC
 
-**Join channel with a key (password)**
+Join channel with a key (password)
 
 .. code:: text
 
@@ -76,7 +76,7 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v2.7a (18 Mar 1995)
+.. compatibility:: 2.7a
 
 See also
 --------

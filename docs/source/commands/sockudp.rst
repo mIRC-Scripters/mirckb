@@ -1,9 +1,9 @@
 /sockudp
 ========
 
-The **/sockudp** command allows you to send data to a specific address at a specific port destination (See :doc:`uDP sockets </advanced/sockets.html#udp-socket>` ).
+The /sockudp command allows you to send data to a specific address at a specific port destination (See :ref:`udp_sockets`).
 
-.. note:: if /sockudp fails, it sets :doc:`$sock().wserr </identifiers/sock>` to the error value, and trigger on sockwrite with :doc:`$sockerr </identifiers/sockerr>` set etc.
+.. note:: if /sockudp fails, it sets :doc:`$sock </identifiers/sock>` to the error value, and trigger on sockwrite with :doc:`$sockerr </identifiers/sockerr>` set etc.
 
 Synopsis
 --------
@@ -66,36 +66,36 @@ Example
 .. code:: text
 
     alias gettime {
-    ; Set a NULL byte binary variable.
-    bset &null 1 0
-
-    ; Open a UDP connection to Time-a.nist.gov = 129.6.15.28
-    sockudp -k gettime 129.6.15.28 37 &null
+      ; Set a NULL byte binary variable.
+      bset &null 1 0
+    
+      ; Open a UDP connection to Time-a.nist.gov = 129.6.15.28
+      sockudp -k gettime 129.6.15.28 37 &null
     }
-
+    
     ON *:UDPREAD:gettime: {
-    ; Read the reply.
-    sockread -f &time
-
-    var %time $bvar(&time,1,$bvar(&time,0))
-
-    ; Convert to binary, remove spaces.
-    var %bin $regsubex(%time, /(\d+)\s?/g, $base(\1, 10, 2, 8))
-
-    ; Get the current unix time in decimal system.
-    var %time = $base(%bin, 2, 10)
-
-    ; Print the time.
-    echo -ag Currnt Time/Date: $asctime($calc(%time - 2208988800), yyyy-mm-dd hh:nn:ss TT)
-
-    ; Close the socket
-    sockclose $sockname
+      ; Read the reply.
+      sockread -f &time
+    
+      var %time $bvar(&time,1,$bvar(&time,0))
+    
+      ; Convert to binary, remove spaces.
+      var %bin $regsubex(%time, /(\d+)\s?/g, $base(\1, 10, 2, 8))
+    
+      ; Get the current unix time in decimal system.
+      var %time = $base(%bin, 2, 10)
+    
+      ; Print the time.
+      echo -ag Currnt Time/Date: $asctime($calc(%time - 2208988800), yyyy-mm-dd hh:nn:ss TT)
+    
+      ; Close the socket
+      sockclose $sockname
     }
 
 Compatibility
 -------------
 
-Added: mIRC v5.5 (19 Feb 1999)
+.. compatibility:: 5.5
 
 See also
 --------
@@ -103,6 +103,7 @@ See also
 .. hlist::
     :columns: 4
 
-    * :doc:`on udpread </events/udp-socket>`
+    * :doc:`on udpread </events/on_udpread>`
     * :doc:`on sockwrite </events/on_sockwrite>`
-    * :doc:`$sockerr </identifiers/sockerr_idEntifiers>`
+    * :doc:`$sockerr </identifiers/sockerr>`
+

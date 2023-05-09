@@ -1,7 +1,7 @@
 /load
 =====
 
-.. note:: that unlike the :doc:`/reload </commands/reload>` command, /load will trigger the ON LOAD and ON START events.
+The /load command can be used to load any type of existing file of the types: aliases, popups, remote, users, and variables. Using /load on an already loaded file will update its contents while maintaining its order among other files. Note that unlike the :doc:`/reload </commands/reload>` command, /load will trigger the ON LOAD and ON START events.
 
 Synopsis
 --------
@@ -54,7 +54,7 @@ Parameters
     * - <filename>
       - The script file to load
 
-.. note:: In the absence of a path, assumes the file is located in $mircdir. Paths not beginning with drive letter or \ are relative to the location of $mircdir.<br />
+.. note:: In the absence of a path, assumes the file is located in $mircdir. Paths not beginning with drive letter or \ are relative to the location of $mircdir.
 
 .. note:: You can have samefilename.mrc and scripts\samefilename.mrc loaded at the same time. Do NOT load any script located in the downloads folder where someone can resume-send a script file on top of the file you have already loaded.
 
@@ -68,9 +68,9 @@ Load three remote script files.
 .. code:: text
 
     alias load_remote {
-    load -rs foo.mrc
-    load -rs bar.mrc
-    load -rs baz.mrc
+      load -rs foo.mrc
+      load -rs bar.mrc
+      load -rs baz.mrc
     }
 
 Loads script file into the 2nd position of the 'view' menu in Alt+R editor. If it's already loaded, moves the file to that position. If contains ON LOAD or ON START event handler, this triggers the Initialization Warning and/or performs the event handler.
@@ -90,8 +90,8 @@ Load a variables and a users file:
 .. code:: text
 
     alias load_vars_and_users {
-    load -ru users2.ini
-    load -rv vars2.ini
+      load -ru users2.ini
+      load -rv vars2.ini
     }
 
 .. note:: If your aliases.ini was saved to a different file extension such as .mrc, it still needs to have the same scripting format used with the original filename. The only difference is that the disk file no longer is saved in the .ini format with lines beginning like n123=. Same applies with saving your users.ini and vars.ini files to other filetypes. However without the file extension being .ini, it's not possible to edit the 5 types of popups sharing the same filename, and -ru and -rv can't share the same filename either.
@@ -99,7 +99,8 @@ Load a variables and a users file:
 Compatibility
 -------------
 
-Added: mIRC v3.8 (25 Nov 1995)
+.. compatibility:: 3.8
+
 See also
 --------
 

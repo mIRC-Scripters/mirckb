@@ -1,7 +1,7 @@
 /unsetall
 =========
 
-The **/unsetall** command removes all variables, globals and locals.
+The /unsetall command removes all variables, globals and locals.
 
 Synopsis
 --------
@@ -30,7 +30,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v4.0 (20 Mar 1996)
+.. compatibility:: 4.0
 
 See also
 --------
@@ -44,3 +44,4 @@ See also
     * :doc:`/set </commands/set>`
     * :doc:`/unset </commands/unset>`
     * :doc:`/var </commands/var>`
+

@@ -1,7 +1,7 @@
 /dns
 ====
 
-The **/dns** command resolves an address. If mIRC sees a "." in the name you specify it assumes it is an address and tries to resolve it. Otherwise it assumes it is a nickname and performs a :doc:`/userhost </commands/userhost>` to find the user's address and then resolves it. If you specify an IP address, it looks up the host name. You can queue multiple /dns requests, and you can view the current queue by using /dns with no parameters.
+The /dns command resolves an address. If mIRC sees a "." in the name you specify it assumes it is an address and tries to resolve it. Otherwise it assumes it is a nickname and performs a :doc:`/userhost </commands/userhost>` to find the user's address and then resolves it. If you specify an IP address, it looks up the host name. You can queue multiple /dns requests, and you can view the current queue by using /dns with no parameters.
 
 Synopsis
 --------
@@ -22,9 +22,7 @@ Switches
     * - -4
       - allows IPv4 results to be returned (enforce ipv4 for status window which are in ipv6 mode)
     * - -6
-
-.. note:: that you can't connect to it, not so useful)
-
+      - allows IPv6 results to be returned (enforce ipv6 for ipv4-only machine, note that you can't connect to it, not so useful)
     * - -c
       - clears all currently queued DNS requests, except for the one currently in progress
     * - -h
@@ -61,7 +59,8 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.8 (25 Nov 1995)
+.. compatibility:: 3.8
+
 See also
 --------
 

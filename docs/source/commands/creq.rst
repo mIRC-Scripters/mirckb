@@ -1,7 +1,7 @@
 /creq
 =====
 
-**/creq** allows you to modify the mIRC DCC Chat options in the command-line, without having to open the mIRC options dialog.
+/creq allows you to modify the mIRC DCC Chat options in the command-line, without having to open the mIRC options dialog.
 
 Synopsis
 --------
@@ -43,13 +43,13 @@ Parameters
 Examples
 --------
 
-**Enable automatic minimizing of DCC Chats**
+Enable automatic minimizing of DCC Chats
 
 .. code:: text
 
     /creq +m
 
-**Set DCC Chats to automatically accept**
+Set DCC Chats to automatically accept
 
 .. code:: text
 
@@ -58,9 +58,9 @@ Examples
 Compatibility
 -------------
 
-Added: mIRC v3.8 (25 Nov 1995)
+.. compatibility:: 3.8
 
-See Also
+See also
 --------
 
 .. hlist::
@@ -69,3 +69,4 @@ See Also
     * :doc:`/sreq </commands/sreq>`
     * :doc:`$creq </identifiers/creq>`
     * :doc:`$sreq </identifiers/sreq>`
+

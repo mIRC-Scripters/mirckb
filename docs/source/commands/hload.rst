@@ -1,7 +1,7 @@
 /hload
 ======
 
-The **/load** command loads a text file to an hash table. /hload does not create the table, it must already have been created by :doc:`/hmake </commands/hmake>` then saved to disk using :doc:`/hsave </commands/hsave>` .
+The /load command loads a text file to an hash table. /hload does not create the table, it must already have been created by :doc:`/hmake </commands/hmake>` then saved to disk using :doc:`/hsave </commands/hsave>`.
 
 Synopsis
 --------
@@ -66,17 +66,18 @@ Example
     //hfree -w test | hload -im1n test $nopath($mircini) colors | var %tot $hget(test,0).item , %i 1 | while (%i <= %tot) { echo -a $ord(%i) item is $hget(test,%i).item containing $hget(test,$hget(test,%i).item) | inc %i }
     * Loads color scheme names and event colors into items named after the integers 1 and greater. These are contained in the colors section of mirc.ini. If the 'n' switch were not used, the item names would instead be named the same as the items in mirc.ini; n0 n1 etc.
     * If using the -n switch, do not expect the same values to be loaded into the same integer item names from which they were /hsave'ed to disk, even if using 1 bucket.
-
+    
     //hload -m test no_such_file | echo -a does not display
     * Attempting to load a non-existent filename is an error which halts execution of the script.
-
+    
     //bset &var 1 $regsubex($str(x,256),/x/gi,$calc(\n -1) $chr(32)) | hfree -w test | hadd -mb test ascii &var | hsave -b test test.dat | hload -mb test2 test.dat | noop $hget(test,ascii,&copy) | echo 4 -a $bvar(&copy,1-)
     * Binary variable can be accurately saved to a hashtable item, then /hsave'ed to disk with the -b switch, then /hload'ed from disk with the -b switch. The display shows &copy containing an un-altered copy of the original binary variable.
 
 Compatibility
 -------------
 
-Added: mIRC v5.8 (14 Dec 2000)
+.. compatibility:: 5.8
+
 See also
 --------
 
@@ -86,7 +87,7 @@ See also
     * :doc:`/hmake </commands/hmake>`
     * :doc:`/hfree </commands/hfree>`
     * :doc:`/hsave </commands/hsave>`
-    * :ref:`dAta_sTorage-hash_tables`
+    * :ref:`data_storage-hash_tables`
     * :doc:`/hadd </commands/hadd>`
     * :doc:`/hdel </commands/hdel>`
     * :doc:`/hinc </commands/hinc>`

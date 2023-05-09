@@ -1,7 +1,7 @@
 /disconnect
 ===========
 
-The **/disconnect** command terminates the current connection from the server. The disconnect command does not send a QUIT message to the server like the :doc:`/quit command </commands/quit>` does.
+The /disconnect command terminates the current connection from the server. The disconnect command does not send a QUIT message to the server like the :doc:`/quit </commands/quit>` command does.
 
 Synopsis
 --------
@@ -30,7 +30,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC v3.9 (06 Jan 1996)
+.. compatibility:: 3.9
 
 See also
 --------
@@ -40,3 +40,4 @@ See also
 
     * :doc:`/server </commands/server>`
     * :doc:`/quit </commands/quit>`
+

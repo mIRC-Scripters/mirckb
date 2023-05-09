@@ -1,7 +1,7 @@
 /fclose
 =======
 
-The **/fclose** command closes a file open that was previously opened via the :doc:`/fopen </commands/fopen>` command. This command supports a :ref:`matching_tools-wildcard` pattern for its handle name.
+The /fclose command closes a file open that was previously opened via the :doc:`/fopen </commands/fopen>` command. This command supports a :ref:`matching_tools-wildcard` pattern for its handle name.
 
 Synopsis
 --------
@@ -36,18 +36,18 @@ Example
 .. code:: text
 
     alias example {
-    ;open the file
-    .fopen -o x example.txt
-    ;write to it
-    .fwrite x Print this line.
-    ;close the file handle
-    .fclose x
+      ;open the file
+      .fopen -o x example.txt
+      ;write to it
+      .fwrite x Print this line.
+      ;close the file handle
+      .fclose x
     }
 
 Compatibility
 -------------
 
-Added: mIRC v6.1 (17 Feb 2006)
+.. compatibility:: 6.1
 
 See also
 --------
@@ -65,3 +65,4 @@ See also
     * :doc:`/fopen </commands/fopen>`
     * :doc:`/fseek </commands/fseek>`
     * :doc:`/fwrite </commands/fwrite>`
+

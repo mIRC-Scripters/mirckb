@@ -1,7 +1,8 @@
 /vmsg
 =====
 
-The **/vmsg** command allows you to send a message to all voices on a channel using a
+The /vmsg command allows you to send a message to all voices on a channel using a 
+
 /msg +#channel format if the STATUS token is seen in raw 005 and it contains '+', otherwise mIRC uses its own method to send to all voices. mIRC will display '+#channel: message' in the active window.
 
 Synopsis
@@ -38,7 +39,7 @@ None
 Compatibility
 -------------
 
-Added: mIRC v7.53 (29 Nov 2018)
+.. compatibility:: 7.53
 
 See also
 --------
@@ -46,4 +47,4 @@ See also
 .. hlist::
     :columns: 4
 
-:doc:`/omsg </commands/omsg>`
+    * :doc:`/omsg </commands/omsg>`

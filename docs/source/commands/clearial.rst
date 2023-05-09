@@ -1,9 +1,9 @@
 /clearial
 =========
 
-.. attention:: This feature has essentially been replaced by :doc:`/ialclear </commands/ialclear>`.
+.. attention:: This feature has essentially been replaced by :doc:`/ialclear </commands/ialclear>`
 
-The **/clearial** command clears the IAL; If a nickname is specified, it will clear that nickname's entry
+The /clearial command clears the IAL; If a nickname is specified, it will clear that nickname's entry
 
 Synopsis
 --------
@@ -36,17 +36,17 @@ Example
 
     ;Print out your own address
     //echo -a $qt($address($me,1))
-
+    
     ;Remove your own nick from the IAL
     //clearial $me
-
+    
     ;Print out your own address
     //echo -a $qt($address($me,1))
 
 Compatibility
 -------------
 
-Added: mIRC v5.71 (07 May 2000)
+.. compatibility:: 5.71
 
 See also
 --------
@@ -59,3 +59,4 @@ See also
     * :doc:`/ial </commands/ial>`
     * :doc:`/ialclear </commands/ialclear>`
     * :doc:`/ialmark </commands/ialmark>`
+

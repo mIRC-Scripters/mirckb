@@ -1,2 +1,65 @@
 $v2
 ===
+
+The $v2 identifier returns the value of the right-hand operand of the most recently executed conditional statement. This identifier is equivalent to the deprecated :doc:`$ifmatch2 </identifiers/ifmatch2>` identifier.
+
+Synopsis
+--------
+
+.. code:: text
+
+    $v2
+
+Parameters
+----------
+
+None
+
+Properties
+----------
+
+None
+
+Notes
+-----
+
+Just like $v1, $ifmatch and $ifmatch2, this identifier return the value from the very last conditional statement executed. Conditional statements include:
+* :doc:`/if </commands/if>`
+* :doc:`$iif </identifiers/iif>`
+* :doc:`/while </commands/while>`
+
+.. code:: text
+
+    alias test return $iif($1 == 1,1,2)
+    alis testing if (a != b) echo -a $test(1) $v2
+
+This will echo 1 for $v2 because $test is evaluated before $v2, so the $iif is the last statement made when $v2 evaluates.
+
+Examples
+--------
+
+Check if two random numbers between 1 and 5 are equivalent, and echo the matching numbers if so:
+
+.. code:: text
+
+    //echo -ga $iif($rand(1,5) == $rand(1,5),Yes! $v1 == $v2,No! $v1 != $v2) $+ !
+
+Compatibility
+-------------
+
+.. compatibility:: 6.16
+
+See also
+--------
+
+.. hlist::
+    :columns: 4
+
+    * :ref:`while_loops`
+    * :doc:`$v1 </identifiers/v1>`
+    * :doc:`$ifmatch </identifiers/ifmatch>`
+    * :doc:`$ifmatch2 </identifiers/ifmatch2>`
+    * :doc:`/if </commands/if>`
+    * :doc:`$iif </identifiers/iif>`
+    * :doc:`/while </commands/while>`
+

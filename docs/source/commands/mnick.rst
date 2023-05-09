@@ -1,7 +1,7 @@
 /mnick
 ======
 
-The **/mnick** command changes the client's main nickname.
+The /mnick command changes the client's main nickname.
 
 Synopsis
 --------
@@ -33,7 +33,7 @@ Example
 Compatibility
 -------------
 
-Added: mIRC vmIRC 6.2 ()
+.. compatibility:: 6.2
 
 See also
 --------
