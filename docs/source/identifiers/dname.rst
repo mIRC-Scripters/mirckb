@@ -1,7 +1,7 @@
 $dname
 ======
 
-The $dname identifier is used within an On dialog - mIRC|ON DIALOG event to get the name of the dialog that triggered the event.
+The $dname identifier is used within an :doc:`on dialog </events/on_dialog>` event to get the name of the dialog that triggered the event.
 
 Synopsis
 --------

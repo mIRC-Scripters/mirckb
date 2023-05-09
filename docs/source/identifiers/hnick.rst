@@ -1,7 +1,7 @@
 $hnick
 ======
 
-$hnick returns the nickname of a person who was being helped/dehelped during an [[On help - mIRC|ON HELP Event] or an On dehelp - mIRC|ON DEHELP Event].
+$hnick returns the nickname of a person who was being helped/dehelped during an :doc:`on help </events/on_help>` event or an :doc:`on dehelp </events/on_dehelp>` event.
 
 Synopsis
 --------

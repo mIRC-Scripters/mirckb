@@ -26,7 +26,7 @@ Parameters
     * - #
       - If no channel mentioned, targets all channels; otherwise, a specific channel.
     * - [,#]
-      - Can be used to specify multiple, literal channel targets.</div>
+      - Can be used to specify multiple, literal channel targets.
     * - <commands>
       - The commands to be performed when the event listener's criteria is met.
 

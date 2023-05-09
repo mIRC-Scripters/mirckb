@@ -1,9 +1,9 @@
 $bnick
 ======
 
-$bnick refers to the nickname of the user either banned, or unbanned, during both an On ban - mIRC|ON BAN Event, and an On unban - mIRC|ON UNBAN Event.
+$bnick refers to the nickname of the user either banned, or unbanned, during both an :doc:`on ban </events/on_ban>` Event, and an :doc:`on unban </events/on_unban>` Event.
 
-''Note:'' $bnick is not always set, because sometimes nicknames aren't even added to a certain ban/banmask.
+.. note:: $bnick is not always set, because sometimes nicknames aren't even added to a certain ban/banmask.
 
 Parameters
 ----------

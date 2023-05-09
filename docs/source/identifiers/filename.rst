@@ -1,7 +1,7 @@
 $filename
 =========
 
-The $filename identifier is filled when an event's trigger deals with a file, such as On playend - mIRC|ON PLAYEND, On filercvd - mIRC|ON FILERCVD, On filesent - mIRC|ON FILESENT, etc.
+The $filename identifier is filled when an event's trigger deals with a file, such as :doc:`on playend </events/on_playend>`, :doc:`on filercvd </events/on_filercvd>`, :doc:`on filesent </events/on_filesent>`, etc.
 
 Synopsis
 --------
