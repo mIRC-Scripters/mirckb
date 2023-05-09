@@ -36,5 +36,3 @@ See also
     :columns: 4
 
     * :doc:`$dbuh </identifiers/dbuh>`
-* Dialogs - mIRC|Dialogs
-

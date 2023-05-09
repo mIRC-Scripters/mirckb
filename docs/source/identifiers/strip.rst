@@ -19,8 +19,9 @@ Parameters
 
     * - Parameter
       - Description
-    * - Text
+    * - <text>
       - Text string from which to remove colors or control codes.
+
 Optional types to strip from text. Default is $strip(text,burci)
 
 .. list-table::

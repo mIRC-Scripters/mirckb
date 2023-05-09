@@ -6,7 +6,9 @@ The $didwm identifier return the number of the line that matched the :ref:`match
 Synopsis
 --------
 
- $didwm(name,id,wildcard,N)
+.. code:: text
+
+    $didwm(name,id,wildcard,N)
 
 Parameters
 ----------
@@ -29,12 +31,7 @@ Parameters
 Properties
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Property
-      - Description
+None
 
 Example
 -------
@@ -57,5 +54,4 @@ See also
     * :doc:`/dialog </commands/dialog>`
     * :doc:`/did </commands/did>`
     * :doc:`/didtok </commands/didtok>`
-* On dialog - mIRC|ON DIALOG
 

@@ -28,7 +28,12 @@ Example
     alias test.play {
       msg $pnick test : $1-
     }
-And use //play -a test.play <nick|channel> file.txt
+
+And use:
+
+.. code:: text
+
+    //play -a test.play <nick|channel> file.txt
 
 Compatibility
 -------------

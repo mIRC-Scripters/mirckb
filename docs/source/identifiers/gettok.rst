@@ -133,5 +133,4 @@ See also
     * :doc:`$reptok </identifiers/reptok>`
     * :doc:`$sorttok </identifiers/sorttok>`
     * :doc:`$wildtok </identifiers/wildtok>`
-List of identifiers - mIRC|Full list of identifiers
 

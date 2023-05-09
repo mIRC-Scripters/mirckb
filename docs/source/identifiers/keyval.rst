@@ -20,7 +20,7 @@ None
 Example
 -------
 
-Create an alias that launches a custom, :ref:`picture_windows which listens for key presses and displays the key value pressed, the key character pressed, and if it is repeating:
+Create an alias that launches a custom, :ref:`picture_windows` which listens for key presses and displays the key value pressed, the key character pressed, and if it is repeating:
 
 .. code:: text
 

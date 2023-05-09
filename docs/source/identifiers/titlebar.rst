@@ -3,7 +3,7 @@ $titlebar
 
 $titlebar returns the current mIRC titlebar.
 
-.. note:: Use :doc:`$window </identifiers/window>`(window).title to get a custom window titlebar.
+.. note:: Use :doc:`$window(window).title </identifiers/window>` to get a custom window titlebar.
 
 Synopsis
 --------

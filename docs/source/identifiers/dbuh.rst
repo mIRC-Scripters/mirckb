@@ -36,5 +36,3 @@ See also
     :columns: 4
 
     * :doc:`$dbuw </identifiers/dbuw>`
-* Dialogs - mIRC|Dialogs
-

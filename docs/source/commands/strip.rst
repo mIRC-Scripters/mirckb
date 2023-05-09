@@ -1,7 +1,7 @@
 /strip
 ======
 
-The '''/strip'' command is used to essentially enable or disable certain control-code stripping within mIRC.
+The /strip command is used to essentially enable or disable certain control-code stripping within mIRC.
 
 Synopsis
 --------

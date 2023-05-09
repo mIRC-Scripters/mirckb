@@ -28,7 +28,12 @@ Example
     on *:op:#:{
       echo -a $modefirst
     }
-and send /mode #channel +oo nick1 nick2
+
+And send:
+
+.. code:: text
+
+    /mode #channel +oo nick1 nick2
 
 Compatibility
 -------------

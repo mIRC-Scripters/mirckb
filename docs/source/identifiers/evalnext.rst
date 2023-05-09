@@ -1,7 +1,7 @@
 $evalnext
 =========
 
-$evalnext returns the same as :doc:`$eval </identifiers/eval>`(text,2)
+$evalnext returns the same as :doc:`$eval(text,2) </identifiers/eval>`
 
 Synopsis
 --------

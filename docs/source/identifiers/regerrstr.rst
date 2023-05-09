@@ -156,9 +156,9 @@ List of error
     * - 58
       - a numbered reference must not be zero
     * - 59
-      - an argument is not allowed for (*ACCEPT), (*FAIL), or (*COMMIT)
+      - an argument is not allowed for (\*ACCEPT), (\*FAIL), or (\*COMMIT)
     * - 60
-      - (*VERB) not recognized or malformed
+      - (\*VERB) not recognized or malformed
     * - 61
       - number is too big
     * - 62
@@ -170,7 +170,7 @@ List of error
     * - 65
       - different names for subpatterns of the same number are not allowed
     * - 66
-      - (*MARK) must have an argument
+      - (\*MARK) must have an argument
     * - 67
       - this version of PCRE is not compiled with Unicode property support
     * - 68
@@ -188,7 +188,7 @@ List of error
     * - 74
       - invalid UTF-16 string (specifically UTF-16)
     * - 75
-      - name is too long in (*MARK), (*PRUNE), (*SKIP), or (*THEN)
+      - name is too long in (\*MARK), (\*PRUNE), (\*SKIP), or (\*THEN)
     * - 76
       - character value in \u.... sequence is too large
     * - 77

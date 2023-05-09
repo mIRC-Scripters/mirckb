@@ -31,25 +31,25 @@ Parameters
     * - Type
       - Address Mask
     * - 0
-      - *!user@host
+      - \*!user@host
     * - 1
-      - *!*user@host
+      - \*!\*user@host
     * - 2
-      - *!*@host
+      - \*!\*@host
     * - 3
-      - *!*user@*.host
+      - \*!\*user@\*.host
     * - 4
-      - *!*@*.host
+      - \*!\*@\*.host
     * - 5
       - nick!user@host
     * - 6
-      - nick!*user@host
+      - nick!\*user@host
     * - 7
-      - nick!*@host
+      - nick!\*@host
     * - 8
-      - nick!*user@*.host
+      - nick!\*user@\*.host
     * - 9
-      - nick!*@*.host
+      - nick!\*@\*.host
 
 Type 10-19 are same as types 0-9 except asterisks in host are expanded to the text they replaced, then all numbers are replaced by question marks.
 

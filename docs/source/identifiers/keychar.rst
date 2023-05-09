@@ -52,7 +52,7 @@ Below is an image reflecting what this example will look like:
 
 File:Keyup event.png|This screenshot shows an example of the ON KEYDOWN event custom example.
 
-Note that this makes use of :ref:`picture_windows`, the :doc:`/drawtext </commands/drawtext>` command. These types of :ref:`picture_windows and their tools can be very powerful in creating some amazing graphical layouts, as well as mIRC games.
+Note that this makes use of :ref:`picture_windows`, the :doc:`/drawtext </commands/drawtext>` command. These types of :ref:`picture_windows` and their tools can be very powerful in creating some amazing graphical layouts, as well as mIRC games.
 
 Compatibility
 -------------

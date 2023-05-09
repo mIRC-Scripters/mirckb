@@ -50,5 +50,4 @@ See also
 
     * :doc:`$isfile </identifiers/isfile>`
     * :doc:`$isdir </identifiers/isdir>`
-* 
 

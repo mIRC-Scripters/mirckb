@@ -43,5 +43,3 @@ See also
     * :doc:`/dialog </commands/dialog>`
     * :doc:`/did </commands/did>`
     * :doc:`/didtok </commands/didtok>`
-* On dialog - mIRC|ON DIALOG
-

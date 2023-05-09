@@ -70,7 +70,7 @@ The length of the data to be sent would be unknown, to make the script very well
 
 We are naturally not using a single line otherwise our limit would be of the line length limit of mIRC (4150 bytes).
 
-The limit of the sending buffer being 16384, that's our maximum. A nice method is to write the content to be sent to a file and then to use :ref:`file_handling`. After :doc:`/fopening </commands/fopen>` the file, use :doc:`$fread </identifiers/fread>`(<name>,<N>,<&binvar>) which will fill <&binvar> with N bytes from the current pointer in the file, you can set N here to 16384 to get the fastest sending.
+The limit of the sending buffer being 16384, that's our maximum. A nice method is to write the content to be sent to a file and then to use :ref:`file_handling`. After :doc:`/fopening </commands/fopen>` the file, use :doc:`$fread(\<name\>,\<N\>,\<&binvar\>) </identifiers/fread>` which will fill <&binvar> with N bytes from the current pointer in the file, you can set N here to 16384 to get the fastest sending.
 
 .. code:: text
 
@@ -90,7 +90,7 @@ The limit of the sending buffer being 16384, that's our maximum. A nice method i
       }
     }
 
-Note that this is how you should theorically handle the sending of an unknown length of data. However, if the sending buffer is empty, you can send more than 16384 bytes (as long as you can set the binary variable holding more than that) using a binary variable. mIRC will correctly cut that in chunk of 16384 bytes or less. This then only becomes a problem if you are willing to queue more without waiting for it to be sent (which could take some times, you would end up with an error because the sending buffer is full, and you would need the above event)
+.. note:: This is how you should theorically handle the sending of an unknown length of data. However, if the sending buffer is empty, you can send more than 16384 bytes (as long as you can set the binary variable holding more than that) using a binary variable. mIRC will correctly cut that in chunk of 16384 bytes or less. This then only becomes a problem if you are willing to queue more without waiting for it to be sent (which could take some times, you would end up with an error because the sending buffer is full, and you would need the above event)
 
 Compatibility
 -------------

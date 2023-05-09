@@ -33,7 +33,7 @@ Echo to the active window the total number of DCC ignore list items:
 
     //echo -a $dccignore(0)
 
-Echo to the active window if *.exe is in the DCC ignore list:
+Echo to the active window if \*.exe is in the DCC ignore list:
 
 .. code:: text
 

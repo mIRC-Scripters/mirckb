@@ -117,25 +117,27 @@ Otherwise:
     * - [-l method password]
       - specify the method to be used to identify to nickserv/service, method can be:
 
-
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Method
       - Description
-    * - pass - using this method means that the [password] parameter (the server password) is what contains your nickname's password (default if you don't use -l, typically IRC server will try to identify you to service such as nickserv using your current nickname and the server password provided)
+    * - pass 
+      - using this method means that the [password] parameter (the server password) is what contains your nickname's password (default if you don't use -l, typically IRC server will try to identify you to service such as nickserv using your current nickname and the server password provided)
     * - sasl 
-      - using this method means that mIRC will use SASL to identify you. The next parameter can be:
-        * nick:password - nick is the registered nick/account and password is the password for that account (this indeed means that you can connect to IRC server with a nickname that is different from the nickserv nickname/account and still be logged to that account)
-        * password - a password only, mIRC will use your current nickname to auth you
-        * mIRC will first interpret this parameter as nick:pass if a ':' is present and only if that fails it will try that value as a password only, using your current nickname to auth.
+      - using this method means that mIRC will use SASL to identify you. The next parameter can be: ``nick:password``, ``password``. See below note.
     * - external
       - This method uses a TLS certificate and have services recognize it automatically. You must connect over SSL.
     * - msg 
       - This method means that mIRC will use '/msg nickserv identify' once the raw 001 is received. You must specify your password (without a nickname/account of the form nick:pass, just the password) after the method
     * - nickserv 
       - This method means that mIRC will use '/nickserv identify' once the raw 001 is received. You must specify your password (without a nickname/account of the form nick:pass, just the password) after the method
+
+.. note:: 
+    * nick:password - nick is the registered nick/account and password is the password for that account (this indeed means that you can connect to IRC server with a nickname that is different from the nickserv nickname/account and still be logged to that account)
+    * password - a password only, mIRC will use your current nickname to auth you
+    * mIRC will first interpret this parameter as nick:pass if a ':' is present and only if that fails it will try that value as password only, using your current nickname to auth.
 
 Example
 -------

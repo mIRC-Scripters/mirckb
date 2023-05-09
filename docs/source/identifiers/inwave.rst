@@ -56,11 +56,11 @@ See also
 .. hlist::
     :columns: 4
 
-* Playing Music - mIRC|Playing Music
-* On midiend - mIRC|ON MIDIEND
-* On mp3end - mIRC|ON MP3END
-* On nosound - mIRC|ON NOSOUND
-* On waveend - mIRC|ON WAVEEND
+    * :doc:`playing music </other/playing_music>`
+    * :doc:`on midiend </events/on_midiend>`
+    * :doc:`on mp3end </events/on_mp3end>`
+    * :doc:`on nosound </events/on_nosound>`
+    * :doc:`on waveend </events/on_waveend>`
     * :doc:`$inmidi </identifiers/inmidi>`
     * :doc:`$insong </identifiers/insong>`
     * :doc:`$sound </identifiers/sound>`
