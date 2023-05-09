@@ -17,8 +17,8 @@ Presently undocumented or deprecated identifiers are indicated with a :sup:`D`. 
             :columns: 4
 
             * :doc:`$1- <dollar1dash>`
-            * :doc:`$! <exclamation_mark>`
-            * :doc:`$? <question_mark>`
+            * :doc:`$! <dollarexclamation_mark>`
+            * :doc:`$? <dollarquestion_mark>`
 
     .. tab:: A
 

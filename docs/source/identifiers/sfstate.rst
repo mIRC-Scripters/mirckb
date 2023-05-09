@@ -38,7 +38,7 @@ Example
 Compatibility
 -------------
 
-.. compatibility:: 7.51 Beta 60
+.. compatibility:: 7.51Beta60
 
 See also
 --------

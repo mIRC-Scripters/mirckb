@@ -314,6 +314,8 @@ Whilst the token manipulation functionality is designed to be used for maintaini
    //echo -a # $+ $gettok($gettok(Why not join #superheros now?,2,35),1,32)
    #superheros
 
+.. _token_manipulation:
+
 Token Manipulation
 ------------------
 
