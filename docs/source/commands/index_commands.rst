@@ -214,8 +214,6 @@ Commands
 
 			* :doc:`/join <join>`
 
-   .. tab:: K
-
    .. tab:: L
 
    		.. hlist::
@@ -417,10 +415,6 @@ Commands
 			:columns: 4
 
 			* :doc:`/xyzzy <xyzzy>`
-
-   .. tab:: Y
-
-   .. tab:: Z
 
 .. toctree::
    :maxdepth: 1
