@@ -19,8 +19,10 @@ Parameters
 
     * - Parameter
       - Description
-LIST: - Text list delimited by a character into tokens
-C: - The :doc:`$asc </identifiers/asc>` value which splits LIST into tokens
+    * - LIST:
+      - Text list delimited by a character into tokens
+    * - C:
+      - The :doc:`$asc </identifiers/asc>` value which splits LIST into tokens
 
 Properties
 ----------

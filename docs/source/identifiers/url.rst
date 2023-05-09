@@ -23,7 +23,8 @@ Parameters
 
     * - Parameter
       - Description
-N The Nth URL in the list or return the total number of URL if N = 0.
+    * - N 
+      - The Nth URL in the list or return the total number of URL if N = 0.
 
 Properties
 ----------

@@ -28,13 +28,14 @@ Parameters
 Properties
 ----------
 
+If a parameter is provided, you can use the following properties:
+
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Property
       - Description
-If a parameter is provided, you can use the following properties:
     * - .tag
       - returns the name of the Nth tag
     * - .key
@@ -54,7 +55,3 @@ Compatibility
 
 See also
 --------
-
-.. hlist::
-    :columns: 4
-

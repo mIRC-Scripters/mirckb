@@ -25,19 +25,13 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - seconds
       - The specific number of seconds to get the formatting for
     * - N
       - Can be either 2, which omits seconds from the results, or 3, which returns the time in hh:nn:ss format
 
 Beginning v7.63 correctly handles negative durations.
+
 Example
 -------
 

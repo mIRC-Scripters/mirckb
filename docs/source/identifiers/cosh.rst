@@ -38,7 +38,8 @@ Properties
 
     * - Property
       - Description
-deg - Sees N as degrees in a 360 degree circle instead of radians.
+    * - .deg 
+      - Sees N as degrees in a 360 degree circle instead of radians.
 
 Example
 -------

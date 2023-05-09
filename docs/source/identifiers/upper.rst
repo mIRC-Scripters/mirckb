@@ -21,6 +21,7 @@ Parameters
       - Description
     * - text
       - the text you want in uppercase
+
 Properties
 ----------
 
@@ -69,5 +70,5 @@ See also
     * :doc:`$lower </identifiers/lower>`
     * :doc:`$isupper </identifiers/isupper>`
     * :doc:`$islower </identifiers/islower>`
-* {{mIRC|operators}}
+    * :ref:`operators`
 

@@ -57,7 +57,7 @@ See also
 .. hlist::
     :columns: 4
 
-:doc:`string manipulation </beginner/string_and_token_manipulation>`
+    * :doc:`string manipulation </beginner/string_and_token_manipulation>`
     * :doc:`$left </identifiers/left>`
     * :doc:`$mid </identifiers/mid>`
 

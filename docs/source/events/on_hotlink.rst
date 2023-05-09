@@ -34,7 +34,7 @@ Parameters
       - The level for the event to trigger.
     * - <matchtext>
       - The text that to be matched. Can also be a :ref:`matching_tools-wildcard`.
-    * - <*#?=!@>
+    * - <\*#?=!@>
       - The window type that this event should monitor.
     * - <commands>
       - The commands to be performed when the event listener's criteria is met.
@@ -62,11 +62,11 @@ Parameters
 Examples
 --------
 
-Monitor all windows for the a word matchting '*hoverme*' and echo to the active window the word that was hovered:
+Monitor all windows for the a word matchting *hoverme* and echo to the active window the word that was hovered:
 
 .. code:: text
 
-    ON *:HOTLINK:*hoverme*:*:echo -a $1 was just hovered!
+    ON *:HOTLINK:\*hoverme\*:*:echo -a $1 was just hovered!
 
 Old on hotlink handling
 -----------------------

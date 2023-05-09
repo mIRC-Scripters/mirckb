@@ -87,7 +87,8 @@ Properties
       - returns the window handle number
     * - sbtext
       - sbtext returns the switchbar button text
-* sbcolor the name of the switchbar highlight color, event/message/highlight, or $null if not colored
+    * - sbcolor 
+      - the name of the switchbar highlight color, event/message/highlight, or $null if not colored
     * - sbstate
       - returns switchbar button state for a window, 0=hidden 1=not hidden
     * - tbtext

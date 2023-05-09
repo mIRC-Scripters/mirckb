@@ -19,13 +19,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - string
       - The target string to match
     * - substring

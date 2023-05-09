@@ -28,7 +28,8 @@ Example
     on *:op:#:{
       echo -a $modelast
     }
-and send /mode #channel +oo nick1 nick2
+
+And send /mode #channel +oo nick1 nick2
 
 Compatibility
 -------------

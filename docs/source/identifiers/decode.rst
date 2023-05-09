@@ -14,7 +14,7 @@ Synopsis
     ; encryption
     $decode(text/%var/&binvar, celirznp, key[, salt/iv])
 
-* See * :doc:`$encode </identifiers/encode>` for more info, as this identifier's purpose is to reverse the encoding or encryption in strings created by $encode.
+See :doc:`$encode </identifiers/encode>` for more info, as this identifier's purpose is to reverse the encoding or encryption in strings created by $encode.
 
 Parameters
 ----------
@@ -133,7 +133,7 @@ For example, $encode always pads 1-8 bytes to make the message have a padded len
 
 Solution: You should avoid using 'p' padding which can strip trailing spaces from the message, and same for using 'z' padding for binary strings which could end with 0x00, or with text strings which could end with byte value 128.
 
-* Encrypting by default creates a random salt, then precedes the encrypted string with a 16-byte header as the "Salted__" label followed by the 8 bytes of the random salt being used. If using the 's' switch, that allows specifying a user-defined salt instead of letting one be randomly generated. When $decode sees the 1st 8 bytes of the ciphertext matching the 'Salted__' string, it ignores the 's' parameter you used, and instead uses the 8 bytes found in the ciphertext block following the 'Salted__'. However, $decode even does that when you used the 'l' switch to use a literal key instead of creating a hashed key based on the key parameter, and it ignores the 'i' switch instructing $decode to use a literal IV and to not generate a salted-key by combining the key parameter with what it 'thinks' is a salt. And that's the only reason the following can successfully decrypt the encrypted message:
+* Encrypting by default creates a random salt, then precedes the encrypted string with a 16-byte header as the "%Salted%" label followed by the 8 bytes of the random salt being used. If using the 's' switch, that allows specifying a user-defined salt instead of letting one be randomly generated. When $decode sees the 1st 8 bytes of the ciphertext matching the '%Salted%' string, it ignores the 's' parameter you used, and instead uses the 8 bytes found in the ciphertext block following the '%Salted%'. However, $decode even does that when you used the 'l' switch to use a literal key instead of creating a hashed key based on the key parameter, and it ignores the 'i' switch instructing $decode to use a literal IV and to not generate a salted-key by combining the key parameter with what it 'thinks' is a salt. And that's the only reason the following can successfully decrypt the encrypted message:
 
 .. code:: text
 
@@ -144,10 +144,10 @@ The same thing happens in reverse, where a message was created using the 'ir' sw
 .. code:: text
 
     //var -s %encrypt $encode(message,mcir,key,abcdefgh) , %decrypt $decode(%encrypt,mc,key)
-    $decode also ignores the content of the salt parameter if it detects the 'Salted__' label, and instead uses the bytes it finds there.
+    $decode also ignores the content of the salt parameter if it detects the '%Salted%' label, and instead uses the bytes it finds there.
     //var -s %encrypt $encode(message,mcs,key,abcdefgh) , %decrypt $decode(%encrypt,mcs,key,12345678)
 
-While this is intended to help users who don't use the correct syntax, it does not permit ciphertext to be perfectly decrypted when correct syntax is used. Using the 'ci' switches without using 'r' results in encrypting using a user-defined literal IV but does not increase the filesize by 16 bytes in order to attach it as a header. In the rare cases where this results in encrypting a message so that the first 8 bytes of the actual ciphertext matches either of the 'Salted__' or 'RandomIV' labels, $decode again ignores the user switches and decides that the 1st block of the ciphertext must be a label instead, and then it uses the 2nd block of ciphertext as if it were either a salt or IV string, then begins decryption as of the 3rd 8-byte chunk of the message, resulting in either correct decryption for the message excluding the 1st 16 bytes, or having the output garbled due to using ciphertext as a salt in order to arrive at a completely wrong salted-key and salted-IV.
+While this is intended to help users who don't use the correct syntax, it does not permit ciphertext to be perfectly decrypted when correct syntax is used. Using the 'ci' switches without using 'r' results in encrypting using a user-defined literal IV but does not increase the filesize by 16 bytes in order to attach it as a header. In the rare cases where this results in encrypting a message so that the first 8 bytes of the actual ciphertext matches either of the '%Salted%' or 'RandomIV' labels, $decode again ignores the user switches and decides that the 1st block of the ciphertext must be a label instead, and then it uses the 2nd block of ciphertext as if it were either a salt or IV string, then begins decryption as of the 3rd 8-byte chunk of the message, resulting in either correct decryption for the message excluding the 1st 16 bytes, or having the output garbled due to using ciphertext as a salt in order to arrive at a completely wrong salted-key and salted-IV.
 
 This next command encrypts the message using a literal key and a literal IV without storing the IV into the message header. Because the 1st 8 bytes of the ciphertext matches the 'RandomIV' label, the 1st 16 bytes of the decrypted string is missing:
 
@@ -159,14 +159,14 @@ This next command encrypts the message using a literal key and a literal IV with
     original msg: This isn't shownButThisIs
     decrypted as: ButThisIs
 
-In the next example, the same $encode switches for encrypting using a literal IV and literal key results in ciphertext whose 1st 8 bytes matches the 'Salted__' label. This makes $decode ignore the 'li' switches being used, and ignores the content of the IV parameter. Instead, it combines the key parameter with bytes 9-16 of the ciphertext as if that's a salt, causing $decode to generate the completely wrong salted key used for decryption, resulting in completely garbled output.
+In the next example, the same $encode switches for encrypting using a literal IV and literal key results in ciphertext whose 1st 8 bytes matches the '%Salted%' label. This makes $decode ignore the 'li' switches being used, and ignores the content of the IV parameter. Instead, it combines the key parameter with bytes 9-16 of the ciphertext as if that's a salt, causing $decode to generate the completely wrong salted key used for decryption, resulting in completely garbled output.
 
 .. code:: text
 
-    //var -sp %switches mcli , %key key encrypts 1st block of ciphertext as 'Salted__', %salt 128 173 196 14 99 213 69 247 , %salt $regsubex(%salt,/(\d+) ?/g,$chr(\t)) , %original Garbled Decryption Of 3rd Block and later , %enc $encode(%original,%switches,%key,%salt) | bset -t &v 1 %enc | echo -a $decode(&v,bm) 1st 8 bytes of ciphertext: $bvar(&v,1-8).text | echo 3 -a original::::: %original | echo 4 -a decrypted as: $decode(%enc,%switches,%key,salt)
+    //var -sp %switches mcli , %key key encrypts 1st block of ciphertext as '%Salted%', %salt 128 173 196 14 99 213 69 247 , %salt $regsubex(%salt,/(\d+) ?/g,$chr(\t)) , %original Garbled Decryption Of 3rd Block and later , %enc $encode(%original,%switches,%key,%salt) | bset -t &v 1 %enc | echo -a $decode(&v,bm) 1st 8 bytes of ciphertext: $bvar(&v,1-8).text | echo 3 -a original::::: %original | echo 4 -a decrypted as: $decode(%enc,%switches,%key,salt)
     
     result:
-    48 1st 8 bytes of ciphertext: Salted__
+    48 1st 8 bytes of ciphertext: %Salted%
     original::::: Garbled Decryption Of 3rd Block and later
     decrypted as: ?¦h�Û_Z.4Kò?Ñ�H)O?R´?R?i®´¹:Ôw
 
@@ -176,11 +176,16 @@ You can avoid doing that most of the time by checking to see if the base64 strin
 
 If using Blowfish encryption, it's best if you not use a version prior to v7.58 due to a series of important fixes in that and prior versions. This includes the fix of a GPF bug when $decode receives certain invalid inputs, and a fix in v7.56 where random salts containing the 0x00 byte are no longer truncated. If needing to communicate with someone using using v7.55 or earlier, both sides must create their random salt using the following alias to prevent the prior incorrect handling of salts resulting in 1/32 of messages being unable to be read in either direction.
 
-alias randsalt returnex $regsubex($str(x,8),/x/g,$chr($rand(1,255))))
+.. code:: text
+
+    alias randsalt returnex $regsubex($str(x,8),/x/g,$chr($rand(1,255))))
 
 $encode does not reject invalid salt/iv strings longer than 8, and instead ignores the portion beyond length 8. This means that using the length 10 $ctime string as the salt or IV results in the identical key being used across a span of 100 seconds:
 
-/.timerfoo 120 1 echo -a $encode(message,mcs,key,$ctime) * $ctime
+.. code:: text
+
+    /.timerfoo 120 1 echo -a $encode(message,mcs,key,$ctime) * $ctime
+
 Compatibility
 -------------
 

@@ -19,13 +19,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - @
       - The custom picture window name to target
     * - N
@@ -39,13 +32,6 @@ Properties
     :header-rows: 1
 
     * - Property
-      - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
       - Description
     * - x
       - Get the current x position of the mouse click
@@ -118,5 +104,5 @@ See also
 .. hlist::
     :columns: 4
 
-* :ref:`picture_windows`
+    * :ref:`picture_windows`
 

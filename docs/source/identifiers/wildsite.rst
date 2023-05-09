@@ -1,7 +1,7 @@
 $wildsite
 =========
 
-$wildsite returns the address of the user who triggered an event in the form *!*@host.
+$wildsite returns the address of the user who triggered an event in the form ``*!*@host``.
 
 Synopsis
 --------

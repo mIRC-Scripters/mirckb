@@ -24,14 +24,7 @@ Parameters
     * - url
       - the url to access, must be prefixed with http:// or https:// (maximum url characters are <b>2000</b>)
     * - hgpuadfbrtic
-      - switches to indicate how to proceed:
-** hgpuad - h for HEAD, g for GET, p for POST, u for PUT, a for PATCH, d for DELETE
-** fb - f to output the answer (without the responses headers) to a file, b to ouput to a binvar
-** r - resumes the processing, 
-** t - uses .part file if necessary
-** i - ignores SSL errors
-** c - cancel the processing
-** k - prevent redirection
+      - switches to indicate how to proceed. See next table.
     * - target
       - the output: the filename if you used f, or a &binvar for b
     * - alias
@@ -42,6 +35,27 @@ Parameters
       - optional, a &binvar containing the data to be sent when you are POSTing
     * - ID/N
       - the Nth urlget or the urlget referenced by the ID
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Switch
+      - Description
+    * - hgpuad
+      - h for HEAD, g for GET, p for POST, u for PUT, a for PATCH, d for DELETE
+    * - fb
+      - f to output the answer (without the responses headers) to a file, b to ouput to a binvar
+    * - r
+      - resumes the processing, 
+    * - t
+      - uses .part file if necessary
+    * - i
+      - ignores SSL errors
+    * - c
+      - cancel the processing
+    * - k
+      - prevent redirection
 
 Properties
 ----------

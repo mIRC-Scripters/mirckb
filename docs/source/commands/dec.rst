@@ -23,7 +23,15 @@ Switches
       - Description
     * - -s
       - Prints out the value of the variable
+
 Global variables only:
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Switch
+      - Description
     * - -c
       - Decreases the variable once per second
     * - -r

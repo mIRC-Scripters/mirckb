@@ -35,5 +35,4 @@ See also
 .. hlist::
     :columns: 4
 
-* On input - mIRC|ON INPUT
-
+    * :doc:`on input </events/on_input>`

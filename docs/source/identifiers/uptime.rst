@@ -25,6 +25,7 @@ Parameters
       - The time period counts since connected to that server.
     * - system
       - The time period counts since windows booted up.
+
 Optional Parameter N is an integer 0-3:
 
 .. list-table::

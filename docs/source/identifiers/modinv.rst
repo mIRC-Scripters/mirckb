@@ -29,6 +29,7 @@ Parameters
       - Integer
     * - modulus
       - divisor used for obtaining the inverse of N
+
 Properties
 ----------
 

@@ -31,21 +31,33 @@ Parameters
       - The size of the font, you can specify a negative value to match the size of fonts in the font dialog
     * - width
       - The width at which the text should wrap
+    * - N 
+      - The Nth line wrapped, use 0 to get the total number of wrapped line.
 
 Previously, the 5th parameter was an optional 'word' parameter accepting either 0 (disabled) or 1 (enabled) to indicate handling of word wrapping. Though the old syntax is still enabled, it's now a set of options to go with $width and $height:
 
-* bNiNpNtN - Optional parameter, defines some options for the measurement, N can be 1 or 0 to enable or disable the option, with '1' assumed when 'N' not present:
-** bN enables/disables the width used when the bold 'style' is enabled for that font
-** iN enables/disables the width used when the italic 'style' is enabled for that font
-** pN enables/disables control codes always handled as if zero-width characters 
-** tN enables/disables tab character 0=zero_width 1=tab-expansion
-** wN enables word wrapping 0=chop 1=entire word on next line
-* N - The Nth line wrapped, use 0 to get the total number of wrapped line.
+bNiNpNtN - Optional parameter, defines some options for the measurement, N can be 1 or 0 to enable or disable the option, with '1' assumed when 'N' not present:
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - bN
+      - enables/disables the width used when the bold 'style' is enabled for that font
+    * - iN
+      - enables/disables the width used when the italic 'style' is enabled for that font
+    * - pN
+      - enables/disables control codes always handled as if zero-width characters 
+    * - tN
+      - enables/disables tab character 0=zero_width 1=tab-expansion
+    * - wN
+      - enables word wrapping 0=chop 1=entire word on next line
+
 
 * Because the switches parameter is optional, it must not be present if no switches are used.
-
 * The bN and iN settings refer to the 'style' dropdown in the 'select font' dialog, for the fonts who have different for some characters when the 'bold' or 'italic' style is enabled. They do NOT refer to the 'b' and 'i' control codes as used by $strip.
-
 * Because /echo no longer expands the 'tab' character, the t[N] setting is no longer relevant there, but continues to be used by the /drawtext command.
 
 Properties
@@ -87,11 +99,15 @@ Now execute "/picwinchat test this is a very long text ok some more word please 
 
     //var %c $asc(M) , %font Verdana | echo -a b1 $width($chr(%c),%font,21,b1) vs b0 $width($chr(%c),%font,21,b0) vs p1 $width($chr(%c),%font,21,p1) vs i1 $width($chr(%c),%font,21,i1) vs i0 $width($chr(%c),%font,21,i0) vs b1i1 $width($chr(%c),%font,21,b1i1)
 
-* result: b1 20 vs b0 18 vs p1 18 vs i1 19 vs i0 18 vs b1i1 21
+.. code:: text
+
+    * result: b1 20 vs b0 18 vs p1 18 vs i1 19 vs i0 18 vs b1i1 21
 
 When changing %c to be the number 2 instead of $asc(M), the result for p1 changes to 0 because codepoint 2 is the control-code for 'bold', and the 'p1' processing of control-codes gives them all a zero width.
 
-* result: b1 11 vs b0 10 vs p1 0 vs i1 10 vs i0 10 vs b1i1 11
+.. code:: text
+
+    * result: b1 11 vs b0 10 vs p1 0 vs i1 10 vs i0 10 vs b1i1 11
 
 Compatibility
 -------------

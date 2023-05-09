@@ -46,22 +46,30 @@ Parameters
 Properties
 ----------
 
+When only one parameter is passed to $tip, you can use the following properties:
+
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Property
       - Description
-When only one parameter is passed to $tip, you can use the following properties:
-
-* .name - returns the name of the tip (used with the N parameter typically)
-* .title - return the title of the tip
-* .text - return the text of the tip
-* .delay - return the delay of the tip
-* .iconfn - return the icon filename used if any
-* .iconpos - return the position of the icon for a file containing multiple icons
-* .alias - return the name of the alias called when double clicking the tip
-* .wid - return the id the window to which the tip belongs
+    * - .name
+      - returns the name of the tip (used with the N parameter typically)
+    * - .title
+      - return the title of the tip
+    * - .text
+      - return the text of the tip
+    * - .delay
+      - return the delay of the tip
+    * - .iconfn
+      - return the icon filename used if any
+    * - .iconpos
+      - return the position of the icon for a file containing multiple icons
+    * - .alias
+      - return the name of the alias called when double clicking the tip
+    * - .wid
+      - return the id the window to which the tip belongs
 
 Example
 -------

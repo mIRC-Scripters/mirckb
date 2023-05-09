@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-* Path = ''The direction/path of the filename you want to check for.''
+    * - Path
+      - The direction/path of the filename you want to check for.
 
 Properties
 ----------

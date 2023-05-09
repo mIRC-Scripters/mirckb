@@ -27,6 +27,7 @@ Parameters
       - The beginning position within the binary variable. N=0 returns the length of the binary variable. Can also be range, N- or N1-N2. (First byte is pos 1 not offset 0)
     * - M
       - Optional length of the number of values to return. If there are not M bytes beginning at the Nth position, returns all the remaining bytes beginning at the Nth position.
+
 Properties
 ----------
 
@@ -36,12 +37,18 @@ Properties
 
     * - Property
       - Description
-* .text - returns a string from the bytes, bytes are decoded from utf8
-* .ansi - returns a string from the bytes, bytes are not decoded from utf8
-* .word - Outputs decimal value of a 2-byte word, seeing bytes in little-endian byte order (low value first)
-* .nword - Outputs decimal value of a 2-byte word, seeing bytes in big-endian byte order (high value first)
-* .long - Outputs decimal value of a 4-byte dword (unsigned long), seeing bytes in little-endian byte order (low value first)
-* .nlong - Outputs decimal value of a 4-byte dword (unsigned long), seeing bytes in big-endian byte order (high value first)
+    * - .text
+      - - returns a string from the bytes, bytes are decoded from utf8
+    * - .ansi
+      - returns a string from the bytes, bytes are not decoded from utf8
+    * - .word
+      - Outputs decimal value of a 2-byte word, seeing bytes in little-endian byte order (low value first)
+    * - .nword
+      - Outputs decimal value of a 2-byte word, seeing bytes in big-endian byte order (high value first)
+    * - .long
+      - Outputs decimal value of a 4-byte dword (unsigned long), seeing bytes in little-endian byte order (low value first)
+    * - .nlong
+      - Outputs decimal value of a 4-byte dword (unsigned long), seeing bytes in big-endian byte order (high value first)
 
 .. note:: word/nword/long/nlong return non-byte values ONLY when M is not used and N is a positive integer without a hyphen, and do not return a series of numbers from a lengthy variable. They return the value from the 2 or 4 bytes beginning at the Nth byte, and returns $null if there are not the needed 2 or 4 bytes to completely fill the word/long.
 

@@ -19,7 +19,7 @@ Parameters
 
     * - Parameter
       - Description
-    * - <*|#|?|@>
+    * - <\*\|#\|?\|@>
       - The location from which you want to listen for spoken word.
     * - <commands>
       - The commands to be performed when the event listener's criteria is met.

@@ -19,13 +19,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - nick
       - The nickname of the user to find common channels with
     * - N
@@ -39,13 +32,6 @@ Properties
     :header-rows: 1
 
     * - Property
-      - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
       - Description
     * - op
       - Returns :doc:`$true </identifiers/true>` if the local mIRC client is opped on the matched channel

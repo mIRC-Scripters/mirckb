@@ -25,13 +25,14 @@ Parameters
 Properties
 ----------
 
+If an ipv6 is given, you can use the following properties:
+
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Property
       - Description
-If an ipv6 is given, you can use the following properties:
     * - .compress
       - returns the compressed version of the ip address
     * - .expand

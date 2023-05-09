@@ -23,13 +23,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - text
       - text string or %variable to be hashed
     * - B

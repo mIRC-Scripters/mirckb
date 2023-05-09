@@ -29,7 +29,7 @@ Parameters
     * - B
       - The other of the shorter sides of the right triangle
 
-Doesn't matter which order the short sides are given. You can use the letter 'e' or 'd' as *10^N, $hypot(5e6,1) = $hypot($calc(5*10^6),1)
+Doesn't matter which order the short sides are given. You can use the letter 'e' or 'd' as ``*10^N, $hypot(5e6,1) = $hypot($calc(5*10^6),1)``
 
 Properties
 ----------

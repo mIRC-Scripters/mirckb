@@ -19,13 +19,14 @@ Parameters
 
     * - Parameter
       - Description
-plaintext - Used with N = 0, the string for which you want the sha384 hash
-
-&binaryvar - A binary variable, used with N = 1, returns the sha384 hash of the content of the binvar
-
-filename - A filename, used with N = 2, returns the sha384 hash of the content of the file
-
-N: Default 0. Optional integer 0-2, where 0 indicates data is treated as plaintext, 1 indicates a &binary variable, 2 treats data as contents of a filename
+    * - plaintext
+      - Used with N = 0, the string for which you want the sha384 hash
+    * - &binaryvar
+      - A binary variable, used with N = 1, returns the sha384 hash of the content of the binvar
+    * - filename
+      - A filename, used with N = 2, returns the sha384 hash of the content of the file
+    * - N 
+      - Default 0. Optional integer 0-2, where 0 indicates data is treated as plaintext, 1 indicates a &binary variable, 2 treats data as contents of a filename
 
 If the N parameter isn't used, the default 0 is used (which is different than $crc which has default of N=2.)
 

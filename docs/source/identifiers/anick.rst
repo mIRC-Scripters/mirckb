@@ -18,12 +18,6 @@ None
 Results
 -------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Value
-      - Description
 Returns the value of your alternative nickname.
 
 Example
@@ -43,7 +37,6 @@ See also
 
     * :doc:`$me </identifiers/me>`
     * :doc:`$mnick </identifiers/mnick>`
-
     * :doc:`/mnick </commands/mnick>`
     * :doc:`/anick </commands/anick>`
 

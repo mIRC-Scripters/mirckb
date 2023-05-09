@@ -52,7 +52,11 @@ To get the address from the event:
 
     on *:text:*:#:echo -a $maddress
 
-And for the user list: //echo -a $maddress(*,1)
+And for the user list: 
+
+.. code:: text
+    
+    //echo -a $maddress(*,1)
 
 Compatibility
 -------------

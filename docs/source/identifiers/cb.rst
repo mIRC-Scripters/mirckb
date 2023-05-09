@@ -89,6 +89,3 @@ Compatibility
 See also
 --------
 
-.. hlist::
-    :columns: 4
-

@@ -21,13 +21,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - filename
       - The file from which text is returned
     * - matchtext

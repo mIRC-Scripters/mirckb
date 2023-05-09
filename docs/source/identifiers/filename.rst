@@ -41,9 +41,9 @@ See also
 .. hlist::
     :columns: 4
 
-* On filercvd - mIRC|ON FILERCVD
-* On filesent - mIRC|ON FILESENT
-* On playend - mIRC|ON PLAYEND
+    * :doc:`on filercvd </events/on_filercvd>`
+    * :doc:`on filesent </events/on_filesent>`
+    * :doc:`on playend </events/on_playend>`
     * :doc:`/dcc </commands/dcc>`
     * :doc:`/play </commands/play>`
 

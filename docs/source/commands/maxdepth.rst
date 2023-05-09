@@ -1,7 +1,7 @@
 /maxdepth
 =========
 
-{{Deprecated feature}}
+.. attention:: This is a deprecated command!
 
 The /maxdepth command could be used to change the maximum allowable recursion limit for a single alias. A depth of 1 indicates no direct recursion is allowed. The maximum depth is 100. Calling an alias from within itself recursively has been disabled.
 

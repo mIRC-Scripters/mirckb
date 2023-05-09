@@ -80,5 +80,4 @@ See also
 .. hlist::
     :columns: 4
 
-On open - mIRC|ON OPEN
-
+    * :doc:`on open </events/on_open>`

@@ -19,13 +19,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - name
       - Returns the color code for the specified name/action/event. Partial matches work as well: $colour(action)
     * - N
@@ -39,13 +32,6 @@ Properties
     :header-rows: 1
 
     * - Property
-      - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
       - Description
     * - dd
       - Allows the color codes to be returned in double-digit format, eg: 02 instead of 2. Does not work on RGB-returned values.

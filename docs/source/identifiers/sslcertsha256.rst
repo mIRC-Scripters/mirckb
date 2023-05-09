@@ -70,9 +70,9 @@ If the server tells mIRC that authentication failed, mIRC checks to see if the p
 
 You can see how SASL PLAIN works if you've used the /debug command to see the raw server messages between you and the server, and then connect to the server to see the connection handshake. A simplified version of the way this SASL PLAIN handshake is supposed to work is:
 
-*1. mIRC sends to server: AUTHENTICATE PLAIN
-*2. the server replies: AUTHENTICATE +
-*3. mIRC replies: AUTHENTICATE bWFyb29uAG1hcm9vbgBuaWNrc2VydnBhc3N3b3Jk
+# mIRC sends to server: AUTHENTICATE PLAIN
+# the server replies: AUTHENTICATE +
+# mIRC replies: AUTHENTICATE bWFyb29uAG1hcm9vbgBuaWNrc2VydnBhc3N3b3Jk
 
 The mime string will be different for you, and is not encrypted, it's simply encoding the string as mime because it cannot be sent as plaintext due to containing a couple of 0x00 bytes. You should NOT paste that base64 string into any channel, because it is simple for anyone to extract your password from it, by pasting the string to replace the mime into the command below.
 
@@ -80,9 +80,11 @@ The mime string will be different for you, and is not encrypted, it's simply enc
 
     //bset -tc &v 1 bWFyb29uAG1hcm9vbgBuaWNrc2VydnBhc3N3b3Jk | noop $decode(&v,bm) | breplace &v 0 32 | echo -a $bvar(&v,1-).text
 
-It needed to replace 0x00's with spaces so the entire string could be visible. If you entered your password as string1:string2 the decoding of that mime would be:
+It needed to replace 0x00's with spaces so the entire string could be visible. If you entered your password as ``string1:string2`` the decoding of that mime would be:
 
-string1:string1:string2
+.. code:: text
+
+    string1:string1:string2
 
 If you didn't have a colon in your password, mIRC replaces both of those string1's with the current nick.
 
@@ -203,7 +205,7 @@ Note that if you let mIRC create the certificate instead, the default filename t
 
 (#E)
 
-<b>Welcome people who let mIRC create the 2048-bit RSA key, here is where they continue with installing their certificate.</b>
+**Welcome people who let mIRC create the 2048-bit RSA key, here is where they continue with installing their certificate.**
 
 Now "OK" your way out of the options menu, and mIRC is now using the certificate. You can confirm that you now have a certificate loaded, by using this command:
 
@@ -229,7 +231,9 @@ If you do not see your certificate listed in the /whois reply, make sure you con
 
 (#G) Now that you've reconnected and have identified to NickServ, send this command to NickServ telling it to add the fingerprint of whatever certificate you used to connect to the server:
 
-	<pre>/msg NickServ CERT ADD</pre>
+.. code:: text
+
+    /msg NickServ CERT ADD
 
 If this fails, then NickServ doesn't see you currently using any certificate.
 
@@ -242,6 +246,8 @@ If successful, you'll receive a reply showing the fingerprint added. At Libera.C
 If you have several servers in that serverlist 'group', and some of them don't use an SSL port, then this authentication fails if you happen to connect using a non-SSL port.
 
 (#I) Now reconnect to the server, and somewhere among the Status Window messages from the server while connecting should be a message similar to:
+
+.. code:: text
 
 	SASL authentication successful
 
@@ -259,6 +265,7 @@ C) That brings up a dialog prompting you to input a few pieces of information. I
 D) When you click OK, this creates a new certificate in the same folder as mirc.ini, and the button labeled "Private key file" changes to contain the path\filename of the certificate you just now created. If you formerly were using a different certificate, it's still there, under the old filename, and you can always click on 'browse' to use the old one. Continue clicking your way out of OPTIONS to ensure mIRC remembers that you're using this certificate.
 
 E) Now go up to Step#E in the OpenSSL Method#1 instructions and continue from there.
+
 Compatibility
 -------------
 

@@ -1,7 +1,7 @@
 $banmask
 ========
 
-$banmask returns the current user ban through either an :doc:`on ban </events/on_ban>`, or an :doc:`on unban </events/on_unban>`. Most of the time, a banmask returns a :ref:`matching_tools-wildcard` address, generally resembling ''*user*@host.net''.
+$banmask returns the current user ban through either an :doc:`on ban </events/on_ban>`, or an :doc:`on unban </events/on_unban>`. Most of the time, a banmask returns a :ref:`matching_tools-wildcard` address, generally resembling \*user\*@host.net.
 
 Synopsis
 --------

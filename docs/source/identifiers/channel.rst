@@ -23,17 +23,12 @@ Parameters
       - Description
     * - N/#
       - The channel or the Nth channel.
-:: if N is 0, returns the total numbers of channels
+
+.. note:: If N is 0, returns the total numbers of channels
 
 Properties
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Property
-      - Description
 See :doc:`$chan </identifiers/chan>` for more informations.
 
 Example

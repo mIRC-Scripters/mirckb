@@ -19,13 +19,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - window
       - The target window to get the editbox contents from
     * - N
@@ -39,13 +32,6 @@ Properties
     :header-rows: 1
 
     * - Property
-      - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
       - Description
     * - selstart
       - Returns the character location in the string of the start of a highlight selection

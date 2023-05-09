@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-* N -This is the angle in radians for which you wish to retrieve the sine.
+    * - N
+      - This is the angle in radians for which you wish to retrieve the sine.
 
 .. note:: You can use the letter 'e' or 'd' as ``*10^N, $sin(5e6) = $sin($calc(5*10^6))``
 
@@ -32,7 +33,7 @@ Properties
 
     * - Property
       - Description
-    * - deg
+    * - .deg
       - Sees N as degrees in a 360 degree circle instead of radians.
 
 Example

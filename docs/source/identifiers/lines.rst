@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-filename - The complete filename you want to know the total number of lines.
+    * - filename
+      - The complete filename you want to know the total number of lines.
 
 Properties
 ----------

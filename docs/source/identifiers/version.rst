@@ -49,8 +49,3 @@ Compatibility
 See also
 --------
 
-.. hlist::
-    :columns: 4
-
-* List of commands - mIRC|List of commands
-

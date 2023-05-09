@@ -18,8 +18,10 @@ Parameters
 
     * - Parameter
       - Description
-number1,number2 = starting/ending range of integers
-char1,char2 = starting/ending characters in range of characters. Valid range $chr(1) through $chr(65535)
+    * - number1,number2
+      - starting/ending range of integers
+    * - char1,char2
+      - starting/ending characters in range of characters. Valid range $chr(1) through $chr(65535)
 
 .. note:: High/Low endpoints of output range can be used in either order.
 

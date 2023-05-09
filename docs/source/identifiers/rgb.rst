@@ -13,13 +13,7 @@ Synopsis
 Parameters
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Parameter
-      - Description
-;Method#1 - Converting R,G,B to single RGB Color Number
+Method #1 - Converting R,G,B to single RGB Color Number
 
 .. list-table::
     :widths: 15 85
@@ -34,7 +28,7 @@ Parameters
     * - B
       - Blue Color intensity from 0-255
 
-;Method#2 - Converting Color Number to R,G,B
+Method#2 - Converting Color Number to R,G,B
 
 .. list-table::
     :widths: 15 85
@@ -45,7 +39,7 @@ Parameters
     * - N
       - Decimal RGB Color Number from 0 through 2^24-1
 
-;Method#3 - Return RGB Color Number for System Color Settings
+Method#3 - Return RGB Color Number for System Color Settings
 
 .. list-table::
     :widths: 15 85
@@ -71,7 +65,7 @@ Example
     //echo -a $color(7) converted to hex is $base($color(7),10,16,6) which shows mIRC's RGB color number is actually combined as B,G,R
     ; 32764 converted to hex is 007FFC which shows mIRC's RGB color number is actually combined as B,G,R
 
-; If you want to get the RGB number for color Goldenrod, which is RGB color #DAA520, you can use $rgb to convert the 3 RGB 0-255 numbers into the single 24-bit decimal number
+If you want to get the RGB number for color Goldenrod, which is RGB color #DAA520, you can use $rgb to convert the 3 RGB 0-255 numbers into the single 24-bit decimal number
 
 .. code:: text
 
@@ -79,7 +73,7 @@ Example
     //var %c DAA520 | echo -a $rgb( $base($left(%c,2),16,10,2) , $base($mid(%c,3,2),16,10,2) , $base($right(%c,2),16,10,2) )
     ; converts 218,165,32 into 2139610 by using $calc(32*65536 + 165*256 + 218*1 )
 
-;RGB can also return the 24-bit RGB decimal number for system color names:
+RGB can also return the 24-bit RGB decimal number for system color names:
 
 .. code:: text
 

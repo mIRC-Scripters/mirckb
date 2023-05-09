@@ -13,13 +13,7 @@ Synopsis
 Parameters
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Parameter
-      - Description
-Nonen
+None
 
 Properties
 ----------

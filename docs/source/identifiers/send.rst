@@ -19,13 +19,6 @@ Parameters
 
     * - Parameter
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
-      - Description
     * - N/nick
       - Refers to either the Nth open connection, or the connection associated with a specific user's nickname
     * - [N]
@@ -39,13 +32,6 @@ Properties
     :header-rows: 1
 
     * - Property
-      - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
       - Description
     * - cid
       - The connection id

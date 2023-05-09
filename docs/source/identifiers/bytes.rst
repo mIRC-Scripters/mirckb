@@ -20,7 +20,7 @@ Parameters
     * - Parameter
       - Description
     * - N
-      - The byte number that you wish to format. You can use the letter 'e' or 'd' as *10^N, $bytes(5e6) = $bytes($calc(5*10^6))
+      - The byte number that you wish to format. You can use the letter 'e' or 'd' as ``*10^N, $bytes(5e6) = $bytes($calc(5*10^6))``
     * - b
       - Comma-formats the number for bytes.
     * - k

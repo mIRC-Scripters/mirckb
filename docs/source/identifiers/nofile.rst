@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-full-filename - the filename you want the path of
+    * - full-filename
+      - the filename you want the path of
 
 Properties
 ----------

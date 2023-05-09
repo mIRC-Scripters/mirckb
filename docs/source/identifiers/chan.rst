@@ -33,13 +33,6 @@ Properties
 
     * - Property
       - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Value
-      - Method
     * - banlist
       - Returns :doc:`$true </identifiers/true>` if mode +b has been seen already, or :doc:`$false </identifiers/false>` if not, or  :doc:`$inmode </identifiers/inmode>` if currently in a mode +b listing.
     * - cid

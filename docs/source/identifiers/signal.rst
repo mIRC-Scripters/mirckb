@@ -28,7 +28,10 @@ Example
     on *:signal:test:{
       echo -a $signal
     }
-//signal test
+
+.. code:: text
+
+    //signal test
 
 Compatibility
 -------------

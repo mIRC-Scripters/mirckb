@@ -20,8 +20,10 @@ Parameters
 
     * - Parameter
       - Description
-* time Optional ctime number. Default when not used is the current ctime
-* format Optional format letters same as :doc:`$asctime </identifiers/asctime>`
+    * - time
+      - Optional ctime number. Default when not used is the current ctime
+    * - format
+      - Optional format letters same as :doc:`$asctime </identifiers/asctime>`
 
 .. note:: This identifier has identical syntax as $asctime. The only difference is the default displayed time when no format string is used.
 

@@ -28,11 +28,22 @@ Parameters
 
 Before, there was a 4th 5th and even a 6th true/false parameters (bold, italic, and control code processing), to set some custom measurements, it was changed to a single 4th parameter when tab processing were added:
 
-* bNiNpNtN - Optional, defines some options for the measurement, N can be 1 or 0 to enable or disable the option:
-** bN enables/disables bold
-** iN enables/disables italic
-** pN enables/disables control code (-bi not needed there)
-** tN enables/disables tab character
+bNiNpNtN - Optional, defines some options for the measurement, N can be 1 or 0 to enable or disable the option:
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Parameter
+      - Description
+    * - bN 
+      - enables/disables bold
+    * - iN 
+      - enables/disables italic
+    * - pN
+      - enables/disables control code (-bi not needed there)
+    * - tN 
+      - enables/disables tab character
 
 Properties
 ----------

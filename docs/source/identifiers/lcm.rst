@@ -24,7 +24,8 @@ Parameters
     * - Parameter
       - Description
     * - N
-      - Integers 
+      - Integers
+
 Properties
 ----------
 

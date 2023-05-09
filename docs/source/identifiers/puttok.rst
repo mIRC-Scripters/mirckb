@@ -19,10 +19,14 @@ Parameters
 
     * - Parameter
       - Description
-LIST: - Text list delimited by a character into tokens
-Token Data: - Replacement text which overwrites the existing Nth token
-N: - The token number to be overwritten
-C: - The :doc:`$asc </identifiers/asc>` value which splits TEXT into tokens
+    * - LIST:
+      - Text list delimited by a character into tokens
+    * - Token Data:
+      - Replacement text which overwrites the existing Nth token
+    * - N:
+      - The token number to be overwritten
+    * - C:
+      - The :doc:`$asc </identifiers/asc>` value which splits TEXT into tokens
 
 If N is negative, returns tokens relative to the last token. -1 is the last token, -2 is next-to-last token, etc.
 

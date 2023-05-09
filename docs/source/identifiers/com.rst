@@ -128,7 +128,7 @@ Parameters
 
 You can pass a binary variable by prefixing the type of the variable with an '&' sign eg. $com(name,member,method,&bstr &binvar)
 
-To make a variable by reference, postfix the data type with an asterisk and a variable name, for example: int* pIntOfBeer.
+To make a variable by reference, postfix the data type with an asterisk and a variable name, for example: ``int* pIntOfBeer``.
 
 * value1 - the value assigned to the variable type
 
@@ -163,8 +163,6 @@ In the case of retrieving an unknown pointer, mIRC will extend it to a dispatch 
 
 Example
 -------
-
-.. code:: text
 
 Compatibility
 -------------

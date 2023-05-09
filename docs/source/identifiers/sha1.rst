@@ -19,25 +19,22 @@ Parameters
 
     * - Parameter
       - Description
-plaintext - Used with N = 0, just the string you want the sha1 hash of
-
-&binaryvar - A binary variable, used with N = 1, return the sha1 hash of the content of the binvar
-
-filename - A filename, used with N = 2, return the sha1 hash of the content of the file
-
-N: Optional integer 0-2, where 0 returns hash of the plaintext string, 1 returns the hash of the data contained inside the named &binary variable, 2 returns the hash of the contents of the named disk filename
+    * - plaintext 
+      - Used with N = 0, just the string you want the sha1 hash of
+    * - &binaryvar
+      - A binary variable, used with N = 1, return the sha1 hash of the content of the binvar
+    * - filename
+      - A filename, used with N = 2, return the sha1 hash of the content of the file
+    * - N 
+      - Optional integer 0-2, where 0 returns hash of the plaintext string, 1 returns the hash of the data contained inside the named &binary variable, 2 returns the hash of the contents of the named disk filename
 
 If the N parameter isn't used, the default 0 is used (which is different than $crc which has default of N=2.)
+
 Properties
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Property
-      - Description
 None
+
 Example
 -------
 

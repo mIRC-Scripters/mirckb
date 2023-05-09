@@ -30,8 +30,8 @@ See also
 .. hlist::
     :columns: 4
 
-* On help - mIRC|ON HELP Event
-* On dehelp - mIRC|ON DEHELP Event
+    * :doc:`on help </events/on_help>`
+    * :doc:`on dehelp </events/on_dehelp>`
     * :doc:`$opnick </identifiers/opnick>`
     * :doc:`$vnick </identifiers/vnick>`
 

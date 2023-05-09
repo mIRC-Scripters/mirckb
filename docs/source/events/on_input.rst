@@ -21,7 +21,7 @@ Parameters
       - Description
     * - <level>
       - The level for the event to trigger.
-    * - <*#?=!@>
+    * - <\*#?=!@>
       - The window type that this event should monitor.
     * - *
       - Any window

@@ -30,13 +30,26 @@ Parameters
     * - regex
       - The regular expression for :ref:`matching_tools-regex`
     * - subtext
-      - the text to use to replace the match, it can contains the following markers (markers can touch text, they are automatically enclosed in $+ if they touch text):
-** \0 - the total number of captures
-** \n - the current match number
-** \t - the 'matchtext', this is the same as $regml(\n), which is often misleading and not useful when you are using /g with multiple captures/backreferences, better to use \1
-** \a - all match, spaces seperated
-** \A - a non spaced version of \a
-** \1 \N etc - returns the same as $regmlex(\n,N), returns the value of the Nth captured group for that match
+      - the text to use to replace the match, it can contains the following markers (markers can touch text, they are automatically enclosed in $+ if they touch text). See next table.
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Marker
+      - Description
+    * - \0
+      - the total number of captures
+    * - \n
+      - the current match number
+    * - \t
+      - the 'matchtext', this is the same as $regml(\n), which is often misleading and not useful when you are using /g with multiple captures/backreferences, better to use \1
+    * - \a
+      - all match, spaces seperated
+    * - \A
+      - a non spaced version of \a
+    * - \1 \N etc
+      - returns the same as $regmlex(\n,N), returns the value of the Nth captured group for that match
 
 Properties
 ----------

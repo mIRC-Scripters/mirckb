@@ -28,7 +28,8 @@ Parameters
       - Description
     * - <integer>
       - The position in the Fibonacci Sequence for which the value is returned
-Examples
+
+Example
 --------
 
 .. code:: text

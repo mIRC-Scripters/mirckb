@@ -167,7 +167,7 @@ If the /g modifier is used, that number can be greater than 1. You may see a neg
    -6 - memory could not be allocated.
    -7 - memory could not be allocated (specific to retrieving capturing groups)
    -8 - you reached the maximum number of backtracks allowed, for example: $regex($str(a,4000),(a+a+)\*b)
-   -14 - mIRC uses this value when compiling the pattern fails but it's a valid value meaning an internal error occured as well. If this error is returned because compiling the pattern failed, {{mIRC|$regerrstr}} is set with an error string, otherwise -14 it's the pcre meaning, which is more or less the same as -5 but happens elsewhere in the code.
+   -14 - mIRC uses this value when compiling the pattern fails but it's a valid value meaning an internal error occured as well. If this error is returned because compiling the pattern failed, :doc:`$regerrstr </identifiers/regerrstr>` is set with an error string, otherwise -14 it's the pcre meaning, which is more or less the same as -5 but happens elsewhere in the code.
    -21 - you reached an internal recursion limit, for example: $regex($str(a, 1000), (a)+)
    -26 - this error is returned when pcre detects a recursion loop within the pattern. Specifically, it means that either the whole pattern or a subpattern has been called recursively for the second time at the same position in the input string. Some simple patterns that might do this are detected and faulted at compile time, but more  complicated cases, in particular mutual recursions between two different subpatterns, cannot be detected until run time.
 

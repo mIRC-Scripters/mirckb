@@ -23,19 +23,12 @@ Parameters
 
     * - Parameter
       - Description
-None
-or
-Name|N = Name or Nth item in toolbar about which to return information. 0 = total number of toolbar items.
+    * - None or Name|N 
+      - Name or Nth item in toolbar about which to return information. 0 = total number of toolbar items.
 
 Properties
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Property
-      - Description
 * .name
 * .type
 * .tip

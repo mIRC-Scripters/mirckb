@@ -6,7 +6,9 @@ $mid is a :doc:`string manipulation </beginner/string_and_token_manipulation>` i
 Synopsis
 --------
 
-* $mid(<text> ,S [, N ] )
+.. code:: text
+
+    $mid(<text> ,S [, N ] )
 
 Parameters
 ----------
@@ -17,9 +19,12 @@ Parameters
 
     * - Parameter
       - Description
-* text	String from which to return a portion
-* S	Position within Text. If S is negative, position is relative to the end of Text instead of the beginning. Using Zero behaves same as position 1.
-* N	Optional Length. If Length parameter not used, returns entire remainder of the string. If N is zero, returns the numeric length of the string. If N is negative, returns the string beginning at position S except for the LAST $Abs(N) characters.
+    * - text
+      - String from which to return a portion
+    * - S
+      - Position within Text. If S is negative, position is relative to the end of Text instead of the beginning. Using Zero behaves same as position 1.
+    * - N
+      - Optional Length. If Length parameter not used, returns entire remainder of the string. If N is zero, returns the numeric length of the string. If N is negative, returns the string beginning at position S except for the LAST $Abs(N) characters.
 
 Properties
 ----------
@@ -72,7 +77,7 @@ See also
 .. hlist::
     :columns: 4
 
-:doc:`string manipulation </beginner/string_and_token_manipulation>`
+    * :doc:`string manipulation </beginner/string_and_token_manipulation>`
     * :doc:`$left </identifiers/left>`
     * :doc:`$right </identifiers/right>`
     * :doc:`$pos </identifiers/pos>`

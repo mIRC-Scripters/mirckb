@@ -30,17 +30,13 @@ Parameters
     * - Parameter
       - Description
     * - N
-      - Integer 
+      - Integer
+
 Properties
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Property
-      - Description
 None
+
 Example
 -------
 

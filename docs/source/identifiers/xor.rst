@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-* N1,N2 = the numbers, in base10/decimal
+    * - N1,N2
+      - The numbers, in base10/decimal
 
 .. note:: Fractions are ignored. valid range is integers from -(2^32-1) through +(2^32-1). Negative numbers within that range are translated from signed 32bit-int to unsigned 32bit-int. i.e. Negative numbers in the range -4294967295 through -1 are replaced by N+4294967296. Numbers outside that range are replaced by the closest valid number. i.e. 4294967296+ is handled as if it's 4294967295, and -4294967296 and lower are handled as if -4294967295 which is then handled as if -4294967295+4294967296=1. This means the result is always in the range 0 thru +4294967295.
 

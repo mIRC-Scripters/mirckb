@@ -18,12 +18,6 @@ None
 Results
 -------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Value
-      - Description
 Returns the nickname that you are currently using.
 
 Example

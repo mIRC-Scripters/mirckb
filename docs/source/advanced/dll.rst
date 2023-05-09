@@ -79,7 +79,7 @@ With mIRC being unicode, the new prototype is:
     * - aWnd
       - The handle of the window in which the command is being issued, this might not be the currently active window if the command is being called by a remote script.
     * - data 
-      - This is a buffer you can write to if you want mIRC to perform a command or to return a value from a {{mIRC|$dll}} call (remember that {{mIRC|$dllcall}} do not return a value by design even if you fill this buffer)
+      - This is a buffer you can write to if you want mIRC to perform a command or to return a value from a :doc:`$dll </identifiers/dll>` call (remember that :doc:`$dllcall </identifiers/dllcall>` do not return a value by design even if you fill this buffer)
     * - parms 
       - For a better handling of command execution, this is a buffer which can be filled if you are filling the 'data' buffer with a command. mIRC will fill the variable $1- with this value, which you can include in the command in 'data'. The examples shows how to use it.
     * - show 

@@ -43,10 +43,10 @@ See also
 .. hlist::
     :columns: 4
 
-* On ban - mIRC|ON BAN
-* On join - mIRC|ON JOIN
-* On part - mIRC|ON PART
-* On unban - mIRC|ON UNBAN
+    * :doc:`on ban </events/on_ban>`
+    * :doc:`on join </events/on_join>`
+    * :doc:`on part </events/on_part>`
+    * :doc:`on unban </events/on_unban>`
     * :doc:`$chan </identifiers/chan>`
     * :doc:`$nick </identifiers/nick>`
 

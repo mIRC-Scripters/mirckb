@@ -27,9 +27,6 @@ Parameters
       - The corresponding matchtext for the event to trigger.
     * - <*><?><#[,#]>
       - The place, or places where the event listens, you can specify specific name of window, seperate them by comma.
-        * \* - Any query/channel window
-        * ? - Any query windows
-        * # - Any channel window
     * - <commands>
       - The commands to be performed when the event triggers
 

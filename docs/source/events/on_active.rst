@@ -23,12 +23,6 @@ Parameters
       - The corresponding :doc:`access levels </intermediate/events>` for the event to trigger.
     * - <*><?><#[,#]>
       - The place, or places where the event listens, you can specify specific name of window, seperate them by comma.
-        * \* - Any query/channel window
-        * ? - Any query windows
-        * # - Any channel window
-        * = - Any DCC chat
-        * ! - Any DCC server
-        * @ - Any custom window
     * - <commands>
       - The commands to be performed when the event triggers
 

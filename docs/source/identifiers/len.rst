@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-text - The input string you want to know the length of
+    * - text
+      - The input string you want to know the length of
 
 Properties
 ----------

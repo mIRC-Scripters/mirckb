@@ -1,7 +1,7 @@
 $ulevel
 =======
 
-$ulevel returns the matching user level for any triggered {{mirc|on event|on events}}.
+$ulevel returns the matching user level for any triggered :doc:`on events </events/index_events>`.
 
 Synopsis
 --------

@@ -28,13 +28,14 @@ Parameters
 Properties
 ----------
 
+If parameters are used, you can use the following properties:
+
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Property
       - Description
-If parameters are used, you can use the following properties:
     * - .desc
       - returns the description of that server (returns Random server if N = -1 and you're not connecting using the server list)
     * - .pass

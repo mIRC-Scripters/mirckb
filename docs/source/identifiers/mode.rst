@@ -25,24 +25,34 @@ Parameters
 Properties
 ----------
 
+If you use properties, it returns the Nth nick for the specified mode change:
+
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Property
       - Description
-if you use properties, it returns the Nth nick for the specified mode change:
-
-* .owner - returns the Nth nick which is given the owner status
-* .deowner - returns the Nth nick which is demoted from the owner status
-* .op - returns the Nth nick which is given the op status
-* .deop - returns the Nth nick which is demoted from the op status
-* .help - returns the Nth nick which is given the help status
-* .dehelp - returns the Nth nick which is demoted from the help status
-* .voice - returns the Nth nick which is given the voice status
-* .devoice - returns the Nth nick which is demoted from the voice status
-* .ban - returns the Nth nick which is banned
-* .unban - returns the Nth nick which is unbanned
+    * - .owner
+      - returns the Nth nick which is given the owner status
+    * - .deowner
+      - returns the Nth nick which is demoted from the owner status
+    * - .op
+      - returns the Nth nick which is given the op status
+    * - .deop
+      - returns the Nth nick which is demoted from the op status
+    * - .help
+      - returns the Nth nick which is given the help status
+    * - .dehelp
+      - returns the Nth nick which is demoted from the help status
+    * - .voice
+      - returns the Nth nick which is given the voice status
+    * - .devoice
+      - returns the Nth nick which is demoted from the voice status
+    * - .ban
+      - returns the Nth nick which is banned
+    * - .unban
+      - returns the Nth nick which is unbanned
 
 Example
 -------

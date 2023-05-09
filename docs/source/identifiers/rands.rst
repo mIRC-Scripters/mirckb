@@ -6,8 +6,11 @@ $rands returns a "cryptographically secure" random integer from the specified ra
 Synopsis
 --------
 
-$rands(number1,number2)
-$rands(char1,char2)
+.. code:: text
+
+    $rands(number1,number2)
+    $rands(char1,char2)
+
 Parameters
 ----------
 
@@ -17,17 +20,14 @@ Parameters
 
     * - Parameter
       - Description
-number1,number2 = starting/ending range of integers
-char1,char2 = starting/ending characters in range of characters. Valid range $chr(1) through $chr(65535)
+    * - number1,number2
+      - starting/ending range of integers
+    * - char1,char2
+      - starting/ending characters in range of characters. Valid range $chr(1) through $chr(65535)
+
 Properties
 ----------
 
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Property
-      - Description
 None
 
 Examples

@@ -6,8 +6,11 @@ $msfile Opens dialog to select 1 or more files.
 Synopsis
 --------
 
-* $msfile(<path> [,title [,OpenButtonText] ] ) Opens dialog to choose 1 or multiple files. Returns N where 0 or greater is the count of returned filenames. N=-1 if error, such as one of the selected items being folder c:\windows\fonts\
-* $msfile(N)	After dialog closes, for N>=1 returns the Nth selected filename. For N=0 returns the count of returned filenames.
+.. code:: text
+
+    $msfile(<path> [,title [,OpenButtonText] ] ) Opens dialog to choose 1 or multiple files. Returns N where 0 or greater is the count of returned filenames. N=-1 if error, such as one of the selected items being folder c:\windows\fonts\
+    
+    $msfile(N)	After dialog closes, for N>=1 returns the Nth selected filename. For N=0 returns the count of returned filenames.
 
 Parameters
 ----------
@@ -18,11 +21,14 @@ Parameters
 
     * - Parameter
       - Description
-* path	Starting folder for the file select dialog. Can be a relative path to $mircdir. Ignores the last "\" delimited token if path doesn't end with "\" or "/". Error if path ends with \\.
-* title	Optional string placed in the titlebar of the select dialog
-* OpenButtonText	Optional string to replace 'Open' on that button of the select dialog. You cannot set this parameter without first defining the the title parameter to a non-null string.
-
-* N	When N>=1, returns the Nth selected filename N=0 is the count of returned filenames. Returned filenames always include full path too.
+    * - path
+      - Starting folder for the file select dialog. Can be a relative path to $mircdir. Ignores the last "\" delimited token if path doesn't end with "\" or "/". Error if path ends with \\.
+    * - title
+      - Optional string placed in the titlebar of the select dialog
+    * - OpenButtonText
+      - Optional string to replace 'Open' on that button of the select dialog. You cannot set this parameter without first defining the the title parameter to a non-null string.
+    * - N
+      - When N>=1, returns the Nth selected filename N=0 is the count of returned filenames. Returned filenames always include full path too.
 
 .. note:: The returned count of filenames is limited to the number of filenames returned, which can be less than the number of files actually selected. The number of returned filenames varies, and seems to be limited to not allowing the sum of $msfile(0) plus the length of $nopath(filename) strings to be more than somewhere around 1000-1024 bytes. Longer filenames causes fewer filenames to be returned.
 
@@ -34,8 +40,16 @@ None
 Local Identifier
 ----------------
 
-* $sfstate	Returns the null string or 'cancel' or 'error' after exiting the dialog.
-* $msfile(N) N=0 returns the count of returned filenames. N>=1 returns the Nth returned filename.
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Identifier
+      - Description
+    * - :doc:`$sfstate </identifiers/sfstate>`
+      - Returns the null string or 'cancel' or 'error' after exiting the dialog.
+    * - :doc:`$msfile(N) </identifiers/msfile>`
+      - N=0 returns the count of returned filenames. N>=1 returns the Nth returned filename.
 
 .. note:: $sfstate and $msfile(N) are shared by $sfile and $sdir and $msfile(dir). These values are accessible by any script or from the editbox until the next time any of these 3 commands are used, when these identifiers are replaced by the new results. (Using $msfile(N) does not reset $sfstate) (Using $sdir or $sfile always causes $msfile(N>=1) to be $null. $sfile causes $msfile(0) to be either 0 or 1 depending on whether it selected a file, $sdir always sets $msfile(0) to 0 and blacks $msfile(1).)
 

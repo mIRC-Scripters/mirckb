@@ -22,17 +22,34 @@ Parameters
     * - address
       - The address you want the mask of.
     * - type
-      - The type of address, a positive integer between 1-19:
-** 0: *!user@host
-**  1: *!*user@host
-**  2: *!*@host
-**  3: *!*user@*.host
-**  4: *!*@*.host
-**  5: nick!user@host
-**  6: nick!*user@host
-**  7: nick!*@host
-**  8: nick!*user@*.host
-**  9: nick!*@*.host
+      - The type of address, a positive integer between 1-19
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Type
+      - Address Mask
+    * - 0
+      - *!user@host
+    * - 1
+      - *!*user@host
+    * - 2
+      - *!*@host
+    * - 3
+      - *!*user@*.host
+    * - 4
+      - *!*@*.host
+    * - 5
+      - nick!user@host
+    * - 6
+      - nick!*user@host
+    * - 7
+      - nick!*@host
+    * - 8
+      - nick!*user@*.host
+    * - 9
+      - nick!*@*.host
 
 Type 10-19 are same as types 0-9 except asterisks in host are expanded to the text they replaced, then all numbers are replaced by question marks.
 

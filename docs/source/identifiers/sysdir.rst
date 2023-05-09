@@ -20,14 +20,28 @@ Parameters
     * - Parameter
       - Description
     * - item
-      - the item representing the folder, can be:
-** profile - The profile folder, for example C:\Users\Wims\
-** desktop - The desktop folder
-** documents - The documents folder
-** downloads - The downloads folder
-** music -  The music folder
-** pictures -  The pictures folder
-** videos -  The videos folder
+      - the item representing the folder, is documented in the next table.
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - Item
+      - Description     
+    * - profile
+      - The profile folder, for example C:\Users\Wims\
+    * - desktop
+      - The desktop folder
+    * - documents
+      - The documents folder
+    * - downloads
+      - The downloads folder
+    * - music
+      - The music folder
+    * - pictures
+      - The pictures folder
+    * - videos
+      - The videos folder
 
 Properties
 ----------
@@ -48,7 +62,4 @@ Compatibility
 
 See also
 --------
-
-.. hlist::
-    :columns: 4
 

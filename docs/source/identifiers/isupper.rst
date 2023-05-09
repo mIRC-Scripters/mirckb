@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-text - The string to be checked
+    * - text
+      - The string to be checked
 
 Properties
 ----------

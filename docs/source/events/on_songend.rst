@@ -1,4 +1,4 @@
-On songend
+On Songend
 ==========
 
 The ON songend event triggers whenever a file has finished playing via the :doc:`/splay </commands/splay>` command.

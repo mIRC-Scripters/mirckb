@@ -100,11 +100,17 @@ It appears that $sorttok's numeric sort evaluates each token individually the sa
 .. note:: Using the 'c' switch instead of the 'default' changes the sort order to a modified ASCII order matching the sort order of the nicklist for that network. For the 1st character of the string only, tokens beginning with any of the channel $prefix symbols are sorted to the front in the order they appear in $prefix, as if $prefix modes are codepoints below 1. The remaining characters are sorted in 'DEFAULT' order, so if all tokens begin with '@' there is no difference between 'c' and 'default' sort. The 'c' sort uses the $prefix identifier, so the result can be different in a blank status window created with "/server -n" which uses the default $prefix of @%+ than at a network which recognizes ~ and & as nick prefixes or who does not use the % prefix.
 
 For example, the display of the following string depends on the value of $prefix in the window where that command executes:
-//echo -a prefix: $prefix network: $network sort: $sorttok( ~owner &protectedop @op % $+ halfop +voice [nick] \nick\ ^nick^ anick znick |nick|,32,c)
-Possible Results:<pre>
-prefix: prefix: @+ network: freenode sort: @op +voice %halfop &protectedop [nick] \nick\ ^nick^ anick znick |nick| ~owner
-prefix: ~&@%+ network: Rizon sort: ~owner &protectedop @op %halfop +voice [nick] \nick\ ^nick^ anick znick |nick|
-</pre>
+
+.. code:: text
+
+    //echo -a prefix: $prefix network: $network sort: $sorttok( ~owner &protectedop @op % $+ halfop +voice [nick] \nick\ ^nick^ anick znick |nick|,32,c)
+
+Possible Results:
+
+.. code:: text
+
+    prefix: prefix: @+ network: freenode sort: @op +voice %halfop &protectedop [nick] \nick\ ^nick^ anick znick |nick| ~owner
+    prefix: ~&@%+ network: Rizon sort: ~owner &protectedop @op %halfop +voice [nick] \nick\ ^nick^ anick znick |nick|
 
 Another example of the default ASCII sort vs 'a' alpha-then-numeric. It includes the CRC32 of each sorted string, which allows you to edit the creation of %a to see how various sort orders may or may not change the original order:
 
@@ -112,18 +118,19 @@ Another example of the default ASCII sort vs 'a' alpha-then-numeric. It includes
 
     //var %a test TEST 2:foo 2:bar 1 2 11 1:test 0 -0 +0 BAR bar FOO !test -1 @test @@x @!x @1 0 , %sort $sorttok(%a,32) , %sortn $sorttok(%a,32,n) , %sorta $sorttok(%a,32,a) , %sortc $sorttok(%a,32,c) | echo -a %a :original | .timer 1 1 echo -a $crc(%a,0) .%a:original order | echo 4 -a %sort :default | .timer 1 2 echo 4 -a $crc(%sort,0) .%sort:'default' = codepoint order then original order among case-insensitive matches | echo 3 -a %sortn :'n' | .timer 1 3 echo 3 -a $crc(%sortn,0) .%sortn :n=sort by $ $+ int(token), non-numerics among all '0' values in original order | echo 4 -a %sorta :'a' | .timer 1 4 echo 4 -a $crc(%sorta,0) .%sorta:a= non-numeric in 'default' sort, then numerics in 'n' sort | echo -a %sortc :'c' | .timer 1 5 echo -a $crc(%sortc,0) .%sortc:c='default' except only-1st-char has $prefix inserted at front
     
-<pre>result:
-test TEST 2:foo 2:bar 1 2 11 1:test 0 -0 +0 BAR bar FOO !test -1 @test @@x @!x @1 0 :original
-!test +0 -0 -1 0 0 1 11 1:test 2 2:bar 2:foo @!x @1 @@x @test BAR bar FOO test TEST :default
--1 test TEST 0 -0 +0 BAR bar FOO !test @test @@x @!x @1 0 1 1:test 2:foo 2:bar 2 11 :'n'
-!test 1:test 2:bar 2:foo @!x @1 @@x @test BAR bar FOO test TEST -1 0 -0 +0 0 1 2 11 :'a'
-@!x @1 @@x @test +0 !test -0 -1 0 0 1 11 1:test 2 2:bar 2:foo BAR bar FOO test TEST :'c'
-D42C1323 .%a:original order
-7F1A34E4 .%sort:'default' = codepoint order then original order among case-insensitive matches
-EE450764 .%sortn :n=sort by 0 non-numerics among all '0' values in original order
-1A803382 .%sorta:a= non-numeric in 'default' sort, then numerics in 'n' sort
-C75D4DEA .%sortc:c='default' except only-1st-char has @%+ inserted at front
-</pre>
+.. code:: text
+
+    result:
+    test TEST 2:foo 2:bar 1 2 11 1:test 0 -0 +0 BAR bar FOO !test -1 @test @@x @!x @1 0 :original
+    !test +0 -0 -1 0 0 1 11 1:test 2 2:bar 2:foo @!x @1 @@x @test BAR bar FOO test TEST :default
+    -1 test TEST 0 -0 +0 BAR bar FOO !test @test @@x @!x @1 0 1 1:test 2:foo 2:bar 2 11 :'n'
+    !test 1:test 2:bar 2:foo @!x @1 @@x @test BAR bar FOO test TEST -1 0 -0 +0 0 1 2 11 :'a'
+    @!x @1 @@x @test +0 !test -0 -1 0 0 1 11 1:test 2 2:bar 2:foo BAR bar FOO test TEST :'c'
+    D42C1323 .%a:original order
+    7F1A34E4 .%sort:'default' = codepoint order then original order among case-insensitive matches
+    EE450764 .%sortn :n=sort by 0 non-numerics among all '0' values in original order
+    1A803382 .%sorta:a= non-numeric in 'default' sort, then numerics in 'n' sort
+    C75D4DEA .%sortc:c='default' except only-1st-char has @%+ inserted at front
 
 Compatibility
 -------------

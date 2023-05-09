@@ -22,7 +22,7 @@ Parameters
     * - N
       - Number for which the square root is returned
 
-If N is negative, returns $null. You can use the letter 'e' or 'd' as *10^N, $sqrt(5e6) = $sqrt($calc(5*10^6))
+If N is negative, returns $null. You can use the letter 'e' or 'd' as ``*10^N, $sqrt(5e6) = $sqrt($calc(5*10^6))``
 
 Square Root is limited to 6 decimal places. When squared, it often has a rounding error difference from the original N.
 

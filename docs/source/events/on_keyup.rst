@@ -1,7 +1,7 @@
 On Keyup
 ========
 
-The ON KEYUP event is triggered when a key has been pressed, but subsequently released, inside of a custom {{mirc|custom windows|@window}}.
+The ON KEYUP event is triggered when a key has been pressed, but subsequently released, inside of a custom @window.
 
 This event fills the following identifiers:
 

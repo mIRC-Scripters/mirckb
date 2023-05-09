@@ -54,8 +54,6 @@ See also
 .. hlist::
     :columns: 4
 
-* List of commands - mIRC|List of commands
-
     * :doc:`/treebar </commands/treebar>`
     * :doc:`$switchbar </identifiers/switchbar>`
     * :doc:`$toolbar </identifiers/toolbar>`

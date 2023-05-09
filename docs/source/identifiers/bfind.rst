@@ -27,6 +27,7 @@ Parameters
       - Value being searched for, either ASCII decimals 0-255 or text.
     * - name
       - an optional name to go with .regex, to be able to reference captured group later on.
+
 Properties
 ----------
 
@@ -36,10 +37,14 @@ Properties
 
     * - Property
       - Description
-* text - Treats a numeric N as text instead of bytes value, also decode bytes from utf8 before searching.
-* textcs - When M is recognized as text, search is performed as case-sensitive
-* ansi - the bytes of the binvar are not decoded from utf8 before searching.
-* .regex - performs a regex search, you can use the optional 4th name parameter to reference captured group later on. The N parameter is the Nth position in the binvar at which the input string for the regex engine starts,  so that $bfind(&var,3,/^pattern/).regex are possible where ^ matches because the input string starts at byte 3 in the binvar.
+    * - .text
+      - - Treats a numeric N as text instead of bytes value, also decode bytes from utf8 before searching.
+    * - .textcs
+      - - When M is recognized as text, search is performed as case-sensitive
+    * - .ansi
+      - The bytes of the binvar are not decoded from utf8 before searching.
+    * - .regex
+      - performs a regex search, you can use the optional 4th name parameter to reference captured group later on. The N parameter is the Nth position in the binvar at which the input string for the regex engine starts,  so that $bfind(&var,3,/^pattern/).regex are possible where ^ matches because the input string starts at byte 3 in the binvar.
 
 .. note:: Searches for text are case-insensitive by default.
 

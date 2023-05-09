@@ -3,9 +3,11 @@ $file
 
 $file can be used in two ways:
 
-* $file(filename).prop return information about a specified file. If no .property is specified, the size in bytes will be returned by default.
+.. code:: text
 
-* $file="title" dir this is an old, deprecated syntax, display the select file dialog, {{Deprecated feature|new=:doc:`$sfile </identifiers/sfile>`}}
+    $file(filename).prop return information about a specified file. If no .property is specified, the size in bytes will be returned by default.
+
+    $file="title" dir this is an old, deprecated syntax, display the select file dialog and has essentially been replaced by :doc:`$sfile </identifiers/sfile>`
 
 Synopsis
 --------
@@ -38,13 +40,14 @@ Parameters
 Properties
 ----------
 
+When new $file(filename) is used, you can use the following properties:
+
 .. list-table::
     :widths: 15 85
     :header-rows: 1
 
     * - Property
       - Description
-When new $file(filename) is used, you can use the following properties:
     * - .size
       - Returns the file's size in bytes. (default) (see: :doc:`$bytes </identifiers/bytes>`)
     * - .ctime
@@ -58,21 +61,7 @@ When new $file(filename) is used, you can use the following properties:
     * - .longfn
       - Returns the file's long filename.
     * - .attr
-      - Returns the file (or folder)'s attributes. the returned value is a concatenation of letters representing the attributes, it will contain a:
-** a - archive flag. Is set during normal file-modifying or dir-creation as an indicator to backup programs the file has changed since the last backup, for use with incremental backups. All backups clear this flag for files they archive.
-** c - if file/folder is compressed.
-** d - if it is a directory.
-** e - if the file/folder is encrypted
-** h - if the file/folder is hidden.
-** n - if the file/folder is normal, not indexed.
-<!--- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-sparse --->
-** o - the file data is physically moved to offline storage (Remote Storage).
-** p - if the file is sparse.
-** r - if the file/folder is in read only mode
-** s - if the file/folder is a system file/folder
-** t - a file or directory that has an associated reparse point, or a file that is a symbolic link.
-** x - if you're archiving (a) but are not allowing the indexing of the file/folder's content
-** y - if the file is temporary
+      - Returns the file (or folder)'s attributes. the returned value is a concatenation of letters representing the attributes, it will contain a attribute. See next table for an explanation.
     * - .sig
       - Checks digital signature of an executable/DLL file. (Returns: ok, fail, none)
     * - .ext
@@ -86,14 +75,63 @@ When new $file(filename) is used, you can use the following properties:
     * - .product
       - Returns the file's ''product version'' if executable/DLL.
     * - .flags
-      - Returns the file's ''file flags'' if executable/DLL, the value is a combination bitmask that specifies the compile time attributes of the file:
-** 1: DEBUG - The file contains debugging information or is compiled with debugging features enabled.
-** 2: PRERELEASE - The file is a development version, not a commercially released product.
-** 4: PATCHED - The file has been modified and is not identical to the original shipping file of the same version number.
-** 8: PRIVATEBUILD - The file was not built using standard release procedures.
-** 16: INFOINFERRED - The file's version structure was created dynamically; therefore, some of the members in this structure may be empty or incorrect.
-** 32: SPECIALBUILD - The file was built by the original company using standard release procedures but is a variation of the normal file of the same version number.
-** See: https://msdn.microsoft.com/en-us/library/windows/desktop/ms646997(v=vs.85).aspx for more informations.
+      - Returns the file's ''file flags'' if executable/DLL, the value is a combination bitmask that specifies the compile time attributes of the file. See table below for values.
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - .flags
+      - Attribute description
+    * - 1: DEBUG
+      - The file contains debugging information or is compiled with debugging features enabled.
+    * - 2: PRERELEASE
+      - The file is a development version, not a commercially released product.
+    * - 4: PATCHED
+      - The file has been modified and is not identical to the original shipping file of the same version number.
+    * - 8: PRIVATEBUILD
+      - The file was not built using standard release procedures.
+    * - 16: INFOINFERRED
+      - The file's version structure was created dynamically; therefore, some of the members in this structure may be empty or incorrect.
+    * - 32: SPECIALBUILD
+      - The file was built by the original company using standard release procedures but is a variation of the normal file of the same version number.
+
+.. note:: See: https://msdn.microsoft.com/en-us/library/windows/desktop/ms646997(v=vs.85).aspx for more information.
+
+.. list-table::
+    :widths: 15 85
+    :header-rows: 1
+
+    * - .attr
+      - Attribute description
+    * - a
+      - archive flag. Is set during normal file-modifying or dir-creation as an indicator to backup programs the file has changed since the last backup, for use with incremental backups. All backups clear this flag for files they archive.
+    * - c
+      - if file/folder is compressed.
+    * - d
+      - if it is a directory.
+    * - e
+      - if the file/folder is encrypted
+    * - h
+      - if the file/folder is hidden.
+    * - n
+      - if the file/folder is normal, not indexed.
+    * - o
+      - the file data is physically moved to offline storage (Remote Storage).
+    * - p
+      - if the file is sparse.
+    * - r
+      - if the file/folder is in read only mode
+    * - s
+      - if the file/folder is a system file/folder
+    * - t
+      - a file or directory that has an associated reparse point, or a file that is a symbolic link.
+    * - x
+      - if you're archiving (a) but are not allowing the indexing of the file/folder's content
+    * - y
+      - if the file is temporary
+
+.. note:: See https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-sparse for more information.
 
 Example
 -------
@@ -117,7 +155,3 @@ Compatibility
 
 See also
 --------
-
-.. hlist::
-    :columns: 4
-

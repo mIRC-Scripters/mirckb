@@ -1,7 +1,7 @@
 $dccignore
 ==========
 
-The $dccignore identifier will return either :doc:`$true </identifiers/true>` or :doc:`$false </identifiers/false>` depending on the the /dcc command - mIRC|DCC ignore option within mIRC. This identifier can also be used to retrieve certain DCC ignore file type options, also from within the DCC ignore options window.
+The $dccignore identifier will return either :doc:`$true </identifiers/true>` or :doc:`$false </identifiers/false>` depending on the the DCC ignore option within mIRC. This identifier can also be used to retrieve certain DCC ignore file type options, also from within the DCC ignore options window.
 
 Synopsis
 --------
@@ -18,13 +18,6 @@ Parameters
     :header-rows: 1
 
     * - Parameter
-      - Description
-
-.. list-table::
-    :widths: 15 85
-    :header-rows: 1
-
-    * - Argument
       - Description
     * - N
       - Matches the Nth file name/ignore type within the DCC ignore options list
@@ -63,5 +56,5 @@ See also
 .. hlist::
     :columns: 4
 
-* /dcc command - mIRC|DCCs
+    * :doc:`/dcc </commands/dcc>`
 

@@ -19,7 +19,8 @@ Parameters
 
     * - Parameter
       - Description
-* Filename = ''The filename that you want to check for.''
+    * - Filename
+      - The filename that you want to check for.
 
 Properties
 ----------

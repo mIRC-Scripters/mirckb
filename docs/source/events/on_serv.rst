@@ -38,7 +38,7 @@ Examples
     
     ON *:SERV:!time:msg =$nick The current time is: hh:nntt
 
-In the above example, the msg is not simply followed by the :doc:`$nick </identifiers/nick>` identifier. Instead, the {{mIRC|=$nick}} identifier has been used. This special identifier tells mIRC that the event should not simply send a private message to the user, but rather it should message the user's DCC Chat window, if there is one.
+In the above example, the msg is not simply followed by the :doc:`$nick </identifiers/nick>` identifier. Instead, the :doc:`=$nick </identifiers/nick_identifier>` identifier has been used. This special identifier tells mIRC that the event should not simply send a private message to the user, but rather it should message the user's DCC Chat window, if there is one.
 
 The next example will send the user the current folder they are in if they type !folder:
 

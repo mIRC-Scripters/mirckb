@@ -28,7 +28,10 @@ Example
     alias test {
       echo -a $prop
     }
-//noop $test().prop
+
+.. code:: text
+
+    //noop $test().prop
 
 Compatibility
 -------------
@@ -37,7 +40,4 @@ Compatibility
 
 See also
 --------
-
-.. hlist::
-    :columns: 4
 

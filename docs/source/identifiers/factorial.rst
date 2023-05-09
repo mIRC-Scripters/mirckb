@@ -22,7 +22,8 @@ Parameters
 
     * - Parameter
       - Description
-* <integer></span>The integer you want the factorial of
+    * - <integer>
+      - The integer you want the factorial of
 
 Examples
 --------
