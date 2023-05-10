@@ -15,7 +15,7 @@ Will result in:
 
     ABC
 
-Likewise, the $+ operator can be used with identifiers and {{mirc|variables}} as well:
+Likewise, the $+ operator can be used with identifiers and variables as well:
 
 .. code:: text
 

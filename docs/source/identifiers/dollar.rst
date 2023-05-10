@@ -47,7 +47,7 @@ This will multiply "33" & "77", then output the result to the active window.
 Others
 ------
 
-There are just too many identifiers and operators that deal with $ to cover here. Refer to the List of identifiers - mIRC|identifier's index for a more thorough and complete list.
+There are just too many identifiers and operators that deal with $ to cover here. Refer to the identifier's index for a more thorough and complete list.
 
 Compatibility
 -------------

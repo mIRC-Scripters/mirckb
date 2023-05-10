@@ -1,7 +1,7 @@
 $1-
 ===
 
-The $1- identifier returns a list of argument passed to an alias or returns the text message associated with an {{mIRC|on events|mSL Events}}. $1- is also filled by the :doc:`$tokenize </commands/tokenize>` command, and is also given different values within the command string for $findfile and $finddir. It also is used in popups menus to reference the 1-or-more nicks highlighted in that channel.
+The $1- identifier returns a list of argument passed to an alias or returns the text message associated with an msl event. $1- is also filled by the :doc:`/tokenize </commands/tokenize>` command, and is also given different values within the command string for $findfile and $finddir. It also is used in popups menus to reference the 1-or-more nicks highlighted in that channel.
 
 .. note:: $1- is built by tokenizing the parameters/text, which means that leading/trailing/consecutive spaces are lost, see :doc:`$parms </identifiers/parms>`, which is the same as $1-, but preserves spaces. However the /tokenize command destroys the existing $parms string as $null without replacing it with the tokenizing of the new $1- string.
 
@@ -9,7 +9,7 @@ If $1- represents the full line/parameters, you can use $1 to only reference the
 
 You can use $0 to return the total number of words or the total number of parameters.
 
-You can append text to $1, $2 etc without using {{mIRC|$+}}, as long as your text does not contain a digit, for example:
+You can append text to $1, $2 etc without using :doc:`$+ </identifiers/dollarplus>`, as long as your text does not contain a digit, for example:
 
 .. code:: text
 
