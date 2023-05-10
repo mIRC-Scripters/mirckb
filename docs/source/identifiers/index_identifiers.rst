@@ -16,9 +16,16 @@ Presently undocumented or deprecated identifiers are indicated with a :sup:`D`. 
         .. hlist::
             :columns: 4
 
+            * :doc:`$ <dollar>`
             * :doc:`$1- <dollar1dash>`
+            * :doc:`$& <dollarampersand>`
+            * :doc:`$$ <dollardollar>`
             * :doc:`$! <dollarexclamation_mark>`
+            * :doc:`$+ <dollarplus>`
+            * :doc:`$++ <dollarplusplus>`
             * :doc:`$? <dollarquestion_mark>`
+            * :doc:`$* <dollarstar>`
+            * :doc:`$~ <dollartilde>`
 
     .. tab:: A
 
