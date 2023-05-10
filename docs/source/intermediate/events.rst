@@ -111,35 +111,35 @@ The ^ prefix tells mIRC to process your event before it processes the event itse
 .. hlist::
    :columns: 4
 
-   * on ACTION
-   * on BAN
-   * on CHAT
-   * on DEHELP
-   * on DEOP
-   * on DEVOICE
-   * on HELP
-   * on INVITE
-   * on JOIN
-   * on KICK
-   * on MODE
-   * on NICK
-   * on NOTICE
-   * on OP
-   * on OPEN
-   * on PART
-   * on PING
-   * on TEXT
-   * on UNBAN
-   * on USERMODE
-   * on VOICE
-   * on QUIT
-   * on SERV
-   * on SERVERMODE
-   * on SERVEROP
-   * on SNOTICE
-   * on TABCOMP
-   * on TOPIC
-   * on WALLOPS
+   * :doc:`on ACTION </events/on_action>`
+   * :doc:`on BAN </events/on_ban>`
+   * :doc:`on CHAT </events/on_chat>`
+   * :doc:`on DEHELP </events/on_dehelp>`
+   * :doc:`on DEOP </events/on_deop>`
+   * :doc:`on DEVOICE </events/on_devoice>`
+   * :doc:`on HELP </events/on_help>`
+   * :doc:`on INVITE </events/on_invite>`
+   * :doc:`on JOIN </events/on_join>`
+   * :doc:`on KICK </events/on_kick>`
+   * :doc:`on MODE </events/on_mode>`
+   * :doc:`on NICK </events/on_nick>`
+   * :doc:`on NOTICE </events/on_notice>`
+   * :doc:`on OP </events/on_op>`
+   * :doc:`on OPEN </events/on_open>`
+   * :doc:`on PART </events/on_part>`
+   * :doc:`on PING </events/on_ping>`
+   * :doc:`on TEXT </events/on_text>`
+   * :doc:`on UNBAN </events/on_unban>`
+   * :doc:`on USERMODE </events/on_usermode>`
+   * :doc:`on VOICE </events/on_voice>`
+   * :doc:`on QUIT </events/on_quit>`
+   * :doc:`on SERV </events/on_serv>`
+   * :doc:`on SERVERMODE </events/on_servermode>`
+   * :doc:`on SERVEROP </events/on_serverop>`
+   * :doc:`on SNOTICE </events/on_snotice>`
+   * :doc:`on TABCOMP </events/on_tabcomp>`
+   * :doc:`on TOPIC </events/on_topic>`
+   * :doc:`on WALLOPS </events/on_wallops>`
 
 This prefix, coupled with /halt or /haltdef, allows you to display your own message for a given event, or it allows you to prevent a query window from opening with on OPEN, or to prevent a nick completion in on tabcomp.
 
