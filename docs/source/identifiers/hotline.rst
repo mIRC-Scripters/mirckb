@@ -24,11 +24,11 @@ The below example will trigger when the mouse double-clicks on the word ``hoverm
 
 .. code:: text
 
-    ON ^*:HOTLINK:*hoverme*:*:{
+    ON ^*:HOTLINK:\*hoverme\*:*:{
       if ($1 == hoverme) return
       halt
     }
-    ON *:HOTLINK:*hoverme*:*:echo -a Hotlink: $1 - Hotlink line: $hotline
+    ON *:HOTLINK:\*hoverme\*:*:echo -a Hotlink: $1 - Hotlink line: $hotline
 
 Compatibility
 -------------

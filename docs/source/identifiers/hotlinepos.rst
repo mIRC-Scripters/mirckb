@@ -22,7 +22,7 @@ Example
 
 .. code:: text
 
-    ON *:HOTLINK:*hoverme*:*:if ($1 == hoverme) echo -s $hotlinepos
+    ON *:HOTLINK:\*hoverme\*:*:if ($1 == hoverme) echo -s $hotlinepos
 
 Compatibility
 -------------
