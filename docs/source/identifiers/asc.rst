@@ -31,13 +31,13 @@ Parameters
 Examples
 --------
 
-Echo the Unicode code point for the letters ''A'' and ''a'' to the active window
+Echo the Unicode code point for the letters ``A`` and ``a`` to the active window
 
 .. code:: text
 
     //echo -a A is $asc(A) and a is $asc(a)
 
-Echo the Unicode code point for the number ''7'' to the active window
+Echo the Unicode code point for the number ``7`` to the active window
 
 .. code:: text
 

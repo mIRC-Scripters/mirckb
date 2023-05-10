@@ -36,7 +36,7 @@ Properties
     * - Property
       - Description
     * - type
-      - returns the type of drive; values are ''fixed'', ''removable'', ''cdrom'', ''ramdisk'', ''remote'', and ''unknown''.
+      - returns the type of drive; values are ``fixed``, ``removable``, ``cdrom``, ``ramdisk``, ``remote``, and ``unknown``.
     * - free
       - returns the number of free space on drive in bytes
     * - label

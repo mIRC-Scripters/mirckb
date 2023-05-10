@@ -30,13 +30,13 @@ Parameters
 Example
 -------
 
-Echo the character attached to Unicode code point ''63'' to the active window
+Echo the character attached to Unicode code point ``63`` to the active window
 
 .. code:: text
 
     //echo -a $chr(63)
 
-Echo the character attached to Unicode code point ''85'' to the active window
+Echo the character attached to Unicode code point ``85`` to the active window
 
 .. code:: text
 

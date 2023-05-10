@@ -58,7 +58,7 @@ Echo the total number of clipboard entires to the active window:
 
     //echo -a $cb(0)
 
-Create a custom alias that will open a custom window ''@myWindow'', and then echo all clipboard line contents to it:
+Create a custom alias that will open a custom window ``@myWindow``, and then echo all clipboard line contents to it:
 
 .. code:: text
 

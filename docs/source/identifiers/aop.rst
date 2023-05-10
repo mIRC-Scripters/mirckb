@@ -10,7 +10,7 @@ Synopsis
 
     $aop(address/N)[.property]
 
-.. note:: $aop by itself returns ''$true'' if auto-op is enabled, otherwise it returns ''$false''.
+.. note:: $aop by itself returns ``$true`` if auto-op is enabled, otherwise it returns ``$false``.
 
 Parameters
 ----------

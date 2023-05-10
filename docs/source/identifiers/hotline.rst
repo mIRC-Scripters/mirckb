@@ -20,7 +20,7 @@ None
 Example
 -------
 
-The below example will trigger when the mouse double-clicks on the word ''hoverme'', and echo the hotlink word and the entire line to the active window:
+The below example will trigger when the mouse double-clicks on the word ``hoverme``, and echo the hotlink word and the entire line to the active window:
 
 .. code:: text
 

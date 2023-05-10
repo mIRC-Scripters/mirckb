@@ -1,7 +1,7 @@
 $away
 =====
 
-$away will return ''$true'' if you are currently away, otherwise it will return ''$false''.
+$away will return ``$true`` if you are currently away, otherwise it will return ``$false``.
 
 Synopsis
 --------

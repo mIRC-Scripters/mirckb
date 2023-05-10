@@ -57,13 +57,13 @@ Properties
     * - sample
       - Returns the sampling frequency.
     * - mode
-      - Returns the mode: ''mono'', ''stereo'', etc.
+      - Returns the mode: ``mono``, ``stereo``, etc.
     * - copyright
       - Returns any copyright information.
     * - private
-      - Returns ''$true'' or ''$false'' for the private tag.
+      - Returns ``$true`` or ``$false`` for the private tag.
     * - crc
-      - Returns ''$true'' or ''$false'' if crc is found.
+      - Returns ``$true`` or ``$false`` if crc is found.
     * - .id3
       - Returns the id3 tag information.
     * - .tag
@@ -73,7 +73,7 @@ Properties
 
 If used with a music filename, the above properties are available.
 
-.. note:: Only mp3, ogg, and wma files currently support the following properties. Keep in mind that not all properties may have been set. Each property returns the id3v1 values. For id3v2, use the ''.tag'', and ''.tags'' properties.
+.. note:: Only mp3, ogg, and wma files currently support the following properties. Keep in mind that not all properties may have been set. Each property returns the id3v1 values. For id3v2, use the ``.tag``, and ``.tags`` properties.
 
 Examples
 --------

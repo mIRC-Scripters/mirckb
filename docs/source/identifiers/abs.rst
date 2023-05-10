@@ -27,7 +27,7 @@ Parameters
 Example
 -------
 
-Echo the absolute value of ''-7'' to the active window
+Echo the absolute value of ``-7`` to the active window
 
 .. code:: text
 

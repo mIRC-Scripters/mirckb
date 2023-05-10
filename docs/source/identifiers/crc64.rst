@@ -44,7 +44,7 @@ Example
 
 .. code:: text
 
-    ; Echo the $crc hash of plain text string ''abc'' to the active window:
+    ; Echo the $crc hash of plain text string ``abc`` to the active window:
     ; The DATA is case-sensitive, so hash of "abc" is different than hash of "ABC"
     //echo -a abc $crc64(abc,0) / ABC $crc64(ABC,0)
     result: abc 2CD8094A1A277627 / ABC AFA18655D86CC8D8

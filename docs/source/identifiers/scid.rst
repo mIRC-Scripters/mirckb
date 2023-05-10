@@ -20,7 +20,7 @@ Parameters
     * - Parameter
       - Description
     * - N
-      - Returns connection information based on a specific connection ID. Unlike $scon identifier - mIRC|$scon, $scid needs the connection id, not the Nth connection. If you specify N as ''0'', the total number of connections is returned.
+      - Returns connection information based on a specific connection ID. Unlike $scon identifier - mIRC|$scon, $scid needs the connection id, not the Nth connection. If you specify N as ``0``, the total number of connections is returned.
 
 Properties
 ----------

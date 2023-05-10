@@ -1,7 +1,7 @@
 $lof
 ====
 
-$lof(filename) returns the bytes size information about the specified file, same as ''$file().size'' identifier.
+$lof(filename) returns the bytes size information about the specified file, same as ``$file().size`` identifier.
 
 Synopsis
 --------

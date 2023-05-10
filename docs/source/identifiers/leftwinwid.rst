@@ -23,7 +23,7 @@ None
 Example
 -------
 
-Custom script that listens for the mouse leaving ''@tester''
+Custom script that listens for the mouse leaving ``@tester``
 
 .. code:: text
 
@@ -34,7 +34,7 @@ Custom script that listens for the mouse leaving ''@tester''
       leave:clear @tester | drawtext @tester 1 15 15 Mouse left window with ID $leftwinwid
     }
 
-Once the above example has fired up, the mouse can now be hovered over the ''@tester'' window, and then moved outside of the window. In the top-left corner there will now be some text that says ''Mouse left window with ID <WindowID>'', where <WindowID> is replaced with the actual window's ID.
+Once the above example has fired up, the mouse can now be hovered over the ``@tester`` window, and then moved outside of the window. In the top-left corner there will now be some text that says ``Mouse left window with ID <WindowID>``, where <WindowID> is replaced with the actual window's ID.
 
 Compatibility
 -------------

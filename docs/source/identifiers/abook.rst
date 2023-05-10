@@ -20,7 +20,7 @@ Parameters
     * - Parameter
       - Description
     * - nick/N
-      - The nickname that you wish to look up in the address book. This can be a :ref:`matching_tools-wildcard` such as ''ni*'', which would find all nicknames beginning with ''ni''. It can also be the Nth nickname in the book.
+      - The nickname that you wish to look up in the address book. This can be a :ref:`matching_tools-wildcard` such as ``ni*``, which would find all nicknames beginning with ``ni``. It can also be the Nth nickname in the book.
     * - N
       - This will return the Nth matching nickname relative to the nick parameter. If N is 0, it will return the total matches.
 

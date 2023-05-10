@@ -1,7 +1,7 @@
 $false
 ======
 
-$false is returned during any statement that is either written for it to return a value of $false, or performing a comparison operation where the outcome is ''$false''.
+$false is returned during any statement that is either written for it to return a value of $false, or performing a comparison operation where the outcome is ``$false``.
 
 Synopsis
 --------
@@ -18,7 +18,7 @@ None
 Example
 -------
 
-Echo to the active window a result that returns ''$false''
+Echo to the active window a result that returns ``$false``
 
 .. code:: text
 

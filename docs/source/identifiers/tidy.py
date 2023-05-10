@@ -35,8 +35,8 @@ def main():
 	        	# Fix newlines
 	        	result3 = re.sub(r'(\n\n)\n+', r'\1', result2)
 
-	        	# Change '''word''' to word
-	        	result4 = re.sub(r"'''(.*?)'''", r'\1', result3)
+	        	# Change ``'word``' to word
+	        	result4 = re.sub(r"``'(.*?)``'", r'\1', result3)
 	        	
 	        	# See also part
 	        	result5 = re.sub(r'(?si)(See also\n--------\n\n)(.*)', my_replace3, result4)		# fires my_replace4!!
@@ -198,7 +198,7 @@ def my_replace10(m):
 		ret = m.group(1) + '\nNone\n\n'
 
 	else:
-		ret = m.group(1) + '\n.. list-table::\n    :widths: 15 85\n    :header-rows: 1\n\n    * - Parameter\n      - Description\n' + re.sub(r"(?m)^:?(\*) (.*?) (-) (?:'')?(.*?)(?:'')?$", r'    \1 \3 \2\n      \3 \4', m.group(2))
+		ret = m.group(1) + '\n.. list-table::\n    :widths: 15 85\n    :header-rows: 1\n\n    * - Parameter\n      - Description\n' + re.sub(r"(?m)^:?(\*) (.*?) (-) (?:``)?(.*?)(?:``)?$", r'    \1 \3 \2\n      \3 \4', m.group(2))
 		ret = re.sub(r'(?m)^<span style="display: inline-block; width: \d+px;">(.*?)</span>(.*?)$', my_replace13, ret)
 		ret = ret + '\n'
 

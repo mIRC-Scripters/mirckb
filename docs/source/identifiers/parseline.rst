@@ -10,7 +10,7 @@ Synopsis
 
     $parseline
 
-.. note:: For ''out'' lines, $parseline is terminated with a $LF character that is not visible when viewed in mIRC. You may wish to remove this with:
+.. note:: For ``out`` lines, $parseline is terminated with a $LF character that is not visible when viewed in mIRC. You may wish to remove this with:
 
 .. code:: text
 

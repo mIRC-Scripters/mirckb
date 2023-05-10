@@ -1,7 +1,7 @@
 $appactive
 ==========
 
-$appactive returns ''$true'' or ''$false'' depending on whether mIRC is the active window or not.
+$appactive returns ``$true`` or ``$false`` depending on whether mIRC is the active window or not.
 
 Synopsis
 --------

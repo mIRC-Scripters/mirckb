@@ -66,7 +66,7 @@ Formatting Options
 |                       | zzz                   | +oooo GMT             |
 +-----------------------+-----------------------+-----------------------+
 
-Quick Note: All of the formatting parameters can touch each other, and they will be properly converted. For example: $asctime(hhnnss) would return the ''hours'', ''minutes'', and ''seconds'' all touching each other in a terrible format.
+Quick Note: All of the formatting parameters can touch each other, and they will be properly converted. For example: $asctime(hhnnss) would return the ``hours``, ``minutes``, and ``seconds`` all touching each other in a terrible format.
 
 Examples
 --------
@@ -83,7 +83,7 @@ Echo the current date in the format Month Day, Year
 
     //echo -a $asctime(mmmm $+(dd,$chr(44)) yyyy)
 
-Using the $ctime of ''840240070'', format to Day Month Year hour:minute<am/pm>
+Using the $ctime of ``840240070``, format to Day Month Year hour:minute<am/pm>
 
 .. code:: text
 

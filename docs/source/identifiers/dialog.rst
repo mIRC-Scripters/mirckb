@@ -61,7 +61,7 @@ Here we can break down what we are looking at:
     * - -4
       - Currently active dialog (Note: If there is no dialog open, this defaults to -3)
 
-.. note:: ''This type of dialog cannot be called from a remote script event.''
+.. note:: ``This type of dialog cannot be called from a remote script event.``
 
 Use As An Identifier
 --------------------

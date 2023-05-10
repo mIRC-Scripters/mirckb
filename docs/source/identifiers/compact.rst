@@ -1,7 +1,7 @@
 $compact
 ========
 
-The $compact identifier is used to find out if mIRC is or is not in ''compact'' state.
+The $compact identifier is used to find out if mIRC is or is not in ``compact`` state.
 
 Synopsis
 --------

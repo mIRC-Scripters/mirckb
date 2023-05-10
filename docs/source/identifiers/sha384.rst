@@ -40,7 +40,7 @@ None
 Example
 -------
 
-Echo the SHA384 hash of plain text string ''abc'' to the active window:
+Echo the SHA384 hash of plain text string ``abc`` to the active window:
 
 .. code:: text
 

@@ -1,7 +1,7 @@
 $cancel
 =======
 
-The $cancel identifier is returned when the ''cancel'' button of an :doc:`$input </identifiers/input>` box has been pressed and the v switch has been invoked on the :doc:`$input </identifiers/input>` box.
+The $cancel identifier is returned when the ``cancel`` button of an :doc:`$input </identifiers/input>` box has been pressed and the v switch has been invoked on the :doc:`$input </identifiers/input>` box.
 
 Synopsis
 --------

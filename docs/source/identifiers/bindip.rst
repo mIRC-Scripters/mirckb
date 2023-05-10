@@ -20,7 +20,7 @@ Parameters
     * - Parameter
       - Description
     * - N
-      - Returns the Nth device in the network adapters list. If ''N'' is specified as ''0'', returns the total number of active network adapters.
+      - Returns the Nth device in the network adapters list. If ``N`` is specified as ``0``, returns the total number of active network adapters.
     * - ipaddress
       - If you specify an IP address, mIRC will try to find the best network adapter to use to connect to that IP.
 
@@ -38,7 +38,7 @@ Properties
     * - ip
       - The IP address of the network adapter.
     * - loopback
-      - Returns ''$true'' if the IP/device has a loopback, otherwise ''$false''.
+      - Returns ``$true`` if the IP/device has a loopback, otherwise ``$false``.
 
 Examples
 --------

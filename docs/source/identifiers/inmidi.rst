@@ -28,7 +28,7 @@ Properties
     * - length
       - Returns the full length of the currently playing midi file.
     * - pause
-      - Returns ''$true'' if the currently playing midi file is paused, else it returns ''$false''.
+      - Returns ``$true`` if the currently playing midi file is paused, else it returns ``$false``.
 
 Example
 -------

@@ -1,7 +1,7 @@
 $activecid
 ==========
 
-$activecid returns the connection id related to the active window. This means that if the window was created on connection 1, the $activecid for that window would be ''1''.
+$activecid returns the connection id related to the active window. This means that if the window was created on connection 1, the $activecid for that window would be ``1``.
 
 Synopsis
 --------

@@ -51,7 +51,7 @@ Echo the common channels of the local client, and a remote user nicknamed myFrie
 
     //echo -a $comchan(myFriend,0)
 
-Echo the common channels of the local client, and a remote user nicknamed ''myFriend''', and if the local client is opped on the first match:
+Echo the common channels of the local client, and a remote user nicknamed ``myFriend``', and if the local client is opped on the first match:
 
 .. code:: text
 

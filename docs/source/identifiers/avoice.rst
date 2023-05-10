@@ -10,7 +10,7 @@ Synopsis
 
     $avoice(address/N)[.property]
 
-.. note:: $avoice by itself returns ''$true'' if auto-voice is enabled, otherwise it returns ''$false''.
+.. note:: $avoice by itself returns ``$true`` if auto-voice is enabled, otherwise it returns ``$false``.
 
 Parameters
 ----------

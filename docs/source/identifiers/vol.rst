@@ -40,7 +40,7 @@ Properties
     * - Property
       - Description
     * - mute
-      - Returns the current ''mute'' settings for the specified sound type parameter.
+      - Returns the current ``mute`` settings for the specified sound type parameter.
 
 Examples
 --------

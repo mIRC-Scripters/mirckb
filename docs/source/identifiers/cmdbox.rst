@@ -1,7 +1,7 @@
 $cmdbox
 =======
 
-The $cmdbox identifier will return :doc:`$true </identifiers/true>` if a command or script was initiated via the ''command editbox''. Otherwise, it will return :doc:`$false </identifiers/false>`.
+The $cmdbox identifier will return :doc:`$true </identifiers/true>` if a command or script was initiated via the ``command editbox``. Otherwise, it will return :doc:`$false </identifiers/false>`.
 
 Synopsis
 --------

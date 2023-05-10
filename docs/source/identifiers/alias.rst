@@ -44,7 +44,7 @@ Echo the 3rd alias file name to the active window
 
     //echo -a $alias(3)
 
-Echo if ''myfile.mrc'' is currently a loaded alias to the active window
+Echo if ``myfile.mrc`` is currently a loaded alias to the active window
 
 .. code:: text
 

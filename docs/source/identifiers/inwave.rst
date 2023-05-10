@@ -28,7 +28,7 @@ Properties
     * - length
       - Returns the full length of the currently playing wav file.
     * - pause
-      - Returns ''$true'' if the currently playing wav file is paused, else it returns ''$false''.
+      - Returns ``$true`` if the currently playing wav file is paused, else it returns ``$false``.
 
 Example
 -------

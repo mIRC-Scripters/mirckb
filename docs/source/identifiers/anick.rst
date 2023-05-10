@@ -23,7 +23,7 @@ Returns the value of your alternative nickname.
 Example
 -------
 
-Echo the value of ''$anick'' to the active window
+Echo the value of ``$anick`` to the active window
 
 .. code:: text
 

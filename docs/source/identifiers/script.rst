@@ -53,7 +53,7 @@ Echo the 2nd script file name to the active window:
 
     //echo -a $script(2)
 
-Echo if ''myfile.mrc'' is currently a loaded script to the active window:
+Echo if ``myfile.mrc`` is currently a loaded script to the active window:
 
 .. code:: text
 

@@ -20,7 +20,7 @@ Parameters
     * - Parameter
       - Description
     * - N
-      - Returns the connection ID for the Nth connection. If you specify N as ''0'', the total number of connections is returned.
+      - Returns the connection ID for the Nth connection. If you specify N as ``0``, the total number of connections is returned.
 
 Properties
 ----------

@@ -75,7 +75,7 @@ Parameters
 Example
 -------
 
-This example will monitor what events are triggering, what event ID is triggering the event, and any current captions or titles of the event ID which triggered an event. Created a custom Aliases - mIRC|alias called ''/whatEvents'' which will open up the local Dialogs - mIRC|dialog ''whatEvents'':
+This example will monitor what events are triggering, what event ID is triggering the event, and any current captions or titles of the event ID which triggered an event. Created a custom Aliases - mIRC|alias called ``/whatEvents`` which will open up the local Dialogs - mIRC|dialog ``whatEvents``:
 
 .. code:: text
 

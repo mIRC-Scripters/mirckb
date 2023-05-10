@@ -1,7 +1,7 @@
 $ok
 ===
 
-$ok is returned when :doc:`$input </identifiers/input>` box has been invoked with the the v switch and the ''Ok'' button has been pressed.
+$ok is returned when :doc:`$input </identifiers/input>` box has been invoked with the the v switch and the ``Ok`` button has been pressed.
 
 Synopsis
 --------

@@ -18,7 +18,7 @@ None
 Example
 -------
 
-Custom script that listens for the mouse leaving ''@tester''
+Custom script that listens for the mouse leaving ``@tester``
 
 .. code:: text
 

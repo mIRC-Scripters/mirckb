@@ -71,11 +71,11 @@ When new $file(filename) is used, you can use the following properties:
     * - .name
       - Returns the name of the folder if a folder is used, or the name of the file without the extention if a filename is used
     * - .version
-      - Returns the file's ''file version'' if executable/DLL.
+      - Returns the file's ``file version`` if executable/DLL.
     * - .product
-      - Returns the file's ''product version'' if executable/DLL.
+      - Returns the file's ``product version`` if executable/DLL.
     * - .flags
-      - Returns the file's ''file flags'' if executable/DLL, the value is a combination bitmask that specifies the compile time attributes of the file. See table below for values.
+      - Returns the file's ``file flags`` if executable/DLL, the value is a combination bitmask that specifies the compile time attributes of the file. See table below for values.
 
 .. list-table::
     :widths: 15 85

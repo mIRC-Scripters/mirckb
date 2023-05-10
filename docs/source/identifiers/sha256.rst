@@ -38,7 +38,7 @@ None
 Example
 -------
 
-Echo the sha256 hash of plain text string ''abc'' to the active window:
+Echo the sha256 hash of plain text string ``abc`` to the active window:
 
 .. code:: text
 

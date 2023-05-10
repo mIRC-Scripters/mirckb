@@ -59,7 +59,7 @@ $chr(32) is the space character. Echo the current month to the active window:
 
     //echo -a The current month is $gettok($asctime,2,32)
 
-This returns ''Mon Tue'' because the space between %x %y becomes the 2nd delimiter:
+This returns ``Mon Tue`` because the space between %x %y becomes the 2nd delimiter:
 
 .. code:: text
 
