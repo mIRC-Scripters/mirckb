@@ -100,7 +100,7 @@ This Aliases - mIRC|custom alias can now be executed using the following command
 
 The results of this command will look similar to the results below:
 
-File:$chan identifier example.png|Custom example for the $chan identifier - mIRC
+.. figure:: img/chan_identifier_example.png.webp
 
 Compatibility
 -------------

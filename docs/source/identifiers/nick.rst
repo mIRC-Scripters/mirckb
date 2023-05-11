@@ -160,7 +160,7 @@ The above command is executed in a channel command-line by typing:
 
 The results from the above will look something like this:
 
-File:$nick identifer example results - mIRC.png|Shows the example results.
+.. figure:: img/nick_identifer_example_results.png.webp
 
 .. note:: A nick can have several channel modes, and the nicklist will display only the highest level. To have an exact count of the nicks displaying a certain nick type, you should have the 3rd parameter be the list of all types of that level and greater, then have the 4th parameter be the nick types greater than the specified level. For example, networks supporting levels above @Operator also give +o. ~ChannelOwner is given modes +qo and &ProtectedOp is given mode +ao. Some networks allow the Founder to give +q to several other users, so the ~ prefix isn't always an indication that someone is the channel owner/founder.
 

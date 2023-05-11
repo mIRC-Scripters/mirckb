@@ -40,7 +40,7 @@ The following command can now be typed into any mIRC command prompt:
 
 Below is an image reflecting what this example will look like:
 
-File:Keyup event.png|This screenshot shows an example of the ON KEYDOWN event custom example.
+.. figure:: img/Keyup_event.png.webp
 
 Note that this makes use of a :ref:`picture_windows`, as well as the /drawtext command - mIRC|drawtext command. These types of :ref:`picture_windows` and their tools can be very powerful in creating some amazing graphical layouts, as well as mIRC games.
 
