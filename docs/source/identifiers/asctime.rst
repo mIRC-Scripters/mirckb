@@ -38,7 +38,7 @@ Formatting Options
 | Month                 | m                     | 1                     |
 |                       | mm                    | 01                    |
 |                       | mmm                   | Jan                   |
-|                       | mmmm                  | Januari               |
+|                       | mmmm                  | January               |
 +-----------------------+-----------------------+-----------------------+
 | Year                  | y                     | 14                    |
 |                       | yyyy                  | 2014                  |
