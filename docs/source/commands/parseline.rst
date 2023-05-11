@@ -49,7 +49,7 @@ Optional
     * - Switch
       - Description
     * - -a
-      - modifier for -t, codepoints 128-255 are not encoded to UTF8 if no codepoint above 255 is found
+      - modifier for -t and -b, codepoints 128-255 are not encoded to UTF8 if no codepoint above 255 is found
     * - -p
       - Used with -q, indicate the line must trigger on parseline
     * - -n
