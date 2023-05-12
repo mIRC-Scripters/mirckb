@@ -154,9 +154,12 @@ Binary variables are not limited to 4150 length. To fill a 7mb binary variable w
       echo -a variable length is $bvar(&var,0)
     }
 
-Prior to 7.69, zero length &binvar had to be created with kludge workarounds like:<br>
-noop $regsubex(foo,$null,,,&var)<br>
-//bset -t &var 1 A | noop $decode(&var,bm)<br>
+Prior to 7.69, zero length &binvar had to be created with kludge workarounds like:
+
+.. code:: text
+
+    noop $regsubex(foo,$null,,,&var)
+    //bset -t &var 1 A | noop $decode(&var,bm)
 
 .. code:: text
 
