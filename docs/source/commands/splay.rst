@@ -10,7 +10,7 @@ Synopsis
 
 .. code:: text
 
-    <pre>/splay -cwmpq [filename | stop | pause | resume | seek | skip] [pos]</pre>
+    /splay -cwmpq [filename | stop | pause | resume | seek | skip] [pos]
 
 Switches
 --------
