@@ -536,7 +536,7 @@ Will produce the following result:
 
 The number 2 is even.
 
-.. note:: Most fonts display strange symbols when you press the keys for formatting codes, such as :kbd:`Ctrl+B` bold and :kbd:`Ctrl+B` color and :kbd:`Ctrl+B`. If you want to see these symbols differently in your script editor, search for the font "Fixedsys Excelsior", because it shows these symbols with a small b/c/o inside a black square, though it won’t show special symbols for other format codes like :kbd:`Ctrl+B` :kbd:`Ctrl+B` :kbd:`Ctrl+B`. You can change the Font of your scripts editor to be different than the fonts of your channels, and it’s usually easier to read code if you choose a non-proportional (fixed) font for the script editor. The "No Liga" version can be downloaded here: http://www.xise.nl/mirc/fsex2p00se3.ttf
+.. note:: Most fonts display strange symbols when you press the keys for formatting codes, such as :kbd:`Ctrl+B` bold and :kbd:`Ctrl+K` color and :kbd:`Ctrl+O`. If you want to see these symbols differently in your script editor, search for the font "Fixedsys Excelsior", because it shows these symbols with a small b/c/o inside a black square, though it won’t show special symbols for other format codes like :kbd:`Ctrl+R` :kbd:`Ctrl+I` :kbd:`Ctrl+U`. You can change the Font of your scripts editor to be different than the fonts of your channels, and it’s usually easier to read code if you choose a non-proportional (fixed) font for the script editor. The "No Liga" version can be downloaded here: http://www.xise.nl/mirc/fsex2p00se3.ttf
 
 Actions
 ~~~~~~~
