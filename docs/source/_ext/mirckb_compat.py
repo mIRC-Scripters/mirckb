@@ -13,7 +13,10 @@ class compatibility(Directive):
 
 def version2date(x):
     return {
-        "7.73": "Date TBD",
+        "7.76": "Date TBD",
+        "7.75": "26 Aug 2023",
+        "7.74": "02 Aug 2023",
+        "7.73": "18 Jun 2023",
         "7.72": "27 Nov 2022",
         "7.71": "01 Oct 2022",
         "7.69": "18 Jul 2022",
